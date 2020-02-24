@@ -165,7 +165,7 @@ def run():
                  'simplescreenrecorder',
                  'krita',
                  'pepper-flash',
-                 'k3b'
+                 'k3b',
                  'system-config-printer',
                  'print-manager',
                  'hplip',
