@@ -163,7 +163,6 @@ def run():
                  'kget',
                  'kompare',
                  'simplescreenrecorder',
-                 'krita',
                  'pepper-flash',
                  'k3b',
                  'system-config-printer',
