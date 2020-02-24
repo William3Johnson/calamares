@@ -210,7 +210,7 @@
     <message>
         <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="92"/>
         <source>Loading ...</source>
-        <translation type="unfinished"/>
+        <translation>Wird geladen ...</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="111"/>
@@ -1364,7 +1364,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/license/LicensePage.ui" line="22"/>
         <source>&lt;h1&gt;License Agreement&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Lizenzvereinbarung&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="149"/>
@@ -1410,7 +1410,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="96"/>
         <source>URL: %1</source>
-        <translation type="unfinished"/>
+        <translation>URL: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="117"/>
@@ -1447,7 +1447,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="171"/>
         <source>File: %1</source>
-        <translation type="unfinished"/>
+        <translation>Datei: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="194"/>
@@ -1457,7 +1457,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="194"/>
         <source>Show the license text</source>
-        <translation type="unfinished"/>
+        <translation>Lizenztext anzeigen</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="198"/>
@@ -1553,7 +1553,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/machineid/MachineIdJob.cpp" line="62"/>
         <source>Configuration Error</source>
-        <translation type="unfinished"/>
+        <translation>Konfigurationsfehler</translation>
     </message>
     <message>
         <location filename="../src/modules/machineid/MachineIdJob.cpp" line="63"/>
@@ -1566,7 +1566,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/notesqml/NotesQmlViewStep.cpp" line="34"/>
         <source>Notes</source>
-        <translation type="unfinished"/>
+        <translation>Hinweise</translation>
     </message>
 </context>
 <context>
@@ -1845,7 +1845,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="528"/>
         <source>Password is empty</source>
-        <translation type="unfinished"/>
+        <translation>Passwort ist leer</translation>
     </message>
 </context>
 <context>
@@ -1858,7 +1858,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/packagechooser/page_package.ui" line="40"/>
         <source>Product Name</source>
-        <translation type="unfinished"/>
+        <translation>Produktname</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/page_package.ui" line="53"/>
@@ -1873,7 +1873,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/packagechooser/PackageChooserPage.cpp" line="34"/>
         <source>Package Selection</source>
-        <translation type="unfinished"/>
+        <translation>Paketauswahl</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/PackageChooserPage.cpp" line="35"/>
@@ -1886,7 +1886,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/packagechooser/PackageChooserViewStep.cpp" line="70"/>
         <source>Packages</source>
-        <translation type="unfinished"/>
+        <translation>Pakete</translation>
     </message>
 </context>
 <context>
@@ -1943,7 +1943,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="51"/>
         <source>Your Full Name</source>
-        <translation type="unfinished"/>
+        <translation>Ihr voller Name</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="144"/>
@@ -1958,19 +1958,19 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="246"/>
         <source>Computer Name</source>
-        <translation type="unfinished"/>
+        <translation>Computername</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="351"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="521"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>Passwort</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="376"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="546"/>
         <source>Repeat Password</source>
-        <translation type="unfinished"/>
+        <translation>Passwort wiederholen</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="451"/>
@@ -2426,7 +2426,7 @@ Ausgabe:
         <location filename="../src/modules/machineid/Workers.cpp" line="57"/>
         <location filename="../src/modules/machineid/Workers.cpp" line="101"/>
         <source>File not found</source>
-        <translation type="unfinished"/>
+        <translation>Datei nicht gefunden</translation>
     </message>
     <message>
         <location filename="../src/modules/machineid/Workers.cpp" line="46"/>
@@ -2441,12 +2441,12 @@ Ausgabe:
     <message>
         <location filename="../src/modules/packagechooser/PackageModel.cpp" line="79"/>
         <source>No product</source>
-        <translation type="unfinished"/>
+        <translation>Kein Produkt</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/PackageModel.cpp" line="87"/>
         <source>No description provided.</source>
-        <translation type="unfinished"/>
+        <translation>Keine Beschreibung angegeben.</translation>
     </message>
 </context>
 <context>
@@ -2603,7 +2603,7 @@ Ausgabe:
     <message>
         <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="138"/>
         <source>System requirements</source>
-        <translation type="unfinished"/>
+        <translation>Systemanforderungen</translation>
     </message>
 </context>
 <context>
@@ -3117,7 +3117,7 @@ Ausgabe:
     <message>
         <location filename="../src/modules/welcomeq/WelcomeQmlViewStep.cpp" line="58"/>
         <source>Welcome</source>
-        <translation type="unfinished"/>
+        <translation>Willkommen</translation>
     </message>
 </context>
 <context>

@@ -210,17 +210,17 @@
     <message>
         <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="92"/>
         <source>Loading ...</source>
-        <translation type="unfinished"/>
+        <translation>Chargement…</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="111"/>
         <source>QML Step &lt;i&gt;%1&lt;/i&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Étape QML&lt;i&gt;%1&lt;/i&gt;.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="319"/>
         <source>Loading failed.</source>
-        <translation type="unfinished"/>
+        <translation>Le chargement a échoué.</translation>
     </message>
 </context>
 <context>
@@ -1255,7 +1255,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="164"/>
         <source>is running the installer as an administrator (root)</source>
-        <translation type="unfinished"/>
+        <translation>lance l’installeur en tant qu’administrateur (root)</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="167"/>
@@ -1270,7 +1270,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="176"/>
         <source>has a screen large enough to show the whole installer</source>
-        <translation type="unfinished"/>
+        <translation>a un écran suffisamment large pour afficher tout l’installeur</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="179"/>
@@ -1363,7 +1363,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/license/LicensePage.ui" line="22"/>
         <source>&lt;h1&gt;License Agreement&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Accord de licence&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="149"/>
@@ -1373,27 +1373,27 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="151"/>
         <source>Please review the End User License Agreements (EULAs).</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez consulter les contrats de licence utilisateur final (CLUF).</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="156"/>
         <source>This setup procedure will install proprietary software that is subject to licensing terms.</source>
-        <translation type="unfinished"/>
+        <translation>Cette procédure de configuration installe un logiciel propriétaire soumis à des conditions de licence.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="159"/>
         <source>If you do not agree with the terms, the setup procedure cannot continue.</source>
-        <translation type="unfinished"/>
+        <translation>Si vous n&apos;êtes pas d&apos;accord avec les termes, la procédure de configuration ne peut pas continuer.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="164"/>
         <source>In case non-free was selected, this installer will install proprietary packages &lt;br/&gt;that have additional End User License Agreements (EULAs) attached to them.</source>
-        <translation type="unfinished"/>
+        <translation>Si un pilote non libre a été sélectionné, cet installeur installera des paquets propriétaires &lt;br/&gt; auxquels sont associés des contrats de licence utilisateur final (CLUF) supplémentaires.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="167"/>
         <source>If you do not agree with the terms, proprietary software will not be installed, and open source alternatives will be used instead.</source>
-        <translation type="unfinished"/>
+        <translation>Si vous n’êtes pas d&apos;accord avec les termes, aucun logiciel propriétaire ne sera installé et des alternatives Open Source seront utilisées à la place.</translation>
     </message>
 </context>
 <context>
@@ -1409,7 +1409,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="96"/>
         <source>URL: %1</source>
-        <translation type="unfinished"/>
+        <translation>URL : %1</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="117"/>
@@ -1446,7 +1446,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="171"/>
         <source>File: %1</source>
-        <translation type="unfinished"/>
+        <translation>Fichier : %1</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="194"/>
@@ -1456,12 +1456,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="194"/>
         <source>Show the license text</source>
-        <translation type="unfinished"/>
+        <translation>Afficher le texte de la licence</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="198"/>
         <source>Open license agreement in browser.</source>
-        <translation type="unfinished"/>
+        <translation>Ouvrir le contrat de licence dans le navigateur.</translation>
     </message>
 </context>
 <context>
@@ -1547,17 +1547,17 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/machineid/MachineIdJob.cpp" line="46"/>
         <source>Generate machine-id.</source>
-        <translation type="unfinished"/>
+        <translation>Générer l’ID de la machine.</translation>
     </message>
     <message>
         <location filename="../src/modules/machineid/MachineIdJob.cpp" line="62"/>
         <source>Configuration Error</source>
-        <translation type="unfinished"/>
+        <translation>Erreur de configuration</translation>
     </message>
     <message>
         <location filename="../src/modules/machineid/MachineIdJob.cpp" line="63"/>
         <source>No root mount point is set for MachineId.</source>
-        <translation type="unfinished"/>
+        <translation>Aucun point de montage racine n’est configuré pour cet ID de machine.</translation>
     </message>
 </context>
 <context>
@@ -1565,7 +1565,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/notesqml/NotesQmlViewStep.cpp" line="34"/>
         <source>Notes</source>
-        <translation type="unfinished"/>
+        <translation>Notes</translation>
     </message>
 </context>
 <context>
@@ -1844,7 +1844,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="528"/>
         <source>Password is empty</source>
-        <translation type="unfinished"/>
+        <translation>Le mot de passe est vide</translation>
     </message>
 </context>
 <context>
@@ -1852,32 +1852,32 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/packagechooser/page_package.ui" line="20"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Formulaire</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/page_package.ui" line="40"/>
         <source>Product Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom du produit</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/page_package.ui" line="53"/>
         <source>TextLabel</source>
-        <translation type="unfinished"/>
+        <translation>Étiquette</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/page_package.ui" line="69"/>
         <source>Long Product Description</source>
-        <translation type="unfinished"/>
+        <translation>Description longue</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/PackageChooserPage.cpp" line="34"/>
         <source>Package Selection</source>
-        <translation type="unfinished"/>
+        <translation>Sélection de paquets</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/PackageChooserPage.cpp" line="35"/>
         <source>Please pick a product from the list. The selected product will be installed.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez choisir un produit dans la liste. Le produit sélectionné sera installé.</translation>
     </message>
 </context>
 <context>
@@ -1885,7 +1885,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/packagechooser/PackageChooserViewStep.cpp" line="70"/>
         <source>Packages</source>
-        <translation type="unfinished"/>
+        <translation>Paquets</translation>
     </message>
 </context>
 <context>
@@ -1942,12 +1942,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="51"/>
         <source>Your Full Name</source>
-        <translation type="unfinished"/>
+        <translation>Votre nom complet</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="144"/>
         <source>login</source>
-        <translation type="unfinished"/>
+        <translation>nom de connexion</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="243"/>
@@ -1957,29 +1957,29 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="246"/>
         <source>Computer Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom de l’ordinateur</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="351"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="521"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>Mot de passe</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="376"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="546"/>
         <source>Repeat Password</source>
-        <translation type="unfinished"/>
+        <translation>Répéter le mot de passe</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="451"/>
         <source>When this box is checked, password-strength checking is done and you will not be able to use a weak password.</source>
-        <translation type="unfinished"/>
+        <translation>Lorsque cette case est cochée, la vérification de la force du mot de passe est effectuée et vous ne pourrez pas utiliser un mot de passe faible.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="454"/>
         <source>Require strong passwords.</source>
-        <translation type="unfinished"/>
+        <translation>Exiger des mots de passe forts.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="461"/>
@@ -2426,27 +2426,27 @@ Sortie :
         <location filename="../src/modules/machineid/Workers.cpp" line="57"/>
         <location filename="../src/modules/machineid/Workers.cpp" line="101"/>
         <source>File not found</source>
-        <translation type="unfinished"/>
+        <translation>Fichier non trouvé</translation>
     </message>
     <message>
         <location filename="../src/modules/machineid/Workers.cpp" line="46"/>
         <source>Path &lt;pre&gt;%1&lt;/pre&gt; must be an absolute path.</source>
-        <translation type="unfinished"/>
+        <translation>Le chemin &lt;pre&gt;%1&lt;/pre&gt; doit être un chemin absolu.</translation>
     </message>
     <message>
         <location filename="../src/modules/machineid/Workers.cpp" line="102"/>
         <source>Could not create new random file &lt;pre&gt;%1&lt;/pre&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Impossible de créer un fichier aléatoire &lt;pre&gt;%1&lt;/pre&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/PackageModel.cpp" line="79"/>
         <source>No product</source>
-        <translation type="unfinished"/>
+        <translation>Aucun produit</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/PackageModel.cpp" line="87"/>
         <source>No description provided.</source>
-        <translation type="unfinished"/>
+        <translation>Aucune description fournie.</translation>
     </message>
 </context>
 <context>
@@ -2598,12 +2598,12 @@ Sortie :
     <message>
         <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="137"/>
         <source>For best results, please ensure that this computer:</source>
-        <translation type="unfinished"/>
+        <translation>Pour de meilleurs résultats, veuillez vous assurer que cet ordinateur :</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="138"/>
         <source>System requirements</source>
-        <translation type="unfinished"/>
+        <translation>Prérequis du système</translation>
     </message>
 </context>
 <context>
@@ -2921,17 +2921,17 @@ Sortie :
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="349"/>
         <source>Your username must start with a lowercase letter or underscore.</source>
-        <translation type="unfinished"/>
+        <translation>Votre nom d’utilisateur doit commencer par une lettre minuscule ou un tiret-bas.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="356"/>
         <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Seuls les lettres minuscules, les nombres, les tirets-bas et les traits d’union sont autorisés.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="404"/>
         <source>Only letters, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Seuls les lettres, les nombres, les tirets-bas et les traits d’union sont autorisés.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="392"/>
@@ -3117,7 +3117,7 @@ Sortie :
     <message>
         <location filename="../src/modules/welcomeq/WelcomeQmlViewStep.cpp" line="58"/>
         <source>Welcome</source>
-        <translation type="unfinished"/>
+        <translation>Bienvenu</translation>
     </message>
 </context>
 <context>
@@ -3187,7 +3187,61 @@ Sortie :
             &lt;/ul&gt;
             
             &lt;p&gt;To create &lt;b&gt;reliable&lt;/b&gt; installation media, please follow the instructions from the &lt;b&gt;http://kaosx.us/download/&lt;/b&gt; page. KaOS&apos;s ISO&apos;s &lt;b&gt;do not support Unetbootin or Rufus&lt;/b&gt;, and DVDs need a burn speed &lt;b&gt;no higher than 4x&lt;/b&gt;.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;KaOS - 2020.02&lt;/h3&gt;
+            &lt;p&gt;Une bonne façon de commencer 2020 est de vous présenter la version de janvier d&apos;une nouvelle ISO stable.&lt;/p&gt;
+            
+            &lt;p&gt;Parmi les nombreux changements de cette version, deux se distinguent. Le premier est l’ajout de modules de noyau signés pour Linux 5.4. Tous les modules internes sont désormais signés automatiquement lors de la compilation du noyau, des modules hors de l’arborescence comme les modules virtualbox et les paquets NVIDIA ont également une signature ajoutée. La compilation de ces modules a été ajustée pour utiliser des fichiers de signature spécifiques au noyau lors de chaque recompilation. Vous pouvez durcir votre système en ajoutant &lt;code&gt;module.sig_enforce=1&lt;/code&gt; à votre ligne de démarrage du noyau. Pour vérifier si votre système contient des modules non signés :&lt;/p&gt;
+            
+            &lt;p&gt;&lt;code&gt;for mod in $(lsmod | tail -n +2 | cut -d&apos; &apos; -f1); do modinfo ${mod} | grep -q &apos;signature&apos; || echo &apos;no signature for module: ${mod}&apos; ; done&lt;/code&gt;&lt;/p&gt;
+            
+            &lt;p&gt;Deuxièmement, pour mieux s’adapter aux systèmes hybrides et NVIDIA non libre, on est passé de libgl à libglvnd qui est indépendant des fournisseurs. Cela rendra les paquets NVIDIA bumblebee obsolètes. Le serveur Xorg a été mis à jour à 1.20.6, cela inclut maintenant les correctifs nécessaires pour utiliser Prime à la place de Bumblebee. Les scripts nécessaires pour cela sont fournis dans le paquet &lt;code&gt;prime&lt;/code&gt;. Les scripts de détection du matériel et l’installeur Calamares ont leur code ajusté pour utiliser la nouvelle option Prime. La disponibilité du matériel de test hybride NVIDIA était limitée, vous pouvez donc toujours rencontrer des problèmes avec Prime..&lt;/p&gt;
+            
+            &lt;p&gt;Le travail s’est également poursuivi le mois dernier pour supprimer davantage python2. Cette fois, il a été supprimé du plus grand nombre de paquets possible.&lt;/b&gt;
+            
+            &lt;p&gt;Vous trouverez KDE Applications 19.12 sur cette ISO. Point sur les nouveautés de 19.12 : Kdenlive embarque désormais un mélangeur de sons spectaculaire. Dolphin a repensé les options de recherche avancées et vous pouvez maintenant avancer et reculer dans l’historique des dossiers que vous avez déjà visités.. KDE-Connect implémente une nouvelle interface Kirigami qui offre de nouvelles fonctionnalités aux utilisateurs de bureau à bureau, telles que le contrôle des médias, l’entrée à distance, la sonnerie du périphérique, le transfert de fichiers et l’exécution de commandes. Concernant Elisa, l’indexation des fichiers musicaux s’est améliorée et prend désormais en charge les radios Web et est livrée avec quelques exemples à essayer.&lt;/b&gt;
+            Frameworks passe en version 5.65.0, Plasma en 5.17.4 et KDE Applications en 19.12.0. Le tout compilé avec Qt 5.14.0.
+            
+            &lt;p&gt;Concernant l’installeur Calamares, la prise en charge de NVIDIA non libre avec Prime a été ajoutée..&lt;/p&gt;
+            
+            &lt;p&gt;Depuis LibreOffice 6.2, il est désormais possible de le fournir en tant qu’application Qt5/kf5 pure.  LibreOffice a donc remplacé Calligra comme application bureautique par défaut sur KaOS.
+            
+            &lt;p&gt;La créaiton de KaOS&lt;strong&gt;Croeso&lt;/strong&gt; (bienvenu en gallois) pour faciliter la configuration d’une nouvelle installation est inclus.  Il s’exécuter sur un système nouvellement installé et permet d’ajuster les paramètres parmi les 15 les plus fréquemment utilisés. Il remplace l’application Kaptan basée sur PyQt.  Il inclut également un sélecteur personnalisé de fonds d’écran, des informations sur la distribution et des nouveautés.  Il est écrit en QML et s’intègre bien avec l’application de bienvenue utilisée dans le système Live.  Ce dernier inclut désormais un guide d&apos;installation entièrement réécrit (également en QML).&lt;/p&gt;
+            
+            &lt;p&gt;Il existe une option pour vérifier l’authenticité des fichiers ISO KaOS téléchargés via la vérification de signature GPG, voir la page de téléchargement pour plus de détails et pour les instructions.&lt;/p&gt;
+            
+            &lt;p&gt;Un outil propre à KaOS pour graver des fichiers ISO sur USB est fourni. Non seulement IsoWriter écritl sur USB, mais il permet également de récupérer votre clé USB après l’avoir utilisée pour une image ISO, ce que la copie dd régulière ou Imagewriter précédemment utilisé ne pouvaient pas faire. Il comprend la possibilité de vérifier la cohérence entre la gravure de l’USB et le fichier ISO utilisé.&lt;/p&gt;
+            
+            &lt;p&gt;Les principales mises à jour de la base du système sont LLVM/Clang 9.0.1, Glib2 2.62.4, Bison 3.4.2, Python3 3.7.6, Linux 5.4.7, Protobuf 3.11.1, Mesa 19.2.8, NetworkManager 1.22.2, Nano 4.7, GStreamer 1.16.2 et Qt 5.14.0&lt;/p&gt;
+            
+            &lt;p&gt;Les dépôts KaOS ne fournissent plus Qt 4. Il y a trois ans, le développement de Qt 4 s’est arrêté, fin 2015, tout le support, y compris les correctifs de sécurité, a pris fin. Toute application qui n’a pas effectué la transition vers Qt 5 pendant tout ce temps ne peut plus être prise en charge dans KaOS. Soit ils ne sont en fait plus maintenus, soit leur développement ignore les implications de la compilation avec un toolkit potentiellement non sécurisé.&lt;/p&gt;
+            
+            &lt;p&gt;L’apparence comprend des thèmes d’icônes personnalisés pour les thèmes clairs et sombres. Midna et Midna Dark créent toutes deux un aspect unifié complet depuis le démarrage jusqu’à la déconnexion.&lt;/p&gt;
+
+            &lt;p&gt;Cette ISO utilise le système de fichiers XFS avc &lt;b&gt;CRC et finobt autorisés&lt;/b&gt; par défaut. Les CRCs permettent un détection des erreurs matérielles améliorée, tandis que les changements de format améliorent également les algorithmes de récupération après incident et la capacité de divers outils à valider et réparer les corruptions de métadonnées lorsqu’elles sont trouvées. L’arbre-B des inodes libres n’indexe pas les inodes utilisés, ce qui permet une performante de l’allocation des inodes plus rapide et plus consistante que les vieux systèmes de fichiers.&lt;/p&gt;
+            
+            &lt;p&gt;&lt;strong&gt;Octopi&lt;/strong&gt; est devenu une partie cruciale pour la maintenance de tout le système sur KaOS. Ce n’est plus simplement une interface graphique à pacman. Des outils comme la vérification de la synchronisation d’un miroir avant de commencer toute mise à jour, la consultattion des journaux pacman, une option pour obtenir un collage à partir d&apos;un instantané complet de toutes les informations d’un système avec l’outil SysInfo sont inclus. Sont également inclus des moyens très simples d’ouvrir des fichiers, comme copier dans le presse-papiers le chemin d’accès au fichier affiché dans Octopi. Pour vous assurer que le système ne commence pas à utiliser trop d’espace disque pour le cache pacman, mais tout en offrant à l&apos;utilisateur la possibilité de conserver certains paqutes récents, l&apos;outil de nettoyage du cache est un excellent ajout. L&apos;outil intégré pour accéder à &lt;b&gt;KCP&lt;/b&gt; a maintenant une place beaucoup plus claire avec l’ajout de sa propre icône alien dans la barre de menus. Un nouvel ajout est également la possibilité de sélectionner des icônes personnalisées pour la barre d’état.&lt;/p&gt;
+            
+            &lt;p&gt;Sur les installations UEFI, KaOS utilise systemd-boot comme chargeur de démarrage simple, transparent mais plutôt puissant.&lt;/p&gt;
+            
+            &lt;p&gt;Pour en savoir plus sur les objectifs et les idées derrière KaOS, veuillez lire les pages &lt;b&gt;http://kaosx.us/&lt;/b&gt;, &lt;b&gt;http://kaosx.us/about/&lt;/b&gt;, et &lt;b&gt;http://kaosx.us/faq/&lt;/b&gt;.&lt;/p&gt;
+            
+            &lt;p&gt;Afin d’empêcher toute incompréhension ou confusion, KaOS n’est &lt;b&gt;pas basée sur, dérivée ou inspirée&lt;/b&gt;  de quelconque distribution. Elle est complètement indépendante, conçue entièrement de zéro avec ses propres dépôts. Pour en savoir plus à ce sujet, lisez &lt;b&gt;http://kaosx.us/about/based/&lt;/b&gt;. Une &lt;b&gt;distribution rolling release&lt;/b&gt; n’a jamais de version finale, chaque ISO est un instantané de satut actuel des dépôts. Aperçu de ce qui est actuellement disponible :&lt;/p&gt;
+            
+            &lt;p&gt;L’ISO embarque &lt;b&gt;Frameworks 5.65.0, Plasma 5.17.4, KDE Applications 19.12.0&lt;/b&gt;, Linux 5.4.7, Systemd 243, Kmod 26, NetworkManager 1.22.2, LibreOffice 6.3.4, Krita 4.2.8, Elisa, Xorg-Server 1.20.6, Mesa 19.2.8, Glibc 2.30, GCC 9.2.0, non-free Nvidia 440.44, Pepperflash et Python3 3.7.6 pour en nommer quelques uns.&lt;/p&gt;
+            
+            &lt;p&gt;Le gestionnaire de paquets est &lt;strong&gt;Pacman 5.2.1&lt;/strong&gt;, avec l’inteface graphique simple mais puissante Octopi 0.9.0. Falkon est le navigateur par défaut, basé sur Qt et successeur de Qupzilla. &lt;b&gt;GFXboot&lt;/b&gt; est inclut avec un thème KaOS, le thème de Grub est Midna, propre à KaOS.&lt;/p&gt;
+            
+            &lt;p&gt;&lt;b&gt;Les dépôts&lt;/b&gt; de KaOS resteront limités en taille avec un maximum 2100-2200 comme actuellement. Un aperçu de ce qui est disponible, en plus du noyau stable il y a Linux-next 5.4, LibreOffice 6.3.4,VLC, Vokoscreen, Blender, Kodi, Calibre, Sigil, les paquets Vulkan et quelques jeux comme 0ad et Knights.&lt;br /&gt;
+            Un nombre limité d’applications GTK célèbres sont disponibles, comme Firefox 71.0, Chrome 81, Ardour 5.12.0, Inkscape 0.92.4, GIMP 2.10.14 et Google-talkplugin 5.41.3.0.1.&lt;br /&gt;
+            Les paquets de langues complets sont disponibles pour  KDE, Calligra, Firefox, LibreOffice et Thunderbird. Pour IM, Fcitx 4.2.9.6 est disponible en tant que groupe plutôt complet.&lt;/p&gt;
+            
+            &lt;p&gt;&lt;b&gt;Problèmes connus :&lt;/b&gt;&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Certains systèmes utilisant un CPU Intel peuvent avoir un problème avec le pool d’entropie du noyau, ce qui cause un délai de démarrage assez long. Si vous avez ce problème, ajoutez &lt;strong&gt;random.trust_cpu=1&lt;/strong&gt; à la ligne de démarrage du noyau.
+                &lt;li&gt;L’installation sur RAID n’est pas possible.&lt;/li&gt;
+            &lt;/ul&gt;
+            
+            &lt;p&gt;Pour créer un média d’installation &lt;b&gt;fiable&lt;/b&gt; veuillez suivre les instructions de la page &lt;b&gt;http://kaosx.us/download/&lt;/b&gt;. Les ISO KaOS &lt;b&gt;ne supportent ni Unetbootin ni Rufus&lt;/b&gt; et les DVD ne doivent pas être gravés à une vitesse &lt;b&gt;supérieure à 4x&lt;/b&gt;.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -3215,7 +3269,27 @@ Sortie :
             &lt;/ul&gt;
             
             &lt;p&gt;The vertical scrollbar is adjustable, current width set to 10.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Generic GNU/Linux 2020.2 LTS &lt;quote&gt;Turgid Tuba&lt;/quote&gt;&lt;/h3&gt;
+            &lt;p&gt;This an example QML file, showing options in RichText with Flickable content.&lt;/p&gt;
+            
+            &lt;p&gt;QML with RichText can use HTML tags, Flickable content is useful for touchscreens.&lt;/p&gt;
+            
+            &lt;p&gt;&lt;b&gt;This is bold text&lt;/b&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;i&gt;This is italic text&lt;/i&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;u&gt;This is underlined text&lt;/u&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;center&gt;This text will be center-aligned.&lt;/center&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;s&gt;This is strikethrough&lt;/s&gt;&lt;/p&gt;
+            
+            &lt;p&gt;Code example:
+            &lt;code&gt;ls -l /home&lt;/code&gt;&lt;/p&gt;
+            
+            &lt;p&gt;&lt;b&gt;Lists:&lt;/b&gt;&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Intel CPU systems&lt;/li&gt;
+                &lt;li&gt;AMD CPU systems&lt;/li&gt;
+            &lt;/ul&gt;
+            
+            &lt;p&gt;The vertical scrollbar is adjustable, current width set to 10.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
