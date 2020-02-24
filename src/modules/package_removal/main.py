@@ -142,35 +142,38 @@ def run():
 
         if packages == 'minimal_install':
             print('Minimal Install')
-            libcalamares.utils.target_env_call(
-                ['pacman', '-Rncs', '--noconfirm',
-                 'plasma-workspace-wallpapers',
-                 'partitionmanager',
-                 'gwenview',
-                 'spectacle',
-                 'sweeper',
-                 'nomad-firewall',
-                 'quassel',
-                 'smplayer',
-                 'smtube',
-                 'elisa',
-                 'kde-gtk-config',
-                 'tomoyo-tools',
-                 'kcp',
-                 'pacmanlogviewer',
-                 'seafile',
-                 'kamoso',
-                 'kget',
-                 'kompare',
-                 'simplescreenrecorder',
-                 'pepper-flash',
-                 'k3b',
-                 'system-config-printer',
-                 'print-manager',
-                 'hplip',
-                 'pyqt5-python3',
-                 'kpat',
-                 'kde-telepathy',
-                 'libreoffice'])
+            pkgs = ['plasma-workspace-wallpapers',
+                    'partitionmanager',
+                    'gwenview',
+                    'spectacle',
+                    'sweeper',
+                    'nomad-firewall',
+                    'quassel',
+                    'smplayer',
+                    'smtube',
+                    'elisa',
+                    'kde-gtk-config',
+                    'tomoyo-tools',
+                    'kcp',
+                    'pacmanlogviewer',
+                    'seafile',
+                    'kamoso',
+                    'kget',
+                    'kompare',
+                    'simplescreenrecorder',
+                    'pepper-flash',
+                    'k3b',
+                    'system-config-printer',
+                    'print-manager',
+                    'hplip',
+                    'pyqt5-python3',
+                    'kpat',
+                    'kde-telepathy',
+                    'libreoffice']
+            for pkg in pkgs:
+                try:
+                    libcalamares.utils.target_env_call('sudo pacman -R --noconfirm ' + pkg)
+                except:
+                    print("Could not remove package ")
 
     print('package removal completed')
