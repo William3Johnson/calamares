@@ -156,7 +156,7 @@ def run():
                     'tomoyo-tools',
                     'kcp',
                     'pacmanlogviewer',
-                    'seafile',
+                    'seafile-client',
                     'kamoso',
                     'kget',
                     'kompare',
