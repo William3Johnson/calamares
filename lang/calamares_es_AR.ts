@@ -210,17 +210,17 @@
     <message>
         <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="92"/>
         <source>Loading ...</source>
-        <translation type="unfinished"/>
+        <translation>Cargando...</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="111"/>
         <source>QML Step &lt;i&gt;%1&lt;/i&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>QML Step &lt;i&gt;%1&lt;/i&gt;.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="319"/>
         <source>Loading failed.</source>
-        <translation type="unfinished"/>
+        <translation>La carga falló</translation>
     </message>
 </context>
 <context>
@@ -1256,7 +1256,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="164"/>
         <source>is running the installer as an administrator (root)</source>
-        <translation type="unfinished"/>
+        <translation>se está ejecutando el instalador como administrador (root)</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="167"/>
@@ -1271,7 +1271,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="176"/>
         <source>has a screen large enough to show the whole installer</source>
-        <translation type="unfinished"/>
+        <translation>tiene una pantalla lo suficientemente grande como para mostrar el instalador completo</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="179"/>
@@ -1364,7 +1364,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/license/LicensePage.ui" line="22"/>
         <source>&lt;h1&gt;License Agreement&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Acuerdo de Licencia&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="149"/>
@@ -1374,27 +1374,27 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="151"/>
         <source>Please review the End User License Agreements (EULAs).</source>
-        <translation type="unfinished"/>
+        <translation>Por favor revise los Términos de la Licencia de Usuario Final (EULAs).</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="156"/>
         <source>This setup procedure will install proprietary software that is subject to licensing terms.</source>
-        <translation type="unfinished"/>
+        <translation>Este procedimiento de configuración instalará software propietario que está sujeto a términos de licencia.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="159"/>
         <source>If you do not agree with the terms, the setup procedure cannot continue.</source>
-        <translation type="unfinished"/>
+        <translation>Si no está de acuerdo con los términos, el procedimiento de configuración no podrá continuar.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="164"/>
         <source>In case non-free was selected, this installer will install proprietary packages &lt;br/&gt;that have additional End User License Agreements (EULAs) attached to them.</source>
-        <translation type="unfinished"/>
+        <translation>En caso de haber seleccionado soft no libre, este instalador instalará paquetes &lt;br/&gt;propietarios que tiene adosado Acuerdos de Licencia de Usuario Final (EULAs). </translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="167"/>
         <source>If you do not agree with the terms, proprietary software will not be installed, and open source alternatives will be used instead.</source>
-        <translation type="unfinished"/>
+        <translation>Si no está de acuerdo con sus términos, no se instalará el software propietario, y se usarán alternativas libres en su lugar. </translation>
     </message>
 </context>
 <context>
@@ -1410,7 +1410,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="96"/>
         <source>URL: %1</source>
-        <translation type="unfinished"/>
+        <translation>URL: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="117"/>
@@ -1447,7 +1447,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="171"/>
         <source>File: %1</source>
-        <translation type="unfinished"/>
+        <translation>Archivo: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="194"/>
@@ -1457,12 +1457,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="194"/>
         <source>Show the license text</source>
-        <translation type="unfinished"/>
+        <translation>Mostrar el texto de la licencia</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="198"/>
         <source>Open license agreement in browser.</source>
-        <translation type="unfinished"/>
+        <translation>Abrir el acuerdo de licencia en una ventana del navegador.</translation>
     </message>
 </context>
 <context>
@@ -1548,12 +1548,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/machineid/MachineIdJob.cpp" line="46"/>
         <source>Generate machine-id.</source>
-        <translation type="unfinished"/>
+        <translation>Generar machine-id.</translation>
     </message>
     <message>
         <location filename="../src/modules/machineid/MachineIdJob.cpp" line="62"/>
         <source>Configuration Error</source>
-        <translation type="unfinished"/>
+        <translation>Error de Configuración</translation>
     </message>
     <message>
         <location filename="../src/modules/machineid/MachineIdJob.cpp" line="63"/>
