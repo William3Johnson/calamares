@@ -172,8 +172,9 @@ def run():
                     'libreoffice']
             for pkg in pkgs:
                 try:
-                    libcalamares.utils.target_env_call('sudo pacman -R --noconfirm ' + pkg)
+                    libcalamares.utils.target_env_call(
+                        ['pacman', '-Rns', '--noconfirm', '{!s}' .format(pkg)])
                 except:
-                    print("Could not remove package ")
+                    print("Could not remove package " + pkg)
 
     print('package removal completed')
