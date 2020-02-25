@@ -166,6 +166,7 @@ def run():
                     'system-config-printer',
                     'print-manager',
                     'hplip',
+                    'epson-inkjet-printer-escpr',
                     'pyqt5-python3',
                     'kpat',
                     'kde-telepathy',
