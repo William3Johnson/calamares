@@ -3126,68 +3126,6 @@ Keluaran:
     </message>
 </context>
 <context>
-    <name>notes</name>
-    <message>
-        <location filename="../src/branding/kaos_branding/notes.qml" line="50"/>
-        <source>&lt;h3&gt;KaOS - 2020.02&lt;/h3&gt;
-            &lt;p&gt;A nice way of starting 2020 is to present to you the January release of a new stable ISO.&lt;/p&gt;
-            
-            &lt;p&gt;For the many changes in this release, two stand out.  First one is the addition of signed kernel modules for Linux 5.4. All internal modules are now signed automatically during the kernel build, out of tree modules like virtualbox-modules and NVIDIA packages have the signing added too. Building of those modules was adjusted to use the kernel specific signing files during each and every rebuild. You can harden your system by adding &lt;code&gt;module.sig_enforce=1&lt;/code&gt; to your kernel boot line. To check if your systems contains any unsigned:&lt;/p&gt;
-            
-            &lt;p&gt;&lt;code&gt;for mod in $(lsmod | tail -n +2 | cut -d' ' -f1); do modinfo ${mod} | grep -q 'signature' || echo 'no signature for module: ${mod}' ; done&lt;/code&gt;&lt;/p&gt;
-            
-            &lt;p&gt;Second: To better accommodate hybrid systems and non-free NVIDIA, there is now a switch from libgl to vendor neutral libglvnd. This will make the NVIDIA bumblebee packages obsolete. Xorg-server was updated to 1.20.6, this now includes the needed patches to use Prime instead of Bumblebee. The needed scripts for this are packaged as the &lt;code&gt;prime&lt;/code&gt; package. The hardware-detection scripts and Calamares installer have their code adjusted to use the new Prime option. The availability of NVIDIA hybrid testing hardware was limited, so you might still encounter some issue with Prime.&lt;/p&gt;
-            
-            &lt;p&gt;Work has also continued last month to further remove python2. This time it was removed as makedepend from as many as possible.&lt;/b&gt;
-            
-            &lt;p&gt;You will find KDE Applications 19.12 on this ISO. Highlights of 19.12 include Kdenlive now comes with a spectacular new sound mixer. Dolphin redesigned advanced search options and now you can go backwards and forwards in the history of places you have already visited. KDE-Connect implemented a new Kirigami interface which provides new features for desktop-to-desktop users, such as media control, remote input, device ringing, file transfer and running commands. For Elisa, indexing music files has improved and now supports web radios and ships with a few examples for you to try.&lt;/b&gt;
-            Frameworks is at 5.65.0, Plasma at 5.17.4 and KDE Applications at 19.12.0. All built on Qt 5.14.0.
-            
-            &lt;p&gt;For the installer Calamares, support for non-free NVIDIA with Prime has been added.&lt;/p&gt;
-            
-            &lt;p&gt;Since LibreOffice 6.2, it is now possible to supply this as a pure Qt5/kf5 application.  LibreOffice has thus replaced Calligra as the default Office Application for KaOS.
-            
-            &lt;p&gt;KaOS' creation &lt;strong&gt;Croeso&lt;/strong&gt; (Welsh for welcome) for helping with configuring a new install is included.  It will run on the newly installed system and offers to adjust some 15 commonly used settings and replaces the formerly used, PyQt based first run wizard Kaptan.  It also includes a custom Wallpaper selector, distribution info and news.  It is written in QML and fits well with the Welcome application used in the Live system.  The latter now includes a fully rewritten (also in QML) Installation Guide.&lt;/p&gt;
-            
-            &lt;p&gt;There is an option to verify the authenticity of downloaded KaOS ISO files through GPG signature verification, see the Download page for further details and instructions.&lt;/p&gt;
-            
-            &lt;p&gt;A KaOS specific tool to write ISO files to USB is in use.  Not only does IsoWriter write to USB it also gives the option to recover your USB stick after using it for an ISO, something that regular dd copy or the previously used Imagewriter were not able to do. It includes the option to verify the written USB in comparison to the used ISO file.&lt;/p&gt;
-            
-            &lt;p&gt;Most notable major updates to the base of the system are LLVM/Clang 9.0.1, Glib2 2.62.4, Bison 3.4.2, Python3 3.7.6, Linux 5.4.7, Protobuf 3.11.1, Mesa 19.2.8, NetworkManager 1.22.2, Nano 4.7, GStreamer 1.16.2 and Qt 5.14.0&lt;/p&gt;
-            
-            &lt;p&gt;KaOS repositories no longer provide Qt 4.  It is a good three years ago that development for Qt 4 stopped, late 2015 all support including security fixes ended.  Any application that has not made the transition to Qt 5 in all this time can no longer be supported in KaOS.  Either they actually are no longer maintained or their development is ignoring the implications of building on a possible insecure toolkit.&lt;/p&gt;
-            
-            &lt;p&gt;The artwork includes custom icon themes for light and dark themes. Midna and Midna Dark both create a complete unified look from boot-up all the way through logout.&lt;/p&gt;
-
-            &lt;p&gt;This ISO uses the &lt;b&gt;CRC and finobt enabled&lt;/b&gt; XFS filesystem as default. CRCs enable enhanced error detection due to hardware issues, whilst the format changes also improves crash recovery algorithms and the ability  of  various  tools to validate and repair metadata corruptions when they are found.  The  free  inode  btree does not index used inodes, allowing faster, more consistent inode allocation performance as filesystems age.&lt;/p&gt;
-            
-            &lt;p&gt;&lt;strong&gt;Octopi&lt;/strong&gt; is becoming a very crucial part of full system maintenance for KaOS. It is not just a GUI frontend to pacman. Tools like making sure a mirror is synced before starting any update, looking at the pacman logs, an option to get a paste from a complete snapshot of all info of a system with the SysInfo tool are included. Also included are very simple ways to open files, like copy to clipboard the file path shown in Octopi. To make sure the system doesn't start using too much disk space for the pacman cache, but still giving the user the option to retain some recent packages, the cache-cleaner tool is a great addition. The built-in tool to access &lt;b&gt;KCP&lt;/b&gt; has now a much clearer place with the addition of its own foreign icon in the menu-bar. New added is the option to select custom icons for the systemtray.&lt;/p&gt;
-            
-            &lt;p&gt;For UEFI installs, KaOS uses the simple, transparent but quite powerful systemd-boot as bootloader.&lt;/p&gt;
-            
-            &lt;p&gt;To learn more about the goals and ideas behind KaOS, please read the &lt;b&gt;http://kaosx.us/&lt;/b&gt;, &lt;b&gt;http://kaosx.us/about/&lt;/b&gt;, and &lt;b&gt;http://kaosx.us/faq/&lt;/b&gt; pages.&lt;/p&gt;
-            
-            &lt;p&gt;To avoid any misunderstanding and confusion, KaOS is &lt;b&gt;not based upon, derived of, or inspired by&lt;/b&gt; any one particular distribution. It is completely independent, build entirely from scratch with its own repositories. To read more about this see &lt;b&gt;http://kaosx.us/about/based/&lt;/b&gt;. A &lt;b&gt;rolling release distribution&lt;/b&gt; never has a final release, every ISO is merely a snapshot of the current status of the repositories. An idea what is currently available:&lt;/p&gt;
-            
-            &lt;p&gt;The ISO ships with &lt;b&gt;Frameworks 5.65.0, Plasma 5.17.4, KDE Applications 19.12.0&lt;/b&gt;, Linux 5.4.7, Systemd 243, Kmod 26, NetworkManager 1.22.2, LibreOffice 6.3.4, Krita 4.2.8, Elisa, Xorg-Server 1.20.6, Mesa 19.2.8, Glibc 2.30, GCC 9.2.0, non-free Nvidia 440.44, Pepperflash and Python3 3.7.6 to name a few.&lt;/p&gt;
-            
-            &lt;p&gt;The package manager is &lt;strong&gt;Pacman 5.2.1&lt;/strong&gt;, with the simple but powerful Octopi 0.9.0 as GUI frontend. Falkon is the default web browser, it is Qt based and the successor of Qupzilla. &lt;b&gt;GFXboot&lt;/b&gt; is included with KaOS artwork, Grub theme is Midna, Look &amp;amp; Feel is a KaOS exclusive version Midna.&lt;/p&gt;
-            
-            &lt;p&gt;&lt;b&gt;Repositories&lt;/b&gt; of KaOS will stay limited in size and expect it to stay at the current maximum of about 2100-2200. A gist of what is available, besides the stable kernel there is Linux-next 5.4, LibreOffice 6.3.4,VLC, Vokoscreen, Blender, Kodi, Calibre, Sigil, Vulkan packages, a few games like 0ad and Knights.&lt;br /&gt;
-            A limited number of the most well-known GTK applications are available, examples Firefox 71.0, Chrome 81, Ardour 5.12.0, Inkscape 0.92.4, GIMP 2.10.14 and Google-talkplugin 5.41.3.0.1.&lt;br /&gt;
-            Complete language packs are available for KDE, Calligra, Firefox, LibreOffice and Thunderbird. For IM, Fcitx 4.2.9.6 is available as a rather complete group.&lt;/p&gt;
-            
-            &lt;p&gt;&lt;b&gt;Known issues:&lt;/b&gt;&lt;/p&gt;
-            &lt;ul&gt;
-                &lt;li&gt;Some Intel CPU systems might have an issue kernel’s entropy pool and have a long boot delay, if encountered add &lt;strong&gt;random.trust_cpu=1&lt;/strong&gt; to the kernel boot line.
-                &lt;li&gt;Installing on RAID is currently not possible&lt;/li&gt;
-            &lt;/ul&gt;
-            
-            &lt;p&gt;To create &lt;b&gt;reliable&lt;/b&gt; installation media, please follow the instructions from the &lt;b&gt;http://kaosx.us/download/&lt;/b&gt; page. KaOS&apos;s ISO&apos;s &lt;b&gt;do not support Unetbootin or Rufus&lt;/b&gt;, and DVDs need a burn speed &lt;b&gt;no higher than 4x&lt;/b&gt;.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
-<context>
     <name>notesqml</name>
     <message>
         <location filename="../src/modules/notesqml/notesqml.qml" line="51"/>
