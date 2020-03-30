@@ -58,13 +58,11 @@ QPushButton { background-color: green; }
  * comprehensive list of available icons, though.
  */
 
-/*
-QPushButton#aboutButton { qproperty-icon: url(:/data/images/release.svg); }
-#donateButton,
-#supportButton,
-#releaseNotesButton,
-#knownIssuesButton { qproperty-icon: url(:/data/images/help.svg); }
-*/
+
+QPushButton#aboutButton { qproperty-icon: url(:/data/images/release.svg); },
+QPushButton#donateButton { qproperty-icon: url(:/data/images/release.svg); },
+QPushButton#knownIssuesButton { qproperty-icon: url(:/data/images/release.svg); }
+
 
 /*** Partitioning module.
  *

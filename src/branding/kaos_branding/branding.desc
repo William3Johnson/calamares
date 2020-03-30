@@ -70,10 +70,10 @@ sidebar: widget
 strings:
     productName:         KaOS
     shortProductName:    KaOS
-    version:             2020.02
+    version:             2020.04
     shortVersion:        KaOS
-    versionedName:       KaOS 2020.02
-    shortVersionedName:  KaOS 2020.02
+    versionedName:       KaOS 2020.04
+    shortVersionedName:  KaOS 2020.04
     bootloaderEntryName: KaOS
     productUrl:          https://kaosx.us/
     supportUrl:          https://kaosx.us/docs/
