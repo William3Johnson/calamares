@@ -21,6 +21,7 @@
 #define LOCALE_LABEL_H
 
 #include <QLocale>
+#include <QObject>
 #include <QString>
 
 namespace CalamaresUtils
@@ -35,8 +36,10 @@ namespace Locale
  * translation system) into QLocales, and also into consistent
  * human-readable text labels.
  */
-class Label
+class Label : public QObject
 {
+    Q_OBJECT
+
 public:
     /** @brief Formatting option for label -- add (country) to label. */
     enum class LabelFormat
@@ -46,7 +49,7 @@ public:
     };
 
     /** @brief Empty locale. This uses the system-default locale. */
-    Label();
+    Label( QObject* parent = nullptr );
 
     /** @brief Construct from a locale name.
      *
@@ -54,7 +57,10 @@ public:
      * The @p format determines whether the country name is always present
      * in the label (human-readable form) or only if needed for disambiguation.
      */
-    Label( const QString& localeName, LabelFormat format = LabelFormat::IfNeededWithCountry );
+    Label( const QString& localeName,
+           LabelFormat format = LabelFormat::IfNeededWithCountry,
+           QObject* parent = nullptr );
+
 
     /** @brief Define a sorting order.
      *
@@ -94,8 +100,6 @@ public:
     static QLocale getLocale( const QString& localeName );
 
 protected:
-    void setLabels( const QString& name, LabelFormat format );
-
     QLocale m_locale;
     QString m_localeId;  // the locale identifier, e.g. "en_GB"
     QString m_label;  // the native name of the locale
