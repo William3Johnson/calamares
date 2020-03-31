@@ -75,7 +75,7 @@ WelcomePage::WelcomePage( Config* conf, QWidget* parent )
     CALAMARES_RETRANSLATE_SLOT( &WelcomePage::retranslate )
 
     ui->aboutButton->setIcon( CalamaresUtils::defaultPixmap(
-        CalamaresUtils::Information,
+        CalamaresUtils::Release,
         CalamaresUtils::Original,
         2 * QSize( CalamaresUtils::defaultFontHeight(), CalamaresUtils::defaultFontHeight() ) ) );
     connect( ui->aboutButton, &QPushButton::clicked, this, &WelcomePage::showAboutBox );
@@ -123,17 +123,17 @@ void
 WelcomePage::setupButton( Button role, const QString& url )
 {
     QPushButton* button = nullptr;
-    CalamaresUtils::ImageType icon = CalamaresUtils::Information;
+    CalamaresUtils::ImageType icon = CalamaresUtils::Release;
 
     switch ( role )
     {
     case Button::Donate:
         button = ui->donateButton;
-        icon = CalamaresUtils::Donate;
+        icon = CalamaresUtils::Release;
         break;
     case Button::KnownIssues:
         button = ui->knownIssuesButton;
-        icon = CalamaresUtils::Bugs;
+        icon = CalamaresUtils::Release;
         break;
     case Button::ReleaseNotes:
         button = ui->releaseNotesButton;
