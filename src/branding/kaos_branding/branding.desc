@@ -34,13 +34,24 @@ windowExpanding:    normal
 # *windowExpanding*, above. If not set, use constants defined
 # in CalamaresUtilsGui, 800x520.
 windowSize: 850px,630px
+
+# Placement of Calamares window. Either "center" or "free".
+# Whether "center" actually works does depend on the window
+# manager in use (and only makes sense if you're not using
+# *windowExpanding* set to "fullscreen").
 windowPlacement: center
 
 # Kind of sidebar (panel on the left, showing progress).
 #  - "widget" or unset, use traditional sidebar (logo, items)
 #  - "none", hide it entirely
-#  - "qml", use sidebar.qml from branding folder
+#  - "qml", use calamares-sidebar.qml from branding folder
 sidebar: widget
+
+# Kind of navigation (button panel on the bottom).
+#  - "widget" or unset, use traditional navigation
+#  - "none", hide it entirely
+#  - "qml", use calamares-navigation.qml from branding folder
+navigation: widget
 
 # These are strings shown to the user in the user interface.
 # There is no provision for translating them -- since they
