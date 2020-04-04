@@ -16,6 +16,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
+import io.calamares.core 1.0
 import io.calamares.ui 1.0
 
 import QtQuick 2.10
@@ -28,6 +29,8 @@ import QtQuick.Window 2.3
 Page
 {
     id: welcome
+    width: 800
+        height: 500
 
     header: Item
     {
@@ -40,7 +43,7 @@ Page
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             // In QML, QString::arg() only takes one argument
-            text: qsTr("<h3>Welcome to the %1 <quote>%2</quote> installer</h3>").arg(Branding.string(Branding.ProductName)).arg(Branding.string(Branding.Version))
+            text: qsTr("<h3>Welcome to the KaOS <quote>2020.04</quote> installer</h3>") //.arg(Branding.string(Branding.ProductName)).arg(Branding.string(Branding.Version))
         }
         Image
         {
@@ -49,12 +52,12 @@ Page
             // imagePath() returns a full pathname, so make it refer to the filesystem
             // .. otherwise the path is interpreted relative to the "call site", which
             // .. might be the QRC file.
-            source: "file:/" + Branding.imagePath(Branding.ProductWelcome)
+            source: "file://usr/share/calamares/branding/kaos_branding/languages.png"
             sourceSize.width: width
             sourceSize.height: height
             fillMode: Image.PreserveAspectFit
         }
-
+        
         RowLayout
         {
             id: buttonBar
@@ -92,7 +95,6 @@ Page
                 Kirigami.Theme.textColor: Kirigami.Theme.textColor
 
                 visible: config.supportUrl !== ""
-                //visible: false
                 onClicked: Qt.openUrlExternally(config.supportUrl)
             }
             Button
@@ -127,6 +129,40 @@ Page
 
                 visible: config.donateUrl !== ""
                 onClicked: Qt.openUrlExternally(config.donateUrl)
+            }
+        }
+        RowLayout
+        {
+            id: languageBar
+            width: parent.width /1.2
+            height: 48
+            
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: parent.height /7
+            anchors.horizontalCenter: parent.horizontalCenter
+            spacing: Kirigami.Units.largeSpacing* 4
+            
+            Rectangle {
+                width: parent.width
+                Layout.fillWidth: true
+                focus: true
+                Image {
+                    id: image
+                    height: 48
+                    fillMode: Image.PreserveAspectFit
+                    source: "img/language-icon-48px.png"
+                }
+                
+                ListView {
+                    id: languages
+                    anchors.left: image.right
+                    ComboBox {
+                        width: languageBar.width /1.1
+                        model: config.languagesModel
+                        textRole: "languages"
+                    //    model: [ "American English", "Apple", "Coconut", "Banana", "Apple", "Coconut", "Banana", "Apple", //"Coconut", "Banana", "Apple", "Coconut" ]
+                    }
+                }
             }
         }
         Loader

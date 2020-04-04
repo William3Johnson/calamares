@@ -45,13 +45,13 @@ windowPlacement: center
 #  - "widget" or unset, use traditional sidebar (logo, items)
 #  - "none", hide it entirely
 #  - "qml", use calamares-sidebar.qml from branding folder
-sidebar: widget
+sidebar: widgets
 
 # Kind of navigation (button panel on the bottom).
 #  - "widget" or unset, use traditional navigation
 #  - "none", hide it entirely
 #  - "qml", use calamares-navigation.qml from branding folder
-navigation: widget
+navigation: qml
 
 # These are strings shown to the user in the user interface.
 # There is no provision for translating them -- since they
