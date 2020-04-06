@@ -29,8 +29,6 @@ import QtQuick.Window 2.3
 Page
 {
     id: welcome
-    width: 800
-        height: 500
 
     header: Item
     {
@@ -43,7 +41,7 @@ Page
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             // In QML, QString::arg() only takes one argument
-            text: qsTr("<h3>Welcome to the KaOS <quote>2020.04</quote> installer</h3>") //.arg(Branding.string(Branding.ProductName)).arg(Branding.string(Branding.Version))
+            text: qsTr("<h3>Welcome to the %1 <quote>%2</quote> installer</h3>").arg(Branding.string(Branding.ProductName)).arg(Branding.string(Branding.Version))
         }
         Image
         {
@@ -52,12 +50,12 @@ Page
             // imagePath() returns a full pathname, so make it refer to the filesystem
             // .. otherwise the path is interpreted relative to the "call site", which
             // .. might be the QRC file.
-            source: "file://usr/share/calamares/branding/kaos_branding/languages.png"
+            source: "file:/" + Branding.imagePath(Branding.ProductWelcome)
             sourceSize.width: width
             sourceSize.height: height
             fillMode: Image.PreserveAspectFit
         }
-        
+
         RowLayout
         {
             id: buttonBar
@@ -153,15 +151,17 @@ Page
                     source: "img/language-icon-48px.png"
                 }
                 
-                ListView {
+                ComboBox {
                     id: languages
                     anchors.left: image.right
-                    ComboBox {
-                        width: languageBar.width /1.1
+                    width: languageBar.width /1.1
+                    textRole: "languages"
+                    //Repeater {
                         model: config.languagesModel
-                        textRole: "languages"
-                    //    model: [ "American English", "Apple", "Coconut", "Banana", "Apple", "Coconut", "Banana", "Apple", //"Coconut", "Banana", "Apple", "Coconut" ]
-                    }
+                        //Text { 
+                        //    text: label 
+                        //}
+                    //}
                 }
             }
         }

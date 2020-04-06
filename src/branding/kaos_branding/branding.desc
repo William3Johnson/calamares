@@ -45,7 +45,7 @@ windowPlacement: center
 #  - "widget" or unset, use traditional sidebar (logo, items)
 #  - "none", hide it entirely
 #  - "qml", use calamares-sidebar.qml from branding folder
-sidebar: widgets
+sidebar: widget
 
 # Kind of navigation (button panel on the bottom).
 #  - "widget" or unset, use traditional navigation
