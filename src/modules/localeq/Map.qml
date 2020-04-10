@@ -22,8 +22,8 @@ Rectangle {
         anchors.fill: parent
         plugin: mapPlugin
         activeMapType: supportedMapTypes[0]
-        center: QtPositioning.coordinate(40.730610, -73.935242) // New York
-        zoomLevel: 6
+        center: marker.coordinate
+        zoomLevel: 5
         bearing: 0
         tilt: 0
         copyrightsVisible : true
@@ -33,7 +33,7 @@ Rectangle {
             id: marker
             anchorPoint.x: image.width/4
             anchorPoint.y: image.height
-            coordinate: QtPositioning.coordinate(40.730610, -73.935242)
+            coordinate: QtPositioning.coordinate(40.730610, -73.935242) // New York
 
             sourceItem: Image {
                 id: image
@@ -43,14 +43,13 @@ Rectangle {
             }
         }
         MouseArea {
-			acceptedButtons: Qt.LeftButton | Qt.RightButton
+            acceptedButtons: Qt.LeftButton | Qt.RightButton
             anchors.fill: map
-			hoverEnabled: true
             
             onClicked: {
                 marker.coordinate = map.toCoordinate(Qt.point(mouse.x,mouse.y))
             }
-		}
+        }
     }
     Column {
         anchors.top: parent.top
@@ -60,16 +59,15 @@ Rectangle {
         
         Button {
             width: 40
-            icon.name: "arrow-up"
+            icon.source: "plus.svg"
 
             onClicked: map.zoomLevel++
         }
         Button {
             width: 40
-            icon.name: "arrow-down"
+            icon.source: "minus.svg"
 
             onClicked: map.zoomLevel--
         }
     }
-    
 }

@@ -74,6 +74,7 @@ Page
             Button
             {
                 width: parent.width /6
+                Layout.fillWidth: true
                 text: qsTr("About")
                 icon.name: "dialog-information"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -88,6 +89,7 @@ Page
             Button
             {
                 width: parent.width /6
+                Layout.fillWidth: true
                 text: qsTr("Support")
                 icon.name: "system-help"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -99,6 +101,7 @@ Page
             Button
             {
                 width: parent.width /6
+                Layout.fillWidth: true
                 text: qsTr("Known issues")
                 icon.name: "tools-report-bug"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -110,6 +113,7 @@ Page
             Button
             {
                 width: parent.width /6
+                Layout.fillWidth: true
                 text: qsTr("Release notes")
                 icon.name: "folder-text"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -121,6 +125,7 @@ Page
             Button
             {
                 width: parent.width /6
+                Layout.fillWidth: true
                 text: qsTr("Donate")
                 icon.name: "taxes-finances"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
