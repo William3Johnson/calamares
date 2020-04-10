@@ -8,7 +8,7 @@ import org.kde.kirigami 2.7 as Kirigami
 
 Page
 {
-    Marble  {
+    Map  {
         id: image
         anchors.horizontalCenter: parent.horizontalCenter
     }
@@ -16,6 +16,7 @@ Page
     RowLayout {
  
         anchors.top: image.bottom
+        anchors.topMargin: 5
         width: parent.width
         Kirigami.FormLayout {
             id: layout
@@ -23,9 +24,10 @@ Page
 
             ComboBox {
                 Kirigami.FormData.label: qsTr("Region: ")
-                model: ["Africa", "America","Europe" ]
-                currentIndex: 1
-                //model: config.regionModel
+                currentIndex: model.currentIndex
+                textRole: "label"
+                model: config.regionModel
+                onCurrentIndexChanged: console.debug(currentIndex)
             }
             Kirigami.Separator {
                 Kirigami.FormData.isSection: true
@@ -44,9 +46,10 @@ Page
 
             ComboBox {
                 Kirigami.FormData.label: qsTr("Zone: ")
-                model: ["Amsterdam", "Berlin", "New York"]
-                currentIndex: 2
-                //model: config.zonesModel
+                currentIndex: model.currentIndex
+                textRole: "label"
+                model: config.zonesModel
+                onCurrentIndexChanged: console.debug(currentIndex)
             }
             Kirigami.Separator {
                 Kirigami.FormData.isSection: true
