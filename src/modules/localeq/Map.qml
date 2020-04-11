@@ -45,9 +45,16 @@ Rectangle {
         MouseArea {
             acceptedButtons: Qt.LeftButton | Qt.RightButton
             anchors.fill: map
+            hoverEnabled: true
+            property var coordinate: map.toCoordinate(Qt.point(mouseX, mouseY))
+            Label {
+                x: parent.mouseX - width
+                y: parent.mouseY - height - 5
+                text: "%1, %2".arg(parent.coordinate.latitude).arg(parent.coordinate.longitude)
+            }
             
             onClicked: {
-                marker.coordinate = map.toCoordinate(Qt.point(mouse.x,mouse.y))
+                marker.coordinate = coordinate
             }
         }
     }
@@ -57,15 +64,18 @@ Rectangle {
         anchors.topMargin: 10
         anchors.rightMargin: 10
         
-        Button {
-            width: 40
-            icon.source: "plus.svg"
+        RoundButton {
+            width: 25
+            height:38
+            text: "+"
 
             onClicked: map.zoomLevel++
         }
-        Button {
-            width: 40
-            icon.source: "minus.svg"
+        RoundButton {
+            width: 25
+            height:38
+            text: "-"
+            font { pointSize: 20 }
 
             onClicked: map.zoomLevel--
         }

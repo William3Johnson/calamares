@@ -2,8 +2,6 @@
     <qresource>
         <file>localeq.qml</file>
         <file>Map.qml</file>
-        <file>minus.svg</file>
         <file>pin.svg</file>
-        <file>plus.svg</file>
     </qresource>
 </RCC>
