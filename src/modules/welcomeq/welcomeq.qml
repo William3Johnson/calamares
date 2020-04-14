@@ -30,21 +30,18 @@ Page
 {
     id: welcome
 
-    header: Item
-    {
+    header: Item {
         width: parent.width
         height: parent.height
 
-        Text
-        {
+        Text {
             id: welcomeTopText
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             // In QML, QString::arg() only takes one argument
             text: qsTr("<h3>Welcome to the %1 <quote>%2</quote> installer</h3>").arg(Branding.string(Branding.ProductName)).arg(Branding.string(Branding.Version))
         }
-        Image
-        {
+        Image {
             id: welcomeImage
             anchors.centerIn: parent
             // imagePath() returns a full pathname, so make it refer to the filesystem
@@ -56,8 +53,7 @@ Page
             fillMode: Image.PreserveAspectFit
         }
 
-        RowLayout
-        {
+        RowLayout {
             id: buttonBar
             Layout.fillWidth: true
             height: 64
@@ -71,10 +67,9 @@ Page
  * Calamares itself, which just isn't a very useful thing in someone
  * else's installation ISO.
  */
-            Button
-            {
-                width: parent.width /6
+            Button {
                 Layout.fillWidth: true
+                width: parent.width /6
                 text: qsTr("About")
                 icon.name: "dialog-information"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -86,10 +81,10 @@ Page
                     onClicked: load.source = "about.qml"
                 }
             }
-            Button
-            {
-                width: parent.width /6
+            
+            Button {
                 Layout.fillWidth: true
+                width: parent.width /6
                 text: qsTr("Support")
                 icon.name: "system-help"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -98,10 +93,10 @@ Page
                 visible: config.supportUrl !== ""
                 onClicked: Qt.openUrlExternally(config.supportUrl)
             }
-            Button
-            {
-                width: parent.width /6
+            
+            Button {
                 Layout.fillWidth: true
+                width: parent.width /6
                 text: qsTr("Known issues")
                 icon.name: "tools-report-bug"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -110,10 +105,10 @@ Page
                 visible: config.knownIssuesUrl !== ""
                 onClicked: Qt.openUrlExternally(config.knownIssuesUrl)
             }
-            Button
-            {
-                width: parent.width /6
+            
+            Button {
                 Layout.fillWidth: true
+                width: parent.width /6
                 text: qsTr("Release notes")
                 icon.name: "folder-text"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -122,10 +117,10 @@ Page
                 visible: config.releaseNotesUrl !== ""
                 onClicked: Qt.openUrlExternally(config.releaseNotesUrl)
             }
-            Button
-            {
-                width: parent.width /6
+            
+            Button {
                 Layout.fillWidth: true
+                width: parent.width /6
                 text: qsTr("Donate")
                 icon.name: "taxes-finances"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -135,8 +130,8 @@ Page
                 onClicked: Qt.openUrlExternally(config.donateUrl)
             }
         }
-        RowLayout
-        {
+        
+        RowLayout {
             id: languageBar
             width: parent.width /1.2
             height: 48
@@ -162,14 +157,14 @@ Page
                     anchors.left: image.right
                     width: languageBar.width /1.1
                     textRole: "label"
-                    currentIndex: 4 //model.matchedLocaleIndex
+                    currentIndex: 4 //model.currentIndex
                     model: config.languagesModel
-                    onCurrentIndexChanged: console.debug(currentIndex)
+                    onCurrentIndexChanged: console.debug(currentText, currentIndex)
                 }
             }
         }
-        Loader
-        { 
+        
+        Loader { 
             id:load 
             anchors.fill: parent
         }

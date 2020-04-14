@@ -35,18 +35,19 @@ Page
     RowLayout {
  
         anchors.top: image.bottom
-        anchors.topMargin: 5
         width: parent.width
+        
         Kirigami.FormLayout {
-            id: layout
+            id: region
             Layout.fillWidth: true
 
             ComboBox {
-                Kirigami.FormData.label: qsTr("Region: ")
+                Kirigami.FormData.label: qsTr("Country: ")
+                id: regionIndex
                 currentIndex: model.currentIndex
                 textRole: "label"
                 model: config.regionModel
-                onCurrentIndexChanged: console.debug(currentIndex)
+                onCurrentIndexChanged: console.debug(currentText, currentIndex)
             }
             Kirigami.Separator {
                 Kirigami.FormData.isSection: true
@@ -64,11 +65,12 @@ Page
             Layout.fillWidth: true
 
             ComboBox {
-                Kirigami.FormData.label: qsTr("Zone: ")
+                Kirigami.FormData.label: qsTr("City: ")
+                id: zoneIndex
                 currentIndex: model.currentIndex
                 textRole: "label"
                 model: config.zonesModel
-                onCurrentIndexChanged: console.debug(currentIndex)
+                onCurrentIndexChanged: console.debug(currentText, currentIndex)
             }
             Kirigami.Separator {
                 Kirigami.FormData.isSection: true
