@@ -28,7 +28,7 @@ import org.kde.kirigami 2.7 as Kirigami
 Page
 {
     width: 800
-    height: 520
+    height: 550
     
     property var confLang: "American English"
     property var confLocale: "American English"
