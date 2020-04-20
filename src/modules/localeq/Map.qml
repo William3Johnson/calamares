@@ -20,6 +20,7 @@ import QtQuick 2.10
 import QtQuick.Controls 2.10
 import QtQuick.Window 2.14
 import QtQuick.Layouts 1.3
+
 import org.kde.kirigami 2.7 as Kirigami
 
 import QtLocation 5.14
@@ -28,10 +29,17 @@ import QtPositioning 5.14
 Column {
     width: parent.width
     
+    //Needs to come from .conf/geoip
     property var configCity: "New York"
     property var configCountry: "USA"
+    property var configTimezone: "America/New York"
     property var geoipCity: "" //"Amsterdam"
     property var geoipCountry: "" //"Netherlands"
+    property var geoipTimezone: "" //"Europe/Amsterdam"
+    // vars that will stay once connected
+    property var cityName: (geoipCity != "") ? geoipCity : configCity
+    property var countryName: (geoipCountry != "") ? geoipCountry : configCountry
+    property var timeZone: (geoipTimezone != "") ? geoipTimezone : configTimezone
     
     Rectangle {
         width: parent.width
@@ -60,16 +68,8 @@ Column {
                 query: Address {
                     id: address
                     //street: "14th Street"
-                    city: {
-                        city = geoipCity 
-                        if(geoipCity == "")
-                            city = configCity
-                    }
-                    country: {
-                        country = geoipCountry 
-                        if(geoipCountry == "")
-                            country = configCountry
-                    }
+                    city: cityName
+                    country: countryName
                     //countryCode: "US"
                 }
                 
@@ -94,12 +94,12 @@ Column {
                     id: image
                     width: 48
                     height: 48
-                    source: "pin.svg"
+                    source: "img/pin.svg"
                 }
             }
             
             MouseArea {
-                acceptedButtons: Qt.LeftButton | Qt.RightButton
+                acceptedButtons: Qt.LeftButton
                 anchors.fill: map
                 hoverEnabled: true
                 property var coordinate: map.toCoordinate(Qt.point(mouseX, mouseY))
@@ -114,13 +114,12 @@ Column {
                     marker.coordinate = coordinate
                     map.center.latitude = coordinate.latitude
                     map.center.longitude = coordinate.longitude
-                    
+                    //Reverse geocoding, using coordinates to create addresses 
                     geocodeModel.query = QtPositioning.coordinate(coordinate.latitude, coordinate.longitude)
                     
-                    configCity = coordinate.latitude
-                    configCountry = coordinate.longitude
+                    timeZone = geocodeModel.query
                         
-                    console.log(coordinate.latitude, coordinate.longitude, geocodeModel.query)
+                    console.log(coordinate.latitude, coordinate.longitude)
                 }
             }
         }
@@ -162,11 +161,12 @@ Column {
             
             Rectangle {
                 anchors.centerIn: parent
-                width: 200
+                width: 300
                 height: 30
                 color: Kirigami.Theme.backgroundColor
+                
                 Text {
-                    text: qsTr("%1 - %2").arg(configCity).arg(configCountry)
+                    text: qsTr("Timezone: %1").arg(timeZone)
                     color: Kirigami.Theme.textColor
                     anchors.centerIn: parent
                 }

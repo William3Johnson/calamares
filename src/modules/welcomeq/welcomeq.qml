@@ -55,7 +55,7 @@ Page
 
         RowLayout {
             id: buttonBar
-            Layout.fillWidth: true
+            width: parent.width / 1.5
             height: 64
 
             anchors.bottom: parent.bottom
@@ -69,7 +69,7 @@ Page
  */
             Button {
                 Layout.fillWidth: true
-                width: parent.width /6
+                //width: parent.width /6
                 text: qsTr("About")
                 icon.name: "dialog-information"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -84,7 +84,7 @@ Page
             
             Button {
                 Layout.fillWidth: true
-                width: parent.width /6
+                //width: parent.width /6
                 text: qsTr("Support")
                 icon.name: "system-help"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -96,7 +96,7 @@ Page
             
             Button {
                 Layout.fillWidth: true
-                width: parent.width /6
+                //width: parent.width /6
                 text: qsTr("Known issues")
                 icon.name: "tools-report-bug"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)

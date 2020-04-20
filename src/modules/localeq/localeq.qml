@@ -31,7 +31,7 @@ Page
     height: 550
     
     property var confLang: "American English"
-    property var confLocale: "American English"
+    property var confLocale: "Nederland"
     
     Map  {
         id: image
@@ -61,50 +61,10 @@ Page
                     Layout.preferredWidth: height
                 }
                 ColumnLayout {
-                    Kirigami.Heading {
-                        level: 2
-                        text: qsTr("Language ")
-                    }
-                    Kirigami.Separator {
-                        Layout.fillWidth: true
-                    }
                     Label {
                         Layout.fillWidth: true
                         wrapMode: Text.WordWrap
                         text: qsTr("System language set to %1").arg(confLang)
-                    }
-                }
-                Button {
-                    Layout.alignment: Qt.AlignRight|Qt.AlignVCenter
-                    Layout.columnSpan: 2 
-                    text: qsTr("Change")
-                    onClicked: console.log("Adjust Language clicked");
-                }
-            }
-        }
-        
-        Kirigami.FormLayout {
-            id: locale
-            
-            GridLayout {
-                anchors {
-                    left: parent.left
-                    top: parent.top
-                    right: parent.right
-                }
-                rowSpacing: Kirigami.Units.largeSpacing
-                columnSpacing: Kirigami.Units.largeSpacing
-
-                Kirigami.Icon {
-                    source: "application-x-gettext-translation"
-                    Layout.fillHeight: true
-                    Layout.maximumHeight: Kirigami.Units.iconSizes.medium
-                    Layout.preferredWidth: height
-                }
-                ColumnLayout {
-                    Kirigami.Heading {
-                        level: 2
-                        text: qsTr("Locale ")
                     }
                     Kirigami.Separator {
                         Layout.fillWidth: true
@@ -119,9 +79,19 @@ Page
                     Layout.alignment: Qt.AlignRight|Qt.AlignVCenter
                     Layout.columnSpan: 2 
                     text: qsTr("Change")
-                    onClicked: console.log("Adjust Locale clicked");
+                    //onClicked: console.log("Adjust Language clicked");
+                    onClicked: { 
+                        onClicked: load.source = "i18n.qml"
+                    }
                 }
             }
         }
+        
+        
+        
     }
+    Loader { 
+            id:load 
+            anchors.fill: parent
+        }
 }
