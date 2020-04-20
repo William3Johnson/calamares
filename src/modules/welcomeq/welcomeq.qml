@@ -38,8 +38,11 @@ Page
             id: welcomeTopText
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
+            horizontalAlignment: Text.AlignHCenter
+            padding: 40
             // In QML, QString::arg() only takes one argument
-            text: qsTr("<h3>Welcome to the %1 <quote>%2</quote> installer</h3>").arg(Branding.string(Branding.ProductName)).arg(Branding.string(Branding.Version))
+            text: qsTr("<h3>Welcome to the %1 <quote>%2</quote> installer</h3>
+            <p>This program will ask you some questions and set up %1 on your computer.</p>").arg(Branding.string(Branding.ProductName)).arg(Branding.string(Branding.Version))
         }
         Image {
             id: welcomeImage
@@ -63,13 +66,8 @@ Page
 
             spacing: Kirigami.Units.largeSpacing* 2
 
-/* Traditionally Calamares has had an "About" button that talks about
- * Calamares itself, which just isn't a very useful thing in someone
- * else's installation ISO.
- */
             Button {
                 Layout.fillWidth: true
-                //width: parent.width /6
                 text: qsTr("About")
                 icon.name: "dialog-information"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -77,14 +75,12 @@ Page
                 
                 visible: true
                 onClicked: { 
-                    //onClicked: load.source = "file:/usr/share/calamares/branding/kaos_branding/show.qml"
                     onClicked: load.source = "about.qml"
                 }
             }
             
             Button {
                 Layout.fillWidth: true
-                //width: parent.width /6
                 text: qsTr("Support")
                 icon.name: "system-help"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -96,7 +92,6 @@ Page
             
             Button {
                 Layout.fillWidth: true
-                //width: parent.width /6
                 text: qsTr("Known issues")
                 icon.name: "tools-report-bug"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -108,7 +103,6 @@ Page
             
             Button {
                 Layout.fillWidth: true
-                width: parent.width /6
                 text: qsTr("Release notes")
                 icon.name: "folder-text"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
@@ -120,7 +114,6 @@ Page
             
             Button {
                 Layout.fillWidth: true
-                width: parent.width /6
                 text: qsTr("Donate")
                 icon.name: "taxes-finances"
                 Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
