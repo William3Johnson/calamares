@@ -32,10 +32,18 @@ Page
     
     property var confLang: "American English"
     property var confLocale: "Nederland"
+    //Needs to come from .conf/geoip
+    property var geoipCountry: "Netherlands"
     
     Map  {
         id: image
         anchors.horizontalCenter: parent.horizontalCenter
+        visible: true
+    }
+    
+    Offline  {
+        anchors.horizontalCenter: parent.horizontalCenter
+        visible: geoipCountry == ""
     }
     
     RowLayout {
