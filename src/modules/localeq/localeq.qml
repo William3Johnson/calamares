@@ -33,7 +33,7 @@ Page
     property var confLang: "American English"
     property var confLocale: "Nederland"
     //Needs to come from .conf/geoip
-    property var geoipCountry: "Netherlands"
+    property var geoipCountry: "" // "Netherlands"
     
     Map  {
         id: image
