@@ -41,6 +41,47 @@ Column {
     property var countryName: (geoipCountry != "") ? geoipCountry : configCountry
     property var timeZone: (geoipTimezone != "") ? geoipTimezone : configTimezone
     
+    function getIp() {
+        var xhr = new XMLHttpRequest
+        
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                var responseJSON = JSON.parse(xhr.responseText)
+                var tz = responseJSON.timezone
+                var ct = responseJSON.city
+                var cy = responseJSON.country
+
+                tzText.text = "Timezone: " + tz
+                cityName = ct
+                countryName = cy
+            }
+        }
+        
+        // Define the target of the request
+        xhr.open("GET", "https://get.geojs.io/v1/ip/geo.json")
+        // Execute the request
+        xhr.send()
+    }
+    
+    function getTz() {
+        var xhr = new XMLHttpRequest
+        var latC = map.center.latitude
+        var lonC = map.center.longitude
+        
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                var responseJSON = JSON.parse(xhr.responseText)
+                var tz2 = responseJSON.timezoneId
+
+                tzText.text = "Timezone: " + tz2
+            }
+        }
+        
+        xhr.open("GET", "http://api.geonames.org/timezoneJSON?lat=" + latC + "&lng=" + lonC + "&username=demm")
+        //xhr.open("GET", "http://api.geonames.org/timezoneJSON?lat=40.730610&lng=-73.935242&username=demm")
+        xhr.send()
+    }
+    
     Rectangle {
         width: parent.width
         height: parent.height / 1.28
@@ -115,9 +156,11 @@ Column {
                     map.center.latitude = coordinate.latitude
                     map.center.longitude = coordinate.longitude
                     //Reverse geocoding, using coordinates to create addresses 
-                    geocodeModel.query = QtPositioning.coordinate(coordinate.latitude, coordinate.longitude)
+                    //geocodeModel.query = QtPositioning.coordinate(coordinate.latitude, coordinate.longitude)
+                    getTz();
                     
-                    timeZone = geocodeModel.query
+                    //timeZone = geocodeModel.query
+                    //tzText.text = tz2Text.text
                         
                     console.log(coordinate.latitude, coordinate.longitude)
                 }
@@ -166,10 +209,14 @@ Column {
                 color: Kirigami.Theme.backgroundColor
                 
                 Text {
-                    text: qsTr("Timezone: %1").arg(timeZone)
+                    id: tzText
+                    text: tzText.text
+                    //text: qsTr("Timezone: %1").arg(timeZone)
                     color: Kirigami.Theme.textColor
                     anchors.centerIn: parent
                 }
+                
+                Component.onCompleted: getIp();
             }
         }
         
