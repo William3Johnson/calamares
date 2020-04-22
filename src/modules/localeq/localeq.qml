@@ -17,8 +17,8 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-//import io.calamares.core 1.0
-//import io.calamares.ui 1.0
+import io.calamares.core 1.0
+import io.calamares.ui 1.0
 
 import QtQuick 2.10
 import QtQuick.Controls 2.10
@@ -33,9 +33,7 @@ Page
     property var confLang: "American English"
     property var confLocale: "Nederland"
     //Needs to come from .conf/geoip
-    property var hasInternet: false
-    
-    //Component.onCompleted: geoipCountry();
+    property var hasInternet: true
     
     Loader {
         id: image
