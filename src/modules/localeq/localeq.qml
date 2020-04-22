@@ -33,21 +33,21 @@ Page
     property var confLang: "American English"
     property var confLocale: "Nederland"
     //Needs to come from .conf/geoip
-    property var geoipCountry: "Netherlands"
+    property var hasInternet: false
     
-    Map  {
+    //Component.onCompleted: geoipCountry();
+    
+    Loader {
         id: image
         anchors.horizontalCenter: parent.horizontalCenter
-        visible: true
-    }
-    
-    Offline  {
-        anchors.horizontalCenter: parent.horizontalCenter
-        visible: geoipCountry == ""
+        width: parent.width
+        height: parent.height / 1.28
+        source: (hasInternet) ? "Map.qml" : "Offline.qml"
     }
     
     RowLayout {
-        anchors.top: image.bottom
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin : 20
         width: parent.width
         
         Kirigami.FormLayout {
@@ -99,7 +99,7 @@ Page
         
     }
     Loader { 
-            id:load 
-            anchors.fill: parent
-        }
+        id:load 
+        anchors.fill: parent
+    }
 }

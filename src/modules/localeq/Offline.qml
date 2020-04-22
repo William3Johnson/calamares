@@ -32,9 +32,6 @@ Column {
     Rectangle {
         width: parent.width
         height: parent.height / 1.28
-        MouseArea {
-            anchors.fill: parent
-        }
 
         Image {
             id: image

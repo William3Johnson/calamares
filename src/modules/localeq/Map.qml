@@ -133,8 +133,8 @@ Column {
 
                 sourceItem: Image {
                     id: image
-                    width: 48
-                    height: 48
+                    width: 32
+                    height: 32
                     source: "img/pin.svg"
                 }
             }
@@ -155,12 +155,8 @@ Column {
                     marker.coordinate = coordinate
                     map.center.latitude = coordinate.latitude
                     map.center.longitude = coordinate.longitude
-                    //Reverse geocoding, using coordinates to create addresses 
-                    //geocodeModel.query = QtPositioning.coordinate(coordinate.latitude, coordinate.longitude)
+
                     getTz();
-                    
-                    //timeZone = geocodeModel.query
-                    //tzText.text = tz2Text.text
                         
                     console.log(coordinate.latitude, coordinate.longitude)
                 }
@@ -168,23 +164,35 @@ Column {
         }
         
         Column {
-            anchors.top: parent.top
+            anchors.bottom: parent.bottom
             anchors.right: parent.right
-            anchors.topMargin: 10
+            anchors.bottomMargin: 5
             anchors.rightMargin: 10
             
-            RoundButton {
-                width: 25
-                height:38
-                text: "+"
+            MouseArea {
+                width: 32
+                height:32
+                cursorShape: Qt.PointingHandCursor
+                Image {
+                    source: "img/plus.png"
+                    anchors.centerIn: parent
+                    width: 36
+                    height: 36
+                }
 
                 onClicked: map.zoomLevel++
             }
             
-            RoundButton {
-                width: 25
-                height:38
-                text: "-"
+            MouseArea {
+                width: 32
+                height:32
+                cursorShape: Qt.PointingHandCursor
+                Image {
+                    source: "img/minus.png"
+                    anchors.centerIn: parent
+                    width: 32
+                    height: 32
+                }
 
                 onClicked: map.zoomLevel--
             }
@@ -228,7 +236,9 @@ Column {
             wrapMode: Text.WordWrap
             horizontalAlignment: Text.AlignHCenter
             Kirigami.Theme.backgroundColor: Kirigami.Theme.backgroundColor
-            text: qsTr("Please select your preferred location on the map so the installer can suggest the locale and timezone settings for you. You can fine-tune the suggested settings below. Search the map by dragging to move and using the +/- buttons to zoom in/out or use mouse scrolling for zooming.")
+            text: qsTr("Please select your preferred location on the map so the installer can suggest the locale
+            and timezone settings for you. You can fine-tune the suggested settings below. Search the map by dragging
+            to move and using the +/- buttons to zoom in/out or use mouse scrolling for zooming.")
         }
     }
 }
