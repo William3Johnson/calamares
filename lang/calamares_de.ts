@@ -453,17 +453,17 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="172"/>
         <source>&amp;Back</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Zurück</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="184"/>
         <source>&amp;Next</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Weiter</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="197"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>Abbre&amp;chen</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="286"/>
@@ -694,17 +694,17 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/keyboard/Config.cpp" line="348"/>
         <source>Set keyboard model to %1.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Tastaturmodell auf %1 festlegen.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/Config.cpp" line="355"/>
         <source>Set keyboard layout to %1/%2.</source>
-        <translation type="unfinished"/>
+        <translation>Tastaturbelegung auf %1/%2 festlegen.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/Config.cpp" line="272"/>
         <source>The system language will be set to %1.</source>
-        <translation type="unfinished"/>
+        <translation>Die Systemsprache wird auf %1 festgelegt.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/Config.cpp" line="273"/>
@@ -714,7 +714,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/locale/Config.cpp" line="306"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Zeitzone auf %1/%2 festlegen.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="54"/>
@@ -1413,7 +1413,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/keyboardq/KeyboardQmlViewStep.cpp" line="42"/>
         <source>Keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Tastatur</translation>
     </message>
 </context>
 <context>
@@ -1716,7 +1716,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="62"/>
         <source>Timezone: %1</source>
-        <translation type="unfinished"/>
+        <translation>Zeitzone: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="77"/>
@@ -1992,7 +1992,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/packagechooser/page_package.ui" line="69"/>
         <source>Long Product Description</source>
-        <translation type="unfinished"/>
+        <translation>Lange Produktbeschreibung</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/PackageChooserPage.cpp" line="34"/>
@@ -2072,7 +2072,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="144"/>
         <source>login</source>
-        <translation type="unfinished"/>
+        <translation>Anmelden</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="243"/>
@@ -2104,7 +2104,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="454"/>
         <source>Require strong passwords.</source>
-        <translation type="unfinished"/>
+        <translation>Starke Passwörter verlangen.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="461"/>
@@ -2554,7 +2554,7 @@ Ausgabe:
     <message>
         <location filename="../src/modules/machineid/Workers.cpp" line="74"/>
         <source>Path &lt;pre&gt;%1&lt;/pre&gt; must be an absolute path.</source>
-        <translation type="unfinished"/>
+        <translation>Pfad &lt;pre&gt;%1&lt;/pre&gt; muss ein absoluter Pfad sein.</translation>
     </message>
     <message>
         <location filename="../src/modules/machineid/Workers.cpp" line="103"/>
@@ -3272,7 +3272,7 @@ Ausgabe:
     <message>
         <location filename="../src/modules/welcomeq/about.qml" line="105"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Zurück</translation>
     </message>
 </context>
 <context>
@@ -3280,7 +3280,7 @@ Ausgabe:
     <message>
         <location filename="../src/calamares/calamares-sidebar2.qml" line="75"/>
         <source>Show debug information</source>
-        <translation type="unfinished"/>
+        <translation>Fehlersuchinformationen anzeigen</translation>
     </message>
 </context>
 <context>
@@ -3300,7 +3300,7 @@ Ausgabe:
     <message>
         <location filename="../src/modules/localeq/i18n.qml" line="171"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Zurück</translation>
     </message>
 </context>
 <context>
@@ -3308,7 +3308,7 @@ Ausgabe:
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="25"/>
         <source>Keyboard Model</source>
-        <translation type="unfinished"/>
+        <translation>Tastaturmodell</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="26"/>
@@ -3330,22 +3330,22 @@ Ausgabe:
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="79"/>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="139"/>
         <source>Keyboard Layout</source>
-        <translation type="unfinished"/>
+        <translation>Tastaturbelegung</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="101"/>
         <source>Models</source>
-        <translation type="unfinished"/>
+        <translation>Modelle</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="109"/>
         <source>Variants</source>
-        <translation type="unfinished"/>
+        <translation>Varianten</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="189"/>
         <source>Test your keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Testen Sie Ihre Tastatur</translation>
     </message>
 </context>
 <context>
@@ -3353,7 +3353,7 @@ Ausgabe:
     <message>
         <location filename="../src/modules/localeq/localeq.qml" line="73"/>
         <source>System language set to %1</source>
-        <translation type="unfinished"/>
+        <translation>Systemsprache auf %1 festgelegt</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/localeq.qml" line="81"/>
@@ -3363,7 +3363,7 @@ Ausgabe:
     <message>
         <location filename="../src/modules/localeq/localeq.qml" line="87"/>
         <source>Change</source>
-        <translation type="unfinished"/>
+        <translation>Ändern</translation>
     </message>
 </context>
 <context>
@@ -3405,7 +3405,7 @@ Ausgabe:
     <message>
         <location filename="../src/modules/welcomeq/release_notes.qml" line="85"/>
         <source>&lt; Back</source>
-        <translation type="unfinished"/>
+        <translation>&lt; Zurück</translation>
     </message>
 </context>
 <context>
@@ -3462,7 +3462,7 @@ Ausgabe:
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="71"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Über</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="84"/>
@@ -3472,17 +3472,17 @@ Ausgabe:
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="95"/>
         <source>Known issues</source>
-        <translation type="unfinished"/>
+        <translation>Bekannte Schwierigkeiten</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="106"/>
         <source>Release notes</source>
-        <translation type="unfinished"/>
+        <translation>Versionshinweise</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="118"/>
         <source>Donate</source>
-        <translation type="unfinished"/>
+        <translation>Spenden</translation>
     </message>
 </context>
 </TS>

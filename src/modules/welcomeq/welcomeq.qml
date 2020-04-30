@@ -110,7 +110,7 @@ Page
 
                 visible: config.releaseNotesUrl !== ""
                 //onClicked: load.source = "release_notes.qml"
-                onClicked: load.source = "file:/usr/share/calamares/release_notes.qml"
+                onClicked: load.source = "file:/usr/share/calamares/release_notes_welcomeq.qml"
             }
             
             Button {

@@ -452,17 +452,17 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="172"/>
         <source>&amp;Back</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Précédent</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="184"/>
         <source>&amp;Next</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Suivant</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="197"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Annuler</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="286"/>
@@ -693,72 +693,72 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/keyboard/Config.cpp" line="348"/>
         <source>Set keyboard model to %1.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Configurer le modèle de clavier à %1.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/Config.cpp" line="355"/>
         <source>Set keyboard layout to %1/%2.</source>
-        <translation type="unfinished"/>
+        <translation>Configurer l&apos;agencement clavier à %1/%2.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/Config.cpp" line="272"/>
         <source>The system language will be set to %1.</source>
-        <translation type="unfinished"/>
+        <translation>La langue du système utilisée sera %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/Config.cpp" line="273"/>
         <source>The numbers and dates locale will be set to %1.</source>
-        <translation type="unfinished"/>
+        <translation>Le format local des nombres et des dates utilisé sera %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/Config.cpp" line="306"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Configurer la zone de temps à %1/%2.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="54"/>
         <source>This computer does not satisfy the minimum requirements for setting up %1.&lt;br/&gt;Setup cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Cet ordinateur ne satisfait pas les conditions requises pour installer %1.&lt;br/&gt;L’installation ne peut pas continuer.&lt;a href=&quot;#details&quot;&gt;Détails…&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="58"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;Installation cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Cet ordinateur ne satisfait pas les conditions requises pour installer %1.&lt;br/&gt;L’installation ne peut pas continuer.&lt;a href=&quot;#details&quot;&gt;Détails…&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="65"/>
         <source>This computer does not satisfy some of the recommended requirements for setting up %1.&lt;br/&gt;Setup can continue, but some features might be disabled.</source>
-        <translation type="unfinished"/>
+        <translation>Cet ordinateur ne satisfait pas les conditions requises pour installer %1.&lt;br/&gt;L’installation peut continuer, mais certaines fonctionnalités peuvent être désactivées.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="69"/>
         <source>This computer does not satisfy some of the recommended requirements for installing %1.&lt;br/&gt;Installation can continue, but some features might be disabled.</source>
-        <translation type="unfinished"/>
+        <translation>Cet ordinateur ne satisfait pas les conditions requises pour installer %1.&lt;br/&gt;L’installation peut continuer, mais certaines fonctionnalités peuvent être désactivées.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="79"/>
         <source>This program will ask you some questions and set up %2 on your computer.</source>
-        <translation type="unfinished"/>
+        <translation>Ce programme va vous poser des questions et configurer %2 sur votre ordinateur.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="254"/>
         <source>&lt;h1&gt;Welcome to the Calamares setup program for %1.&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Bienvenue sur l’installateur Calamares pour %1&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="255"/>
         <source>&lt;h1&gt;Welcome to %1 setup.&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Bienvenue sur l’installateur %1.&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="260"/>
         <source>&lt;h1&gt;Welcome to the Calamares installer for %1.&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Bienvenue sur l’installateur Calamares pour %1&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="261"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Bienvenue sur l’installateur %1.&lt;/h1&gt;</translation>
     </message>
 </context>
 <context>
@@ -1412,7 +1412,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/keyboardq/KeyboardQmlViewStep.cpp" line="42"/>
         <source>Keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Clavier</translation>
     </message>
 </context>
 <context>
@@ -1596,7 +1596,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/localeq/LocaleQmlViewStep.cpp" line="98"/>
         <source>Location</source>
-        <translation type="unfinished"/>
+        <translation>Localisation</translation>
     </message>
 </context>
 <context>
@@ -1640,7 +1640,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="208"/>
         <source>Could not configure LUKS key file on partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>Impossible de configurer un fichier clé LUKS sur la partition %1.</translation>
     </message>
 </context>
 <context>
@@ -1668,7 +1668,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
         <source>Please select your preferred location on the map so the installer can suggest the locale
             and timezone settings for you. You can fine-tune the suggested settings below. Search the map by dragging
             to move and using the +/- buttons to zoom in/out or use mouse scrolling for zooming.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez sélectionner votre emplacement favori sur la carte afin de laisser le programme d’installation vous suggérer les options de localisation de et fuseau horaire. Vous pouvez modifier finement les options suggérées au bas de la page. Vous pouvez chercher sur la carte en la glissant avec la souris, et utiliser les boutons +/- ou la molette pour zoomer.</translation>
     </message>
 </context>
 <context>
@@ -1715,12 +1715,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="62"/>
         <source>Timezone: %1</source>
-        <translation type="unfinished"/>
+        <translation>Fuseau horaire : %1</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="77"/>
         <source>To be able to select a timezone, make sure you are connected to the internet. Restart the installer after connecting. You can fine-tune Language and Locale settings below.</source>
-        <translation type="unfinished"/>
+        <translation>Pour pouvoir sélectionner un fuseau horaire, assurez-vous que vous êtes connecté à Internet. Redémarrez le programme d’installation après la connexion. Vous pouvez affiner les paramètres de langue et de paramètres régionaux ci-dessous.</translation>
     </message>
 </context>
 <context>
@@ -2380,12 +2380,12 @@ ajoute le flag, revenez en arrière et éditez la partition.&lt;br/&gt;&lt;br/&g
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="468"/>
         <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, (if not done so already) go back and set the partition table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;bios_grub&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
-        <translation type="unfinished"/>
+        <translation>Une table de partitions GPT est la meilleure option pour tous les systèmes. Cet installateur supporte une configuration de ce type pour les systèmes BIOS également.&lt;br/&gt;&lt;br/&gt;Pour configurer une table de partitions GPT sur BIOS (si ce n’est déjà fait), retournez en arrière et sélectionnez la table de partitions GPT, puis créez une partition non formatée de 8 Mo avec le flag &lt;strong&gt;bios_grub&lt;/strong&gt; autorisé.&lt;br/&gt;&lt;br/&gt;Une partition de 8 Mo est nécessaire pour démarrer %1 sur un système BIOS avec GPT.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="709"/>
         <source>There are no partitions to install on.</source>
-        <translation type="unfinished"/>
+        <translation>Aucune partition n’est disponible pour l’installation.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="496"/>
@@ -3227,7 +3227,7 @@ Sortie :
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="234"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017-2020 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Thanks to &lt;a href=&quot;https://calamares.io/team/&quot;&gt;the Calamares team&lt;/a&gt; and the &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;pour %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017-2020 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Merci à &lt;a href=&quot;https://calamares.io/team/&quot;&gt;l’équipe Calamares&lt;/a&gt; et l’&lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;équipe de traducteurs KaOS&lt;/a&gt;. &lt;br/&gt;&lt;br/&gt;Le développement de &lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; est sponsorisé par &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="224"/>
@@ -3267,12 +3267,22 @@ Sortie :
                         development is sponsored by &lt;br/&gt;
                         &lt;a href='http://www.blue-systems.com/'&gt;Blue Systems&lt;/a&gt; - 
                         Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%&quot;&lt;/h1&gt; &lt;br/&gt;
+&lt;strong&gt;%2&lt;br/&gt;
+pour %3&lt;/strong&gt; &lt;br/&gt;&lt;br/&gt;
+Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
+Copyright 2017-2020 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
+Merci à &lt;a href=&apos;https://calamares.io/team/&apos;&gt;l’équipe de Calamares&lt;/a&gt;
+et à &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;l’équipe de traduction de KaOS&lt;/a&gt;. &lt;br/&gt; &lt;br/&gt;
+Le développement de &lt;a href=&apos;https://calamares.io/&apos;&gt;Calamares&lt;/a&gt;
+est sponsorisé par &lt;br/&gt;
+&lt;a href=&apos;http://www.blue-systems.com/&apos;&gt;Blue Systems&lt;/a&gt; - 
+Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/about.qml" line="105"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Retour</translation>
     </message>
 </context>
 <context>
@@ -3280,7 +3290,7 @@ Sortie :
     <message>
         <location filename="../src/calamares/calamares-sidebar2.qml" line="75"/>
         <source>Show debug information</source>
-        <translation type="unfinished"/>
+        <translation>Afficher les informations de débogage</translation>
     </message>
 </context>
 <context>
@@ -3289,18 +3299,20 @@ Sortie :
         <location filename="../src/modules/localeq/i18n.qml" line="58"/>
         <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
                     The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Langues&lt;/h1&gt; &lt;/br&gt;
+Les paramètres régionaux du système affectent la langue et le jeu de caractères de certains éléments de l&apos;interface utilisateur de ligne de commande. La configuration actuelle est &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/i18n.qml" line="118"/>
         <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
                     The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Paramètres régionaux&lt;/h1&gt; &lt;/br&gt;
+Les paramètres régionaux du système affectent la langue et le jeu de caractères de certains éléments de l’interface utilisateur de ligne de commande. La configuration actuelle est &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/i18n.qml" line="171"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Retour</translation>
     </message>
 </context>
 <context>
@@ -3308,44 +3320,44 @@ Sortie :
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="25"/>
         <source>Keyboard Model</source>
-        <translation type="unfinished"/>
+        <translation>Modèle de clavier</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="26"/>
         <source>Pick your preferred keyboard model or use the default one based on the detected hardware</source>
-        <translation type="unfinished"/>
+        <translation>Sélectionnez votre modèle de clavier préféré ou utilisez celui par défaut en fonction du matériel détecté</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="41"/>
         <source>Refresh</source>
-        <translation type="unfinished"/>
+        <translation>Réactualiser</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="51"/>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="163"/>
         <source>Layouts</source>
-        <translation type="unfinished"/>
+        <translation>Agencements</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="79"/>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="139"/>
         <source>Keyboard Layout</source>
-        <translation type="unfinished"/>
+        <translation>Agencement de clavier</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="101"/>
         <source>Models</source>
-        <translation type="unfinished"/>
+        <translation>Modèles</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="109"/>
         <source>Variants</source>
-        <translation type="unfinished"/>
+        <translation>Variantes</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="189"/>
         <source>Test your keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Testez votre clavier</translation>
     </message>
 </context>
 <context>
@@ -3353,17 +3365,17 @@ Sortie :
     <message>
         <location filename="../src/modules/localeq/localeq.qml" line="73"/>
         <source>System language set to %1</source>
-        <translation type="unfinished"/>
+        <translation>La langue du système est paramétré à %1</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/localeq.qml" line="81"/>
         <source>Numbers and dates locale set to %1</source>
-        <translation type="unfinished"/>
+        <translation>Le format local des nombres et des dates est paramétré à %1</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/localeq.qml" line="87"/>
         <source>Change</source>
-        <translation type="unfinished"/>
+        <translation>Modifier</translation>
     </message>
 </context>
 <context>
@@ -3372,7 +3384,8 @@ Sortie :
         <location filename="../src/modules/notesqml/notesqml.qml" line="61"/>
         <source>&lt;h3&gt;%1&lt;/h3&gt;
             &lt;p&gt;These are example release notes.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;%1&lt;/h3&gt;
+&lt;p&gt;Voici un exemple de notes de version.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -3400,12 +3413,32 @@ Sortie :
             &lt;/ul&gt;
 
             &lt;p&gt;The vertical scrollbar is adjustable, current width set to 10.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;%1&lt;/h3&gt;
+&lt;p&gt;Ceci est un exemple de fichier QML montrant les options dans un éditeur de texte riche avec du contenu flottant.&lt;/p&gt;
+
+&lt;p&gt;L’éditeur de texte riche QML peut utiliser des balises HTML, le contenu flottant est utile pour les écrans tactiles.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Texte en gras&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Texte en italique&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Texte souligné&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;Texte centré&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;Texte barré&lt;/s&gt;&lt;/p&gt;
+
+&lt;p&gt;Exemple de code :
+&lt;code&gt;ls -l /home&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Listes :&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Processeur Intel&lt;/li&gt;
+&lt;li&gt;Processeur AMD&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La barre de défilement verticale est réglable, la largeur actuelle est réglée sur 10.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/release_notes.qml" line="85"/>
         <source>&lt; Back</source>
-        <translation type="unfinished"/>
+        <translation>&lt; Retour</translation>
     </message>
 </context>
 <context>
@@ -3457,32 +3490,33 @@ Sortie :
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="44"/>
         <source>&lt;h3&gt;Welcome to the %1 &lt;quote&gt;%2&lt;/quote&gt; installer&lt;/h3&gt;
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Bienvenue sur le programme d’installation &lt;quote&gt;%2&lt;/quote&gt;&lt;/h3&gt;
+&lt;p&gt;Ce programme va vous poser quelques questions et configurer %1 sur votre ordinateur.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="71"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>À propos</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="84"/>
         <source>Support</source>
-        <translation type="unfinished"/>
+        <translation>Support</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="95"/>
         <source>Known issues</source>
-        <translation type="unfinished"/>
+        <translation>Problèmes connus</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="106"/>
         <source>Release notes</source>
-        <translation type="unfinished"/>
+        <translation>Notes de version</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="118"/>
         <source>Donate</source>
-        <translation type="unfinished"/>
+        <translation>Faire un don</translation>
     </message>
 </context>
 </TS>
