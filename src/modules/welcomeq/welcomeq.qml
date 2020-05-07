@@ -56,6 +56,13 @@ Page
             fillMode: Image.PreserveAspectFit
         }
 
+        Requirements {
+            property var required: "yes" //requirementsModel
+            property var satisfied: "yes" //satisfiedRequirements
+            property var met: (required != satisfied) ? true : false
+            visible: met
+        }
+
         RowLayout {
             id: buttonBar
             width: parent.width / 1.5
