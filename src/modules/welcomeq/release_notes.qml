@@ -82,7 +82,7 @@ Rectangle {
         y: 29
         width: 105
         height: 48
-        text: qsTr("< Back")
+        text: qsTr("Back")
         hoverEnabled: true
         onClicked: load.source = ""
 

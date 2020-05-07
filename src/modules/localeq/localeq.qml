@@ -29,12 +29,12 @@ Page
 {
     width: 800
     height: 550
-    
+
     property var confLang: "American English"
     property var confLocale: "Nederland"
     //Needs to come from .conf/geoip
     property var hasInternet: true
-    
+
     Loader {
         id: image
         anchors.horizontalCenter: parent.horizontalCenter
@@ -42,15 +42,15 @@ Page
         height: parent.height / 1.28
         source: (hasInternet) ? "Map.qml" : "Offline.qml"
     }
-    
+
     RowLayout {
         anchors.bottom: parent.bottom
         anchors.bottomMargin : 20
         width: parent.width
-        
+
         Kirigami.FormLayout {
             id: lang
-            
+
             GridLayout {
                 anchors {
                     left: parent.left
@@ -83,21 +83,19 @@ Page
                 }
                 Button {
                     Layout.alignment: Qt.AlignRight|Qt.AlignVCenter
-                    Layout.columnSpan: 2 
+                    Layout.columnSpan: 2
                     text: qsTr("Change")
                     //onClicked: console.log("Adjust Language clicked");
-                    onClicked: { 
+                    onClicked: {
                         onClicked: load.source = "i18n.qml"
                     }
                 }
             }
         }
-        
-        
-        
+
     }
-    Loader { 
-        id:load 
+    Loader {
+        id:load
         anchors.fill: parent
     }
 }

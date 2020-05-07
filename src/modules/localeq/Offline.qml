@@ -25,10 +25,10 @@ import org.kde.kirigami 2.7 as Kirigami
 
 Column {
     width: parent.width
-    
+
     //Needs to come from .conf
     property var configTimezone: "America/New York"
-    
+
     Rectangle {
         width: parent.width
         height: parent.height / 1.28
@@ -42,22 +42,22 @@ Column {
     }
 
     Rectangle {
-        width: parent.width 
+        width: parent.width
         height: 100
         anchors.horizontalCenter: parent.horizontalCenter
-        
+
         Item {
             id: location
             Kirigami.Theme.inherit: false
             Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
             anchors.horizontalCenter: parent.horizontalCenter
-            
+
             Rectangle {
                 anchors.centerIn: parent
                 width: 300
                 height: 30
                 color: Kirigami.Theme.backgroundColor
-                
+
                 Text {
                     text: qsTr("Timezone: %1").arg(configTimezone)
                     color: Kirigami.Theme.textColor
@@ -65,7 +65,7 @@ Column {
                 }
             }
         }
-        
+
         Text {
             anchors.top: location.bottom
             anchors.topMargin: 20

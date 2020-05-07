@@ -28,7 +28,7 @@ import QtPositioning 5.14
 
 Column {
     width: parent.width
-    
+
     //Needs to come from .conf/geoip
     property var configCity: "New York"
     property var configCountry: "USA"
@@ -40,10 +40,10 @@ Column {
     property var cityName: (geoipCity != "") ? geoipCity : configCity
     property var countryName: (geoipCountry != "") ? geoipCountry : configCountry
     property var timeZone: (geoipTimezone != "") ? geoipTimezone : configTimezone
-    
+
     function getIp() {
         var xhr = new XMLHttpRequest
-        
+
         xhr.onreadystatechange = function() {
             if (xhr.readyState === XMLHttpRequest.DONE) {
                 var responseJSON = JSON.parse(xhr.responseText)
@@ -56,18 +56,18 @@ Column {
                 countryName = cy
             }
         }
-        
+
         // Define the target of the request
         xhr.open("GET", "https://get.geojs.io/v1/ip/geo.json")
         // Execute the request
         xhr.send()
     }
-    
+
     function getTz() {
         var xhr = new XMLHttpRequest
         var latC = map.center.latitude
         var lonC = map.center.longitude
-        
+
         xhr.onreadystatechange = function() {
             if (xhr.readyState === XMLHttpRequest.DONE) {
                 var responseJSON = JSON.parse(xhr.responseText)
@@ -76,12 +76,12 @@ Column {
                 tzText.text = "Timezone: " + tz2
             }
         }
-        
+
         xhr.open("GET", "http://api.geonames.org/timezoneJSON?lat=" + latC + "&lng=" + lonC + "&username=demm")
         //xhr.open("GET", "http://api.geonames.org/timezoneJSON?lat=40.730610&lng=-73.935242&username=demm")
         xhr.send()
     }
-    
+
     Rectangle {
         width: parent.width
         height: parent.height / 1.28
@@ -113,7 +113,7 @@ Column {
                     country: countryName
                     //countryCode: "US"
                 }
-                
+
                 onLocationsChanged: {
                     if (count == 1) {
                         map.center.latitude = get(0).coordinate.latitude
@@ -121,7 +121,7 @@ Column {
                     }
                 }
             }
-            
+
             MapQuickItem {
                 id: marker
                 anchorPoint.x: image.width/4
@@ -138,7 +138,7 @@ Column {
                     source: "img/pin.svg"
                 }
             }
-            
+
             MouseArea {
                 acceptedButtons: Qt.LeftButton
                 anchors.fill: map
@@ -150,7 +150,7 @@ Column {
                     text: "%1, %2".arg(
                         parent.coordinate.latitude).arg(parent.coordinate.longitude)
                 }
-                
+
                 onClicked: {
                     marker.coordinate = coordinate
                     map.center.latitude = coordinate.latitude
@@ -162,13 +162,13 @@ Column {
                 }
             }
         }
-        
+
         Column {
             anchors.bottom: parent.bottom
             anchors.right: parent.right
             anchors.bottomMargin: 5
             anchors.rightMargin: 10
-            
+
             MouseArea {
                 width: 32
                 height:32
@@ -182,7 +182,7 @@ Column {
 
                 onClicked: map.zoomLevel++
             }
-            
+
             MouseArea {
                 width: 32
                 height:32
@@ -203,19 +203,19 @@ Column {
         width: parent.width 
         height: 100
         anchors.horizontalCenter: parent.horizontalCenter
-        
+
         Item {
             id: location
             Kirigami.Theme.inherit: false
             Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
             anchors.horizontalCenter: parent.horizontalCenter
-            
+
             Rectangle {
                 anchors.centerIn: parent
                 width: 300
                 height: 30
                 color: Kirigami.Theme.backgroundColor
-                
+
                 Text {
                     id: tzText
                     text: tzText.text
@@ -223,11 +223,11 @@ Column {
                     color: Kirigami.Theme.textColor
                     anchors.centerIn: parent
                 }
-                
+
                 Component.onCompleted: getIp();
             }
         }
-        
+
         Text {
             anchors.top: location.bottom
             anchors.topMargin: 20

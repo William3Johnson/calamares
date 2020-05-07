@@ -3,10 +3,48 @@ contributors are listed. Note that Calamares does not have a historical
 changelog -- this log starts with version 3.2.0. The release notes on the
 website will have to do for older versions.
 
-# 3.2.22 (unreleased) #
+# 3.2.24 (unreleased) #
+
+This release contains contributions from (alphabetically by first name):
+ - Bill Auger
+ - Gaël PORTAY
+ - Luna Jernberg
+
+## Core ##
+ - There is now a bash-completions script for Calamares; turn on
+   the (CMake-time) option INSTALL_COMPLETION to get it. (Thanks Gaël)
+ - The *productWallpaper* setting is documented and works. (Thanks Bill)
+
+## Modules ##
+ - The *bootloader* module can force a UEFI-based machine to boot into
+   the newly-installed system. #1394 (Thanks Gaël)
+
+
+# 3.2.23 (2020-04-17) #
+
+This release contains contributions from (alphabetically by first name):
+ - FLVAL
+
+## Core ##
+ - Some strange annotations were added to the *About* dialog text in
+   all the translations, like `{1?}`. These have been removed again.
+
+## Modules ##
+ - *locale* module had some errors in timezone data, where clicking
+   on a city would select a different timezone. Some of these are
+   now fixed (thanks FLVAL). #1374
+ - *netinstall* supports a wider variety of package naming schemes,
+   and is more flexible in loading a `netinstall.yaml` that is copied from
+   the example configuration file, *groups* key and all. #1369
+ - *users* module logs a full error message from libpwquality if something
+   is wrong internally.
+
+
+# 3.2.22 (2020-04-08) #
 
 This release contains contributions from (alphabetically by first name):
  - Anke Boersma
+ - Camilo Higuita
 
 ## Core ##
  - Both the sidebar (on the left) and the navigation buttons (along the
@@ -23,6 +61,13 @@ This release contains contributions from (alphabetically by first name):
 ## Modules ##
  - The *welcomeq* module has been improved with better layout and
    nicer buttons in the example QML form. (Thanks to Anke Boersma)
+ - The *keyboardq* and *localeq* modules now provide some QML for
+   configuring these parts, although they are still very primitive.
+ - *netinstall* has had some minor layout fixes.
+ - *unpackfs* has much more detailed progress reporting and no
+   longer jumps around strangely in overall progress.
+ - *partition* now correctly marks a partition as bootable in BIOS + MBR
+   installs. #1175
 
 
 # 3.2.21 (2020-03-27) #

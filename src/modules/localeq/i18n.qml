@@ -31,7 +31,7 @@ Item {
     MouseArea {
         anchors.fill: parent
     }
-    
+
     property var confLang: "en_US.UTF8"
     property var confLocale: "nl_NL.UTF8"
 
@@ -41,7 +41,7 @@ Item {
         y: 14
         anchors.fill: parent
         color: "#f2f2f2"
-        
+
         Column {
             id: languages
             x: 130
@@ -60,30 +60,30 @@ Item {
                     font.pointSize: 10
                 }
             }
-            
+
             Rectangle {
                 width: 250
                 height: 300
-                
+
                 ScrollView {
                     id: scroll1
                     anchors.fill: parent
                     contentHeight: 800
                     clip: true
-                
+
                     ListView {
                         id: list1
                         focus: true
 
                         model: ["en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8"]
-                        
+
                         currentIndex: 1
-                        highlight: Rectangle { 
-                            color: Kirigami.Theme.highlightColor 
+                        highlight: Rectangle {
+                            color: Kirigami.Theme.highlightColor
                         }
                         delegate: Text {
                             text: modelData
-                        
+
                             MouseArea {
                                 hoverEnabled: true
                                 anchors.fill: parent
@@ -101,7 +101,7 @@ Item {
                 }
             }
         }
-        
+
         Column {
             id: i18n
             x: 430
@@ -120,27 +120,27 @@ Item {
                     font.pointSize: 10
                 }
             }
-            
+
             Rectangle {
                 width: 250
                 height: 300
-                
+
                 ScrollView {
                     id: scroll2
                     anchors.fill: parent
                     contentHeight: 800
                     clip: true
-                
+
                     ListView {
                         id: list2
                         width: 180; height: 200
                         focus: true
 
                         model: ["en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8"]
-                        
+
                         currentIndex: 2
-                        highlight: Rectangle { 
-                            color: Kirigami.Theme.highlightColor 
+                        highlight: Rectangle {
+                            color: Kirigami.Theme.highlightColor
                         }
                         delegate: Text {
                             text: modelData
