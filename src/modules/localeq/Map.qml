@@ -77,8 +77,8 @@ Column {
             }
         }
 
+        // Needs to move to localeq.conf, each distribution will need their own account
         xhr.open("GET", "http://api.geonames.org/timezoneJSON?lat=" + latC + "&lng=" + lonC + "&username=demm")
-        //xhr.open("GET", "http://api.geonames.org/timezoneJSON?lat=40.730610&lng=-73.935242&username=demm")
         xhr.send()
     }
 
@@ -108,10 +108,8 @@ Column {
                 autoUpdate: true
                 query: Address {
                     id: address
-                    //street: "14th Street"
                     city: cityName
                     country: countryName
-                    //countryCode: "US"
                 }
 
                 onLocationsChanged: {

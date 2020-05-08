@@ -26,7 +26,7 @@ import org.kde.kirigami 2.7 as Kirigami
 Column {
     width: parent.width
 
-    //Needs to come from .conf
+    //Needs to come from localeq.conf
     property var configTimezone: "America/New York"
 
     Rectangle {

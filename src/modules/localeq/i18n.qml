@@ -32,6 +32,7 @@ Item {
         anchors.fill: parent
     }
 
+    //Needs to come from Locale config
     property var confLang: "en_US.UTF8"
     property var confLocale: "nl_NL.UTF8"
 
@@ -40,7 +41,7 @@ Item {
         x: 28
         y: 14
         anchors.fill: parent
-        color: "#f2f2f2"
+        Kirigami.Theme.backgroundColor: Kirigami.Theme.backgroundColor
 
         Column {
             id: languages
@@ -50,7 +51,7 @@ Item {
             Rectangle {
                 width: 250
                 height: 140
-                color: "lightgray"
+                color: "#d3d3d3"
                 Text {
                     anchors.top: parent.top
                     width: 240
@@ -75,6 +76,7 @@ Item {
                         id: list1
                         focus: true
 
+                        // bogus entries, need to come from Locale config
                         model: ["en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8"]
 
                         currentIndex: 1
@@ -89,7 +91,7 @@ Item {
                                 anchors.fill: parent
                                 cursorShape: Qt.PointingHandCursor
                                 onEntered: {
-                                    color: "blue"
+                                    color: "#0000ff"
                                 }
                                 onClicked: {
                                     list1.currentIndex = index
@@ -110,7 +112,7 @@ Item {
             Rectangle {
                 width: 250
                 height: 140
-                color: "lightgray"
+                color: "#d3d3d3"
                 Text {
                     anchors.top: parent.top
                     width: 240
@@ -136,6 +138,7 @@ Item {
                         width: 180; height: 200
                         focus: true
 
+                        // bogus entries, need to come from Locale config
                         model: ["en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8"]
 
                         currentIndex: 2

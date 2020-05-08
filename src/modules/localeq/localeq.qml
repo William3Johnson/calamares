@@ -25,8 +25,7 @@ import QtQuick.Controls 2.10
 import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.7 as Kirigami
 
-Page
-{
+Page {
     width: 800
     height: 550
 
