@@ -16,7 +16,7 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-//import io.calamares.ui 1.0
+import io.calamares.ui 1.0
 
 import QtQuick 2.7
 import QtQuick.Controls 2.2
@@ -51,7 +51,7 @@ Rectangle {
             activeFocusOnPress: false
             wrapMode: Text.WordWrap
 
-            text: qsTr("<h3>Test</h3>
+            text: qsTr("<h3>%1</h3>
             <p>This an example QML file, showing options in RichText with Flickable content.</p>
 
             <p>QML with RichText can use HTML tags, Flickable content is useful for touchscreens.</p>
@@ -71,7 +71,8 @@ Rectangle {
                 <li>AMD CPU systems</li>
             </ul>
 
-            <p>The vertical scrollbar is adjustable, current width set to 10.</p>")//.arg(Branding.string(Branding.VersionedName))
+            <p>The vertical scrollbar is adjustable, current width set to 10.</p>").arg(Branding.string(Branding.VersionedName))
+
         }
     }
 

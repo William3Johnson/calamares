@@ -30,7 +30,7 @@ Rectangle {
     anchors.topMargin: 70
 
     TextArea {
-        id: required
+        id: recommended
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
         anchors.topMargin: 20
@@ -41,20 +41,20 @@ Rectangle {
         activeFocusOnPress: false
         wrapMode: Text.WordWrap
 
-        text: qsTr("<p>This computer does not satisfy the minimum requirements for setting up %1.</p>
-        <p>Setup cannot continue.</p>").arg(Branding.string(Branding.VersionedName))
+        text: qsTr("<p>This computer does not satisfy some of the recommended requirements for setting up %1.</p>
+        <p>Setup can continue, but some features might be disabled.</p>").arg(Branding.string(Branding.VersionedName))
     }
 
     TextArea {
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.top: required.bottom
+        anchors.top: recommended.bottom
         anchors.topMargin: 20
         width: 640
         background: Rectangle {
             implicitWidth: 640
             implicitHeight: 50
             border.color: "#ff0000"
-            color: "#ffc0cb"
+            color: "#b0e0e6"
         }
         font.pointSize: 12
         textFormat: Text.RichText
@@ -62,6 +62,6 @@ Rectangle {
         activeFocusOnPress: false
         wrapMode: Text.WordWrap
 
-        text: qsTr("<p>The installer is not running with administrator rights.</p>")//.arg(requirementsModel)
+        text: qsTr("<p>The system is not connected to the internet.</p>")//.arg(requirementsModel)
     }
 }
