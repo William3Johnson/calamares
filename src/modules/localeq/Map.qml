@@ -96,6 +96,7 @@ Column {
             anchors.fill: parent
             plugin: mapPlugin
             activeMapType: supportedMapTypes[0]
+            //might be desirable to set zoom level configurable?
             zoomLevel: 5
             bearing: 0
             tilt: 0

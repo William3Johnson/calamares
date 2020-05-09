@@ -58,7 +58,7 @@ Page
 
         Recommended {
             property var required: "yes" //requirementsModel
-            property var satisfied: "no" //satisfiedRequirements
+            property var satisfied: "yes" //satisfiedRequirements
             property var requiredMet: (required != satisfied) ? true : false
             visible: requiredMet
         }
