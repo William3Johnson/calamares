@@ -16,7 +16,8 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import io.calamares.ui 1.0
+//import io.calamares.core 1.0
+//import io.calamares.ui 1.0
 
 import QtQuick 2.7
 import QtQuick.Controls 2.2
@@ -26,14 +27,17 @@ import org.kde.kirigami 2.7 as Kirigami
 Rectangle {
     focus: true
     Kirigami.Theme.backgroundColor: Kirigami.Theme.backgroundColor
-    anchors.fill: parent
-    anchors.topMargin: 70
+    //anchors.fill: parent
+    //anchors.topMargin: 70
+    width: 840
+    height: 400
 
     TextArea {
         id: required
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
-        anchors.topMargin: 20
+        anchors.topMargin: 10
+        horizontalAlignment: TextEdit.AlignHCenter
         width: 640
         font.pointSize: 12
         textFormat: Text.RichText
@@ -42,26 +46,34 @@ Rectangle {
         wrapMode: Text.WordWrap
 
         text: qsTr("<p>This computer does not satisfy the minimum requirements for setting up %1.</p>
-        <p>Setup cannot continue.</p>").arg(Branding.string(Branding.VersionedName))
+        <p>Setup cannot continue.</p>")//.arg(Branding.string(Branding.VersionedName))
     }
 
-    TextArea {
+    Column {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: required.bottom
         anchors.topMargin: 20
-        width: 640
-        background: Rectangle {
-            implicitWidth: 640
-            implicitHeight: 50
-            border.color: "#ff0000"
-            color: "#ffc0cb"
-        }
-        font.pointSize: 12
-        textFormat: Text.RichText
-        antialiasing: true
-        activeFocusOnPress: false
-        wrapMode: Text.WordWrap
+        spacing: 8
+        
+        Repeater {
+            width: 640
+            model: ["en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8"]
+            //model: config.requirementsModel
 
-        text: qsTr("<p>The installer is not running with administrator rights.</p>")//.arg(requirementsModel)
+            Rectangle {
+                implicitWidth: 640
+                implicitHeight: 40
+                border.color: modelData === "en_GB.UTF-8 UTF-8" ? "#ff0000" : "#228b22"
+                //border.color: config.requirementsModel != config.satisfiedRequirements ? "#ff0000" : "#228b22"
+                color: modelData === "en_GB.UTF-8 UTF-8" ? "#ffc0cb" : "#f0fff0"
+                //color: "#f0fff0"
+
+                Label {
+                    text: modelData
+                    font.pointSize: 12
+                    anchors.centerIn: parent
+                }
+            }
+        }
     }
 }

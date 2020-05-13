@@ -16,7 +16,7 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import io.calamares.ui 1.0
+//import io.calamares.ui 1.0
 
 import QtQuick 2.7
 import QtQuick.Controls 2.2
@@ -42,7 +42,7 @@ Rectangle {
         wrapMode: Text.WordWrap
 
         text: qsTr("<p>This computer does not satisfy some of the recommended requirements for setting up %1.</p>
-        <p>Setup can continue, but some features might be disabled.</p>").arg(Branding.string(Branding.VersionedName))
+        <p>Setup can continue, but some features might be disabled.</p>")//.arg(Branding.string(Branding.VersionedName))
     }
 
     TextArea {
@@ -53,8 +53,8 @@ Rectangle {
         background: Rectangle {
             implicitWidth: 640
             implicitHeight: 50
-            border.color: "#ff0000"
-            color: "#b0e0e6"
+            border.color: "#ffa411"
+            color: "#ffefd5"
         }
         font.pointSize: 12
         textFormat: Text.RichText

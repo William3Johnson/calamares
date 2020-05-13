@@ -26,8 +26,8 @@ import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.7 as Kirigami
 
 Page {
-    width: parent.width
-    height: parent.height
+    width: 800 // parent.width
+    height: 550 //parent.height
 
     property var confLang: "American English"
     property var confLocale: "Nederland"
