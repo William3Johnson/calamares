@@ -27,10 +27,10 @@ import org.kde.kirigami 2.7 as Kirigami
 Rectangle {
     focus: true
     Kirigami.Theme.backgroundColor: Kirigami.Theme.backgroundColor
-    //anchors.fill: parent
-    //anchors.topMargin: 70
-    width: 840
-    height: 400
+    anchors.fill: parent
+    anchors.topMargin: 70
+    //width: 840
+    //height: 400
 
     TextArea {
         id: required
@@ -39,41 +39,68 @@ Rectangle {
         anchors.topMargin: 10
         horizontalAlignment: TextEdit.AlignHCenter
         width: 640
-        font.pointSize: 12
+        font.pointSize: 11
         textFormat: Text.RichText
         antialiasing: true
         activeFocusOnPress: false
         wrapMode: Text.WordWrap
 
-        text: qsTr("<p>This computer does not satisfy the minimum requirements for setting up %1.</p>
-        <p>Setup cannot continue.</p>")//.arg(Branding.string(Branding.VersionedName))
+        text: qsTr("<p>This computer does not satisfy the minimum requirements for installing %1.<br/>
+        Installation cannot continue.</p>")//.arg(Branding.string(Branding.VersionedName))
     }
 
-    Column {
+    Rectangle {
+        width: 640
+        height: 400
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: required.bottom
-        anchors.topMargin: 20
-        spacing: 8
-        
-        Repeater {
-            width: 640
-            model: ["en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8"]
-            //model: config.requirementsModel
+        anchors.topMargin: 5
 
-            Rectangle {
-                implicitWidth: 640
-                implicitHeight: 40
-                border.color: modelData === "en_GB.UTF-8 UTF-8" ? "#ff0000" : "#228b22"
-                //border.color: config.requirementsModel != config.satisfiedRequirements ? "#ff0000" : "#228b22"
-                color: modelData === "en_GB.UTF-8 UTF-8" ? "#ffc0cb" : "#f0fff0"
-                //color: "#f0fff0"
+        Component {
+            id: requirementsDelegate
 
-                Label {
-                    text: modelData
-                    font.pointSize: 12
+            Item {
+                width: 640
+                height: 40
+
+                Column {
                     anchors.centerIn: parent
+
+                    Rectangle {
+                        implicitWidth: 640
+                        implicitHeight: 40
+                        //color: "#f0fff0"
+                        border.color: name === "Bill Smith" ? "#ff0000" : "#228b22"
+                        //border.color: mandatory ? "#ff0000" : "#228b22"
+                        color: name === "Bill Smith" ? "#ffc0cb" : "#f0fff0"
+                        //color: mandatory ? "#ffc0cb" : "#f0fff0"
+
+                        Image {
+                            anchors.verticalCenter: parent.verticalCenter
+                            anchors.right: parent.right
+                            anchors.margins: 20
+                            source: name === "Bill Smith" ? "qrc:/data/images/no.svgz" : "qrc:/data/images/yes.svgz"
+                            //source: mandatory ? "qrc:/data/images/yes.svgz" : "qrc:/data/images/no.svgz"
+                        }
+
+                        Text {
+                            //text: ( mandatory ? 'Met: ' : 'Unmet: ' ) + name + " " + details
+                            text: 'Met: ' + name + " " + number
+                            anchors.centerIn: parent
+                            font.pointSize: 12
+                        }
+                    }
                 }
             }
         }
+
+        ListView {
+            anchors.fill: parent
+            spacing: 5
+            //model: config.requirementsModel
+            model: RequirementsModel {}
+            delegate: requirementsDelegate
+        }
     }
 }
+
