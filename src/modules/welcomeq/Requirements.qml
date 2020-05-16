@@ -1,6 +1,7 @@
 /* === This file is part of Calamares - <https://github.com/calamares> ===
  *
  *   Copyright 2020, Anke Boersma <demm@kaosx.us>
+ *   Copyright 2020, Adriaan de Groot <groot@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -16,8 +17,8 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-//import io.calamares.core 1.0
-//import io.calamares.ui 1.0
+import io.calamares.core 1.0
+import io.calamares.ui 1.0
 
 import QtQuick 2.7
 import QtQuick.Controls 2.2
@@ -28,7 +29,7 @@ Rectangle {
     focus: true
     Kirigami.Theme.backgroundColor: Kirigami.Theme.backgroundColor
     anchors.fill: parent
-    anchors.topMargin: 70
+    anchors.topMargin: 50
     //width: 840
     //height: 400
 
@@ -36,7 +37,7 @@ Rectangle {
         id: required
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
-        anchors.topMargin: 10
+        anchors.topMargin: 1
         horizontalAlignment: TextEdit.AlignHCenter
         width: 640
         font.pointSize: 11
@@ -46,12 +47,12 @@ Rectangle {
         wrapMode: Text.WordWrap
 
         text: qsTr("<p>This computer does not satisfy the minimum requirements for installing %1.<br/>
-        Installation cannot continue.</p>")//.arg(Branding.string(Branding.VersionedName))
+        Installation cannot continue.</p>").arg(Branding.string(Branding.VersionedName))
     }
 
     Rectangle {
         width: 640
-        height: 400
+        height: 360
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: required.bottom
         anchors.topMargin: 5
@@ -61,33 +62,32 @@ Rectangle {
 
             Item {
                 width: 640
-                height: 40
+                height: 35
 
                 Column {
                     anchors.centerIn: parent
 
                     Rectangle {
                         implicitWidth: 640
-                        implicitHeight: 40
-                        //color: "#f0fff0"
-                        border.color: name === "Bill Smith" ? "#ff0000" : "#228b22"
-                        //border.color: mandatory ? "#ff0000" : "#228b22"
-                        color: name === "Bill Smith" ? "#ffc0cb" : "#f0fff0"
-                        //color: mandatory ? "#ffc0cb" : "#f0fff0"
+                        implicitHeight: 35
+                        //border.color: name === "Bill Smith" ? "#ff0000" : "#228b22"
+                        border.color: mandatory ? "#228b22" : "#ff0000"
+                        //color: name === "Bill Smith" ? "#ffc0cb" : "#f0fff0"
+                        color: mandatory ? "#f0fff0" : "#ffc0cb"
 
                         Image {
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.right: parent.right
                             anchors.margins: 20
-                            source: name === "Bill Smith" ? "qrc:/data/images/no.svgz" : "qrc:/data/images/yes.svgz"
-                            //source: mandatory ? "qrc:/data/images/yes.svgz" : "qrc:/data/images/no.svgz"
+                            //source: name === "Bill Smith" ? "img/no.svgz" : "img/yes.svgz"
+                            source: mandatory ? "qrc:/data/images/yes.svgz" : "qrc:/data/images/no.svgz"
                         }
 
                         Text {
-                            //text: ( mandatory ? 'Met: ' : 'Unmet: ' ) + name + " " + details
-                            text: 'Met: ' + name + " " + number
+                            text: mandatory ? details : negatedText
+                            //text: 'Met: ' + name + " " + number
                             anchors.centerIn: parent
-                            font.pointSize: 12
+                            font.pointSize: 11
                         }
                     }
                 }
@@ -97,8 +97,8 @@ Rectangle {
         ListView {
             anchors.fill: parent
             spacing: 5
-            //model: config.requirementsModel
-            model: RequirementsModel {}
+            model: config.requirementsModel
+            //model: RequirementsModel {}
             delegate: requirementsDelegate
         }
     }

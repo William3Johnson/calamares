@@ -6,12 +6,20 @@ website will have to do for older versions.
 # 3.2.25 (unreleased) #
 
 This release contains contributions from (alphabetically by first name):
- - No external contributors yet
+ - Anke Boersma
+ - FLVAL
+ - Gaël PORTAY
 
 ## Core ##
  - The slideshow in `branding.desc` can be configured with QML (recommended,
    as it has been for the past umpteen releases) or with a list of
    images (new).
+ - It is possible to turn off all the new QML code -- navigation, slideshow,
+   QML-based modules -- with a single `-DWITH_QML=OFF` at CMake time.
+   This removes QML from Calamares' dependency footprint (but only saves
+   200kB in Calamares itself).
+ - Tests have been extended and now support a tests/CMakeTests.txt file
+   for fine-tuning tests for Python modules.
 
 ## Modules ##
  - No module changes yet

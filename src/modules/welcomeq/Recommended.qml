@@ -1,6 +1,7 @@
 /* === This file is part of Calamares - <https://github.com/calamares> ===
  *
  *   Copyright 2020, Anke Boersma <demm@kaosx.us>
+ *   Copyright 2020, Adriaan de Groot <groot@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -16,7 +17,8 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-//import io.calamares.ui 1.0
+import io.calamares.core 1.0
+import io.calamares.ui 1.0
 
 import QtQuick 2.7
 import QtQuick.Controls 2.2
@@ -27,41 +29,75 @@ Rectangle {
     focus: true
     Kirigami.Theme.backgroundColor: Kirigami.Theme.backgroundColor
     anchors.fill: parent
-    anchors.topMargin: 70
+    anchors.topMargin: 50
 
     TextArea {
         id: recommended
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
-        anchors.topMargin: 20
+        anchors.topMargin: 1
+        horizontalAlignment: TextEdit.AlignHCenter
         width: 640
-        font.pointSize: 12
+        font.pointSize: 11
         textFormat: Text.RichText
         antialiasing: true
         activeFocusOnPress: false
         wrapMode: Text.WordWrap
 
-        text: qsTr("<p>This computer does not satisfy some of the recommended requirements for setting up %1.</p>
-        <p>Setup can continue, but some features might be disabled.</p>")//.arg(Branding.string(Branding.VersionedName))
+        text: qsTr("<p>This computer does not satisfy some of the recommended requirements for setting up %1.<br/>
+        Setup can continue, but some features might be disabled.</p>").arg(Branding.string(Branding.VersionedName))
     }
 
-    TextArea {
+    Rectangle {
+        width: 640
+        height: 360
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: recommended.bottom
-        anchors.topMargin: 20
-        width: 640
-        background: Rectangle {
-            implicitWidth: 640
-            implicitHeight: 50
-            border.color: "#ffa411"
-            color: "#ffefd5"
-        }
-        font.pointSize: 12
-        textFormat: Text.RichText
-        antialiasing: true
-        activeFocusOnPress: false
-        wrapMode: Text.WordWrap
+        anchors.topMargin: 5
 
-        text: qsTr("<p>The system is not connected to the internet.</p>")//.arg(requirementsModel)
+        Component {
+            id: requirementsDelegate
+
+            Item {
+                width: 640
+                height: 35
+
+                Column {
+                    anchors.centerIn: parent
+
+                    Rectangle {
+                        implicitWidth: 640
+                        implicitHeight: 35
+                        //border.color: name === "Bill Smith" ? "#ffa411" : "#228b22"
+                        border.color: satisfied ? "#228b22" : "#ffa411"
+                        //color: name === "Bill Smith" ? "#f0fff0" : "#ffefd5"
+                        color: satisfied ? "#f0fff0" : "#ffefd5"
+
+                        Image {
+                            anchors.verticalCenter: parent.verticalCenter
+                            anchors.right: parent.right
+                            anchors.margins: 20
+                            //source: name === "Bill Smith" ? "img/information.svgz" : "img/yes.svgz"
+                            source: satisfied ? "qrc:/data/images/yes.svgz" : "qrc:/data/images/information.svgz"
+                        }
+
+                        Text {
+                            text: satisfied ? details : negatedText
+                            //text: 'Met: ' + name + " " + number
+                            anchors.centerIn: parent
+                            font.pointSize: 11
+                        }
+                    }
+                }
+            }
+        }
+
+        ListView {
+            anchors.fill: parent
+            spacing: 5
+            model: config.requirementsModel
+            //model: RequirementsModel {}
+            delegate: requirementsDelegate
+        }
     }
 }
