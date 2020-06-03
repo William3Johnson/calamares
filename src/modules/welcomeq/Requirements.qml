@@ -29,7 +29,7 @@ Rectangle {
     focus: true
     Kirigami.Theme.backgroundColor: Kirigami.Theme.backgroundColor
     anchors.fill: parent
-    anchors.topMargin: 50
+    anchors.topMargin: 70
     //width: 840
     //height: 400
 
@@ -37,7 +37,7 @@ Rectangle {
         id: required
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
-        anchors.topMargin: 1
+        anchors.topMargin: 10
         horizontalAlignment: TextEdit.AlignHCenter
         width: 640
         font.pointSize: 11
@@ -52,7 +52,7 @@ Rectangle {
 
     Rectangle {
         width: 640
-        height: 360
+        height: 400
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: required.bottom
         anchors.topMargin: 5
