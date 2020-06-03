@@ -17,8 +17,8 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-//import io.calamares.core 1.0
-//import io.calamares.ui 1.0
+import io.calamares.core 1.0
+import io.calamares.ui 1.0
 
 import QtQuick 2.7
 import QtQuick.Controls 2.2
@@ -45,7 +45,7 @@ Rectangle {
         wrapMode: Text.WordWrap
 
         text: qsTr("<p>This computer does not satisfy some of the recommended requirements for setting up %1.<br/>
-        Setup can continue, but some features might be disabled.</p>")//.arg(Branding.string(Branding.VersionedName))
+        Setup can continue, but some features might be disabled.</p>").arg(Branding.string(Branding.VersionedName))
     }
 
     Rectangle {
@@ -68,22 +68,22 @@ Rectangle {
                     Rectangle {
                         implicitWidth: 640
                         implicitHeight: 35
-                        border.color: name === "Bill Smith" ? "#ffa411" : "#228b22"
-                        //border.color: satisfied ? "#228b22" : "#ffa411"
-                        color: name === "Bill Smith" ? "#ffefd5" : "#f0fff0"
-                        //color: satisfied ? "#f0fff0" : "#ffefd5"
+                        //border.color: name === "Bill Smith" ? "#ffa411" : "#228b22"
+                        border.color: satisfied ? "#228b22" : "#ffa411"
+                        //color: name === "Bill Smith" ? "#ffefd5" : "#f0fff0"
+                        color: satisfied ? "#f0fff0" : "#ffefd5"
 
                         Image {
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.right: parent.right
                             anchors.margins: 20
-                            source: name === "Bill Smith" ? "img/information.svgz" : "img/yes.svgz"
-                            //source: satisfied ? "qrc:/data/images/yes.svgz" : "qrc:/data/images/information.svgz"
+                            //source: name === "Bill Smith" ? "img/information.svgz" : "img/yes.svgz"
+                            source: satisfied ? "qrc:/data/images/yes.svgz" : "qrc:/data/images/information.svgz"
                         }
 
                         Text {
-                            //text: satisfied ? details : negatedText
-                            text: 'Met: ' + name + " " + number
+                            text: satisfied ? details : negatedText
+                            //text: 'Met: ' + name + " " + number
                             anchors.centerIn: parent
                             font.pointSize: 11
                         }
@@ -95,8 +95,8 @@ Rectangle {
         ListView {
             anchors.fill: parent
             spacing: 5
-            //model: config.requirementsModel
-            model: RequirementsModel {}
+            model: config.requirementsModel
+            //model: RequirementsModel {}
             delegate: requirementsDelegate
         }
     }
