@@ -81,10 +81,10 @@ navigation: qml
 strings:
     productName:         KaOS
     shortProductName:    KaOS
-    version:             2020.05
+    version:             2020.06
     shortVersion:        KaOS
-    versionedName:       KaOS 2020.05
-    shortVersionedName:  KaOS 2020.05
+    versionedName:       KaOS 2020.06
+    shortVersionedName:  KaOS 2020.06
     bootloaderEntryName: KaOS
     productUrl:          https://kaosx.us/
     supportUrl:          https://kaosx.us/docs/
