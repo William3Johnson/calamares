@@ -30,8 +30,6 @@ Rectangle {
     Kirigami.Theme.backgroundColor: Kirigami.Theme.backgroundColor
     anchors.fill: parent
     anchors.topMargin: 70
-    //width: 840
-    //height: 400
 
     TextArea {
         id: required
@@ -70,22 +68,18 @@ Rectangle {
                     Rectangle {
                         implicitWidth: 640
                         implicitHeight: 35
-                        //border.color: name === "Bill Smith" ? "#ff0000" : "#228b22"
                         border.color: mandatory ? "#228b22" : "#ff0000"
-                        //color: name === "Bill Smith" ? "#ffc0cb" : "#f0fff0"
                         color: mandatory ? "#f0fff0" : "#ffc0cb"
 
                         Image {
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.right: parent.right
                             anchors.margins: 20
-                            //source: name === "Bill Smith" ? "img/no.svgz" : "img/yes.svgz"
                             source: mandatory ? "qrc:/data/images/yes.svgz" : "qrc:/data/images/no.svgz"
                         }
 
                         Text {
                             text: mandatory ? details : negatedText
-                            //text: 'Met: ' + name + " " + number
                             anchors.centerIn: parent
                             font.pointSize: 11
                         }
@@ -98,7 +92,6 @@ Rectangle {
             anchors.fill: parent
             spacing: 5
             model: config.requirementsModel
-            //model: RequirementsModel {}
             delegate: requirementsDelegate
         }
     }
