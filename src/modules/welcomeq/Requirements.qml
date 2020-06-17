@@ -104,7 +104,8 @@ Rectangle {
             // This uses the filtered model, so that only unsatisfied
             // requirements are ever shown. You could use *requirementsModel*
             // to get all of them.
-            model: config.unsatisfiedRequirements
+            //model: config.unsatisfiedRequirements
+            model: config.requirementsModel
             delegate: requirementsDelegate
         }
     }
