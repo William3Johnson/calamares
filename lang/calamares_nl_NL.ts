@@ -1311,12 +1311,12 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="137"/>
         <source>has at least %1 GiB working memory</source>
-        <translation>over ten minste 1% GiB werkgeheugen beschikt</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="139"/>
         <source>The system does not have enough working memory. At least %1 GiB is required.</source>
-        <translation>Het systeem heeft niet genoeg werkgeheugen. Ten minste %1 GiB vereist.</translation>
+        <translation>Het systeem heeft niet genoeg werkgeheugen. Ten minste %1 GiB is vereist.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="148"/>

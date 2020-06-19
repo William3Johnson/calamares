@@ -16,6 +16,7 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
+//import io.calamares.core 1.0
 //import io.calamares.ui 1.0
 
 import QtQuick 2.7
@@ -78,13 +79,16 @@ Item {
 
                         // bogus entries, need to come from Locale config
                         model: ["en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8"]
+                        //model: config.languagesModel
 
                         currentIndex: 1
+                        //currentIndex: config.localeIndex
                         highlight: Rectangle {
                             color: Kirigami.Theme.highlightColor
                         }
                         delegate: Text {
                             text: modelData
+                        //delegate: list1
 
                             MouseArea {
                                 hoverEnabled: true
@@ -96,6 +100,7 @@ Item {
                                 onClicked: {
                                     list1.currentIndex = index
                                     confLang = list1.currentIndex
+                                    //config.localeIndex = list1.currentIndex
                                 }
                             }
                         }
