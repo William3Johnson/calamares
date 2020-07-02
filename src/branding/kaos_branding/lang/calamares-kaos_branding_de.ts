@@ -19,12 +19,12 @@
     <message>
         <location filename="../show.qml" line="122"/>
         <source>Qt/KDE specific internet applications include the &lt;br/&gt;Falkon web-browser and kde-telepathy for &lt;br/&gt;chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation>Qt/KDE spezifische Anwendungen umfassen den Falkon Webbrowser &lt;br/&gt; sowie KDE Telepathy für Chat und Kurznachrichten.</translation>
+        <translation>Qt/KDE spezifische Anwendungen beinhalten den Falkon Webbrowser &lt;br/&gt; sowie KDE Telepathy für Chat und Kurznachrichten.</translation>
     </message>
     <message>
         <location filename="../show.qml" line="146"/>
         <source>For package management Octopi is the GUI application.&lt;br/&gt;</source>
-        <translation>Octopi ist die grafische Lösung für deine Softwareverwaltung.</translation>
+        <translation>Für die Softwareverwaltung ist Octopi die grafische Benutzeroberfläche.</translation>
     </message>
     <message>
         <location filename="../show.qml" line="168"/>

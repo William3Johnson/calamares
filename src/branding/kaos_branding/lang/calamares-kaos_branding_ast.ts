@@ -9,7 +9,7 @@
     <message>
         <location filename="../show.qml" line="74"/>
         <source>After the ISO is copied some 25 post-install modules will run.&lt;br/&gt;This includes setting user specific options, &lt;br/&gt;removing Live Session only packages&lt;br/&gt;and adjusting hardware setup.&lt;br/&gt;</source>
-        <translation>Tres copiar la ISO, van executase dalgunos de los 25 módulos&lt;br/&gt;de postinstalación. Estos inclúin axustes d&apos;usuariu específicos,&lt;br/&gt;desaniciu de los paquetes de la sesión Live y la&lt;br/&gt;configuración del hardware.&lt;br/&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../show.qml" line="99"/>
