@@ -1311,7 +1311,7 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="137"/>
         <source>has at least %1 GiB working memory</source>
-        <translation type="unfinished"/>
+        <translation>over ten minste 1% GiB werkgeheugen beschikt</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="139"/>
