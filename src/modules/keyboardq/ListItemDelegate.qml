@@ -19,7 +19,7 @@ ItemDelegate {
     background: Rectangle {
 
         color: isCurrentItem || hovered ? Kirigami.Theme.highlightColor : Kirigami.Theme.backgroundColor
-        opacity: isCurrentItem || hovered ? 0.8 : 0.5
+        opacity: isCurrentItem || hovered ? 0.9 : 0.7
     }
 
     width: 490 //parent.width
