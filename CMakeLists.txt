@@ -140,12 +140,10 @@ set( CALAMARES_DESCRIPTION_SUMMARY
 # TODO: drop the es_ES translation from Transifex
 #
 # NOTE: move eo (Esperanto) to _ok once Qt can actually create a
-#       locale for it. (Qt 5.12.2 can, see check later on).
-# NOTE: update these lines by running txstats.py, or copy these four lines
-#       and prefix each variable name with "p", so that the automatic
-#       checks for new languages and misspelled ones are done (that is,
-#       copy these four lines to four backup lines, add "p", and then update
-#       the original four lines with the current translations).
+#       locale for it. (Qt 5.12.2 can, see Translation Status section).
+# NOTE: move ie (Interlingue) to _ok once Qt supports it.
+# NOTE: update these lines by running `txstats.py`, or for full automation
+#       `txstats.py -e`. See also
 #
 # Total 25 languages
 set( _tx_complete ast ca cs de en es es_AR fr hr hu id_ID nl_NL pt_BR pt_PT)
@@ -283,14 +281,6 @@ find_package( Qt5 ${QT_VERSION} CONFIG REQUIRED Concurrent Core Gui LinguistTool
 if( WITH_QML )
     find_package( Qt5 ${QT_VERSION} CONFIG REQUIRED Quick QuickWidgets )
 endif()
-if( Qt5_VERSION VERSION_GREATER 5.12.1 )
-    # At least Qt 5.12.2 seems to support Esperanto in QLocale
-    if( "eo" IN_LIST _tx_incomplete )
-        message(STATUS "Esperanto support since Qt 5.12.2, enabling Esperanto locale")
-        list( REMOVE_ITEM _tx_incomplete "eo" )
-        list( APPEND _tx_ok "eo" )
-    endif()
-endif()
 # Optional Qt parts
 find_package( Qt5DBus CONFIG )
 
@@ -426,30 +416,22 @@ set(Calamares_WITH_QML ${WITH_QML})
 
 ### Transifex Translation status
 #
-# Construct language lists for use. If there are p_tx* variables,
-# then run an extra cmake-time check for consistency of the old
-# (p_tx*) and new (_tx*) lists.
+# Construct language lists for use.
 #
-set( prev_tx ${p_tx_complete} ${p_tx_good} ${p_tx_ok} ${p_tx_incomplete} )
+if( Qt5_VERSION VERSION_GREATER 5.12.1 )
+    # At least Qt 5.12.2 seems to support Esperanto in QLocale
+    if( "eo" IN_LIST _tx_incomplete )
+        message(STATUS "Esperanto support since Qt 5.12.2, enabling Esperanto locale")
+        list( REMOVE_ITEM _tx_incomplete "eo" )
+        list( APPEND _tx_ok "eo" )
+    endif()
+endif()
+
 set( curr_tx ${_tx_complete} ${_tx_good} ${_tx_ok} ${_tx_incomplete} )
 set( tx_errors OFF )
-if ( prev_tx )
-    # Gone in new list
-    foreach( l ${prev_tx} )
-        list( FIND curr_tx ${l} p_l )
-        if( p_l EQUAL -1 )
-            message(WARNING "Language ${l} was present in previous translations and is now absent.")
-            set( tx_errors ON )
-        endif()
-    endforeach()
-
+if ( curr_tx )
     # New in list
     foreach( l ${curr_tx} )
-        list( FIND prev_tx ${l} p_l )
-        if( p_l EQUAL -1 )
-            message(WARNING "Language ${l} is new.")
-            set( tx_errors ON )
-        endif()
         set( p_l "lang/calamares_${l}.ts" )
         if( NOT EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/${p_l} )
             message(WARNING "Language ${l} has no .ts file yet.")
@@ -460,7 +442,6 @@ if ( prev_tx )
     unset( p_l )
     unset( l )
 endif()
-unset( prev_tx )
 unset( curr_tx )
 if( tx_errors )
     message( FATAL_ERROR "Translation warnings, see above." )

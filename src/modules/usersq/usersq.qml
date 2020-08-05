@@ -18,7 +18,7 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import io.calamares.modules 1.0 as Modules
+import io.calamares.core 1.0
 import io.calamares.ui 1.0
 
 import QtQuick 2.10
@@ -30,8 +30,8 @@ import QtQuick.Window 2.3
 
 Kirigami.ScrollablePage {
 
-    width: 860 //parent.width
-    height: 600 //parent.height
+    width: parent.width
+    height: parent.height
     
     Kirigami.Theme.backgroundColor: "#EFF0F1"
     Kirigami.Theme.textColor: "#1F1F1F"
@@ -46,7 +46,6 @@ Kirigami.ScrollablePage {
         font.pointSize: 12
         //text: config.message
         text: qsTr("Pick your user name and credentials to login and perform admin tasks")
-        
     }
 
     ColumnLayout {
@@ -108,6 +107,7 @@ Kirigami.ScrollablePage {
 
                 }
             }
+
             Label {
 
                 width: parent.width
@@ -143,6 +143,7 @@ Kirigami.ScrollablePage {
                     border.color: _hostName.text === "" ? Kirigami.Theme.backgroundColor : ( config.hostNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
                 }
             }
+
             Label {
 
                 width: parent.width
@@ -199,12 +200,12 @@ Kirigami.ScrollablePage {
                     background: Rectangle {
 
                         color:  Kirigami.Theme.backgroundColor
-                        
                         opacity: 0.9
                         border.color: _verificationpasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.passwordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
                     }
                 }
             }
+
             Label {
 
                 width: parent.width
@@ -218,14 +219,17 @@ Kirigami.ScrollablePage {
         
         CheckBox {
 
-            visible: config.validatePasswordsVisible
+            //visible: config.validatePasswordsVisible
+            visible: false
             text: qsTr("Validate passwords quality")
             checked: config.validatePasswords
-            onToggled:  config.validatePasswords = !config.validatePasswords
+            onToggled: config.validatePasswords = !config.validatePasswords
         }
+
         Label {
 
-            visible: config.validatePasswordsVisible
+            //visible: config.validatePasswordsVisible
+            visible: false
             width: parent.width
             text: qsTr("When this box is checked, password-strength checking is done and you will not be able to use a weak password..")
             font.weight: Font.Thin
@@ -237,7 +241,7 @@ Kirigami.ScrollablePage {
 
             text: qsTr("Log in automatically without asking for the password")
             checked: config.autologin
-            onToggled:  config.autologin = !config.autologin
+            onToggled: config.autologin = !config.autologin
         }
 
         CheckBox {
@@ -245,14 +249,14 @@ Kirigami.ScrollablePage {
             id: root
             visible: config.resusePasswordVisible
             text: qsTr("Reuse user password as root password")
-            //checked: config.resusePassword
-            checked: true
-            onToggled:  config.resusePassword = !config.resusePassword
+            //checked: config.reusePassword
+            checked: false
+            onToggled: config.resusePassword = !config.resusePassword
         }
         
         Label {
 
-            //visible: config.resusePassword
+            //visible: config.reusePassword
             visible: root.checked
             width: parent.width
             text: qsTr("Use the same password for the administrator account.")
@@ -260,7 +264,7 @@ Kirigami.ScrollablePage {
             font.pointSize: 8
             color: "#6D6D6D"
         }
-        
+
         Column {
 
             visible: ! root.checked
@@ -287,13 +291,11 @@ Kirigami.ScrollablePage {
                     inputMethodHints: Qt.ImhNoAutoUppercase
                     onTextChanged: config.onRootPasswordTextChanged(text, _verificationRootPasswordField.text)
 
-                    background: Rectangle
-                    {
+                    background: Rectangle {
+
                         color:  Kirigami.Theme.backgroundColor
-                        
                         opacity: 0.9
                         border.color: _rootPasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.rootPasswordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-
                     }
                 }
 
@@ -308,9 +310,8 @@ Kirigami.ScrollablePage {
                     onTextChanged: config.onPasswordTextChanged(_rootPasswordField.text, text)
 
                     background: Rectangle {
-                        
+
                         color:  Kirigami.Theme.backgroundColor
-                        
                         opacity: 0.9
                         border.color: _verificationRootPasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.rootPasswordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
                     }
