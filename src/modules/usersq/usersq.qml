@@ -18,8 +18,8 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import io.calamares.core 1.0
-import io.calamares.ui 1.0
+//import io.calamares.core 1.0
+//import io.calamares.ui 1.0
 
 import QtQuick 2.10
 import QtQuick.Controls 2.10
@@ -177,7 +177,7 @@ Kirigami.ScrollablePage {
                     echoMode: TextInput.Password
                     passwordMaskDelay: 300
                     inputMethodHints: Qt.ImhNoAutoUppercase
-                    onTextChanged: config.onPasswordTextChanged(text, _verificationPasswordField.text)
+                    onTextChanged: config.userPasswordChanged(text, _verificationPasswordField.text)
 
                     background: Rectangle {
 
@@ -195,7 +195,7 @@ Kirigami.ScrollablePage {
                     echoMode: TextInput.Password
                     passwordMaskDelay: 300
                     inputMethodHints: Qt.ImhNoAutoUppercase
-                    onTextChanged: config.onPasswordTextChanged(_passwordField.text, text)
+                    onTextChanged: config.userPasswordSecondaryChanged(_passwordField.text, text)
 
                     background: Rectangle {
 
@@ -219,17 +219,17 @@ Kirigami.ScrollablePage {
         
         CheckBox {
 
-            //visible: config.validatePasswordsVisible
-            visible: false
+            visible: config.RequireStrongPasswordsVisible
+            //visible: false
             text: qsTr("Validate passwords quality")
             checked: config.validatePasswords
-            onToggled: config.validatePasswords = !config.validatePasswords
+            onToggled: config.RequireStrongPasswords = !config.RequireStrongPasswords
         }
 
         Label {
 
-            //visible: config.validatePasswordsVisible
-            visible: false
+            visible: config.allowWeakPasswordsDefault
+            //visible: false
             width: parent.width
             text: qsTr("When this box is checked, password-strength checking is done and you will not be able to use a weak password..")
             font.weight: Font.Thin
@@ -240,18 +240,18 @@ Kirigami.ScrollablePage {
         CheckBox {
 
             text: qsTr("Log in automatically without asking for the password")
-            checked: config.autologin
-            onToggled: config.autologin = !config.autologin
+            checked: config.doAutologin
+            onToggled: config.doAutologin = !config.doAutologin
         }
 
         CheckBox {
 
             id: root
-            visible: config.resusePasswordVisible
+            visible: config.doReusePassword
             text: qsTr("Reuse user password as root password")
-            //checked: config.reusePassword
-            checked: false
-            onToggled: config.resusePassword = !config.resusePassword
+            checked: config.reuseUserPasswordForRoot
+            //checked: false
+            onToggled: config.reuseUserPasswordForRoot = !config.reuseUserPasswordForRoot
         }
         
         Label {
@@ -289,7 +289,7 @@ Kirigami.ScrollablePage {
                     echoMode: TextInput.Password
                     passwordMaskDelay: 300
                     inputMethodHints: Qt.ImhNoAutoUppercase
-                    onTextChanged: config.onRootPasswordTextChanged(text, _verificationRootPasswordField.text)
+                    onTextChanged: config.rootPasswordChanged(text, _verificationRootPasswordField.text)
 
                     background: Rectangle {
 
@@ -307,7 +307,7 @@ Kirigami.ScrollablePage {
                     echoMode: TextInput.Password
                     passwordMaskDelay: 300
                     inputMethodHints: Qt.ImhNoAutoUppercase
-                    onTextChanged: config.onPasswordTextChanged(_rootPasswordField.text, text)
+                    onTextChanged: config.rootPasswordSecondaryChanged(_rootPasswordField.text, text)
 
                     background: Rectangle {
 
