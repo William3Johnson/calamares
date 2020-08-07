@@ -29,14 +29,22 @@ Page {
     width: 800 // parent.width
     height: 550 //parent.height
 
+    /*function onActivate() {
+        /* If you want the map to follow Calamares's GeoIP
+         * lookup or configuration, call the update function
+         * here, and disable the one at onCompleted in Map.qml.
+         
+        if (Network.hasInternet) { image.item.getIpOffline() }
+    }*/
+
     Loader {
         id: image
         anchors.horizontalCenter: parent.horizontalCenter
         width: parent.width
         height: parent.height / 1.28
         // Network is in io.calamares.core
-        source: Network.hasInternet ? "Map.qml" : "Offline.qml"
-        //source: "Map.qml"
+        //source: Network.hasInternet ? "Map.qml" : "Offline.qml"
+        source: "Map.qml"
     }
 
     RowLayout {

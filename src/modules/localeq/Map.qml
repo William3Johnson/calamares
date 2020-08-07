@@ -51,7 +51,7 @@ Column {
                 var ct = responseJSON.city
                 var cy = responseJSON.country
 
-                tzText.text = "Timezone: " + tz
+                tzText.text = qsTr("Timezone: ") + tz
                 cityName = ct
                 countryName = cy
             }
@@ -73,7 +73,7 @@ Column {
                 var responseJSON = JSON.parse(xhr.responseText)
                 var tz2 = responseJSON.timezoneId
 
-                tzText.text = "Timezone: " + tz2
+                tzText.text = qsTr("Timezone: ") + tz2
                 config.setCurrentLocation(tz2)
             }
         }
