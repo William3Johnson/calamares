@@ -72,10 +72,11 @@ Kirigami.ScrollablePage {
                 onTextChanged: config.fullNameChanged(text)
                 background: Rectangle {
 
-                    color:  Kirigami.Theme.backgroundColor
+                    color: "#FBFBFB" // Kirigami.Theme.backgroundColor
                     radius: 2
                     opacity: 0.9
-                    border.color: _userNameField.text === "" ? Kirigami.Theme.backgroundColor : ( config.fullNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                    //border.color: _userNameField.text === "" ? Kirigami.Theme.backgroundColor : ( config.fullNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                    border.color: _userNameField.text === "" ? "#FBFBFB" : ( config.fullNameReady ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
                 }
             }
         }
@@ -101,9 +102,10 @@ Kirigami.ScrollablePage {
 
                 background: Rectangle {
 
-                    color:  Kirigami.Theme.backgroundColor
+                    color: "#FBFBFB" // Kirigami.Theme.backgroundColor
                     opacity: 0.9
-                    border.color: _userLoginField.text === "" ? Kirigami.Theme.backgroundColor : ( config.userNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                    //border.color: _userLoginField.text === "" ? Kirigami.Theme.backgroundColor : ( config.userNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                    border.color: _userLoginField.text === "" ? "#FBFBFB" : ( config.userNameReady ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
 
                 }
             }
@@ -138,9 +140,10 @@ Kirigami.ScrollablePage {
                 onTextEdited: config.hostNameChanged(text)
                 background: Rectangle {
 
-                    color:  Kirigami.Theme.backgroundColor
+                    color: "#FBFBFB" // Kirigami.Theme.backgroundColor
                     opacity: 0.9
-                    border.color: _hostName.text === "" ? Kirigami.Theme.backgroundColor : ( config.hostNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                    //border.color: _hostName.text === "" ? Kirigami.Theme.backgroundColor : ( config.hostNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                    border.color: _hostName.text === "" ? "#FBFBFB" : ( config.hostNameReady ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
                 }
             }
 
@@ -181,9 +184,10 @@ Kirigami.ScrollablePage {
 
                     background: Rectangle {
 
-                        color:  Kirigami.Theme.backgroundColor
+                        color: "#FBFBFB" // Kirigami.Theme.backgroundColor
                         opacity: 0.9
-                        border.color: _passwordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.passwordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                        //border.color: _passwordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.passwordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                        border.color: _passwordField.text === "" ? "#FBFBFB" : ( config.passwordReady ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
                     }
                 }
 
@@ -199,9 +203,10 @@ Kirigami.ScrollablePage {
 
                     background: Rectangle {
 
-                        color:  Kirigami.Theme.backgroundColor
+                        color: "#FBFBFB" Kirigami.Theme.backgroundColor
                         opacity: 0.9
-                        border.color: _verificationpasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.passwordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                        //border.color: _verificationpasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.passwordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                        border.color: _verificationpasswordField.text === "" ? "#FBFBFB" : ( config.passwordReady ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
                     }
                 }
             }
@@ -293,9 +298,10 @@ Kirigami.ScrollablePage {
 
                     background: Rectangle {
 
-                        color:  Kirigami.Theme.backgroundColor
+                        color: "#FBFBFB" // Kirigami.Theme.backgroundColor
                         opacity: 0.9
-                        border.color: _rootPasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.rootPasswordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                        //border.color: _rootPasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.rootPasswordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                        border.color: _rootPasswordField.text === "" ? "#FBFBFB" : ( config.rootPasswordReady ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
                     }
                 }
 
@@ -311,9 +317,10 @@ Kirigami.ScrollablePage {
 
                     background: Rectangle {
 
-                        color:  Kirigami.Theme.backgroundColor
+                        color: "#FBFBFB" // Kirigami.Theme.backgroundColor
                         opacity: 0.9
-                        border.color: _verificationRootPasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.rootPasswordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                        //border.color: _verificationRootPasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.rootPasswordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
+                        border.color: _verificationRootPasswordField.text === "" ? "#FBFBFB" : ( config.rootPasswordReady ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
                     }
                 }
             }

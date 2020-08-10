@@ -34,7 +34,7 @@
 
 CALAMARES_PLUGIN_FACTORY_DEFINITION( UsersQmlViewStepFactory, registerPlugin< UsersQmlViewStep >(); )
 
-static const NamedEnumTable< SetHostNameJob::Action >&
+/*static const NamedEnumTable< SetHostNameJob::Action >&
 hostnameActions()
 {
     using Action = SetHostNameJob::Action;
@@ -50,7 +50,7 @@ hostnameActions()
     // *INDENT-ON*
 
     return names;
-}
+}*/
 
 UsersQmlViewStep::UsersQmlViewStep( QObject* parent )
 : Calamares::QmlViewStep( parent )
@@ -151,7 +151,7 @@ UsersQmlViewStep::setConfigurationMap( const QVariantMap& configurationMap )
     bool setRootPassword = getBool( configurationMap, "setRootPassword", true );
     Calamares::JobQueue::instance()->globalStorage()->insert( "setRootPassword", setRootPassword );
 
-    //m_config->setWriteRootPassword( setRootPassword );
+    //m_config->writeRootPassword( setRootPassword );
     //m_config->setAutologinGroup( getBool( configurationMap, "doAutologin", false ) );
     //m_config->setReusePasswordDefault( getBool( configurationMap, "doReusePassword", false ) );
 
@@ -162,7 +162,7 @@ UsersQmlViewStep::setConfigurationMap( const QVariantMap& configurationMap )
 
         for ( decltype( pr_checks )::const_iterator i = pr_checks.constBegin(); i != pr_checks.constEnd(); ++i )
         {
-            //m_config->addPasswordCheck( i.key(), i.value() );
+            //m_config->passwordChecks( i.key(), i.value() );
         }
     }
 
@@ -178,7 +178,7 @@ UsersQmlViewStep::setConfigurationMap( const QVariantMap& configurationMap )
 
     Calamares::JobQueue::instance()->globalStorage()->insert( "userShell", shell );
 
-    using Action = SetHostNameJob::Action;
+    /*using Action = SetHostNameJob::Action;
 
     QString hostnameActionString = CalamaresUtils::getString( configurationMap, "setHostname" );
     if ( hostnameActionString.isEmpty() )
@@ -193,7 +193,7 @@ UsersQmlViewStep::setConfigurationMap( const QVariantMap& configurationMap )
     }
 
     Action hostsfileAction = getBool( configurationMap, "writeHostsFile", true ) ? Action::WriteEtcHosts : Action::None;
-    m_actions = hostsfileAction | hostnameAction;
+    m_actions = hostsfileAction | hostnameAction;*/
 
     Calamares::QmlViewStep::setConfigurationMap( configurationMap ); // call parent implementation last
     setContextProperty( "Users", m_config );

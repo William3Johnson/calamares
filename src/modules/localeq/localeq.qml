@@ -44,7 +44,7 @@ Page {
         height: parent.height / 1.28
         // Network is in io.calamares.core
         //source: Network.hasInternet ? "Map.qml" : "Offline.qml"
-        source: "Map.qml"
+        source: "Offline.qml"
     }
 
     RowLayout {
@@ -64,8 +64,8 @@ Page {
                 rowSpacing: Kirigami.Units.largeSpacing
                 columnSpacing: Kirigami.Units.largeSpacing
 
-                Kirigami.Icon {
-                    source: "application-x-gettext-translation"
+                Image {
+                    source: "img/locale.svg"
                     Layout.fillHeight: true
                     Layout.maximumHeight: Kirigami.Units.iconSizes.medium
                     Layout.preferredWidth: height
