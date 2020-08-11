@@ -96,7 +96,7 @@ Kirigami.ScrollablePage {
                 id: _userLoginField
                 width: parent.width
                 placeholderText: qsTr("Login Name")
-                text: config.userName
+                //text: config.userName
                 onTextEdited: config.loginNameChanged(text)
 
                 background: Rectangle {
@@ -222,16 +222,16 @@ Kirigami.ScrollablePage {
         
         CheckBox {
 
-            visible: config.RequireStrongPasswordsVisible
+            visible: config.allowWeakPasswords
             //visible: false
             text: qsTr("Validate passwords quality")
-            checked: config.validatePasswords
-            onToggled: config.RequireStrongPasswords = !config.RequireStrongPasswords
+            checked: config.allowWeakPasswordsDefault
+            onToggled: config.allowWeakPasswordsDefault = !config.allowWeakPasswordsDefault
         }
 
         Label {
 
-            visible: config.allowWeakPasswordsDefault
+            visible: config.allowWeakPasswords
             //visible: false
             width: parent.width
             text: qsTr("When this box is checked, password-strength checking is done and you will not be able to use a weak password..")
