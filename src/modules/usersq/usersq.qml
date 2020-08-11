@@ -44,7 +44,6 @@ Kirigami.ScrollablePage {
         color: Kirigami.Theme.textColor
         font.weight: Font.Medium
         font.pointSize: 12
-        //text: config.message
         text: qsTr("Pick your user name and credentials to login and perform admin tasks")
     }
 
@@ -106,7 +105,6 @@ Kirigami.ScrollablePage {
                     opacity: 0.9
                     //border.color: _userLoginField.text === "" ? Kirigami.Theme.backgroundColor : ( config.userNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
                     border.color: _userLoginField.text === "" ? "#FBFBFB" : ( config.userNameReady ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
-
                 }
             }
 
@@ -203,7 +201,7 @@ Kirigami.ScrollablePage {
 
                     background: Rectangle {
 
-                        color: "#FBFBFB" Kirigami.Theme.backgroundColor
+                        color: "#FBFBFB" //Kirigami.Theme.backgroundColor
                         opacity: 0.9
                         //border.color: _verificationpasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.passwordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
                         border.color: _verificationpasswordField.text === "" ? "#FBFBFB" : ( config.passwordReady ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
@@ -261,7 +259,6 @@ Kirigami.ScrollablePage {
         
         Label {
 
-            //visible: config.reusePassword
             visible: root.checked
             width: parent.width
             text: qsTr("Use the same password for the administrator account.")

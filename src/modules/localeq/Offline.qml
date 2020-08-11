@@ -16,8 +16,8 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-//import io.calamares.core 1.0
-//import io.calamares.ui 1.0
+import io.calamares.core 1.0
+import io.calamares.ui 1.0
 
 import QtQuick 2.10
 import QtQuick.Controls 2.10
@@ -89,7 +89,7 @@ Column {
                         model: config.regionModel
                         //model: ["Africa", "America", "Antarctica", "Arctic", "Asia", "Atlantic", "Australia", "Europe", "Indian", "Pacific"]
 
-                        currentIndex: 1
+                        currentIndex: config.regionIndex
                         highlight: Rectangle {
                             color: Kirigami.Theme.highlightColor
                         }
@@ -139,10 +139,10 @@ Column {
                         focus: true
                         clip: true
 
-                        model: config.zonesModel
+                        model: config.regionalZonesModel
                         //model: ["Brussels", "London", "Madrid", "New York", "Melbourne", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York"]
 
-                        currentIndex: 3
+                        currentIndex: config.zoneIndex
                         highlight: Rectangle {
                             color: Kirigami.Theme.highlightColor
                         }
