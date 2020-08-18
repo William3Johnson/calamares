@@ -61,10 +61,7 @@ public:
 
 private:
     Config *m_config;
-    QList< Calamares::job_ptr > m_jobs;
-
-    QStringList m_defaultGroups;
-    //SetHostNameJob::Actions m_actions;
+    Calamares::JobList m_jobs;
 };
 
 CALAMARES_PLUGIN_FACTORY_DECLARATION( UsersQmlViewStepFactory )
