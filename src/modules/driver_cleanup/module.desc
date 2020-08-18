@@ -2,5 +2,4 @@
 type:       "job"
 name:       "driver_cleanup"
 interface:  "python"
-requires:   []
 script:     "main.py"

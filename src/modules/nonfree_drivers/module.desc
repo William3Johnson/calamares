@@ -2,5 +2,4 @@
 type:       "job"
 name:       "nonfree_drivers"
 interface:  "python"
-requires:   []
 script:     "main.py"

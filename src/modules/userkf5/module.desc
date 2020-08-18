@@ -2,5 +2,4 @@
 type:       "job"
 name:       "userkf5"
 interface:  "python"
-requires:   []
 script:     "main.py"

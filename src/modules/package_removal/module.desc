@@ -2,5 +2,4 @@
 type:       "job"
 name:       "package_removal"
 interface:  "python"
-requires:   []
 script:     "main.py"
