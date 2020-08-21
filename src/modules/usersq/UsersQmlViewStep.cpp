@@ -39,7 +39,7 @@ UsersQmlViewStep::UsersQmlViewStep( QObject* parent )
 {
     connect( m_config, &Config::readyChanged, this, &UsersQmlViewStep::nextStatusChanged );
 
-    emit nextStatusChanged( true );
+    emit nextStatusChanged( m_config->isReady() );
 }
 
 QString

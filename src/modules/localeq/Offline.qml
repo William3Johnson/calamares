@@ -26,162 +26,209 @@ import QtQuick.Layouts 1.3
 
 import org.kde.kirigami 2.7 as Kirigami
 
-Column {
-    width: parent.width
+Page {
+    width: 800 //parent.width
+    height: 500
 
     //property var currentTimezoneName: "America/New York"
     //property var currentTimezoneName1: "Europe/Amsterdam"
     //property var currentTimezoneName2: "Australia/Melbourn"
 
-    Label {
+     StackView {
+        id: stack
+        anchors.fill: parent
+        clip: true
 
-        Layout.fillWidth: true
-        height: 50
-        anchors.horizontalCenter: parent.horizontalCenter
-        color: Kirigami.Theme.textColor
-        font.weight: Font.Medium
-        font.pointSize: 10
-        wrapMode: Text.WordWrap
-        text: qsTr("Select your preferred Region and add the preferred Zone, or use the default one based on your current location.")
-    }
-    
-    Rectangle {
-        width: parent.width
-        height: parent.height / 1.6
+        initialItem: Item {
 
-        RowLayout{
-            anchors.fill: parent
-            anchors.leftMargin: 20
-            anchors.rightMargin: 20
-            spacing: 20
+            Label {
 
-            Rectangle {
-                id: rect1
-                width: parent.width / 3
-                height: 300
-                color: "#F5F5F5"
-                Layout.fillWidth: true
-                Layout.alignment : Qt.AlignTop
-
-                    Label {
-                        id: region
-                        width: rect1.width
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        background: Rectangle {
-                            color: "#31363B"
-                        }
-                        color: "#F5F5F5"
-                        horizontalAlignment: Text.AlignCenter
-                        text: qsTr("REGION")
-                    }
-
-                    ListView {
-                        id: list
-                        ScrollBar.vertical: ScrollBar {
-                        active: true
-                        }
-                        width: parent.width
-                        height: 230
-                        anchors.top: region.bottom
-                        focus: true
-                        clip: true
-
-                        model: config.regionModel
-                        //model: ["Africa", "America", "Antarctica", "Arctic", "Asia", "Atlantic", "Australia", "Europe", "Indian", "Pacific"]
-
-                        currentIndex: config.regionIndex
-                        highlight: Rectangle {
-                            color: Kirigami.Theme.highlightColor
-                        }
-                        delegate: Text {
-                            text: name
-
-                            MouseArea {
-                                hoverEnabled: true
-                                anchors.fill: parent
-                                cursorShape: Qt.PointingHandCursor
-                                onClicked: {
-                                    list.currentIndex = index
-                                    tztext.text = qsTr("Timezone: %1").arg(config.currentTimezoneName)
-                                }
-                            }
-                        }
-                    }
-
+                id: region
+                anchors.horizontalCenter: parent.horizontalCenter
+                color: Kirigami.Theme.textColor
+                horizontalAlignment: Text.AlignCenter
+                text: qsTr("Select your preferred Region, or use the default one based on your current location.")
             }
-            
-            Rectangle {
-                id: rect2
-                width: parent.width / 3
-                height: 300
-                color: "#F5F5F5"
-                Layout.fillWidth: true
-                Layout.alignment : Qt.AlignTop
 
-                    Label {
-                        id: zone
-                        width: rect2.width
-                        background: Rectangle {
-                            color: "#31363B"
-                        }
-                        color: "#F5F5F5"
-                        text: qsTr("ZONE ")
+            ListView {
+
+                id: list
+                ScrollBar.vertical: ScrollBar {
+                    active: true
+                }
+
+                width: parent.width / 2
+                height: 250
+                anchors.centerIn: parent
+                anchors.verticalCenterOffset: -30
+                focus: true
+                clip: true
+                boundsBehavior: Flickable.StopAtBounds
+                spacing: 2 //Kirigami.Units.smallSpacing
+
+                Rectangle {
+
+                    z: parent.z - 1
+                    anchors.fill: parent
+                    color: "#BDC3C7"
+                    radius: 5
+                    opacity: 0.7
+                }
+
+                model: config.regionModel
+                //model: ["Africa", "America", "Antarctica", "Arctic", "Asia", "Atlantic", "Australia", "Europe", "Indian", "Pacific"]
+
+                currentIndex: -1 // config.regionIndex
+                highlight: Rectangle {
+
+                    color: Kirigami.Theme.highlightColor
+                }
+
+                delegate: Label {
+
+                    text:  name // modelData
+                    Layout.fillHeight: true
+                    Layout.fillWidth: true
+                    width: parent.width
+                    height: 24
+                    color: ListView.isCurrentItem ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
+
+                    background: Rectangle {
+
+                        color: ListView.isCurrentItem || hovered ? Kirigami.Theme.highlightColor : Kirigami.Theme.backgroundColor
+                        opacity: ListView.isCurrentItem || hovered ? 0.9 : 0.5
                     }
 
-                    ListView {
-                        id: list2
-                        ScrollBar.vertical: ScrollBar {
+                    MouseArea {
+
+                        hoverEnabled: true
+                        anchors.fill: parent
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: {
+
+                            list.currentIndex = index
+                            tztext.text = qsTr("Timezone: %1").arg(config.currentTimezoneName)
+                            //tztext.text = qsTr("Timezone: %1").arg(currentTimezoneName1)
+                            stack.push(zoneView)
+                        }
+                    }
+                }
+            }
+        }
+
+        Component {
+            id: zoneView
+
+            Item {
+
+                Label {
+
+                    id: zone
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    color: Kirigami.Theme.textColor
+                    text: qsTr("Select your preferred Zone within your Region.")
+                }
+
+                ListView {
+
+                    id: list2
+                    ScrollBar.vertical: ScrollBar {
                         active: true
-                        }
+                    }
+
+                    width: parent.width / 2
+                    height: 250
+                    anchors.centerIn: parent
+                    anchors.verticalCenterOffset: -30
+                    focus: true
+                    clip: true
+                    boundsBehavior: Flickable.StopAtBounds
+                    spacing: 2 // Kirigami.Units.smallSpacing
+
+                    Rectangle {
+
+                        z: parent.z - 1
+                        anchors.fill: parent
+                        color: "#BDC3C7"
+                        radius: 5
+                        opacity: 0.7
+                    }
+
+                    model: config.regionalZonesModel
+                    //model: ["Brussels", "London", "Madrid", "New York", "Melbourne", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York"]
+
+                    currentIndex: -1 //config.zoneIndex
+                    highlight: Rectangle {
+
+                        color: Kirigami.Theme.highlightColor
+                    }
+
+                    delegate: Label {
+
+                        text: name // modelData
+                        Layout.fillHeight: true
+                        Layout.fillWidth: true
                         width: parent.width
-                        height: 230
-                        anchors.top: zone.bottom
-                        focus: true
-                        clip: true
+                        height: 24
+                        color: ListView.isCurrentItem ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
+                        background: Rectangle {
 
-                        model: config.regionalZonesModel
-                        //model: ["Brussels", "London", "Madrid", "New York", "Melbourne", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York"]
-
-                        currentIndex: config.zoneIndex
-                        highlight: Rectangle {
-                            color: Kirigami.Theme.highlightColor
+                            color: ListView.isCurrentItem || hovered ? Kirigami.Theme.highlightColor : Kirigami.Theme.backgroundColor
+                            opacity: ListView.isCurrentItem || hovered ? 0.9 : 0.4
                         }
-                        delegate: Text {
-                            text: name
 
-                            MouseArea {
-                                hoverEnabled: true
-                                anchors.fill: parent
-                                cursorShape: Qt.PointingHandCursor
-                                onClicked: {
-                                    list2.currentIndex = index
-                                    tztext.text = qsTr("Timezone: %1").arg(config.currentTimezoneName)
-                                }
+                        MouseArea {
+
+                            hoverEnabled: true
+                            anchors.fill: parent
+                            cursorShape: Qt.PointingHandCursor
+                            onClicked: {
+
+                                list2.currentIndex = index
+                                list2.positionViewAtIndex(index, ListView.Center)
+                                //tztext.text = qsTr("Timezone: %1").arg(currentTimezoneName)
+                                tztext.text = qsTr("Timezone: %1").arg(config.currentTimezoneName)
                             }
                         }
                     }
+                }
+                
+                Button {
+
+                    Layout.fillWidth: true
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.verticalCenterOffset: -30
+                    icon.name: "go-previous"
+                    text: qsTr("Zones")
+                    onClicked: stack.pop()
+                }
             }
         }
     }
 
     Rectangle {
+
         width: parent.width
-        height: 100
+        height: 60
         anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: parent.bottom
 
         Item {
+
             id: location
             Kirigami.Theme.inherit: false
             Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
             anchors.horizontalCenter: parent.horizontalCenter
 
             Rectangle {
+
                 anchors.centerIn: parent
                 width: 300
                 height: 30
                 color: Kirigami.Theme.backgroundColor
 
                 Text {
+
                     id: tztext
                     text: qsTr("Timezone: %1").arg(config.currentTimezoneName)
                     //text: qsTr("Timezone: %1").arg(currentTimezoneName)
@@ -192,6 +239,7 @@ Column {
         }
 
         Text {
+
             anchors.top: location.bottom
             anchors.topMargin: 20
             padding: 10

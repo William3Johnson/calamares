@@ -22,7 +22,6 @@
 #define USERSQMLVIEWSTEP_H
 
 #include <QObject>
-//#include "SetHostNameJob.h"
 
 #include <utils/PluginFactory.h>
 #include <viewpages/QmlViewStep.h>
@@ -31,6 +30,9 @@
 
 #include <QVariant>
 #include "Config.h"
+
+class Config;
+class UsersPage;
 
 class PLUGINDLLEXPORT UsersQmlViewStep : public Calamares::QmlViewStep
 {
