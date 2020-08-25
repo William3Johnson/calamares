@@ -1,6 +1,7 @@
 /* === This file is part of Calamares - <https://github.com/calamares> ===
  *
- *   Copyright 2020, Anke Boersma <demm@kaosx.us>
+ *   SPDX-FileCopyrightText: 2020 Anke Boersma <demm@kaosx.us>
+ *   SPDX-License-Identifier: GPL-3.0-or-later
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -29,10 +30,6 @@ import org.kde.kirigami 2.7 as Kirigami
 Page {
     width: 800 //parent.width
     height: 500
-
-    //property var currentTimezoneName: "America/New York"
-    //property var currentTimezoneName1: "Europe/Amsterdam"
-    //property var currentTimezoneName2: "Australia/Melbourn"
 
      StackView {
         id: stack
@@ -64,7 +61,7 @@ Page {
                 focus: true
                 clip: true
                 boundsBehavior: Flickable.StopAtBounds
-                spacing: 2 //Kirigami.Units.smallSpacing
+                spacing: 2
 
                 Rectangle {
 
@@ -76,41 +73,34 @@ Page {
                 }
 
                 model: config.regionModel
-                //model: ["Africa", "America", "Antarctica", "Arctic", "Asia", "Atlantic", "Australia", "Europe", "Indian", "Pacific"]
-
-                currentIndex: -1 // config.regionIndex
-                highlight: Rectangle {
-
-                    color: Kirigami.Theme.highlightColor
-                }
-
-                delegate: Label {
-
-                    text:  name // modelData
-                    Layout.fillHeight: true
-                    Layout.fillWidth: true
+                currentIndex: model.regionIndex
+                delegate: ItemDelegate {
+                    
+                    hoverEnabled: true
                     width: parent.width
-                    height: 24
-                    color: ListView.isCurrentItem ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
+                    highlighted: ListView.isCurrentItem
 
-                    background: Rectangle {
+                    Label {
 
-                        color: ListView.isCurrentItem || hovered ? Kirigami.Theme.highlightColor : Kirigami.Theme.backgroundColor
-                        opacity: ListView.isCurrentItem || hovered ? 0.9 : 0.5
+                        text: modelData // name
+                        Layout.fillHeight: true
+                        Layout.fillWidth: true
+                        width: parent.width
+                        height: 30
+                        color: highlighted ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
+
+                        background: Rectangle {
+
+                            color: highlighted || hovered ? Kirigami.Theme.highlightColor : "white" //Kirigami.Theme.backgroundColor
+                            opacity: highlighted || hovered ? 0.5 : 0.3
+                        }
                     }
 
-                    MouseArea {
+                    onClicked: {
 
-                        hoverEnabled: true
-                        anchors.fill: parent
-                        cursorShape: Qt.PointingHandCursor
-                        onClicked: {
-
-                            list.currentIndex = index
-                            tztext.text = qsTr("Timezone: %1").arg(config.currentTimezoneName)
-                            //tztext.text = qsTr("Timezone: %1").arg(currentTimezoneName1)
-                            stack.push(zoneView)
-                        }
+                        list.currentIndex = index
+                        tztext.text = qsTr("Timezone: %1").arg(config.setCurrentLocation)
+                        stack.push(zoneView)
                     }
                 }
             }
@@ -143,7 +133,7 @@ Page {
                     focus: true
                     clip: true
                     boundsBehavior: Flickable.StopAtBounds
-                    spacing: 2 // Kirigami.Units.smallSpacing
+                    spacing: 2
 
                     Rectangle {
 
@@ -155,40 +145,34 @@ Page {
                     }
 
                     model: config.regionalZonesModel
-                    //model: ["Brussels", "London", "Madrid", "New York", "Melbourne", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York"]
+                    currentIndex: model.zoneIndex
+                    delegate: ItemDelegate {
 
-                    currentIndex: -1 //config.zoneIndex
-                    highlight: Rectangle {
-
-                        color: Kirigami.Theme.highlightColor
-                    }
-
-                    delegate: Label {
-
-                        text: name // modelData
-                        Layout.fillHeight: true
-                        Layout.fillWidth: true
+                        hoverEnabled: true
                         width: parent.width
-                        height: 24
-                        color: ListView.isCurrentItem ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
-                        background: Rectangle {
+                        highlighted: ListView.isCurrentItem
 
-                            color: ListView.isCurrentItem || hovered ? Kirigami.Theme.highlightColor : Kirigami.Theme.backgroundColor
-                            opacity: ListView.isCurrentItem || hovered ? 0.9 : 0.4
+                        Label {
+
+                            text: modelData // name
+                            Layout.fillHeight: true
+                            Layout.fillWidth: true
+                            width: parent.width
+                            height: 30
+                            color: highlighted ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
+
+                            background: Rectangle {
+
+                                color: highlighted || hovered ? Kirigami.Theme.highlightColor : "white" //Kirigami.Theme.backgroundColor
+                                opacity: highlighted || hovered ? 0.5 : 0.3
+                            }
                         }
 
-                        MouseArea {
+                        onClicked: {
 
-                            hoverEnabled: true
-                            anchors.fill: parent
-                            cursorShape: Qt.PointingHandCursor
-                            onClicked: {
-
-                                list2.currentIndex = index
-                                list2.positionViewAtIndex(index, ListView.Center)
-                                //tztext.text = qsTr("Timezone: %1").arg(currentTimezoneName)
-                                tztext.text = qsTr("Timezone: %1").arg(config.currentTimezoneName)
-                            }
+                            list2.currentIndex = index
+                            list2.positionViewAtIndex(index, ListView.Center)
+                            tztext.text = qsTr("Timezone: %1").arg(config.setCurrentLocation)
                         }
                     }
                 }
@@ -231,7 +215,6 @@ Page {
 
                     id: tztext
                     text: qsTr("Timezone: %1").arg(config.currentTimezoneName)
-                    //text: qsTr("Timezone: %1").arg(currentTimezoneName)
                     color: Kirigami.Theme.textColor
                     anchors.centerIn: parent
                 }
