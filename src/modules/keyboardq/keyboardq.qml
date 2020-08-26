@@ -17,8 +17,8 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-//import io.calamares.core 1.0
-//import io.calamares.ui 1.0
+import io.calamares.core 1.0
+import io.calamares.ui 1.0
 
 import QtQuick 2.10
 import QtQuick.Controls 2.10
@@ -63,7 +63,9 @@ Page {
             ListView {
 
                 id: list1
+
                 ScrollBar.vertical: ScrollBar {
+
                     active: true
                 }
 
@@ -85,10 +87,10 @@ Page {
                     opacity: 0.7
                 }
 
-                //model: config.keyboardModelsModel
-                model: ["Africa", "America", "Antarctica", "Arctic", "Asia", "Atlantic", "Australia", "Europe", "Indian", "Pacific"]
+                model: config.keyboardModelsModel
+                //model: ["Africa", "America", "Antarctica", "Arctic", "Asia", "Atlantic", "Australia", "Europe", "Indian", "Pacific"]
 
-                currentIndex: 1 //model.currentIndex
+                currentIndex: model.currentIndex
                 delegate: ItemDelegate {
 
                     hoverEnabled: true
@@ -100,7 +102,7 @@ Page {
 
                         Label {
 
-                            text: modelData // model.label
+                            text: model.label // modelData
                             Layout.fillHeight: true
                             Layout.fillWidth: true
                             width: parent.width
@@ -126,7 +128,7 @@ Page {
 
                     onClicked: {
 
-                        list1.currentIndex = index
+                        list1.model.currentIndex = index
                         stack.push(layoutsList)
                         list1.positionViewAtIndex(index, ListView.Center)
                     }
@@ -158,14 +160,16 @@ Page {
                     horizontalAlignment: Text.AlignHCenter
                     width: parent.width / 1.5
                     wrapMode: Text.WordWrap
-                    //text: config.prettyStatus
-                    text: qsTr("Set keyboard model or use the default one based on the detected hardware.")
+                    text: config.prettyStatus
+                    //text: qsTr("Set keyboard model or use the default one based on the detected hardware.")
                 }
 
                 ListView {
 
                     id: list2
+
                     ScrollBar.vertical: ScrollBar {
+
                         active: true
                     }
 
@@ -187,10 +191,10 @@ Page {
                         opacity: 0.7
                     }
 
-                    //model: config.keyboardLayoutsModel
-                    model: ["Brussels", "London", "Madrid", "New York", "Melbourne", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York"]
+                    model: config.keyboardLayoutsModel
+                    //model: ["Brussels", "London", "Madrid", "New York", "Melbourne", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York"]
 
-                    currentIndex: 1 //model.currentIndex
+                    currentIndex: model.currentIndex
                     delegate: ItemDelegate {
 
                         hoverEnabled: true
@@ -202,7 +206,7 @@ Page {
 
                             Label {
 
-                                text: modelData // model.label
+                                text: model.label // modelData
                                 Layout.fillHeight: true
                                 Layout.fillWidth: true
                                 width: parent.width
@@ -228,7 +232,7 @@ Page {
 
                         onClicked: {
 
-                            list2.currentIndex = index
+                            list2.model.currentIndex = index
                             stack.push(variantsList)
                             list2.positionViewAtIndex(index, ListView.Center)
                         }
@@ -240,6 +244,8 @@ Page {
                     spacing: 2
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.verticalCenterOffset: -30
+                    anchors.left: parent.left 
+                    anchors.leftMargin: parent.width / 15
 
                     Button {
 
@@ -282,14 +288,16 @@ Page {
                     horizontalAlignment: Text.AlignHCenter
                     width: parent.width / 1.5
                     wrapMode: Text.WordWrap
-                    //text: config.prettyStatus
-                    text: qsTr("Variant keyboard model or use the default one based on the detected hardware.")
+                    text: config.prettyStatus
+                    //text: qsTr("Variant keyboard model or use the default one based on the detected hardware.")
                 }
 
                 ListView {
 
                     id: list3
+
                     ScrollBar.vertical: ScrollBar {
+
                         active: true
                     }
 
@@ -311,10 +319,10 @@ Page {
                         opacity: 0.7
                     }
 
-                    //model: config.keyboardVariantsModel
-                    model: ["Brussels", "London", "Madrid", "New York", "Melbourne", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York"]
+                    model: config.keyboardVariantsModel
+                    //model: ["Brussels", "London", "Madrid", "New York", "Melbourne", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York", "Brussels", "London", "Madrid", "New York"]
 
-                    currentIndex: 1 //model.currentIndex
+                    currentIndex: model.currentIndex
                     delegate: ItemDelegate {
 
                         hoverEnabled: true
@@ -326,7 +334,7 @@ Page {
 
                             Label {
 
-                                text: modelData // model.label
+                                text: model.label //modelData
                                 Layout.fillHeight: true
                                 Layout.fillWidth: true
                                 width: parent.width
@@ -352,7 +360,7 @@ Page {
 
                         onClicked: {
 
-                            list3.currentIndex = index
+                            list3.model.currentIndex = index
                             list3.positionViewAtIndex(index, ListView.Center)
                         }
                     }
@@ -363,6 +371,8 @@ Page {
                     Layout.fillWidth: true
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.verticalCenterOffset: -30
+                    anchors.left: parent.left 
+                    anchors.leftMargin: parent.width / 15
                     icon.name: "go-previous"
                     text: qsTr("Layouts")
                     onClicked: stack.pop()
@@ -374,12 +384,12 @@ Page {
     TextField {
 
         placeholderText: qsTr("Test your keyboard")
-        Layout.preferredHeight: 48
+        height: 48
         width: parent.width / 1.5
         horizontalAlignment: TextInput.AlignHCenter
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: 30
+        anchors.bottomMargin: parent.height / 10
         color: "#1F1F1F"
 
         background:Rectangle {
@@ -387,7 +397,7 @@ Page {
             z: parent.z - 1
             anchors.fill: parent
             color: "#BDC3C7"
-            radius: 5
+            radius: 2
             opacity: 0.3
         }
     }

@@ -82,7 +82,7 @@ Page {
 
                     Label {
 
-                        text: modelData // name
+                        text: name //modelData
                         Layout.fillHeight: true
                         Layout.fillWidth: true
                         width: parent.width
@@ -98,7 +98,7 @@ Page {
 
                     onClicked: {
 
-                        list.currentIndex = index
+                        list.model.currentIndex = index
                         tztext.text = qsTr("Timezone: %1").arg(config.setCurrentLocation)
                         stack.push(zoneView)
                     }
@@ -145,7 +145,7 @@ Page {
                     }
 
                     model: config.regionalZonesModel
-                    currentIndex: model.zoneIndex
+                    currentIndex: model.regionalZonesIndex
                     delegate: ItemDelegate {
 
                         hoverEnabled: true
@@ -154,7 +154,7 @@ Page {
 
                         Label {
 
-                            text: modelData // name
+                            text: name //modelData
                             Layout.fillHeight: true
                             Layout.fillWidth: true
                             width: parent.width
@@ -170,7 +170,7 @@ Page {
 
                         onClicked: {
 
-                            list2.currentIndex = index
+                            list2.model.currentIndex = index
                             list2.positionViewAtIndex(index, ListView.Center)
                             tztext.text = qsTr("Timezone: %1").arg(config.setCurrentLocation)
                         }
@@ -182,6 +182,8 @@ Page {
                     Layout.fillWidth: true
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.verticalCenterOffset: -30
+                    anchors.left: parent.left 
+                    anchors.leftMargin: parent.width / 15
                     icon.name: "go-previous"
                     text: qsTr("Zones")
                     onClicked: stack.pop()
