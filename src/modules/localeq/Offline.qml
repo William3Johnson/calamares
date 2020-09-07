@@ -1,20 +1,10 @@
-/* === This file is part of Calamares - <https://github.com/calamares> ===
+/* === This file is part of Calamares - <https://calamares.io> ===
  *
  *   SPDX-FileCopyrightText: 2020 Anke Boersma <demm@kaosx.us>
  *   SPDX-License-Identifier: GPL-3.0-or-later
  *
- *   Calamares is free software: you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation, either version 3 of the License, or
- *   (at your option) any later version.
+ *   Calamares is Free Software: see the License-Identifier above.
  *
- *   Calamares is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
 import io.calamares.core 1.0
@@ -72,8 +62,9 @@ Page {
                     opacity: 0.7
                 }
 
+                // model loads, dozens of variations tried for currentIndex all fail
                 model: config.regionModel
-                currentIndex: model.regionIndex
+                currentIndex: config.currentIndex
                 delegate: ItemDelegate {
                     
                     hoverEnabled: true
@@ -82,7 +73,7 @@ Page {
 
                     Label {
 
-                        text: name //modelData
+                        text: name
                         Layout.fillHeight: true
                         Layout.fillWidth: true
                         width: parent.width
@@ -99,7 +90,8 @@ Page {
                     onClicked: {
 
                         list.model.currentIndex = index
-                        tztext.text = qsTr("Timezone: %1").arg(config.setCurrentLocation)
+                        // correct to use config.currentTimezoneName when index is updated?
+                        tztext.text = qsTr("Timezone: %1").arg(config.currentTimezoneName)
                         stack.push(zoneView)
                     }
                 }
@@ -144,8 +136,9 @@ Page {
                         opacity: 0.7
                     }
 
+                    // model loads, dozens of variations tried for currentIndex all fail
                     model: config.regionalZonesModel
-                    currentIndex: model.regionalZonesIndex
+                    currentIndex: config.currentIndex
                     delegate: ItemDelegate {
 
                         hoverEnabled: true
@@ -154,7 +147,7 @@ Page {
 
                         Label {
 
-                            text: name //modelData
+                            text: name
                             Layout.fillHeight: true
                             Layout.fillWidth: true
                             width: parent.width
@@ -172,7 +165,8 @@ Page {
 
                             list2.model.currentIndex = index
                             list2.positionViewAtIndex(index, ListView.Center)
-                            tztext.text = qsTr("Timezone: %1").arg(config.setCurrentLocation)
+                            // correct to use config.currentTimezoneName when index is updated?
+                            tztext.text = qsTr("Timezone: %1").arg(config.currentTimezoneName)
                         }
                     }
                 }

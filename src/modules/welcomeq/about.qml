@@ -1,19 +1,10 @@
-/* === This file is part of Calamares - <https://github.com/calamares> ===
+/* === This file is part of Calamares - <https://calamares.io> ===
  *
- *   Copyright 2020, Anke Boersma <demm@kaosx.us>
+ *   SPDX-FileCopyrightText: 2020 Anke Boersma <demm@kaosx.us>
+ *   SPDX-License-Identifier: GPL-3.0-or-later
  *
- *   Calamares is free software: you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation, either version 3 of the License, or
- *   (at your option) any later version.
+ *   Calamares is Free Software: see the License-Identifier above.
  *
- *   Calamares is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
 import io.calamares.ui 1.0
@@ -26,9 +17,9 @@ Item {
     width: parent.width
     height: parent.height
     focus: true
-    
+
     property var appName: "Calamares"
-    property var appVersion: "3.2.28"
+    property var appVersion: "3.2.31"
 
     Rectangle {
         id: textArea
@@ -36,19 +27,19 @@ Item {
         y: 14
         anchors.fill: parent
         color: "#f2f2f2"
-        
+
         Column {
             id: column
             x: 130
             y: 40
 
-            
+
             Rectangle {
                 width: 560
                 height: 250
                 radius: 10
                 border.width: 0
-                
+
                 Text {
                     width: 400
                     height: 250
@@ -68,15 +59,15 @@ Item {
                         .arg(appName)
                         .arg(appVersion)
                         .arg(Branding.string(Branding.VersionedName))
-                        
+
                         onLinkActivated: Qt.openUrlExternally(link)
-                        
+
                         MouseArea {
                             anchors.fill: parent
                             acceptedButtons: Qt.NoButton
                             cursorShape: parent.hoveredLink ? Qt.PointingHandCursor : Qt.ArrowCursor
                         }
-                        
+
                     font.pointSize: 10
                     anchors.verticalCenterOffset: 10
                     anchors.horizontalCenterOffset: 40

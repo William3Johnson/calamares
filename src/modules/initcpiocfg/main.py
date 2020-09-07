@@ -1,27 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# === This file is part of Calamares - <https://github.com/calamares> ===
+# === This file is part of Calamares - <https://calamares.io> ===
 #
-#   Copyright 2014, Rohan Garg <rohan@kde.org>
-#   Copyright 2015, Philip Müller <philm@manjaro.org>
-#   Copyright 2017, Alf Gaida <agaida@sidution.org>
-#   Copyright 2019, Adriaan de Groot <groot@kde.org>
+#   SPDX-FileCopyrightText: 2014 Rohan Garg <rohan@kde.org>
+#   SPDX-FileCopyrightText: 2015 2019-2020, Philip Müller <philm@manjaro.org>
+#   SPDX-FileCopyrightText: 2017 Alf Gaida <agaida@sidution.org>
+#   SPDX-FileCopyrightText: 2019 Adriaan de Groot <groot@kde.org>
+#   SPDX-License-Identifier: GPL-3.0-or-later
 #
-#   Calamares is free software: you can redistribute it and/or modify
-#   it under the terms of the GNU General Public License as published by
-#   the Free Software Foundation, either version 3 of the License, or
-#   (at your option) any later version.
+#   Calamares is Free Software: see the License-Identifier above.
 #
-#   Calamares is distributed in the hope that it will be useful,
-#   but WITHOUT ANY WARRANTY; without even the implied warranty of
-#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-#   GNU General Public License for more details.
-#
-#   You should have received a copy of the GNU General Public License
-#   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
 
 import libcalamares
+from libcalamares.utils import debug, target_env_call
 import os
 from collections import OrderedDict
 
@@ -100,6 +92,17 @@ def write_mkinitcpio_lines(hooks, modules, files, root_mount_point):
     with open(path, "w") as mkinitcpio_file:
         mkinitcpio_file.write("\n".join(mklins) + "\n")
 
+def detect_plymouth():
+    """
+    Checks existence (runnability) of plymouth in the target system.
+
+    @return True if plymouth exists in the target, False otherwise
+    """
+    # Used to only check existence of path /usr/bin/plymouth in target
+    isPlymouth = target_env_call(["sh", "-c", "which plymouth"])
+    debug("which plymouth exit code: {!s}".format(isPlymouth))
+
+    return isPlymouth == 0
 
 def modify_mkinitcpio_conf(partitions, root_mount_point):
     """
@@ -121,11 +124,14 @@ def modify_mkinitcpio_conf(partitions, root_mount_point):
     unencrypted_separate_boot = False
 
     # It is important that the plymouth hook comes before any encrypt hook
-    plymouth_bin = os.path.join(root_mount_point, "usr/bin/plymouth")
-    if os.path.exists(plymouth_bin):
+    if detect_plymouth():
         hooks.append("plymouth")
 
     for partition in partitions:
+        if partition["fs"] == "linuxswap" and not partition.get("claimed", None):
+            # Skip foreign swap
+            continue
+
         if partition["fs"] == "linuxswap":
             swap_uuid = partition["uuid"]
             if "luksMapperName" in partition:
@@ -143,6 +149,9 @@ def modify_mkinitcpio_conf(partitions, root_mount_point):
         if (partition["mountPoint"] == "/boot"
                 and "luksMapperName" not in partition):
             unencrypted_separate_boot = True
+
+        if partition["mountPoint"] == "/usr":
+            hooks.append("usr")
 
     if encrypt_hook:
         hooks.append("encrypt")
