@@ -34,8 +34,8 @@ Page {
         width: parent.width
         height: parent.height / 1.28
         // Network is in io.calamares.core
-        source: Network.hasInternet ? "Map.qml" : "Offline.qml"
-        //source: "Offline.qml"
+        //source: Network.hasInternet ? "Map.qml" : "Offline.qml"
+        source: "Map.qml"
     }
 
     RowLayout {
