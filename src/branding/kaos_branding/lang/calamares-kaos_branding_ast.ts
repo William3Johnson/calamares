@@ -14,7 +14,7 @@
     <message>
         <location filename="../show.qml" line="99"/>
         <source>The default Office Suite is Calligra.&lt;br/&gt;LibreOffice is available in the repositories. &lt;br/&gt;</source>
-        <translation>La suite ofimática predeterminada ye Calligra.&lt;br/&gt;LibreOffice ta disponible nos repositorios.&lt;br/&gt;</translation>
+        <translation>La suite ofimática predeterminada ye Calligra.&lt;br/&gt;LibreOffice ta disponible nos depósitos.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../show.qml" line="122"/>
