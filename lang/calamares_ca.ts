@@ -228,7 +228,7 @@
     <message>
         <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="94"/>
         <source>Requirements checking for module &lt;i&gt;%1&lt;/i&gt; is complete.</source>
-        <translation type="unfinished"/>
+        <translation>S&apos;ha completat la comprovació dels requeriments per al mòdul &lt;i&gt;%1&lt;/i&gt;.</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="115"/>
@@ -709,7 +709,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/locale/Config.cpp" line="334"/>
         <source>Set timezone to %1/%2.</source>
-        <translation type="unfinished"/>
+        <translation>Estableix la zona horària a %1/%2.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/Config.cpp" line="372"/>
@@ -749,77 +749,77 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="244"/>
         <source>&lt;h1&gt;Welcome to the Calamares setup program for %1&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Benvingut/da al programa de configuració del Calamares per al %1.&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="245"/>
         <source>&lt;h1&gt;Welcome to %1 setup&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Benvingut/da la la configuració del %1.&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="250"/>
         <source>&lt;h1&gt;Welcome to the Calamares installer for %1&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Benvingut/da a l&apos;instal·lador Calamares per al %1.&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="251"/>
         <source>&lt;h1&gt;Welcome to the %1 installer&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Benvingut/da a l&apos;instal·lador %1.&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/summaryq/Config.cpp" line="65"/>
         <source>This is an overview of what will happen once you start the setup procedure.</source>
-        <translation type="unfinished"/>
+        <translation>Això és un resum del que passarà quan s&apos;iniciï el procés de configuració:</translation>
     </message>
     <message>
         <location filename="../src/modules/summaryq/Config.cpp" line="68"/>
         <source>This is an overview of what will happen once you start the install procedure.</source>
-        <translation type="unfinished"/>
+        <translation>Això és un resum del que passarà quan comenci la instal·lació:</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="164"/>
         <source>Your username is too long.</source>
-        <translation type="unfinished"/>
+        <translation>El nom d&apos;usuari és massa llarg.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="170"/>
         <source>&apos;%1&apos; is not allowed as username.</source>
-        <translation type="unfinished"/>
+        <translation>&quot;%1&quot; no es permet com a nom d&apos;usuari.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="177"/>
         <source>Your username must start with a lowercase letter or underscore.</source>
-        <translation type="unfinished"/>
+        <translation>El nom d&apos;usuari ha de començar amb una lletra minúscula o amb un guionet baix.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="181"/>
         <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Només es permeten lletres minúscules, números, guionets i guionets baixos.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="227"/>
         <source>Your hostname is too short.</source>
-        <translation type="unfinished"/>
+        <translation>El nom d&apos;amfitrió és massa curt.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="231"/>
         <source>Your hostname is too long.</source>
-        <translation type="unfinished"/>
+        <translation>El nom d&apos;amfitrió és massa llarg.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="237"/>
         <source>&apos;%1&apos; is not allowed as hostname.</source>
-        <translation type="unfinished"/>
+        <translation>&quot;%1&quot; no es permet com a nom d&apos;amfitrió.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="243"/>
         <source>Only letters, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Només es permeten lletres, números, guionets i guionets baixos.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="446"/>
         <source>Your passwords do not match!</source>
-        <translation type="unfinished"/>
+        <translation>Les contrasenyes no coincideixen!</translation>
     </message>
 </context>
 <context>
@@ -1699,7 +1699,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
         <location filename="../src/modules/localeq/Map.qml" line="44"/>
         <location filename="../src/modules/localeq/Map.qml" line="66"/>
         <source>Timezone: </source>
-        <translation type="unfinished"/>
+        <translation>Zona horària: </translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Map.qml" line="229"/>
@@ -1755,7 +1755,7 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="37"/>
         <source>Select your preferred Region, or use the default one based on your current location.</source>
-        <translation type="unfinished"/>
+        <translation>Trieu la regió preferida o useu-ne la predeterminada basada en la ubicació actual.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="94"/>
@@ -1767,17 +1767,17 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="111"/>
         <source>Select your preferred Zone within your Region.</source>
-        <translation type="unfinished"/>
+        <translation>Trieu la zona preferida dins la regió.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="182"/>
         <source>Zones</source>
-        <translation type="unfinished"/>
+        <translation>Zones</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="229"/>
         <source>You can fine-tune Language and Locale settings below.</source>
-        <translation type="unfinished"/>
+        <translation>Podeu acabar d&apos;ajustar els paràmetres locals i de llengua a continuació.</translation>
     </message>
 </context>
 <context>
@@ -1785,12 +1785,12 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     <message>
         <location filename="../src/modules/localeq/Offline2.qml" line="54"/>
         <source>Timezone: %1</source>
-        <translation type="unfinished"/>
+        <translation>Zona horària: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline2.qml" line="69"/>
         <source>Select a timezone. You can fine-tune Language and Locale settings below.</source>
-        <translation type="unfinished"/>
+        <translation>Seleccioneu una zona horària. Podeu acabar d&apos;ajustar els paràmetres locals i de llengua a continuació.</translation>
     </message>
 </context>
 <context>
@@ -1798,29 +1798,29 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     <message>
         <location filename="../src/modules/localeq/Offline3.qml" line="51"/>
         <source>Select your preferred Region, or use the default one based on your current location.</source>
-        <translation type="unfinished"/>
+        <translation>Trieu la regió preferida o useu-ne la predeterminada basada en la ubicació actual.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline3.qml" line="109"/>
         <location filename="../src/modules/localeq/Offline3.qml" line="184"/>
         <location filename="../src/modules/localeq/Offline3.qml" line="230"/>
         <source>Timezone: %1</source>
-        <translation type="unfinished"/>
+        <translation>Zona horària: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline3.qml" line="126"/>
         <source>Select your preferred Zone within your Region.</source>
-        <translation type="unfinished"/>
+        <translation>Trieu la zona preferida dins la regió.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline3.qml" line="198"/>
         <source>Zones</source>
-        <translation type="unfinished"/>
+        <translation>Zones</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline3.qml" line="246"/>
         <source>You can fine-tune Language and Locale settings below.</source>
-        <translation type="unfinished"/>
+        <translation>Podeu acabar d&apos;ajustar els paràmetres locals i de llengua a continuació.</translation>
     </message>
 </context>
 <context>
@@ -1828,12 +1828,12 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     <message>
         <location filename="../src/modules/localeq/Offline_orig.qml" line="63"/>
         <source>Timezone: %1</source>
-        <translation type="unfinished"/>
+        <translation>Zona horària: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline_orig.qml" line="78"/>
         <source>To be able to select a timezone, make sure you are connected to the internet. Restart the installer after connecting. You can fine-tune Language and Locale settings below.</source>
-        <translation type="unfinished"/>
+        <translation>Per poder seleccionar una zona horària, assegureu-vos que teniu connexió a Internet. Reinicieu l&apos;instal·lador després de connectar-vos. A continuació podeu precisar la llengua i la configuració local.</translation>
     </message>
 </context>
 <context>
@@ -2169,7 +2169,7 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
         <location filename="../src/modules/users/page_usersetup.ui" line="349"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="374"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Introduiu la mateixa contrasenya dos cops per evitar errors. Una bona contrasenya conté una barreja de lletres, números i puntuació, i hauria de tenir com a mínim vuit caràcters i s&apos;hauria d&apos;anar canviant.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Escriviu la mateixa contrasenya dos cops per poder-ne comprovar els errors de mecanografia. Una bona contrasenya ha de contenir una barreja de lletres, números i signes de puntuació, hauria de tenir un mínim de 8 caràcters i s&apos;hauria de modificar a intervals regulars.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="223"/>
@@ -2237,7 +2237,7 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
         <location filename="../src/modules/users/page_usersetup.ui" line="519"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="544"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Introduiu la contrasenya dos cops per evitar errors.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Escriviu la mateixa contrasenya dos cops per poder-ne comprovar els errors de mecanografia.&lt;/small&gt;</translation>
     </message>
 </context>
 <context>
@@ -2402,7 +2402,7 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     <message>
         <location filename="../src/modules/partitionq/PartitionQmlViewStep.cpp" line="117"/>
         <source>Partition</source>
-        <translation type="unfinished"/>
+        <translation>Partició</translation>
     </message>
 </context>
 <context>
@@ -2505,12 +2505,12 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="428"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;To configure an EFI system partition, go back and select or create a FAT32 filesystem with the &lt;strong&gt;%3&lt;/strong&gt; flag enabled and mount point &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;&lt;br/&gt;You can continue without setting up an EFI system partition but your system may fail to start.</source>
-        <translation type="unfinished"/>
+        <translation>Cal una partició EFI de sistema per iniciar %1. &lt;br/&gt;&lt;br/&gt;Per configurar una partició EFI de sistema, torneu enrere i seleccioneu o creeu un sistema de fitxers FAT32 amb la bandera &lt;strong&gt;%3&lt;/strong&gt; habilitada i el punt de muntatge &lt;strong&gt;%2&lt;/strong&gt;. &lt;br/&gt;&lt;br/&gt;Podeu continuar sense la creació d&apos;una partició EFI de sistema, però el sistema podria no iniciar-se.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="442"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;A partition was configured with mount point &lt;strong&gt;%2&lt;/strong&gt; but its &lt;strong&gt;%3&lt;/strong&gt; flag is not set.&lt;br/&gt;To set the flag, go back and edit the partition.&lt;br/&gt;&lt;br/&gt;You can continue without setting the flag but your system may fail to start.</source>
-        <translation type="unfinished"/>
+        <translation>Cal una partició EFI de sistema per iniciar %1. &lt;br/&gt;&lt;br/&gt; Ja s&apos;ha configurat una partició amb el punt de muntatge &lt;strong&gt;%2&lt;/strong&gt; però no se n&apos;ha establert la bandera &lt;strong&gt;%3&lt;/strong&gt;. Per establir-la-hi, torneu enrere i editeu la partició. &lt;br/&gt;&lt;br/&gt;Podeu continuar sense establir la bandera, però el sistema podria no iniciar-se.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="498"/>
@@ -2693,7 +2693,8 @@ Sortida:
         <location filename="../src/modules/welcomeq/Recommended.qml" line="40"/>
         <source>&lt;p&gt;This computer does not satisfy some of the recommended requirements for setting up %1.&lt;br/&gt;
         Setup can continue, but some features might be disabled.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Aquest ordinador no compleix alguns dels requisits recomanats per configurar-hi el %1.&lt;br/&gt;
+La configuració pot continuar, però algunes característiques podrien estar inhabilitades.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -2796,13 +2797,15 @@ Sortida:
         <location filename="../src/modules/welcomeq/Requirements.qml" line="38"/>
         <source>&lt;p&gt;This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;
         Installation cannot continue.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Aquest ordinador no compleix els requisits mínims per instal·lar-hi el %1.&lt;br/&gt;
+La instal·lació no pot continuar.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/Requirements.qml" line="40"/>
         <source>&lt;p&gt;This computer does not satisfy some of the recommended requirements for setting up %1.&lt;br/&gt;
         Setup can continue, but some features might be disabled.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Aquest ordinador no compleix alguns dels requisits recomanats per configurar-hi el %1.&lt;br/&gt;
+La configuració pot continuar, però algunes característiques podrien estar inhabilitades.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -2811,7 +2814,8 @@ Sortida:
         <location filename="../src/modules/welcomeq/Requirements2.qml" line="48"/>
         <source>&lt;p&gt;This computer does not satisfy the minimum requirements for installing KaOS.&lt;br/&gt;
         Installation cannot continue.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Aquest ordinador no compleix els requisits mínims per instal·lar-hi el KaOS.&lt;br/&gt;
+La instal·lació no pot continuar.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -2820,7 +2824,8 @@ Sortida:
         <location filename="../src/modules/welcomeq/Requirements_orig.qml" line="48"/>
         <source>&lt;p&gt;This computer does not satisfy the minimum requirements for setting up %1.&lt;/p&gt;
         &lt;p&gt;Setup cannot continue.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Aquest ordinador no satisfà els requisits mínims per configurar-hi el %1.&lt;/p&gt;
+ &lt;p&gt;La configuració no pot continuar.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -3178,7 +3183,7 @@ Sortida:
     <message>
         <location filename="../src/modules/summaryq/SummaryQmlViewStep.cpp" line="39"/>
         <source>Summary</source>
-        <translation type="unfinished"/>
+        <translation>Resum</translation>
     </message>
 </context>
 <context>
@@ -3207,7 +3212,7 @@ Sortida:
     <message>
         <location filename="../src/modules/usersq/UsersQmlViewStep.cpp" line="39"/>
         <source>Users</source>
-        <translation type="unfinished"/>
+        <translation>Usuaris</translation>
     </message>
 </context>
 <context>
@@ -3429,7 +3434,7 @@ Sortida:
     <message>
         <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="68"/>
         <source>Show debug information</source>
-        <translation type="unfinished"/>
+        <translation>Mostra la informació de depuració</translation>
     </message>
 </context>
 <context>
@@ -3445,7 +3450,8 @@ Sortida:
         <location filename="../src/modules/localeq/i18n.qml" line="106"/>
         <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
                     The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Configuració local&lt;/h1&gt; &lt;/br&gt;
+La configuració local del sistema afecta el format de números i dates. La configuració actual és &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/i18n.qml" line="158"/>
@@ -3473,7 +3479,7 @@ Sortida:
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
         <source>Click your preferred keyboard model to select layout and variant, or use the default one based on the detected hardware.</source>
-        <translation type="unfinished"/>
+        <translation>Cliqueu al model de teclat preferit per seleccionar-ne la disposició i la variant, o useu el predeterminat basat en el maquinari detectat.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="253"/>
@@ -3488,7 +3494,7 @@ Sortida:
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="276"/>
         <source>Keyboard Variant</source>
-        <translation type="unfinished"/>
+        <translation>Variant del teclat</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="386"/>
@@ -3501,44 +3507,44 @@ Sortida:
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="20"/>
         <source>Keyboard Model</source>
-        <translation type="unfinished"/>
+        <translation>Model del teclat</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="21"/>
         <source>Pick your preferred keyboard model or use the default one based on the detected hardware</source>
-        <translation type="unfinished"/>
+        <translation>Trieu el model de teclat preferit o useu-ne el predeterminat d&apos;acord amb el maquinari detectat.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="56"/>
         <source>Refresh</source>
-        <translation type="unfinished"/>
+        <translation>Refresca</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="62"/>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="169"/>
         <source>Layouts</source>
-        <translation type="unfinished"/>
+        <translation>Disposions</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="75"/>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="134"/>
         <source>Keyboard Layout</source>
-        <translation type="unfinished"/>
+        <translation>Disposició del teclat</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="113"/>
         <source>Models</source>
-        <translation type="unfinished"/>
+        <translation>Models</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="121"/>
         <source>Variants</source>
-        <translation type="unfinished"/>
+        <translation>Variants</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="180"/>
         <source>Test your keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Proveu el teclat.</translation>
     </message>
 </context>
 <context>
@@ -3546,22 +3552,22 @@ Sortida:
     <message>
         <location filename="../src/modules/localeq/layout.qml" line="32"/>
         <source>Region: </source>
-        <translation type="unfinished"/>
+        <translation>Regió:</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/layout.qml" line="43"/>
         <source>Adjust Language</source>
-        <translation type="unfinished"/>
+        <translation>Ajusteu la llengua</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/layout.qml" line="53"/>
         <source>Zone: </source>
-        <translation type="unfinished"/>
+        <translation>Zona: </translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/layout.qml" line="63"/>
         <source>Adjust Locale</source>
-        <translation type="unfinished"/>
+        <translation>Ajusteu la configuració local</translation>
     </message>
 </context>
 <context>
@@ -3577,12 +3583,12 @@ Sortida:
     <message>
         <location filename="../src/modules/localeq/localeq2.qml" line="40"/>
         <source>Region: </source>
-        <translation type="unfinished"/>
+        <translation>Regió: </translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/localeq2.qml" line="55"/>
         <source>Zone: </source>
-        <translation type="unfinished"/>
+        <translation>Zona: </translation>
     </message>
 </context>
 <context>
@@ -3600,22 +3606,22 @@ Sortida:
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="43"/>
         <source>&lt;h3&gt;Full disk encryption&lt;/h3&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Encriptació de tot el disc&lt;/h3&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="50"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>Contrasenya</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="66"/>
         <source>Password (repeat)</source>
-        <translation type="unfinished"/>
+        <translation>Contrasenya (repetició)</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="92"/>
         <source>Continue</source>
-        <translation type="unfinished"/>
+        <translation>Continua</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="95"/>
@@ -3630,17 +3636,17 @@ Sortida:
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="99"/>
         <source>Passwords do not match</source>
-        <translation type="unfinished"/>
+        <translation>Les contrasenyes no coincideixen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="101"/>
         <source>Password too short</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya és massa curta.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="103"/>
         <source>Please wait...</source>
-        <translation type="unfinished"/>
+        <translation>Espereu, si us plau...</translation>
     </message>
 </context>
 <context>
@@ -3693,7 +3699,7 @@ Sortida:
     <message>
         <location filename="../src/modules/welcomeq/release_notes.qml" line="76"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Enrere</translation>
     </message>
 </context>
 <context>
@@ -3745,27 +3751,28 @@ Sortida:
         <location filename="../src/modules/welcomeq/test.qml" line="26"/>
         <source>&lt;h3&gt;Welcome to the KaOS &lt;quote&gt;2020.06&lt;/quote&gt; installer&lt;/h3&gt;
             &lt;p&gt;This program will ask you some questions and set up KaOS on your computer.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Benvingut/da a l&apos;instal·lador &lt;quote&gt;2020.06&lt;/quote&gt; per al KaOS&lt;/h3&gt;
+            &lt;p&gt;Aquest programa us farà algunes preguntes i configurarà el KaOS a l&apos;ordinador.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/test.qml" line="71"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Quant a</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/test.qml" line="84"/>
         <source>Known issues</source>
-        <translation type="unfinished"/>
+        <translation>Problemes coneguts</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/test.qml" line="95"/>
         <source>Release notes</source>
-        <translation type="unfinished"/>
+        <translation>Notes de la versió</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/test.qml" line="106"/>
         <source>Donate</source>
-        <translation type="unfinished"/>
+        <translation>Feu una donació</translation>
     </message>
 </context>
 <context>
@@ -3773,112 +3780,112 @@ Sortida:
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="36"/>
         <source>Pick your user name and credentials to login and perform admin tasks</source>
-        <translation type="unfinished"/>
+        <translation>Trieu el nom d&apos;usuari i les credencials per iniciar la sessió i fer tasques d&apos;administració.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="52"/>
         <source>What is your name?</source>
-        <translation type="unfinished"/>
+        <translation>Com us dieu?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="59"/>
         <source>Your Full Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom complet</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="80"/>
         <source>What name do you want to use to log in?</source>
-        <translation type="unfinished"/>
+        <translation>Quin nom voleu usar per iniciar la sessió?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="87"/>
         <source>Login Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom d&apos;entrada</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="103"/>
         <source>If more than one person will use this computer, you can create multiple accounts after installation.</source>
-        <translation type="unfinished"/>
+        <translation>Si aquest ordinador l&apos;usarà més d&apos;una persona, podreu crear diversos comptes després de la instal·lació.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="118"/>
         <source>What is the name of this computer?</source>
-        <translation type="unfinished"/>
+        <translation>Com es diu aquest ordinador?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="125"/>
         <source>Computer Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom de l&apos;ordinador</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="140"/>
         <source>This name will be used if you make the computer visible to others on a network.</source>
-        <translation type="unfinished"/>
+        <translation>Aquest nom s&apos;usarà si feu visible aquest ordinador per a altres en una xarxa.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="155"/>
         <source>Choose a password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>Trieu una contrasenya per tal de mantenir el compte segur.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="166"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>Contrasenya</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="185"/>
         <source>Repeat Password</source>
-        <translation type="unfinished"/>
+        <translation>Repetiu la contrasenya.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="204"/>
         <source>Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.</source>
-        <translation type="unfinished"/>
+        <translation>Escriviu la mateixa contrasenya dos cops per poder-ne comprovar els errors de mecanografia. Una bona contrasenya ha de contenir una barreja de lletres, números i signes de puntuació, hauria de tenir un mínim de 8 caràcters i s&apos;hauria de modificar a intervals regulars.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="216"/>
         <source>Validate passwords quality</source>
-        <translation type="unfinished"/>
+        <translation>Valida la qualitat de les contrasenyes.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="226"/>
         <source>When this box is checked, password-strength checking is done and you will not be able to use a weak password..</source>
-        <translation type="unfinished"/>
+        <translation>Quan aquesta casella està marcada, es comprova la fortalesa de la contrasenya i no en podreu usar una de dèbil.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="234"/>
         <source>Log in automatically without asking for the password</source>
-        <translation type="unfinished"/>
+        <translation>Entra automàticament sense demanar la contrasenya.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="243"/>
         <source>Reuse user password as root password</source>
-        <translation type="unfinished"/>
+        <translation>Reutilitza la contrasenya d&apos;usuari com a contrasenya d&apos;arrel.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="253"/>
         <source>Use the same password for the administrator account.</source>
-        <translation type="unfinished"/>
+        <translation>Usa la mateixa contrasenya per al compte d&apos;administració.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="268"/>
         <source>Choose a root password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>Trieu una contrasenya d&apos;arrel per mantenir el compte segur.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="279"/>
         <source>Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Contrasenya d&apos;arrel</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="298"/>
         <source>Repeat Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Repetiu la contrasenya d&apos;arrel.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="318"/>
         <source>Enter the same password twice, so that it can be checked for typing errors.</source>
-        <translation type="unfinished"/>
+        <translation>Escriviu la mateixa contrasenya dos cops per poder-ne comprovar els errors de mecanografia.</translation>
     </message>
 </context>
 <context>

@@ -104,7 +104,7 @@
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="117"/>
         <source>Widget Tree</source>
-        <translation>Strom widgetů</translation>
+        <translation>Strom grafických součástí</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.cpp" line="217"/>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="43"/>
         <source> Run command &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Spustit příkaz &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="50"/>
@@ -210,7 +210,7 @@
     <message>
         <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="67"/>
         <source>Loading ...</source>
-        <translation type="unfinished"/>
+        <translation>Nahrává se...</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="88"/>
@@ -220,7 +220,7 @@
     <message>
         <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="268"/>
         <source>Loading failed.</source>
-        <translation type="unfinished"/>
+        <translation>Nahrávání selhalo.</translation>
     </message>
 </context>
 <context>
@@ -233,12 +233,12 @@
     <message numerus="yes">
         <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="115"/>
         <source>Waiting for %n module(s).</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>Čeká se na %n modul.</numerusform><numerusform>Čeká se na %n moduly.</numerusform><numerusform>Čeká se na %n modulů.</numerusform><numerusform>Čeká se na %n modulů.</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="116"/>
         <source>(%n second(s))</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>(%n sekunda)</numerusform><numerusform>(%n sekundy)</numerusform><numerusform>(%n sekund)</numerusform><numerusform>(%n sekund)</numerusform></translation>
     </message>
     <message>
         <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="121"/>
@@ -276,7 +276,7 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="150"/>
         <source>Setup Failed</source>
-        <translation type="unfinished"/>
+        <translation>Nastavení selhalo</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="151"/>
@@ -311,7 +311,7 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="327"/>
         <source>Continue with installation?</source>
-        <translation type="unfinished"/>
+        <translation>Pokračovat v instalaci?</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="329"/>
@@ -321,12 +321,12 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="335"/>
         <source>&amp;Set up now</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Nastavit nyní</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="392"/>
         <source>&amp;Set up</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Nastavit</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="392"/>
@@ -336,12 +336,12 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="394"/>
         <source>Setup is complete. Close the setup program.</source>
-        <translation type="unfinished"/>
+        <translation>Nastavování je hotovo. Zavřete nastavovací program.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="511"/>
         <source>Cancel setup?</source>
-        <translation type="unfinished"/>
+        <translation>Zrušit nastavování?</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="511"/>
@@ -456,22 +456,22 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="155"/>
         <source>&amp;Back</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Zpět</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="167"/>
         <source>&amp;Next</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Další</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="180"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Zrušit</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="304"/>
         <source>%1 Setup Program</source>
-        <translation type="unfinished"/>
+        <translation>%1 nastavovací program</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="305"/>
@@ -489,7 +489,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerContainer.cpp" line="37"/>
         <source>Gathering system information...</source>
-        <translation type="unfinished"/>
+        <translation>Sbírají se informace o systému...</translation>
     </message>
 </context>
 <context>
