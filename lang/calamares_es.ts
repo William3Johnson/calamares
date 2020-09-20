@@ -143,7 +143,7 @@
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="175"/>
         <source>Done</source>
-        <translation>Hecho.</translation>
+        <translation>Hecho</translation>
     </message>
 </context>
 <context>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="43"/>
         <source> Run command &apos;%1&apos;.</source>
-        <translation>Ejecutar comando &apos;%1&apos;.</translation>
+        <translation> Ejecutar comando &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="50"/>
@@ -220,7 +220,7 @@
     <message>
         <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="268"/>
         <source>Loading failed.</source>
-        <translation>La carga falló</translation>
+        <translation>La carga falló.</translation>
     </message>
 </context>
 <context>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="94"/>
         <source>Requirements checking for module &lt;i&gt;%1&lt;/i&gt; is complete.</source>
-        <translation type="unfinished"/>
+        <translation>La comprobación de requisitos para el módulo &lt;i&gt;%1&lt;/i&gt; está completa.</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="115"/>
@@ -392,7 +392,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="335"/>
         <source>&amp;Install now</source>
-        <translation>Instalar ahora</translation>
+        <translation>&amp;Instalar ahora</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="343"/>
@@ -571,7 +571,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1121"/>
         <source>An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
-        <translation>No se puede encontrar una partición sistema EFI en este sistema. Por favor vuelva atrás y use el particionado manual para  configurar %.</translation>
+        <translation>No se puede encontrar una partición sistema EFI en este sistema. Por favor vuelva atrás y use el particionado manual para  configurar %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1129"/>
@@ -704,12 +704,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/keyboard/Config.cpp" line="347"/>
         <source>Set keyboard layout to %1/%2.</source>
-        <translation>Configurar distribución de teclado como %1%2.</translation>
+        <translation>Configurar distribución de teclado como %1/%2.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/Config.cpp" line="334"/>
         <source>Set timezone to %1/%2.</source>
-        <translation type="unfinished"/>
+        <translation>Configurar zona horaria %1/%2.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/Config.cpp" line="372"/>
@@ -749,77 +749,77 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="244"/>
         <source>&lt;h1&gt;Welcome to the Calamares setup program for %1&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Bienvenido al prgrama de instalación Calamares para %1&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="245"/>
         <source>&lt;h1&gt;Welcome to %1 setup&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Bienvenido a la configuración de %1&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="250"/>
         <source>&lt;h1&gt;Welcome to the Calamares installer for %1&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Bienvenido al instalador Calamares para %1&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="251"/>
         <source>&lt;h1&gt;Welcome to the %1 installer&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Bienvenido al instalador de %1&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/summaryq/Config.cpp" line="65"/>
         <source>This is an overview of what will happen once you start the setup procedure.</source>
-        <translation type="unfinished"/>
+        <translation>Este es un resumen de lo que sucederá una vez que comience el precedimiento de instalación.</translation>
     </message>
     <message>
         <location filename="../src/modules/summaryq/Config.cpp" line="68"/>
         <source>This is an overview of what will happen once you start the install procedure.</source>
-        <translation type="unfinished"/>
+        <translation>Esto es un resumen de todo lo que se hará una vez que comience con el procedimiento de instalación.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="164"/>
         <source>Your username is too long.</source>
-        <translation type="unfinished"/>
+        <translation>Su nombre de usuario es demasiado largo.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="170"/>
         <source>&apos;%1&apos; is not allowed as username.</source>
-        <translation type="unfinished"/>
+        <translation>&apos;%1&apos; no está permitido como nombre de usuario.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="177"/>
         <source>Your username must start with a lowercase letter or underscore.</source>
-        <translation type="unfinished"/>
+        <translation>Su nombre de usuario debe comenzar una letra minúscula o con un guión bajo.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="181"/>
         <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Sólo se permiten letras minúsculas, números,guión y guión bajo.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="227"/>
         <source>Your hostname is too short.</source>
-        <translation type="unfinished"/>
+        <translation>Su nombre de host es demasiado corto.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="231"/>
         <source>Your hostname is too long.</source>
-        <translation type="unfinished"/>
+        <translation>Su nombre de host es demasiado largo.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="237"/>
         <source>&apos;%1&apos; is not allowed as hostname.</source>
-        <translation type="unfinished"/>
+        <translation>&apos;%1&apos; no está permitido como nombre de host.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="243"/>
         <source>Only letters, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Sólo se permiten letras, números, guiones y guiones bajos.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="446"/>
         <source>Your passwords do not match!</source>
-        <translation type="unfinished"/>
+        <translation>¡Sus contraseñas no coinciden!</translation>
     </message>
 </context>
 <context>
@@ -872,7 +872,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="42"/>
         <source>Si&amp;ze:</source>
-        <translation>Tamaño</translation>
+        <translation>Ta&amp;maño:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="66"/>
@@ -920,7 +920,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="73"/>
         <source>The installer failed to create partition on disk &apos;%1&apos;.</source>
-        <translation>El instalador no ha podido crear la partición en el disco &apos;%1&apos;</translation>
+        <translation>El instalador no ha podido crear la partición en el disco &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -1128,7 +1128,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="24"/>
         <source>Edit Existing Partition</source>
-        <translation>Editar las particiones existentes.</translation>
+        <translation>Editar las particiones existentes</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="54"/>
@@ -1339,7 +1339,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="72"/>
         <source>The installer failed to format partition %1 on disk &apos;%2&apos;.</source>
-        <translation>El instalador no ha podido formatear la partición %1 en el disco &apos;%2&apos;</translation>
+        <translation>El instalador no ha podido formatear la partición %1 en el disco &apos;%2&apos;.</translation>
     </message>
 </context>
 <context>
@@ -1528,12 +1528,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="151"/>
         <source>In case non-free was selected, this installer will install proprietary packages &lt;br/&gt;that have additional End User License Agreements (EULAs) attached to them.</source>
-        <translation>En caso de haber seleccionado soft no libre, este instalador instalará paquetes&lt;br/&gt;propietarios que tiene adosado Acuerdos de Licencia de Usuario Final (EULAs). </translation>
+        <translation>En caso de haber seleccionado soft no libre, este instalador instalará paquetes&lt;br/&gt;propietarios que tiene adosado Acuerdos de Licencia de Usuario Final (EULAs).</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="154"/>
         <source>If you do not agree with the terms, proprietary software will not be installed, and open source alternatives will be used instead.</source>
-        <translation>Si no está de acuerdo con sus términos, no se instalará el software propietario, y se usarán alternativas libres en su lugar. </translation>
+        <translation>Si no está de acuerdo con sus términos, no se instalará el software propietario, y se usarán alternativas libres en su lugar.</translation>
     </message>
 </context>
 <context>
@@ -1591,12 +1591,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="185"/>
         <source>Hide license text</source>
-        <translation>Ocultar el texto de la licencia.</translation>
+        <translation>Ocultar el texto de la licencia</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="185"/>
         <source>Show the license text</source>
-        <translation>Mostrar el texto de la licencia.</translation>
+        <translation>Mostrar el texto de la licencia</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="189"/>
@@ -1699,7 +1699,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <location filename="../src/modules/localeq/Map.qml" line="44"/>
         <location filename="../src/modules/localeq/Map.qml" line="66"/>
         <source>Timezone: </source>
-        <translation type="unfinished"/>
+        <translation>Zona Horaria:</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Map.qml" line="229"/>
@@ -1755,7 +1755,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="37"/>
         <source>Select your preferred Region, or use the default one based on your current location.</source>
-        <translation type="unfinished"/>
+        <translation>Seleccione su región preferida o use la predeterminada según su ubicación actual.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="94"/>
@@ -1767,17 +1767,17 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="111"/>
         <source>Select your preferred Zone within your Region.</source>
-        <translation type="unfinished"/>
+        <translation>Seleccione su Zona preferida dentro de su Región.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="182"/>
         <source>Zones</source>
-        <translation type="unfinished"/>
+        <translation>Zonas</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="229"/>
         <source>You can fine-tune Language and Locale settings below.</source>
-        <translation type="unfinished"/>
+        <translation>Puede ajustar la configuración de idioma y configuración regional a continuación.</translation>
     </message>
 </context>
 <context>
@@ -1785,12 +1785,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/localeq/Offline2.qml" line="54"/>
         <source>Timezone: %1</source>
-        <translation type="unfinished"/>
+        <translation>Zona horaria: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline2.qml" line="69"/>
         <source>Select a timezone. You can fine-tune Language and Locale settings below.</source>
-        <translation type="unfinished"/>
+        <translation>Seleccione una zona horaria. Puede ajustar la configuración de idioma y regional a continuación.</translation>
     </message>
 </context>
 <context>
@@ -1798,29 +1798,29 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/localeq/Offline3.qml" line="51"/>
         <source>Select your preferred Region, or use the default one based on your current location.</source>
-        <translation type="unfinished"/>
+        <translation>Seleccione su región preferida o use la predeterminada según su ubicación actual.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline3.qml" line="109"/>
         <location filename="../src/modules/localeq/Offline3.qml" line="184"/>
         <location filename="../src/modules/localeq/Offline3.qml" line="230"/>
         <source>Timezone: %1</source>
-        <translation type="unfinished"/>
+        <translation>Zona horaria: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline3.qml" line="126"/>
         <source>Select your preferred Zone within your Region.</source>
-        <translation type="unfinished"/>
+        <translation>Seleccione su Zona preferida dentro de su Región.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline3.qml" line="198"/>
         <source>Zones</source>
-        <translation type="unfinished"/>
+        <translation>Zonas</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline3.qml" line="246"/>
         <source>You can fine-tune Language and Locale settings below.</source>
-        <translation type="unfinished"/>
+        <translation>Puede ajustar la configuración de idioma y regional a continuación.</translation>
     </message>
 </context>
 <context>
@@ -1828,12 +1828,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/localeq/Offline_orig.qml" line="63"/>
         <source>Timezone: %1</source>
-        <translation type="unfinished"/>
+        <translation>Zona horaria: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline_orig.qml" line="78"/>
         <source>To be able to select a timezone, make sure you are connected to the internet. Restart the installer after connecting. You can fine-tune Language and Locale settings below.</source>
-        <translation type="unfinished"/>
+        <translation>Para poder seleccionar una zona horaria, asegúrese de estar conectado a Internet. Reinicie el instalador después de conectarse. Puede ajustar la configuración de idioma y configuración regional a continuación.</translation>
     </message>
 </context>
 <context>
@@ -1886,7 +1886,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="166"/>
         <source>The password contains the user name in some form</source>
-        <translation>En alguna forma, la contraseña contiene el nombre de usuario.</translation>
+        <translation>En alguna forma, la contraseña contiene el nombre de usuario</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="168"/>
@@ -1926,7 +1926,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="192"/>
         <source>The password contains too few lowercase letters</source>
-        <translation>La contraseña contiene menos de %1 letras minúsculas</translation>
+        <translation>La contraseña contiene muy pocas letras minúsculas</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="196"/>
@@ -2056,7 +2056,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="292"/>
         <source>Setting is not of string type</source>
-        <translation>El ajuste de %1 no es de tipo cadena</translation>
+        <translation>El ajuste no es de tipo cadena</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="294"/>
@@ -2066,7 +2066,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="296"/>
         <source>The configuration file is malformed</source>
-        <translation> El archivo de configuración está malformado</translation>
+        <translation>El archivo de configuración tiene un formato incorrecto</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="298"/>
@@ -2216,7 +2216,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="458"/>
         <source>Require strong passwords.</source>
-        <translation>Requiere una contraseña más fuerte</translation>
+        <translation>Requiere una contraseña fuerte.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="465"/>
@@ -2329,7 +2329,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="26"/>
         <source>Storage de&amp;vice:</source>
-        <translation>Dispositivo de almacenamiento:</translation>
+        <translation>Dispositi&amp;vo de almacenamiento:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="55"/>
@@ -2379,7 +2379,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="125"/>
         <source>&amp;Delete</source>
-        <translation>Borrar</translation>
+        <translation>&amp;Borrar</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="219"/>
@@ -2402,7 +2402,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partitionq/PartitionQmlViewStep.cpp" line="117"/>
         <source>Partition</source>
-        <translation type="unfinished"/>
+        <translation>Partición</translation>
     </message>
 </context>
 <context>
@@ -2505,12 +2505,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="428"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;To configure an EFI system partition, go back and select or create a FAT32 filesystem with the &lt;strong&gt;%3&lt;/strong&gt; flag enabled and mount point &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;&lt;br/&gt;You can continue without setting up an EFI system partition but your system may fail to start.</source>
-        <translation type="unfinished"/>
+        <translation>Para iniciar %1 es necesaria una partición de sistema EFI.&lt;br/&gt;&lt;br/&gt;Para configurar una partición de sistema EFI, retroceda y seleccione o cree un sistema de archivos FAT32 con el indicador&lt;strong&gt;%3&lt;/srong&gt; habilitado y punto de montaje &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;&lt;br/&gt;Puede continuar sin configurar una partición del sistema EFI, pero es posible que su sistema no se inicie.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="442"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;A partition was configured with mount point &lt;strong&gt;%2&lt;/strong&gt; but its &lt;strong&gt;%3&lt;/strong&gt; flag is not set.&lt;br/&gt;To set the flag, go back and edit the partition.&lt;br/&gt;&lt;br/&gt;You can continue without setting the flag but your system may fail to start.</source>
-        <translation type="unfinished"/>
+        <translation>Para iniciar %1 es necesaria una partición de sistema EFI. &lt;br/&gt;&lt;/br&gt;Se configuró una partición con punto de montaje &lt;strong&gt;%2&lt;/strong&gt; pero su indicador &lt;strong&gt;%3&lt;/srong&gt; no está activado.&lt;br/&gt;Para ajustar el indicador, retroceda y edite la partición.&lt;br/&gt;&lt;br/&gt;Puede continuar sin ajustar el indicador pero su sistema puede fallar al iniciar.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="498"/>
@@ -2520,7 +2520,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="626"/>
         <source>has at least one disk device available.</source>
-        <translation>tiene al menos un disco disponible</translation>
+        <translation>tiene al menos un disco disponible.</translation>
     </message>
 </context>
 <context>
@@ -2562,7 +2562,7 @@ Salida:
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="417"/>
         <source>External command crashed.</source>
-        <translation>El comando externo se ha roto</translation>
+        <translation>El comando externo se ha roto.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="418"/>
@@ -2693,7 +2693,8 @@ Salida:
         <location filename="../src/modules/welcomeq/Recommended.qml" line="40"/>
         <source>&lt;p&gt;This computer does not satisfy some of the recommended requirements for setting up %1.&lt;br/&gt;
         Setup can continue, but some features might be disabled.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Este ordenador no satisface algunos de los requerimientos recomendados para instalar %1.&lt;br/&gt;
+        La instalación puede continuar, pero algunas características serán deshabilitadas.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -2796,13 +2797,15 @@ Salida:
         <location filename="../src/modules/welcomeq/Requirements.qml" line="38"/>
         <source>&lt;p&gt;This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;
         Installation cannot continue.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Este ordenador no cumple con los requerimientos mínimos para la instalación de %1.&lt;br/&gt;
+        La instalación no puede continuar. &lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/Requirements.qml" line="40"/>
         <source>&lt;p&gt;This computer does not satisfy some of the recommended requirements for setting up %1.&lt;br/&gt;
         Setup can continue, but some features might be disabled.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Este ordenador no cumple con los requerimientos mínimos para la instalación de %1.&lt;br/&gt;
+        La instalación puede continuar, pero algunas características deben ser dehabilitadas &lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -2811,7 +2814,8 @@ Salida:
         <location filename="../src/modules/welcomeq/Requirements2.qml" line="48"/>
         <source>&lt;p&gt;This computer does not satisfy the minimum requirements for installing KaOS.&lt;br/&gt;
         Installation cannot continue.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Este ordenador no cumple con los requerimientos mínimos para instalar KaOS.&lt;br/&gt;
+        La instalación no puede continuar.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -2820,7 +2824,8 @@ Salida:
         <location filename="../src/modules/welcomeq/Requirements_orig.qml" line="48"/>
         <source>&lt;p&gt;This computer does not satisfy the minimum requirements for setting up %1.&lt;/p&gt;
         &lt;p&gt;Setup cannot continue.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Este ordenador no cumple con los requerimientos mínimos para la instalación de %1.&lt;/p&gt;
+        &lt;p&gt;La instalación no puede continuar.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -2896,7 +2901,7 @@ Salida:
     <message>
         <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="260"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;Installation cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
-        <translation>Este ordenador no satisface los requerimientos mínimos para instalar %1. &lt;br/&gt;La instalación no puede continuar. &lt;a href=&quot;#details&quot;&gt;Detalles...&lt;/a&gt; </translation>
+        <translation>Este ordenador no satisface los requerimientos mínimos para instalar %1. &lt;br/&gt;La instalación no puede continuar. &lt;a href=&quot;#details&quot;&gt;Detalles...&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="267"/>
@@ -2962,7 +2967,7 @@ Salida:
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="53"/>
         <source>Set keyboard model to %1, layout to %2-%3</source>
-        <translation>Establecer el modelo de teclado a % 1, la disposición a %2-%3</translation>
+        <translation>Establecer el modelo de teclado a %1, la disposición a %2-%3</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="345"/>
@@ -2974,7 +2979,7 @@ Salida:
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="350"/>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="357"/>
         <source>Failed to write to %1</source>
-        <translation>Error al escribir en % 1</translation>
+        <translation>Error al escribir en %1</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="349"/>
@@ -3118,7 +3123,7 @@ Salida:
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="34"/>
         <source>Set timezone to %1/%2</source>
-        <translation>Establecer el uso horario a %1%2</translation>
+        <translation>Establecer el uso horario a %1/%2</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="62"/>
@@ -3178,7 +3183,7 @@ Salida:
     <message>
         <location filename="../src/modules/summaryq/SummaryQmlViewStep.cpp" line="39"/>
         <source>Summary</source>
-        <translation type="unfinished"/>
+        <translation>Resumen</translation>
     </message>
 </context>
 <context>
@@ -3207,7 +3212,7 @@ Salida:
     <message>
         <location filename="../src/modules/usersq/UsersQmlViewStep.cpp" line="39"/>
         <source>Users</source>
-        <translation type="unfinished"/>
+        <translation>Usuarios</translation>
     </message>
 </context>
 <context>
@@ -3261,7 +3266,7 @@ Salida:
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="70"/>
         <source> MiB</source>
-        <translation>MiB</translation>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="86"/>
@@ -3295,7 +3300,7 @@ Salida:
         <location filename="../src/modules/welcome/WelcomePage.ui" line="79"/>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="98"/>
         <source>Select application and system language</source>
-        <translation>Seleccione el idioma de la aplicación y del sistema.</translation>
+        <translation>Seleccione el idioma de la aplicación y del sistema</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="187"/>
@@ -3428,7 +3433,7 @@ Salida:
     <message>
         <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="68"/>
         <source>Show debug information</source>
-        <translation type="unfinished"/>
+        <translation>Mostrar información de depuración</translation>
     </message>
 </context>
 <context>
@@ -3444,7 +3449,8 @@ Salida:
         <location filename="../src/modules/localeq/i18n.qml" line="106"/>
         <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
                     The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
+                    La configuración regional del sistema afecta el idioma y el juego de caracteres para algunos elementos de la línea de comandos. La configuración actual es &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/i18n.qml" line="158"/>
@@ -3472,7 +3478,7 @@ Salida:
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
         <source>Click your preferred keyboard model to select layout and variant, or use the default one based on the detected hardware.</source>
-        <translation type="unfinished"/>
+        <translation>Clic en su modelo de teclado preferido para seleccionar distribución y variante, o use la opción predeterminada basada en la detección de hardware.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="253"/>
@@ -3487,7 +3493,7 @@ Salida:
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="276"/>
         <source>Keyboard Variant</source>
-        <translation type="unfinished"/>
+        <translation>Variante de Teclado</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="386"/>
@@ -3500,44 +3506,44 @@ Salida:
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="20"/>
         <source>Keyboard Model</source>
-        <translation type="unfinished"/>
+        <translation>Modelo de Teclado</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="21"/>
         <source>Pick your preferred keyboard model or use the default one based on the detected hardware</source>
-        <translation type="unfinished"/>
+        <translation>Escoja su modelo de teclado preferido o use la opción predeterminada basada en al detección de hardware</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="56"/>
         <source>Refresh</source>
-        <translation type="unfinished"/>
+        <translation>Actualizar</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="62"/>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="169"/>
         <source>Layouts</source>
-        <translation type="unfinished"/>
+        <translation>Distribuciones</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="75"/>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="134"/>
         <source>Keyboard Layout</source>
-        <translation type="unfinished"/>
+        <translation>Distribución de Teclado</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="113"/>
         <source>Models</source>
-        <translation type="unfinished"/>
+        <translation>Modelos</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="121"/>
         <source>Variants</source>
-        <translation type="unfinished"/>
+        <translation>Variantes</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_orig.qml" line="180"/>
         <source>Test your keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Compruebe su teclado</translation>
     </message>
 </context>
 <context>
@@ -3545,22 +3551,22 @@ Salida:
     <message>
         <location filename="../src/modules/localeq/layout.qml" line="32"/>
         <source>Region: </source>
-        <translation type="unfinished"/>
+        <translation>Región: </translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/layout.qml" line="43"/>
         <source>Adjust Language</source>
-        <translation type="unfinished"/>
+        <translation>Configuración de Idioma</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/layout.qml" line="53"/>
         <source>Zone: </source>
-        <translation type="unfinished"/>
+        <translation>Zona: </translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/layout.qml" line="63"/>
         <source>Adjust Locale</source>
-        <translation type="unfinished"/>
+        <translation>Configuración de localización</translation>
     </message>
 </context>
 <context>
@@ -3576,12 +3582,12 @@ Salida:
     <message>
         <location filename="../src/modules/localeq/localeq2.qml" line="40"/>
         <source>Region: </source>
-        <translation type="unfinished"/>
+        <translation>Región: </translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/localeq2.qml" line="55"/>
         <source>Zone: </source>
-        <translation type="unfinished"/>
+        <translation>Zona: </translation>
     </message>
 </context>
 <context>
@@ -3599,22 +3605,22 @@ Salida:
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="43"/>
         <source>&lt;h3&gt;Full disk encryption&lt;/h3&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Cifrado de disco completo&lt;/h3&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="50"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>Contraseña</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="66"/>
         <source>Password (repeat)</source>
-        <translation type="unfinished"/>
+        <translation>Contraseña (repetir)</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="92"/>
         <source>Continue</source>
-        <translation type="unfinished"/>
+        <translation>Continuar</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="95"/>
@@ -3629,17 +3635,17 @@ Salida:
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="99"/>
         <source>Passwords do not match</source>
-        <translation type="unfinished"/>
+        <translation>Contraseñas no coinciden</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="101"/>
         <source>Password too short</source>
-        <translation type="unfinished"/>
+        <translation>Contraseña demasiado corta</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="103"/>
         <source>Please wait...</source>
-        <translation type="unfinished"/>
+        <translation>Espere, por favor...</translation>
     </message>
 </context>
 <context>
@@ -3692,7 +3698,7 @@ Salida:
     <message>
         <location filename="../src/modules/welcomeq/release_notes.qml" line="76"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Atrás</translation>
     </message>
 </context>
 <context>
@@ -3744,27 +3750,28 @@ Salida:
         <location filename="../src/modules/welcomeq/test.qml" line="26"/>
         <source>&lt;h3&gt;Welcome to the KaOS &lt;quote&gt;2020.06&lt;/quote&gt; installer&lt;/h3&gt;
             &lt;p&gt;This program will ask you some questions and set up KaOS on your computer.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Bienvenido al instalador de KaOS &lt;quote&gt;2020.06&lt;/quote&gt; &lt;/h3&gt;
+            &lt;p&gt;Este programa de hará algunas preguntas e instalará KaOS en su ordenador.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/test.qml" line="71"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Acerca</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/test.qml" line="84"/>
         <source>Known issues</source>
-        <translation type="unfinished"/>
+        <translation>Problemas conocidos</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/test.qml" line="95"/>
         <source>Release notes</source>
-        <translation type="unfinished"/>
+        <translation>Notas de Lanzamiento</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/test.qml" line="106"/>
         <source>Donate</source>
-        <translation type="unfinished"/>
+        <translation>Donar</translation>
     </message>
 </context>
 <context>
@@ -3772,112 +3779,112 @@ Salida:
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="36"/>
         <source>Pick your user name and credentials to login and perform admin tasks</source>
-        <translation type="unfinished"/>
+        <translation>Escoja su nombre de usuario y credenciales para inciar sesión y realizar tareas de administración</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="52"/>
         <source>What is your name?</source>
-        <translation type="unfinished"/>
+        <translation>¿Cuál es su nombre?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="59"/>
         <source>Your Full Name</source>
-        <translation type="unfinished"/>
+        <translation>Su nombre completo</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="80"/>
         <source>What name do you want to use to log in?</source>
-        <translation type="unfinished"/>
+        <translation>¿Qué nombre quiere usar para iniciar sesión?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="87"/>
         <source>Login Name</source>
-        <translation type="unfinished"/>
+        <translation>Nombre de inicio de sesión</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="103"/>
         <source>If more than one person will use this computer, you can create multiple accounts after installation.</source>
-        <translation type="unfinished"/>
+        <translation>Si más de una persona usa este ordenador, puede crear múltiples cuentas luego de la instalación.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="118"/>
         <source>What is the name of this computer?</source>
-        <translation type="unfinished"/>
+        <translation>¿Cuál es el nombre de este ordenador?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="125"/>
         <source>Computer Name</source>
-        <translation type="unfinished"/>
+        <translation>Nombre del ordenador</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="140"/>
         <source>This name will be used if you make the computer visible to others on a network.</source>
-        <translation type="unfinished"/>
+        <translation>Se usará este nombre si hace que este ordenador sea visible a otros en una red.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="155"/>
         <source>Choose a password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>Escoja una contraseña para mantener su cuenta segura.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="166"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>Contraseña</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="185"/>
         <source>Repeat Password</source>
-        <translation type="unfinished"/>
+        <translation>Repetir Contraseña</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="204"/>
         <source>Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.</source>
-        <translation type="unfinished"/>
+        <translation>Escriba dos veces la misma contraseña para que se pueda comprobar si tiene errores. Una buena contraseña está formada por letras, números y signos de puntuación, tiene por lo menos ocho caracteres y hay que cambiarla cada cierto tiempo.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="216"/>
         <source>Validate passwords quality</source>
-        <translation type="unfinished"/>
+        <translation>Validar la calidad de la contraseña</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="226"/>
         <source>When this box is checked, password-strength checking is done and you will not be able to use a weak password..</source>
-        <translation type="unfinished"/>
+        <translation>Cuando esta casilla está marcada, se comprueba la fortaleza de la contraseña, y no podrá usar una contraseña débil.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="234"/>
         <source>Log in automatically without asking for the password</source>
-        <translation type="unfinished"/>
+        <translation>Iniciar sesión automáticamente sin pedir la contraseña</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="243"/>
         <source>Reuse user password as root password</source>
-        <translation type="unfinished"/>
+        <translation>Reutilizar la contraseña de usuario como contraseña de root</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="253"/>
         <source>Use the same password for the administrator account.</source>
-        <translation type="unfinished"/>
+        <translation>Usar la misma contraseña para la cuenta de administrador.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="268"/>
         <source>Choose a root password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>Elige una contraseña para proteger tu cuenta.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="279"/>
         <source>Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Contraseña de Root</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="298"/>
         <source>Repeat Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Repetir Contraseña de Root</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="318"/>
         <source>Enter the same password twice, so that it can be checked for typing errors.</source>
-        <translation type="unfinished"/>
+        <translation>Escriba dos veces la contraseña para comprobar si tiene errores.</translation>
     </message>
 </context>
 <context>
