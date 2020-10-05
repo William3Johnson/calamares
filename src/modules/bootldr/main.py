@@ -185,7 +185,7 @@ def install_bootloader(boot_loader, fw_type):
                 libcalamares.utils.debug(partition["device"])
                 boot_device = partition["device"]
                 boot_p = ''.join([s for s in boot_device if s.isdigit()])
-                device = b''.join([s for s in boot_device if not s.isdigit()])
+                device = ''.join([s for s in boot_device if not s.isdigit()])
                 if boot_device.startswith('/dev/nvme'):
                     device = boot_device[:-2]
 
