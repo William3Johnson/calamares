@@ -160,8 +160,7 @@ struct PythonJob::Private
     bp::object m_prettyStatusMessage;
 };
 
-PythonJob::PythonJob( const ModuleSystem::InstanceKey& instance,
-                      const QString& scriptFile,
+PythonJob::PythonJob( const QString& scriptFile,
                       const QString& workingPath,
                       const QVariantMap& moduleConfiguration,
                       QObject* parent )
@@ -285,7 +284,7 @@ PythonJob::exec()
             return JobResult::error( message, description );
         }
     }
-    catch ( bp::error_already_set )
+    catch ( bp::error_already_set& )
     {
         QString msg;
         if ( PyErr_Occurred() )

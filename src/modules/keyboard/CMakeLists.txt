@@ -7,6 +7,7 @@ calamares_add_plugin( keyboard
     TYPE viewmodule
     EXPORT_MACRO PLUGINDLLEXPORT_PRO
     SOURCES
+        Config.cpp
         KeyboardViewStep.cpp
         KeyboardPage.cpp
         KeyboardLayoutModel.cpp
@@ -20,4 +21,13 @@ calamares_add_plugin( keyboard
     LINK_PRIVATE_LIBRARIES
         calamaresui
     SHARED_LIB
+)
+
+calamares_add_test(
+    keyboardtest
+    SOURCES
+        Tests.cpp
+        SetKeyboardLayoutJob.cpp
+    RESOURCES
+        keyboard.qrc
 )

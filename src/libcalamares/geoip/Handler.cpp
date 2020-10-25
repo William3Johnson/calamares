@@ -101,7 +101,6 @@ create_interface( Handler::Type t, const QString& selector )
     case Handler::Type::Fixed:
         return std::make_unique< GeoIPFixed >( selector );
     }
-    NOTREACHED return nullptr;
 }
 
 static RegionZonePair
@@ -113,7 +112,9 @@ do_query( Handler::Type type, const QString& url, const QString& selector )
         return RegionZonePair();
     }
 
-    return interface->processReply( CalamaresUtils::Network::Manager::instance().synchronousGet( url ) );
+    using namespace CalamaresUtils::Network;
+    return interface->processReply(
+        CalamaresUtils::Network::Manager::instance().synchronousGet( url, { RequestOptions::FakeUserAgent } ) );
 }
 
 static QString
@@ -125,7 +126,9 @@ do_raw_query( Handler::Type type, const QString& url, const QString& selector )
         return QString();
     }
 
-    return interface->rawReply( CalamaresUtils::Network::Manager::instance().synchronousGet( url ) );
+    using namespace CalamaresUtils::Network;
+    return interface->rawReply(
+        CalamaresUtils::Network::Manager::instance().synchronousGet( url, { RequestOptions::FakeUserAgent } ) );
 }
 
 RegionZonePair

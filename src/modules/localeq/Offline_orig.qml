@@ -21,13 +21,14 @@ import QtQuick.Controls 2.10
 import QtQuick.Window 2.14
 import QtQuick.Layouts 1.3
 
-import org.kde.kirigami 2.7 as Kirigami
+//import org.kde.kirigami 2.7 as Kirigami
 
 Column {
-    width: parent.width
+    width: 800
+    height: 480
 
     //Needs to come from localeq.conf
-    //property var configTimezone: "America/New York"
+    property var configTimezone: "America/New York"
 
     Rectangle {
         width: parent.width
@@ -48,20 +49,22 @@ Column {
 
         Item {
             id: location
-            Kirigami.Theme.inherit: false
-            Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
+            //Kirigami.Theme.inherit: false
+            //Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
             anchors.horizontalCenter: parent.horizontalCenter
 
             Rectangle {
                 anchors.centerIn: parent
                 width: 300
                 height: 30
-                color: Kirigami.Theme.backgroundColor
+                //color: Kirigami.Theme.backgroundColor
+                color: "#050505"
 
                 Text {
-                    //text: qsTr("Timezone: %1").arg(configTimezone)
-                    text: qsTr("Timezone: %1").arg(config.currentTimezoneName)
-                    color: Kirigami.Theme.textColor
+                    text: qsTr("Timezone: %1").arg(configTimezone)
+                    //text: qsTr("Timezone: %1").arg(config.currentTimezoneName)
+                    //color: Kirigami.Theme.textColor
+                    color: "#fcfcfc"
                     anchors.centerIn: parent
                 }
             }
@@ -74,7 +77,7 @@ Column {
             width: parent.width
             wrapMode: Text.WordWrap
             horizontalAlignment: Text.AlignHCenter
-            Kirigami.Theme.backgroundColor: Kirigami.Theme.backgroundColor
+            //Kirigami.Theme.backgroundColor: Kirigami.Theme.backgroundColor
             text: qsTr("To be able to select a timezone, make sure you are connected to the internet. Restart the installer after connecting. You can fine-tune Language and Locale settings below.")
         }
     }

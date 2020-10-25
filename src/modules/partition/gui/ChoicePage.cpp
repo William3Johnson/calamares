@@ -59,7 +59,8 @@ using Calamares::PrettyRadioButton;
 using CalamaresUtils::Partition::findPartitionByPath;
 using CalamaresUtils::Partition::isPartitionFreeSpace;
 using CalamaresUtils::Partition::PartitionIterator;
-using PartitionActions::Choices::SwapChoice;
+using InstallChoice = Config::InstallChoice;
+using SwapChoice = Config::SwapChoice;
 
 /**
  * @brief ChoicePage::ChoicePage is the default constructor. Called on startup as part of
@@ -71,7 +72,6 @@ ChoicePage::ChoicePage( Config* config, QWidget* parent )
     , m_config( config )
     , m_nextEnabled( false )
     , m_core( nullptr )
-    , m_choice( InstallChoice::NoChoice )
     , m_isEfi( false )
     , m_grp( nullptr )
     , m_alongsideButton( nullptr )
@@ -83,19 +83,15 @@ ChoicePage::ChoicePage( Config* config, QWidget* parent )
     , m_beforePartitionBarsView( nullptr )
     , m_beforePartitionLabelsView( nullptr )
     , m_bootloaderComboBox( nullptr )
-    , m_lastSelectedDeviceIndex( -1 )
     , m_enableEncryptionWidget( true )
-    , m_availableSwapChoices( config->swapChoices() )
-    , m_eraseSwapChoice( PartitionActions::Choices::pickOne( m_availableSwapChoices ) )
-    , m_allowManualPartitioning( true )
 {
     setupUi( this );
 
     auto gs = Calamares::JobQueue::instance()->globalStorage();
 
+    m_requiredPartitionTableType = gs->value( "requiredPartitionTableType" ).toStringList();
     m_defaultFsType = gs->value( "defaultFileSystemType" ).toString();
     m_enableEncryptionWidget = gs->value( "enableLuksAutomatedPartitioning" ).toBool();
-    m_allowManualPartitioning = gs->value( "allowManualPartitioning" ).toBool();
 
     if ( FileSystem::typeForName( m_defaultFsType ) == FileSystem::Unknown )
     {
@@ -250,10 +246,9 @@ ChoicePage::setupChoices()
     m_replaceButton->addToGroup( m_grp, InstallChoice::Replace );
 
     // Fill up swap options
-    // .. TODO: only if enabled in the config
-    if ( m_availableSwapChoices.count() > 1 )
+    if ( m_config->swapChoices().count() > 1 )
     {
-        m_eraseSwapChoiceComboBox = createCombo( m_availableSwapChoices, m_eraseSwapChoice );
+        m_eraseSwapChoiceComboBox = createCombo( m_config->swapChoices(), m_config->swapChoice() );
         m_eraseButton->addOptionsComboBox( m_eraseSwapChoiceComboBox );
     }
 
@@ -270,10 +265,15 @@ ChoicePage::setupChoices()
 
     m_itemsLayout->addStretch();
 
-    connect( m_grp, QOverload< int, bool >::of( &QButtonGroup::buttonToggled ), this, [this]( int id, bool checked ) {
+#if ( QT_VERSION < QT_VERSION_CHECK( 5, 15, 0 ) )
+    auto buttonSignal = QOverload< int, bool >::of( &QButtonGroup::buttonToggled );
+#else
+    auto buttonSignal = &QButtonGroup::idToggled;
+#endif
+    connect( m_grp, buttonSignal, this, [this]( int id, bool checked ) {
         if ( checked )  // An action was picked.
         {
-            m_choice = static_cast< InstallChoice >( id );
+            m_config->setInstallChoice( id );
             updateNextEnabled();
 
             emit actionChosen();
@@ -283,7 +283,7 @@ ChoicePage::setupChoices()
             if ( m_grp->checkedButton() == nullptr )  // If no other action is chosen, we must
             {
                 // set m_choice to NoChoice and reset previews.
-                m_choice = InstallChoice::NoChoice;
+                m_config->setInstallChoice( InstallChoice::NoChoice );
                 updateNextEnabled();
 
                 emit actionChosen();
@@ -334,6 +334,19 @@ ChoicePage::hideButtons()
     m_replaceButton->hide();
     m_alongsideButton->hide();
     m_somethingElseButton->hide();
+}
+
+void
+ChoicePage::checkInstallChoiceRadioButton( InstallChoice c )
+{
+    QSignalBlocker b( m_grp );
+    m_grp->setExclusive( false );
+    // If c == InstallChoice::NoChoice none will match and all are deselected
+    m_eraseButton->setChecked( InstallChoice::Erase == c );
+    m_replaceButton->setChecked( InstallChoice::Replace == c );
+    m_alongsideButton->setChecked( InstallChoice::Alongside == c );
+    m_somethingElseButton->setChecked( InstallChoice::Manual == c );
+    m_grp->setExclusive( true );
 }
 
 
@@ -389,7 +402,14 @@ ChoicePage::continueApplyDeviceChoice()
     // Preview setup done. Now we show/hide choices as needed.
     setupActions();
 
-    m_lastSelectedDeviceIndex = m_drivesCombo->currentIndex();
+    cDebug() << "Previous device" << m_lastSelectedDeviceIndex << "new device" << m_drivesCombo->currentIndex();
+    if ( m_lastSelectedDeviceIndex != m_drivesCombo->currentIndex() )
+    {
+        m_lastSelectedDeviceIndex = m_drivesCombo->currentIndex();
+        m_lastSelectedActionIndex = -1;
+        m_config->setInstallChoice( m_config->initialInstallChoice() );
+        checkInstallChoiceRadioButton( m_config->installChoice() );
+    }
 
     emit actionChosen();
     emit deviceChosen();
@@ -402,7 +422,7 @@ ChoicePage::onActionChanged()
     Device* currd = selectedDevice();
     if ( currd )
     {
-        applyActionChoice( currentChoice() );
+        applyActionChoice( m_config->installChoice() );
     }
 }
 
@@ -411,15 +431,16 @@ ChoicePage::onEraseSwapChoiceChanged()
 {
     if ( m_eraseSwapChoiceComboBox )
     {
-        m_eraseSwapChoice
-            = static_cast< PartitionActions::Choices::SwapChoice >( m_eraseSwapChoiceComboBox->currentData().toInt() );
+        m_config->setSwapChoice( m_eraseSwapChoiceComboBox->currentData().toInt() );
         onActionChanged();
     }
 }
 
 void
-ChoicePage::applyActionChoice( ChoicePage::InstallChoice choice )
+ChoicePage::applyActionChoice( InstallChoice choice )
 {
+    cDebug() << "Prev" << m_lastSelectedActionIndex << "InstallChoice" << choice
+             << Config::installChoiceNames().find( choice );
     m_beforePartitionBarsView->selectionModel()->disconnect( SIGNAL( currentRowChanged( QModelIndex, QModelIndex ) ) );
     m_beforePartitionBarsView->selectionModel()->clearSelection();
     m_beforePartitionBarsView->selectionModel()->clearCurrentIndex();
@@ -430,12 +451,13 @@ ChoicePage::applyActionChoice( ChoicePage::InstallChoice choice )
     {
         auto gs = Calamares::JobQueue::instance()->globalStorage();
 
-        PartitionActions::Choices::AutoPartitionOptions options { gs->value( "defaultFileSystemType" ).toString(),
+        PartitionActions::Choices::AutoPartitionOptions options { gs->value( "defaultPartitionTableType" ).toString(),
+                                                                  gs->value( "defaultFileSystemType" ).toString(),
                                                                   m_encryptWidget->passphrase(),
                                                                   gs->value( "efiSystemPartition" ).toString(),
                                                                   CalamaresUtils::GiBtoBytes(
                                                                       gs->value( "requiredStorageGiB" ).toDouble() ),
-                                                                  m_eraseSwapChoice };
+                                                                  m_config->swapChoice() };
 
         if ( m_core->isDirty() )
         {
@@ -488,7 +510,7 @@ ChoicePage::applyActionChoice( ChoicePage::InstallChoice choice )
                 [this] {
                     // We need to reupdate after reverting because the splitter widget is
                     // not a true view.
-                    updateActionChoicePreview( currentChoice() );
+                    updateActionChoicePreview( m_config->installChoice() );
                     updateNextEnabled();
                 },
                 this );
@@ -561,14 +583,14 @@ void
 ChoicePage::onEncryptWidgetStateChanged()
 {
     EncryptWidget::Encryption state = m_encryptWidget->state();
-    if ( m_choice == InstallChoice::Erase )
+    if ( m_config->installChoice() == InstallChoice::Erase )
     {
         if ( state == EncryptWidget::Encryption::Confirmed || state == EncryptWidget::Encryption::Disabled )
         {
-            applyActionChoice( m_choice );
+            applyActionChoice( m_config->installChoice() );
         }
     }
-    else if ( m_choice == InstallChoice::Replace )
+    else if ( m_config->installChoice() == InstallChoice::Replace )
     {
         if ( m_beforePartitionBarsView && m_beforePartitionBarsView->selectionModel()->currentIndex().isValid()
              && ( state == EncryptWidget::Encryption::Confirmed || state == EncryptWidget::Encryption::Disabled ) )
@@ -583,7 +605,7 @@ ChoicePage::onEncryptWidgetStateChanged()
 void
 ChoicePage::onHomeCheckBoxStateChanged()
 {
-    if ( currentChoice() == InstallChoice::Replace
+    if ( m_config->installChoice() == InstallChoice::Replace
          && m_beforePartitionBarsView->selectionModel()->currentIndex().isValid() )
     {
         doReplaceSelectedPartition( m_beforePartitionBarsView->selectionModel()->currentIndex() );
@@ -594,12 +616,14 @@ ChoicePage::onHomeCheckBoxStateChanged()
 void
 ChoicePage::onLeave()
 {
-    if ( m_choice == InstallChoice::Alongside )
+    if ( m_config->installChoice() == InstallChoice::Alongside )
     {
         doAlongsideApply();
     }
 
-    if ( m_isEfi && ( m_choice == InstallChoice::Alongside || m_choice == InstallChoice::Replace ) )
+    if ( m_isEfi
+         && ( m_config->installChoice() == InstallChoice::Alongside
+              || m_config->installChoice() == InstallChoice::Replace ) )
     {
         QList< Partition* > efiSystemPartitions = m_core->efiSystemPartitions();
         if ( efiSystemPartitions.count() == 1 )
@@ -781,11 +805,12 @@ ChoicePage::doReplaceSelectedPartition( const QModelIndex& current )
 
                         Calamares::GlobalStorage* gs = Calamares::JobQueue::instance()->globalStorage();
 
-                        PartitionActions::doReplacePartition(
-                            m_core,
-                            selectedDevice(),
-                            selectedPartition,
-                            { gs->value( "defaultFileSystemType" ).toString(), m_encryptWidget->passphrase() } );
+                        PartitionActions::doReplacePartition( m_core,
+                                                              selectedDevice(),
+                                                              selectedPartition,
+                                                              { gs->value( "defaultPartitionType" ).toString(),
+                                                                gs->value( "defaultFileSystemType" ).toString(),
+                                                                m_encryptWidget->passphrase() } );
                         Partition* homePartition = findPartitionByPath( { selectedDevice() }, *homePartitionPath );
 
                         if ( homePartition && doReuseHomePartition )
@@ -822,10 +847,11 @@ ChoicePage::doReplaceSelectedPartition( const QModelIndex& current )
 
 
 /**
- * @brief ChoicePage::updateDeviceStatePreview clears and rebuilds the contents of the
- *      preview widget for the current on-disk state. This also triggers a rescan in the
- *      PCM to get a Device* copy that's unaffected by subsequent PCM changes.
- * @param currentDevice a pointer to the selected Device.
+ * @brief clear and then rebuild the contents of the preview widget
+ *
+ * The preview widget for the current disk is completely re-constructed
+ * based on the on-disk state. This also triggers a rescan in the
+ * PCM to get a Device* copy that's unaffected by subsequent PCM changes.
  */
 void
 ChoicePage::updateDeviceStatePreview()
@@ -875,7 +901,7 @@ ChoicePage::updateDeviceStatePreview()
         sm->deleteLater();
     }
 
-    switch ( m_choice )
+    switch ( m_config->installChoice() )
     {
     case InstallChoice::Replace:
     case InstallChoice::Alongside:
@@ -893,14 +919,14 @@ ChoicePage::updateDeviceStatePreview()
 
 
 /**
- * @brief ChoicePage::updateActionChoicePreview clears and rebuilds the contents of the
- *      preview widget for the current PCM-proposed state. No rescans here, this should
- *      be immediate.
- * @param currentDevice a pointer to the selected Device.
+ * @brief rebuild the contents of the preview for the PCM-proposed state.
+ *
+ * No rescans here, this should be immediate.
+ *
  * @param choice the chosen partitioning action.
  */
 void
-ChoicePage::updateActionChoicePreview( ChoicePage::InstallChoice choice )
+ChoicePage::updateActionChoicePreview( InstallChoice choice )
 {
     Device* currentDevice = selectedDevice();
     Q_ASSERT( currentDevice );
@@ -1049,7 +1075,7 @@ ChoicePage::updateActionChoicePreview( ChoicePage::InstallChoice choice )
         m_previewAfterFrame->show();
         m_previewAfterLabel->show();
 
-        if ( m_choice == InstallChoice::Erase )
+        if ( m_config->installChoice() == InstallChoice::Erase )
         {
             m_selectLabel->hide();
         }
@@ -1078,7 +1104,9 @@ ChoicePage::updateActionChoicePreview( ChoicePage::InstallChoice choice )
         break;
     }
 
-    if ( m_isEfi && ( m_choice == InstallChoice::Alongside || m_choice == InstallChoice::Replace ) )
+    if ( m_isEfi
+         && ( m_config->installChoice() == InstallChoice::Alongside
+              || m_config->installChoice() == InstallChoice::Replace ) )
     {
         QHBoxLayout* efiLayout = new QHBoxLayout;
         layout->addLayout( efiLayout );
@@ -1093,7 +1121,7 @@ ChoicePage::updateActionChoicePreview( ChoicePage::InstallChoice choice )
 
     // Also handle selection behavior on beforeFrame.
     QAbstractItemView::SelectionMode previewSelectionMode;
-    switch ( m_choice )
+    switch ( m_config->installChoice() )
     {
     case InstallChoice::Replace:
     case InstallChoice::Alongside:
@@ -1214,7 +1242,7 @@ ChoicePage::setupActions()
         m_deviceInfoWidget->setPartitionTableType( PartitionTable::unknownTableType );
     }
 
-    if ( m_allowManualPartitioning )
+    if ( m_config->allowManualPartitioning() )
     {
         m_somethingElseButton->show();
     }
@@ -1227,6 +1255,7 @@ ChoicePage::setupActions()
     bool atLeastOneCanBeReplaced = false;
     bool atLeastOneIsMounted = false;  // Suppress 'erase' if so
     bool isInactiveRAID = false;
+    bool matchTableType = false;
 
 #ifdef WITH_KPMCORE4API
     if ( currentDevice->type() == Device::Type::SoftwareRAID_Device
@@ -1236,6 +1265,14 @@ ChoicePage::setupActions()
         isInactiveRAID = true;
     }
 #endif
+
+    PartitionTable::TableType tableType = PartitionTable::unknownTableType;
+    if ( currentDevice->partitionTable() )
+    {
+        tableType = currentDevice->partitionTable()->type();
+        matchTableType = m_requiredPartitionTableType.size() == 0
+            || m_requiredPartitionTableType.contains( PartitionTable::tableTypeToName( tableType ) );
+    }
 
     for ( auto it = PartitionIterator::begin( currentDevice ); it != PartitionIterator::end( currentDevice ); ++it )
     {
@@ -1408,6 +1445,45 @@ ChoicePage::setupActions()
         m_alongsideButton->hide();
         m_replaceButton->hide();
     }
+
+    if ( tableType != PartitionTable::unknownTableType && !matchTableType )
+    {
+        m_messageLabel->setText( tr( "This storage device already has an operating system on it, "
+                                     "but the partition table <strong>%1</strong> is different from the "
+                                     "needed <strong>%2</strong>.<br/>" )
+                                     .arg( PartitionTable::tableTypeToName( tableType ) )
+                                     .arg( m_requiredPartitionTableType.join( " or " ) ) );
+        m_messageLabel->show();
+
+        cWarning() << "Partition table" << PartitionTable::tableTypeToName( tableType )
+                   << "does not match the requirement " << m_requiredPartitionTableType.join( " or " )
+                   << ", ENABLING erase feature and DISABLING alongside, replace and manual features.";
+        m_eraseButton->show();
+        m_alongsideButton->hide();
+        m_replaceButton->hide();
+        m_somethingElseButton->hide();
+        cDebug() << "Replace button suppressed because partition table type mismatch.";
+        force_uncheck( m_grp, m_replaceButton );
+    }
+
+    if ( m_somethingElseButton->isHidden() && m_alongsideButton->isHidden() && m_replaceButton->isHidden()
+         && m_eraseButton->isHidden() )
+    {
+        if ( atLeastOneIsMounted )
+        {
+            m_messageLabel->setText( tr( "This storage device has one of its partitions <strong>mounted</strong>." ) );
+        }
+        else
+        {
+            m_messageLabel->setText(
+                tr( "This storage device is a part of an <strong>inactive RAID</strong> device." ) );
+        }
+
+        m_messageLabel->show();
+        cWarning() << "No buttons available"
+                   << "replaced?" << atLeastOneCanBeReplaced << "resized?" << atLeastOneCanBeResized
+                   << "erased? (not-mounted and not-raid)" << !atLeastOneIsMounted << "and" << !isInactiveRAID;
+    }
 }
 
 
@@ -1433,19 +1509,13 @@ ChoicePage::isNextEnabled() const
 }
 
 
-ChoicePage::InstallChoice
-ChoicePage::currentChoice() const
-{
-    return m_choice;
-}
-
 bool
 ChoicePage::calculateNextEnabled() const
 {
     bool enabled = false;
     auto sm_p = m_beforePartitionBarsView ? m_beforePartitionBarsView->selectionModel() : nullptr;
 
-    switch ( m_choice )
+    switch ( m_config->installChoice() )
     {
     case InstallChoice::NoChoice:
         cDebug() << "No partitioning choice";
@@ -1471,7 +1541,9 @@ ChoicePage::calculateNextEnabled() const
     }
 
 
-    if ( m_isEfi && ( m_choice == InstallChoice::Alongside || m_choice == InstallChoice::Replace ) )
+    if ( m_isEfi
+         && ( m_config->installChoice() == InstallChoice::Alongside
+              || m_config->installChoice() == InstallChoice::Replace ) )
     {
         if ( m_core->efiSystemPartitions().count() == 0 )
         {
@@ -1480,7 +1552,7 @@ ChoicePage::calculateNextEnabled() const
         }
     }
 
-    if ( m_choice != InstallChoice::Manual && m_encryptWidget->isVisible() )
+    if ( m_config->installChoice() != InstallChoice::Manual && m_encryptWidget->isVisible() )
     {
         switch ( m_encryptWidget->state() )
         {
