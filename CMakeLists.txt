@@ -189,7 +189,7 @@ include( CMakeColors )
 #
 set( CMAKE_CXX_STANDARD 17 )
 set( CMAKE_CXX_STANDARD_REQUIRED ON )
-set( CMAKE_CXX_FLAGS                "${CMAKE_CXX_FLAGS} -Wall" )
+set( CMAKE_CXX_FLAGS                "${CMAKE_CXX_FLAGS} -Wall -Werror=return-type" )
 set( CMAKE_CXX_FLAGS_DEBUG          "-g ${CMAKE_CXX_FLAGS_DEBUG}" )
 set( CMAKE_CXX_FLAGS_MINSIZEREL     "-Os -DNDEBUG" )
 set( CMAKE_CXX_FLAGS_RELEASE        "-O3 -DNDEBUG" )
