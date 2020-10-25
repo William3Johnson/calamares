@@ -2,6 +2,7 @@
  *
  *   SPDX-FileCopyrightText: 2014-2015 Teo Mrnjavac <teo@kde.org>
  *   SPDX-FileCopyrightText: 2020 Camilo Higuita <milo.h@aol.com>
+ *   SPDX-FileCopyrightText: 2020 Anke Boersma <demm@kaosx.us>
  *   SPDX-License-Identifier: GPL-3.0-or-later
  *
  *   Calamares is Free Software: see the License-Identifier above.
@@ -14,7 +15,6 @@
 
 #include "GlobalStorage.h"
 #include "JobQueue.h"
-//#include "utils/Variant.h"
 
 CALAMARES_PLUGIN_FACTORY_DEFINITION( KeyboardQmlViewStepFactory, registerPlugin< KeyboardQmlViewStep >(); )
 
@@ -22,7 +22,6 @@ KeyboardQmlViewStep::KeyboardQmlViewStep( QObject* parent )
     : Calamares::QmlViewStep( parent )
     , m_config( new Config( this ) )
     , m_nextEnabled( false )
-//    , m_writeEtcDefaultKeyboard( true )
 {
     m_config->init();
     m_nextEnabled = true;
@@ -81,7 +80,6 @@ void
 KeyboardQmlViewStep::onLeave()
 {
     m_config->finalize();
-    //m_jobs = m_config->createJobs( m_xOrgConfFileName, m_convertedKeymapPath, m_writeEtcDefaultKeyboard );
     m_prettyStatus = m_config->prettyStatus();
 }
 
