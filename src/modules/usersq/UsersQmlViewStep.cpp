@@ -12,12 +12,14 @@
 
 #include "UsersQmlViewStep.h"
 
+#include "Config.h"
+
 #include "SetHostNameJob.h"
 #include "SetPasswordJob.h"
 
 #include "utils/Logger.h"
 #include "utils/NamedEnum.h"
-#include "utils/Variant.h"
+//#include "utils/Variant.h"
 
 #include "GlobalStorage.h"
 #include "JobQueue.h"
@@ -71,7 +73,8 @@ UsersQmlViewStep::isAtEnd() const
 QList< Calamares::job_ptr >
 UsersQmlViewStep::jobs() const
 {
-    return m_jobs;
+    //return m_jobs;
+    return m_config->createJobs();
 }
 
 
@@ -79,7 +82,7 @@ void
 UsersQmlViewStep::onActivate()
 {
     //m_config->onActivate();
-    //QmlViewStep::onActivate();
+    QmlViewStep::onActivate();
 }
 
 

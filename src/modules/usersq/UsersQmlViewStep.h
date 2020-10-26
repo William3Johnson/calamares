@@ -22,6 +22,8 @@
 #include "Config.h"
 #include <QVariant>
 
+class Config;
+
 class PLUGINDLLEXPORT UsersQmlViewStep : public Calamares::QmlViewStep
 {
     Q_OBJECT
