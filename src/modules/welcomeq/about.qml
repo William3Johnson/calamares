@@ -19,7 +19,7 @@ Item {
     focus: true
 
     property var appName: "Calamares"
-    property var appVersion: "3.2.31"
+    property var appVersion: "3.2.33"
 
     Rectangle {
         id: textArea
@@ -49,12 +49,12 @@ Item {
                         for %3</strong><br/><br/>
                         Copyright 2014-2017 Teo Mrnjavac &lt;teo@kde.org&gt;<br/>
                         Copyright 2017-2020 Adriaan de Groot &lt;groot@kde.org&gt;<br/>
-                        Thanks to <a href='https://calamares.io/team/'>the Calamares team</a> 
-                        and the <a href=\"https://www.transifex.com/kaos/kaos/\">KaOS 
+                        Thanks to <a href='https://calamares.io/team/'>the Calamares team</a>
+                        and the <a href=\"https://www.transifex.com/kaos/kaos/\">KaOS
                         translators team</a>.<br/><br/>
-                        <a href='https://calamares.io/'>Calamares</a> 
+                        <a href='https://calamares.io/'>Calamares</a>
                         development is sponsored by <br/>
-                        <a href='http://www.blue-systems.com/'>Blue Systems</a> - 
+                        <a href='http://www.blue-systems.com/'>Blue Systems</a> -
                         Liberating Software." )
                         .arg(appName)
                         .arg(appVersion)
