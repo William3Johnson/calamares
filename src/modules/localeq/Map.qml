@@ -96,7 +96,7 @@ Column {
 
             GeocodeModel {
                 id: geocodeModel
-                plugin: mapPlugin
+                plugin:  Plugin { name: "osm" }
                 autoUpdate: true
                 query: Address {
                     id: address
@@ -105,8 +105,9 @@ Column {
                 }
 
                 onLocationsChanged: {
-                    if (count == 1) {
+                    if (count ) {
                         map.center.latitude = get(0).coordinate.latitude
+                        //console.log('changed:', count);
                         map.center.longitude = get(0).coordinate.longitude
                     }
                 }
