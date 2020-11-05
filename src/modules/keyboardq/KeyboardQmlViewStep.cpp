@@ -21,11 +21,9 @@ CALAMARES_PLUGIN_FACTORY_DEFINITION( KeyboardQmlViewStepFactory, registerPlugin<
 KeyboardQmlViewStep::KeyboardQmlViewStep( QObject* parent )
     : Calamares::QmlViewStep( parent )
     , m_config( new Config( this ) )
-    , m_nextEnabled( false )
 {
-    m_config->init();
-    m_nextEnabled = true;
-    emit nextStatusChanged( m_nextEnabled );
+    m_config->detectCurrentKeyboardLayout();
+    emit nextStatusChanged( true );
 }
 
 QString
@@ -37,13 +35,13 @@ KeyboardQmlViewStep::prettyName() const
 QString
 KeyboardQmlViewStep::prettyStatus() const
 {
-    return m_prettyStatus;
+    return m_config->prettyStatus();
 }
 
 bool
 KeyboardQmlViewStep::isNextEnabled() const
 {
-    return m_nextEnabled;
+    return true;
 }
 
 bool
@@ -80,7 +78,6 @@ void
 KeyboardQmlViewStep::onLeave()
 {
     m_config->finalize();
-    m_prettyStatus = m_config->prettyStatus();
 }
 
 QObject*
@@ -92,6 +89,6 @@ KeyboardQmlViewStep::getConfig()
 void
 KeyboardQmlViewStep::setConfigurationMap( const QVariantMap& configurationMap )
 {
-
+    m_config->setConfigurationMap( configurationMap );
     Calamares::QmlViewStep::setConfigurationMap( configurationMap );
 }
