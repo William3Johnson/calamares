@@ -110,6 +110,7 @@ KeyboardModelsModel::KeyboardModelsModel( QObject* parent )
     }
 
     cDebug() << "Loaded" << m_list.count() << "keyboard models";
+    setCurrentIndex();  // If pc105 was seen, select it now
 }
 
 
