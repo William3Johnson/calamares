@@ -29,7 +29,7 @@ import subprocess
 DesktopEnvironment = collections.namedtuple('DesktopEnvironment', ['executable', 'desktop_file'])
 
 desktop_environments = [
-    DesktopEnvironment('/usr/bin/startkde', 'plasma'), # KDE Plasma 5
+    DesktopEnvironment('/usr/bin/startplasma-x11', 'plasma'), # KDE Plasma 5
     #DesktopEnvironment('/usr/bin/startkde', 'kde-plasma'), # KDE Plasma 4
 ]
 
@@ -64,7 +64,7 @@ def set_autologin(username, displaymanagers, root_mount_point):
                     if default_desktop_environment != None:
                         line = 'Session={}.desktop\n'.format(default_desktop_environment.desktop_file)
                 sddm_conf.write(line)
-       
+
     return None
 
 def run():
