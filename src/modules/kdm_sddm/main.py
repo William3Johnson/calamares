@@ -4,7 +4,7 @@
 #
 #   Copyright 2014, Philip Müller <philm@manjaro.org>
 #   Copyright 2014, Teo Mrnjavac <teo@kde.org>
-#   Copyright 2014-2017, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2020, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
