@@ -19,7 +19,7 @@ Item {
     focus: true
 
     property var appName: "Calamares"
-    property var appVersion: "3.2.33"
+    property var appVersion: "3.2.36"
 
     Rectangle {
         id: textArea

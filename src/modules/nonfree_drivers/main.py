@@ -33,7 +33,7 @@ def run():
     install_path = libcalamares.globalstorage.value("rootMountPoint")
     license = libcalamares.globalstorage.value("licenseAgree")
     print(license)
-    
+
     if not license:
         print('License declined')
         return None
@@ -54,14 +54,14 @@ def run():
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
-        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-1:45*'):
+        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-1:46*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--noconfirm', nvidia_utils])
-        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-1:45*'):
+        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-1:46*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--noconfirm', nvidia])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
-        
+
         sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
         text = []
         with open(sddm_conf_path, 'r') as sddm_conf:
@@ -71,7 +71,7 @@ def run():
                 if re.match('Session=plasmawayland.desktop', line):
                     line = 'Session=plasma.desktop'
                 sddm_conf.write(line)
-                
+
     elif os.path.exists('/var/log/nvidia-prime'):
         print('nvidia prime detected')
         print('removing unneeded packages')
@@ -80,17 +80,17 @@ def run():
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
-        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-1:45*'):
+        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-1:46*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--noconfirm', nvidia_utils])
-        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-1:45*'):
+        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-1:46*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--noconfirm', nvidia])
         for prime in glob.glob('/opt/kdeos/pkgs/prime*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--noconfirm', prime])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
-        
+
         sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
         text = []
         with open(sddm_conf_path, 'r') as sddm_conf:
@@ -100,7 +100,7 @@ def run():
                 if re.match('Session=plasmawayland.desktop', line):
                     line = 'Session=plasma.desktop'
                 sddm_conf.write(line)
-                
+
     elif os.path.exists('/var/log/nvidia-390xx'):
         print('nvidia-390xx detected')
         print('removing unneeded packages')
@@ -116,7 +116,7 @@ def run():
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--noconfirm', nvidia_390])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
-        
+
         sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
         text = []
         with open(sddm_conf_path, 'r') as sddm_conf:
@@ -126,7 +126,7 @@ def run():
                 if re.match('Session=plasmawayland.desktop', line):
                     line = 'Session=plasma.desktop'
                 sddm_conf.write(line)
-                
+
     elif os.path.exists('/var/log/nvidia-340xx'):
         print('nvidia-340xx detected')
         print('removing unneeded packages')
@@ -142,7 +142,7 @@ def run():
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--noconfirm', nvidia_340])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
-        
+
         sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
         text = []
         with open(sddm_conf_path, 'r') as sddm_conf:
