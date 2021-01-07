@@ -17,8 +17,8 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import io.calamares.core 1.0
-import io.calamares.ui 1.0
+//import io.calamares.core 1.0
+//import io.calamares.ui 1.0
 
 import QtQuick 2.10
 import QtQuick.Controls 2.10
@@ -244,7 +244,7 @@ Page {
                     spacing: 2
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.verticalCenterOffset: -30
-                    anchors.left: parent.left 
+                    anchors.left: parent.left
                     anchors.leftMargin: parent.width / 15
 
                     Button {
@@ -365,13 +365,13 @@ Page {
                         }
                     }
                 }
-                
+
                 Button {
 
                     Layout.fillWidth: true
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.verticalCenterOffset: -30
-                    anchors.left: parent.left 
+                    anchors.left: parent.left
                     anchors.leftMargin: parent.width / 15
                     icon.name: "go-previous"
                     text: qsTr("Layouts")

@@ -2554,7 +2554,7 @@ il mouse e usando i pulsanti +/- per modificare lo zoom o usa lo scrolling del m
     <message>
         <location filename="../src/modules/preservefiles/PreserveFiles.cpp" line="172"/>
         <source>Not all of the configured files could be preserved.</source>
-        <translation type="unfinished"/>
+        <translation>Non è stato possibile mantenere tutti i file configurati.</translation>
     </message>
 </context>
 <context>
@@ -2718,7 +2718,7 @@ Output:
         <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="24"/>
         <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="36"/>
         <source>Remove Volume Group named %1.</source>
-        <translation type="unfinished"/>
+        <translation>Rimuovi il gruppo volumi chiamato %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="30"/>
@@ -2728,7 +2728,7 @@ Output:
     <message>
         <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="48"/>
         <source>The installer failed to remove a volume group named &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Il programma di installazione non è riuscito a rimuovere il gruppo volumi chiamato &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -3296,12 +3296,12 @@ Output:
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="24"/>
         <source>List of Physical Volumes</source>
-        <translation type="unfinished"/>
+        <translation>Elenco dei volumi fisici</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="34"/>
         <source>Volume Group Name:</source>
-        <translation type="unfinished"/>
+        <translation>Nome gruppo volumi</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="47"/>
@@ -3331,7 +3331,7 @@ Output:
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="126"/>
         <source>Total Sectors:</source>
-        <translation type="unfinished"/>
+        <translation>Settori totali:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="146"/>

@@ -605,17 +605,17 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1445"/>
         <source>This storage device already has an operating system on it, but the partition table &lt;strong&gt;%1&lt;/strong&gt; is different from the needed &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Le périphérique de stockage possède déjà un système d’exploitation mais la table de partitions &lt;strong&gt;%1&lt;/strong&gt; est différente du format nécessaire &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1468"/>
         <source>This storage device has one of its partitions &lt;strong&gt;mounted&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Une des partitions de ce périphérique de stockage est &lt;strong&gt;montée&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1473"/>
         <source>This storage device is a part of an &lt;strong&gt;inactive RAID&lt;/strong&gt; device.</source>
-        <translation type="unfinished"/>
+        <translation>Ce périphérique de stockage fait partie d’un périphérique &lt;strong&gt;RAID inactif&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1600"/>
@@ -1004,22 +1004,22 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
         <location filename="../src/modules/users/CreateUserJob.cpp" line="50"/>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="143"/>
         <source>Creating user %1</source>
-        <translation type="unfinished"/>
+        <translation>Création de l’utilisateur %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="126"/>
         <source>Preserving home directory</source>
-        <translation type="unfinished"/>
+        <translation>Conservation du répertoire home</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="151"/>
         <source>Configuring user %1</source>
-        <translation type="unfinished"/>
+        <translation>Configuration de l’utilisateur %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="159"/>
         <source>Setting file permissions</source>
-        <translation type="unfinished"/>
+        <translation>Configuration des permissions de fichier</translation>
     </message>
 </context>
 <context>
@@ -1466,7 +1466,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/initcpio/InitcpioJob.cpp" line="31"/>
         <source>Creating initramfs with mkinitcpio.</source>
-        <translation type="unfinished"/>
+        <translation>Création de initramfs avec mkinicpio.</translation>
     </message>
 </context>
 <context>
@@ -1954,52 +1954,52 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="218"/>
         <source>The password contains fewer than %n digits</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>Le mot de passe contient moins de %n chiffres</numerusform><numerusform>Le mot de passe contient moins de %n chiffres</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="225"/>
         <source>The password contains fewer than %n uppercase letters</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>Le mot de passe contient moins de %n majuscules</numerusform><numerusform>Le mot de passe contient moins de %n majuscules</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="232"/>
         <source>The password contains fewer than %n lowercase letters</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>Le mot de passe contient moins de %n minuscules</numerusform><numerusform>Le mot de passe contient moins de %n minuscules</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="239"/>
         <source>The password contains fewer than %n non-alphanumeric characters</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>Le mot de passe contient moins de %n caractères non-alphanumériques</numerusform><numerusform>Le mot de passe contient moins de %n caractères non-alphanumériques</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="246"/>
         <source>The password is shorter than %n characters</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>Le mot de passe contient moins de %n caractères</numerusform><numerusform>Le mot de passe contient moins de %n caractères</numerusform></translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="251"/>
         <source>The password is a rotated version of the previous one</source>
-        <translation type="unfinished"/>
+        <translation>Le mot de passe est une rotation du mot de passe précédent</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="255"/>
         <source>The password contains fewer than %n character classes</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>Le mot de passe contient moins de %n classes de caractères</numerusform><numerusform>Le mot de passe contient moins de %n classes de caractères</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="262"/>
         <source>The password contains more than %n same characters consecutively</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>Le mot de passe contient plus de %n caractères identiques à la suite.</numerusform><numerusform>Le mot de passe contient plus de %1 caractères identiques à la suite</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="269"/>
         <source>The password contains more than %n characters of the same class consecutively</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>Le mot de passe contient plus de %n caractères de même classe à la suite.</numerusform><numerusform>Le mot de passe contient plus de %1 caractères de même classe à la suite.</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="280"/>
         <source>The password contains monotonic sequence longer than %n characters</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>Le mot de passe contient une séquence monotone de plus de %n caractères</numerusform><numerusform>Le mot de passe contient une séquence monotone de plus de %1 caractères</numerusform></translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="286"/>
@@ -2683,7 +2683,7 @@ Sortie :
     <message>
         <location filename="../src/modules/machineid/MachineIdJob.cpp" line="83"/>
         <source>Directory not found</source>
-        <translation type="unfinished"/>
+        <translation>Répertoire non trouvé</translation>
     </message>
     <message>
         <location filename="../src/modules/machineid/MachineIdJob.cpp" line="84"/>
@@ -3174,18 +3174,18 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/users/MiscJobs.cpp" line="166"/>
         <source>Preparing groups.</source>
-        <translation type="unfinished"/>
+        <translation>Préparation des groupes</translation>
     </message>
     <message>
         <location filename="../src/modules/users/MiscJobs.cpp" line="178"/>
         <location filename="../src/modules/users/MiscJobs.cpp" line="183"/>
         <source>Could not create groups in target system</source>
-        <translation type="unfinished"/>
+        <translation>Impossible de créer les groupes sur le système cible</translation>
     </message>
     <message>
         <location filename="../src/modules/users/MiscJobs.cpp" line="184"/>
         <source>These groups are missing in the target system: %1</source>
-        <translation type="unfinished"/>
+        <translation>Il manque les groupes suivant dans le système cible : %1</translation>
     </message>
 </context>
 <context>
@@ -3193,17 +3193,17 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/users/MiscJobs.cpp" line="33"/>
         <source>Configure &lt;pre&gt;sudo&lt;/pre&gt; users.</source>
-        <translation type="unfinished"/>
+        <translation>Configuration de l’utilisateur &lt;pre&gt;sudo&lt;/pre&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/MiscJobs.cpp" line="55"/>
         <source>Cannot chmod sudoers file.</source>
-        <translation type="unfinished"/>
+        <translation>Impossible d&apos;exécuter chmod sur le fichier sudoers.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/MiscJobs.cpp" line="60"/>
         <source>Cannot create sudoers file for writing.</source>
-        <translation type="unfinished"/>
+        <translation>Impossible de créer le fichier sudoers en écriture.</translation>
     </message>
 </context>
 <context>
@@ -3279,13 +3279,13 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
         <location filename="../src/calamares/VariantModel.cpp" line="232"/>
         <source>Key</source>
         <comment>Column header for key/value</comment>
-        <translation type="unfinished"/>
+        <translation>Clé</translation>
     </message>
     <message>
         <location filename="../src/calamares/VariantModel.cpp" line="236"/>
         <source>Value</source>
         <comment>Column header for key/value</comment>
-        <translation type="unfinished"/>
+        <translation>Valeur</translation>
     </message>
 </context>
 <context>
@@ -3462,7 +3462,17 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
                         development is sponsored by &lt;br/&gt;
                         &lt;a href='http://www.blue-systems.com/'&gt;Blue Systems&lt;/a&gt; -
                         Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%&quot;&lt;/h1&gt; &lt;br/&gt;
+&lt;strong&gt;%2&lt;br/&gt;
+pour %3&lt;/strong&gt; &lt;br/&gt;&lt;br/&gt;
+Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
+Copyright 2017-2020 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
+Merci à &lt;a href=&apos;https://calamares.io/team/&apos;&gt;l’équipe de Calamares&lt;/a&gt;
+et à &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;l’équipe de traduction de KaOS&lt;/a&gt;. &lt;br/&gt; &lt;br/&gt;
+Le développement de &lt;a href=&apos;https://calamares.io/&apos;&gt;Calamares&lt;/a&gt;
+est sponsorisé par &lt;br/&gt;
+&lt;a href=&apos;http://www.blue-systems.com/&apos;&gt;Blue Systems&lt;/a&gt; - 
+Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/about.qml" line="96"/>
@@ -3886,7 +3896,7 @@ Les paramètres régionaux du système affectent le format des dates et des nomb
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="226"/>
         <source>When this box is checked, password-strength checking is done and you will not be able to use a weak password.</source>
-        <translation type="unfinished"/>
+        <translation>Lorsque cette case est cochée, la vérification de la force du mot de passe est effectuée et vous ne pourrez pas utiliser un mot de passe faible.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="234"/>
