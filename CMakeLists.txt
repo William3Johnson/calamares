@@ -42,7 +42,8 @@
 cmake_minimum_required( VERSION 3.3 FATAL_ERROR )
 project( CALAMARES
     VERSION 3.2.36
-    LANGUAGES C CXX )
+    LANGUAGES C CXX
+)
 
 set( CALAMARES_VERSION_RC 1 )  # Set to 0 during release cycle, 1 during development
 
@@ -141,7 +142,7 @@ set( CALAMARES_DESCRIPTION_SUMMARY
 #       `txstats.py -e`. See also
 #
 # Total 25 languages
-set( _tx_complete ast ca cs de en es es_AR fr hi_IN hr hu id_ID nl_NL pt_BR pt_PT)
+set( _tx_complete ast ca cs de es es_AR fr hi_IN hr hu id_ID nl_NL pt_BR pt_PT)
 set( _tx_good ro_RO it pl ru sl sr_RS tr_TR)
 set( _tx_ok sv )
 #set( _tx_incomplete zh_CN zh_TW)
