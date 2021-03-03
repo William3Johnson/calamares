@@ -1,21 +1,21 @@
-//import io.calamares.ui 1.0
-//import io.calamares.core 1.0
+import io.calamares.ui 1.0
+import io.calamares.core 1.0
 
 import QtQuick 2.3
 import QtQuick.Layouts 1.3
 
 Rectangle {
     id: sideBar;
-    //color: Branding.styleString( Branding.SidebarBackground );
-    color: "#bdc3c7"
-    width: 200
-    height: 600
+    color: Branding.styleString( Branding.SidebarBackground );
+    anchors.fill: parent;
 
     //Needs to come from /calamares/src/calamares/CalamaresWindow.cpp ?
     property var debugModel: true
 
     ColumnLayout {
         anchors.fill: parent;
+        //width: 200
+        //Layout.fillHeight: true;
         spacing: 0;
 
         Image {
@@ -25,30 +25,26 @@ Rectangle {
             id: logo;
             width: 80;
             height: width;  // square
-            //source: "file:/" + Branding.imagePath(Branding.ProductLogo);
-            source: "file:/usr/share/calamares/branding/kaos_branding/kaos.png"
+            source: "file:/" + Branding.imagePath(Branding.ProductLogo);
             sourceSize.width: width;
             sourceSize.height: height;
         }
 
         Repeater {
-            //model: ViewManager
-            model: ["Europe", "America", "Africa"]
+            model: ViewManager
             Rectangle {
-                Layout.leftMargin: 0;
-                width: parent.width;
+                Layout.leftMargin: 12;
+                Layout.fillWidth: true;
                 height: 35;
                 radius: 0;
-                //color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarTextHighlight : Branding.SidebarBackground );
-                color: model == "Europe" ? "#bdc3c7" : "#eff0f1"
+                color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarTextHighlight : Branding.SidebarBackground );
 
                 Text {
                     anchors.verticalCenter: parent.verticalCenter;
                     anchors.horizontalCenter: parent.horizontalCenter
                     x: parent.x + 12;
-                    //color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarTextSelect : Branding.SidebarText );
-                    color: model == "Europe" ? "#1F1F1F" : "#3498DB"
-                    text: modelData //display;
+                    color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarTextSelect : Branding.SidebarText );
+                    text: display;
                     font.pointSize : 14
                 }
             }
@@ -59,11 +55,10 @@ Rectangle {
         }
 
         Rectangle {
-            width: 60
-            height: 30
+            Layout.fillWidth: true;
+            height: 35
             Layout.alignment: Qt.AlignHLeft | Qt.AlignBottom
-            //color: Branding.styleString( Branding.SidebarBackground );
-            color: "#bdc3c7"
+            color: Branding.styleString( Branding.SidebarBackground );
             visible: debugModel ? true : false
 
             MouseArea {
@@ -75,8 +70,7 @@ Rectangle {
                     anchors.verticalCenter: parent.verticalCenter;
                     x: parent.x + 4;
                     text: qsTr("Show debug information")
-                    //color: Branding.styleString( mouseArea.containsMouse ? Branding.SidebarTextSelect : Branding.SidebarText );
-                    color: "#1f1f1f"
+                    color: Branding.styleString( mouseArea.containsMouse ? Branding.SidebarTextSelect : Branding.SidebarText );
                     font.pointSize : 9
                 }
 
