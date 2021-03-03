@@ -45,7 +45,7 @@ windowPlacement: center
 #  - "widget" or unset, use traditional sidebar (logo, items)
 #  - "none", hide it entirely
 #  - "qml", use calamares-sidebar.qml from branding folder
-sidebar: widget
+sidebar: qml
 
 # Kind of navigation (button panel on the bottom).
 #  - "widget" or unset, use traditional navigation
@@ -81,10 +81,10 @@ navigation: qml
 strings:
     productName:         KaOS
     shortProductName:    KaOS
-    version:             2021.02
+    version:             2021.03
     shortVersion:        KaOS
-    versionedName:       KaOS 2021.02
-    shortVersionedName:  KaOS 2021.02
+    versionedName:       KaOS 2021.03
+    shortVersionedName:  KaOS 2021.03
     bootloaderEntryName: KaOS
     productUrl:          https://kaosx.us/
     supportUrl:          https://kaosx.us/docs/
@@ -142,4 +142,4 @@ style:
    sidebarBackground:    "#bdc3c7"
    sidebarText:          "#1F1F1F"
    sidebarTextSelect:    "#3498DB"
-   #sidebarTextHighlight: "#D35400"
+   sidebarTextHighlight: "#eff0f1"

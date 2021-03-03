@@ -23,6 +23,8 @@ import org.kde.plasma.core 2.0 as PlasmaCore
 Page {
 
     id: finished
+    // needs to come from umount.conf
+    property var configdestLog: "/var/log/installation.log"
 
     width: parent.width
     height: parent.height
@@ -100,7 +102,7 @@ Page {
             anchors.top: parent.top
             horizontalAlignment: Text.AlignHCenter
             text: qsTr("<p>A full log of the install is available as installation.log in the home directory of the Live user.<br/>
-            This log is copied to /var/log/installation.log of the target system.</p>")
+            This log is copied to %1 of the target system.</p>").arg(configdestLog)
         }
     }
 
