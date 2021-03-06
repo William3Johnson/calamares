@@ -38,7 +38,7 @@ Rectangle {
                 color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarTextHighlight : Branding.SidebarBackground );
 
                 Image {
-                    source: "chevron-right.svg"
+                    source: "angle.svg"
                     id: image
                     anchors.verticalCenter: parent.verticalCenter;
                     x: parent.x + 5;
@@ -74,7 +74,7 @@ Rectangle {
                 anchors.fill: parent;
                 cursorShape: Qt.PointingHandCursor
                 hoverEnabled: true
-                    Text {
+                Text {
                     anchors.verticalCenter: parent.verticalCenter;
                     x: parent.x + 4;
                     text: qsTr("Show debug information")

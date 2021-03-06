@@ -73,7 +73,10 @@ Page {
         Button {
             text: qsTr("Restart System")
             icon.name: "system-reboot"
-            onClicked: { config.doRestart(true); }
+            onClicked: {
+                config.doRestart(true);
+                ViewManager.quit();
+            }
         }
     }
 
