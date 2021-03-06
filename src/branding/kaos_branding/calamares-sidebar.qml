@@ -10,7 +10,7 @@ Rectangle {
     anchors.fill: parent;
 
     //Needs to come from /calamares/src/calamares/CalamaresWindow.cpp ?
-    property var debugModel: true
+    //property var debugModel: true
 
     ColumnLayout {
         anchors.fill: parent;
@@ -37,6 +37,16 @@ Rectangle {
                 radius: 0;
                 color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarTextHighlight : Branding.SidebarBackground );
 
+                Image {
+                    source: "chevron-right.svg"
+                    id: image
+                    anchors.verticalCenter: parent.verticalCenter;
+                    x: parent.x + 5;
+                    fillMode: Image.PreserveAspectFit
+                    height: 22
+                    visible: index == ViewManager.currentStepIndex ? true : false
+                }
+
                 Text {
                     anchors.verticalCenter: parent.verticalCenter;
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -44,14 +54,6 @@ Rectangle {
                     color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarTextSelect : Branding.SidebarText );
                     text: display;
                     font.pointSize : 14
-                }
-
-                Image {
-                    source: "img/minus.png"
-                    anchors.verticalCenter: parent.verticalCenter;
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    width: 32
-                    height: 32
                 }
             }
         }
@@ -65,7 +67,7 @@ Rectangle {
             height: 35
             Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
             color: Branding.styleString( mouseArea.containsMouse ? Branding.SidebarTextHighlight : Branding.SidebarBackground);
-            visible: debugModel ? true : false
+            visible: showDebugWindow ? true : false
 
             MouseArea {
                 id: mouseArea

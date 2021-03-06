@@ -73,17 +73,29 @@ public Q_SLOTS:
      * The "if desired" part is: only if the restart mode allows it,
      * **and** the user has checked the box (or done whatever to
      * turn on restartNowWanted()).
-     */
-    void doRestart();
-
-    /** @brief Send DBus notification, if desired.
      *
-     * This takes notifyOnFinished() into account.
+     * - The one-argument form ignores what the user wants and restarts
+     *   if @p restartAnyway is @c true **unless** the mode is Never
+     * - The no-argument form uses the user setting
+     */
+    void doRestart( bool restartAnyway );
+    void doRestart() { doRestart( restartNowWanted() ); }
+
+    /** @brief Send DBus notification
      *
      * At the end of installation (when the FinishedViewStep is activated),
      * send a desktop notification via DBus that the install is done.
+     *
+     * - The two-argument form sends success or failure, and can be
+     *   forced to send by setting @p sendAnyway to @c true.
+     * - The one-argument form sends success or failure and takes
+     *   the notifyOnFinished() configuration into account.
+     * - The no-argument form checks if a failure was signalled previously
+     *   and uses that to decide if it was a failure.
+     *
      */
-    void doNotify( bool hasFailed );
+    void doNotify( bool hasFailed, bool sendAnyway );
+    void doNotify( bool hasFailed ) { doNotify( hasFailed, notifyOnFinished() ); }
     void doNotify() { doNotify( hasFailed() ); }
 
     /** @brief Tell the config the install failed

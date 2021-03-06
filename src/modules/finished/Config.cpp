@@ -109,22 +109,24 @@ Config::onInstallationFailed( const QString& message, const QString& details )
 
 
 void
-Config::doRestart()
+Config::doRestart( bool restartAnyway )
 {
-    cDebug() << "Restart requested, mode=" << restartModes().find( restartNowMode() ) << " want?" << restartNowWanted();
-    if ( restartNowWanted() )
+    cDebug() << "mode=" << restartModes().find( restartNowMode() ) << " user?" << restartNowWanted() << "arg?"
+             << restartAnyway;
+    if ( restartNowMode() != RestartMode::Never && restartAnyway )
     {
-        cDebug() << "Running restart command" << m_restartNowCommand;
+        cDebug() << Logger::SubEntry << "Running restart command" << m_restartNowCommand;
         QProcess::execute( "/bin/sh", { "-c", m_restartNowCommand } );
     }
 }
 
 
 void
-Config::doNotify( bool hasFailed )
+Config::doNotify( bool hasFailed, bool sendAnyway )
 {
-    if ( !notifyOnFinished() )
+    if ( !sendAnyway )
     {
+        cDebug() << "Notification failed?" << hasFailed << "not sent.";
         return;
     }
 
