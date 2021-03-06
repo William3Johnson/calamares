@@ -18,8 +18,6 @@ import org.kde.kirigami 2.7 as Kirigami
 import QtGraphicalEffects 1.0
 import QtQuick.Window 2.3
 
-import org.kde.plasma.core 2.0 as PlasmaCore
-
 Page {
 
     id: finished
@@ -64,12 +62,6 @@ Page {
         anchors.centerIn: parent
         spacing: 6
 
-        PlasmaCore.DataSource {
-            id: executer
-            engine: "executable"
-            onNewData: {executer.disconnectSource(sourceName);}
-        }
-
         Button {
             id: button
             text: qsTr("Close Installer")
@@ -81,10 +73,7 @@ Page {
         Button {
             text: qsTr("Restart System")
             icon.name: "system-reboot"
-            //onClicked: { config.doRestart(); }
-            onClicked: {
-                //executer.connectSource("systemctl -i reboot");
-                executer.connectSource("systemctl start colord");
+            onClicked: { config.doRestart(); }
             }
         }
     }
@@ -104,6 +93,18 @@ Page {
             text: qsTr("<p>A full log of the install is available as installation.log in the home directory of the Live user.<br/>
             This log is copied to %1 of the target system.</p>").arg(configdestLog)
         }
+    }
+
+    function onActivate() {
+
+        // This QML page has a **button** for restarting,
+        // so just pretend the setting is clicked; this is a
+        // poor solution, recommended is to set restartNowMode to Always
+        // in the config.
+        config.setRestartNowWanted(true);
+    }
+
+    function onLeave() {
     }
 
 }

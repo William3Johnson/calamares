@@ -14,8 +14,6 @@ Rectangle {
 
     ColumnLayout {
         anchors.fill: parent;
-        //width: 200
-        //Layout.fillHeight: true;
         spacing: 0;
 
         Image {
@@ -33,7 +31,7 @@ Rectangle {
         Repeater {
             model: ViewManager
             Rectangle {
-                Layout.leftMargin: 12;
+                Layout.leftMargin: 0;
                 Layout.fillWidth: true;
                 height: 35;
                 radius: 0;
@@ -47,6 +45,14 @@ Rectangle {
                     text: display;
                     font.pointSize : 14
                 }
+
+                Image {
+                    source: "img/minus.png"
+                    anchors.verticalCenter: parent.verticalCenter;
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: 32
+                    height: 32
+                }
             }
         }
 
@@ -57,8 +63,8 @@ Rectangle {
         Rectangle {
             Layout.fillWidth: true;
             height: 35
-            Layout.alignment: Qt.AlignHLeft | Qt.AlignBottom
-            color: Branding.styleString( Branding.SidebarBackground );
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
+            color: Branding.styleString( mouseArea.containsMouse ? Branding.SidebarTextHighlight : Branding.SidebarBackground);
             visible: debugModel ? true : false
 
             MouseArea {
@@ -70,7 +76,7 @@ Rectangle {
                     anchors.verticalCenter: parent.verticalCenter;
                     x: parent.x + 4;
                     text: qsTr("Show debug information")
-                    color: Branding.styleString( mouseArea.containsMouse ? Branding.SidebarTextSelect : Branding.SidebarText );
+                    color: Branding.styleString( mouseArea.containsMouse ? Branding.SidebarTextSelect : Branding.SidebarBackground );
                     font.pointSize : 9
                 }
 
