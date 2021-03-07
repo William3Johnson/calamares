@@ -32,6 +32,8 @@
 #include <QFileInfo>
 #include <QLabel>
 #ifdef WITH_QML
+#include <QQmlContext>
+#include <QQmlEngine>
 #include <QQuickItem>
 #include <QQuickWidget>
 #endif
@@ -86,7 +88,7 @@ setButtonIcon( QPushButton* button, const QString& name )
 }
 
 static QWidget*
-getWidgetSidebar( CalamaresWindow* window,
+getWidgetSidebar( Calamares::DebugWindowManager* debug,
                   Calamares::ViewManager* viewManager,
                   QWidget* parent,
                   Qt::Orientation,
@@ -128,7 +130,7 @@ getWidgetSidebar( CalamaresWindow* window,
     tv->setFocusPolicy( Qt::NoFocus );
     sideLayout->addWidget( tv );
 
-    if ( Calamares::Settings::instance()->debugMode() || ( Logger::logLevel() >= Logger::LOGVERBOSE ) )
+    if ( debug && debug->enabled() )
     {
         QPushButton* debugWindowBtn = new QPushButton;
         debugWindowBtn->setObjectName( "debugButton" );
@@ -138,8 +140,9 @@ getWidgetSidebar( CalamaresWindow* window,
         sideLayout->addWidget( debugWindowBtn );
         debugWindowBtn->setFlat( true );
         debugWindowBtn->setCheckable( true );
-        QObject::connect( debugWindowBtn, &QPushButton::clicked, window, &CalamaresWindow::showDebugWindow );
-        QObject::connect( window, &CalamaresWindow::debugWindowShown, debugWindowBtn, &QPushButton::setChecked );
+        QObject::connect( debugWindowBtn, &QPushButton::clicked, debug, &Calamares::DebugWindowManager::show );
+        QObject::connect(
+            debug, &Calamares::DebugWindowManager::visibleChanged, debugWindowBtn, &QPushButton::setChecked );
     }
 
     CalamaresUtils::unmarginLayout( sideLayout );
@@ -147,7 +150,11 @@ getWidgetSidebar( CalamaresWindow* window,
 }
 
 static QWidget*
-getWidgetNavigation( CalamaresWindow*, Calamares::ViewManager* viewManager, QWidget* parent, Qt::Orientation, int )
+getWidgetNavigation( Calamares::DebugWindowManager*,
+                     Calamares::ViewManager* viewManager,
+                     QWidget* parent,
+                     Qt::Orientation,
+                     int )
 {
     QWidget* navigation = new QWidget( parent );
     QBoxLayout* bottomLayout = new QHBoxLayout;
@@ -235,10 +242,19 @@ setDimension( QQuickWidget* w, Qt::Orientation o, int desiredWidth )
 
 
 static QWidget*
-getQmlSidebar( CalamaresWindow*, Calamares::ViewManager*, QWidget* parent, Qt::Orientation o, int desiredWidth )
+getQmlSidebar( Calamares::DebugWindowManager* debug,
+               Calamares::ViewManager*,
+               QWidget* parent,
+               Qt::Orientation o,
+               int desiredWidth )
 {
     CalamaresUtils::registerQmlModels();
     QQuickWidget* w = new QQuickWidget( parent );
+    if ( debug )
+    {
+        w->engine()->rootContext()->setContextProperty( "debug", debug );
+    }
+
     w->setSource( QUrl(
         CalamaresUtils::searchQmlFile( CalamaresUtils::QmlSearch::Both, QStringLiteral( "calamares-sidebar" ) ) ) );
     setDimension( w, o, desiredWidth );
@@ -246,10 +262,18 @@ getQmlSidebar( CalamaresWindow*, Calamares::ViewManager*, QWidget* parent, Qt::O
 }
 
 static QWidget*
-getQmlNavigation( CalamaresWindow*, Calamares::ViewManager*, QWidget* parent, Qt::Orientation o, int desiredWidth )
+getQmlNavigation( Calamares::DebugWindowManager* debug,
+                  Calamares::ViewManager*,
+                  QWidget* parent,
+                  Qt::Orientation o,
+                  int desiredWidth )
 {
     CalamaresUtils::registerQmlModels();
     QQuickWidget* w = new QQuickWidget( parent );
+    if ( debug )
+    {
+        w->engine()->rootContext()->setContextProperty( "debug", debug );
+    }
     w->setSource( QUrl(
         CalamaresUtils::searchQmlFile( CalamaresUtils::QmlSearch::Both, QStringLiteral( "calamares-navigation" ) ) ) );
     setDimension( w, o, desiredWidth );
@@ -261,12 +285,20 @@ getQmlNavigation( CalamaresWindow*, Calamares::ViewManager*, QWidget* parent, Qt
 // Calls to flavoredWidget() still refer to these *names*
 // even if they are subsequently not used.
 static QWidget*
-getQmlSidebar( CalamaresWindow*, Calamares::ViewManager*, QWidget* parent, Qt::Orientation, int desiredWidth )
+getQmlSidebar( Calamares::DebugWindowManager*,
+               Calamares::ViewManager*,
+               QWidget* parent,
+               Qt::Orientation,
+               int desiredWidth )
 {
     return nullptr;
 }
 static QWidget*
-getQmlNavigation( CalamaresWindow*, Calamares::ViewManager*, QWidget* parent, Qt::Orientation, int desiredWidth )
+getQmlNavigation( Calamares::DebugWindowManager*,
+                  Calamares::ViewManager*,
+                  QWidget* parent,
+                  Qt::Orientation,
+                  int desiredWidth )
 {
     return nullptr;
 }
@@ -281,7 +313,7 @@ template < typename widgetMaker, typename... args >
 QWidget*
 flavoredWidget( Calamares::Branding::PanelFlavor flavor,
                 Qt::Orientation o,
-                CalamaresWindow* w,
+                Calamares::DebugWindowManager* w,
                 QWidget* parent,
                 widgetMaker widget,
                 widgetMaker qml,  // Only if WITH_QML is on
@@ -321,7 +353,7 @@ insertIf( QBoxLayout* layout,
 
 CalamaresWindow::CalamaresWindow( QWidget* parent )
     : QWidget( parent )
-    , m_debugWindow( nullptr )
+    , m_debugManager( new Calamares::DebugWindowManager( this ) )
     , m_viewManager( nullptr )
 {
     // If we can never cancel, don't show the window-close button
@@ -400,14 +432,14 @@ CalamaresWindow::CalamaresWindow( QWidget* parent )
     QWidget* sideBox = flavoredWidget(
         branding->sidebarFlavor(),
         ::orientation( branding->sidebarSide() ),
-        this,
+        m_debugManager,
         baseWidget,
         ::getWidgetSidebar,
         ::getQmlSidebar,
         qBound( 100, CalamaresUtils::defaultFontHeight() * 12, w < windowPreferredWidth ? 100 : 190 ) );
     QWidget* navigation = flavoredWidget( branding->navigationFlavor(),
                                           ::orientation( branding->navigationSide() ),
-                                          this,
+                                          m_debugManager,
                                           baseWidget,
                                           ::getWidgetNavigation,
                                           ::getQmlNavigation,
@@ -459,29 +491,6 @@ CalamaresWindow::ensureSize( QSize size )
     auto w = this->size().width();
 
     resize( w, h );
-}
-
-void
-CalamaresWindow::showDebugWindow( bool show )
-{
-    if ( show )
-    {
-        m_debugWindow = new Calamares::DebugWindow();
-        m_debugWindow->show();
-        connect( m_debugWindow.data(), &Calamares::DebugWindow::closed, this, [=]() {
-            m_debugWindow->deleteLater();
-            emit debugWindowShown( false );
-        } );
-        emit debugWindowShown( true );
-    }
-    else
-    {
-        if ( m_debugWindow )
-        {
-            m_debugWindow->deleteLater();
-        }
-        emit debugWindowShown( false );
-    }
 }
 
 void
