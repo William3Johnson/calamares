@@ -1,5 +1,13 @@
 <?xml version="1.0" ?><!DOCTYPE TS><TS language="ca" version="2.1">
 <context>
+    <name>AutoMountManagementJob</name>
+    <message>
+        <location filename="../src/modules/partition/jobs/AutoMountManagementJob.cpp" line="22"/>
+        <source>Manage auto-mount settings</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>BootInfoWidget</name>
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="62"/>
@@ -107,7 +115,7 @@
         <translation>Arbre de ginys</translation>
     </message>
     <message>
-        <location filename="../src/calamares/DebugWindow.cpp" line="217"/>
+        <location filename="../src/calamares/DebugWindow.cpp" line="216"/>
         <source>Debug information</source>
         <translation>Informació de depuració</translation>
     </message>
@@ -115,12 +123,12 @@
 <context>
     <name>Calamares::ExecutionViewStep</name>
     <message>
-        <location filename="../src/libcalamaresui/viewpages/ExecutionViewStep.cpp" line="85"/>
+        <location filename="../src/libcalamaresui/viewpages/ExecutionViewStep.cpp" line="88"/>
         <source>Set up</source>
         <translation>Configuració</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/viewpages/ExecutionViewStep.cpp" line="85"/>
+        <location filename="../src/libcalamaresui/viewpages/ExecutionViewStep.cpp" line="88"/>
         <source>Install</source>
         <translation>Instal·la</translation>
     </message>
@@ -141,7 +149,7 @@
 <context>
     <name>Calamares::JobThread</name>
     <message>
-        <location filename="../src/libcalamares/JobQueue.cpp" line="196"/>
+        <location filename="../src/libcalamares/JobQueue.cpp" line="198"/>
         <source>Done</source>
         <translation>Fet</translation>
     </message>
@@ -249,173 +257,173 @@
 <context>
     <name>Calamares::ViewManager</name>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="413"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="430"/>
         <source>&amp;Back</source>
         <translation>&amp;Anterior</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="408"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="425"/>
         <source>&amp;Next</source>
         <translation>&amp;Següent</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="438"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="455"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Cancel·la</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="397"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="414"/>
         <source>Cancel setup without changing the system.</source>
         <translation>Cancel·la la configuració sense canviar el sistema.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="398"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="415"/>
         <source>Cancel installation without changing the system.</source>
         <translation>Cancel·la la instal·lació sense canviar el sistema.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="150"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="153"/>
         <source>Setup Failed</source>
         <translation>Ha fallat la configuració.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="151"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="154"/>
         <source>Would you like to paste the install log to the web?</source>
         <translation>Voleu enganxar el registre d&apos;instal·lació a la xarxa?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="189"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="203"/>
         <source>Install Log Paste URL</source>
         <translation>URL de publicació del registre d&apos;instal·lació</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="192"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="206"/>
         <source>The upload was unsuccessful. No web-paste was done.</source>
         <translation>La càrrega no s&apos;ha fet correctament. No s&apos;ha enganxat res a la xarxa.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="208"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="222"/>
         <source>Calamares Initialization Failed</source>
         <translation>Ha fallat l&apos;inici del Calamares</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="209"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="223"/>
         <source>%1 can not be installed. Calamares was unable to load all of the configured modules. This is a problem with the way Calamares is being used by the distribution.</source>
         <translation>No es pot instal·lar %1. El Calamares no ha pogut carregar tots els mòduls configurats. Aquest és un problema amb la manera com el Calamares és utilitzat per la distribució.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="215"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="229"/>
         <source>&lt;br/&gt;The following modules could not be loaded:</source>
         <translation>&lt;br/&gt;No s&apos;han pogut carregar els mòduls següents:</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="327"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="343"/>
         <source>Continue with installation?</source>
         <translation>Voleu continuar la instal·lació?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="329"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="345"/>
         <source>The %1 setup program is about to make changes to your disk in order to set up %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
         <translation>El programa de configuració %1 està a punt de fer canvis al disc per tal de configurar %2. &lt;br/&gt;&lt;strong&gt;No podreu desfer aquests canvis.&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="335"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="351"/>
         <source>&amp;Set up now</source>
         <translation>Con&amp;figura-ho ara</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="392"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="409"/>
         <source>&amp;Set up</source>
         <translation>Con&amp;figura-ho</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="392"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="409"/>
         <source>&amp;Install</source>
         <translation>&amp;Instal·la</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="394"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="411"/>
         <source>Setup is complete. Close the setup program.</source>
         <translation>La configuració s&apos;ha acabat. Tanqueu el programa de configuració.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="511"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="528"/>
         <source>Cancel setup?</source>
         <translation>Voleu cancel·lar la configuració?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="511"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="528"/>
         <source>Cancel installation?</source>
         <translation>Voleu cancel·lar la instal·lació?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="512"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="529"/>
         <source>Do you really want to cancel the current setup process?
 The setup program will quit and all changes will be lost.</source>
         <translation>Realment voleu cancel·lar el procés de configuració actual?
 El programa de configuració es tancarà i es perdran tots els canvis.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="514"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="531"/>
         <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
         <translation>Realment voleu cancel·lar el procés d&apos;instal·lació actual?
 L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="171"/>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="518"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="177"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="535"/>
         <source>&amp;Yes</source>
         <translation>&amp;Sí</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="172"/>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="519"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="178"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="536"/>
         <source>&amp;No</source>
         <translation>&amp;No</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="178"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="184"/>
         <source>&amp;Close</source>
         <translation>Tan&amp;ca</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="327"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="343"/>
         <source>Continue with setup?</source>
         <translation>Voleu continuar la configuració?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="332"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="348"/>
         <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
         <translation>L&apos;instal·lador %1 està a punt de fer canvis al disc per instal·lar-hi %2.&lt;br/&gt;&lt;strong&gt;No podreu desfer aquests canvis.&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="335"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="351"/>
         <source>&amp;Install now</source>
         <translation>&amp;Instal·la ara</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="343"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="359"/>
         <source>Go &amp;back</source>
         <translation>&amp;Anterior</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="419"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="436"/>
         <source>&amp;Done</source>
         <translation>&amp;Fet</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="395"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="412"/>
         <source>The installation is complete. Close the installer.</source>
         <translation>La instal·lació s&apos;ha acabat. Tanqueu l&apos;instal·lador.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="164"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="170"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="150"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="153"/>
         <source>Installation Failed</source>
         <translation>Ha fallat la instal·lació.</translation>
     </message>
@@ -446,44 +454,26 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
 <context>
     <name>CalamaresUtils</name>
     <message>
-        <location filename="../src/libcalamaresui/utils/Paste.cpp" line="25"/>
-        <source>Install log posted to:
-%1</source>
-        <translation>Registre d&apos;instal·lació publicat a
-%1</translation>
+        <location filename="../src/libcalamaresui/utils/Paste.cpp" line="39"/>
+        <source>Install log posted to
+
+%1
+
+Link copied to clipboard</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>CalamaresWindow</name>
     <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="155"/>
-        <source>&amp;Back</source>
-        <translation>&amp;Enrere</translation>
-    </message>
-    <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="167"/>
-        <source>&amp;Next</source>
-        <translation>Següe&amp;nt</translation>
-    </message>
-    <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="180"/>
-        <source>&amp;Cancel</source>
-        <translation>&amp;Cancel·la</translation>
-    </message>
-    <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="304"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="367"/>
         <source>%1 Setup Program</source>
         <translation>Programa de configuració %1</translation>
     </message>
     <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="305"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="368"/>
         <source>%1 Installer</source>
         <translation>Instal·lador %1</translation>
-    </message>
-    <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="101"/>
-        <source>Show debug information</source>
-        <translation>Mostra la informació de depuració</translation>
     </message>
 </context>
 <context>
@@ -792,49 +782,89 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
         <translation>Això és un resum del que passarà quan comenci la instal·lació:</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="212"/>
+        <location filename="../src/modules/users/Config.cpp" line="214"/>
         <source>Your username is too long.</source>
         <translation>El nom d&apos;usuari és massa llarg.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="218"/>
+        <location filename="../src/modules/users/Config.cpp" line="220"/>
         <source>&apos;%1&apos; is not allowed as username.</source>
         <translation>&quot;%1&quot; no es permet com a nom d&apos;usuari.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="225"/>
+        <location filename="../src/modules/users/Config.cpp" line="227"/>
         <source>Your username must start with a lowercase letter or underscore.</source>
         <translation>El nom d&apos;usuari ha de començar amb una lletra minúscula o amb un guionet baix.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="229"/>
+        <location filename="../src/modules/users/Config.cpp" line="231"/>
         <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
         <translation>Només es permeten lletres minúscules, números, guionets i guionets baixos.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="274"/>
+        <location filename="../src/modules/users/Config.cpp" line="276"/>
         <source>Your hostname is too short.</source>
         <translation>El nom d&apos;amfitrió és massa curt.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="278"/>
+        <location filename="../src/modules/users/Config.cpp" line="280"/>
         <source>Your hostname is too long.</source>
         <translation>El nom d&apos;amfitrió és massa llarg.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="284"/>
+        <location filename="../src/modules/users/Config.cpp" line="286"/>
         <source>&apos;%1&apos; is not allowed as hostname.</source>
         <translation>&quot;%1&quot; no es permet com a nom d&apos;amfitrió.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="290"/>
+        <location filename="../src/modules/users/Config.cpp" line="292"/>
         <source>Only letters, numbers, underscore and hyphen are allowed.</source>
         <translation>Només es permeten lletres, números, guionets i guionets baixos.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="527"/>
+        <location filename="../src/modules/users/Config.cpp" line="529"/>
         <source>Your passwords do not match!</source>
         <translation>Les contrasenyes no coincideixen!</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/Config.cpp" line="143"/>
+        <source>Setup Failed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/Config.cpp" line="143"/>
+        <source>Installation Failed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/Config.cpp" line="145"/>
+        <source>The setup of %1 did not complete successfully.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/Config.cpp" line="146"/>
+        <source>The installation of %1 did not complete successfully.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/Config.cpp" line="150"/>
+        <source>Setup Complete</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/Config.cpp" line="151"/>
+        <source>Installation Complete</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/Config.cpp" line="152"/>
+        <source>The setup of %1 is complete.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/Config.cpp" line="153"/>
+        <source>The installation of %1 is complete.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -918,22 +948,43 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
 <context>
     <name>CreatePartitionJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="38"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="117"/>
+        <source>Create new %1MiB partition on %3 (%2) with entries %4.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="125"/>
+        <source>Create new %1MiB partition on %3 (%2).</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="132"/>
         <source>Create new %2MiB partition on %4 (%3) with file system %1.</source>
         <translation>Crea una partició nova de %2 MiB a %4 (%3) amb el sistema de fitxers %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="49"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="149"/>
+        <source>Create new &lt;strong&gt;%1MiB&lt;/strong&gt; partition on &lt;strong&gt;%3&lt;/strong&gt; (%2) with entries &lt;em&gt;%4&lt;/em&gt;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="157"/>
+        <source>Create new &lt;strong&gt;%1MiB&lt;/strong&gt; partition on &lt;strong&gt;%3&lt;/strong&gt; (%2).</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="164"/>
         <source>Create new &lt;strong&gt;%2MiB&lt;/strong&gt; partition on &lt;strong&gt;%4&lt;/strong&gt; (%3) with file system &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>Crea una partició de nova de &lt;strong&gt;%2MiB&lt;/strong&gt; a &lt;strong&gt;%4&lt;/strong&gt; (%3) amb el sistema de fitxers &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="61"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="189"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="194"/>
         <source>Creating new %1 partition on %2.</source>
         <translation>Creant la partició nova %1 a %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="73"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="206"/>
         <source>The installer failed to create partition on disk &apos;%1&apos;.</source>
         <translation>El programa d&apos;instal·lació no ha pogut crear la partició al disc %1.</translation>
     </message>
@@ -1234,37 +1285,57 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
 <context>
     <name>FillGlobalStorageJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="138"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="166"/>
         <source>Set partition information</source>
         <translation>Configureu la informació de la partició</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="164"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="195"/>
+        <source>Install %1 on &lt;strong&gt;new&lt;/strong&gt; %2 system partition with features &lt;em&gt;%3&lt;/em&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="203"/>
         <source>Install %1 on &lt;strong&gt;new&lt;/strong&gt; %2 system partition.</source>
         <translation>Instal·la %1 a la partició de sistema &lt;strong&gt;nova&lt;strong&gt; %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="170"/>
-        <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>Estableix la partició &lt;strong&gt;nova&lt;/strong&gt; %2 amb el punt de muntatge &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="212"/>
+        <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt; and features &lt;em&gt;%3&lt;/em&gt;.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="180"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="220"/>
+        <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt;%3.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="234"/>
+        <source>Install %2 on %3 system partition &lt;strong&gt;%1&lt;/strong&gt; with features &lt;em&gt;%4&lt;/em&gt;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="253"/>
+        <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt; and features &lt;em&gt;%4&lt;/em&gt;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="262"/>
+        <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt;%4.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="243"/>
         <source>Install %2 on %3 system partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>Instal·la %2 al sistema de partició %3 &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="187"/>
-        <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt;.</source>
-        <translation>Estableix la partició %3 &lt;strong&gt;%1&lt;/strong&gt; amb el punt de muntatge &lt;strong&gt;%2&lt;/strong&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="200"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="276"/>
         <source>Install boot loader on &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>Instal·la el carregador d&apos;arrencada a &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="209"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="285"/>
         <source>Setting up mount points.</source>
         <translation>Configurant els punts de muntatge.</translation>
     </message>
@@ -1282,62 +1353,50 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
         <translation>&amp;Reinicia ara</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedPage.cpp" line="44"/>
+        <location filename="../src/modules/finished/FinishedPage.cpp" line="72"/>
         <source>&lt;h1&gt;All done.&lt;/h1&gt;&lt;br/&gt;%1 has been set up on your computer.&lt;br/&gt;You may now start using your new system.</source>
         <translation>&lt;h1&gt;Tot fet. &lt;/h1&gt;&lt;br/&gt;%1 s&apos;ha configurat a l&apos;ordinador. &lt;br/&gt;Ara podeu començar a usar el nou sistema.</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedPage.cpp" line="48"/>
+        <location filename="../src/modules/finished/FinishedPage.cpp" line="76"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;When this box is checked, your system will restart immediately when you click on &lt;span style=&quot;font-style:italic;&quot;&gt;Done&lt;/span&gt; or close the setup program.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quan aquesta casella està marcada, el sistema es reiniciarà immediatament quan cliqueu a &lt;span style=&quot;font-style:italic;&quot;&gt;Fet&lt;/span&gt; o tanqueu el programa de configuració.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedPage.cpp" line="54"/>
+        <location filename="../src/modules/finished/FinishedPage.cpp" line="84"/>
         <source>&lt;h1&gt;All done.&lt;/h1&gt;&lt;br/&gt;%1 has been installed on your computer.&lt;br/&gt;You may now restart into your new system, or continue using the %2 Live environment.</source>
         <translation>&lt;h1&gt;Tot fet.&lt;/h1&gt;&lt;br/&gt;%1 s&apos;ha instal·lat a l&apos;ordinador.&lt;br/&gt;Ara podeu reiniciar-lo i entrar al nou sistema o continuar usant l&apos;entorn viu de %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedPage.cpp" line="59"/>
+        <location filename="../src/modules/finished/FinishedPage.cpp" line="89"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;When this box is checked, your system will restart immediately when you click on &lt;span style=&quot;font-style:italic;&quot;&gt;Done&lt;/span&gt; or close the installer.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quan aquesta casella està marcada, el sistema es reiniciarà immediatament quan cliqueu a &lt;span style=&quot;font-style:italic;&quot;&gt;Fet&lt;/span&gt; o tanqueu l&apos;instal·lador.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedPage.cpp" line="116"/>
+        <location filename="../src/modules/finished/FinishedPage.cpp" line="102"/>
         <source>&lt;h1&gt;Setup Failed&lt;/h1&gt;&lt;br/&gt;%1 has not been set up on your computer.&lt;br/&gt;The error message was: %2.</source>
         <translation>&lt;h1&gt;La configuració ha fallat.&lt;/h1&gt;&lt;br/&gt;No s&apos;ha configurat %1 a l&apos;ordinador.&lt;br/&gt;El missatge d&apos;error ha estat el següent: %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedPage.cpp" line="122"/>
+        <location filename="../src/modules/finished/FinishedPage.cpp" line="110"/>
         <source>&lt;h1&gt;Installation Failed&lt;/h1&gt;&lt;br/&gt;%1 has not been installed on your computer.&lt;br/&gt;The error message was: %2.</source>
         <translation>&lt;h1&gt;La instal·lació ha fallat.&lt;/h1&gt;&lt;br/&gt;No s&apos;ha instal·lat %1 a l&apos;ordinador.&lt;br/&gt;El missatge d&apos;error ha estat el següent: %2.</translation>
     </message>
 </context>
 <context>
+    <name>FinishedQmlViewStep</name>
+    <message>
+        <location filename="../src/modules/finishedq/FinishedQmlViewStep.cpp" line="35"/>
+        <source>Finish</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>FinishedViewStep</name>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="67"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="46"/>
         <source>Finish</source>
         <translation>Acaba</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="125"/>
-        <source>Setup Complete</source>
-        <translation>Configuració completa</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="125"/>
-        <source>Installation Complete</source>
-        <translation>Instal·lació completa</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="127"/>
-        <source>The setup of %1 is complete.</source>
-        <translation>La configuració de %1 ha acabat.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="128"/>
-        <source>The installation of %1 is complete.</source>
-        <translation>La instal·lació del %1 ha acabat.</translation>
     </message>
 </context>
 <context>
@@ -2095,7 +2154,7 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
         <translation>Error desconegut</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="775"/>
+        <location filename="../src/modules/users/Config.cpp" line="777"/>
         <source>Password is empty</source>
         <translation>La contrasenya és buida.</translation>
     </message>
@@ -2560,14 +2619,14 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
 <context>
     <name>ProcessResult</name>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="412"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="429"/>
         <source>
 There was no output from the command.</source>
         <translation>
 No hi ha hagut sortida de l&apos;ordre.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="413"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="430"/>
         <source>
 Output:
 </source>
@@ -2576,52 +2635,52 @@ Sortida:
 </translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="417"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="434"/>
         <source>External command crashed.</source>
         <translation>L&apos;ordre externa ha fallat.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="418"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="435"/>
         <source>Command &lt;i&gt;%1&lt;/i&gt; crashed.</source>
         <translation>Ha fallat l&apos;ordre &lt;i&gt;%1&lt;/i&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="423"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="440"/>
         <source>External command failed to start.</source>
         <translation>L&apos;ordre externa ha fallat l&apos;inici.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="424"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="441"/>
         <source>Command &lt;i&gt;%1&lt;/i&gt; failed to start.</source>
         <translation>L&apos;ordre &lt;i&gt;%1&lt;/i&gt; ha fallat l&apos;inici.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="428"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="445"/>
         <source>Internal error when starting command.</source>
         <translation>Error intern en iniciar l&apos;ordre.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="429"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="446"/>
         <source>Bad parameters for process job call.</source>
         <translation>Paràmetres incorrectes per a la crida de la tasca del procés.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="433"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="450"/>
         <source>External command failed to finish.</source>
         <translation>L&apos;ordre externa ha fallat l&apos;acabament.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="434"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="451"/>
         <source>Command &lt;i&gt;%1&lt;/i&gt; failed to finish in %2 seconds.</source>
         <translation>L&apos;ordre &lt;i&gt;%1&lt;/i&gt; ha fallat acabar en %2 segons.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="441"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="458"/>
         <source>External command finished with errors.</source>
         <translation>L&apos;ordre externa ha acabat amb errors.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="442"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="459"/>
         <source>Command &lt;i&gt;%1&lt;/i&gt; finished with exit code %2.</source>
         <translation>L&apos;ordre &lt;i&gt;%1&lt;/i&gt; ha acabat amb el codi de sortida %2.</translation>
     </message>
@@ -3488,9 +3547,39 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
 <context>
     <name>calamares-sidebar</name>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="68"/>
+        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="89"/>
         <source>Show debug information</source>
         <translation>Mostra la informació de depuració</translation>
+    </message>
+</context>
+<context>
+    <name>finishedq</name>
+    <message>
+        <location filename="../src/modules/finishedq/finishedq.qml" line="38"/>
+        <source>Installation Completed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finishedq/finishedq.qml" line="45"/>
+        <source>%1 has been installed on your computer.&lt;br/&gt;
+            You may now restart into your new system, or continue using the Live environment.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finishedq/finishedq.qml" line="67"/>
+        <source>Close Installer</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finishedq/finishedq.qml" line="74"/>
+        <source>Restart System</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finishedq/finishedq.qml" line="95"/>
+        <source>&lt;p&gt;A full log of the install is available as installation.log in the home directory of the Live user.&lt;br/&gt;
+            This log is copied to %1 of the target system.&lt;/p&gt;</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
