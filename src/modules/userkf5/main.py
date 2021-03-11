@@ -3,7 +3,7 @@
 #
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014-2018, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2021, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -55,6 +55,7 @@ def run():
         ('kscreenlockerrc', '.config/'),
         ('ksplashrc', '.config/'),
         ('konsolerc', '.config/'),
+        ('breezerc', '.config/'),
         ('.bashrc', ''),
         ('.xinitrc.debug', ''),
         ('mimeapps.list', '.local/share/applications/'),
@@ -100,7 +101,7 @@ def run():
 
     # set pacman.conf for kf5 needed repos
     #shutil.copy2('/etc/skel/pacman.conf', '%s/etc/pacman.conf' % install_path)
-    
+
     # aquire ISO version for sysinfo call
     label = ""
     path = os.path.join(install_path, "etc/KaOS-release")
@@ -109,7 +110,7 @@ def run():
         s = line.decode('ascii')
         s = s.rstrip('\n')
         label +=s
-    
+
     print(label)
     if 'plasmawayland' in open('/etc/sddm.conf').read():
         m = re.search("KAOS_Wayland_\d{8}", label);
@@ -119,13 +120,13 @@ def run():
         m = re.search("KAOS_\d{8}", label);
         print (m.group(0))
         lines = (m.group(0))
-    
+
     if os.path.exists(path):
         with open(path, 'w') as f:
             for l in lines:
                 f.write(l)
     f.close()
-    
+
 
     print('configure users settings done')
 
