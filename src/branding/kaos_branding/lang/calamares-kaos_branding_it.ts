@@ -4,7 +4,7 @@
     <message>
         <location filename="../show.qml" line="48"/>
         <source>Here the actual install of KaOS will start.&lt;br/&gt;Use the left &lt;b&gt;mouse button&lt;/b&gt; to go to the next slide, right for previous.&lt;br/&gt;After creating your chosen disk setup in the first 10 % &lt;br/&gt;the full copying of the ISO will take the longest of this install phase &lt;br/&gt;and will run until approximately 30%.&lt;br/&gt;</source>
-        <translation>L&apos;nstallazione di KaOS sta per avere inizio. &lt;br/&gt;Premi il &lt;b&gt;pulsante del mouse&lt;/b&gt; sinistro per andare alla prossima slide, il destro per visualizzare la precedente. &lt;br/&gt; Il primo 10% servirà per attualizzare le tue scelte di partizionamento,&lt;br/&gt; per la copia completa dal supporto USB ci vorrà un po&apos; di tempo,&lt;br/&gt; fino a circa il 30% del processo di installazione.&lt;br/&gt;.  </translation>
+        <translation>L&apos;nstallazione vera e propria di KaOS sta per avere inizio. &lt;br/&gt;Premi il pulsante sinistro &lt;b&gt;del mouse&lt;/b&gt; per andare alla prossima slide, il destro per tornare alla precedente. &lt;br/&gt; Dopo aver configurato il disco come scelto nel 10% iniziale,&lt;br/&gt;la copia completa dal supporto USB costituirà la parte più lunga di questa fase dell&apos;installazione,&lt;br/&gt; fino a circa il 30% del processo di installazione&lt;br/&gt;.  </translation>
     </message>
     <message>
         <location filename="../show.qml" line="74"/>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../show.qml" line="122"/>
         <source>Qt/KDE specific internet applications include the &lt;br/&gt;Falkon web-browser and kde-telepathy for &lt;br/&gt;chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Le applicazioni specifiche Qt/KDE per internet includono &lt;br/&gt;il web-browser Falkon e kde-telepathy per &lt;br/&gt;chat e messaggistica istantanea.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../show.qml" line="146"/>
