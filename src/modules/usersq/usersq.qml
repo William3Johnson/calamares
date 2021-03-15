@@ -56,15 +56,16 @@ Kirigami.ScrollablePage {
 
                 id: _userNameField
                 width: parent.width
+                enabled: config.isEditable("fullName")
                 placeholderText: qsTr("Your Full Name")
-                onTextChanged: config.fullNameChanged(text)
-                background: Rectangle {
+                text: config.fullName
+                onTextChanged: config.setFullName(text);
 
-                    color: "#FBFBFB" // Kirigami.Theme.backgroundColor
+                background: Rectangle {
                     radius: 2
                     opacity: 0.9
                     //border.color: _userNameField.text === "" ? Kirigami.Theme.backgroundColor : ( config.fullNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                    border.color: _userNameField.text === "" ? "#FBFBFB" : ( config.fullNameChanged ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
+                    color: _userNameField.text === "" ? "#FBFBFB" : "#f0fff0"//( config.fullNameChanged ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
                 }
             }
         }
@@ -84,16 +85,45 @@ Kirigami.ScrollablePage {
 
                 id: _userLoginField
                 width: parent.width
+                enabled: config.isEditable("loginName")
                 placeholderText: qsTr("Login Name")
-                //text: config.userName
-                onTextEdited: config.loginNameStatusChanged(text)
+                text: config.loginName
+                //onTextChanged: config.setLoginName(text)
+                onTextChanged: {
+                    if (config.loginNameStatusChanged) {
+                        console.log("Input good");
+                        config.setLoginName(text);
+                        //popup.open();
+                    } else {
+                        console.log("Invalid Input");
+                        popup.open();
+                        //_userLoginField.color = "red";
+                    }
+                }
+
+                Popup {
+                    id: popup
+                    anchors.centerIn: parent
+
+                    modal: true
+                    focus: true
+                    background: Rectangle {
+                        implicitWidth: 400
+                        implicitHeight: 50
+                        color: "#ffc0cb"
+                    }
+
+                    contentItem: Text {
+                        text: "Your username must start with a lowercase letter or underscore."
+                    }
+                    closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
+                }
 
                 background: Rectangle {
 
-                    color: "#FBFBFB" // Kirigami.Theme.backgroundColor
                     opacity: 0.9
                     //border.color: _userLoginField.text === "" ? Kirigami.Theme.backgroundColor : ( config.userNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                    border.color: _userLoginField.text === "" ? "#FBFBFB" : ( config.loginNameStatusChanged ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
+                    color: _userLoginField.text === "" ? "#FBFBFB" : ( config.loginNameStatusChanged ? "#f0fff0" : Kirigami.Theme.negativeTextColor)
                 }
             }
 
@@ -124,7 +154,8 @@ Kirigami.ScrollablePage {
                 width: parent.width
                 placeholderText: qsTr("Computer Name")
                 text: config.hostName
-                onTextEdited: config.hostNameStatusChanged(text)
+                onTextChanged: config.setHostName(text)
+
                 background: Rectangle {
 
                     color: "#FBFBFB" // Kirigami.Theme.backgroundColor
@@ -164,10 +195,12 @@ Kirigami.ScrollablePage {
                     id: _passwordField
                     width: parent.width / 2 - 10
                     placeholderText: qsTr("Password")
+                    text: config.userPassword
+                    onTextChanged: config.setUserPassword(text)
+
                     echoMode: TextInput.Password
                     passwordMaskDelay: 300
                     inputMethodHints: Qt.ImhNoAutoUppercase
-                    onTextChanged: config.userPasswordStatusChanged(text, _verificationPasswordField.text)
 
                     background: Rectangle {
 
@@ -183,10 +216,12 @@ Kirigami.ScrollablePage {
                     id: _verificationPasswordField
                     width: parent.width / 2 - 10
                     placeholderText: qsTr("Repeat Password")
+                    text: config.userPasswordSecondary
+                    onTextChanged: config.setUserPasswordSecondary(text)
+
                     echoMode: TextInput.Password
                     passwordMaskDelay: 300
                     inputMethodHints: Qt.ImhNoAutoUppercase
-                    onTextChanged: config.userPasswordSecondaryChanged(_passwordField.text, text)
 
                     background: Rectangle {
 
@@ -211,17 +246,14 @@ Kirigami.ScrollablePage {
 
         CheckBox {
 
-            visible: config.allowWeakPasswords
-            //visible: false
+            visible: config.permitWeakPasswords
             text: qsTr("Validate passwords quality")
-            checked: config.allowWeakPasswordsDefault
-            onToggled: config.allowWeakPasswordsDefault = !config.allowWeakPasswordsDefault
+            checked: config.requireStrongPasswords
+            onCheckedChanged: config.setRequireStrongPasswords(checked)
         }
 
         Label {
-
-            visible: config.allowWeakPasswords
-            //visible: false
+            visible: config.permitWeakPasswords
             width: parent.width
             text: qsTr("When this box is checked, password-strength checking is done and you will not be able to use a weak password.")
             font.weight: Font.Thin
@@ -230,24 +262,20 @@ Kirigami.ScrollablePage {
         }
 
         CheckBox {
-
             text: qsTr("Log in automatically without asking for the password")
-            checked: config.doAutologin
-            onToggled: config.doAutologin = !config.doAutologin
+            checked: config.doAutoLogin
+            onCheckedChanged: config.setAutoLogin(checked)
         }
 
         CheckBox {
-
             id: root
-            visible: config.doReusePassword
+            visible: config.writeRootPassword
             text: qsTr("Reuse user password as root password")
             checked: config.reuseUserPasswordForRoot
-            //checked: false
-            onToggled: config.reuseUserPasswordForRoot = !config.reuseUserPasswordForRoot
+            onCheckedChanged: config.setReuseUserPasswordForRoot(checked)
         }
 
         Label {
-
             visible: root.checked
             width: parent.width
             text: qsTr("Use the same password for the administrator account.")
@@ -277,10 +305,12 @@ Kirigami.ScrollablePage {
                     id: _rootPasswordField
                     width: parent.width / 2 -10
                     placeholderText: qsTr("Root Password")
+                    text: config.rootPassword
+                    onTextChanged: config.setRootPassword(text)
+
                     echoMode: TextInput.Password
                     passwordMaskDelay: 300
                     inputMethodHints: Qt.ImhNoAutoUppercase
-                    onTextChanged: config.rootPasswordChanged(text, _verificationRootPasswordField.text)
 
                     background: Rectangle {
 
@@ -296,10 +326,12 @@ Kirigami.ScrollablePage {
                     id: _verificationRootPasswordField
                     width: parent.width / 2 -10
                     placeholderText: qsTr("Repeat Root Password")
+                    text: config.rootPasswordSecondary
+                    onTextChanged: config.setRootPasswordSecondary(text)
+
                     echoMode: TextInput.Password
                     passwordMaskDelay: 300
                     inputMethodHints: Qt.ImhNoAutoUppercase
-                    onTextChanged: config.rootPasswordSecondaryChanged(_rootPasswordField.text, text)
 
                     background: Rectangle {
 

@@ -12,17 +12,11 @@
 
 #include "UsersQmlViewStep.h"
 
-#include "Config.h"
-
-#include "SetHostNameJob.h"
-#include "SetPasswordJob.h"
-
-#include "utils/Logger.h"
-#include "utils/NamedEnum.h"
-//#include "utils/Variant.h"
-
 #include "GlobalStorage.h"
 #include "JobQueue.h"
+#include "utils/Logger.h"
+#include "utils/NamedEnum.h"
+#include "utils/Variant.h"
 
 CALAMARES_PLUGIN_FACTORY_DEFINITION( UsersQmlViewStepFactory, registerPlugin< UsersQmlViewStep >(); )
 
@@ -32,7 +26,7 @@ UsersQmlViewStep::UsersQmlViewStep( QObject* parent )
 {
     connect( m_config, &Config::readyChanged, this, &UsersQmlViewStep::nextStatusChanged );
 
-    emit nextStatusChanged( m_config->isReady() );
+    emit nextStatusChanged( true );
 }
 
 QString
@@ -45,9 +39,7 @@ bool
 UsersQmlViewStep::isNextEnabled() const
 {
     return m_config->isReady();
-    //return true;
 }
-
 
 bool
 UsersQmlViewStep::isBackEnabled() const
@@ -55,13 +47,11 @@ UsersQmlViewStep::isBackEnabled() const
     return true;
 }
 
-
 bool
 UsersQmlViewStep::isAtBeginning() const
 {
     return true;
 }
-
 
 bool
 UsersQmlViewStep::isAtEnd() const
@@ -69,36 +59,21 @@ UsersQmlViewStep::isAtEnd() const
     return true;
 }
 
-
-QList< Calamares::job_ptr >
+Calamares::JobList
 UsersQmlViewStep::jobs() const
 {
-    //return m_jobs;
     return m_config->createJobs();
 }
-
-
-void
-UsersQmlViewStep::onActivate()
-{
-    //m_config->onActivate();
-    QmlViewStep::onActivate();
-}
-
 
 void
 UsersQmlViewStep::onLeave()
 {
-    m_jobs = m_config->createJobs();
     m_config->finalizeGlobalStorage();
 }
-
 
 void
 UsersQmlViewStep::setConfigurationMap( const QVariantMap& configurationMap )
 {
     m_config->setConfigurationMap( configurationMap );
-
     Calamares::QmlViewStep::setConfigurationMap( configurationMap );  // call parent implementation last
-    setContextProperty( "Users", m_config );
 }
