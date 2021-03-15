@@ -4,7 +4,7 @@
     <message>
         <location filename="../src/modules/partition/jobs/AutoMountManagementJob.cpp" line="22"/>
         <source>Manage auto-mount settings</source>
-        <translation type="unfinished"/>
+        <translation>स्वतः माउंट सेटिंग्स हेतु प्रबंधन</translation>
     </message>
 </context>
 <context>
@@ -460,7 +460,11 @@ The installer will quit and all changes will be lost.</source>
 %1
 
 Link copied to clipboard</source>
-        <translation type="unfinished"/>
+        <translation>इंस्टॉल की लॉग फाइल यहाँ पोस्ट की गई
+
+%1
+
+लिंक क्लिपबोर्ड पर कॉपी किया गया</translation>
     </message>
 </context>
 <context>
@@ -829,42 +833,42 @@ Link copied to clipboard</source>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="143"/>
         <source>Setup Failed</source>
-        <translation type="unfinished"/>
+        <translation>सेटअप विफल</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="143"/>
         <source>Installation Failed</source>
-        <translation type="unfinished"/>
+        <translation>इंस्टॉल विफल</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="145"/>
         <source>The setup of %1 did not complete successfully.</source>
-        <translation type="unfinished"/>
+        <translation>%1 का सेटअप सफलतापूर्वक पूर्ण नहीं हुआ।</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="146"/>
         <source>The installation of %1 did not complete successfully.</source>
-        <translation type="unfinished"/>
+        <translation>%1 का इंस्टॉल सफलतापूर्वक पूर्ण नहीं हुआ।</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="150"/>
         <source>Setup Complete</source>
-        <translation type="unfinished"/>
+        <translation>सेटअप पूर्ण</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="151"/>
         <source>Installation Complete</source>
-        <translation type="unfinished"/>
+        <translation>इंस्टॉल पूर्ण</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="152"/>
         <source>The setup of %1 is complete.</source>
-        <translation type="unfinished"/>
+        <translation>%1 का सेटअप पूर्ण हुआ।</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="153"/>
         <source>The installation of %1 is complete.</source>
-        <translation type="unfinished"/>
+        <translation>%1 का इंस्टॉल पूर्ण हुआ।</translation>
     </message>
 </context>
 <context>
@@ -950,12 +954,12 @@ Link copied to clipboard</source>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="117"/>
         <source>Create new %1MiB partition on %3 (%2) with entries %4.</source>
-        <translation type="unfinished"/>
+        <translation>%3 (%2) पर %4 प्रविष्टि युक्त %1 एमबी का नया विभाजन बनाएँ।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="125"/>
         <source>Create new %1MiB partition on %3 (%2).</source>
-        <translation type="unfinished"/>
+        <translation>%3 (%2) पर %1 एमबी का नया विभाजन बनाएँ।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="132"/>
@@ -965,12 +969,12 @@ Link copied to clipboard</source>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="149"/>
         <source>Create new &lt;strong&gt;%1MiB&lt;/strong&gt; partition on &lt;strong&gt;%3&lt;/strong&gt; (%2) with entries &lt;em&gt;%4&lt;/em&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%3&lt;/strong&gt; (%2) पर &lt;em&gt;%4&lt;/em&gt; प्रविष्टि युक्त &lt;strong&gt;%1 एमबी&lt;/strong&gt; का नया विभाजन बनाएँ।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="157"/>
         <source>Create new &lt;strong&gt;%1MiB&lt;/strong&gt; partition on &lt;strong&gt;%3&lt;/strong&gt; (%2).</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%3&lt;/strong&gt; (%2) पर &lt;strong&gt;%1 एमबी&lt;/strong&gt; का नया विभाजन बनाएँ।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="164"/>
@@ -1292,7 +1296,7 @@ Link copied to clipboard</source>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="195"/>
         <source>Install %1 on &lt;strong&gt;new&lt;/strong&gt; %2 system partition with features &lt;em&gt;%3&lt;/em&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;नवीन&lt;/strong&gt; सिस्टम विभाजन %2 पर %1 को &lt;em&gt;%3&lt;/em&gt; विशेषताओं सहित इंस्टॉल करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="203"/>
@@ -1302,27 +1306,27 @@ Link copied to clipboard</source>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="212"/>
         <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt; and features &lt;em&gt;%3&lt;/em&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;नवीन&lt;/strong&gt; %2 विभाजन को माउंट पॉइंट &lt;strong&gt;%1&lt;/strong&gt; व &lt;em&gt;%3&lt;/em&gt;विशेषताओं सहित सेट करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="220"/>
         <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt;%3.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;नवीन&lt;/strong&gt; %2 विभाजन को माउंट पॉइंट &lt;strong&gt;%1&lt;/strong&gt;%3 सहित सेट करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="234"/>
         <source>Install %2 on %3 system partition &lt;strong&gt;%1&lt;/strong&gt; with features &lt;em&gt;%4&lt;/em&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>%3 सिस्टम विभाजन &lt;strong&gt;%1&lt;/strong&gt; %2 को &lt;em&gt;%4&lt;/em&gt; विशेषताओं सहित इंस्टॉल करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="253"/>
         <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt; and features &lt;em&gt;%4&lt;/em&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>%3 विभाजन &lt;strong&gt;%1&lt;/strong&gt; को माउंट पॉइंट &lt;strong&gt;%2&lt;/strong&gt; व &lt;em&gt;%4&lt;/em&gt;विशेषताओं सहित सेट करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="262"/>
         <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt;%4.</source>
-        <translation type="unfinished"/>
+        <translation>%3 विभाजन &lt;strong&gt;%1&lt;/strong&gt; माउंट पॉइंट &lt;strong&gt;%2&lt;/strong&gt;%4 सहित सेट करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="243"/>
@@ -1388,7 +1392,7 @@ Link copied to clipboard</source>
     <message>
         <location filename="../src/modules/finishedq/FinishedQmlViewStep.cpp" line="35"/>
         <source>Finish</source>
-        <translation type="unfinished"/>
+        <translation>समाप्त</translation>
     </message>
 </context>
 <context>
@@ -3557,29 +3561,31 @@ Output:
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="38"/>
         <source>Installation Completed</source>
-        <translation type="unfinished"/>
+        <translation>इंस्टॉल पूर्ण</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="45"/>
         <source>%1 has been installed on your computer.&lt;br/&gt;
             You may now restart into your new system, or continue using the Live environment.</source>
-        <translation type="unfinished"/>
+        <translation>आपके कंप्यूटर पर %1 इंस्टॉल हो चुका है।&lt;br/&gt;
+            अब आप नए सिस्टम को पुनः आरंभ, या फिर लाइव वातावरण उपयोग करना जारी रख सकते हैं।</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="67"/>
         <source>Close Installer</source>
-        <translation type="unfinished"/>
+        <translation>इंस्टॉलर बंद करें</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="74"/>
         <source>Restart System</source>
-        <translation type="unfinished"/>
+        <translation>सिस्टम पुनः आरंभ करें</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="95"/>
         <source>&lt;p&gt;A full log of the install is available as installation.log in the home directory of the Live user.&lt;br/&gt;
             This log is copied to %1 of the target system.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;इंस्टॉल प्रक्रिया की पूर्ण लॉग installation.log फाइल के रूप में लाइव उपयोक्ता की होम डायरेक्टरी में उपलब्ध है।&lt;br/&gt;
+            यह लॉग फाइल लक्षित सिस्टम में %1 पर भी कॉपी की गई है।&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
