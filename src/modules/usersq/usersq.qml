@@ -93,10 +93,10 @@ Kirigami.ScrollablePage {
                     if (config.loginNameStatusChanged) {
                         console.log("Good");
                         config.setLoginName(text);
-                        popup.open();
+                        popupUser.open();
                     } else {
                         console.log("Invalid");
-                        popup.open();
+                        popupUser.open();
                     }
                 }
 
@@ -152,7 +152,17 @@ Kirigami.ScrollablePage {
                 width: parent.width
                 placeholderText: qsTr("Computer Name")
                 text: config.hostName
-                onTextChanged: config.setHostName(text)
+                //onTextChanged: config.setHostName(text)
+                onTextChanged: {
+                    if (config.hostNameStatusChanged) {
+                        console.log("Host Good");
+                        config.setHostName(text);
+                        //popupHost.open();
+                    } else {
+                        console.log("Host Invalid");
+                        popupHost.open();
+                    }
+                }
 
                 Popup {
                     id: popupHost
