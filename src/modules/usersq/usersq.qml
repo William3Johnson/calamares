@@ -93,28 +93,11 @@ Kirigami.ScrollablePage {
                     if (config.loginNameStatusChanged) {
                         console.log("Good");
                         config.setLoginName(text);
-                        popupUser.open();
+                        userMessage.visible = true
                     } else {
                         console.log("Invalid");
-                        popupUser.open();
+                        userMessage.visible = false
                     }
-                }
-
-                Popup {
-                    id: popupUser
-                    x: Math.round((parent.width - width) / 1.1)
-                    modal: true
-                    focus: false
-                    background: Rectangle {
-                        implicitWidth: 400
-                        implicitHeight: 50
-                        color: "#ffc0cb"
-                    }
-
-                    contentItem: Text {
-                        text: "Your username must start with a lowercase letter or underscore."
-                    }
-                    closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
                 }
 
                 background: Rectangle {
@@ -133,6 +116,15 @@ Kirigami.ScrollablePage {
                 font.pointSize: 8
                 color: "#6D6D6D"
             }
+        }
+
+        Kirigami.InlineMessage {
+
+            id: userMessage
+            Layout.fillWidth: true
+            visible: false
+            type: Kirigami.MessageType.Error
+            text: qsTr("Your username must start with a lowercase letter or underscore.")
         }
 
         Column {
@@ -157,36 +149,18 @@ Kirigami.ScrollablePage {
                     if (config.hostNameStatusChanged) {
                         console.log("Host Good");
                         config.setHostName(text);
-                        //popupHost.open();
+                        hostMessage.visible = false
                     } else {
                         console.log("Host Invalid");
-                        popupHost.open();
+                        hostMessage.visible = true
                     }
-                }
-
-                Popup {
-                    id: popupHost
-                    x: Math.round((parent.width - width) / 1.1)
-                    modal: true
-                    focus: false
-                    background: Rectangle {
-                        implicitWidth: 400
-                        implicitHeight: 50
-                        color: "#ffc0cb"
-                    }
-
-                    contentItem: Text {
-                        text: "Only letter, numbers, underscore and hyphen are allowed."
-                    }
-                    closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
                 }
 
                 background: Rectangle {
 
-                    color: "#FBFBFB" // Kirigami.Theme.backgroundColor
                     opacity: 0.9
                     //border.color: _hostName.text === "" ? Kirigami.Theme.backgroundColor : ( config.hostNameStatusChanged ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                    border.color: _hostName.text === "" ? "#FBFBFB" : ( config.hostNameStatusChanged ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
+                    color: _hostName.text === "" ? "#FBFBFB" : ( config.hostNameStatusChanged ? "#f0fff0" : "#ffc0cb")
                 }
             }
 
@@ -198,6 +172,14 @@ Kirigami.ScrollablePage {
                 font.pointSize: 8
                 color: "#6D6D6D"
             }
+        }
+
+        Kirigami.InlineMessage {
+            id: hostMessage
+            Layout.fillWidth: true
+            visible: false
+            type: Kirigami.MessageType.Error
+            text: qsTr("Only letter, numbers, underscore and hyphen are allowed.")
         }
 
         Column {
