@@ -91,22 +91,20 @@ Kirigami.ScrollablePage {
                 //onTextChanged: config.setLoginName(text)
                 onTextChanged: {
                     if (config.loginNameStatusChanged) {
-                        console.log("Input good");
+                        console.log("Good");
                         config.setLoginName(text);
-                        //popup.open();
-                    } else {
-                        console.log("Invalid Input");
                         popup.open();
-                        //_userLoginField.color = "red";
+                    } else {
+                        console.log("Invalid");
+                        popup.open();
                     }
                 }
 
                 Popup {
-                    id: popup
-                    anchors.centerIn: parent
-
+                    id: popupUser
+                    x: Math.round((parent.width - width) / 1.1)
                     modal: true
-                    focus: true
+                    focus: false
                     background: Rectangle {
                         implicitWidth: 400
                         implicitHeight: 50
@@ -156,6 +154,23 @@ Kirigami.ScrollablePage {
                 text: config.hostName
                 onTextChanged: config.setHostName(text)
 
+                Popup {
+                    id: popupHost
+                    x: Math.round((parent.width - width) / 1.1)
+                    modal: true
+                    focus: false
+                    background: Rectangle {
+                        implicitWidth: 400
+                        implicitHeight: 50
+                        color: "#ffc0cb"
+                    }
+
+                    contentItem: Text {
+                        text: "Only letter, numbers, underscore and hyphen are allowed."
+                    }
+                    closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
+                }
+
                 background: Rectangle {
 
                     color: "#FBFBFB" // Kirigami.Theme.backgroundColor
@@ -204,10 +219,9 @@ Kirigami.ScrollablePage {
 
                     background: Rectangle {
 
-                        color: "#FBFBFB" // Kirigami.Theme.backgroundColor
                         opacity: 0.9
                         //border.color: _passwordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.passwordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                        border.color: _passwordField.text === "" ? "#FBFBFB" : ( config.userPasswordStatusChanged ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
+                        color: _passwordField.text === "" ? "#ffefd5" : ( config.userPasswordStatusChanged ? "#FBFBFB" : "#ffc0cb")
                     }
                 }
 
@@ -225,10 +239,9 @@ Kirigami.ScrollablePage {
 
                     background: Rectangle {
 
-                        color: "#FBFBFB" //Kirigami.Theme.backgroundColor
                         opacity: 0.9
                         //border.color: _verificationpasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.passwordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                        border.color: _verificationPasswordField.text === "" ? "#FBFBFB" : ( config.userPasswordSecondaryChanged ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
+                        color: _verificationPasswordField.text === "" ? "#ffefd5" : ( config.userPasswordSecondaryChanged ? "#FBFBFB" : "#ffc0cb")
                     }
                 }
             }
@@ -314,10 +327,9 @@ Kirigami.ScrollablePage {
 
                     background: Rectangle {
 
-                        color: "#FBFBFB" // Kirigami.Theme.backgroundColor
                         opacity: 0.9
                         //border.color: _rootPasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.rootPasswordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                        border.color: _rootPasswordField.text === "" ? "#FBFBFB" : ( config.rootPasswordReady ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
+                        color: _rootPasswordField.text === "" ? "#ffefd5" : ( config.rootPasswordReady ? "#FBFBFB" : "#ffc0cb")
                     }
                 }
 
@@ -335,10 +347,9 @@ Kirigami.ScrollablePage {
 
                     background: Rectangle {
 
-                        color: "#FBFBFB" // Kirigami.Theme.backgroundColor
                         opacity: 0.9
                         //border.color: _verificationRootPasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.rootPasswordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                        border.color: _verificationRootPasswordField.text === "" ? "#FBFBFB" : ( config.rootPasswordReady ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
+                        color: _verificationRootPasswordField.text === "" ? "#ffefd5" : ( config.rootPasswordReady ? "#FBFBFB" : "#ffc0cb")
                     }
                 }
             }
