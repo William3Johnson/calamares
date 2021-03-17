@@ -4,7 +4,7 @@
     <message>
         <location filename="../src/modules/partition/jobs/AutoMountManagementJob.cpp" line="22"/>
         <source>Manage auto-mount settings</source>
-        <translation type="unfinished"/>
+        <translation>Gestió dels paràmetres dels muntatges automàtics</translation>
     </message>
 </context>
 <context>
@@ -460,7 +460,11 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
 %1
 
 Link copied to clipboard</source>
-        <translation type="unfinished"/>
+        <translation>El registre d&apos;instal·lació s&apos;ha penjat a
+
+%1
+
+L&apos;enllaç s&apos;ha copiat al porta-retalls.</translation>
     </message>
 </context>
 <context>
@@ -829,42 +833,42 @@ Link copied to clipboard</source>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="143"/>
         <source>Setup Failed</source>
-        <translation type="unfinished"/>
+        <translation>Ha fallat la configuració.</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="143"/>
         <source>Installation Failed</source>
-        <translation type="unfinished"/>
+        <translation>Ha fallat la instal·lació.</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="145"/>
         <source>The setup of %1 did not complete successfully.</source>
-        <translation type="unfinished"/>
+        <translation>La configuració de %1 no s&apos;ha completat correctament.</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="146"/>
         <source>The installation of %1 did not complete successfully.</source>
-        <translation type="unfinished"/>
+        <translation>La instal·lació de %1 no s&apos;ha completat correctament.</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="150"/>
         <source>Setup Complete</source>
-        <translation type="unfinished"/>
+        <translation>Configuració completa</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="151"/>
         <source>Installation Complete</source>
-        <translation type="unfinished"/>
+        <translation>Instal·lació completa</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="152"/>
         <source>The setup of %1 is complete.</source>
-        <translation type="unfinished"/>
+        <translation>La configuració de %1 ha acabat.</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="153"/>
         <source>The installation of %1 is complete.</source>
-        <translation type="unfinished"/>
+        <translation>La instal·lació del %1 ha acabat.</translation>
     </message>
 </context>
 <context>
@@ -950,12 +954,12 @@ Link copied to clipboard</source>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="117"/>
         <source>Create new %1MiB partition on %3 (%2) with entries %4.</source>
-        <translation type="unfinished"/>
+        <translation>Crea una partició nova de %1 MiB a %3 (%2) amb entrades %4.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="125"/>
         <source>Create new %1MiB partition on %3 (%2).</source>
-        <translation type="unfinished"/>
+        <translation>Crea una partició nova de %1 MiB a %3 (%2).</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="132"/>
@@ -965,12 +969,12 @@ Link copied to clipboard</source>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="149"/>
         <source>Create new &lt;strong&gt;%1MiB&lt;/strong&gt; partition on &lt;strong&gt;%3&lt;/strong&gt; (%2) with entries &lt;em&gt;%4&lt;/em&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Crea una partició de nova de &lt;strong&gt;%1 MiB&lt;/strong&gt; a &lt;strong&gt;%3&lt;/strong&gt; (%2) amb entrades &lt;em&gt;%4&lt;/em&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="157"/>
         <source>Create new &lt;strong&gt;%1MiB&lt;/strong&gt; partition on &lt;strong&gt;%3&lt;/strong&gt; (%2).</source>
-        <translation type="unfinished"/>
+        <translation>Crea una partició nova de &lt;strong&gt;%1 MiB&lt;/strong&gt; a &lt;strong&gt;%3&lt;/strong&gt; (%2).</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="164"/>
@@ -1292,7 +1296,7 @@ Link copied to clipboard</source>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="195"/>
         <source>Install %1 on &lt;strong&gt;new&lt;/strong&gt; %2 system partition with features &lt;em&gt;%3&lt;/em&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Instal·la el %1 a la partició de sistema &lt;strong&gt;nova&lt;strong&gt; %2 amb funcions &lt;em&gt;%3&lt;/em&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="203"/>
@@ -1302,27 +1306,27 @@ Link copied to clipboard</source>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="212"/>
         <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt; and features &lt;em&gt;%3&lt;/em&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Estableix la partició &lt;strong&gt;nova&lt;/strong&gt; %2 amb el punt de muntatge &lt;strong&gt;%1&lt;/strong&gt; amb funcions &lt;em&gt;%3&lt;/em&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="220"/>
         <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt;%3.</source>
-        <translation type="unfinished"/>
+        <translation>Estableix la partició &lt;strong&gt;nova&lt;/strong&gt; %2 amb el punt de muntatge &lt;strong&gt;%1&lt;/strong&gt; %3.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="234"/>
         <source>Install %2 on %3 system partition &lt;strong&gt;%1&lt;/strong&gt; with features &lt;em&gt;%4&lt;/em&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Instal·la %2 a la partició de sistema %3 &lt;strong&gt;%1&lt;/strong&gt; amb funcions &lt;em&gt;%4&lt;/em&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="253"/>
         <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt; and features &lt;em&gt;%4&lt;/em&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Estableix la partició %3 &lt;strong&gt;%1&lt;/strong&gt; amb el punt de muntatge &lt;strong&gt;%2&lt;/strong&gt; i funcions &lt;em&gt;%4&lt;/em&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="262"/>
         <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt;%4.</source>
-        <translation type="unfinished"/>
+        <translation>Estableix la partició %3 &lt;strong&gt;%1&lt;/strong&gt; amb el punt de muntatge &lt;strong&gt;%2&lt;/strong&gt; %4.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="243"/>
@@ -1388,7 +1392,7 @@ Link copied to clipboard</source>
     <message>
         <location filename="../src/modules/finishedq/FinishedQmlViewStep.cpp" line="35"/>
         <source>Finish</source>
-        <translation type="unfinished"/>
+        <translation>Acaba</translation>
     </message>
 </context>
 <context>
@@ -3557,29 +3561,31 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="38"/>
         <source>Installation Completed</source>
-        <translation type="unfinished"/>
+        <translation>Instal·lació acabada</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="45"/>
         <source>%1 has been installed on your computer.&lt;br/&gt;
             You may now restart into your new system, or continue using the Live environment.</source>
-        <translation type="unfinished"/>
+        <translation>%1 s&apos;ha instal·lat a l&apos;ordinador. &lt;br/&gt;
+            Ara podeu reiniciar-lo per tal d&apos;accedir al sistema operatiu nou o bé continuar usant l&apos;entorn autònom.</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="67"/>
         <source>Close Installer</source>
-        <translation type="unfinished"/>
+        <translation>Tanca l&apos;instal·lador</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="74"/>
         <source>Restart System</source>
-        <translation type="unfinished"/>
+        <translation>Reinicia el sistema</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="95"/>
         <source>&lt;p&gt;A full log of the install is available as installation.log in the home directory of the Live user.&lt;br/&gt;
             This log is copied to %1 of the target system.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Hi ha disponible un registre complet de la instal·lació com a installation.log al directori de l’usuari autònom.&lt;br/&gt;
+            Aquest registre es copia a %1 del sistema de destinació.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
