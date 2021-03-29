@@ -4,7 +4,7 @@
 #
 #   Copyright 2014, Philip Müller <philm@manjaro.org>
 #   Copyright 2014, Teo Mrnjavac <teo@kde.org>
-#   Copyright 2014-2020, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2021, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -83,7 +83,7 @@ def run():
         return "No display managers selected for the displaymanager module.",\
                "The displaymanagers list is empty or undefined in both globalstorage and displaymanager.conf."
 
-    username = libcalamares.globalstorage.value("autologinUser")
+    username = libcalamares.globalstorage.value("autoLoginUser")
     root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
 
     # Setup sddm
