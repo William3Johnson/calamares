@@ -138,6 +138,16 @@ set( _tx_good ro_RO it pl ru sl sr_RS tr_TR)
 set( _tx_ok sv )
 #set( _tx_incomplete zh_CN zh_TW)
 
+### Required versions
+#
+# See DEPENDENCIES section below.
+set( QT_VERSION 5.9.0 )
+set( YAMLCPP_VERSION 0.5.1 )
+set( ECM_VERSION 5.18 )
+set( PYTHONLIBS_VERSION 3.3 )
+set( BOOSTPYTHON_VERSION 1.55.0 )
+
+
 ### CMAKE SETUP
 #
 set( CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMakeModules" )
