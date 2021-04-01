@@ -119,7 +119,7 @@ ChoicePage::ChoicePage( Config* config, QWidget* parent )
     // Drive selector + preview
     CALAMARES_RETRANSLATE( retranslateUi( this ); m_drivesLabel->setText( tr( "Select storage de&vice:" ) );
                            m_previewBeforeLabel->setText( tr( "Current:" ) );
-                           m_previewAfterLabel->setText( tr( "After:" ) ); )
+                           m_previewAfterLabel->setText( tr( "After:" ) ); );
 
     m_previewBeforeFrame->setSizePolicy( QSizePolicy::Preferred, QSizePolicy::Expanding );
     m_previewAfterFrame->setSizePolicy( QSizePolicy::Preferred, QSizePolicy::Expanding );
@@ -300,7 +300,7 @@ ChoicePage::setupChoices()
                                             "You can create or resize partitions yourself."
                                             " Having a GPT partition table and <strong>fat32 512Mb /boot partition "
                                             "is a must for UEFI installs</strong>, either use an existing without formatting or create one." ) );
-                           updateSwapChoicesTr( m_eraseSwapChoiceComboBox ); )
+                           updateSwapChoicesTr( m_eraseSwapChoiceComboBox ); );
 }
 
 
@@ -1113,7 +1113,7 @@ ChoicePage::updateActionChoicePreview( InstallChoice choice )
     }
 
     // Also handle selection behavior on beforeFrame.
-    QAbstractItemView::SelectionMode previewSelectionMode;
+    QAbstractItemView::SelectionMode previewSelectionMode = QAbstractItemView::NoSelection;
     switch ( m_config->installChoice() )
     {
     case InstallChoice::Replace:
@@ -1305,7 +1305,7 @@ ChoicePage::setupActions()
 
             m_replaceButton->setText( tr( "<strong>Replace a partition</strong><br/>"
                                           "Replaces a partition with %1." )
-                                          .arg( Calamares::Branding::instance()->shortVersionedName() ) ); )
+                                          .arg( Calamares::Branding::instance()->shortVersionedName() ) ); );
 
         m_replaceButton->hide();
         m_alongsideButton->hide();
@@ -1339,7 +1339,7 @@ ChoicePage::setupActions()
 
                 m_replaceButton->setText( tr( "<strong>Replace a partition</strong><br/>"
                                               "Replaces a partition with %1." )
-                                              .arg( Calamares::Branding::instance()->shortVersionedName() ) ); )
+                                              .arg( Calamares::Branding::instance()->shortVersionedName() ) ); );
         }
         else
         {
@@ -1360,7 +1360,7 @@ ChoicePage::setupActions()
 
                 m_replaceButton->setText( tr( "<strong>Replace a partition</strong><br/>"
                                               "Replaces a partition with %1." )
-                                              .arg( Calamares::Branding::instance()->shortVersionedName() ) ); )
+                                              .arg( Calamares::Branding::instance()->shortVersionedName() ) ); );
         }
     }
     else
@@ -1385,7 +1385,7 @@ ChoicePage::setupActions()
 
             m_replaceButton->setText( tr( "<strong>Replace a partition</strong><br/>"
                                           "Replaces a partition with %1." )
-                                          .arg( Calamares::Branding::instance()->shortVersionedName() ) ); )
+                                          .arg( Calamares::Branding::instance()->shortVersionedName() ) ); );
     }
 
 #ifdef DEBUG_PARTITION_UNSAFE

@@ -22,6 +22,8 @@
 
 namespace Logger
 {
+class Once;
+
 struct FuncSuppressor
 {
     explicit constexpr FuncSuppressor( const char[] );
@@ -57,7 +59,8 @@ public:
     explicit CDebug( unsigned int debugLevel = LOGDEBUG, const char* func = nullptr );
     virtual ~CDebug();
 
-    friend QDebug& operator<<( CDebug&&, const FuncSuppressor& );
+    friend CDebug& operator<<( CDebug&&, const FuncSuppressor& );
+    friend CDebug& operator<<( CDebug&&, Once& );
 
 private:
     QString m_msg;
@@ -65,11 +68,12 @@ private:
     const char* m_funcinfo = nullptr;
 };
 
-inline QDebug&
+inline CDebug&
 operator<<( CDebug&& s, const FuncSuppressor& f )
 {
     s.m_funcinfo = nullptr;
-    return s << f.m_s;
+    s << f.m_s;
+    return s;
 }
 
 inline QDebug&
@@ -285,6 +289,44 @@ operator<<( QDebug& s, const Pointer& p )
     s << '@' << p.ptr << Quote;
     return s;
 }
+
+/** @brief Convenience object for supplying SubEntry to a debug stream
+ *
+ * In a function with convoluted control paths, it may be unclear
+ * when to supply SubEntry to a debug stream -- it is convenient
+ * for the **first** debug statement from a given function to print
+ * the function header, and all subsequent onces to get SubEntry.
+ *
+ * Create an object of type Once and send it (first) to all CDebug
+ * objects; this will print the function header only once within the
+ * lifetime of that Once object.
+ */
+class Once
+{
+public:
+    Once()
+        : m( true )
+    {
+    }
+    friend CDebug& operator<<( CDebug&&, Once& );
+
+private:
+    bool m = false;
+};
+
+inline CDebug&
+operator<<( CDebug&& s, Once& o )
+{
+    if ( o.m )
+    {
+        o.m = false;
+        return s;
+    }
+    s.m_funcinfo = nullptr;
+    s << SubEntry;
+    return s;
+}
+
 }  // namespace Logger
 
 #define cDebug() Logger::CDebug( Logger::LOGDEBUG, Q_FUNC_INFO )
