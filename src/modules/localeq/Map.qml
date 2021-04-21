@@ -41,11 +41,11 @@ Column {
                 var ct = responseJSON.city
                 var cy = responseJSON.country
 
-                //tzText.text = qsTr("Timezone: ") + tz
+                tzText.text = qsTr("Timezone: ") + tz
                 cityName = ct
                 countryName = cy
 
-                config.setCurrentLocation(tz)
+                //config.setCurrentLocation(tz)
             }
         }
 
@@ -211,8 +211,8 @@ Column {
 
                 Text {
                     id: tzText
-                    //text: tzText.text
-                    text: qsTr("Timezone: %1").arg(config.currentTimezoneName)
+                    text: tzText.text
+                    //text: qsTr("Timezone: %1").arg(config.currentTimezoneName)
                     color: Kirigami.Theme.textColor
                     anchors.centerIn: parent
                 }
