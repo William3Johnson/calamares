@@ -58,6 +58,8 @@ calamares_add_plugin( packagechooserq
     SOURCES
         PackageChooserQmlViewStep.cpp
         ${_packagechooser}/Config.cpp
+        ${_packagechooser}/PackageModel.cpp
+        ${_packagechooser}/ItemAppData.cpp
     RESOURCES
         packagechooserq.qrc
     LINK_PRIVATE_LIBRARIES

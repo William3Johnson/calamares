@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <https://calamares.io> ===
  *
- *   SPDX-FileCopyrightText: 201 Adriaan de Groot <groot@kde.org>
+ *   SPDX-FileCopyrightText: 2019 Adriaan de Groot <groot@kde.org>
  *   SPDX-FileCopyrightText: 2021 Anke Boersma <demm@kaosx.us>
  *   SPDX-License-Identifier: GPL-3.0-or-later
  *
@@ -23,8 +23,6 @@ PackageChooserQmlViewStep::PackageChooserQmlViewStep( QObject* parent )
     : Calamares::QmlViewStep( parent )
     , m_config( new Config( this ) )
 {
-    //connect( m_config, &Config::readyChanged, this, &PackageChooserQmlViewStep::nextStatusChanged );
-
     emit nextStatusChanged( true );
 }
 
@@ -37,7 +35,6 @@ PackageChooserQmlViewStep::prettyName() const
 bool
 PackageChooserQmlViewStep::isNextEnabled() const
 {
-    //return m_config->isReady();
     return true;
 }
 
@@ -75,6 +72,7 @@ PackageChooserQmlViewStep::onLeave()
 void
 PackageChooserQmlViewStep::setConfigurationMap( const QVariantMap& configurationMap )
 {
+    m_config->setDefaultId( moduleInstanceKey() );
     m_config->setConfigurationMap( configurationMap );
     Calamares::QmlViewStep::setConfigurationMap( configurationMap );  // call parent implementation last
 }

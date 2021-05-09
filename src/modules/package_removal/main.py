@@ -120,7 +120,7 @@ def run():
                 ['pacman', '-Rddn', '--noconfirm', '{!s}' .format(pkg)])
 
     # Packagechooser outcome / remove LibreOffice l10n
-    packages = libcalamares.globalstorage.value("packagechooser_packagechooser")
+    packages = libcalamares.globalstorage.value("packagechooser_packagechooserq")
 
     if not packages:
         print('Removing LibreOffice')

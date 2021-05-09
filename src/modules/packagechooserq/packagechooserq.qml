@@ -7,16 +7,18 @@
  *
  */
 
-//import io.calamares.core 1.0
-//import io.calamares.ui 1.0
+import io.calamares.core 1.0
+import io.calamares.ui 1.0
 
 import QtQuick 2.15
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.3
 
 Item {
-    width: 800 //parent.width
-    height: 600 //parent.height
+    width: 800 // parent.width
+    height: 600 // parent.height
+
+    property var pkgc: "libreoffice"
 
     Rectangle {
         anchors.fill: parent
@@ -84,10 +86,11 @@ Item {
 
                     onCheckedChanged: {
                         if ( ! checked ) {
-                            print("not used");
+                            print("L not used")
                         }
                         else {
-                            print("LibreOffice");
+                            config.pkgc = "libreoffice"
+                            print( config.pkgc )
                         }
                     }
                 }
@@ -149,11 +152,12 @@ Item {
 
                     onCheckedChanged: {
                         if ( ! checked ) {
-                            print("not used");;
-                            console.log("removed")
+                            print("not used")
+                            //console.log("removed")
                         }
                         else {
-                            print("No Office Suite");;
+                            print("No Office Suite")
+                            config.pkgc = ""
                         }
                     }
                 }
@@ -217,10 +221,11 @@ Item {
 
                     onCheckedChanged: {
                         if ( ! checked ) {
-                            print("not used");
+                            print("M not used")
                         }
                         else {
-                            print("minimal");
+                            print("minimal")
+                            config.pkgc = "minimal_install"
                         }
                     }
                 }
@@ -243,7 +248,7 @@ Item {
                 Text {
                     height: 25
                     anchors.centerIn: parent
-                    text: qsTr("Please select an option for your install, or use the default, LibreOffice included in your install")
+                    text: qsTr("Please select an option for your install, or use the default: LibreOffice included.")
                     font.pointSize: 10
                     wrapMode: Text.WordWrap
                 }

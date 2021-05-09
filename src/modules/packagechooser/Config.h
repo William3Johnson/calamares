@@ -39,6 +39,8 @@ class Config : public Calamares::ModuleSystem::Config
 {
     Q_OBJECT
 
+    Q_PROPERTY( QString pkgc READ pkgc WRITE setPkgc NOTIFY pkgcChanged )
+
 public:
     Config( QObject* parent = nullptr );
     ~Config() override;
@@ -74,6 +76,12 @@ public:
     /// As updateGlobalStorage() with an empty selection list
     void updateGlobalStorage() const { updateGlobalStorage( QStringList() ); }
 
+    QString pkgc() const { return m_pkgc; }
+    void setPkgc( const QString& pkgc );
+
+signals:
+    void pkgcChanged( QString pkgc );
+
 private:
     PackageListModel* m_model = nullptr;
     QModelIndex m_defaultModelIndex;
@@ -86,6 +94,8 @@ private:
     QString m_id;
     /// Value to use for id if none is set in the config file
     Calamares::ModuleSystem::InstanceKey m_defaultId;
+    /// QML selection
+    QString m_pkgc;
 };
 
 
