@@ -21,6 +21,10 @@ Page {
     width: 800 //parent.width
     height: 500
 
+    id: control
+    property string currentRegion
+    property string currentZone
+
      StackView {
         id: stack
         anchors.fill: parent
@@ -64,7 +68,8 @@ Page {
 
                 // model loads, dozens of variations tried for currentIndex all fail
                 model: config.regionModel
-                currentIndex: config.selectedRegion
+                currentIndex: -1
+                //currentIndex: config.setCurrentIndex
                 delegate: ItemDelegate {
 
                     hoverEnabled: true
@@ -73,7 +78,7 @@ Page {
 
                     Label {
 
-                        text: name
+                        text: model.name
                         Layout.fillHeight: true
                         Layout.fillWidth: true
                         width: parent.width
@@ -89,7 +94,9 @@ Page {
 
                     onClicked: {
 
-                        list.model.currentIndex = index
+                        list.currentIndex = index
+                        control.currentRegion = model.name
+                        config.regionalZonesModel.region = control.currentRegion
                         // correct to use config.currentTimezoneName when index is updated?
                         tztext.text = qsTr("Timezone: %1").arg(config.currentTimezoneName)
                         stack.push(zoneView)
@@ -138,7 +145,8 @@ Page {
 
                     // model loads, dozens of variations tried for currentIndex all fail
                     model: config.regionalZonesModel
-                    currentIndex: config.zoneName
+                    currentIndex : -1
+                    //currentIndex: config.setCurrentIndex
                     delegate: ItemDelegate {
 
                         hoverEnabled: true
@@ -147,7 +155,7 @@ Page {
 
                         Label {
 
-                            text: name
+                            text: model.name
                             Layout.fillHeight: true
                             Layout.fillWidth: true
                             width: parent.width
@@ -163,8 +171,10 @@ Page {
 
                         onClicked: {
 
-                            list2.model.currentIndex = index
+                            list2.currentIndex = index
                             list2.positionViewAtIndex(index, ListView.Center)
+                            control.currentZone = model.name
+                            config.setCurrentLocation(control.currentRegion, control.currentZone)
                             // correct to use config.currentTimezoneName when index is updated?
                             tztext.text = qsTr("Timezone: %1").arg(config.currentTimezoneName)
                         }
