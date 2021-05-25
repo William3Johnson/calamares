@@ -20,6 +20,33 @@ Page {
     width: 800 // parent.width
     height: 550 //parent.height
 
+    property var hasInternet: true
+    function getInt(format) {
+        var requestURL = "https://example.org/";
+        var xhr = new XMLHttpRequest;
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+
+                if (xhr.status !== 200) {
+                    console.log("Disconnected!!");
+                    var connected = false
+                    hasInternet = connected
+                    return;
+                }
+
+                else {
+                    console.log("Connected!!");
+                }
+            }
+        }
+        xhr.open("GET", requestURL, true);
+        xhr.send();
+    }
+    Component.onCompleted: {
+        getInt();
+    }
+
     /*function onActivate() {
         /* If you want the map to follow Calamares's GeoIP
          * lookup or configuration, call the update function
@@ -35,7 +62,8 @@ Page {
         height: parent.height / 1.28
         // Network is in io.calamares.core
         //source: Network.hasInternet ? "Map.qml" : "Offline.qml"
-        source: "Map.qml"
+        source: hasInternet ? "Map.qml" : "Offline.qml"
+        //source: "Map.qml"
     }
 
     RowLayout {

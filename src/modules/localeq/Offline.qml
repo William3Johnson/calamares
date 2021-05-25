@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <https://calamares.io> ===
  *
- *   SPDX-FileCopyrightText: 2020 Anke Boersma <demm@kaosx.us>
+ *   SPDX-FileCopyrightText: 2020-2021 Anke Boersma <demm@kaosx.us>
  *   SPDX-License-Identifier: GPL-3.0-or-later
  *
  *   Calamares is Free Software: see the License-Identifier above.
@@ -64,9 +64,9 @@ Page {
 
                 // model loads, dozens of variations tried for currentIndex all fail
                 model: config.regionModel
-                currentIndex: config.currentIndex
+                currentIndex: config.currentTimezoneCode
                 delegate: ItemDelegate {
-                    
+
                     hoverEnabled: true
                     width: parent.width
                     highlighted: ListView.isCurrentItem
@@ -170,13 +170,13 @@ Page {
                         }
                     }
                 }
-                
+
                 Button {
 
                     Layout.fillWidth: true
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.verticalCenterOffset: -30
-                    anchors.left: parent.left 
+                    anchors.left: parent.left
                     anchors.leftMargin: parent.width / 15
                     icon.name: "go-previous"
                     text: qsTr("Zones")

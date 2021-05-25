@@ -7,18 +7,16 @@
  *
  */
 
-import io.calamares.core 1.0
-import io.calamares.ui 1.0
+//import io.calamares.core 1.0
+//import io.calamares.ui 1.0
 
 import QtQuick 2.15
-import QtQuick.Controls 2.0
+import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.3
 
 Item {
     width: 800 // parent.width
     height: 600 // parent.height
-
-    property var pkgc: "libreoffice"
 
     Rectangle {
         anchors.fill: parent
@@ -30,10 +28,7 @@ Item {
 
         Column {
             id: column
-            x: 40
-            y: 40
-            width: 120
-            height: 546
+            anchors.centerIn: parent
             spacing: 5
 
             Rectangle {
