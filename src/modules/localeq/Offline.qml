@@ -64,7 +64,7 @@ Page {
 
                 // model loads, dozens of variations tried for currentIndex all fail
                 model: config.regionModel
-                currentIndex: config.currentTimezoneCode
+                currentIndex: config.selectedRegion
                 delegate: ItemDelegate {
 
                     hoverEnabled: true
@@ -138,7 +138,7 @@ Page {
 
                     // model loads, dozens of variations tried for currentIndex all fail
                     model: config.regionalZonesModel
-                    currentIndex: config.currentIndex
+                    currentIndex: config.zoneName
                     delegate: ItemDelegate {
 
                         hoverEnabled: true
