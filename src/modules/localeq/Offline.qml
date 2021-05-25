@@ -38,7 +38,7 @@ Page {
                 anchors.horizontalCenter: parent.horizontalCenter
                 color: Kirigami.Theme.textColor
                 horizontalAlignment: Text.AlignCenter
-                text: qsTr("Select your preferred Region, or use the default one based on your current location.")
+                text: qsTr("Select your preferred Region, or use the default settings.")
             }
 
             ListView {
