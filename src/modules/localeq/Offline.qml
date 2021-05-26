@@ -49,7 +49,7 @@ Page {
                 }
 
                 width: parent.width / 2
-                height: 250
+                height: parent.height / 1.5
                 anchors.centerIn: parent
                 anchors.verticalCenterOffset: -30
                 focus: true
@@ -66,10 +66,8 @@ Page {
                     opacity: 0.7
                 }
 
-                // model loads, dozens of variations tried for currentIndex all fail
                 model: config.regionModel
                 currentIndex: -1
-                //currentIndex: config.setCurrentIndex
                 delegate: ItemDelegate {
 
                     hoverEnabled: true
@@ -79,8 +77,8 @@ Page {
                     Label {
 
                         text: model.name
-                        Layout.fillHeight: true
-                        Layout.fillWidth: true
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
                         width: parent.width
                         height: 30
                         color: highlighted ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
@@ -97,7 +95,6 @@ Page {
                         list.currentIndex = index
                         control.currentRegion = model.name
                         config.regionalZonesModel.region = control.currentRegion
-                        // correct to use config.currentTimezoneName when index is updated?
                         tztext.text = qsTr("Timezone: %1").arg(config.currentTimezoneName)
                         stack.push(zoneView)
                     }
@@ -126,7 +123,7 @@ Page {
                     }
 
                     width: parent.width / 2
-                    height: 250
+                    height: parent.height / 1.5
                     anchors.centerIn: parent
                     anchors.verticalCenterOffset: -30
                     focus: true
@@ -143,10 +140,8 @@ Page {
                         opacity: 0.7
                     }
 
-                    // model loads, dozens of variations tried for currentIndex all fail
                     model: config.regionalZonesModel
                     currentIndex : -1
-                    //currentIndex: config.setCurrentIndex
                     delegate: ItemDelegate {
 
                         hoverEnabled: true
@@ -156,8 +151,8 @@ Page {
                         Label {
 
                             text: model.name
-                            Layout.fillHeight: true
-                            Layout.fillWidth: true
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
                             width: parent.width
                             height: 30
                             color: highlighted ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
@@ -175,7 +170,6 @@ Page {
                             list2.positionViewAtIndex(index, ListView.Center)
                             control.currentZone = model.name
                             config.setCurrentLocation(control.currentRegion, control.currentZone)
-                            // correct to use config.currentTimezoneName when index is updated?
                             tztext.text = qsTr("Timezone: %1").arg(config.currentTimezoneName)
                         }
                     }
