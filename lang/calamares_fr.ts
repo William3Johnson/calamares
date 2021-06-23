@@ -4,7 +4,7 @@
     <message>
         <location filename="../src/modules/partition/jobs/AutoMountManagementJob.cpp" line="22"/>
         <source>Manage auto-mount settings</source>
-        <translation type="unfinished"/>
+        <translation>Gérer les paramètres d’automontage</translation>
     </message>
 </context>
 <context>
@@ -102,22 +102,22 @@
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="102"/>
         <source>Crashes Calamares, so that Dr. Konqui can look at it.</source>
-        <translation type="unfinished"/>
+        <translation>Calarames a crashé, vérification par Dr. Konqui.</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="115"/>
         <source>Reloads the stylesheet from the branding directory.</source>
-        <translation type="unfinished"/>
+        <translation>Recharge la feuille de style à partir du répertoire propre à la distribution.</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="141"/>
         <source>Uploads the session log to the configured pastebin.</source>
-        <translation type="unfinished"/>
+        <translation>Téléverse le log de session sur le pastebin configuré.</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="144"/>
         <source>Send Session Log</source>
-        <translation type="unfinished"/>
+        <translation>Envoyer le log de session</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="118"/>
@@ -127,7 +127,7 @@
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="128"/>
         <source>Displays the tree of widget names in the log (for stylesheet debugging).</source>
-        <translation type="unfinished"/>
+        <translation>Affiche l’arborescence des noms de widgets dans le log (pour le débogage de la feuille de style).</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="131"/>
@@ -318,7 +318,11 @@
 %1
 
 Link copied to clipboard</source>
-        <translation type="unfinished"/>
+        <translation>Log d’installation posté sur :
+
+%1
+
+Lien copié dans le presse-papier</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/Paste.cpp" line="170"/>
@@ -497,17 +501,17 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="32"/>
         <source>Set filesystem label on %1.</source>
-        <translation type="unfinished"/>
+        <translation>Configure l’étiquette du système de fichiers à %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="39"/>
         <source>Set filesystem label &lt;strong&gt;%1&lt;/strong&gt; to partition &lt;strong&gt;%2&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Configure la partition &lt;strong&gt;%2&lt;/strong&gt; avec l’étiquette du système de fichier &lt;strong&gt;%1&lt;/strong&gt;. </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="70"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Le programme d&apos;installation n’a pu mettre à jour la table de partitionnement sur le disque &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -863,52 +867,52 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="145"/>
         <source>Setup Failed</source>
-        <translation type="unfinished"/>
+        <translation>L’installation a échoué</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="145"/>
         <source>Installation Failed</source>
-        <translation type="unfinished"/>
+        <translation>Installation échouée</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="147"/>
         <source>The setup of %1 did not complete successfully.</source>
-        <translation type="unfinished"/>
+        <translation>La configuration %1 ne s’est pas terminée complètement.</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="148"/>
         <source>The installation of %1 did not complete successfully.</source>
-        <translation type="unfinished"/>
+        <translation>L’installation de %1 ne s’est pas terminée complètement.</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="152"/>
         <source>Setup Complete</source>
-        <translation type="unfinished"/>
+        <translation>Configuration terminée</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="153"/>
         <source>Installation Complete</source>
-        <translation type="unfinished"/>
+        <translation>Installation terminée</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="154"/>
         <source>The setup of %1 is complete.</source>
-        <translation type="unfinished"/>
+        <translation>La configuration de %1 est terminée.</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="155"/>
         <source>The installation of %1 is complete.</source>
-        <translation type="unfinished"/>
+        <translation>L’installation de %1 est terminée.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/Config.cpp" line="86"/>
         <source>Package Selection</source>
-        <translation type="unfinished"/>
+        <translation>Sélection de paquets</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/Config.cpp" line="88"/>
         <source>Please pick a product from the list. The selected product will be installed.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez choisir un produit dans la liste. Le produit sélectionné sera installé.</translation>
     </message>
 </context>
 <context>
@@ -956,12 +960,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="231"/>
         <source>Label for the filesystem</source>
-        <translation type="unfinished"/>
+        <translation>Étiquette du système de fichiers</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="241"/>
         <source>FS Label:</source>
-        <translation type="unfinished"/>
+        <translation>Étiquette du système de fichier :</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="165"/>
@@ -1004,12 +1008,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="113"/>
         <source>Create new %1MiB partition on %3 (%2) with entries %4.</source>
-        <translation type="unfinished"/>
+        <translation>Créer une nouvelle partition de %1Mio sur %3 (%2) avec les entrées %4.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="121"/>
         <source>Create new %1MiB partition on %3 (%2).</source>
-        <translation type="unfinished"/>
+        <translation>Créer une nouvelle partition de %1Mio sur %3 (%2).</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="128"/>
@@ -1019,12 +1023,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="145"/>
         <source>Create new &lt;strong&gt;%1MiB&lt;/strong&gt; partition on &lt;strong&gt;%3&lt;/strong&gt; (%2) with entries &lt;em&gt;%4&lt;/em&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Créer un nouvelle partition de &lt;strong&gt;%1Mio&lt;/strong&gt; sur &lt;strong&gt;%3&lt;/strong&gt; (%2) avec les entrées &lt;em&gt;%4&lt;/em&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="154"/>
         <source>Create new &lt;strong&gt;%1MiB&lt;/strong&gt; partition on &lt;strong&gt;%3&lt;/strong&gt; (%2).</source>
-        <translation type="unfinished"/>
+        <translation>Créer une nouvelle partition de &lt;strong&gt;%1Mio&lt;/strong&gt; sur &lt;strong&gt;%3&lt;/strong&gt; (%2).</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="161"/>
@@ -1304,12 +1308,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="186"/>
         <source>Label for the filesystem</source>
-        <translation type="unfinished"/>
+        <translation>Étiquette du système de fichiers</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="196"/>
         <source>FS Label:</source>
-        <translation type="unfinished"/>
+        <translation>Étiquette du système de fichier :</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.cpp" line="291"/>
@@ -1356,7 +1360,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="196"/>
         <source>Install %1 on &lt;strong&gt;new&lt;/strong&gt; %2 system partition with features &lt;em&gt;%3&lt;/em&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Installer %1 sur lu &lt;strong&gt;nouvelle&lt;/strong&gt; partition système %2 avec les fonctionnalités &lt;em&gt;%3&lt;/em&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="204"/>
@@ -1366,27 +1370,27 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="213"/>
         <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt; and features &lt;em&gt;%3&lt;/em&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Configurer une &lt;strong&gt;nouvelle&lt;/strong&gt; partition %2 avec le point de montage &lt;strong&gt;%1&lt;/strong&gt; et les fonctionnalités &lt;em&gt;%3&lt;/em&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="221"/>
         <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt;%3.</source>
-        <translation type="unfinished"/>
+        <translation>Configurer une &lt;strong&gt;nouvelle&lt;/strong&gt; partition %2 avec le point de montage &lt;strong&gt;%1&lt;/strong&gt; %3.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="235"/>
         <source>Install %2 on %3 system partition &lt;strong&gt;%1&lt;/strong&gt; with features &lt;em&gt;%4&lt;/em&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Installer %2 sur la partition système %3 &lt;strong&gt;%1&lt;/strong&gt; avec les fonctionnalités &lt;em&gt;%4&lt;/em&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="254"/>
         <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt; and features &lt;em&gt;%4&lt;/em&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Configurer la partition %3 &lt;strong&gt;%1&lt;/strong&gt; avec le point de montage &lt;strong&gt;%2&lt;/strong&gt; et les fonctionnalités &lt;em&gt;%4&lt;/em&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="263"/>
         <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt;%4.</source>
-        <translation type="unfinished"/>
+        <translation>Configurer la partition %3 &lt;strong&gt;%1&lt;/strong&gt; avec le point de montage &lt;strong&gt;%2&lt;/strong&gt; %4.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="244"/>
@@ -1452,7 +1456,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/finishedq/FinishedQmlViewStep.cpp" line="35"/>
         <source>Finish</source>
-        <translation type="unfinished"/>
+        <translation>Terminer</translation>
     </message>
 </context>
 <context>
@@ -1775,7 +1779,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/libcalamares/locale/Tests.cpp" line="273"/>
         <source>Quit</source>
-        <translation type="unfinished"/>
+        <translation>Quitter</translation>
     </message>
 </context>
 <context>
@@ -1900,7 +1904,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="41"/>
         <source>Select your preferred Region, or use the default settings.</source>
-        <translation type="unfinished"/>
+        <translation>Sélectionnez votre emplacement préféré ou utilisez les paramètres par défaut.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="98"/>
@@ -2267,7 +2271,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/packagechooserq/PackageChooserQmlViewStep.cpp" line="32"/>
         <source>Packages</source>
-        <translation type="unfinished"/>
+        <translation>Paquets</translation>
     </message>
 </context>
 <context>
@@ -2464,7 +2468,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="304"/>
         <source>File System Label</source>
-        <translation type="unfinished"/>
+        <translation>Étiquette du système de fichiers</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="306"/>
@@ -3639,29 +3643,31 @@ Liberating Software.</translation>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="38"/>
         <source>Installation Completed</source>
-        <translation type="unfinished"/>
+        <translation>Installation terminée</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="45"/>
         <source>%1 has been installed on your computer.&lt;br/&gt;
             You may now restart into your new system, or continue using the Live environment.</source>
-        <translation type="unfinished"/>
+        <translation>%1 a été installé sur votre ordinateur.&lt;br/&gt;
+Vous pouvez maintenant redémarrer sur votre nouveau système ou continuer à utiliser l’environnement Live.</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="67"/>
         <source>Close Installer</source>
-        <translation type="unfinished"/>
+        <translation>Fermer le programme d’installation</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="74"/>
         <source>Restart System</source>
-        <translation type="unfinished"/>
+        <translation>Redémarrer le système</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="95"/>
         <source>&lt;p&gt;A full log of the install is available as installation.log in the home directory of the Live user.&lt;br/&gt;
             This log is copied to %1 of the target system.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Un log complet de l’installation est disponible dans le fichier installation.log situé dans le répertoire home de l’utilisateur Live.&lt;br/&gt;
+Ce log est copié sur %1 dans le système cible.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -3834,37 +3840,39 @@ Les paramètres régionaux du système affectent le format des dates et des nomb
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="45"/>
         <source>LibreOffice is a powerful and free office suite, used by millions of people around the world. It includes several applications that make it the most versatile Free and Open Source office suite on the market.&lt;br/&gt;
                     Default option.</source>
-        <translation type="unfinished"/>
+        <translation>LibreOffice est une suite bureautique libre et puissante, utilisée par des millions de personnes à travers le monde. Elle inclut de nombreuses applications, ce qui en fait la suite bureautique libre et Open Source la plus flexible du marché.&lt;br/&gt;
+Option par défaut.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="59"/>
         <source>LibreOffice</source>
-        <translation type="unfinished"/>
+        <translation>LibreOffice</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="112"/>
         <source>If you don&apos;t want to install an office suite, just select No Office Suite. You can always add one (or more) later on your installed system as the need arrives.</source>
-        <translation type="unfinished"/>
+        <translation>Si vous ne souhaitez pas installer de suite bureautique, sélectionnez simplement Aucune suite bureautique. Vous pouvez toujours en ajouter un, (ou plusieurs) ultérieurement sur votre système installé lorsque le besoin s’en fera sentir.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="125"/>
         <source>No Office Suite</source>
-        <translation type="unfinished"/>
+        <translation>Aucune suite bureautique</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="181"/>
         <source>Create a minimal Plasma Desktop install, remove all extra applications and decide later on what you would like to add to your system. Examples of what won&apos;t be on such an install, there will be no Office Suite, no media players, no image viewer or print support.  It will be just a desktop, file browser, package manager, text editor and simple web-browser.</source>
-        <translation type="unfinished"/>
+        <translation>Créer une installation minimale du bureau Plasma, en supprimant toutes les applications supplémentaires et choisissez plus tard ce que vous souhaitez ajouter à votre système. Exemples d’applications non présentes dans ce genre d’installation : pas de suite Office, de lecteur multimédias, de visionneuse d’images ou de support d’impression. Ce ne sera qu’un bureau, un navigateur de fichiers, un gestionnaire de paquets, un éditeur de texte et un simple navigateur Web.
+</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="194"/>
         <source>Minimal Install</source>
-        <translation type="unfinished"/>
+        <translation>Installation minimale</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="246"/>
         <source>Please select an option for your install, or use the default: LibreOffice included.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez sélectionner une option d’installation ou utiliser les paramètres par défaut : LibreOffice inclus.</translation>
     </message>
 </context>
 <context>
@@ -4071,7 +4079,7 @@ Les paramètres régionaux du système affectent le format des dates et des nomb
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="128"/>
         <source>Your username must start with a lowercase letter or underscore.</source>
-        <translation type="unfinished"/>
+        <translation>Votre nom d’utilisateur doit commencer par une lettre minuscule ou un tiret-bas.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="139"/>
@@ -4091,7 +4099,7 @@ Les paramètres régionaux du système affectent le format des dates et des nomb
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="183"/>
         <source>Only letter, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Seuls les lettres, les nombres, les tirets-bas et les traits d’union sont autorisés.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="194"/>
