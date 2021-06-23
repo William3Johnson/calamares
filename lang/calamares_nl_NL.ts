@@ -3670,7 +3670,7 @@ Output:
         <source>&lt;p&gt;A full log of the install is available as installation.log in the home directory of the Live user.&lt;br/&gt;
             This log is copied to %1 of the target system.&lt;/p&gt;</source>
         <translation>&lt;p&gt;Een volledig log van de installatie is beschikbaar als installation.log in de homedirectory van de Live-gebruiker.&lt;br/&gt;
-            Dit log is gekopieerd naar % 1 van het doelsysteem.&lt;/p&gt;</translation>
+            Dit log is gekopieerd naar %1 van het doelsysteem.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
