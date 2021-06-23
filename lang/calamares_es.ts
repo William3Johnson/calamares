@@ -4,7 +4,7 @@
     <message>
         <location filename="../src/modules/partition/jobs/AutoMountManagementJob.cpp" line="22"/>
         <source>Manage auto-mount settings</source>
-        <translation type="unfinished"/>
+        <translation>Administrar configuración de auto-montaje</translation>
     </message>
 </context>
 <context>
@@ -1386,12 +1386,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="254"/>
         <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt; and features &lt;em&gt;%4&lt;/em&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Establecer la partición %3 &lt;strong&gt;%1&lt;/strong&gt; con punto de montaje &lt;strong&gt;%2&lt;/strong&gt; y características &lt;em&gt;%4&lt;/em&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="263"/>
         <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt;%4.</source>
-        <translation type="unfinished"/>
+        <translation>Establecer la partición %3 &lt;strong&gt;%1&lt;/strong&gt; con punto de montaje &lt;strong&gt;%2&lt;/strong&gt; %4.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="244"/>
@@ -1457,7 +1457,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/finishedq/FinishedQmlViewStep.cpp" line="35"/>
         <source>Finish</source>
-        <translation type="unfinished"/>
+        <translation>Finalizar</translation>
     </message>
 </context>
 <context>
@@ -1595,7 +1595,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/initcpio/InitcpioJob.cpp" line="31"/>
         <source>Creating initramfs with mkinitcpio.</source>
-        <translation type="unfinished"/>
+        <translation>Creando initramfs con mkinitcpio</translation>
     </message>
 </context>
 <context>
@@ -1780,7 +1780,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/libcalamares/locale/Tests.cpp" line="273"/>
         <source>Quit</source>
-        <translation type="unfinished"/>
+        <translation>Salir</translation>
     </message>
 </context>
 <context>
@@ -1907,7 +1907,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="41"/>
         <source>Select your preferred Region, or use the default settings.</source>
-        <translation type="unfinished"/>
+        <translation>Seleccione su región preferida, o use la configuración predeterminada.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="98"/>
@@ -2093,52 +2093,52 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="218"/>
         <source>The password contains fewer than %n digits</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>La contraseña contiene menos de %1 dígitos</numerusform><numerusform>La contraseña contiene menos de %n dígitos</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="225"/>
         <source>The password contains fewer than %n uppercase letters</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>La contraseña contiene menos de %n letras mayúsculas</numerusform><numerusform>La contraseña contiene menos de %n letras mayúsculas</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="232"/>
         <source>The password contains fewer than %n lowercase letters</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>La contraseña contiene menos de %n letras minúsculas</numerusform><numerusform>La contraseña contiene menos de %n letras minúsculas</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="239"/>
         <source>The password contains fewer than %n non-alphanumeric characters</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>La contraseña contiene menos de %n caracteres no alfanuméricos</numerusform><numerusform>La contraseña contiene menos de %n caracteres no alfanuméricos</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="246"/>
         <source>The password is shorter than %n characters</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>La contraseña tiene menos de %n caracteres</numerusform><numerusform>La contraseña tiene menos de %n caracteres</numerusform></translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="251"/>
         <source>The password is a rotated version of the previous one</source>
-        <translation type="unfinished"/>
+        <translation>La contraseña sólo ha rotado respecto de la anterior</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="255"/>
         <source>The password contains fewer than %n character classes</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>La contraseña contiene menos de %n tipos de caracteres</numerusform><numerusform>La contraseña contiene menos de %n tipos de caracteres</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="262"/>
         <source>The password contains more than %n same characters consecutively</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>La contraseña contiene el mismo caracter mas de %n veces consecutivas</numerusform><numerusform>La contraseña contiene el mismo caracter mas de %n veces consecutivas</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="269"/>
         <source>The password contains more than %n characters of the same class consecutively</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>La contraseña contiene más de %n caracteres consecutivos del mismo tipo</numerusform><numerusform>La contraseña contiene más de %n caracteres consecutivos del mismo tipo</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="280"/>
         <source>The password contains monotonic sequence longer than %n characters</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
+        <translation><numerusform>La contraseña contiene una secuencia monotónica más larga que %n caracteres</numerusform><numerusform>La contraseña contiene una secuencia monotónica más larga que %n caracteres</numerusform></translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="286"/>
@@ -2274,7 +2274,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/packagechooserq/PackageChooserQmlViewStep.cpp" line="32"/>
         <source>Packages</source>
-        <translation type="unfinished"/>
+        <translation>Paquetes</translation>
     </message>
 </context>
 <context>
@@ -2471,7 +2471,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="304"/>
         <source>File System Label</source>
-        <translation type="unfinished"/>
+        <translation>Etiqueta del Sistema de Archivos</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="306"/>
@@ -2834,7 +2834,7 @@ Salida:
     <message>
         <location filename="../src/modules/machineid/MachineIdJob.cpp" line="83"/>
         <source>Directory not found</source>
-        <translation type="unfinished"/>
+        <translation>Directorio no encontrado</translation>
     </message>
     <message>
         <location filename="../src/modules/machineid/MachineIdJob.cpp" line="84"/>
@@ -3327,18 +3327,18 @@ Salida:
     <message>
         <location filename="../src/modules/users/MiscJobs.cpp" line="166"/>
         <source>Preparing groups.</source>
-        <translation type="unfinished"/>
+        <translation>Preparando grupos</translation>
     </message>
     <message>
         <location filename="../src/modules/users/MiscJobs.cpp" line="178"/>
         <location filename="../src/modules/users/MiscJobs.cpp" line="183"/>
         <source>Could not create groups in target system</source>
-        <translation type="unfinished"/>
+        <translation>No se pudo crear grupos en el sistema destino</translation>
     </message>
     <message>
         <location filename="../src/modules/users/MiscJobs.cpp" line="184"/>
         <source>These groups are missing in the target system: %1</source>
-        <translation type="unfinished"/>
+        <translation>Estos grupos no se encuentran en el sistema destino: %1</translation>
     </message>
 </context>
 <context>
@@ -3346,17 +3346,17 @@ Salida:
     <message>
         <location filename="../src/modules/users/MiscJobs.cpp" line="33"/>
         <source>Configure &lt;pre&gt;sudo&lt;/pre&gt; users.</source>
-        <translation type="unfinished"/>
+        <translation>Configurar usuarios &lt;pre&gt;sudo&lt;/pre&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/MiscJobs.cpp" line="55"/>
         <source>Cannot chmod sudoers file.</source>
-        <translation type="unfinished"/>
+        <translation>No se pudo ejecutar chmod en el archivo sudoers.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/MiscJobs.cpp" line="60"/>
         <source>Cannot create sudoers file for writing.</source>
-        <translation type="unfinished"/>
+        <translation>No se puede crear el archivo sudoers para escribir.</translation>
     </message>
 </context>
 <context>
@@ -3432,13 +3432,13 @@ Salida:
         <location filename="../src/calamares/VariantModel.cpp" line="232"/>
         <source>Key</source>
         <comment>Column header for key/value</comment>
-        <translation type="unfinished"/>
+        <translation>Clave</translation>
     </message>
     <message>
         <location filename="../src/calamares/VariantModel.cpp" line="236"/>
         <source>Value</source>
         <comment>Column header for key/value</comment>
-        <translation type="unfinished"/>
+        <translation>Valor</translation>
     </message>
 </context>
 <context>
@@ -3615,7 +3615,17 @@ Salida:
                         development is sponsored by &lt;br/&gt;
                         &lt;a href='http://www.blue-systems.com/'&gt;Blue Systems&lt;/a&gt; -
                         Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;
+                        &lt;strong&gt;%2&lt;br/&gt;
+                        para %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;
+                        Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
+                        Copyright 2017-2020 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
+                        Gracias a &lt;a href=&apos;https://calamares.io/team/&apos;&gt;el equipo de Calamares&lt;/a&gt; 
+                        y el &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;equipo de traductores de KaOS&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;
+                        El desarrollo de&lt;a href=&apos;https://calamares.io/&apos;&gt;Calamares&lt;/a&gt; 
+                        es patrocinado por &lt;br/&gt;
+                        &lt;a href=&apos;http://www.blue-systems.com/&apos;&gt;Blue Systems&lt;/a&gt; - 
+                        Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/about.qml" line="96"/>
@@ -3637,29 +3647,31 @@ Salida:
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="38"/>
         <source>Installation Completed</source>
-        <translation type="unfinished"/>
+        <translation>Instalación Finalizada</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="45"/>
         <source>%1 has been installed on your computer.&lt;br/&gt;
             You may now restart into your new system, or continue using the Live environment.</source>
-        <translation type="unfinished"/>
+        <translation>%1 se ha instalado en su ordenador. &lt;br/&gt;
+Ahora puede reiniciar en su nuevo sistema, o continuar usando el modo live.</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="67"/>
         <source>Close Installer</source>
-        <translation type="unfinished"/>
+        <translation>Cerrar Instalador</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="74"/>
         <source>Restart System</source>
-        <translation type="unfinished"/>
+        <translation>Reiniciar el Sistema</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="95"/>
         <source>&lt;p&gt;A full log of the install is available as installation.log in the home directory of the Live user.&lt;br/&gt;
             This log is copied to %1 of the target system.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;El registro completo de la instalación esta disponible como installation.log en el directorio home del usuario Live.&lt;br/&gt;
+             Se guardo una copia de este registro en %1 en el sistema instalado.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -3832,7 +3844,8 @@ Salida:
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="45"/>
         <source>LibreOffice is a powerful and free office suite, used by millions of people around the world. It includes several applications that make it the most versatile Free and Open Source office suite on the market.&lt;br/&gt;
                     Default option.</source>
-        <translation type="unfinished"/>
+        <translation>LibreOffice es una suite de oficina poderoso y gratuito, usado por millones de personas en todo el mundo. Incluye aplicaciones que lo hacen la suite de Oficina Libre y Open Source más versátil del mercado.&lt;br/&gt;
+Opción predeterminada.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="59"/>
@@ -3842,27 +3855,27 @@ Salida:
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="112"/>
         <source>If you don&apos;t want to install an office suite, just select No Office Suite. You can always add one (or more) later on your installed system as the need arrives.</source>
-        <translation type="unfinished"/>
+        <translation>Si no quieres instalar una suite de oficina, selecciona Sin Suite de Oficina. Siempre puedes agregar una (o más) luego de que el sistema este instalado, según lo necesites.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="125"/>
         <source>No Office Suite</source>
-        <translation type="unfinished"/>
+        <translation>Sin Suite de Oficina</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="181"/>
         <source>Create a minimal Plasma Desktop install, remove all extra applications and decide later on what you would like to add to your system. Examples of what won&apos;t be on such an install, there will be no Office Suite, no media players, no image viewer or print support.  It will be just a desktop, file browser, package manager, text editor and simple web-browser.</source>
-        <translation type="unfinished"/>
+        <translation>Crea una instalación de Plasma Destkop minima, quita todas las aplicaciones extra y tu decides que agregas al sistema. No habrá suite de oficina, ningún reproductor de medios, ningún visor de imagenes o soporte para impresoras. Será solo un navegador de archivos, administrador de paquetes, editor de texto y un simple navegador web.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="194"/>
         <source>Minimal Install</source>
-        <translation type="unfinished"/>
+        <translation>Instalación Minima</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="246"/>
         <source>Please select an option for your install, or use the default: LibreOffice included.</source>
-        <translation type="unfinished"/>
+        <translation>Por favor elija una opción para su instalación, o use la opción predeterminada: LibreOffice incluido.</translation>
     </message>
 </context>
 <context>
@@ -4069,7 +4082,7 @@ Salida:
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="128"/>
         <source>Your username must start with a lowercase letter or underscore.</source>
-        <translation type="unfinished"/>
+        <translation>Su nombre de usuario debe comenzar una letra minúscula o con un guión bajo.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="139"/>
@@ -4089,7 +4102,7 @@ Salida:
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="183"/>
         <source>Only letter, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Sólo se permiten letras, números, guiones y guiones bajos.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="194"/>
@@ -4119,7 +4132,7 @@ Salida:
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="264"/>
         <source>When this box is checked, password-strength checking is done and you will not be able to use a weak password.</source>
-        <translation type="unfinished"/>
+        <translation>Cuando esta casilla está marcada, se comprueba la fortaleza de la contraseña, y no podrá usar una contraseña débil.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="271"/>
