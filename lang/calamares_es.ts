@@ -102,12 +102,12 @@
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="102"/>
         <source>Crashes Calamares, so that Dr. Konqui can look at it.</source>
-        <translation type="unfinished"/>
+        <translation>Lanzar error en Calamares, así lo puedes ver con Dr. Konqui</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="115"/>
         <source>Reloads the stylesheet from the branding directory.</source>
-        <translation type="unfinished"/>
+        <translation>Recarga la hoja de estilos desde el directorio de branding</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="141"/>
@@ -127,7 +127,7 @@
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="128"/>
         <source>Displays the tree of widget names in the log (for stylesheet debugging).</source>
-        <translation type="unfinished"/>
+        <translation>Muestra el arbol de nombres de widget en el registro (para depuración de hojas de estilos)</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="131"/>
@@ -3850,7 +3850,7 @@ Opción predeterminada.</translation>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="59"/>
         <source>LibreOffice</source>
-        <translation type="unfinished"/>
+        <translation>LibreOffice</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="112"/>
