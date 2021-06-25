@@ -66,7 +66,7 @@ Kirigami.ScrollablePage {
                     radius: 2
                     opacity: 0.9
                     //border.color: _userNameField.text === "" ? Kirigami.Theme.backgroundColor : ( config.fullNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                    color: _userNameField.text === "" ? "#FBFBFB" : "#f0fff0"//( config.fullNameChanged ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
+                    color: _userNameField.text.length ? "#FBFBFB" : "#f0fff0"//( config.fullNameChanged ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
                 }
             }
         }
@@ -105,7 +105,7 @@ Kirigami.ScrollablePage {
 
                     opacity: 0.9
                     //border.color: _userLoginField.text === "" ? Kirigami.Theme.backgroundColor : ( config.userNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                    color: _userLoginField.text === "" ? "#FBFBFB" : ( config.loginNameStatusChanged ? "#f0fff0" : Kirigami.Theme.negativeTextColor)
+                    color: _userLoginField.text.length ? "#FBFBFB" : ( config.loginNameStatusChanged ? "#f0fff0" : Kirigami.Theme.negativeTextColor)
                 }
             }
 
@@ -161,7 +161,7 @@ Kirigami.ScrollablePage {
 
                     opacity: 0.9
                     //border.color: _hostName.text === "" ? Kirigami.Theme.backgroundColor : ( config.hostNameStatusChanged ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                    color: _hostName.text === "" ? "#FBFBFB" : ( config.hostNameStatusChanged ? "#f0fff0" : "#ffc0cb")
+                    color: _hostName.text.length ? "#FBFBFB" : ( config.hostNameStatusChanged ? "#f0fff0" : "#ffc0cb")
                 }
             }
 
@@ -249,31 +249,7 @@ Kirigami.ScrollablePage {
                 color: "#6D6D6D"
             }
         }
-
-        CheckBox {
-
-            visible: config.permitWeakPasswords
-            text: qsTr("Validate passwords quality")
-            checked: config.requireStrongPasswords
-            onCheckedChanged: config.setRequireStrongPasswords(checked)
-        }
-
-        Label {
-            visible: config.permitWeakPasswords
-            width: parent.width
-            text: qsTr("When this box is checked, password-strength checking is done and you will not be able to use a weak password.")
-            font.weight: Font.Thin
-            font.pointSize: 8
-            color: "#6D6D6D"
-        }
-
-        CheckBox {
-            text: qsTr("Log in automatically without asking for the password")
-            checked: config.doAutoLogin
-            onCheckedChanged: config.setAutoLogin(checked)
-        }
-
-        CheckBox {
+                CheckBox {
             id: root
             visible: config.writeRootPassword
             text: qsTr("Reuse user password as root password")
@@ -356,6 +332,32 @@ Kirigami.ScrollablePage {
                 font.pointSize: 8
                 color: "#6D6D6D"
             }
+        }
+
+        CheckBox {
+            Layout.alignment: Qt.AlignCenter
+            text: qsTr("Log in automatically without asking for the password")
+            checked: config.doAutoLogin
+            onCheckedChanged: config.setAutoLogin(checked)
+        }
+
+        CheckBox {
+
+            visible: config.permitWeakPasswords
+            Layout.alignment: Qt.AlignCenter
+            text: qsTr("Validate passwords quality")
+            checked: config.requireStrongPasswords
+            onCheckedChanged: config.setRequireStrongPasswords(checked)
+        }
+
+        Label {
+            visible: config.permitWeakPasswords
+            width: parent.width
+            Layout.alignment: Qt.AlignCenter
+            text: qsTr("When this box is checked, password-strength checking is done and you will not be able to use a weak password.")
+            font.weight: Font.Thin
+            font.pointSize: 8
+            color: "#6D6D6D"
         }
     }
 }
