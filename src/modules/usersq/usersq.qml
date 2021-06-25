@@ -26,8 +26,7 @@ Kirigami.ScrollablePage {
     Kirigami.Theme.backgroundColor: "#EFF0F1"
     Kirigami.Theme.textColor: "#1F1F1F"
 
-	header: Kirigami.Heading {
-
+    header: Kirigami.Heading {
         Layout.fillWidth: true
         height: 50
         horizontalAlignment: Qt.AlignHCenter
@@ -38,23 +37,19 @@ Kirigami.ScrollablePage {
     }
 
     ColumnLayout {
-
         id: _formLayout
         spacing: Kirigami.Units.smallSpacing
 
         Column {
-
             Layout.fillWidth: true
             spacing: Kirigami.Units.smallSpacing
 
             Label {
-
                 width: parent.width
                 text: qsTr("What is your name?")
             }
 
             TextField {
-
                 id: _userNameField
                 width: parent.width
                 enabled: config.isEditable("fullName")
@@ -72,18 +67,15 @@ Kirigami.ScrollablePage {
         }
 
         Column {
-
             Layout.fillWidth: true
             spacing: Kirigami.Units.smallSpacing
 
             Label {
-
                 width: parent.width
                 text: qsTr("What name do you want to use to log in?")
             }
 
             TextField {
-
                 id: _userLoginField
                 width: parent.width
                 enabled: config.isEditable("loginName")
@@ -102,7 +94,6 @@ Kirigami.ScrollablePage {
                 }
 
                 background: Rectangle {
-
                     opacity: 0.9
                     //border.color: _userLoginField.text === "" ? Kirigami.Theme.backgroundColor : ( config.userNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
                     color: _userLoginField.text.length ? "#FBFBFB" : ( config.loginNameStatusChanged ? "#f0fff0" : Kirigami.Theme.negativeTextColor)
@@ -110,7 +101,6 @@ Kirigami.ScrollablePage {
             }
 
             Label {
-
                 width: parent.width
                 text: qsTr("If more than one person will use this computer, you can create multiple accounts after installation.")
                 font.weight: Font.Thin
@@ -120,7 +110,6 @@ Kirigami.ScrollablePage {
         }
 
         Kirigami.InlineMessage {
-
             id: userMessage
             Layout.fillWidth: true
             visible: false
@@ -129,18 +118,15 @@ Kirigami.ScrollablePage {
         }
 
         Column {
-
             Layout.fillWidth: true
             spacing: Kirigami.Units.smallSpacing
 
             Label {
-
                 width: parent.width
                 text: qsTr("What is the name of this computer?")
             }
 
             TextField {
-
                 id: _hostName
                 width: parent.width
                 placeholderText: qsTr("Computer Name")
@@ -158,7 +144,6 @@ Kirigami.ScrollablePage {
                 }
 
                 background: Rectangle {
-
                     opacity: 0.9
                     //border.color: _hostName.text === "" ? Kirigami.Theme.backgroundColor : ( config.hostNameStatusChanged ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
                     color: _hostName.text.length ? "#FBFBFB" : ( config.hostNameStatusChanged ? "#f0fff0" : "#ffc0cb")
@@ -166,7 +151,6 @@ Kirigami.ScrollablePage {
             }
 
             Label {
-
                 width: parent.width
                 text: qsTr("This name will be used if you make the computer visible to others on a network.")
                 font.weight: Font.Thin
@@ -184,12 +168,10 @@ Kirigami.ScrollablePage {
         }
 
         Column {
-
             Layout.fillWidth: true
             spacing: Kirigami.Units.smallSpacing
 
             Label {
-
                 width: parent.width
                 text: qsTr("Choose a password to keep your account safe.")
             }
@@ -199,7 +181,6 @@ Kirigami.ScrollablePage {
                 spacing: 20
 
                 TextField {
-
                     id: _passwordField
                     width: parent.width / 2 - 10
                     placeholderText: qsTr("Password")
@@ -211,7 +192,6 @@ Kirigami.ScrollablePage {
                     inputMethodHints: Qt.ImhNoAutoUppercase
 
                     background: Rectangle {
-
                         opacity: 0.9
                         //border.color: _passwordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.passwordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
                         color: _passwordField.text === "" ? "#ffefd5" : ( config.userPasswordStatusChanged ? "#FBFBFB" : "#ffc0cb")
@@ -219,7 +199,6 @@ Kirigami.ScrollablePage {
                 }
 
                 TextField {
-
                     id: _verificationPasswordField
                     width: parent.width / 2 - 10
                     placeholderText: qsTr("Repeat Password")
@@ -231,7 +210,6 @@ Kirigami.ScrollablePage {
                     inputMethodHints: Qt.ImhNoAutoUppercase
 
                     background: Rectangle {
-
                         opacity: 0.9
                         //border.color: _verificationpasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.passwordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
                         color: _verificationPasswordField.text === "" ? "#ffefd5" : ( config.userPasswordSecondaryChanged ? "#FBFBFB" : "#ffc0cb")
@@ -240,7 +218,6 @@ Kirigami.ScrollablePage {
             }
 
             Label {
-
                 width: parent.width
                 text: qsTr("Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.")
                 font.weight: Font.Thin
@@ -249,7 +226,8 @@ Kirigami.ScrollablePage {
                 color: "#6D6D6D"
             }
         }
-                CheckBox {
+
+        CheckBox {
             id: root
             visible: config.writeRootPassword
             text: qsTr("Reuse user password as root password")
@@ -267,13 +245,11 @@ Kirigami.ScrollablePage {
         }
 
         Column {
-
             visible: ! root.checked
             Layout.fillWidth: true
             spacing: Kirigami.Units.smallSpacing
 
             Label {
-
                 width: parent.width
                 text: qsTr("Choose a root password to keep your account safe.")
             }
@@ -283,7 +259,6 @@ Kirigami.ScrollablePage {
                 spacing: 20
 
                 TextField {
-
                     id: _rootPasswordField
                     width: parent.width / 2 -10
                     placeholderText: qsTr("Root Password")
@@ -295,7 +270,6 @@ Kirigami.ScrollablePage {
                     inputMethodHints: Qt.ImhNoAutoUppercase
 
                     background: Rectangle {
-
                         opacity: 0.9
                         //border.color: _rootPasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.rootPasswordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
                         color: _rootPasswordField.text === "" ? "#ffefd5" : ( config.rootPasswordReady ? "#FBFBFB" : "#ffc0cb")
@@ -303,7 +277,6 @@ Kirigami.ScrollablePage {
                 }
 
                 TextField {
-
                     id: _verificationRootPasswordField
                     width: parent.width / 2 -10
                     placeholderText: qsTr("Repeat Root Password")
@@ -315,7 +288,6 @@ Kirigami.ScrollablePage {
                     inputMethodHints: Qt.ImhNoAutoUppercase
 
                     background: Rectangle {
-
                         opacity: 0.9
                         //border.color: _verificationRootPasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.rootPasswordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
                         color: _verificationRootPasswordField.text === "" ? "#ffefd5" : ( config.rootPasswordReady ? "#FBFBFB" : "#ffc0cb")
@@ -324,7 +296,6 @@ Kirigami.ScrollablePage {
             }
 
             Label {
-
                 visible: ! root.checked
                 width: parent.width
                 text: qsTr("Enter the same password twice, so that it can be checked for typing errors.")
@@ -342,7 +313,6 @@ Kirigami.ScrollablePage {
         }
 
         CheckBox {
-
             visible: config.permitWeakPasswords
             Layout.alignment: Qt.AlignCenter
             text: qsTr("Validate passwords quality")
