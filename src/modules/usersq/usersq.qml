@@ -8,8 +8,8 @@
  *
  */
 
-import io.calamares.core 1.0
-import io.calamares.ui 1.0
+//import io.calamares.core 1.0
+//import io.calamares.ui 1.0
 
 import QtQuick 2.10
 import QtQuick.Controls 2.10
@@ -20,8 +20,8 @@ import QtQuick.Window 2.3
 
 Kirigami.ScrollablePage {
 
-    width: parent.width
-    height: parent.height
+    width: 800// parent.width
+    height: 600 //parent.height
 
     Kirigami.Theme.backgroundColor: "#EFF0F1"
     Kirigami.Theme.textColor: "#1F1F1F"
@@ -82,16 +82,7 @@ Kirigami.ScrollablePage {
                 placeholderText: qsTr("Login Name")
                 text: config.loginName
                 //onTextChanged: config.setLoginName(text)
-                onTextChanged: {
-                    if (config.loginNameStatusChanged) {
-                        console.log("Good");
-                        config.setLoginName(text);
-                        userMessage.visible = false
-                    } else {
-                        console.log("Invalid");
-                        userMessage.visible = true
-                    }
-                }
+                onTextChanged: config.loginNameStatusChanged ? (config.setLoginName(text),userMessage.visible = false) : (userMessage.visible = true,console.log("Invalid"))
 
                 background: Rectangle {
                     opacity: 0.9
@@ -131,17 +122,7 @@ Kirigami.ScrollablePage {
                 width: parent.width
                 placeholderText: qsTr("Computer Name")
                 text: config.hostName
-                //onTextChanged: config.setHostName(text)
-                onTextChanged: {
-                    if (config.hostNameStatusChanged) {
-                        console.log("Host Good");
-                        config.setHostName(text);
-                        hostMessage.visible = false
-                    } else {
-                        console.log("Host Invalid");
-                        hostMessage.visible = true
-                    }
-                }
+                onTextChanged: config.hostNameStatusChanged ? (config.setHostName(text),hostMessage.visible = false) : hostMessage.visible = true
 
                 background: Rectangle {
                     opacity: 0.9
