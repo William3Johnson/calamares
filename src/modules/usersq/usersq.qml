@@ -8,8 +8,8 @@
  *
  */
 
-import io.calamares.core 1.0
-import io.calamares.ui 1.0
+//import io.calamares.core 1.0
+//import io.calamares.ui 1.0
 
 import QtQuick 2.10
 import QtQuick.Controls 2.10
@@ -20,8 +20,8 @@ import QtQuick.Window 2.3
 
 Kirigami.ScrollablePage {
 
-    width: parent.width
-    height: parent.height
+    width: 800// parent.width
+    height: 600 //parent.height
 
     Kirigami.Theme.backgroundColor: "#EFF0F1"
     Kirigami.Theme.textColor: "#1F1F1F"
@@ -61,7 +61,7 @@ Kirigami.ScrollablePage {
                     radius: 2
                     opacity: 0.9
                     //border.color: _userNameField.text === "" ? Kirigami.Theme.backgroundColor : ( config.fullNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                    color: _userNameField.text.length ? "#FBFBFB" : "#f0fff0"//( config.fullNameChanged ? "#FBFBFB" : Kirigami.Theme.negativeTextColor)
+                    color: _userNameField.text.length ? "#FBFBFB" : ( config.fullNameChanged ? "#f0fff0" : "#ffdae0")
                 }
             }
         }
@@ -86,17 +86,17 @@ Kirigami.ScrollablePage {
                     if (config.loginNameStatusChanged) {
                         console.log("Good");
                         config.setLoginName(text);
-                        userMessage.visible = true
+                        userMessage.visible = false
                     } else {
                         console.log("Invalid");
-                        userMessage.visible = false
+                        userMessage.visible = true
                     }
                 }
 
                 background: Rectangle {
                     opacity: 0.9
                     //border.color: _userLoginField.text === "" ? Kirigami.Theme.backgroundColor : ( config.userNameReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                    color: _userLoginField.text.length ? "#FBFBFB" : ( config.loginNameStatusChanged ? "#f0fff0" : Kirigami.Theme.negativeTextColor)
+                    color: _userLoginField.text.length ? "#FBFBFB" : ( config.loginNameStatusChanged ? "#f0fff0" : "#ffdae0")
                 }
             }
 
@@ -146,7 +146,7 @@ Kirigami.ScrollablePage {
                 background: Rectangle {
                     opacity: 0.9
                     //border.color: _hostName.text === "" ? Kirigami.Theme.backgroundColor : ( config.hostNameStatusChanged ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                    color: _hostName.text.length ? "#FBFBFB" : ( config.hostNameStatusChanged ? "#f0fff0" : "#ffc0cb")
+                    color: _hostName.text.length ? "#FBFBFB" : ( config.hostNameStatusChanged ? "#f0fff0" : "#ffdae0")
                 }
             }
 
@@ -194,7 +194,7 @@ Kirigami.ScrollablePage {
                     background: Rectangle {
                         opacity: 0.9
                         //border.color: _passwordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.passwordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                        color: _passwordField.text === "" ? "#ffefd5" : ( config.userPasswordStatusChanged ? "#FBFBFB" : "#ffc0cb")
+                        color: _passwordField.text.length ? "#FBFBFB" : ( config.userPasswordStatusChanged ? "#f0fff0" : "#ffdae0")
                     }
                 }
 
@@ -212,7 +212,7 @@ Kirigami.ScrollablePage {
                     background: Rectangle {
                         opacity: 0.9
                         //border.color: _verificationpasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.passwordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                        color: _verificationPasswordField.text === "" ? "#ffefd5" : ( config.userPasswordSecondaryChanged ? "#FBFBFB" : "#ffc0cb")
+                        color: _verificationPasswordField.text.length ? "#FBFBFB" : ( config.userPasswordSecondaryChanged ? "#f0fff0" : "#ffdae0")
                     }
                 }
             }
@@ -272,7 +272,7 @@ Kirigami.ScrollablePage {
                     background: Rectangle {
                         opacity: 0.9
                         //border.color: _rootPasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.rootPasswordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                        color: _rootPasswordField.text === "" ? "#ffefd5" : ( config.rootPasswordReady ? "#FBFBFB" : "#ffc0cb")
+                        color: _rootPasswordField.text.length ? "#FBFBFB" : ( config.rootPasswordReady ? "#f0fff0" : "#ffdae0")
                     }
                 }
 
@@ -290,7 +290,7 @@ Kirigami.ScrollablePage {
                     background: Rectangle {
                         opacity: 0.9
                         //border.color: _verificationRootPasswordField.text === "" ? Kirigami.Theme.backgroundColor : ( config.rootPasswordReady ? Kirigami.Theme.backgroundColor : Kirigami.Theme.negativeTextColor)
-                        color: _verificationRootPasswordField.text === "" ? "#ffefd5" : ( config.rootPasswordReady ? "#FBFBFB" : "#ffc0cb")
+                        color: _verificationRootPasswordField.text.length ? "#FBFBFB" : ( config.rootPasswordReady ? "#f0fff0" : "#ffdae0")
                     }
                 }
             }
