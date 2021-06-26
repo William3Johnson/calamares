@@ -8,8 +8,8 @@
  *
  */
 
-//import io.calamares.core 1.0
-//import io.calamares.ui 1.0
+import io.calamares.core 1.0
+import io.calamares.ui 1.0
 
 import QtQuick 2.10
 import QtQuick.Controls 2.10
@@ -20,8 +20,8 @@ import QtQuick.Window 2.3
 
 Kirigami.ScrollablePage {
 
-    width: 800// parent.width
-    height: 600 //parent.height
+    width: parent.width
+    height: parent.height
 
     Kirigami.Theme.backgroundColor: "#EFF0F1"
     Kirigami.Theme.textColor: "#1F1F1F"
@@ -122,6 +122,8 @@ Kirigami.ScrollablePage {
                 width: parent.width
                 placeholderText: qsTr("Computer Name")
                 text: config.hostName
+                //inputMask: "999-AAA"
+                //onTextChanged: acceptableInput ? hostMessage.visible = false : hostMessage.visible = true
                 onTextChanged: config.hostNameStatusChanged ? (config.setHostName(text),hostMessage.visible = false) : hostMessage.visible = true
 
                 background: Rectangle {
