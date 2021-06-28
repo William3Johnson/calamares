@@ -102,22 +102,22 @@
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="102"/>
         <source>Crashes Calamares, so that Dr. Konqui can look at it.</source>
-        <translation type="unfinished"/>
+        <translation>S&apos;estavella el Calamares, així el doctor Konqui podrà mirar-ho.</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="115"/>
         <source>Reloads the stylesheet from the branding directory.</source>
-        <translation type="unfinished"/>
+        <translation>Torna a carregar el full d’estils del directori de la marca.</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="141"/>
         <source>Uploads the session log to the configured pastebin.</source>
-        <translation type="unfinished"/>
+        <translation>Carrega el registre de sessió al pastebin configurat.</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="144"/>
         <source>Send Session Log</source>
-        <translation type="unfinished"/>
+        <translation>Envia el registre de la sessió</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="118"/>
@@ -127,7 +127,7 @@
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="128"/>
         <source>Displays the tree of widget names in the log (for stylesheet debugging).</source>
-        <translation type="unfinished"/>
+        <translation>Mostra l&apos;arbre dels noms dels ginys al registre (per a la depuració del full d&apos;estil).</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="131"/>
@@ -318,7 +318,11 @@
 %1
 
 Link copied to clipboard</source>
-        <translation type="unfinished"/>
+        <translation>Instal·la el registre publicat a
+
+% 1
+
+Enllaç copiat al porta-retalls.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/Paste.cpp" line="170"/>
@@ -498,17 +502,17 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="32"/>
         <source>Set filesystem label on %1.</source>
-        <translation type="unfinished"/>
+        <translation>Estableix l&apos;etiqueta del sistema de fitxers de %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="39"/>
         <source>Set filesystem label &lt;strong&gt;%1&lt;/strong&gt; to partition &lt;strong&gt;%2&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Estableix l&apos;etiqueta del sistema de fitxers &lt;strong&gt;%1&lt;/strong&gt; a la partició &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="70"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;instal·lador no ha pogut actualitzar la taula de particions al disc %1.</translation>
     </message>
 </context>
 <context>
@@ -904,12 +908,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/packagechooser/Config.cpp" line="86"/>
         <source>Package Selection</source>
-        <translation type="unfinished"/>
+        <translation>Selecció de paquets</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/Config.cpp" line="88"/>
         <source>Please pick a product from the list. The selected product will be installed.</source>
-        <translation type="unfinished"/>
+        <translation>Si us plau, trieu un producte de la llista. S&apos;instal·larà el producte seleccionat.</translation>
     </message>
 </context>
 <context>
@@ -957,12 +961,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="231"/>
         <source>Label for the filesystem</source>
-        <translation type="unfinished"/>
+        <translation>Etiqueta per al sistema de fitxers</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="241"/>
         <source>FS Label:</source>
-        <translation type="unfinished"/>
+        <translation>Etiqueta:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="165"/>
@@ -1305,12 +1309,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="186"/>
         <source>Label for the filesystem</source>
-        <translation type="unfinished"/>
+        <translation>Etiqueta per al sistema de fitxers</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="196"/>
         <source>FS Label:</source>
-        <translation type="unfinished"/>
+        <translation>Etiqueta:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.cpp" line="291"/>
@@ -1776,7 +1780,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/libcalamares/locale/Tests.cpp" line="273"/>
         <source>Quit</source>
-        <translation type="unfinished"/>
+        <translation>Surt</translation>
     </message>
 </context>
 <context>
@@ -1903,7 +1907,7 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="41"/>
         <source>Select your preferred Region, or use the default settings.</source>
-        <translation type="unfinished"/>
+        <translation>Seleccioneu la regió preferida o useu la configuració predeterminada.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="98"/>
@@ -2270,7 +2274,7 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     <message>
         <location filename="../src/modules/packagechooserq/PackageChooserQmlViewStep.cpp" line="32"/>
         <source>Packages</source>
-        <translation type="unfinished"/>
+        <translation>Paquets</translation>
     </message>
 </context>
 <context>
@@ -2467,7 +2471,7 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="304"/>
         <source>File System Label</source>
-        <translation type="unfinished"/>
+        <translation>Etiqueta del sistema de fitxers</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="306"/>
@@ -3841,37 +3845,38 @@ La configuració local del sistema afecta el format de números i dates. La conf
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="45"/>
         <source>LibreOffice is a powerful and free office suite, used by millions of people around the world. It includes several applications that make it the most versatile Free and Open Source office suite on the market.&lt;br/&gt;
                     Default option.</source>
-        <translation type="unfinished"/>
+        <translation>El LibreOffice és un programari d&apos;ofimàtica potent i gratuït, usat per milions de persones a tot el món. Inclou diverses aplicacions que el converteixen en el paquet ofimàtic de codi obert i lliure més versàtil del mercat.&lt;br/&gt;
+Opció predeterminada.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="59"/>
         <source>LibreOffice</source>
-        <translation type="unfinished"/>
+        <translation>LibreOffice</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="112"/>
         <source>If you don&apos;t want to install an office suite, just select No Office Suite. You can always add one (or more) later on your installed system as the need arrives.</source>
-        <translation type="unfinished"/>
+        <translation>Si no voleu instal·lar cap conjunt de programari d&apos;oficina, només heu de seleccionar Sense programari d&apos;oficina. Sempre podeu afegir-ne un (o més) més tard al sistema instal·lat quan en tingueu la necessitat.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="125"/>
         <source>No Office Suite</source>
-        <translation type="unfinished"/>
+        <translation>Sense programari d&apos;oficina</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="181"/>
         <source>Create a minimal Plasma Desktop install, remove all extra applications and decide later on what you would like to add to your system. Examples of what won&apos;t be on such an install, there will be no Office Suite, no media players, no image viewer or print support.  It will be just a desktop, file browser, package manager, text editor and simple web-browser.</source>
-        <translation type="unfinished"/>
+        <translation>Creeu una instal·lació mínima amb l&apos;escriptori Plasma, elimineu totes les aplicacions addicionals i decidiu més tard què hi voleu afegir. Exemples del que no hi haurà en aquesta instal·lació: no hi haurà cap conjunt de programari d&apos;oficina, ni reproductors multimèdia, ni visualitzador d&apos;imatges ni suport d&apos;impressió. Hi haurà només un escriptori, un navegador de fitxers, un gestor de paquets, un editor de text i un navegador web simple.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="194"/>
         <source>Minimal Install</source>
-        <translation type="unfinished"/>
+        <translation>Instal·lació mínima</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="246"/>
         <source>Please select an option for your install, or use the default: LibreOffice included.</source>
-        <translation type="unfinished"/>
+        <translation>Si us plau, seccioneu una opció per instal·lar o useu la predeterminada: LibreOffice inclòs.</translation>
     </message>
 </context>
 <context>
@@ -4078,7 +4083,7 @@ La configuració local del sistema afecta el format de números i dates. La conf
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="128"/>
         <source>Your username must start with a lowercase letter or underscore.</source>
-        <translation type="unfinished"/>
+        <translation>El nom d&apos;usuari ha de començar amb una lletra minúscula o amb un guionet baix.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="139"/>
@@ -4098,7 +4103,7 @@ La configuració local del sistema afecta el format de números i dates. La conf
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="183"/>
         <source>Only letter, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Només es permeten lletres, números, guionets i guionets baixos.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="194"/>
