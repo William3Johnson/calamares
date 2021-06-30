@@ -78,8 +78,9 @@ Kirigami.ScrollablePage {
                 text: config.loginName
                 validator: RegularExpressionValidator { regularExpression: /[a-z_][a-z0-9_-]*[$]?$/ }
                 //onTextChanged: config.setLoginName(text)
-                onTextChanged: acceptableInput ? ( config.setLoginName(text),userMessage.visible = false ) : ( userMessage.visible = true,console.log("Invalid") )
-                palette.base: _userLoginField.text.length ? "#f0fff0" : "#FBFBFB"
+                onTextChanged: acceptableInput ? ( _userLoginField.text === "root" ? forbiddenMessage.visible=true : ( config.setLoginName(text),userMessage.visible = false,forbiddenMessage.visible=false ) ) : ( userMessage.visible = true,console.log("Invalid") )
+
+                palette.base: _userLoginField.text.length ? ( acceptableInput ? ( _userLoginField.text === "root" ? "#ffdae0" : "#f0fff0" ) : "#ffdae0") : "#FBFBFB"
                 palette.highlight : _userLoginField.text.length ? "#dcffdc" : "#FBFBFB"
             }
 
@@ -97,7 +98,15 @@ Kirigami.ScrollablePage {
             Layout.fillWidth: true
             visible: false
             type: Kirigami.MessageType.Error
-            text: qsTr("Your username must start with a lowercase letter or underscore, minimal of two characters.")
+            text: qsTr("Only lowercase letters, numbers, underscore and hyphen are allowed.")
+        }
+
+        Kirigami.InlineMessage {
+            id: forbiddenMessage
+            Layout.fillWidth: true
+            visible: false
+            type: Kirigami.MessageType.Error
+            text: qsTr("root is not allowed as username.")
         }
 
         Column {
@@ -114,10 +123,10 @@ Kirigami.ScrollablePage {
                 width: parent.width
                 placeholderText: qsTr("Computer Name")
                 text: config.hostName
-                //validator: RegularExpressionValidator { regularExpression: config.forbiddenHostNames() }
                 validator: RegularExpressionValidator { regularExpression: /[a-zA-Z0-9][-a-zA-Z0-9_]+/ }
-                onTextChanged: acceptableInput ? (config.setHostName(text),hostMessage.visible = false) : hostMessage.visible = true
-                palette.base: _hostName.text.length ? ( acceptableInput ? "#f0fff0" : "#ffdae0") : "#FBFBFB"
+                onTextChanged: acceptableInput ? ( _hostName.text === "localhost" ? forbiddenHost.visible=true : (config.setHostName(text),hostMessage.visible = false,forbiddenHost.visible = false) ) : hostMessage.visible = true
+
+                palette.base: _hostName.text.length ? ( acceptableInput ? ( _hostName.text === "localhost" ? "#ffdae0" : "#f0fff0" ) : "#ffdae0") : "#FBFBFB"
                 palette.highlight : _hostName.text.length ? "#dcffdc" : "#FBFBFB"
             }
 
@@ -136,6 +145,14 @@ Kirigami.ScrollablePage {
             visible: false
             type: Kirigami.MessageType.Error
             text: qsTr("Only letter, numbers, underscore and hyphen are allowed, minimal of two characters.")
+        }
+
+        Kirigami.InlineMessage {
+            id: forbiddenHost
+            Layout.fillWidth: true
+            visible: false
+            type: Kirigami.MessageType.Error
+            text: qsTr("localhost is not allowed as hostname.")
         }
 
         Column {
@@ -170,7 +187,8 @@ Kirigami.ScrollablePage {
                     width: parent.width / 2 - 10
                     placeholderText: qsTr("Repeat Password")
                     text: config.userPasswordSecondary
-                    onTextChanged: _passwordField.text === _verificationPasswordField.text ? (config.setUserPasswordSecondary(text),passMessage.visible = false) : passMessage.visible = true
+                    onTextChanged: _passwordField.text === _verificationPasswordField.text ? (config.setUserPasswordSecondary(text),passMessage.visible = false,validityMessage.visible = true) : (passMessage.visible = true,validityMessage.visible = false)
+
                     palette.base: _verificationPasswordField.text.length ? ( _passwordField.text === _verificationPasswordField.text ? "#f0fff0" : "#ffdae0") : "#FBFBFB"
                     palette.highlight : _verificationPasswordField.text.length ? "#dcffdc" : "#FBFBFB"
 
@@ -196,6 +214,14 @@ Kirigami.ScrollablePage {
             visible: false
             type: Kirigami.MessageType.Error
             text: qsTr("Your passwords do not match!")
+        }
+
+        Kirigami.InlineMessage {
+            id: validityMessage
+            Layout.fillWidth: true
+            visible: false
+            type: config.requireStrongPasswords ? Kirigami.MessageType.Error : Kirigami.MessageType.Warning
+            text: config.passwordStatus.message
         }
 
         CheckBox {
@@ -250,6 +276,7 @@ Kirigami.ScrollablePage {
                     text: config.rootPasswordSecondary
                     //onTextChanged: config.setRootPasswordSecondary(text)
                     onTextChanged: _rootPasswordField.text === _verificationRootPasswordField.text ? (config.setRootPasswordSecondary(text),rootPassMessage.visible = false) : rootPassMessage.visible = true
+
                     palette.base: _verificationRootPasswordField.text.length ? ( _rootPasswordField.text === _verificationRootPasswordField.text ? "#f0fff0" : "#ffdae0") : "#FBFBFB"
                     palette.highlight : _verificationRootPasswordField.text.length ? "#dcffdc" : "#FBFBFB"
 
