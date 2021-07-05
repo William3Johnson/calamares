@@ -51,6 +51,7 @@ void SummaryModel::setSummary(const Calamares::ViewStepList& steps)
     for ( Calamares::ViewStep* step : steps )
     {
         QString text = step->prettyStatus();
+        QWidget* widget = step->createSummaryWidget();
 
         if ( text.isEmpty() && !widget )
             continue;

@@ -129,7 +129,7 @@ QString
 Config::prettyStatus() const
 {
     QString option = m_pkgc;
-    return tr( "Install option: %1" ).arg( option );
+    return tr( "Install option: <strong>%1</strong>" ).arg( option );
 }
 
 static void

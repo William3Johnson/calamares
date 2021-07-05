@@ -152,7 +152,7 @@ Item {
                         }
                         else {
                             print("No Office Suite")
-                            config.pkgc = ""
+                            config.pkgc = "no_office_suite"
                         }
                     }
                 }

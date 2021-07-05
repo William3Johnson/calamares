@@ -3,7 +3,7 @@
 #
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014-2020, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2021, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -122,60 +122,59 @@ def run():
     # Packagechooser outcome / remove LibreOffice l10n
     packages = libcalamares.globalstorage.value("packagechooser_packagechooserq")
 
-    if not packages:
+    if packages === 'no_office_suite':
         print('Removing LibreOffice')
         libcalamares.utils.target_env_call(
                 ['pacman', '-Rns', '--noconfirm', 'libreoffice'])
 
-    else:
-        if packages == 'calligra':
-            print('Installing Calligra')
-            libcalamares.utils.target_env_call(
-                ['pacman', '-Rns', '--noconfirm', 'libreoffice'])
-            libcalamares.utils.target_env_call(
-                ['pacman', '-U', '--noconfirm',
-                 '/opt/kdeos/pkgs/calligra*',
-                 '/opt/kdeos/pkgs/libspnav'])
+    if packages == 'calligra':
+        print('Installing Calligra')
+        libcalamares.utils.target_env_call(
+            ['pacman', '-Rns', '--noconfirm', 'libreoffice'])
+        libcalamares.utils.target_env_call(
+            ['pacman', '-U', '--noconfirm',
+                '/opt/kdeos/pkgs/calligra*',
+                '/opt/kdeos/pkgs/libspnav'])
 
-        if packages == 'libreoffice':
-            print('LibreOffice selected')
+    if packages == 'libreoffice':
+        print('LibreOffice selected')
 
-        if packages == 'minimal_install':
-            print('Minimal Install')
-            pkgs = ['plasma-workspace-wallpapers',
-                    'partitionmanager',
-                    'gwenview',
-                    'spectacle',
-                    'sweeper',
-                    'nomad-firewall',
-                    'quassel',
-                    'smplayer',
-                    'smtube',
-                    'elisa',
-                    'kde-gtk-config',
-                    'tomoyo-tools',
-                    'kcp',
-                    'pacmanlogviewer',
-                    'seafile-client',
-                    'kamoso',
-                    'kget',
-                    'kompare',
-                    'simplescreenrecorder',
-                    'pepper-flash',
-                    'k3b',
-                    'system-config-printer',
-                    'print-manager',
-                    'hplip',
-                    'epson-inkjet-printer-escpr',
-                    'pyqt5-python3',
-                    'kpat',
-                    'kde-telepathy',
-                    'libreoffice']
-            for pkg in pkgs:
-                try:
-                    libcalamares.utils.target_env_call(
-                        ['pacman', '-Rns', '--noconfirm', '{!s}' .format(pkg)])
-                except:
-                    print("Could not remove package " + pkg)
+    if packages == 'minimal_install':
+        print('Minimal Install')
+        pkgs = ['plasma-workspace-wallpapers',
+                'partitionmanager',
+                'gwenview',
+                'spectacle',
+                'sweeper',
+                'nomad-firewall',
+                'quassel',
+                'smplayer',
+                'smtube',
+                'elisa',
+                'kde-gtk-config',
+                'tomoyo-tools',
+                'kcp',
+                'pacmanlogviewer',
+                'seafile-client',
+                'kamoso',
+                'kget',
+                'kompare',
+                'simplescreenrecorder',
+                'pepper-flash',
+                'k3b',
+                'system-config-printer',
+                'print-manager',
+                'hplip',
+                'epson-inkjet-printer-escpr',
+                'pyqt5-python3',
+                'kpat',
+                'kde-telepathy',
+                'libreoffice']
+        for pkg in pkgs:
+            try:
+                libcalamares.utils.target_env_call(
+                    ['pacman', '-Rns', '--noconfirm', '{!s}' .format(pkg)])
+            except:
+                print("Could not remove package " + pkg)
 
     print('package removal completed')
