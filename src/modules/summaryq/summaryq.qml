@@ -70,7 +70,10 @@ Kirigami.ScrollablePage {
                                 Layout.preferredWidth: height
                                 Layout.alignment: Qt.AlignTop
                                 fillMode: Image.PreserveAspectFit
-                                source: index === 0 ? "lokalize.svg" : ( index === 1 ? "keyboard.svg" : ( index === 2 ? "partition-manual.svg" : "partition.svg" ) )
+                                source: index === 0 ? "img/lokalize.svg"
+                                    : ( index === 1 ? "img/keyboard.svg"
+                                    : ( index === 2 ? "qrc:/data/images/partition-manual.svg"
+                                    : "qrc:/data/images/partition-partition.svg" ) )
                             }
                             ColumnLayout {
 
@@ -79,7 +82,6 @@ Kirigami.ScrollablePage {
                                     Layout.fillWidth: true
                                     wrapMode: Text.WordWrap
                                     text: model.title
-                                    //text: "Partitions"
                                     font.weight: Font.Medium
                                     font.pointSize: 16
                                 }
@@ -105,7 +107,6 @@ Kirigami.ScrollablePage {
         anchors.fill: parent
         spacing: 20
         model: config.summaryModel
-        //model: ["en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8", "en_GB.UTF-8 UTF-8", "en_US.UTF-8 UTF-8 ", "nl_NL.UTF-8 UTF-8"]
         delegate: _delegate
     }
 }
