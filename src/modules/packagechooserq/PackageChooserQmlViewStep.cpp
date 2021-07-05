@@ -32,6 +32,14 @@ PackageChooserQmlViewStep::prettyName() const
     return tr( "Packages" );
 }
 
+QString
+PackageChooserQmlViewStep::prettyStatus() const
+{
+    //QString option = m_pkgc;
+    //return tr( "Install option: %1" ).arg( option );
+    return m_config->prettyStatus();
+}
+
 bool
 PackageChooserQmlViewStep::isNextEnabled() const
 {

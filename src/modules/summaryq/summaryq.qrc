@@ -1,0 +1,9 @@
+<RCC>
+    <qresource>
+        <file>summaryq.qml</file>
+        <file>partition-manual.svg</file>
+        <file>partition.svg</file>
+        <file>keyboard.svg</file>
+        <file>lokalize.svg</file>
+    </qresource>
+</RCC>

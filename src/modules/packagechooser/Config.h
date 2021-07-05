@@ -41,6 +41,7 @@ class Config : public Calamares::ModuleSystem::Config
     Q_OBJECT
 
     Q_PROPERTY( QString pkgc READ pkgc WRITE setPkgc NOTIFY pkgcChanged )
+    Q_PROPERTY( QString prettyStatus READ prettyStatus NOTIFY prettyStatusChanged FINAL )
 
 public:
     Config( QObject* parent = nullptr );
@@ -80,8 +81,11 @@ public:
     QString pkgc() const { return m_pkgc; }
     void setPkgc( const QString& pkgc );
 
+    QString prettyStatus() const;
+
 signals:
     void pkgcChanged( QString pkgc );
+    void prettyStatusChanged();
 
 private:
     PackageListModel* m_model = nullptr;
