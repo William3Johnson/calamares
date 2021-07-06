@@ -73,10 +73,3 @@ SummaryQmlViewStep::onActivate()
     m_config->init();
 }
 
-
-void
-SummaryQmlViewStep::onLeave()
-{
-    m_config->refresh();
-}
-
