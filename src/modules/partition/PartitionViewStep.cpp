@@ -184,7 +184,7 @@ PartitionViewStep::prettyStatus() const
     }
 
     QStringList jobsLines;
-    for( const Calamares::job_ptr& job : qAsConst( jobs() ) )
+    foreach ( const Calamares::job_ptr& job, jobs() )
     {
         if ( !job->prettyDescription().isEmpty() )
         {

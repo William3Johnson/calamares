@@ -74,7 +74,7 @@ PackageChooserQmlViewStep::jobs() const
 void
 PackageChooserQmlViewStep::onLeave()
 {
-    m_config->updateGlobalStorage();
+    m_config->fillGSSecondaryConfiguration();
 }
 
 void
