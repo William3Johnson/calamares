@@ -47,8 +47,6 @@ enum
     LOG_DISABLE = 0,
     LOGERROR = 1,
     LOGWARNING = 2,
-    LOGINFO = 3,
-    LOGEXTRA = 5,
     LOGDEBUG = 6,
     LOGVERBOSE = 8
 };
@@ -60,7 +58,9 @@ public:
     virtual ~CDebug();
 
     friend CDebug& operator<<( CDebug&&, const FuncSuppressor& );
-    friend CDebug& operator<<( CDebug&&, Once& );
+    friend CDebug& operator<<( CDebug&&, const Once& );
+
+    inline unsigned int level() const { return m_debugLevel; }
 
 private:
     QString m_msg;
@@ -308,15 +308,21 @@ public:
         : m( true )
     {
     }
-    friend CDebug& operator<<( CDebug&&, Once& );
+    friend CDebug& operator<<( CDebug&&, const Once& );
 
 private:
-    bool m = false;
+    mutable bool m = false;
 };
 
 inline CDebug&
-operator<<( CDebug&& s, Once& o )
+operator<<( CDebug&& s, const Once& o )
 {
+    if ( !logLevelEnabled( s.level() ) )
+    {
+        // This won't print, so it's not using the "onceness"
+        return s;
+    }
+
     if ( o.m )
     {
         o.m = false;
@@ -329,6 +335,7 @@ operator<<( CDebug&& s, Once& o )
 
 }  // namespace Logger
 
+#define cVerbose() Logger::CDebug( Logger::LOGVERBOSE, Q_FUNC_INFO )
 #define cDebug() Logger::CDebug( Logger::LOGDEBUG, Q_FUNC_INFO )
 #define cWarning() Logger::CDebug( Logger::LOGWARNING, Q_FUNC_INFO )
 #define cError() Logger::CDebug( Logger::LOGERROR, Q_FUNC_INFO )

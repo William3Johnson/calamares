@@ -76,7 +76,7 @@ public:
      */
     void updateGlobalStorage( const QStringList& selected ) const;
     /// As updateGlobalStorage() with an empty selection list
-    void updateGlobalStorage() const { updateGlobalStorage( QStringList() ); }
+    void fillGSSecondaryConfiguration() const { updateGlobalStorage( QStringList() ); }
 
     QString pkgc() const { return m_pkgc; }
     void setPkgc( const QString& pkgc );
