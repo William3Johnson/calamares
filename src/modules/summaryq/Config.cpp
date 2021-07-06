@@ -46,7 +46,7 @@ int SummaryModel::rowCount(const QModelIndex&) const
 void SummaryModel::setSummary(const Calamares::ViewStepList& steps)
 {
     m_summary.clear();
-    emit beginResetModel();
+    Q_EMIT beginResetModel();
 
     for ( Calamares::ViewStep* step : steps )
     {
@@ -59,7 +59,7 @@ void SummaryModel::setSummary(const Calamares::ViewStepList& steps)
         m_summary << new StepSummary {step->prettyName(), text};
 
     }
-    emit endResetModel();
+    Q_EMIT endResetModel();
 }
 
 Config::Config(QObject *parent) : QObject(parent)
@@ -96,18 +96,12 @@ Calamares::ViewStepList Config::stepsForSummary( const Calamares::ViewStepList& 
     Calamares::ViewStepList steps;
     for ( Calamares::ViewStep* step : allSteps )
     {
-        // We start from the beginning of the complete steps list. If we encounter any
-        // ExecutionViewStep, it means there was an execution phase in the past, and any
-        // jobs from before that phase were already executed, so we can safely clear the
-        // list of steps to summarize and start collecting from scratch.
         if ( qobject_cast< Calamares::ExecutionViewStep* >( step ) )
         {
             steps.clear();
             continue;
         }
 
-        // If we reach the parent step of this page, we're done collecting the list of
-        // steps to summarize.
         if ( m_thisViewStep == step )
             break;
 

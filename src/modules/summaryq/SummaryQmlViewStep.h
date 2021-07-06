@@ -11,13 +11,12 @@
 #ifndef SUMMARYQMLVIEWSTEP_H
 #define SUMMARYQMLVIEWSTEP_H
 
-#include <QObject>
 #include "Config.h"
-
 #include "utils/PluginFactory.h"
 #include "viewpages/QmlViewStep.h"
-
 #include "DllMacro.h"
+
+#include <QObject>
 
 class SummaryPage;
 
