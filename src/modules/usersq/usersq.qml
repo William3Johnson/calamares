@@ -27,6 +27,7 @@ Kirigami.ScrollablePage {
     readonly property color unfilledFieldOutlineColor: "#F1F1F1"
     readonly property color positiveFieldOutlineColor: "#DCFFDC"
     readonly property color negativeFieldOutlineColor: "#BE5F68"
+    readonly property color headerTextColor: "#1F1F1F"
     readonly property color commentsColor: "#6D6D6D"
 
     width: parent.width
@@ -36,7 +37,7 @@ Kirigami.ScrollablePage {
         Layout.fillWidth: true
         height: 50
         horizontalAlignment: Qt.AlignHCenter
-        color: Kirigami.Theme.textColor
+        color: headerTextColor
         font.weight: Font.Medium
         font.pointSize: 12
         text: qsTr("Pick your user name and credentials to login and perform admin tasks")
@@ -63,9 +64,9 @@ Kirigami.ScrollablePage {
                 text: config.fullName
                 onTextChanged: config.setFullName(text)
 
-                palette.base: _userNameField.text.length 
+                palette.base: _userNameField.text.length
                     ? positiveFieldColor : unfilledFieldColor
-                palette.highlight : _userNameField.text.length 
+                palette.highlight : _userNameField.text.length
                     ? positiveFieldOutlineColor : unfilledFieldOutlineColor
             }
         }
@@ -98,16 +99,16 @@ Kirigami.ScrollablePage {
                 palette.base: _userLoginField.text.length
                     ? ( acceptableInput
                     ? ( _userLoginField.text === "root"
-                    ? negativeFieldColor 
-                    : positiveFieldColor ) 
-                    : negativeFieldColor ) 
+                    ? negativeFieldColor
+                    : positiveFieldColor )
+                    : negativeFieldColor )
                     : unfilledFieldColor
                 palette.highlight : _userLoginField.text.length
                     ? ( acceptableInput
                     ? ( _userLoginField.text === "root"
-                    ? negativeFieldOutlineColor 
-                    : positiveFieldOutlineColor ) 
-                    : negativeFieldOutlineColor ) 
+                    ? negativeFieldOutlineColor
+                    : positiveFieldOutlineColor )
+                    : negativeFieldOutlineColor )
                     : unfilledFieldOutlineColor
             }
 
