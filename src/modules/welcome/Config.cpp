@@ -31,11 +31,15 @@ Config::Config( QObject* parent )
     initLanguages();
 
     CALAMARES_RETRANSLATE_SLOT( &Config::retranslate );
+    // But also when the requirements model changes, update the messages
+    connect( requirementsModel(), &Calamares::RequirementsModel::progressMessageChanged, this, &Config::retranslate );
 }
 
 void
 Config::retranslate()
 {
+    cWarning() << "Retranslated to" << QLocale().name();
+
     m_genericWelcomeMessage = genericWelcomeMessage().arg( Calamares::Branding::instance()->versionedName() );
     emit genericWelcomeMessageChanged( m_genericWelcomeMessage );
 
