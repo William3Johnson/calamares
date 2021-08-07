@@ -122,7 +122,7 @@ def run():
     # Packagechooser outcome / remove LibreOffice l10n
     packages = libcalamares.globalstorage.value("packagechooser_packagechooserq")
 
-    if packages === 'no_office_suite':
+    if packages == 'no_office_suite':
         print('Removing LibreOffice')
         libcalamares.utils.target_env_call(
                 ['pacman', '-Rns', '--noconfirm', 'libreoffice'])
