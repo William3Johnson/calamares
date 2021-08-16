@@ -15,6 +15,7 @@
 
 import os
 import shutil
+import getpass
 
 import libcalamares
 
@@ -35,6 +36,7 @@ def run():
     """
     root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
     user = libcalamares.globalstorage.value("username")
+    live_user = getpass.getuser()
 
     if root_mount_point is None:
         libcalamares.utils.warning("rootMountPoint is empty, {!s}".format(root_mount_point))
@@ -62,13 +64,13 @@ def run():
 
             try:
                 shutil.copy(source_network, target_network, follow_symlinks=False)
-                if 'live' in open(target_network).read():
+                if live_user in open(target_network).read():
                     text = []
                     with open(target_network, "r") as network_conf:
                         text = network_conf.readlines()
                         with open(target_network, "w") as network_conf:
                             for line in text:
-                                if 'permissions=user:live:;' in line:
+                                if 'permissions=user:{}:;'.format(live_user) in line:
                                     line = 'permissions=user:{}:;\n'.format(user)
                                 network_conf.write(line)
                     network_conf.close()
