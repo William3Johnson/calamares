@@ -73,13 +73,13 @@ Item {
                         delegate: ItemDelegate {
 
                             hoverEnabled: true
-                            width: parent.width
+                            //width: parent.width
                             highlighted: ListView.isCurrentItem
                             Label {
                                 Layout.fillHeight: true
                                 Layout.fillWidth: true
                                 width: parent.width
-                                height: 32
+                                //height: 32
                                 color: highlighted ? highlightedTextColor : textColor
                                 text: modelData
                                 background: Rectangle {
@@ -145,13 +145,13 @@ Item {
                         delegate: ItemDelegate {
 
                             hoverEnabled: true
-                            width: parent.width
+                            //width: parent.width
                             highlighted: ListView.isCurrentItem
                             Label {
                                 Layout.fillHeight: true
                                 Layout.fillWidth: true
                                 width: parent.width
-                                height: 32
+                                //height: 32
                                 color: highlighted ? highlightedTextColor : textColor
                                 text: modelData
                                 background: Rectangle {
