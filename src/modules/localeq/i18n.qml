@@ -66,7 +66,7 @@ Item {
 
                         model: config.supportedLocales
 
-                        currentIndex: config.currentLanguageCode
+                        currentIndex: model.currentIndex
                         highlight: Rectangle {
                             color: highlightColor
                         }
@@ -124,7 +124,7 @@ Item {
 
                         model: config.supportedLocales
 
-                        currentIndex: config.currentLCCode
+                        currentIndex: model.currentIndex
                         highlight: Rectangle {
                             color: highlightColor
                         }
