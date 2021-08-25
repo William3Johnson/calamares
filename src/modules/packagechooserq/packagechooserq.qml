@@ -75,7 +75,7 @@ Item {
                             height: 20
                             radius: 10
                             color: element2.down ? "#cccccc" : "#ffffff"
-                            border.color: element2.checked ? (element1.down ? "#3498db" : "#3498db") : "#999999"
+                            border.color: element2.checked ? (element2.down ? "#3498db" : "#3498db") : "#999999"
                         }
                     }
 

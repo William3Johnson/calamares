@@ -16,19 +16,20 @@ import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.7 as Kirigami
 
 Item {
+    readonly property color backgroundColor: Kirigami.Theme.backgroundColor //"#F5F5F5"
+    readonly property color headerBackgroundColor: "#d3d3d3"
+    readonly property color highlightColor: Kirigami.Theme.highlightColor //"#3498DB"
+
     width: parent.width
     height: parent.height
     focus: true
-    MouseArea {
-        anchors.fill: parent
-    }
 
     Rectangle {
         id: textArea
         x: 28
         y: 14
         anchors.fill: parent
-        Kirigami.Theme.backgroundColor: Kirigami.Theme.backgroundColor
+        color: backgroundColor
 
         Column {
             id: languages
@@ -38,7 +39,7 @@ Item {
             Rectangle {
                 width: 250
                 height: 140
-                color: "#d3d3d3"
+                color: headerBackgroundColor
                 Text {
                     anchors.top: parent.top
                     width: 240
@@ -65,9 +66,9 @@ Item {
 
                         model: config.supportedLocales
 
-                        currentIndex: -1
+                        currentIndex: config.currentLanguageCode
                         highlight: Rectangle {
-                            color: Kirigami.Theme.highlightColor
+                            color: highlightColor
                         }
                         delegate: Text {
                             text: modelData
@@ -76,9 +77,6 @@ Item {
                                 hoverEnabled: true
                                 anchors.fill: parent
                                 cursorShape: Qt.PointingHandCursor
-                                onEntered: {
-                                    color: "#0000ff"
-                                }
                                 onClicked: {
                                     list1.currentIndex = index
                                 }
@@ -98,7 +96,7 @@ Item {
             Rectangle {
                 width: 250
                 height: 140
-                color: "#d3d3d3"
+                color: headerBackgroundColor
                 Text {
                     anchors.top: parent.top
                     width: 240
@@ -126,9 +124,9 @@ Item {
 
                         model: config.supportedLocales
 
-                        currentIndex: -1
+                        currentIndex: config.currentLCCode
                         highlight: Rectangle {
-                            color: Kirigami.Theme.highlightColor
+                            color: highlightColor
                         }
                         delegate: Text {
                             text: modelData
