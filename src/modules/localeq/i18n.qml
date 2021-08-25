@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <https://calamares.io> ===
  *
- *   SPDX-FileCopyrightText: 2020 Anke Boersma <demm@kaosx.us>
+ *   SPDX-FileCopyrightText: 2020 - 2021 Anke Boersma <demm@kaosx.us>
  *   SPDX-License-Identifier: GPL-3.0-or-later
  *
  *   Calamares is Free Software: see the License-Identifier above.
@@ -61,6 +61,7 @@ Item {
                     id: scroll1
                     anchors.fill: parent
                     contentHeight: 800
+                    ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
 
                     ListView {
                         id: list1
@@ -73,13 +74,14 @@ Item {
                         delegate: ItemDelegate {
 
                             hoverEnabled: true
-                            //width: parent.width
+                            width: parent.width
+                            implicitHeight: 18
                             highlighted: ListView.isCurrentItem
                             Label {
                                 Layout.fillHeight: true
                                 Layout.fillWidth: true
                                 width: parent.width
-                                //height: 32
+                                height: 18
                                 color: highlighted ? highlightedTextColor : textColor
                                 text: modelData
                                 background: Rectangle {
@@ -131,11 +133,10 @@ Item {
                     id: scroll2
                     anchors.fill: parent
                     contentHeight: 800
-                    clip: true
+                    ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
 
                     ListView {
                         id: list2
-                        width: 180; height: 200
                         focus: true
                         clip: true
 
@@ -145,13 +146,14 @@ Item {
                         delegate: ItemDelegate {
 
                             hoverEnabled: true
-                            //width: parent.width
+                            width: parent.width
+                            implicitHeight: 18
                             highlighted: ListView.isCurrentItem
                             Label {
                                 Layout.fillHeight: true
                                 Layout.fillWidth: true
                                 width: parent.width
-                                //height: 32
+                                height: 18
                                 color: highlighted ? highlightedTextColor : textColor
                                 text: modelData
                                 background: Rectangle {
