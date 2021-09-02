@@ -17,7 +17,7 @@ import org.kde.kirigami 2.7 as Kirigami
 
 Item {
     readonly property color backgroundColor: Kirigami.Theme.backgroundColor //"#F5F5F5"
-    readonly property color backgroundDarkerColor: Kirigami.Theme.alternateBackgroundColor //"#d3d3d3"
+    readonly property color headerBackgroundColor: Kirigami.Theme.alternateBackgroundColor //"#d3d3d3"
     readonly property color backgroundLighterColor: "#ffffff"
     readonly property color highlightColor: Kirigami.Theme.highlightColor //"#3498DB"
     readonly property color textColor: Kirigami.Theme.textColor
@@ -42,7 +42,7 @@ Item {
             Rectangle {
                 width: 250
                 height: 140
-                color: backgroundDarkerColor
+                color: headerBackgroundColor
                 Text {
                     anchors.top: parent.top
                     width: 240
@@ -67,6 +67,7 @@ Item {
                         id: list1
                         focus: true
                         clip: true
+                        width: parent.width
 
                         model: config.supportedLocales
 
@@ -114,7 +115,7 @@ Item {
             Rectangle {
                 width: 250
                 height: 140
-                color: backgroundDarkerColor
+                color: headerBackgroundColor
                 Text {
                     anchors.top: parent.top
                     width: 240

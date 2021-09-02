@@ -10,7 +10,7 @@
 
 #include "SummaryQmlViewStep.h"
 
-CALAMARES_PLUGIN_FACTORY_DEFINITION( SummaryQmlViewStepFactory, registerPlugin<SummaryQmlViewStep>(); )
+CALAMARES_PLUGIN_FACTORY_DEFINITION( SummaryQmlViewStepFactory, registerPlugin< SummaryQmlViewStep >(); )
 
 SummaryQmlViewStep::SummaryQmlViewStep( QObject* parent )
     : Calamares::QmlViewStep( parent )
@@ -20,15 +20,12 @@ SummaryQmlViewStep::SummaryQmlViewStep( QObject* parent )
 }
 
 
-SummaryQmlViewStep::~SummaryQmlViewStep()
-{
-
-}
+SummaryQmlViewStep::~SummaryQmlViewStep() {}
 
 QString
 SummaryQmlViewStep::prettyName() const
 {
-    return tr( "Summary" );
+    return m_config->title();
 }
 
 
@@ -60,16 +57,17 @@ SummaryQmlViewStep::isAtEnd() const
 }
 
 
-QList< Calamares::job_ptr >
+Calamares::JobList
 SummaryQmlViewStep::jobs() const
 {
-    return QList< Calamares::job_ptr >();
+    return {};
 }
 
 
 void
 SummaryQmlViewStep::onActivate()
 {
-    m_config->init();
+    // Collect the steps before this one: those need to have their
+    // summary (text or widget) displayed.
+    m_config->collectSummaries( this );
 }
-
