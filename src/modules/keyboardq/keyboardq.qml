@@ -22,12 +22,20 @@ Item {
     width: 800 //parent.width
     height: 600
 
-    property var langXml: ["en", "fr", "de", "ru", "es"]
-    property var ruXml: ["Armeni", "Azerba", "Belaru", "Russian"]
-    property var frXml: ["Belgia", "Canada", "French"]
-    property var enXml: ["Englis"]
+    property var langXml: ["de", "en", "es", "fr", "ru",]
+    property var ruXml: ["Azerba", "Belaru", "Kazakh", "Kyrgyz", "Mongol",
+        "Russia", "Tajik", "Ukrain"]
+    property var frXml: ["Belgia","French", "Wolof"]
+    property var enXml: ["Englis", "Irish", "Lithua", "Maori"]
     property var esXml: ["Spanis"]
     property var deXml: ["German"]
+    property var ptXml: ["Portug"]
+    property var scanXml: ["Danish", "Finnis", "Norweg", "Swedis"]
+    property var afganiXml: ["Afghan"]
+    property var genericXml: ["Armeni", "Bulgar", "Dutch", "Estoni", "Icelan",
+        "Italia", "Latvia", "Maltes", "Moldav", "Romani", "Swahil"]
+    property var generic_qzXml: ["Albani", "Bosnia", "Croati", "Czech", "Hungar",
+        "Luxemb", "Monten", "Polish", "Serbia", "Sloven", "Slovak"]
 
     property var keyIndex: Global.value("locale")
 
@@ -421,10 +429,15 @@ Item {
             height: parent.height / 3
             anchors.bottom: parent.bottom
             source: langXml.includes(keyIndex) ? (keyIndex + ".xml") :
+                afganiXml.includes(keyIndex) ? "afgani.xml" :
+                scanXml.includes(keyIndex) ? "scan.xml" :
+                genericXml.includes(keyIndex) ? "generic.xml" :
+                generic_qzXml.includes(keyIndex) ? "generic.xml" :
                 deXml.includes(keyIndex) ? "de.xml" :
                 enXml.includes(keyIndex) ? "en.xml" :
                 esXml.includes(keyIndex) ? "es.xml" :
                 frXml.includes(keyIndex) ? "fr.xml" :
+                ptXml.includes(keyIndex) ? "pt.xml" :
                 ruXml.includes(keyIndex) ? "ru.xml" :"empty.xml"
             rows: 4
             columns: 10
