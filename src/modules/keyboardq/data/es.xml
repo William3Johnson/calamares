@@ -12,8 +12,8 @@
         <Key labels = "i|" ratio = ".7"/>
         <Key labels = "o|" ratio = ".7"/>
         <Key labels = "p|" ratio = ".7"/>
-        <Key labels = "[|{" ratio = ".7"/>
-        <Key labels = "]|}" ratio = ".7"/>
+        <Key labels = "|" ratio = ".7"/>
+        <Key labels = "|" ratio = ".7"/>
         <Key labels = " |" ratio = ".8"/>
     </Row>
     <Row>
@@ -27,8 +27,8 @@
         <Key labels = "j|" ratio = ".7"/>
         <Key labels = "k|" ratio = ".7"/>
         <Key labels = "l|" ratio = ".7"/>
-        <Key labels = "ñ|Ñ" ratio = ".7"/>
-        <Key labels = "'|''" ratio = ".7"/>
+        <Key labels = "ñ|" ratio = ".7"/>
+        <Key labels = " |" ratio = ".7"/>
         <Key labels = "↵!enter" icon = "enter.svg" ratio = "1"/>
     </Row>
     <Row>
@@ -41,8 +41,8 @@
         <Key labels = "n|" ratio = ".7"/>
         <Key labels = "m|" ratio = ".7"/>
         <Key labels = "," ratio = ".7"/>
-        <Key labels = ".|>" ratio = ".7"/>
-        <Key labels = "/|?" ratio = ".7"/>
+        <Key labels = ".|" ratio = ".7"/>
+        <Key labels = "-|" ratio = ".7"/>
         <Key labels = "&#8593;!shift" ratio = "1.1" icon = "shift.svg" checkable = "true"/>
         <Key labels = "⌫!backspace" icon = "backspace.svg" ratio = ".7"/>
     </Row>

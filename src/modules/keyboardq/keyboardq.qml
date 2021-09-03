@@ -23,6 +23,7 @@ Item {
     height: 600
 
     property var langXml: ["de", "en", "es", "fr", "ru",]
+    property var arXml: ["Arabic"]
     property var ruXml: ["Azerba", "Belaru", "Kazakh", "Kyrgyz", "Mongol",
         "Russia", "Tajik", "Ukrain"]
     property var frXml: ["Belgia","French", "Wolof"]
@@ -33,7 +34,7 @@ Item {
     property var scanXml: ["Danish", "Finnis", "Norweg", "Swedis"]
     property var afganiXml: ["Afghan"]
     property var genericXml: ["Armeni", "Bulgar", "Dutch", "Estoni", "Icelan",
-        "Italia", "Latvia", "Maltes", "Moldav", "Romani", "Swahil"]
+        "Italia", "Latvia", "Maltes", "Moldav", "Romani", "Swahil", "Turkis"]
     property var generic_qzXml: ["Albani", "Bosnia", "Croati", "Czech", "Hungar",
         "Luxemb", "Monten", "Polish", "Serbia", "Sloven", "Slovak"]
 
@@ -433,6 +434,7 @@ Item {
                 scanXml.includes(keyIndex) ? "scan.xml" :
                 genericXml.includes(keyIndex) ? "generic.xml" :
                 generic_qzXml.includes(keyIndex) ? "generic.xml" :
+                arXml.includes(keyIndex) ? "ar.xml" :
                 deXml.includes(keyIndex) ? "de.xml" :
                 enXml.includes(keyIndex) ? "en.xml" :
                 esXml.includes(keyIndex) ? "es.xml" :
