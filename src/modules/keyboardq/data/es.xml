@@ -12,8 +12,8 @@
         <Key labels = "i|" ratio = ".7"/>
         <Key labels = "o|" ratio = ".7"/>
         <Key labels = "p|" ratio = ".7"/>
-        <Key labels = "|" ratio = ".7"/>
-        <Key labels = "|" ratio = ".7"/>
+        <Key labels = " |" ratio = ".7"/>
+        <Key labels = " |" ratio = ".7"/>
         <Key labels = " |" ratio = ".8"/>
     </Row>
     <Row>

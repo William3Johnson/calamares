@@ -39,6 +39,7 @@ Item {
         "Luxemb", "Monten", "Polish", "Serbia", "Sloven", "Slovak"]
 
     property var keyIndex: Global.value("locale")
+    property var previewButton: true
 
     Rectangle {
         id: backgroundItem
@@ -155,6 +156,7 @@ Item {
 
                         icon.name: "view-preview"
                         text: qsTr("Preview")
+                        visible: previewButton
                         onClicked: keyIndex = Global.value("locale")
                     }
                     Button {
@@ -278,7 +280,10 @@ Item {
 
                             icon.name: "go-previous"
                             text: qsTr("Models")
-                            onClicked: stack.pop()
+                            onClicked: {
+                                stack.pop()
+                                previewButton = false
+                            }
                         }
 
                         Button {
