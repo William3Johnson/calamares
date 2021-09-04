@@ -27,16 +27,17 @@ Item {
     property var ruXml: ["Azerba", "Belaru", "Kazakh", "Kyrgyz", "Mongol",
         "Russia", "Tajik", "Ukrain"]
     property var frXml: ["Belgia","French", "Wolof"]
-    property var enXml: ["Englis", "Irish", "Lithua", "Maori"]
+    property var enXml: ["Bikol", "Chines", "Englis", "Irish", "Lithua", "Maori"]
     property var esXml: ["Spanis"]
     property var deXml: ["German"]
     property var ptXml: ["Portug"]
     property var scanXml: ["Danish", "Finnis", "Norweg", "Swedis"]
     property var afganiXml: ["Afghan"]
     property var genericXml: ["Armeni", "Bulgar", "Dutch", "Estoni", "Icelan",
-        "Italia", "Latvia", "Maltes", "Moldav", "Romani", "Swahil", "Turkis"]
+        "Indone", "Italia", "Latvia", "Maltes", "Moldav", "Romani", "Swahil", "Turkis"]
     property var generic_qzXml: ["Albani", "Bosnia", "Croati", "Czech", "Hungar",
         "Luxemb", "Monten", "Polish", "Serbia", "Sloven", "Slovak"]
+    property var generic_azXml: ["Bambar"]
 
     property var keyIndex: Global.value("locale")
     property var previewButton: true
@@ -262,6 +263,7 @@ Item {
                                 list2.model.currentIndex = index
                                 keyIndex = label2.text.substring(0,6)
                                 console.log("log " + label2.text.substring(0,6))
+                                previewButton = false
                                 stack.push(variantsList)
                                 list2.positionViewAtIndex(index, ListView.Center)
                             }
@@ -280,10 +282,7 @@ Item {
 
                             icon.name: "go-previous"
                             text: qsTr("Models")
-                            onClicked: {
-                                stack.pop()
-                                previewButton = false
-                            }
+                            onClicked: stack.pop()
                         }
 
                         Button {
