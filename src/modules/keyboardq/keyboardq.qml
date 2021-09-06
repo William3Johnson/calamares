@@ -47,6 +47,8 @@ Item {
         "Luxemb", "Monten", "Polish", "Serbia", "Sloven", "Slovak"]
     property var generic_azXml: ["Bambar"]
 
+    property var keyIndex: []
+
     Rectangle {
         id: backgroundItem
         anchors.fill: parent
