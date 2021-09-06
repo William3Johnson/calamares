@@ -1,3 +1,9 @@
+<!-- === This file is part of Calamares - <https://github.com/calamares> ===
+
+ *   Copyright 2021, Anke Boersma <demm@kaosx.us>
+ *
+ *   Calamares is Free Software: see the License-Identifier above. -->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <Keyboard>
     <Row>
@@ -12,8 +18,8 @@
         <Key labels = "i|" ratio = ".7"/>
         <Key labels = "o|" ratio = ".7"/>
         <Key labels = "p|" ratio = ".7"/>
-        <Key labels = "|" ratio = ".7"/>
-        <Key labels = "|" ratio = ".7"/>
+        <Key labels = " |" ratio = ".7"/>
+        <Key labels = " |" ratio = ".7"/>
         <Key labels = " |" ratio = "1.0"/>
     </Row>
     <Row>
@@ -27,9 +33,9 @@
         <Key labels = "j|" ratio = ".7"/>
         <Key labels = "k|" ratio = ".7"/>
         <Key labels = "l|" ratio = ".7"/>
-        <Key labels = "|" ratio = ".7"/>
-        <Key labels = "|" ratio = ".7"/>
-        <Key labels = "|" ratio = ".7"/>
+        <Key labels = " |" ratio = ".7"/>
+        <Key labels = " |" ratio = ".7"/>
+        <Key labels = " |" ratio = ".7"/>
         <Key labels = "↵!enter" icon = "enter.svg" ratio = ".7"/>
     </Row>
     <Row>

@@ -1,3 +1,9 @@
+<!-- === This file is part of Calamares - <https://github.com/calamares> ===
+
+ *   Copyright 2021, Anke Boersma <demm@kaosx.us>
+ *
+ *   Calamares is Free Software: see the License-Identifier above. -->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <Keyboard>
     <Row>
