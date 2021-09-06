@@ -34,7 +34,7 @@ Item {
     property var arXml: ["Arabic"]
     property var ruXml: ["Azerba", "Belaru", "Kazakh", "Kyrgyz", "Mongol",
         "Russia", "Tajik", "Ukrain"]
-    property var frXml: ["Belgia","French", "Wolof"]
+    property var frXml: ["Bambar", "Belgia","French", "Wolof"]
     property var enXml: ["Bikol", "Chines", "Englis", "Irish", "Lithua", "Maori"]
     property var esXml: ["Spanis"]
     property var deXml: ["German"]
@@ -43,9 +43,9 @@ Item {
     property var afganiXml: ["Afghan"]
     property var genericXml: ["Armeni", "Bulgar", "Dutch", "Estoni", "Icelan",
         "Indone", "Italia", "Latvia", "Maltes", "Moldav", "Romani", "Swahil", "Turkis"]
-    property var generic_qzXml: ["Albani", "Bosnia", "Croati", "Czech", "Hungar",
+    property var genericQzXml: ["Albani", "Bosnia", "Croati", "Czech", "Hungar",
         "Luxemb", "Monten", "Polish", "Serbia", "Sloven", "Slovak"]
-    property var generic_azXml: ["Bambar"]
+    property var genericAzXml: []
 
     property var keyIndex: []
 
@@ -286,7 +286,7 @@ Item {
                 afganiXml.includes(keyIndex) ? "afgani.xml" :
                 scanXml.includes(keyIndex) ? "scan.xml" :
                 genericXml.includes(keyIndex) ? "generic.xml" :
-                generic_qzXml.includes(keyIndex) ? "generic_qz.xml" :
+                genericQzXml.includes(keyIndex) ? "generic_qz.xml" :
                 arXml.includes(keyIndex) ? "ar.xml" :
                 deXml.includes(keyIndex) ? "de.xml" :
                 enXml.includes(keyIndex) ? "en.xml" :
