@@ -206,6 +206,11 @@ def install_systemd_boot(boot_loader):
 
 def run():
     boot_loader = libcalamares.globalstorage.value("bootLoader")
+    # Packagechooser outcome
+    packages = libcalamares.globalstorage.value("packagechooser_packagechooserq")
+
+    if packages != 'systemd-boot':
+        return None
 
     install_systemd_boot(boot_loader)
     return None

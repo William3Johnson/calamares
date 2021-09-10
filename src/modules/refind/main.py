@@ -73,6 +73,11 @@ def install_refind(boot_loader):
 
 def run():
     boot_loader = libcalamares.globalstorage.value("bootLoader")
+    # Packagechooser outcome
+    packages = libcalamares.globalstorage.value("packagechooser_packagechooserq")
+
+    if packages != 'refind':
+        return None
 
     install_refind(boot_loader)
     return None

@@ -50,6 +50,11 @@ def install_grub(boot_loader):
 def run():
     fw_type = libcalamares.globalstorage.value("firmwareType")
     boot_loader = libcalamares.globalstorage.value("bootLoader")
+    # Packagechooser outcome
+    packages = libcalamares.globalstorage.value("packagechooser_packagechooserq")
+
+    if packages != 'grub':
+        return None
 
     if libcalamares.globalstorage.value("bootLoader") is None and fw_type != "efi":
         libcalamares.utils.debug('no bootloader install')
