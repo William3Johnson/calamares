@@ -69,7 +69,7 @@ def install_refind(boot_loader):
     subprocess.call(
         ["sgdisk", "--typecode={!s}:EF00".format(boot_p), "{!s}".format(device)])
     subprocess.call(
-        ["refind-install", "--root={!s}/boot".format(install_path)])
+        ["refind-install", "--root", "{!s}".format(install_path)])
 
 def run():
 
