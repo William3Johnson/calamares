@@ -72,7 +72,6 @@ def install_refind(boot_loader):
         ["refind-install", "--root", "{!s}".format(install_path)])
 
 def run():
-
     boot_loader = libcalamares.globalstorage.value("bootLoader")
 
     install_refind(boot_loader)

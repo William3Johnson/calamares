@@ -205,7 +205,6 @@ def install_systemd_boot(boot_loader):
 
 
 def run():
-
     boot_loader = libcalamares.globalstorage.value("bootLoader")
 
     install_systemd_boot(boot_loader)
