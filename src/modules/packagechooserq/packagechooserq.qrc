@@ -1,8 +1,11 @@
 <RCC>
     <qresource>
         <file>packagechooserq.qml</file>
+        <file>packagechooserq@bootchoice.qml</file>
         <file>images/libreoffice.jpg</file>
         <file>images/no-selection.png</file>
         <file>images/plasma.png</file>
+        <file>images/refind.png</file>
+        <file>images/systemd_boot.png</file>
     </qresource>
 </RCC>
