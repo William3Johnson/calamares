@@ -21,11 +21,11 @@ if( Qt5Xml_FOUND )
     target_link_libraries(txload Qt5::Xml)
 endif()
 
-install_calamares_gettext_translations( python
-    SOURCE_DIR ${CMAKE_SOURCE_DIR}/lang/python
-    FILENAME python.mo
-    RENAME calamares-python.mo
-)
+#install_calamares_gettext_translations( python
+#    SOURCE_DIR ${CMAKE_SOURCE_DIR}/lang/python
+#    FILENAME python.mo
+#    RENAME calamares-python.mo
+#)
 
 ### TRANSLATIONS
 #
