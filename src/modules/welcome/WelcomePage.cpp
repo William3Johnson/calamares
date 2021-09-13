@@ -137,7 +137,7 @@ WelcomePage::setupButton( Button role, const QString& url )
         break;
     case Button::KnownIssues:
         button = ui->knownIssuesButton;
-        icon = CalamaresUtils::Relase;
+        icon = CalamaresUtils::Release;
         break;
     case Button::ReleaseNotes:
         button = ui->releaseNotesButton;
