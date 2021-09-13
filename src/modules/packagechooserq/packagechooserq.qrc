@@ -1,7 +1,10 @@
 <RCC>
     <qresource>
+        <file>BIOS.qml</file>
+        <file>UEFI.qml</file>
         <file>packagechooserq.qml</file>
         <file>packagechooserq@bootchoice.qml</file>
+        <file>images/grub.png</file>
         <file>images/libreoffice.jpg</file>
         <file>images/no-selection.png</file>
         <file>images/plasma.png</file>
