@@ -91,11 +91,5 @@ PackageChooserQmlViewStep::setConfigurationMap( const QVariantMap& configuration
         m_labelName = new CalamaresUtils::Locale::TranslatedString( qmlLabel, "label" );
     }
 
-    //if ( configurationMap.contains( "prettyName" )
-    //     && configurationMap.value( "prettyName" ).type() == QVariant::String )
-    //{
-    //    m_prettyName = configurationMap.value( "prettyName" ).toString();
-    //}
-
     Calamares::QmlViewStep::setConfigurationMap( configurationMap );  // call parent implementation last
 }
