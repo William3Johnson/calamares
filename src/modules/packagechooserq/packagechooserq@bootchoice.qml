@@ -30,7 +30,6 @@ Item {
         }
 
         Loader {
-            //id: image
             anchors.centerIn: parent
             source: Global.value("firmwareType") === "efi" ? "UEFI.qml" : "BIOS.qml"
             //source: "BIOS.qml"

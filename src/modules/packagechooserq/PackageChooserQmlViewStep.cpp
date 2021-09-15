@@ -29,7 +29,7 @@ PackageChooserQmlViewStep::PackageChooserQmlViewStep( QObject* parent )
 QString
 PackageChooserQmlViewStep::prettyName() const
 {
-    return m_prettyName;
+    return m_labelName ? m_labelName->get() : tr( "Packages" );
 }
 
 QString
@@ -82,11 +82,20 @@ PackageChooserQmlViewStep::setConfigurationMap( const QVariantMap& configuration
 {
     m_config->setDefaultId( moduleInstanceKey() );
     m_config->setConfigurationMap( configurationMap );
-    Calamares::QmlViewStep::setConfigurationMap( configurationMap );  // call parent implementation last
 
-    if ( configurationMap.contains( "prettyName" )
-         && configurationMap.value( "prettyName" ).type() == QVariant::String )
+    bool qmlLabel_ok = false;
+    auto qmlLabel = CalamaresUtils::getSubMap( configurationMap, "qmlLabel", qmlLabel_ok );
+
+    if ( qmlLabel.contains( "label" ) )
     {
-        m_prettyName = configurationMap.value( "prettyName" ).toString();
+        m_labelName = new CalamaresUtils::Locale::TranslatedString( qmlLabel, "label" );
     }
+
+    //if ( configurationMap.contains( "prettyName" )
+    //     && configurationMap.value( "prettyName" ).type() == QVariant::String )
+    //{
+    //    m_prettyName = configurationMap.value( "prettyName" ).toString();
+    //}
+
+    Calamares::QmlViewStep::setConfigurationMap( configurationMap );  // call parent implementation last
 }
