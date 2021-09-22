@@ -37,6 +37,61 @@ def get_uuid():
             return partition["uuid"]
     return ""
 
+def update_conf(uuid, conf_path):
+    partitions = libcalamares.globalstorage.value("partitions")
+
+    kernel_params = ["quiet systemd.show_status=0"]
+    swap = ""
+    swap_luks = ""
+    cryptdevice_params = []
+    btrfs_params = ""
+
+    for partition in partitions:
+        if partition["fs"] == "linuxswap" and not "luksMapperName" in partition:
+            swap = partition["uuid"]
+
+        if partition["fs"] == "linuxswap" and "luksMapperName" in partition:
+            swap_luks = partition["luksMapperName"]
+
+        if partition["mountPoint"] == "/" and "luksMapperName" in partition:
+            cryptdevice_params = [
+                "cryptdevice=UUID={!s}:{!s}".format(partition["luksUuid"],
+                                                    partition["luksMapperName"]),
+                "root=/dev/mapper/{!s}".format(partition["luksMapperName"]),
+                "resume=/dev/mapper/{!s}".format(partition["luksMapperName"])
+            ]
+
+        # rEFInd with a BTRFS root filesystem needs to be told
+        # about the root subvolume.
+        if partition["mountPoint"] == "/" and partition["fs"] == "btrfs":
+            btrfs_params = "rootflags=subvol=@"
+
+    if cryptdevice_params:
+        kernel_params.extend(cryptdevice_params)
+    else:
+        kernel_params.append("root=UUID={!s}".format(uuid))
+
+    if swap:
+        kernel_params.append("resume=UUID={!s}".format(swap))
+    if swap_luks:
+        kernel_params.append("resume=/dev/mapper/{!s}".format(swap_luks))
+    if btrfs_params:
+        print('BTRFS')
+        kernel_params.append(btrfs_params)
+
+    lines = ['"Boot with standard options"    "rw {!s}"\n'.format(" ".join(kernel_params))]
+
+    with open(conf_path, "r") as refind_file:
+        filedata = [x.strip() for x in refind_file.readlines()]
+
+    with open(conf_path, 'w') as refind_file:
+        for line in filedata:
+            if line.startswith('"Boot with standard options"'):
+            line = '"Boot with standard options"    "rw {!s}"'.format(" ".join(kernel_params))
+            refind_file.write(line + "\n")
+    refind_file.close()
+
+
 def install_refind(boot_loader):
     install_path = libcalamares.globalstorage.value("rootMountPoint")
     uuid = get_uuid()
@@ -70,6 +125,7 @@ def install_refind(boot_loader):
         ["sgdisk", "--typecode={!s}:EF00".format(boot_p), "{!s}".format(device)])
     subprocess.call(
         ["refind-install", "--root", "{!s}".format(install_path)])
+    update_conf(uuid, conf_path)
 
 def run():
     boot_loader = libcalamares.globalstorage.value("bootLoader")
