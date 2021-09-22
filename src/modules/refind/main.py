@@ -79,15 +79,13 @@ def update_conf(uuid, conf_path):
         print('BTRFS')
         kernel_params.append(btrfs_params)
 
-    lines = ['"Boot with standard options"    "rw {!s}"\n'.format(" ".join(kernel_params))]
-
     with open(conf_path, "r") as refind_file:
         filedata = [x.strip() for x in refind_file.readlines()]
 
     with open(conf_path, 'w') as refind_file:
         for line in filedata:
             if line.startswith('"Boot with standard options"'):
-            line = '"Boot with standard options"    "rw {!s}"'.format(" ".join(kernel_params))
+                line = '"Boot with standard options"    "rw {!s}"'.format(" ".join(kernel_params))
             refind_file.write(line + "\n")
     refind_file.close()
 
@@ -95,6 +93,7 @@ def update_conf(uuid, conf_path):
 def install_refind(boot_loader):
     install_path = libcalamares.globalstorage.value("rootMountPoint")
     uuid = get_uuid()
+    conf_path = os.path.join(install_path, "boot/refind_linux.conf")
     partitions = libcalamares.globalstorage.value("partitions")
     device = ""
 
