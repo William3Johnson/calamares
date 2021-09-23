@@ -13,7 +13,6 @@
 #   Calamares is Free Software: see the License-Identifier above.
 #
 
-import pwd
 import os
 import shutil
 
@@ -36,7 +35,7 @@ def run():
     """
     root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
     user = libcalamares.globalstorage.value("username")
-    live_user = pwd.getpwuid(os.getuid())[0]
+    live_user = os.getlogin()
 
     if root_mount_point is None:
         libcalamares.utils.warning("rootMountPoint is empty, {!s}".format(root_mount_point))
