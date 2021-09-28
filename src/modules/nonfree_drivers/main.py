@@ -34,7 +34,7 @@ def run():
     license = libcalamares.globalstorage.value("packagechooser_licenseq")
     print(license)
 
-    if license == 'disagree'
+    if not license or license == 'disagree':
         print('License declined')
         return None
 
