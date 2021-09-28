@@ -31,10 +31,10 @@ def run():
     """ Setup graphics drivers and sound """
 
     install_path = libcalamares.globalstorage.value("rootMountPoint")
-    license = libcalamares.globalstorage.value("licenseAgree")
+    license = libcalamares.globalstorage.value("packagechooser_licenseq")
     print(license)
 
-    if not license:
+    if license == 'disagree'
         print('License declined')
         return None
 

@@ -72,7 +72,7 @@ import QtQuick.Layouts 1.3
                         }
                         else {
                             config.packageChoice = "systemd-boot"
-                            print( config.pkgc )
+                            print( config.packageChoice )
                         }
                     }
                 }
