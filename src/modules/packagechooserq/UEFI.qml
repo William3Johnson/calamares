@@ -19,6 +19,10 @@ import QtQuick.Layouts 1.3
             anchors.centerIn: parent
             spacing: 5
 
+            ButtonGroup {
+                id: switchGroup
+            }
+
             Rectangle {
                 //id: rectangle
                 width: 700

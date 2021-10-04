@@ -19,6 +19,14 @@ import QtQuick.Layouts 1.3
             anchors.centerIn: parent
             spacing: 5
 
+            ButtonGroup {
+                id: switchGroup
+            }
+
+            Component.onCompleted: {
+                config.packageChoice = "grub"
+            }
+
             Rectangle {
                 //id: rectangle
                 width: 700
@@ -44,7 +52,7 @@ import QtQuick.Layouts 1.3
                     width: 187
                     height: 14
                     text: qsTr("GRUB")
-                    checked: false
+                    checked: true
                     hoverEnabled: true
                     ButtonGroup.group: switchGroup
 
@@ -150,7 +158,7 @@ import QtQuick.Layouts 1.3
                     y: 25
                     height: 100
                     fillMode: Image.PreserveAspectFit
-                    source: "images/grub.png"
+                    source: "images/no_grub.png"
                 }
             }
 
@@ -162,7 +170,7 @@ import QtQuick.Layouts 1.3
                 Text {
                     height: 25
                     anchors.centerIn: parent
-                    text: qsTr("Please select a bootloader option for your install.")
+                    text: qsTr("Please select a bootloader option for your install, or leave the default option, <strong>GRUB 2</strong>.")
                     font.pointSize: 10
                     wrapMode: Text.WordWrap
                 }
