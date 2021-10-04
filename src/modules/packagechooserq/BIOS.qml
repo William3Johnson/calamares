@@ -44,7 +44,7 @@ import QtQuick.Layouts 1.3
                     width: 187
                     height: 14
                     text: qsTr("GRUB")
-                    checked: true
+                    checked: false
                     hoverEnabled: true
                     ButtonGroup.group: switchGroup
 
@@ -162,7 +162,7 @@ import QtQuick.Layouts 1.3
                 Text {
                     height: 25
                     anchors.centerIn: parent
-                    text: qsTr("Please select a bootloader option for your install, or leave the default option, <strong>GRUB 2</strong>.")
+                    text: qsTr("Please select a bootloader option for your install.")
                     font.pointSize: 10
                     wrapMode: Text.WordWrap
                 }

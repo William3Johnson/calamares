@@ -18,7 +18,7 @@ Item {
     width:  parent.width
     height: parent.height
 
-    //property var config.PackageChoice: Global.value("firmwareType") === "efi" ? "systemd-bot" : "grub"
+    //property var config.PackageChoice: Global.value("firmwareType") === "efi" ? "systemd-boot" : "grub"
     //property var grubEntry: (Global.value("firmwareType") === "bios") ?
 
     Rectangle {
