@@ -102,22 +102,22 @@
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="102"/>
         <source>Crashes Calamares, so that Dr. Konqui can look at it.</source>
-        <translation type="unfinished"/>
+        <translation>Dr. Konqui द्वारा जाँच के लिए Calamares की कार्यप्रणाली निरस्त करने हेतु।</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="115"/>
         <source>Reloads the stylesheet from the branding directory.</source>
-        <translation type="unfinished"/>
+        <translation>ब्रांड डायरेक्टरी से शैली पत्र पुनः लोड करने हेतु।</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="141"/>
         <source>Uploads the session log to the configured pastebin.</source>
-        <translation type="unfinished"/>
+        <translation>सत्र लॉग फाइल को विन्यस्त पेस्टबिन साइट पर अपलोड करने हेतु।</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="144"/>
         <source>Send Session Log</source>
-        <translation type="unfinished"/>
+        <translation>सत्र लॉग फाइल भेजें</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="118"/>
@@ -127,7 +127,7 @@
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="128"/>
         <source>Displays the tree of widget names in the log (for stylesheet debugging).</source>
-        <translation type="unfinished"/>
+        <translation>(शैली दोषमार्जन हेतु) लॉग फाइल में विजेट नाम प्रदर्शन।</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="131"/>
@@ -318,7 +318,11 @@
 %1
 
 Link copied to clipboard</source>
-        <translation type="unfinished"/>
+        <translation>यहाँ इंस्टॉल की लॉग फ़ाइल पेस्ट की गई
+
+%1
+
+लिंक को क्लिपबोर्ड पर कॉपी किया गया</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/Paste.cpp" line="170"/>
@@ -498,17 +502,17 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="32"/>
         <source>Set filesystem label on %1.</source>
-        <translation type="unfinished"/>
+        <translation>%1 पर फाइल सिस्टम उपनाम सेट करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="39"/>
         <source>Set filesystem label &lt;strong&gt;%1&lt;/strong&gt; to partition &lt;strong&gt;%2&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>फाइल सिस्टम उपनाम &lt;strong&gt;%1&lt;/strong&gt; को विभाजन &lt;strong&gt;%2&lt;/strong&gt; पर सेट करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="70"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>इंस्टॉलर डिस्क &apos;%1&apos; पर विभाजन तालिका अपडेट करने में विफल रहा।</translation>
     </message>
 </context>
 <context>
@@ -829,12 +833,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="230"/>
         <source>Your username must start with a lowercase letter or underscore.</source>
-        <translation>उपयोक्ता नाम का आरंभ केवल लोअरकेस अक्षर या अंडरस्कोर(-) से ही करें।</translation>
+        <translation>उपयोक्ता नाम का आरंभ केवल लोअरकेस अक्षर या अंडरस्कोर से ही करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="234"/>
         <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
-        <translation>केवल लोअरकेस अक्षर, अंक, अंडरस्कोर(_) व हाइफ़न(-) ही स्वीकार्य हैं।</translation>
+        <translation>केवल लोअरकेस अक्षर, अंक, अंडरस्कोर व हाइफ़न ही स्वीकार्य हैं।</translation>
     </message>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="279"/>
@@ -904,12 +908,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/packagechooser/Config.cpp" line="86"/>
         <source>Package Selection</source>
-        <translation type="unfinished"/>
+        <translation>पैकेज चयन</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/Config.cpp" line="88"/>
         <source>Please pick a product from the list. The selected product will be installed.</source>
-        <translation type="unfinished"/>
+        <translation>सूची से वस्तु विशेष का चयन करें। चयनित वस्तु इंस्टॉल होगी।</translation>
     </message>
 </context>
 <context>
@@ -957,12 +961,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="231"/>
         <source>Label for the filesystem</source>
-        <translation type="unfinished"/>
+        <translation>फाइल सिस्टम हेतु उपनाम</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="241"/>
         <source>FS Label:</source>
-        <translation type="unfinished"/>
+        <translation>फाइल सिस्टम उपनाम :</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="165"/>
@@ -1305,12 +1309,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="186"/>
         <source>Label for the filesystem</source>
-        <translation type="unfinished"/>
+        <translation>फाइल सिस्टम हेतु उपनाम</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="196"/>
         <source>FS Label:</source>
-        <translation type="unfinished"/>
+        <translation>फाइल सिस्टम उपनाम :</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.cpp" line="291"/>
@@ -1776,7 +1780,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/libcalamares/locale/Tests.cpp" line="273"/>
         <source>Quit</source>
-        <translation type="unfinished"/>
+        <translation>बंद करें</translation>
     </message>
 </context>
 <context>
@@ -1903,7 +1907,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="41"/>
         <source>Select your preferred Region, or use the default settings.</source>
-        <translation type="unfinished"/>
+        <translation>इच्छित क्षेत्र चुनें या फिर डिफ़ॉल्ट सेटिंग्स उपयोग करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/Offline.qml" line="98"/>
@@ -2262,7 +2266,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/packagechooser/PackageChooserPage.cpp" line="26"/>
         <source>Please pick a product from the list. The selected product will be installed.</source>
-        <translation>सूची में से वस्तु विशेष का चयन करें। चयनित वस्तु इंस्टॉल कर दी जाएगी।</translation>
+        <translation>सूची से वस्तु विशेष का चयन करें। चयनित वस्तु इंस्टॉल होगी।</translation>
     </message>
 </context>
 <context>
@@ -2270,7 +2274,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/packagechooserq/PackageChooserQmlViewStep.cpp" line="32"/>
         <source>Packages</source>
-        <translation type="unfinished"/>
+        <translation>पैकेज</translation>
     </message>
 </context>
 <context>
@@ -2291,7 +2295,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="74"/>
         <source>Keyboard Model:</source>
-        <translation>कुंजीपटल का मॉडल</translation>
+        <translation>कुंजीपटल मॉडल :</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="135"/>
@@ -2335,7 +2339,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="55"/>
         <source>Your Full Name</source>
-        <translation>आपके पूरा नाम</translation>
+        <translation>आपका पूरा नाम</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="148"/>
@@ -2467,7 +2471,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="304"/>
         <source>File System Label</source>
-        <translation type="unfinished"/>
+        <translation>फाइल सिस्टम उपनाम</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="306"/>
@@ -2490,7 +2494,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="26"/>
         <source>Storage de&amp;vice:</source>
-        <translation>डिवाइस (&amp;v):</translation>
+        <translation>संचय उपकरण (&amp;v):</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="55"/>
@@ -3841,37 +3845,38 @@ Output:
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="45"/>
         <source>LibreOffice is a powerful and free office suite, used by millions of people around the world. It includes several applications that make it the most versatile Free and Open Source office suite on the market.&lt;br/&gt;
                     Default option.</source>
-        <translation type="unfinished"/>
+        <translation>लिब्रे-ऑफिस एक सशक्त और निःशुल्क ऑफिस सॉफ्टवेयर है जिसका उपयोग दुनिया भर के लाखों लोग करते हैं। इसमें कई अनुप्रयोग सम्मिलित हैं जो इसे उपलब्ध विकल्पों में सबसे बहुमुखी निःशुल्क व मुक्त स्रोत ऑफिस सॉफ्टवेयर बनाते हैं।&lt;br/&gt;
+                    डिफ़ॉल्ट विकल्प।</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="59"/>
         <source>LibreOffice</source>
-        <translation type="unfinished"/>
+        <translation>लिब्रे-ऑफिस</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="112"/>
         <source>If you don&apos;t want to install an office suite, just select No Office Suite. You can always add one (or more) later on your installed system as the need arrives.</source>
-        <translation type="unfinished"/>
+        <translation>यदि आप ऑफिस सॉफ्टवेयर इंस्टॉल नहीं करना चाहते हैं, तो कोई ऑफिस सॉफ्टवेयर नहीं का विकल्प चुनें। आप आवश्यकता अनुसार बाद में अपने इंस्टॉल किए गए सिस्टम पर एक (या अधिक) ऐसे सॉफ्टवेयर जोड़ सकते हैं।</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="125"/>
         <source>No Office Suite</source>
-        <translation type="unfinished"/>
+        <translation>कोई ऑफिस सॉफ्टवेयर नहीं</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="181"/>
         <source>Create a minimal Plasma Desktop install, remove all extra applications and decide later on what you would like to add to your system. Examples of what won&apos;t be on such an install, there will be no Office Suite, no media players, no image viewer or print support.  It will be just a desktop, file browser, package manager, text editor and simple web-browser.</source>
-        <translation type="unfinished"/>
+        <translation>एक संक्षिप्त प्लाज़्मा डेस्कटॉप इंस्टॉल का सृजन करें, सभी अतिरिक्त अनुप्रयोग हटाएँ एवं इंस्टॉल उपरांत तय करें कि आप सिस्टम में कौन से सॉफ्टवेयर जोड़ना चाहते हैं। इस प्रकार के इंस्टॉल में उदाहरण के तौर पर कोई ऑफिस सॉफ्टवेयर, कोई मीडिया प्लेयर, कोई चित्र प्रदर्शक या प्रिंटर समर्थन नहीं होगा। इसमें केवल एक डेस्कटॉप, फाइल प्रबंधक, पैकेज प्रबंधक, लेख संपादक व सरल वेब-ब्राउज़र होगा।</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="194"/>
         <source>Minimal Install</source>
-        <translation type="unfinished"/>
+        <translation>संक्षिप्त इंस्टॉल</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="246"/>
         <source>Please select an option for your install, or use the default: LibreOffice included.</source>
-        <translation type="unfinished"/>
+        <translation>कृपया अपने इंस्टॉल हेतु एक विकल्प चुनें या फिर डिफ़ॉल्ट ही उपयोग करें : इसमें लिब्रे-ऑफिस सम्मिलित है।</translation>
     </message>
 </context>
 <context>
@@ -4078,7 +4083,7 @@ Output:
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="128"/>
         <source>Your username must start with a lowercase letter or underscore.</source>
-        <translation type="unfinished"/>
+        <translation>उपयोक्ता नाम का आरंभ केवल लोअरकेस अक्षर या अंडरस्कोर से ही करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="139"/>
@@ -4098,7 +4103,7 @@ Output:
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="183"/>
         <source>Only letter, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>केवल अक्षर, अंक, अंडरस्कोर व हाइफ़न ही स्वीकार्य हैं।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="194"/>
