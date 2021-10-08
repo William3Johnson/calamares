@@ -12,27 +12,27 @@
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="41"/>
         <source>GRUB 2, the GRand Unified Bootloader is the reference implementation of the Free Software Foundation&apos;s Multiboot Specification, which provides a user the choice to boot one of multiple operating systems installed on a computer.</source>
-        <translation type="unfinished"/>
+        <translation>GRUB2 (GRand Unified Bootloader) est l’implémentation de référence des spécifications multiboot de la Free Software Foundation. Elle fournit à l’utilisateur le choix du démarrage de plusieurs systèmes d’exploitation installés sur le système.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="54"/>
         <source>GRUB</source>
-        <translation type="unfinished"/>
+        <translation>GRUB</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="108"/>
         <source>No bootloader selected. Selecting no bootloader might result in an un-bootable system, if you don&apos;t already have a bootloader were you can add this install to.</source>
-        <translation type="unfinished"/>
+        <translation>Aucun chargeur de démarrage n’est sélectionné. La non-sélection d’un chargeur de démarrage peut rendre le système non amorçable si vous n’avez pas déjà un chargeur de démarrage sur lequel vous pouvez ajouter cette installation.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="121"/>
         <source>No bootloader</source>
-        <translation type="unfinished"/>
+        <translation>Aucun chargeur de démarrage</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="173"/>
         <source>Please select a bootloader option for your install, or leave the default option, &lt;strong&gt;GRUB 2&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez sélectionner une option de chargeur de démarrage pour votre installation ou laissez l’option par défaut, &lt;strong&gt;GRUB 2&lt;/strong&gt;.</translation>
     </message>
 </context>
 <context>
@@ -695,7 +695,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1671"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.&lt;br/&gt;Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;,&lt;br/&gt;either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Partitionnement manuel&lt;/strong&gt; &lt;br/&gt;Vous pouvez créer ou retailler les partitions vous-même.&lt;br/&gt; Une table de partitions GPT et &lt;strong&gt;une partition /boot en fat32 de 512Mo est idéqle pour les installations UEFI&lt;/strong&gt;, &lt;br/&gt;ou bien utilisez une partition existante  sans la formater ou créez-en une.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.ui" line="18"/>
@@ -838,7 +838,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/summary/Config.cpp" line="94"/>
         <source>Summary</source>
-        <translation type="unfinished"/>
+        <translation>Résumé</translation>
     </message>
     <message>
         <location filename="../src/modules/summary/Config.cpp" line="98"/>
@@ -898,7 +898,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/users/Config.cpp" line="548"/>
         <source>OK!</source>
-        <translation type="unfinished"/>
+        <translation>OK !</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="145"/>
@@ -953,12 +953,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/packagechooser/Config.cpp" line="177"/>
         <source>Install option: &lt;strong&gt;%1&lt;/strong&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Option d’installation : &lt;strong&gt;%1&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/Config.cpp" line="177"/>
         <source>None</source>
-        <translation type="unfinished"/>
+        <translation>Aucun</translation>
     </message>
 </context>
 <context>
@@ -2643,37 +2643,37 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="534"/>
         <source>EFI system partition configured incorrectly</source>
-        <translation type="unfinished"/>
+        <translation>La partition système EFI n’est pas configurée correctement.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="539"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;To configure an EFI system partition, go back and select or create a suitable filesystem.</source>
-        <translation type="unfinished"/>
+        <translation>Une partition système EFI est nécessaire pour démarrer %1. &lt;br/&gt; &lt;br/&gt;Pour configurer une partition système EFI, revenez en arrière et sélectionnez un système de fichiers adéquat.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="550"/>
         <source>The filesystem must be mounted on &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Le sytème de fichier doit être monté sur &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="556"/>
         <source>The filesystem must have type FAT32.</source>
-        <translation type="unfinished"/>
+        <translation>Le système de fichiers doit être de type FAT32.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="564"/>
         <source>The filesystem must be at least %1 MiB in size.</source>
-        <translation type="unfinished"/>
+        <translation>Le système de fichiers doit avoir au moins %1 Mio.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="570"/>
         <source>The filesystem must have flag &lt;strong&gt;%1&lt;/strong&gt; set.</source>
-        <translation type="unfinished"/>
+        <translation>Le système de fichiers doit posséder le flag &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="576"/>
         <source>You can continue without setting up an EFI system partition but your system may fail to start.</source>
-        <translation type="unfinished"/>
+        <translation>Vous pouvez continuer sans configurer une partition système EFI mais votre système ne pourra pas démarrer.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="593"/>
@@ -3361,27 +3361,27 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="28"/>
         <source>&amp;OK</source>
-        <translation type="unfinished"/>
+        <translation>&amp;OK</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="29"/>
         <source>&amp;Yes</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Oui</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="30"/>
         <source>&amp;No</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Non</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="31"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Annuler</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="32"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Fermer</translation>
     </message>
 </context>
 <context>
@@ -3389,37 +3389,37 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="37"/>
         <source>Systemd-boot is a UEFI boot manager which executes configured EFI images. The default entry is selected by a configured pattern (glob) or an on-screen menu and is simple to configure.</source>
-        <translation type="unfinished"/>
+        <translation>Systemd-bot est un gestionnaire de démarrage UEFI qui exécute des images EFI configurées. L’entrée par défaut est sélectionnée par un motif configuré (glob) ou peut être configuré depuis le menu à l’écran.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="50"/>
         <source>Systemd-boot</source>
-        <translation type="unfinished"/>
+        <translation>Systemd-boot</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="103"/>
         <source>rEFInd is a fork of the earlier rEFIt boot manager. It is designed to be platform-neutral and to simplify booting multiple operating systems.</source>
-        <translation type="unfinished"/>
+        <translation>rEFInd est un fork de l’ancien gestionnaire de démarrage rEFIt. Il est conçu pour être indépendant de la plateforme et pour simplifier le démarrage de plusieurs systèmes d’exploitation.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="116"/>
         <source>Refind</source>
-        <translation type="unfinished"/>
+        <translation>Refind</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="171"/>
         <source>No bootloader selected. Selecting no bootloader might result in an un-bootable system, if you don&apos;t already have a bootloader were you can add this install to.</source>
-        <translation type="unfinished"/>
+        <translation>Aucun chargeur de démarrage n’est sélectionné. La non-sélection d’un chargeur de démarrage peut rendre le système non amorçable si vous n’avez pas déjà un chargeur de démarrage sur lequel vous pouvez ajouter cette installation.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="184"/>
         <source>No bootloader</source>
-        <translation type="unfinished"/>
+        <translation>Aucun chargeur de démarrage</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="236"/>
         <source>Please select a bootloader option for your install, or leave the default option, &lt;strong&gt;systemd-boot&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez sélectionner une option de chargeur de démarrage pour votre installation ou laissez l’option par défaut, &lt;strong&gt;systemd-boot&lt;/strong&gt;.</translation>
     </message>
 </context>
 <context>
@@ -3640,7 +3640,17 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
                         development is sponsored by &lt;br/&gt;
                         &lt;a href='http://www.blue-systems.com/'&gt;Blue Systems&lt;/a&gt; -
                         Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt; &lt;br/&gt;
+&lt;strong&gt;%2&lt;br/&gt;
+pour %3&lt;/strong&gt; &lt;br/&gt;&lt;br/&gt;
+Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
+Copyright 2017-2020 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
+Merci à &lt;a href=&apos;https://calamares.io/team/&apos;&gt;l’équipe de Calamares&lt;/a&gt;
+et à &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;l’²équipe de traduction de KaOS&lt;/a&gt;. &lt;br/&gt; &lt;br/&gt;
+Le développement de &lt;a href=&apos;https://calamares.io/&apos;&gt;Calamares&lt;/a&gt;
+est sponsorisé par &lt;br/&gt;
+&lt;a href=&apos;http://www.blue-systems.com/&apos;&gt;Blue Systems&lt;/a&gt; - 
+Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/about.qml" line="96"/>
@@ -3717,18 +3727,20 @@ Les paramètres régionaux du système affectent le format des dates et des nomb
         <location filename="../src/modules/localeq/i18nw.qml" line="50"/>
         <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
                     The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Langues&lt;/h1&gt; &lt;/br&gt;
+Les paramètres régionaux du système affectent la langue et le jeu de caractères de certains éléments de l&apos;interface utilisateur de ligne de commande. La configuration actuelle est &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/i18nw.qml" line="124"/>
         <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
                     The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Paramètres régionaux&lt;/h1&gt; &lt;/br&gt;
+Les paramètres régionaux du système affectent le format des dates et des nombres. La configuration actuelle est &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/i18nw.qml" line="192"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Retour</translation>
     </message>
 </context>
 <context>
@@ -3736,12 +3748,12 @@ Les paramètres régionaux du système affectent le format des dates et des nomb
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
         <source>To activate keyboard preview, select a layout.</source>
-        <translation type="unfinished"/>
+        <translation>Pour activer l’aperçu du clavier, sélectionnez le modèle.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="86"/>
         <source>Keyboard Model:</source>
-        <translation type="unfinished"/>
+        <translation>Modèle de clavier :</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="254"/>
@@ -3751,7 +3763,7 @@ Les paramètres régionaux du système affectent le format des dates et des nomb
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="263"/>
         <source>Type here to test your keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez saisir ici pour tester votre clavier</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="179"/>
@@ -3809,48 +3821,48 @@ Les paramètres régionaux du système affectent le format des dates et des nomb
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="77"/>
         <source>Keyboard Selection</source>
-        <translation type="unfinished"/>
+        <translation>Sélection du clavier</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="93"/>
         <source>Click your preferred keyboard model to select layout and variant, or use the default one based on the detected hardware.</source>
-        <translation type="unfinished"/>
+        <translation>Cliquez sur votre modèle de clavier préféré pour sélectionner la disposition et la variante, ou utilisez celui par défaut en fonction du matériel détecté</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="111"/>
         <source>Keyboard Model:</source>
-        <translation type="unfinished"/>
+        <translation>Modèle de clavier :</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="244"/>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="476"/>
         <source>Layouts</source>
-        <translation type="unfinished"/>
+        <translation>Agencements</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="358"/>
         <source>Models</source>
-        <translation type="unfinished"/>
+        <translation>Modèles</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="365"/>
         <source>Variants</source>
-        <translation type="unfinished"/>
+        <translation>Variantes</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="381"/>
         <source>Keyboard Variant</source>
-        <translation type="unfinished"/>
+        <translation>Variante du clavier</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="398"/>
         <source>Variant keyboard model or use the default one based on the detected hardware.</source>
-        <translation type="unfinished"/>
+        <translation>Choisissez la variante du modèle de clavier ou utilisez celle par défaut, basée sur le matériel détecté.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="486"/>
         <source>Test your keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Testez votre clavier</translation>
     </message>
 </context>
 <context>
@@ -3956,12 +3968,15 @@ Option par défaut.</translation>
                     &lt;p&gt;In case non-free was selected, this installer will install proprietary packages that have&lt;br /&gt;
                     additional End User License Agreements (EULAs) attached to them.&lt;br /&gt;
                     Please review the End User License Agreements (EULAs).&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Accord de licence&lt;/h1&gt;
+&lt;p&gt;Si le pilote non libre a été sélectionné, cet installeur installera des paquets propriétaires nécessitant&lt;br /&gt;
+des contrats de licence utilisateur finaux (CLUF) supplémentaire rattachés.&lt;br /&gt;
+Veuillez consuter les contrats de licence utilisateur finaux.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq@licenseq.qml" line="61"/>
         <source>I accept the terms and conditions above</source>
-        <translation type="unfinished"/>
+        <translation>J’accepte les termes et les conditions ci-dessus</translation>
     </message>
 </context>
 <context>
@@ -4218,22 +4233,22 @@ Option par défaut.</translation>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="135"/>
         <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Seuls les lettres minuscules, les nombres, les tirets-bas et les traits d’union sont autorisés.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="143"/>
         <source>root is not allowed as username.</source>
-        <translation type="unfinished"/>
+        <translation>root n’est pas un nom d’utilisateur autorisé.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="197"/>
         <source>Only letters, numbers, underscore and hyphen are allowed, minimal of two characters.</source>
-        <translation type="unfinished"/>
+        <translation>Seuls les lettres, les chiffres, les tirets-bas sont autorisés, avec au minimum 2 caractères.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="205"/>
         <source>localhost is not allowed as hostname.</source>
-        <translation type="unfinished"/>
+        <translation>localhost n’est pas un nom d’hôte autorisé.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="300"/>
@@ -4271,67 +4286,67 @@ Option par défaut.</translation>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="48"/>
         <source>Pick your user name and credentials to login and perform admin tasks</source>
-        <translation type="unfinished"/>
+        <translation>Choisissez votre nom d’utilisateur et vos informations d’identification pour vous connecter et effectuer des tâches d’administrateur</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="64"/>
         <source>What is your name?</source>
-        <translation type="unfinished"/>
+        <translation>Quel est votre nom ?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="73"/>
         <source>Your Full Name</source>
-        <translation type="unfinished"/>
+        <translation>Votre nom complet</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="111"/>
         <source>What name do you want to use to log in?</source>
-        <translation type="unfinished"/>
+        <translation>Quel nom souhaitez-vous utiliser pour la connexion ?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="119"/>
         <source>Login Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom de connexion</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="146"/>
         <source>If more than one person will use this computer, you can create multiple accounts after installation.</source>
-        <translation type="unfinished"/>
+        <translation>Si plusieurs personnes utilisent cet ordinateur, vous pourrez créer plusieurs comptes après l&apos;installation.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="159"/>
         <source>Your username must start with a lowercase letter or underscore.</source>
-        <translation type="unfinished"/>
+        <translation>Votre nom d’utilisateur doit commencer par une lettre minuscule ou un tiret-bas.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="169"/>
         <source>Choose a root password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez saisir le mot de passe pour sécuriser votre compte</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="179"/>
         <source>Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Mot de passe root</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="197"/>
         <source>Repeat Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Répéter le mot de passe root</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="223"/>
         <source>Enter the same password twice, so that it can be checked for typing errors.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez entrer le même mot de passe deux fois, afin de vérifier qu&apos;ils n&apos;y ait pas d&apos;erreur de frappe.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="255"/>
         <source>Validate passwords quality</source>
-        <translation type="unfinished"/>
+        <translation>Valider la qualité du mot de passe</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="267"/>
         <source>Known issues</source>
-        <translation type="unfinished"/>
+        <translation>Problèmes connus</translation>
     </message>
 </context>
 <context>
@@ -4339,107 +4354,107 @@ Option par défaut.</translation>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="31"/>
         <source>Users</source>
-        <translation type="unfinished"/>
+        <translation>Utilisateurs</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="32"/>
         <source>Pick your user name and credentials to login and perform admin tasks</source>
-        <translation type="unfinished"/>
+        <translation>Choisissez votre nom d’utilisateur et vos informations d’identification pour vous connecter et effectuer des tâches d’administrateur</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="64"/>
         <source>What is your name?</source>
-        <translation type="unfinished"/>
+        <translation>Quel est votre nom ?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="71"/>
         <source>Your Full Name</source>
-        <translation type="unfinished"/>
+        <translation>Votre nom complet</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="88"/>
         <source>What name do you want to use to log in?</source>
-        <translation type="unfinished"/>
+        <translation>Quel nom souhaitez-vous utiliser pour la connexion ?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="89"/>
         <source>If more than one person will use this computer, you can create multiple accounts after installation.</source>
-        <translation type="unfinished"/>
+        <translation>Si plusieurs personnes utilisent cet ordinateur, vous pourrez créer plusieurs comptes après l&apos;installation.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="96"/>
         <source>Login Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom de connexion</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="115"/>
         <source>What is the name of this computer?</source>
-        <translation type="unfinished"/>
+        <translation>Quel est le nom de votre ordinateur ?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="116"/>
         <source>This name will be used if you make the computer visible to others on a network.</source>
-        <translation type="unfinished"/>
+        <translation>Ce nom sera utilisé pour rendre l&apos;ordinateur visible des autres sur le réseau.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="122"/>
         <source>Computer Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom de l’ordinateur</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="139"/>
         <source>Choose a password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez saisir le mot de passe pour sécuriser votre compte.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="140"/>
         <source>Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez entrer le même mot de passe deux fois afin de vérifier qu’il n&apos;y ait pas d&apos;erreur de frappe. Un bon mot de passe doit contenir un mélange de lettres, de nombres et de caractères de ponctuation, contenir au moins huit caractères et être changé à des intervalles réguliers.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="146"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>Mot de passe</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="168"/>
         <source>Repeat Password</source>
-        <translation type="unfinished"/>
+        <translation>Répéter le mot de passe</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="188"/>
         <source>Reuse user password as root password</source>
-        <translation type="unfinished"/>
+        <translation>Utiliser le mot de passe de l’utilisateur pour le compte root</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="201"/>
         <source>Choose a root password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez saisir le mot de passe pour sécuriser votre compte</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="207"/>
         <source>Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Mot de passe root</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="228"/>
         <source>Repeat Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Répéter le mot de passe root</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="249"/>
         <source>More options.</source>
-        <translation type="unfinished"/>
+        <translation>Plus d’options.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="255"/>
         <source>Validate passwords quality</source>
-        <translation type="unfinished"/>
+        <translation>Valider la qualité du mot de passe</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="264"/>
         <source>Log in automatically without asking for the password</source>
-        <translation type="unfinished"/>
+        <translation>Se connecter automatiquement sans demander de mot de passe</translation>
     </message>
 </context>
 <context>

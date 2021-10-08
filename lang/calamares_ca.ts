@@ -12,27 +12,27 @@
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="41"/>
         <source>GRUB 2, the GRand Unified Bootloader is the reference implementation of the Free Software Foundation&apos;s Multiboot Specification, which provides a user the choice to boot one of multiple operating systems installed on a computer.</source>
-        <translation type="unfinished"/>
+        <translation>El GRUB 2, el GRand Unified Bootloader, és la implementació de referència de l’Especificació d&apos;arrencades diverses de la Free Software Foundation, que permet a l’usuari arrencar un dels múltiples sistemes operatius instal·lats en un ordinador.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="54"/>
         <source>GRUB</source>
-        <translation type="unfinished"/>
+        <translation>GRUB</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="108"/>
         <source>No bootloader selected. Selecting no bootloader might result in an un-bootable system, if you don&apos;t already have a bootloader were you can add this install to.</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha seleccionat cap carregador d&apos;arrencada. Si seleccioneu Sense carregador d&apos;arrencada, pot ser que el sistema no sigui arrencable, si no en teniu cap on pugueu afegir aquesta instal·lació.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="121"/>
         <source>No bootloader</source>
-        <translation type="unfinished"/>
+        <translation>Sense carregador d&apos;arrencada</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="173"/>
         <source>Please select a bootloader option for your install, or leave the default option, &lt;strong&gt;GRUB 2&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Seleccioneu una opció de carregador d’arrencada per a la instal·lació o deixeu-hi l’opció predeterminada, &lt;strong&gt;GRUB 2&lt;/strong&gt;.</translation>
     </message>
 </context>
 <context>
@@ -696,7 +696,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1671"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.&lt;br/&gt;Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;,&lt;br/&gt;either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Particions manuals&lt;/strong&gt;&lt;br/&gt;Podeu crear o canviar la mida de les particions vosaltres mateixos. &lt;br/&gt;​​Tenir una taula de particions GPT i una partició / boot&lt;strong&gt;fat32 de 512 Mb és imprescindible per a les instal·lacions amb UEFI &lt;/strong&gt;,&lt;br/&gt; ja sigui usant-ne una d&apos;existent sense formatar-la o creant-ne una.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.ui" line="18"/>
@@ -839,7 +839,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/summary/Config.cpp" line="94"/>
         <source>Summary</source>
-        <translation type="unfinished"/>
+        <translation>Resum</translation>
     </message>
     <message>
         <location filename="../src/modules/summary/Config.cpp" line="98"/>
@@ -899,7 +899,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="548"/>
         <source>OK!</source>
-        <translation type="unfinished"/>
+        <translation>D&apos;acord!</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="145"/>
@@ -954,12 +954,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/packagechooser/Config.cpp" line="177"/>
         <source>Install option: &lt;strong&gt;%1&lt;/strong&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Opció d&apos;instal·lació: &lt;strong&gt;%1&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/Config.cpp" line="177"/>
         <source>None</source>
-        <translation type="unfinished"/>
+        <translation>Cap</translation>
     </message>
 </context>
 <context>
@@ -2646,37 +2646,37 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="534"/>
         <source>EFI system partition configured incorrectly</source>
-        <translation type="unfinished"/>
+        <translation>La partició del sistema EFI s&apos;ha configurat incorrectament.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="539"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;To configure an EFI system partition, go back and select or create a suitable filesystem.</source>
-        <translation type="unfinished"/>
+        <translation>Cal una partició de sistema EFI per iniciar el %1.&lt;br/&gt;&lt;br/&gt; Per configurar una partició de sistema EFI, torneu enrere i seleccioneu o creeu un sistema de fitxers adequat.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="550"/>
         <source>The filesystem must be mounted on &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Cal muntar el sistema de fitxers a &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="556"/>
         <source>The filesystem must have type FAT32.</source>
-        <translation type="unfinished"/>
+        <translation>El sistema de fitxers ha de tenir del tipus FAT32.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="564"/>
         <source>The filesystem must be at least %1 MiB in size.</source>
-        <translation type="unfinished"/>
+        <translation>El sistema de fitxers ha de tenir una mida mínima de %1 MiB.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="570"/>
         <source>The filesystem must have flag &lt;strong&gt;%1&lt;/strong&gt; set.</source>
-        <translation type="unfinished"/>
+        <translation>El sistema de fitxers ha de tenir la bandera &lt;strong&gt;%1&lt;/strong&gt; establerta.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="576"/>
         <source>You can continue without setting up an EFI system partition but your system may fail to start.</source>
-        <translation type="unfinished"/>
+        <translation>Podeu continuar sense configurar una partició de sistema EFI, però és possible que el sistema no s&apos;iniciï.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="593"/>
@@ -3366,27 +3366,27 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="28"/>
         <source>&amp;OK</source>
-        <translation type="unfinished"/>
+        <translation>D&apos;ac&amp;ord</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="29"/>
         <source>&amp;Yes</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Sí</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="30"/>
         <source>&amp;No</source>
-        <translation type="unfinished"/>
+        <translation>&amp;No</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="31"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Cancel·la</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="32"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Tanca</translation>
     </message>
 </context>
 <context>
@@ -3394,37 +3394,37 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="37"/>
         <source>Systemd-boot is a UEFI boot manager which executes configured EFI images. The default entry is selected by a configured pattern (glob) or an on-screen menu and is simple to configure.</source>
-        <translation type="unfinished"/>
+        <translation>Systemd-boot és un carregador d&apos;arrencada UEFI que executa imatges EFI configurades. L&apos;entrada predeterminada se selecciona mitjançant un patró configurat (glob) o un menú de pantalla i és fàcil de configurar.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="50"/>
         <source>Systemd-boot</source>
-        <translation type="unfinished"/>
+        <translation>Systemd-boot</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="103"/>
         <source>rEFInd is a fork of the earlier rEFIt boot manager. It is designed to be platform-neutral and to simplify booting multiple operating systems.</source>
-        <translation type="unfinished"/>
+        <translation>rEFInd és una bifurcació del carregador d&apos;arrencada anterior de rEFIt. Està dissenyat per ser neutre de plataforma i simplificar l&apos;arrencada de diversos sistemes operatius.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="116"/>
         <source>Refind</source>
-        <translation type="unfinished"/>
+        <translation>Refind</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="171"/>
         <source>No bootloader selected. Selecting no bootloader might result in an un-bootable system, if you don&apos;t already have a bootloader were you can add this install to.</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha seleccionat cap carregador d&apos;arrencada. Si seleccioneu Sense carregador d&apos;arrencada, pot ser que el sistema no sigui arrencable, si no en teniu cap on pugueu afegir aquesta instal·lació.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="184"/>
         <source>No bootloader</source>
-        <translation type="unfinished"/>
+        <translation>Sense carregador d&apos;arrencada</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="236"/>
         <source>Please select a bootloader option for your install, or leave the default option, &lt;strong&gt;systemd-boot&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Seleccioneu una opció de carregador d’arrencada per a la instal·lació o deixeu-hi l’opció predeterminada, &lt;strong&gt;systemd-boot&lt;/strong&gt;.</translation>
     </message>
 </context>
 <context>
@@ -3645,7 +3645,18 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
                         development is sponsored by &lt;br/&gt;
                         &lt;a href='http://www.blue-systems.com/'&gt;Blue Systems&lt;/a&gt; -
                         Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;
+                        &lt;strong&gt;%2&lt;br/&gt;
+                        per a %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;
+                        Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
+                        Copyright 2017-2021 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
+                        Gràcies a &lt;a href=&apos;https://calamares.io/team/&apos;&gt;l&apos;equip del Calamares&lt;/a&gt; 
+                        i a l&apos;&lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;equip de traducció 
+                        del KaOS&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;
+                        El desenvolupament del&lt;a href=&apos;https://calamares.io/&apos;&gt;Calamares&lt;/a&gt; 
+                        està patrocinat per &lt;br/&gt;
+                        &lt;a href=&apos;http://www.blue-systems.com/&apos;&gt;Blue Systems&lt;/a&gt; - 
+                        Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/about.qml" line="96"/>
@@ -3722,18 +3733,20 @@ La configuració local del sistema afecta el format de números i dates. La conf
         <location filename="../src/modules/localeq/i18nw.qml" line="50"/>
         <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
                     The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Llengües&lt;/h1&gt; &lt;/br&gt;
+                    La configuració de la llengua del sistema afecta la llengua i el conjunt de caràcters per a alguns elements d&apos;interfície d&apos;usuari de línia d&apos;ordres. La configuració actual és &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/i18nw.qml" line="124"/>
         <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
                     The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Configuració local&lt;/h1&gt; &lt;/br&gt;
+La configuració local del sistema afecta el format de números i dates. La configuració actual és &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/i18nw.qml" line="192"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Enrere</translation>
     </message>
 </context>
 <context>
@@ -3741,12 +3754,12 @@ La configuració local del sistema afecta el format de números i dates. La conf
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
         <source>To activate keyboard preview, select a layout.</source>
-        <translation type="unfinished"/>
+        <translation>Per activar la previsualització del teclat, seleccioneu una disposició.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="86"/>
         <source>Keyboard Model:</source>
-        <translation type="unfinished"/>
+        <translation>Model del teclat:</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="254"/>
@@ -3756,7 +3769,7 @@ La configuració local del sistema afecta el format de números i dates. La conf
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="263"/>
         <source>Type here to test your keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Escriviu aquí per provar el teclat.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="179"/>
@@ -3814,48 +3827,48 @@ La configuració local del sistema afecta el format de números i dates. La conf
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="77"/>
         <source>Keyboard Selection</source>
-        <translation type="unfinished"/>
+        <translation>Selecció del teclat</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="93"/>
         <source>Click your preferred keyboard model to select layout and variant, or use the default one based on the detected hardware.</source>
-        <translation type="unfinished"/>
+        <translation>Cliqueu al model de teclat preferit per seleccionar-ne la disposició i la variant, o useu el predeterminat en funció del maquinari detectat.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="111"/>
         <source>Keyboard Model:</source>
-        <translation type="unfinished"/>
+        <translation>Model del teclat:</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="244"/>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="476"/>
         <source>Layouts</source>
-        <translation type="unfinished"/>
+        <translation>Disposicions</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="358"/>
         <source>Models</source>
-        <translation type="unfinished"/>
+        <translation>Models</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="365"/>
         <source>Variants</source>
-        <translation type="unfinished"/>
+        <translation>Variants</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="381"/>
         <source>Keyboard Variant</source>
-        <translation type="unfinished"/>
+        <translation>Variant del teclat</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="398"/>
         <source>Variant keyboard model or use the default one based on the detected hardware.</source>
-        <translation type="unfinished"/>
+        <translation>Useu una variant del model de teclat o el model per defecte basat en el maquinari detectat.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="486"/>
         <source>Test your keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Proveu el teclat</translation>
     </message>
 </context>
 <context>
@@ -3960,12 +3973,15 @@ Opció predeterminada.</translation>
                     &lt;p&gt;In case non-free was selected, this installer will install proprietary packages that have&lt;br /&gt;
                     additional End User License Agreements (EULAs) attached to them.&lt;br /&gt;
                     Please review the End User License Agreements (EULAs).&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Acord de llicència&lt;/h1&gt;
+&lt;p&gt;En cas que s’hagi seleccionat un programa no lliure, aquest instal·lador instal·larà paquets de propietat que tinguin &lt;br /&gt;
+contractes de llicència d’usuari final addicionals (EULAs) adjunts.&lt;br /&gt;
+Consulteu els Acords de llicència d’usuari final (EULAs).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq@licenseq.qml" line="61"/>
         <source>I accept the terms and conditions above</source>
-        <translation type="unfinished"/>
+        <translation>Accepto els termes i les condicions anteriors.</translation>
     </message>
 </context>
 <context>
@@ -4222,22 +4238,22 @@ Opció predeterminada.</translation>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="135"/>
         <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Només es permeten lletres minúscules, números, guionets i guionets baixos.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="143"/>
         <source>root is not allowed as username.</source>
-        <translation type="unfinished"/>
+        <translation>No es permet &quot;root&quot; com a nom d&apos;usuari.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="197"/>
         <source>Only letters, numbers, underscore and hyphen are allowed, minimal of two characters.</source>
-        <translation type="unfinished"/>
+        <translation>Només es permeten lletres, números, guionets i guionets baixos, i un mínim de dos caràcters.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="205"/>
         <source>localhost is not allowed as hostname.</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;admet &quot;localhost&quot; com a nom d&apos;amfitrió.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="300"/>
@@ -4275,67 +4291,67 @@ Opció predeterminada.</translation>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="48"/>
         <source>Pick your user name and credentials to login and perform admin tasks</source>
-        <translation type="unfinished"/>
+        <translation>Trieu el nom d&apos;usuari i les credencials per iniciar la sessió i fer tasques d&apos;administració.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="64"/>
         <source>What is your name?</source>
-        <translation type="unfinished"/>
+        <translation>Com us dieu?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="73"/>
         <source>Your Full Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom complet</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="111"/>
         <source>What name do you want to use to log in?</source>
-        <translation type="unfinished"/>
+        <translation>Quin nom voleu usar per iniciar la sessió?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="119"/>
         <source>Login Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom d&apos;entrada</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="146"/>
         <source>If more than one person will use this computer, you can create multiple accounts after installation.</source>
-        <translation type="unfinished"/>
+        <translation>Si aquest ordinador l&apos;usarà més d&apos;una persona, podreu crear diversos comptes després de la instal·lació.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="159"/>
         <source>Your username must start with a lowercase letter or underscore.</source>
-        <translation type="unfinished"/>
+        <translation>El nom d&apos;usuari ha de començar amb una lletra minúscula o amb un guionet baix.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="169"/>
         <source>Choose a root password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>Trieu una contrasenya d&apos;arrel per mantenir el compte segur.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="179"/>
         <source>Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Contrasenya d&apos;arrel</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="197"/>
         <source>Repeat Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Repetiu la contrasenya d&apos;arrel.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="223"/>
         <source>Enter the same password twice, so that it can be checked for typing errors.</source>
-        <translation type="unfinished"/>
+        <translation>Escriviu la mateixa contrasenya dos cops per poder-ne comprovar els errors de mecanografia.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="255"/>
         <source>Validate passwords quality</source>
-        <translation type="unfinished"/>
+        <translation>Valida la qualitat de les contrasenyes.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="267"/>
         <source>Known issues</source>
-        <translation type="unfinished"/>
+        <translation>Problemes coneguts</translation>
     </message>
 </context>
 <context>
@@ -4343,107 +4359,107 @@ Opció predeterminada.</translation>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="31"/>
         <source>Users</source>
-        <translation type="unfinished"/>
+        <translation>Usuaris</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="32"/>
         <source>Pick your user name and credentials to login and perform admin tasks</source>
-        <translation type="unfinished"/>
+        <translation>Trieu el nom d&apos;usuari i les credencials per iniciar la sessió i fer tasques d&apos;administració.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="64"/>
         <source>What is your name?</source>
-        <translation type="unfinished"/>
+        <translation>Com us dieu?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="71"/>
         <source>Your Full Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom complet</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="88"/>
         <source>What name do you want to use to log in?</source>
-        <translation type="unfinished"/>
+        <translation>Quin nom voleu usar per iniciar la sessió?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="89"/>
         <source>If more than one person will use this computer, you can create multiple accounts after installation.</source>
-        <translation type="unfinished"/>
+        <translation>Si aquest ordinador l&apos;usarà més d&apos;una persona, podreu crear diversos comptes després de la instal·lació.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="96"/>
         <source>Login Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom d&apos;entrada</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="115"/>
         <source>What is the name of this computer?</source>
-        <translation type="unfinished"/>
+        <translation>Com es diu aquest ordinador?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="116"/>
         <source>This name will be used if you make the computer visible to others on a network.</source>
-        <translation type="unfinished"/>
+        <translation>Aquest nom s&apos;usarà si feu visible aquest ordinador per a altres en una xarxa.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="122"/>
         <source>Computer Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom de l&apos;ordinador</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="139"/>
         <source>Choose a password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>Trieu una contrasenya per tal de mantenir el compte segur.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="140"/>
         <source>Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.</source>
-        <translation type="unfinished"/>
+        <translation>Escriviu la mateixa contrasenya dos cops per poder-ne comprovar els errors de mecanografia. Una bona contrasenya ha de contenir una barreja de lletres, números i signes de puntuació, hauria de tenir un mínim de 8 caràcters i s&apos;hauria de modificar a intervals regulars.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="146"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>Contrasenya</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="168"/>
         <source>Repeat Password</source>
-        <translation type="unfinished"/>
+        <translation>Repetiu la contrasenya.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="188"/>
         <source>Reuse user password as root password</source>
-        <translation type="unfinished"/>
+        <translation>Reutilitza la contrasenya d&apos;usuari com a contrasenya d&apos;arrel.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="201"/>
         <source>Choose a root password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>Trieu una contrasenya d&apos;arrel per mantenir el compte segur.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="207"/>
         <source>Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Contrasenya d&apos;arrel</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="228"/>
         <source>Repeat Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Repetiu la contrasenya d&apos;arrel.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="249"/>
         <source>More options.</source>
-        <translation type="unfinished"/>
+        <translation>Més opcions</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="255"/>
         <source>Validate passwords quality</source>
-        <translation type="unfinished"/>
+        <translation>Valida la qualitat de les contrasenyes.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="264"/>
         <source>Log in automatically without asking for the password</source>
-        <translation type="unfinished"/>
+        <translation>Entra automàticament sense demanar la contrasenya.</translation>
     </message>
 </context>
 <context>
