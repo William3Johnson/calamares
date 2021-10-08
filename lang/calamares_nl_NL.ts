@@ -3422,7 +3422,7 @@ Output:
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="236"/>
         <source>Please select a bootloader option for your install, or leave the default option, &lt;strong&gt;systemd-boot&lt;/strong&gt;.</source>
-        <translation>Please select a bootloader option for your install, or leave the default option, &lt;strong&gt;systemd-boot&lt;/strong&gt;.</translation>
+        <translation>Selecteer een bootloader-optie voor uw installatie, of laat de standaardoptie, &lt;strong&gt;systemd-boot&lt;/strong&gt;.</translation>
     </message>
 </context>
 <context>
