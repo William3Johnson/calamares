@@ -12,27 +12,27 @@
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="41"/>
         <source>GRUB 2, the GRand Unified Bootloader is the reference implementation of the Free Software Foundation&apos;s Multiboot Specification, which provides a user the choice to boot one of multiple operating systems installed on a computer.</source>
-        <translation type="unfinished"/>
+        <translation>GRUB 2, GRand Unified Bootloader er referenceimplementeringen af ​​Free Software Foundation&apos;s Multiboot Specification, som giver en bruger mulighed for at starte et af flere operativsystemer installeret på en computer.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="54"/>
         <source>GRUB</source>
-        <translation type="unfinished"/>
+        <translation>GRUB</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="108"/>
         <source>No bootloader selected. Selecting no bootloader might result in an un-bootable system, if you don&apos;t already have a bootloader were you can add this install to.</source>
-        <translation type="unfinished"/>
+        <translation>Ingen bootloader valgt. Hvis du vælger ingen bootloader, kan det resultere i et system, der ikke kan startes op, hvis du ikke allerede har en bootloader, kan du tilføje denne installation til.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="121"/>
         <source>No bootloader</source>
-        <translation type="unfinished"/>
+        <translation>Ingen bootloader</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="173"/>
         <source>Please select a bootloader option for your install, or leave the default option, &lt;strong&gt;GRUB 2&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Vælg en bootloader indstilling til din installation, eller lad standardindstillingen være,&lt;strong&gt;GRUB 2&lt;/strong&gt;.</translation>
     </message>
 </context>
 <context>

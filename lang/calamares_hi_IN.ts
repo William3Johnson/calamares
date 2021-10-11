@@ -12,27 +12,27 @@
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="41"/>
         <source>GRUB 2, the GRand Unified Bootloader is the reference implementation of the Free Software Foundation&apos;s Multiboot Specification, which provides a user the choice to boot one of multiple operating systems installed on a computer.</source>
-        <translation type="unfinished"/>
+        <translation>GRUB 2, ग्रैंड यूनिफाइड बूटलोडर - फ्री सॉफ्टवेयर फाउंडेशन के एकाधिक विनिर्देश का संदर्भ युक्त कार्यान्वयन है, जो उपयोक्ता को बूट करने हेतु कंप्यूटर पर उपस्थित एकाधिक ऑपरेटिंग सिस्टम में से किसी एक का चयन करने का विकल्प प्रदान करता है।</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="54"/>
         <source>GRUB</source>
-        <translation type="unfinished"/>
+        <translation>GRUB</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="108"/>
         <source>No bootloader selected. Selecting no bootloader might result in an un-bootable system, if you don&apos;t already have a bootloader were you can add this install to.</source>
-        <translation type="unfinished"/>
+        <translation>कोई बूट लोड साधन चयनित नहीं है। बूट लोड साधन चयनित न होने की स्थिति आपका सिस्टम आरंभ नहीं होगा यदि इस इंस्टॉल हेतु पहले से कोई बूट लोड साधन उपस्थित नहीं है।</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="121"/>
         <source>No bootloader</source>
-        <translation type="unfinished"/>
+        <translation>कोई बूट लोड साधन नहीं</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/BIOS.qml" line="173"/>
         <source>Please select a bootloader option for your install, or leave the default option, &lt;strong&gt;GRUB 2&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>कृपया अपने इंस्टॉल हेतु विकल्पों में से एक बूट लोड साधन चुनें या फिर डिफ़ॉल्ट&lt;strong&gt;GRUB 2&lt;/strong&gt; ही उपयोग करें।</translation>
     </message>
 </context>
 <context>
@@ -45,12 +45,12 @@
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="72"/>
         <source>This system was started with an &lt;strong&gt;EFI&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from an EFI environment, this installer must deploy a boot loader application, like &lt;strong&gt;GRUB&lt;/strong&gt; or &lt;strong&gt;systemd-boot&lt;/strong&gt; on an &lt;strong&gt;EFI System Partition&lt;/strong&gt;. This is automatic, unless you choose manual partitioning, in which case you must choose it or create it on your own.</source>
-        <translation>यह सिस्टम &lt;strong&gt;EFI&lt;/strong&gt;बूट वातावरण के साथ शुरू किया गया।&lt;br&gt;&lt;br&gt;EFI वातावरण से स्टार्टअप विन्यस्त करने के लिए इंस्टॉलर को &lt;strong&gt;GRUB&lt;/strong&gt; या &lt;strong&gt;systemd-boot&lt;/strong&gt; जैसे बूट लोडर अनुप्रयोग &lt;strong&gt;EFI सिस्टम विभाजन&lt;/strong&gt;पर स्थापित करने जरूरी हैं। यह स्वत: होता है, परंतु अगर आप मैनुअल विभाजन करना चुनते है; तो आपको या तो इसे चुनना होगा या फिर खुद ही बनाना होगा।</translation>
+        <translation>यह सिस्टम &lt;strong&gt;EFI&lt;/strong&gt;बूट वातावरण के साथ शुरू किया गया।&lt;br&gt;&lt;br&gt;EFI वातावरण से स्टार्टअप विन्यस्त करने के लिए इंस्टॉलर को &lt;strong&gt;GRUB&lt;/strong&gt; या &lt;strong&gt;systemd-boot&lt;/strong&gt; जैसे बूट लोड साधन &lt;strong&gt;EFI सिस्टम विभाजन&lt;/strong&gt;पर स्थापित करने जरूरी हैं। यह स्वत: होता है, परंतु अगर आप मैनुअल विभाजन करना चुनते है; तो आपको या तो इसे चुनना होगा या फिर खुद ही बनाना होगा।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="84"/>
         <source>This system was started with a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from a BIOS environment, this installer must install a boot loader, like &lt;strong&gt;GRUB&lt;/strong&gt;, either at the beginning of a partition or on the &lt;strong&gt;Master Boot Record&lt;/strong&gt; near the beginning of the partition table (preferred). This is automatic, unless you choose manual partitioning, in which case you must set it up on your own.</source>
-        <translation>यह सिस्टम &lt;strong&gt;BIOS&lt;/strong&gt;बूट वातावरण के साथ शुरू किया गया।&lt;br&gt;&lt;br&gt;BIOS वातावरण से स्टार्टअप विन्यस्त करने के लिए इंस्टॉलर को &lt;strong&gt;GRUB&lt;/strong&gt; जैसे बूट लोडर को, या तो विभाजन की शुरुआत में या फिर &lt;strong&gt;Master Boot Record&lt;/strong&gt; पर विभाजन तालिका की शुरुआत में इंस्टॉल (सुझाया जाता है) करना होगा। यह स्वत: होता है, परंतु अगर आप मैनुअल विभाजन करना चुनते है; तो आपको इसे खुद ही बनाना होगा।</translation>
+        <translation>यह सिस्टम &lt;strong&gt;BIOS&lt;/strong&gt;बूट वातावरण के साथ शुरू किया गया।&lt;br&gt;&lt;br&gt;BIOS वातावरण से स्टार्टअप विन्यस्त करने के लिए इंस्टॉलर को &lt;strong&gt;GRUB&lt;/strong&gt; जैसे बूट लोड साधन को, या तो विभाजन की शुरुआत में या फिर &lt;strong&gt;Master Boot Record&lt;/strong&gt; पर विभाजन तालिका की शुरुआत में इंस्टॉल (सुझाया जाता है) करना होगा। यह स्वत: होता है, परंतु अगर आप मैनुअल विभाजन करना चुनते है; तो आपको इसे खुद ही बनाना होगा।</translation>
     </message>
 </context>
 <context>
@@ -73,7 +73,7 @@
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="129"/>
         <source>Do not install a boot loader</source>
-        <translation>बूट लोडर इंस्टॉल न करें</translation>
+        <translation>बूट लोड साधन इंस्टॉल न करें</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="147"/>
@@ -588,7 +588,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1071"/>
         <source>Boot loader location:</source>
-        <translation>बूट लोडर का स्थान:</translation>
+        <translation>बूट लोड साधन का स्थान :</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
@@ -696,7 +696,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1671"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.&lt;br/&gt;Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;,&lt;br/&gt;either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;मैनुअल विभाजन&lt;/strong&gt;&lt;br/&gt;आप स्वयं भी विभाजन बना व उनका आकार बदल सकते हैं। &lt;br/&gt;UEFI इंस्टॉल हेतु GPT विभाजन तालिका और &lt;strong&gt;fat32 512Mb का /boot विभाजन होना आवश्यक है&lt;/strong&gt;, &lt;br/&gt;अन्यथा पहले से उपस्थित को ही बिना फॉर्मेट किए उपयोग करें या फिर नया बनाएँ।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.ui" line="18"/>
@@ -839,7 +839,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/summary/Config.cpp" line="94"/>
         <source>Summary</source>
-        <translation type="unfinished"/>
+        <translation>सारांश</translation>
     </message>
     <message>
         <location filename="../src/modules/summary/Config.cpp" line="98"/>
@@ -899,7 +899,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/Config.cpp" line="548"/>
         <source>OK!</source>
-        <translation type="unfinished"/>
+        <translation>ठीक है!</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/Config.cpp" line="145"/>
@@ -954,12 +954,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/packagechooser/Config.cpp" line="177"/>
         <source>Install option: &lt;strong&gt;%1&lt;/strong&gt;</source>
-        <translation type="unfinished"/>
+        <translation>इंस्टॉल विकल्प : &lt;strong&gt;%1&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooser/Config.cpp" line="177"/>
         <source>None</source>
-        <translation type="unfinished"/>
+        <translation>कोई नहीं</translation>
     </message>
 </context>
 <context>
@@ -1447,7 +1447,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="278"/>
         <source>Install boot loader on &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>बूट लोडर &lt;strong&gt;%1&lt;/strong&gt; पर इंस्टॉल करें।</translation>
+        <translation>बूट लोड साधन &lt;strong&gt;%1&lt;/strong&gt; पर इंस्टॉल करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="287"/>
@@ -2580,7 +2580,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="184"/>
         <source>I&amp;nstall boot loader on:</source>
-        <translation>बूट लोडर इंस्टॉल करें (&amp;l) :</translation>
+        <translation>बूट लोड साधन इंस्टॉल करें (&amp;l):</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="118"/>
@@ -2646,37 +2646,37 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="534"/>
         <source>EFI system partition configured incorrectly</source>
-        <translation type="unfinished"/>
+        <translation>EFI सिस्टम विभाजन अनुचित रूप से विन्यस्त है</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="539"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;To configure an EFI system partition, go back and select or create a suitable filesystem.</source>
-        <translation type="unfinished"/>
+        <translation>%1 के आरंभ हेतु EFI सिस्टम विभाजन आवश्यक है। &lt;br/&gt;&lt;br/&gt; EFI सिस्टम विभाजन विन्यस्त करने हेतु वापस जाकर चयन करें या उपयुक्त फाइल सिस्टम बनाएँ।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="550"/>
         <source>The filesystem must be mounted on &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>फाइल सिस्टम का &lt;strong&gt;%1&lt;/strong&gt; पर माउंट होना आवश्यक है।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="556"/>
         <source>The filesystem must have type FAT32.</source>
-        <translation type="unfinished"/>
+        <translation>फाइल सिस्टम का प्रकार FAT32 होना आवश्यक है।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="564"/>
         <source>The filesystem must be at least %1 MiB in size.</source>
-        <translation type="unfinished"/>
+        <translation>फाइल सिस्टम का आकार कम-से-कम %1 MiB होना आवश्यक है।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="570"/>
         <source>The filesystem must have flag &lt;strong&gt;%1&lt;/strong&gt; set.</source>
-        <translation type="unfinished"/>
+        <translation>फाइल सिस्टम पर &lt;strong&gt;%1&lt;/strong&gt; फ्लैग सेट होना आवश्यक है।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="576"/>
         <source>You can continue without setting up an EFI system partition but your system may fail to start.</source>
-        <translation type="unfinished"/>
+        <translation>आप EFI सिस्टम विभाजन सेट करें बिना भी प्रक्रिया जारी रख सकते हैं परन्तु ऐसा करने से आपके सिस्टम का आरंभ विफल हो सकता है।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="593"/>
@@ -3366,27 +3366,27 @@ Output:
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="28"/>
         <source>&amp;OK</source>
-        <translation type="unfinished"/>
+        <translation>ठीक है (&amp;O)</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="29"/>
         <source>&amp;Yes</source>
-        <translation type="unfinished"/>
+        <translation>हाँ (&amp;Y)</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="30"/>
         <source>&amp;No</source>
-        <translation type="unfinished"/>
+        <translation>नहीं (&amp;N)</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="31"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>रद्द करें (&amp;C)</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/TranslationFix.cpp" line="32"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>बंद करें (&amp;C)</translation>
     </message>
 </context>
 <context>
@@ -3394,37 +3394,37 @@ Output:
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="37"/>
         <source>Systemd-boot is a UEFI boot manager which executes configured EFI images. The default entry is selected by a configured pattern (glob) or an on-screen menu and is simple to configure.</source>
-        <translation type="unfinished"/>
+        <translation>Systemd-boot एक UEFI बूट प्रबंधक है जो विन्यस्त EFI फाइलें निष्पादित करता है। डिफ़ॉल्ट प्रविष्टि का चयन एक विन्यस्त प्रतिमान (glob) या ऑन-स्क्रीन मेन्यू द्वारा संभव है जिसका उपयोग सरल है।</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="50"/>
         <source>Systemd-boot</source>
-        <translation type="unfinished"/>
+        <translation>Systemd-boot</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="103"/>
         <source>rEFInd is a fork of the earlier rEFIt boot manager. It is designed to be platform-neutral and to simplify booting multiple operating systems.</source>
-        <translation type="unfinished"/>
+        <translation>rEFInd - पुराने rEFIt बूट प्रबंधक का विभाजित संस्करण है। इसका उपयोग लगभग सभी मंचों पर संभव है एवं इसका उद्देश्य एकाधिक ऑपरेटिंग सिस्टम की बूट प्रक्रिया को सरल बनाना है।</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="116"/>
         <source>Refind</source>
-        <translation type="unfinished"/>
+        <translation>Refind</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="171"/>
         <source>No bootloader selected. Selecting no bootloader might result in an un-bootable system, if you don&apos;t already have a bootloader were you can add this install to.</source>
-        <translation type="unfinished"/>
+        <translation>कोई बूट लोड साधन चयनित नहीं है। बूट लोड साधन चयनित न होने की स्थिति आपका सिस्टम आरंभ नहीं होगा यदि इस इंस्टॉल हेतु पहले से कोई बूट लोड साधन उपस्थित नहीं है।</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="184"/>
         <source>No bootloader</source>
-        <translation type="unfinished"/>
+        <translation>कोई बूट लोड साधन नहीं</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/UEFI.qml" line="236"/>
         <source>Please select a bootloader option for your install, or leave the default option, &lt;strong&gt;systemd-boot&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>कृपया अपने इंस्टॉल हेतु विकल्पों में से एक बूट लोड साधन चुनें या फिर डिफ़ॉल्ट&lt;strong&gt;systemd-boot&lt;/strong&gt; ही उपयोग करें।</translation>
     </message>
 </context>
 <context>
@@ -3645,7 +3645,18 @@ Output:
                         development is sponsored by &lt;br/&gt;
                         &lt;a href='http://www.blue-systems.com/'&gt;Blue Systems&lt;/a&gt; -
                         Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;
+                        &lt;strong&gt;%2&lt;br/&gt;
+                        के लिए %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;
+                        प्रतिलिप्याधिकार 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
+                        प्रतिलिप्याधिकार 2017-2021 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
+                        &lt;a href=&apos;https://calamares.io/team/&apos;&gt;Calamares टीम&lt;/a&gt; 
+                         व &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS 
+                        अनुवादक टीम&lt;/a&gt;को धन्यवाद।&lt;br/&gt;&lt;br/&gt;
+                        &lt;a href=&apos;https://calamares.io/&apos;&gt;Calamares&lt;/a&gt; 
+                        का विकास &lt;br/&gt;
+                        &lt;a href=&apos;http://www.blue-systems.com/&apos;&gt;ब्लू सिस्टम्स&lt;/a&gt; - 
+                        लिब्रेटिंग सॉफ्टवेयर द्वारा प्रायोजित है।</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/about.qml" line="96"/>
@@ -3722,18 +3733,20 @@ Output:
         <location filename="../src/modules/localeq/i18nw.qml" line="50"/>
         <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
                     The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;भाषाएँ&lt;/h1&gt;&lt;/br&gt;
+                 सिस्टम स्थानिकी सेटिंग कमांड लाइन के कुछ उपयोक्ता अंतरफलक तत्वों की भाषा व अक्षर सेट पर असर डालती है।&lt;br/&gt;मौजूदा सेटिंग &lt;strong&gt;%1&lt;/strong&gt;है।</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/i18nw.qml" line="124"/>
         <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
                     The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;स्थानिकी&lt;/h1&gt; &lt;/br&gt;
+                    सिस्टम स्थानिकी सेटिंग संख्या व दिनांक के प्रारूप को प्रभावित करती है। वर्तमान सेटिंग &lt;strong&gt;%1&lt;/strong&gt; है।</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/i18nw.qml" line="192"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>वापस</translation>
     </message>
 </context>
 <context>
@@ -3741,12 +3754,12 @@ Output:
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
         <source>To activate keyboard preview, select a layout.</source>
-        <translation type="unfinished"/>
+        <translation>कुंजीपटल पूर्वावलोकन सक्रिय करने हेतु इच्छित अभिन्यास चुनें।</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="86"/>
         <source>Keyboard Model:</source>
-        <translation type="unfinished"/>
+        <translation>कुंजीपटल मॉडल :</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="254"/>
@@ -3756,7 +3769,7 @@ Output:
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="263"/>
         <source>Type here to test your keyboard</source>
-        <translation type="unfinished"/>
+        <translation>अपना कुंजीपटल जाँचने के लिए यहाँ टाइप करें</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="179"/>
@@ -3814,48 +3827,48 @@ Output:
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="77"/>
         <source>Keyboard Selection</source>
-        <translation type="unfinished"/>
+        <translation>कुंजीपटल चयन</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="93"/>
         <source>Click your preferred keyboard model to select layout and variant, or use the default one based on the detected hardware.</source>
-        <translation type="unfinished"/>
+        <translation>इच्छित अभिन्यास व प्रकार हेतु कुंजीपटल मॉडल पर क्लिक चुनें या फिर हार्डवेयर आधारित डिफ़ॉल्ट मॉडल उपयोग करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="111"/>
         <source>Keyboard Model:</source>
-        <translation type="unfinished"/>
+        <translation>कुंजीपटल मॉडल :</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="244"/>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="476"/>
         <source>Layouts</source>
-        <translation type="unfinished"/>
+        <translation>अभिन्यास</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="358"/>
         <source>Models</source>
-        <translation type="unfinished"/>
+        <translation>मॉडल</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="365"/>
         <source>Variants</source>
-        <translation type="unfinished"/>
+        <translation>प्रकार</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="381"/>
         <source>Keyboard Variant</source>
-        <translation type="unfinished"/>
+        <translation>कुंजीपटल प्रकार</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="398"/>
         <source>Variant keyboard model or use the default one based on the detected hardware.</source>
-        <translation type="unfinished"/>
+        <translation>कुंजीपटल मॉडल या फिर हार्डवेयर आधारित डिफ़ॉल्ट प्रकार उपयोग करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="486"/>
         <source>Test your keyboard</source>
-        <translation type="unfinished"/>
+        <translation>अपना कुंजीपटल जाँचें</translation>
     </message>
 </context>
 <context>
@@ -3960,12 +3973,15 @@ Output:
                     &lt;p&gt;In case non-free was selected, this installer will install proprietary packages that have&lt;br /&gt;
                     additional End User License Agreements (EULAs) attached to them.&lt;br /&gt;
                     Please review the End User License Agreements (EULAs).&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;लाइसेंस अनुंबध&lt;/h1&gt;
+                    &lt;p&gt;गैर-मुक्त का विकल्प चयनित होने की स्थिति में इंस्टॉलर द्वारा अमुक्त स्रोत पैकेज इंस्टॉल होंगें जिनके साथ&lt;br /&gt;
+                    अतिरिक्त अंतिम उपयोक्ता लाइसेंस अनुबंध (EULAs) संलग्न हैं।&lt;br /&gt;
+                    कृपया अंतिम उपयोक्ता लाइसेंस अनुबंधों (EULAs) की समीक्षा करें।&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq@licenseq.qml" line="61"/>
         <source>I accept the terms and conditions above</source>
-        <translation type="unfinished"/>
+        <translation>मैं उपरोक्त नियम व शर्तें स्वीकार करता हूँ।</translation>
     </message>
 </context>
 <context>
@@ -4222,22 +4238,22 @@ Output:
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="135"/>
         <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>केवल लोअरकेस अक्षर, अंक, अंडरस्कोर व हाइफ़न ही स्वीकार्य हैं।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="143"/>
         <source>root is not allowed as username.</source>
-        <translation type="unfinished"/>
+        <translation>उपयोक्ता नाम हेतु root शब्द का उपयोग अस्वीकार्य है।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="197"/>
         <source>Only letters, numbers, underscore and hyphen are allowed, minimal of two characters.</source>
-        <translation type="unfinished"/>
+        <translation>केवल अक्षर, अंक, अंडरस्कोर(_) व हाइफ़न(-) ही स्वीकार्य हैं, कम-से-कम 2 अक्षर होना आवश्यक है।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="205"/>
         <source>localhost is not allowed as hostname.</source>
-        <translation type="unfinished"/>
+        <translation>होस्ट नाम हेतु localhost शब्द का उपयोग अस्वीकार्य है।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq.qml" line="300"/>
@@ -4275,67 +4291,67 @@ Output:
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="48"/>
         <source>Pick your user name and credentials to login and perform admin tasks</source>
-        <translation type="unfinished"/>
+        <translation>लॉगिन एवं प्रशासक कार्यों हेतु उपयोक्ता नाम इत्यादि चुनें</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="64"/>
         <source>What is your name?</source>
-        <translation type="unfinished"/>
+        <translation>आपका नाम क्या है?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="73"/>
         <source>Your Full Name</source>
-        <translation type="unfinished"/>
+        <translation>आपका पूरा नाम</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="111"/>
         <source>What name do you want to use to log in?</source>
-        <translation type="unfinished"/>
+        <translation>लॉगिन हेतु आप क्या नाम उपयोग करना चाहते हैं?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="119"/>
         <source>Login Name</source>
-        <translation type="unfinished"/>
+        <translation>लॉगिन नाम</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="146"/>
         <source>If more than one person will use this computer, you can create multiple accounts after installation.</source>
-        <translation type="unfinished"/>
+        <translation>यदि एक से अधिक व्यक्ति इस कंप्यूटर का उपयोग करेंगे, तो आप इंस्टॉल के उपरांत एकाधिक अकाउंट बना सकते हैं।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="159"/>
         <source>Your username must start with a lowercase letter or underscore.</source>
-        <translation type="unfinished"/>
+        <translation>उपयोक्ता नाम का आरंभ केवल लोअरकेस अक्षर या अंडरस्कोर से ही करें।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="169"/>
         <source>Choose a root password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>अकाउंट सुरक्षा हेतु रुट कूटशब्द चुनें।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="179"/>
         <source>Root Password</source>
-        <translation type="unfinished"/>
+        <translation>रुट कूटशब्द</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="197"/>
         <source>Repeat Root Password</source>
-        <translation type="unfinished"/>
+        <translation>रुट कूटशब्द पुनः दर्ज करें</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="223"/>
         <source>Enter the same password twice, so that it can be checked for typing errors.</source>
-        <translation type="unfinished"/>
+        <translation>समान कूटशब्द दो बार दर्ज करें, ताकि टाइपिंग त्रुटि हेतु जाँच की जा सकें।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="255"/>
         <source>Validate passwords quality</source>
-        <translation type="unfinished"/>
+        <translation>कूटशब्द गुणवत्ता प्रमाणीकरण</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq2.qml" line="267"/>
         <source>Known issues</source>
-        <translation type="unfinished"/>
+        <translation>ज्ञात समस्याएँ</translation>
     </message>
 </context>
 <context>
@@ -4343,107 +4359,107 @@ Output:
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="31"/>
         <source>Users</source>
-        <translation type="unfinished"/>
+        <translation>उपयोक्ता</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="32"/>
         <source>Pick your user name and credentials to login and perform admin tasks</source>
-        <translation type="unfinished"/>
+        <translation>लॉगिन एवं प्रशासक कार्यों हेतु उपयोक्ता नाम इत्यादि चुनें</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="64"/>
         <source>What is your name?</source>
-        <translation type="unfinished"/>
+        <translation>आपका नाम क्या है?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="71"/>
         <source>Your Full Name</source>
-        <translation type="unfinished"/>
+        <translation>आपका पूरा नाम</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="88"/>
         <source>What name do you want to use to log in?</source>
-        <translation type="unfinished"/>
+        <translation>लॉगिन हेतु आप क्या नाम उपयोग करना चाहते हैं?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="89"/>
         <source>If more than one person will use this computer, you can create multiple accounts after installation.</source>
-        <translation type="unfinished"/>
+        <translation>यदि एक से अधिक व्यक्ति इस कंप्यूटर का उपयोग करेंगे, तो आप इंस्टॉल के उपरांत एकाधिक अकाउंट बना सकते हैं।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="96"/>
         <source>Login Name</source>
-        <translation type="unfinished"/>
+        <translation>लॉगिन नाम</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="115"/>
         <source>What is the name of this computer?</source>
-        <translation type="unfinished"/>
+        <translation>इस कंप्यूटर का नाम ?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="116"/>
         <source>This name will be used if you make the computer visible to others on a network.</source>
-        <translation type="unfinished"/>
+        <translation>यदि आपका कंप्यूटर किसी नेटवर्क पर दृश्यमान होता है, तो यह नाम उपयोग किया जाएगा।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="122"/>
         <source>Computer Name</source>
-        <translation type="unfinished"/>
+        <translation>कंप्यूटर का नाम</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="139"/>
         <source>Choose a password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>अकाउंट सुरक्षा हेतु कूटशब्द चुनें।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="140"/>
         <source>Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.</source>
-        <translation type="unfinished"/>
+        <translation>एक ही कूटशब्द दो बार दर्ज़ करें, ताकि उसे टाइप त्रुटि हेतु जाँचा जा सके। एक अच्छे कूटशब्द में अक्षर, अंक व विराम चिन्हों का मेल होता है, उसमें कम-से-कम आठ अक्षर होने चाहिए, और उसे नियमित अंतराल पर बदलते रहना चाहिए।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="146"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>कूटशब्द</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="168"/>
         <source>Repeat Password</source>
-        <translation type="unfinished"/>
+        <translation>कूटशब्द पुनः दर्ज करें</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="188"/>
         <source>Reuse user password as root password</source>
-        <translation type="unfinished"/>
+        <translation>रुट कूटशब्द हेतु भी उपयोक्ता कूटशब्द उपयोग करें</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="201"/>
         <source>Choose a root password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>अकाउंट सुरक्षा हेतु रुट कूटशब्द चुनें।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="207"/>
         <source>Root Password</source>
-        <translation type="unfinished"/>
+        <translation>रुट कूटशब्द</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="228"/>
         <source>Repeat Root Password</source>
-        <translation type="unfinished"/>
+        <translation>रुट कूटशब्द पुनः दर्ज करें</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="249"/>
         <source>More options.</source>
-        <translation type="unfinished"/>
+        <translation>अधिक विकल्प।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="255"/>
         <source>Validate passwords quality</source>
-        <translation type="unfinished"/>
+        <translation>कूटशब्द गुणवत्ता प्रमाणीकरण</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/usersq3.qml" line="264"/>
         <source>Log in automatically without asking for the password</source>
-        <translation type="unfinished"/>
+        <translation>कूटशब्द बिना पूछे ही स्वतः लॉग इन करें</translation>
     </message>
 </context>
 <context>
