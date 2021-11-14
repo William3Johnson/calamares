@@ -54,10 +54,10 @@ def run():
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
-        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-1:47*'):
+        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-1:49*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--noconfirm', nvidia_utils])
-        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-1:47*'):
+        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-1:49*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--noconfirm', nvidia])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
@@ -80,10 +80,10 @@ def run():
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
-        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-1:47*'):
+        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-1:49*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--noconfirm', nvidia_utils])
-        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-1:47*'):
+        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-1:49*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--noconfirm', nvidia])
         for prime in glob.glob('/opt/kdeos/pkgs/prime*'):
@@ -127,20 +127,20 @@ def run():
                     line = 'Session=plasma.desktop'
                 sddm_conf.write(line)
 
-    elif os.path.exists('/var/log/nvidia-340xx'):
-        print('nvidia-340xx detected')
+    elif os.path.exists('/var/log/nvidia-470xx'):
+        print('nvidia-470xx detected')
         print('removing unneeded packages')
         libcalamares.utils.target_env_call(
             ['pacman', '-Rdd', '--noconfirm', 'xf86-video-nouveau'])
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
-        for nvidia_340_utils in glob.glob('/opt/kdeos/pkgs/nvidia-340xx-utils*'):
+        for nvidia_470_utils in glob.glob('/opt/kdeos/pkgs/nvidia-470xx-utils*'):
             libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--noconfirm', nvidia_340_utils])
-        for nvidia_340 in glob.glob('/opt/kdeos/pkgs/nvidia-340xx-34*'):
+                ['pacman', '-Ud', '--noconfirm', nvidia_470_utils])
+        for nvidia_470 in glob.glob('/opt/kdeos/pkgs/nvidia-470xx-47*'):
             libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--noconfirm', nvidia_340])
+                ['pacman', '-Ud', '--noconfirm', nvidia_470])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
 
         sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
