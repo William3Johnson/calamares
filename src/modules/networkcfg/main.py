@@ -65,9 +65,9 @@ def run():
                 shutil.copy(source_network, target_network, follow_symlinks=False)
                 if live_user in open(target_network).read():
                     text = []
-                    with open(target_network, "r") as network_conf:
+                    with open(target_network, "r", encoding="UTF-8") as network_conf:
                         text = network_conf.readlines()
-                        with open(target_network, "w") as network_conf:
+                        with open(target_network, "w", encoding="UTF-8") as network_conf:
                             for line in text:
                                 if 'permissions=user:{}:;'.format(live_user) in line:
                                     line = 'permissions=user:{}:;\n'.format(user)
