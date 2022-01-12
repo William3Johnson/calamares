@@ -41,7 +41,7 @@ Column {
                 var ct = responseJSON.city
                 var cy = responseJSON.country
 
-                tzText.text = qsTr("Timezone: ") + tz
+                tzText.text =  QT_TR_NOOP("Timezone: ") + tz
                 cityName = ct
                 countryName = cy
 

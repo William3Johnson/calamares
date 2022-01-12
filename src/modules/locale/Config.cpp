@@ -252,7 +252,7 @@ Config::setCurrentLocation( const QString& regionName, const QString& zoneName )
 void
 Config::setCurrentLocation( const CalamaresUtils::Locale::TimeZoneData* location )
 {
-    bool updateLocation = ( location != m_currentLocation );
+    if ( location != m_currentLocation )
     {
         m_currentLocation = location;
         // Overwrite those settings that have not been made explicit.
