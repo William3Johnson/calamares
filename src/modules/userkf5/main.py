@@ -113,7 +113,7 @@ def run():
 
     print(label)
     if 'plasmawayland' in open('/etc/sddm.conf').read():
-        m = re.search("KAOS_Wayland_\d{8}", label);
+        m = re.search("KAOS_\d{8}", label);
         print (m.group(0))
         lines = (m.group(0))
     else:
