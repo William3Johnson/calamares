@@ -703,27 +703,27 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="272"/>
         <source>Successfully unmounted %1.</source>
-        <translation type="unfinished"/>
+        <translation>%1 démonté avec succès.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="279"/>
         <source>Successfully disabled swap %1.</source>
-        <translation type="unfinished"/>
+        <translation>Swap %1 désactivée avec succès.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="305"/>
         <source>Successfully cleared swap %1.</source>
-        <translation type="unfinished"/>
+        <translation>Swap %1 effacée avec succès.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="319"/>
         <source>Successfully closed mapper device %1.</source>
-        <translation type="unfinished"/>
+        <translation>Le device mapper %1 a été fermé avec succès.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="332"/>
         <source>Successfully disabled volume group %1.</source>
-        <translation type="unfinished"/>
+        <translation>Groupe de volume %1 désactivé avec succès.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="371"/>
@@ -996,7 +996,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="71"/>
         <source>Primar&amp;y</source>
-        <translation type="unfinished"/>
+        <translation>Primai&amp;re</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="81"/>
@@ -1066,7 +1066,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/PartitionDialogHelpers.cpp" line="96"/>
         <source>Mountpoint must start with a &lt;tt&gt;/&lt;/tt&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Le point de montage doit commencer par &lt;tt&gt;/&lt;/tt&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1329,7 +1329,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="54"/>
         <source>Con&amp;tent:</source>
-        <translation type="unfinished"/>
+        <translation>Con&amp;tenu :</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="64"/>
@@ -1397,7 +1397,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/EncryptWidget.ui" line="43"/>
         <source>Your system does not seem to support encryption well enough to encrypt the entire system. You may enable encryption, but performance may suffer.</source>
-        <translation type="unfinished"/>
+        <translation>Votre système ne semble pas prendre en charge le chiffrement suffisamment correctement pour chiffrer l&apos;ensemble du système. Vous pouvez activer le chiffrement, mais les performances risquent d&apos;en souffrir.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EncryptWidget.ui" line="59"/>
@@ -1421,12 +1421,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/libcalamaresui/widgets/ErrorDialog.ui" line="36"/>
         <source>Details:</source>
-        <translation type="unfinished"/>
+        <translation>Détails :</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/ErrorDialog.ui" line="52"/>
         <source>Would you like to paste the install log to the web?</source>
-        <translation type="unfinished"/>
+        <translation>Souhaitez-vous copier le log d’installation sur le Web ?</translation>
     </message>
 </context>
 <context>
@@ -1720,22 +1720,22 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/luksopenswaphookcfg/LOSHJob.cpp" line="36"/>
         <source>Configuring encrypted swap.</source>
-        <translation type="unfinished"/>
+        <translation>Configuration de la swap chiffrée.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksopenswaphookcfg/LOSHJob.cpp" line="88"/>
         <source>No target system available.</source>
-        <translation type="unfinished"/>
+        <translation>Aucun système cible disponible.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksopenswaphookcfg/LOSHJob.cpp" line="96"/>
         <source>No rootMountPoint is set.</source>
-        <translation type="unfinished"/>
+        <translation>Aucun point de montage n’a été défini.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksopenswaphookcfg/LOSHJob.cpp" line="101"/>
         <source>No configFilePath is set.</source>
-        <translation type="unfinished"/>
+        <translation>Aucun chemin de fichier de configuration n’a été défini.</translation>
     </message>
 </context>
 <context>
@@ -3685,43 +3685,43 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="101"/>
         <source>Create ZFS pools and datasets</source>
-        <translation type="unfinished"/>
+        <translation>Créer des pools et des ensembles de données ZFS</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="162"/>
         <source>Failed to create zpool on </source>
-        <translation type="unfinished"/>
+        <translation>Impossible de créer un zpool sur</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="180"/>
         <source>Configuration Error</source>
-        <translation type="unfinished"/>
+        <translation>Erreur de configuration</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="181"/>
         <source>No partitions are available for Zfs.</source>
-        <translation type="unfinished"/>
+        <translation>Aucune partition n’est disponible pour Zfs.</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="192"/>
         <source>Internal data missing</source>
-        <translation type="unfinished"/>
+        <translation>Donnés internes manquantes</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="192"/>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="257"/>
         <source>Failed to create zpool</source>
-        <translation type="unfinished"/>
+        <translation>Impossible de créer un zpool</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="329"/>
         <source>Failed to create dataset</source>
-        <translation type="unfinished"/>
+        <translation>Impossible de créer un jeu de données</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="330"/>
         <source>The output was: </source>
-        <translation type="unfinished"/>
+        <translation>La sortie était :</translation>
     </message>
 </context>
 <context>
@@ -3740,7 +3740,17 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
                         development is sponsored by &lt;br/&gt;
                         &lt;a href='http://www.blue-systems.com/'&gt;Blue Systems&lt;/a&gt; -
                         Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt; &lt;br/&gt;
+&lt;strong&gt;%2&lt;br/&gt;
+pour %3&lt;/strong&gt; &lt;br/&gt;&lt;br/&gt;
+Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
+Copyright 2017-2022 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
+Merci à &lt;a href=&apos;https://calamares.io/team/&apos;&gt;l’équipe de Calamares&lt;/a&gt;
+et à &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;l’équipe de traduction de KaOS&lt;/a&gt;. &lt;br/&gt; &lt;br/&gt;
+Le développement de &lt;a href=&apos;https://calamares.io/&apos;&gt;Calamares&lt;/a&gt;
+est sponsorisé par &lt;br/&gt;
+&lt;a href=&apos;http://www.blue-systems.com/&apos;&gt;Blue Systems&lt;/a&gt; - 
+Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/about.qml" line="96"/>
@@ -3794,23 +3804,24 @@ Ce log est copié sur %1 dans le système cible.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="36"/>
         <source>Installation Completed</source>
-        <translation type="unfinished"/>
+        <translation>Installation terminée</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="43"/>
         <source>%1 has been installed on your computer.&lt;br/&gt;
             You may now restart your device.</source>
-        <translation type="unfinished"/>
+        <translation>%1 a été installé sur votre ordinateur.&lt;br/&gt;
+Vous pouvez maintenant redémarrer votre système.</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="65"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>Fermer</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="71"/>
         <source>Restart</source>
-        <translation type="unfinished"/>
+        <translation>Redémarrer</translation>
     </message>
 </context>
 <context>
