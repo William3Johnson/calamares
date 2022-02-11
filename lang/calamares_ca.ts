@@ -704,27 +704,27 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="272"/>
         <source>Successfully unmounted %1.</source>
-        <translation type="unfinished"/>
+        <translation>S&apos;ha desmuntat correctament %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="279"/>
         <source>Successfully disabled swap %1.</source>
-        <translation type="unfinished"/>
+        <translation>S&apos;ha inhabilitat correctament l&apos;intercanvi %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="305"/>
         <source>Successfully cleared swap %1.</source>
-        <translation type="unfinished"/>
+        <translation>S&apos;ha netejat correctament l&apos;intercanvi %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="319"/>
         <source>Successfully closed mapper device %1.</source>
-        <translation type="unfinished"/>
+        <translation>S&apos;ha tancat correctament el dispositiu de mapatge %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="332"/>
         <source>Successfully disabled volume group %1.</source>
-        <translation type="unfinished"/>
+        <translation>S&apos;ha inhabilitat correctament el grup de volums %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="371"/>
@@ -997,7 +997,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="71"/>
         <source>Primar&amp;y</source>
-        <translation type="unfinished"/>
+        <translation>Primar&amp;i</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="81"/>
@@ -1067,7 +1067,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/PartitionDialogHelpers.cpp" line="96"/>
         <source>Mountpoint must start with a &lt;tt&gt;/&lt;/tt&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>El punt de muntatge ha de començar amb &lt;tt&gt;/&lt;/tt&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1330,7 +1330,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="54"/>
         <source>Con&amp;tent:</source>
-        <translation type="unfinished"/>
+        <translation>Con&amp;tingut::</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="64"/>
@@ -1398,7 +1398,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/EncryptWidget.ui" line="43"/>
         <source>Your system does not seem to support encryption well enough to encrypt the entire system. You may enable encryption, but performance may suffer.</source>
-        <translation type="unfinished"/>
+        <translation>Sembla que el sistema no admet prou bé l&apos;encriptació per encriptar tot el sistema. Podeu activar-la, però el rendiment se&apos;n pot ressentir.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EncryptWidget.ui" line="59"/>
@@ -1422,12 +1422,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/libcalamaresui/widgets/ErrorDialog.ui" line="36"/>
         <source>Details:</source>
-        <translation type="unfinished"/>
+        <translation>Detalls:</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/ErrorDialog.ui" line="52"/>
         <source>Would you like to paste the install log to the web?</source>
-        <translation type="unfinished"/>
+        <translation>Voleu enganxar el registre d&apos;instal·lació al web?</translation>
     </message>
 </context>
 <context>
@@ -1721,22 +1721,22 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/luksopenswaphookcfg/LOSHJob.cpp" line="36"/>
         <source>Configuring encrypted swap.</source>
-        <translation type="unfinished"/>
+        <translation>Configuració de l&apos;intercanvi encriptat.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksopenswaphookcfg/LOSHJob.cpp" line="88"/>
         <source>No target system available.</source>
-        <translation type="unfinished"/>
+        <translation>No hi ha cap sistema de destinació disponible.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksopenswaphookcfg/LOSHJob.cpp" line="96"/>
         <source>No rootMountPoint is set.</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha establert cap punt de muntatge d&apos;arrel.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksopenswaphookcfg/LOSHJob.cpp" line="101"/>
         <source>No configFilePath is set.</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha establert cap camí de fitxer de configuració.</translation>
     </message>
 </context>
 <context>
@@ -3690,43 +3690,43 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="101"/>
         <source>Create ZFS pools and datasets</source>
-        <translation type="unfinished"/>
+        <translation>Crea agrupacions i conjunts de dades ZFS</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="162"/>
         <source>Failed to create zpool on </source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha pogut crear la zpool a</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="180"/>
         <source>Configuration Error</source>
-        <translation type="unfinished"/>
+        <translation>Error de configuració</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="181"/>
         <source>No partitions are available for Zfs.</source>
-        <translation type="unfinished"/>
+        <translation>No hi ha particions disponibles per a Zfs.</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="192"/>
         <source>Internal data missing</source>
-        <translation type="unfinished"/>
+        <translation>Falten dades internes.</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="192"/>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="257"/>
         <source>Failed to create zpool</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha pogut crear la zpool.</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="329"/>
         <source>Failed to create dataset</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha pogut crear el conjunt de dades.</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="330"/>
         <source>The output was: </source>
-        <translation type="unfinished"/>
+        <translation>La sortida ha estat la següent:</translation>
     </message>
 </context>
 <context>
@@ -3745,7 +3745,18 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
                         development is sponsored by &lt;br/&gt;
                         &lt;a href='http://www.blue-systems.com/'&gt;Blue Systems&lt;/a&gt; -
                         Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;
+                        &lt;strong&gt;%2&lt;br/&gt;
+                        per a %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;
+                        Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
+                        Copyright 2017-2022 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
+                        Gràcies a &lt;a href=&apos;https://calamares.io/team/&apos;&gt;l&apos;equip del Calamares&lt;/a&gt; 
+                        i a l&apos;&lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;equip de traducció 
+                        del KaOS&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;
+                        El desenvolupament del&lt;a href=&apos;https://calamares.io/&apos;&gt;Calamares&lt;/a&gt; 
+                        està patrocinat per &lt;br/&gt;
+                        &lt;a href=&apos;http://www.blue-systems.com/&apos;&gt;Blue Systems&lt;/a&gt; - 
+                        Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/about.qml" line="96"/>
@@ -3799,23 +3810,24 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="36"/>
         <source>Installation Completed</source>
-        <translation type="unfinished"/>
+        <translation>Instal·lació completada</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="43"/>
         <source>%1 has been installed on your computer.&lt;br/&gt;
             You may now restart your device.</source>
-        <translation type="unfinished"/>
+        <translation>%1 s&apos;ha instal·lat a l&apos;ordinador.&lt;br/&gt;
+     Ara podeu reiniciar el dispositiu.</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="65"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>Tanca</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="71"/>
         <source>Restart</source>
-        <translation type="unfinished"/>
+        <translation>Reinicia</translation>
     </message>
 </context>
 <context>
