@@ -704,27 +704,27 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="272"/>
         <source>Successfully unmounted %1.</source>
-        <translation type="unfinished"/>
+        <translation>%1 को माउंट से हटाना सफल।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="279"/>
         <source>Successfully disabled swap %1.</source>
-        <translation type="unfinished"/>
+        <translation>%1 स्वैप निष्क्रिय करना सफल।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="305"/>
         <source>Successfully cleared swap %1.</source>
-        <translation type="unfinished"/>
+        <translation>%1 स्वैप रिक्त करना सफल।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="319"/>
         <source>Successfully closed mapper device %1.</source>
-        <translation type="unfinished"/>
+        <translation>%1 प्रतिचित्रण उपकरण बंद करना सफल।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="332"/>
         <source>Successfully disabled volume group %1.</source>
-        <translation type="unfinished"/>
+        <translation>%1 वॉल्यूम समूह निष्क्रिय करना सफल।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="371"/>
@@ -997,7 +997,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="71"/>
         <source>Primar&amp;y</source>
-        <translation type="unfinished"/>
+        <translation>मुख्य (&amp;y)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="81"/>
@@ -1067,7 +1067,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionDialogHelpers.cpp" line="96"/>
         <source>Mountpoint must start with a &lt;tt&gt;/&lt;/tt&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>माउंट पॉइंट का &lt;tt&gt;/&lt;/tt&gt; से आरंभ होना आवश्यक है।</translation>
     </message>
 </context>
 <context>
@@ -1330,7 +1330,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="54"/>
         <source>Con&amp;tent:</source>
-        <translation type="unfinished"/>
+        <translation>सामग्री (&amp;t):</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="64"/>
@@ -1398,7 +1398,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/EncryptWidget.ui" line="43"/>
         <source>Your system does not seem to support encryption well enough to encrypt the entire system. You may enable encryption, but performance may suffer.</source>
-        <translation type="unfinished"/>
+        <translation>आपके सिस्टम पर एन्क्रिप्शन हेतु समर्थन सम्पूर्ण सिस्टम एन्क्रिप्ट करने के लिए पर्याप्त नहीं है। इच्छा हो तो एन्क्रिप्शन सक्रिय करें परन्तु इससे कार्यक्षमता प्रभावित हो सकती है।</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EncryptWidget.ui" line="59"/>
@@ -1422,12 +1422,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/libcalamaresui/widgets/ErrorDialog.ui" line="36"/>
         <source>Details:</source>
-        <translation type="unfinished"/>
+        <translation>विवरण :</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/widgets/ErrorDialog.ui" line="52"/>
         <source>Would you like to paste the install log to the web?</source>
-        <translation type="unfinished"/>
+        <translation>क्या आप इंस्टॉल प्रक्रिया की लॉग फ़ाइल इंटरनेट पर पेस्ट करना चाहेंगे?</translation>
     </message>
 </context>
 <context>
@@ -1721,22 +1721,22 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/luksopenswaphookcfg/LOSHJob.cpp" line="36"/>
         <source>Configuring encrypted swap.</source>
-        <translation type="unfinished"/>
+        <translation>एन्क्रिप्शन युक्त स्वैप का विन्यास जारी।</translation>
     </message>
     <message>
         <location filename="../src/modules/luksopenswaphookcfg/LOSHJob.cpp" line="88"/>
         <source>No target system available.</source>
-        <translation type="unfinished"/>
+        <translation>लक्षित सिस्टम उपलब्ध नहीं है।</translation>
     </message>
     <message>
         <location filename="../src/modules/luksopenswaphookcfg/LOSHJob.cpp" line="96"/>
         <source>No rootMountPoint is set.</source>
-        <translation type="unfinished"/>
+        <translation>rootMountPoint निर्धारित नहीं है। </translation>
     </message>
     <message>
         <location filename="../src/modules/luksopenswaphookcfg/LOSHJob.cpp" line="101"/>
         <source>No configFilePath is set.</source>
-        <translation type="unfinished"/>
+        <translation>configFilePath निर्धारित नहीं है।</translation>
     </message>
 </context>
 <context>
@@ -3690,43 +3690,43 @@ Output:
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="101"/>
         <source>Create ZFS pools and datasets</source>
-        <translation type="unfinished"/>
+        <translation>ZFS पूल व डेटासेट सृजन</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="162"/>
         <source>Failed to create zpool on </source>
-        <translation type="unfinished"/>
+        <translation>यहाँ zpool का सृजन विफल</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="180"/>
         <source>Configuration Error</source>
-        <translation type="unfinished"/>
+        <translation>विन्यास त्रुटि</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="181"/>
         <source>No partitions are available for Zfs.</source>
-        <translation type="unfinished"/>
+        <translation>ZFS हेतु विभाजन उपलब्ध नहीं है।</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="192"/>
         <source>Internal data missing</source>
-        <translation type="unfinished"/>
+        <translation>आतंरिक डेटा अनुपलब्ध</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="192"/>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="257"/>
         <source>Failed to create zpool</source>
-        <translation type="unfinished"/>
+        <translation>zpool का सृजन विफल</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="329"/>
         <source>Failed to create dataset</source>
-        <translation type="unfinished"/>
+        <translation>डेटासेट का सृजन विफल</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="330"/>
         <source>The output was: </source>
-        <translation type="unfinished"/>
+        <translation>यह आउटपुट था :</translation>
     </message>
 </context>
 <context>
@@ -3745,7 +3745,18 @@ Output:
                         development is sponsored by &lt;br/&gt;
                         &lt;a href='http://www.blue-systems.com/'&gt;Blue Systems&lt;/a&gt; -
                         Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;
+                        &lt;strong&gt;%2&lt;br/&gt;
+                        के लिए %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;
+                        प्रतिलिप्याधिकार 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
+                        प्रतिलिप्याधिकार 2017-2022 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
+                        &lt;a href=&apos;https://calamares.io/team/&apos;&gt;Calamares टीम&lt;/a&gt; 
+                         व &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS 
+                        अनुवादक टीम&lt;/a&gt;को धन्यवाद।&lt;br/&gt;&lt;br/&gt;
+                        &lt;a href=&apos;https://calamares.io/&apos;&gt;Calamares&lt;/a&gt; 
+                        का विकास &lt;br/&gt;
+                        &lt;a href=&apos;http://www.blue-systems.com/&apos;&gt;ब्लू सिस्टम्स&lt;/a&gt; - 
+                        लिब्रेटिंग सॉफ्टवेयर द्वारा प्रायोजित है।</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/about.qml" line="96"/>
@@ -3799,23 +3810,24 @@ Output:
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="36"/>
         <source>Installation Completed</source>
-        <translation type="unfinished"/>
+        <translation>इंस्टॉल प्रक्रिया पूर्ण</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="43"/>
         <source>%1 has been installed on your computer.&lt;br/&gt;
             You may now restart your device.</source>
-        <translation type="unfinished"/>
+        <translation>आपके कंप्यूटर पर %1 इंस्टॉल हो चुका है।&lt;br/&gt;
+            अब आप उपकरण पुनः आरंभ कर सकते हैं।</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="65"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>बंद करें</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="71"/>
         <source>Restart</source>
-        <translation type="unfinished"/>
+        <translation>पुनः आरंभ करें</translation>
     </message>
 </context>
 <context>
