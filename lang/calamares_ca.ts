@@ -3705,7 +3705,7 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="181"/>
         <source>No partitions are available for Zfs.</source>
-        <translation>No hi ha particions disponibles per a Zfs.</translation>
+        <translation>No hi ha particions disponibles per a ZFS.</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="192"/>
