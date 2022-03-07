@@ -3,7 +3,7 @@
 #
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014-2021, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2022, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -81,11 +81,11 @@ def run():
             else:
                 print('Removing guest-utils')
                 libcalamares.utils.target_env_call(
-                    ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils', 'virtualbox-guest-modules'])
+                    ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils'])
         else:
             print('Removing guest-utils')
             libcalamares.utils.target_env_call(
-                ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils', 'virtualbox-guest-modules'])
+                ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils'])
 
     # Remove KDE l10n
     this_locale = libcalamares.globalstorage.value("localeConf")["LANG"][:2]
