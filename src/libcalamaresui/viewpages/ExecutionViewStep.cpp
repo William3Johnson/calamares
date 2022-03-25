@@ -83,7 +83,7 @@ ExecutionViewStep::ExecutionViewStep( QObject* parent )
 
     m_tab_widget->addTab( m_slideshow->widget(), "Slideshow" );
     m_tab_widget->addTab( m_log_widget, "Log" );
-    m_tab_widget->tabBar()->hide();
+    m_tab_widget->tabBar()->show();
 
     layout->addWidget( m_tab_widget );
     CalamaresUtils::unmarginLayout( layout );
@@ -98,7 +98,7 @@ ExecutionViewStep::ExecutionViewStep( QObject* parent )
     auto toggleLogAction = toolBar->addAction(
         Branding::instance()->image(
             { "utilities-log-viewer", "utilities-terminal", "text-x-log", "text-x-changelog", "preferences-log" },
-            QSize( 32, 32 ) ),
+            QSize( 48, 48 ) ),
         "Toggle log" );
     auto toggleLogButton = dynamic_cast< QToolButton* >( toolBar->widgetForAction( toggleLogAction ) );
     connect( toggleLogButton, &QToolButton::clicked, this, &ExecutionViewStep::toggleLog );
