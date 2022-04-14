@@ -156,13 +156,13 @@ Kirigami.ScrollablePage {
                 id: _hostName
                 width: parent.width
                 placeholderText: qsTr("Computer Name")
-                text: config.hostName
+                text: config.hostname
                 validator: RegularExpressionValidator { regularExpression: /[a-zA-Z0-9][-a-zA-Z0-9_]+/ }
 
                 onTextChanged: acceptableInput
                     ? ( _hostName.text === "localhost"
                     ? forbiddenHost.visible=true
-                    : ( config.setHostName(text),
+                    : ( config.setHostname(text),
                     hostMessage.visible = false,forbiddenHost.visible = false ) )
                     : hostMessage.visible = true
 
