@@ -137,6 +137,7 @@ Item {
 
                         hoverEnabled: true
                         width: parent.width
+                        height: 18
                         highlighted: ListView.isCurrentItem
 
                         RowLayout {
@@ -216,6 +217,7 @@ Item {
                         delegate: ItemDelegate {
                             hoverEnabled: true
                             width: parent.width
+                            height: 18
                             highlighted: ListView.isCurrentItem
 
                             RowLayout {
