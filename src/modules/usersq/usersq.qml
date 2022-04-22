@@ -64,16 +64,16 @@ Kirigami.ScrollablePage {
                 text: config.fullName
                 onTextChanged: config.setFullName(text)
 
-                background: Rectangle {
+                /*background: Rectangle {
                     color: _userNameField.text.length
                         ? positiveFieldColor : unfilledFieldColor
                     border.color: _userNameField.text.length
                         ? positiveFieldOutlineColor : unfilledFieldOutlineColor
-                }
-                /*palette.base: _userNameField.text.length
+                }*/
+                palette.base: _userNameField.text.length
                     ? positiveFieldColor : unfilledFieldColor
                 palette.highlight : _userNameField.text.length
-                    ? positiveFieldOutlineColor : unfilledFieldOutlineColor*/
+                    ? positiveFieldOutlineColor : unfilledFieldOutlineColor
             }
         }
 
