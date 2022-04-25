@@ -2687,17 +2687,17 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="254"/>
         <source>Unsafe partition actions are enabled.</source>
-        <translation type="unfinished"/>
+        <translation>Les accions de partició no segures estan habilitades.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="257"/>
         <source>Partitioning is configured to &lt;b&gt;always&lt;/b&gt; fail.</source>
-        <translation type="unfinished"/>
+        <translation>Les particions estan configurades per fallar &lt;b&gt;sempre&lt;/b&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="260"/>
         <source>No partitions will be changed.</source>
-        <translation type="unfinished"/>
+        <translation>No es canviarà cap partició.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="300"/>
@@ -2767,7 +2767,7 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="594"/>
         <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, (if not done so already) go back and set the partition table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;%2&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
-        <translation type="unfinished"/>
+        <translation>Una taula de particions GPT és la millor opció per a tots els sistemes. Aquest instal·lador admet aquesta configuració també per als sistemes BIOS.&lt;br/&gt;&lt;br/&gt;Per configurar una taula de particions GPT amb BIOS (si encara no s&apos;ha fet), torneu enrere i establiu la taula de particions a GPT, seguidament creeu una partició de 8 MB sense formatar amb la bandera &lt;strong&gt;%2&lt;/strong&gt; habilitada.&lt;br/&gt;&lt;br/&gt;Cal una partició de 8 MB sense formatar per iniciar %1 en un sistema BIOS amb GPT.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/PartitionViewStep.cpp" line="627"/>
@@ -3720,7 +3720,7 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="181"/>
         <source>No partitions are available for ZFS.</source>
-        <translation type="unfinished"/>
+        <translation>No hi ha particions disponibles per a ZFS.</translation>
     </message>
     <message>
         <location filename="../src/modules/zfs/ZfsJob.cpp" line="192"/>
