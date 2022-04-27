@@ -72,6 +72,7 @@ Page {
 
                     hoverEnabled: true
                     width: parent.width
+                    height: 30
                     highlighted: ListView.isCurrentItem
 
                     Label {
@@ -146,6 +147,7 @@ Page {
 
                         hoverEnabled: true
                         width: parent.width
+                        height: 30
                         highlighted: ListView.isCurrentItem
 
                         Label {
