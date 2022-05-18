@@ -467,17 +467,17 @@ ChoicePage::onActionChanged()
     }
 
     // Whole disk encryption isn't implemented for zfs so disable the option for now
-    if ( m_eraseFsTypesChoiceComboBox != nullptr && m_enableEncryptionWidget )
-    {
-        if ( m_eraseFsTypesChoiceComboBox->currentText() == "zfs" )
-        {
-            m_encryptWidget->hide();
-        }
-        else
-        {
-            m_encryptWidget->show();
-        }
-    }
+    //if ( m_eraseFsTypesChoiceComboBox != nullptr && m_enableEncryptionWidget )
+    //{
+    //    if ( m_eraseFsTypesChoiceComboBox->currentText() == "zfs" )
+    //    {
+    //        m_encryptWidget->hide();
+    //    }
+    //    else
+    //    {
+    //        m_encryptWidget->show();
+    //    }
+    //}
 }
 
 void
