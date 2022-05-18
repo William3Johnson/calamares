@@ -20,8 +20,10 @@
 #include <kpmcore/backend/corebackendmanager.h>
 #include <kpmcore/core/device.h>
 #include <kpmcore/core/partition.h>
+#include <kpmcore/fs/filesystem.h>
 #include <kpmcore/fs/filesystemfactory.h>
 #include <kpmcore/fs/luks.h>
+#include <kpmcore/util/externalcommand.h>
 
 using CalamaresUtils::Partition::PartitionIterator;
 
@@ -125,6 +127,82 @@ clonePartition( Device* device, Partition* partition )
                           fs->lastSector(),
                           partition->partitionPath(),
                           partition->activeFlags() );
+}
+
+// Adapted from luks cryptOpen which always opens a dialog to ask for a passphrase
+int
+updateLuksDevice( Partition* partition, const QString& passphrase )
+{
+    const QString deviceNode = partition->partitionPath();
+
+    cDebug() << "Update Luks device: " << deviceNode;
+
+    if ( passphrase.isEmpty() )
+    {
+        cWarning() << Logger::SubEntry << "#1: Passphrase is empty";
+        return 1;
+    }
+
+    if ( partition->fileSystem().type() != FileSystem::Luks )
+    {
+        cWarning() << Logger::SubEntry << "#2: Not a luks encrypted device";
+        return 2;
+    }
+
+    // Cast partition fs to luks fs
+    FS::luks* luksFs = dynamic_cast< FS::luks* >( &partition->fileSystem() );
+
+    // Test the given passphrase
+    if ( !luksFs->testPassphrase( deviceNode, passphrase ) )
+    {
+        cWarning() << Logger::SubEntry << "#3: Passphrase incorrect";
+        return 3;
+    }
+
+    if ( luksFs->isCryptOpen() )
+    {
+        if ( !luksFs->mapperName().isEmpty() )
+        {
+            cWarning() << Logger::SubEntry << "#4: Device already decrypted";
+            return 4;
+        }
+        else
+        {
+            cDebug() << Logger::SubEntry << "No mapper node found";
+            luksFs->setCryptOpen( false );
+        }
+    }
+
+    ExternalCommand openCmd( QStringLiteral( "cryptsetup" ),
+                             { QStringLiteral( "open" ), deviceNode, luksFs->suggestedMapperName( deviceNode ) } );
+
+    if ( !( openCmd.write( passphrase.toLocal8Bit() + '\n' ) && openCmd.start( -1 ) && openCmd.exitCode() == 0 ) )
+    {
+        cWarning() << Logger::SubEntry << openCmd.exitCode() << ": cryptsetup command failed";
+        return openCmd.exitCode();
+    }
+
+    // Save the existing passphrase
+    luksFs->setPassphrase( passphrase );
+
+    luksFs->scan( deviceNode );
+
+    if ( luksFs->mapperName().isEmpty() )
+    {
+        cWarning() << Logger::SubEntry << "#5: No mapper node found";
+        return 5;
+    }
+
+    luksFs->loadInnerFileSystem( luksFs->mapperName() );
+    luksFs->setCryptOpen( luksFs->innerFS() != nullptr );
+
+    if ( !luksFs->isCryptOpen() )
+    {
+        cWarning() << Logger::SubEntry << "#6: Device could not be decrypted";
+        return 6;
+    }
+
+    return 0;
 }
 
 Calamares::JobResult
