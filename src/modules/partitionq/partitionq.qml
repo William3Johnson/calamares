@@ -191,7 +191,7 @@ Kirigami.ScrollablePage
 
                     ListItemTemplate {
                         anchors.fill: parent
-                        iconSource: "/usr/share/calamares/branding/kaos_branding/images/partition-erase-auto.svg"//"gpick"//config.eraseOption.icon
+                        iconSource: "partition-erase-auto.svg"//"gpick"//config.eraseOption.icon
                         iconSizeHint: 48
                         //checkable: false
                         //Binding on checked
@@ -268,7 +268,7 @@ Kirigami.ScrollablePage
                     ListItemTemplate
                     {
                         anchors.fill: parent
-                        iconSource: "/usr/share/calamares/branding/kaos_branding/images/partition-alongside.svg"
+                        iconSource: "partition-alongside.svg"
                         iconSizeHint: 48
                         //checkable: false
                         //Binding on checked
@@ -328,7 +328,7 @@ Kirigami.ScrollablePage
 
                 ListItemTemplate {
                     anchors.fill: parent
-                    iconSource: "/usr/share/calamares/branding/kaos_branding/images/partition-replace-os.svg"
+                    iconSource: "partition-replace-os.svg"
                     iconSizeHint: 48
                     //checkable: false
                     //Binding on checked
@@ -387,7 +387,7 @@ Kirigami.ScrollablePage
                 ListItemTemplate
                 {
                     anchors.fill: parent
-                    iconSource: "/usr/share/calamares/branding/kaos_branding/images/partition-manual.svg" //"drive-harddisk"
+                    iconSource: "partition-manual.svg" //"drive-harddisk"
                     iconSizeHint: 48
                     //checkable: false
                     //checked: config.somethingElseOption.checked
