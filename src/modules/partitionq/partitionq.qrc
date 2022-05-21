@@ -1,0 +1,19 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+  <file alias="partitionq.qml">partitionq.qml</file>
+  <file alias="ItemSection.qml">ItemSection.qml</file>
+  <file alias="ListBrowser.qml">ListBrowser.qml</file>
+  <file alias="ListItemDelegate.qml">ListItemDelegate.qml</file>
+  <file alias="ListItemTemplate.qml">ListItemTemplate.qml</file>
+  <file alias="ListViewTemplate.qml">ListViewTemplate.qml</file>
+  <file alias="manual.qml">manual.qml</file>
+  <file alias="images/boot-environment.svg">images/boot-environment.svg</file>
+  <file alias="images/chevron-left-solid.svg">images/chevron-left-solid.svg</file>
+  <file alias="images/information.svgz">images/information.svgz</file>
+  <file alias="images/partition-alongside.svg">images/partition-alongside.svg</file>
+  <file alias="images/partition-erase-auto.svg">images/partition-erase-auto.svg</file>
+  <file alias="images/partition-manual.svg">images/partition-manual.svg</file>
+  <file alias="images/partition-replace-os.svg">images/partition-replace-os.svg</file>
+  <file alias="images/partition-table.svg">images/partition-table.svg</file>
+</qresource>
+</RCC>
