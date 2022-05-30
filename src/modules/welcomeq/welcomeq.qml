@@ -61,7 +61,7 @@ Page
 
             spacing: Kirigami.Units.largeSpacing* 2
 
-            Button {
+            /*Button {
                 Layout.fillWidth: true
                 text: qsTr("About")
                 icon.name: "dialog-information"
@@ -72,7 +72,7 @@ Page
                 onClicked: {
                     onClicked: load.source = "about.qml"
                 }
-            }
+            }*/
 
             Button {
                 Layout.fillWidth: true

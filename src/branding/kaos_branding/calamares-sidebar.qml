@@ -76,26 +76,56 @@ Rectangle {
         }
 
         Rectangle {
+            id: debugArea
             Layout.fillWidth: true;
             height: 35
             Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
-            color: Branding.styleString( mouseArea.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
+            Layout.bottomMargin: 0
+            color: Branding.styleString( mouseAreaDebug.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
             visible: debug.enabled
 
             MouseArea {
-                id: mouseArea
+                id: mouseAreaDebug
                 anchors.fill: parent;
                 cursorShape: Qt.PointingHandCursor
                 hoverEnabled: true
                 Text {
-                    anchors.verticalCenter: parent.verticalCenter;
-                    x: parent.x + 4;
+                    anchors.centerIn: parent
                     text: qsTr("Show debug information")
-                    color: Branding.styleString( mouseArea.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarBackground );
+                    color: Branding.styleString( mouseAreaDebug.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarBackground );
                     font.pointSize : 9
                 }
 
                 onClicked: debug.toggle()
+            }
+        }
+
+        Rectangle {
+            id: aboutArea
+            Layout.fillWidth: true;
+            height: 35
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
+            color: Branding.styleString( mouseAreaAbout.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
+            visible: true
+
+            MouseArea {
+                id: mouseAreaAbout
+                anchors.fill: parent;
+                cursorShape: Qt.PointingHandCursor
+                hoverEnabled: true
+                Text {
+                    anchors.centerIn: parent
+                    text: qsTr("About")
+                    color: Branding.styleString( mouseAreaAbout.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarText );
+                    font.pointSize : 9
+                }
+
+                property variant window;
+                onClicked: {
+                    var component = Qt.createComponent("about.qml");
+                    window = component.createObject();
+                    window.show();
+                }
             }
         }
     }
