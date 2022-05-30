@@ -1,10 +1,14 @@
 /* Sample of QML progress tree.
+
    SPDX-FileCopyrightText: 2020 Adriaan de Groot <groot@kde.org>
-   SPDX-FileCopyrightText: 2021 Anke Boersma <demm@kaosx.us>
+   SPDX-FileCopyrightText: 2021 - 2022 Anke Boersma <demm@kaosx.us>
    SPDX-License-Identifier: GPL-3.0-or-later
+
+
    The progress tree (actually a list) is generally "vertical" in layout,
    with the steps going "down", but it could also be a more compact
    horizontal layout with suitable branding settings.
+
    This example emulates the layout and size of the widgets progress tree.
 */
 import io.calamares.ui 1.0
@@ -44,7 +48,7 @@ Rectangle {
                 Layout.fillWidth: true;
                 height: 35;
                 radius: 0;
-                color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarTextHighlight : Branding.SidebarBackground );
+                color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground );
 
                 Image {
                     source: "angle.svg"
@@ -60,7 +64,7 @@ Rectangle {
                     anchors.verticalCenter: parent.verticalCenter;
                     anchors.horizontalCenter: parent.horizontalCenter
                     x: parent.x + 12;
-                    color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarTextSelect : Branding.SidebarText );
+                    color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarTextCurrent : Branding.SidebarText );
                     text: display;
                     font.pointSize : 14
                 }
@@ -75,7 +79,7 @@ Rectangle {
             Layout.fillWidth: true;
             height: 35
             Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
-            color: Branding.styleString( mouseArea.containsMouse ? Branding.SidebarTextHighlight : Branding.SidebarBackground);
+            color: Branding.styleString( mouseArea.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
             visible: debug.enabled
 
             MouseArea {
@@ -87,7 +91,7 @@ Rectangle {
                     anchors.verticalCenter: parent.verticalCenter;
                     x: parent.x + 4;
                     text: qsTr("Show debug information")
-                    color: Branding.styleString( mouseArea.containsMouse ? Branding.SidebarTextSelect : Branding.SidebarBackground );
+                    color: Branding.styleString( mouseArea.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarBackground );
                     font.pointSize : 9
                 }
 
