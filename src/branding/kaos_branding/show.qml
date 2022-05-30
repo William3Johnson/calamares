@@ -30,7 +30,7 @@ Presentation
         repeat: true
         onTriggered: presentation.goToNextSlide()
     }
-    
+
     Slide {
         anchors.fill: parent
 
@@ -38,7 +38,7 @@ Presentation
             id: background
             source: "1.svg"
             anchors.fill: parent
-        
+
             Text {
                 anchors.centerIn: parent
                 anchors.verticalCenterOffset: 0
@@ -104,7 +104,7 @@ Presentation
             }
         }
     }
-    
+
     Slide {
         anchors.fill: parent
 
@@ -128,7 +128,7 @@ Presentation
             }
         }
     }
-    
+
     Slide {
         anchors.fill: parent
 
@@ -150,7 +150,7 @@ Presentation
             }
         }
     }
-    
+
     Slide {
         anchors.fill: parent
 

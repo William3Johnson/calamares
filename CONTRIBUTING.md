@@ -29,15 +29,17 @@ rules of decent behavior in both communities are pretty much the same).
 GitHub Issues are **one** place for discussing Calamares if there are concrete
 problems or a new feature to discuss.
 
-Regular Calamares development chit-chat happens on old-school IRC
-(no registration required). Responsiveness is best during the day
-in Europe, but feel free to idle. **DO NOT** ask-and-leave. Keep
+Regular Calamares development chit-chat happens in a [Matrix](https://matrix.org/)
+room, `#calamares:kde.org`. The conversation is bridged with IRC
+on [Libera.Chat](https://libera.chat/).
+Responsiveness is best during the day
+in Europe, but feel free to idle. If you use IRC, **DO NOT** ask-and-leave. Keep
 that chat window open because it can easily take a few hours for
 someone to notice a message.
-The Matrix room is relatively new.
+Matrix is persistent, and we'll see your message eventually.
 
-* [![Chat on IRC](https://img.shields.io/badge/IRC-Freenode%20%23calamares-green)](https://webchat.freenode.net/?randomnick=1&channels=%23calamares)
 * [![Join us on Matrix](https://img.shields.io/badge/Matrix-%23calamares:kde.org-blue)](https://webchat.kde.org/#/room/%23calamares:kde.org)
+* [![Chat on IRC](https://img.shields.io/badge/IRC-Libera.Chat%20%23calamares-green)](https://kiwiirc.com/client/irc.libera.chat/#calamares)
 
 
 ## General Guidelines
@@ -75,16 +77,15 @@ instructions are on the wiki.
 ### Dependencies
 
 Main:
-* Compiler with C++17 support: GCC >= 7 or Clang >= 5
-* CMake >= 3.3
-* Qt >= 5.9
+* Compiler with C++17 support
+* CMake >= 3.16
+* Qt >= 5.15
 * yaml-cpp >= 0.5.1
-* Python >= 3.3 (required for some modules)
-* Boost.Python >= 1.55.0 (required for some modules)
+* Python >= 3.6 (required for some modules)
+* Boost.Python >= 1.67.0 (required for some modules)
 * KDE extra-cmake-modules >= 5.18 (recommended; required for some modules;
   required for some tests)
 * KDE Frameworks KCoreAddons (>= 5.58 recommended)
-* PythonQt (optional, deprecated)
 
 Individual modules may have their own requirements;
 these are listed in CMake output.

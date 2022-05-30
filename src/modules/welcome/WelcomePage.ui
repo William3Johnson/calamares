@@ -135,99 +135,15 @@ SPDX-License-Identifier: GPL-3.0-or-later
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <item>
-          <widget class="QPushButton" name="aboutButton">
-           <property name="palette">
-            <palette>
-             <active>
-              <colorrole role="Button">
-               <brush brushstyle="SolidPattern">
-                <color alpha="255">
-                 <red>189</red>
-                 <green>195</green>
-                 <blue>199</blue>
-                </color>
-               </brush>
-              </colorrole>
-             </active>
-             <inactive>
-              <colorrole role="Button">
-               <brush brushstyle="SolidPattern">
-                <color alpha="255">
-                 <red>189</red>
-                 <green>195</green>
-                 <blue>199</blue>
-                </color>
-               </brush>
-              </colorrole>
-             </inactive>
-             <disabled>
-              <colorrole role="Button">
-               <brush brushstyle="SolidPattern">
-                <color alpha="255">
-                 <red>189</red>
-                 <green>195</green>
-                 <blue>199</blue>
-                </color>
-               </brush>
-              </colorrole>
-             </disabled>
-            </palette>
-           </property>
-           <property name="text">
-            <string>&amp;About</string>
-           </property>
-           <property name="flat">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
           <widget class="QPushButton" name="donateButton">
            <property name="toolTip">
             <string>Open donations website</string>
-           </property>
-           <property name="palette">
-            <palette>
-             <active>
-              <colorrole role="Button">
-               <brush brushstyle="SolidPattern">
-                <color alpha="255">
-                 <red>189</red>
-                 <green>195</green>
-                 <blue>199</blue>
-                </color>
-               </brush>
-              </colorrole>
-             </active>
-             <inactive>
-              <colorrole role="Button">
-               <brush brushstyle="SolidPattern">
-                <color alpha="255">
-                 <red>189</red>
-                 <green>195</green>
-                 <blue>199</blue>
-                </color>
-               </brush>
-              </colorrole>
-             </inactive>
-             <disabled>
-              <colorrole role="Button">
-               <brush brushstyle="SolidPattern">
-                <color alpha="255">
-                 <red>189</red>
-                 <green>195</green>
-                 <blue>199</blue>
-                </color>
-               </brush>
-              </colorrole>
-             </disabled>
-            </palette>
            </property>
            <property name="text">
             <string>&amp;Donate</string>
            </property>
            <property name="flat">
-            <bool>false</bool>
+            <bool>true</bool>
            </property>
           </widget>
          </item>
@@ -246,53 +162,22 @@ SPDX-License-Identifier: GPL-3.0-or-later
          </item>
          <item>
           <widget class="QPushButton" name="knownIssuesButton">
-           <property name="palette">
-            <palette>
-             <active>
-              <colorrole role="Button">
-               <brush brushstyle="SolidPattern">
-                <color alpha="255">
-                 <red>189</red>
-                 <green>195</green>
-                 <blue>199</blue>
-                </color>
-               </brush>
-              </colorrole>
-             </active>
-             <inactive>
-              <colorrole role="Button">
-               <brush brushstyle="SolidPattern">
-                <color alpha="255">
-                 <red>189</red>
-                 <green>195</green>
-                 <blue>199</blue>
-                </color>
-               </brush>
-              </colorrole>
-             </inactive>
-             <disabled>
-              <colorrole role="Button">
-               <brush brushstyle="SolidPattern">
-                <color alpha="255">
-                 <red>189</red>
-                 <green>195</green>
-                 <blue>199</blue>
-                </color>
-               </brush>
-              </colorrole>
-             </disabled>
-            </palette>
+           <property name="toolTip">
+            <string>Open issues and bug-tracking website</string>
            </property>
            <property name="text">
             <string>&amp;Known issues</string>
            </property>
            <property name="flat">
-            <bool>false</bool>
+            <bool>true</bool>
            </property>
           </widget>
          </item>
          <item>
           <widget class="QPushButton" name="releaseNotesButton">
+           <property name="toolTip">
+            <string>Open release notes website</string>
+           </property>
            <property name="text">
             <string>&amp;Release notes</string>
            </property>

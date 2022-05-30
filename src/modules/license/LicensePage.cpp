@@ -98,7 +98,12 @@ LicensePage::LicensePage( QWidget* parent )
     CalamaresUtils::unmarginLayout( ui->verticalLayout );
 
     ui->acceptFrame->setStyleSheet( mustAccept );
-    ui->acceptFrame->layout()->setMargin( CalamaresUtils::defaultFontHeight() / 2 );
+    {
+        // The inner frame was unmargined (above), reinstate margins so all are
+        // the same *x* (an x-height, approximately).
+        const auto x = CalamaresUtils::defaultFontHeight() / 2;
+        ui->acceptFrame->layout()->setContentsMargins( x, x, x, x );
+    }
 
     updateGlobalStorage( false );  // Have not agreed yet
 
@@ -110,7 +115,11 @@ LicensePage::LicensePage( QWidget* parent )
 void
 LicensePage::setEntries( const QList< LicenseEntry >& entriesList )
 {
-    CalamaresUtils::clearLayout( ui->licenseEntriesLayout );
+    for ( QWidget* w : m_entries )
+    {
+        ui->licenseEntriesLayout->removeWidget( w );
+        w->deleteLater();
+    }
 
     m_allLicensesOptional = true;
 
@@ -123,7 +132,6 @@ LicensePage::setEntries( const QList< LicenseEntry >& entriesList )
         m_entries.append( w );
         m_allLicensesOptional &= !entry.isRequired();
     }
-    ui->licenseEntriesLayout->addSpacerItem( new QSpacerItem( 10, 10, QSizePolicy::Minimum, QSizePolicy::Expanding ) );
 
     ui->acceptCheckBox->setChecked( false );
     checkAcceptance( false );
@@ -147,8 +155,10 @@ LicensePage::retranslate()
     }
     else
     {
-        ui->mainText->setText( tr( "In case non-free was selected, this installer will install proprietary packages <br/>"
-                                   "that have additional End User License Agreements (EULAs) attached to them." )
+        ui->mainText->setText( tr( "This setup procedure can install proprietary "
+                                   "software that is subject to licensing terms "
+                                   "in order to provide additional features and enhance the user "
+                                   "experience." )
                                + br + review );
         QString okAcceptText( tr( "If you do not agree with the terms, proprietary software will not "
                                   "be installed, and open source alternatives will be used instead." ) );
