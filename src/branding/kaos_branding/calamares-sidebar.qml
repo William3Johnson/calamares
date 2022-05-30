@@ -16,6 +16,7 @@ import io.calamares.core 1.0
 
 import QtQuick 2.3
 import QtQuick.Layouts 1.3
+import QtQuick.Controls 2.15
 
 Rectangle {
     id: sideBar;
@@ -80,7 +81,6 @@ Rectangle {
             Layout.fillWidth: true;
             height: 35
             Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
-            Layout.bottomMargin: 0
             color: Branding.styleString( mouseAreaDebug.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
             visible: debug.enabled
 
@@ -116,6 +116,11 @@ Rectangle {
                 Text {
                     anchors.centerIn: parent
                     text: qsTr("About")
+                    ToolTip {
+                        visible: mouseAreaAbout.containsMouse
+                        delay: 1000
+                        text: qsTr("Show information about Calamares")
+                    }
                     color: Branding.styleString( mouseAreaAbout.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarText );
                     font.pointSize : 9
                 }

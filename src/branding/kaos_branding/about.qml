@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <https://calamares.io> ===
  *
- *   SPDX-FileCopyrightText: 2020 Anke Boersma <demm@kaosx.us>
+ *   SPDX-FileCopyrightText: 2020 2022 Anke Boersma <demm@kaosx.us>
  *   SPDX-License-Identifier: GPL-3.0-or-later
  *
  *   Calamares is Free Software: see the License-Identifier above.
@@ -21,22 +21,17 @@ ApplicationWindow {
     width: 760
     height: 400
     title: qsTr("About Calamares")
-    //focus: true
 
     property var appName: "Calamares"
     property var appVersion: "3.2.59"
 
     Rectangle {
         id: textArea
-        //x: 28
-        //y: 14
         anchors.fill: parent
         color: "#f2f2f2"
 
         Column {
             id: column
-            //x: 130
-            //y: 40
             anchors.centerIn: parent
 
 
