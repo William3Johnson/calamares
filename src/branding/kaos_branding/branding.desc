@@ -170,20 +170,20 @@ images:
 
 # Colors for text and background components.
 #
-#  - sidebarBackground is the background of the sidebar
-#  - sidebarText is the (foreground) text color
-#  - sidebarTextHighlight sets the background of the selected (current) step.
+#  - SidebarBackground is the background of the sidebar
+#  - SidebarText is the (foreground) text color
+#  - SidebarBackgroundCurrent sets the background of the selected (current) step.
 #    Optional, and defaults to the application palette.
-#  - sidebarSelect is the text color of the selected step.
+#  - SidebarTextCurrent is the text color of the selected step.
 #
 # These colors can **also** be set through the stylesheet, if the
 # branding component also ships a stylesheet.qss. Then they are
 # the corresponding CSS attributes of #sidebarApp.
 style:
-   sidebarBackground:    "#bdc3c7"
-   sidebarText:          "#1F1F1F"
-   sidebarTextCurrent:    "#3498DB"
-   sidebarBackgroundCurrent: "#eff0f1"
+   SidebarBackground:    "#bdc3c7"
+   SidebarText:          "#1F1F1F"
+   SidebarTextCurrent:    "#3498DB"
+   SidebarBackgroundCurrent: "#eff0f1"
 
 ### SLIDESHOW
 #
