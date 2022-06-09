@@ -23,7 +23,7 @@ ApplicationWindow {
     title: qsTr("About Calamares")
 
     property var appName: "Calamares"
-    property var appVersion: "3.2.59"
+    property var appVersion: "3.3"
 
     Rectangle {
         id: textArea
@@ -88,13 +88,10 @@ ApplicationWindow {
 
         }
 
-        ToolButton {
-            id: toolButton
+        Button {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: parent.bottom
-            width: 105
-            height: 48
-            icon.name: "ok"
+            icon.name: "window-close"
             text: qsTr("Close")
             hoverEnabled: true
             onClicked: about.close();
