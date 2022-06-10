@@ -1,5 +1,24 @@
 <?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="nl_NL">
 <context>
+    <name>AboutData</name>
+    <message>
+        <location filename="../src/libcalamares/CalamaresAbout.cpp" line="17"/>
+        <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt; for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;</source>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt; for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/CalamaresAbout.cpp" line="20"/>
+        <source>Thanks to &lt;a href=&quot;https://calamares.io/team/&quot;&gt;the Calamares team&lt;/a&gt; and the &lt;a href=&quot;https://www.transifex.com/calamares/calamares/&quot;&gt;Calamares translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
+        <translation>Met dank aan het &lt;a href=&quot;https://calamares.io/team/&quot;&gt;Calamares team&lt;/a&gt; en de &lt;a href=&quot;https://www.transifex.com/calamares/calamares/&quot;&gt;KaOS vertalers team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; ontwikkeling is gesponsord door &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/CalamaresAbout.cpp" line="38"/>
+        <source>Copyright %1-%2 %3 &amp;lt;%4&amp;gt;&lt;br/&gt;</source>
+        <extracomment>Copyright year-year Name &lt;email-address&gt;</extracomment>
+        <translation>Copyright %1-%2 %3 &amp;lt;%4&amp;gt;&lt;br/&gt;</translation>
+    </message>
+</context>
+<context>
     <name>AutoMountManagementJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/AutoMountManagementJob.cpp" line="22"/>
@@ -56,27 +75,27 @@
 <context>
     <name>BootLoaderModel</name>
     <message>
-        <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="59"/>
+        <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="60"/>
         <source>Master Boot Record of %1</source>
         <translation>Master Boot Record van %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="92"/>
+        <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="93"/>
         <source>Boot Partition</source>
         <translation>Bootpartitie</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="99"/>
+        <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="100"/>
         <source>System Partition</source>
         <translation>Systeempartitie</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="129"/>
+        <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="131"/>
         <source>Do not install a boot loader</source>
         <translation>Installeer geen boot loader</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="147"/>
+        <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="148"/>
         <source>%1 (%2)</source>
         <translation>%1 (%2)</translation>
     </message>
@@ -163,7 +182,7 @@
         <translation>Widget Tree</translation>
     </message>
     <message>
-        <location filename="../src/calamares/DebugWindow.cpp" line="221"/>
+        <location filename="../src/calamares/DebugWindow.cpp" line="163"/>
         <source>Debug information</source>
         <translation>Debug informatie</translation>
     </message>
@@ -197,7 +216,7 @@
 <context>
     <name>Calamares::JobThread</name>
     <message>
-        <location filename="../src/libcalamares/JobQueue.cpp" line="202"/>
+        <location filename="../src/libcalamares/JobQueue.cpp" line="203"/>
         <source>Done</source>
         <translation>Gereed</translation>
     </message>
@@ -283,21 +302,21 @@
     <name>Calamares::RequirementsChecker</name>
     <message>
         <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="94"/>
-        <source>Requirements checking for module &lt;i&gt;%1&lt;/i&gt; is complete.</source>
-        <translation>Vereisten voor module &lt;i&gt;%1&lt;/i&gt; controleren is compleet.</translation>
+        <source>Requirements checking for module &apos;%1&apos; is complete.</source>
+        <translation>Vereisten voor module &apos;%1&apos; controleren is compleet.</translation>
     </message>
     <message numerus="yes">
-        <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="115"/>
+        <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="118"/>
         <source>Waiting for %n module(s).</source>
         <translation><numerusform>Wachten op %n module(s).</numerusform><numerusform>Wachten op %n module(s).</numerusform></translation>
     </message>
     <message numerus="yes">
-        <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="116"/>
+        <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="119"/>
         <source>(%n second(s))</source>
         <translation><numerusform>(%n seconde(s))</numerusform><numerusform>(%n seconde(n))</numerusform></translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="121"/>
+        <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="124"/>
         <source>System-requirements checking is complete.</source>
         <translation>Systeemvereisten controleren is voltooid.</translation>
     </message>
@@ -508,12 +527,12 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>CalamaresWindow</name>
     <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="370"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="396"/>
         <source>%1 Setup Program</source>
         <translation>%1 Installatie Programma</translation>
     </message>
     <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="371"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="397"/>
         <source>%1 Installer</source>
         <translation>%1 Installatieprogramma</translation>
     </message>
@@ -521,17 +540,18 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>ChangeFilesystemLabelJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="32"/>
+        <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="34"/>
         <source>Set filesystem label on %1.</source>
         <translation>Zet bestandssysteemlabel op %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="39"/>
+        <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="41"/>
         <source>Set filesystem label &lt;strong&gt;%1&lt;/strong&gt; to partition &lt;strong&gt;%2&lt;/strong&gt;.</source>
         <translation>Zet bestandssysteemlabel &lt;strong&gt;%1&lt;/strong&gt; op partitie &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="70"/>
+        <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="71"/>
+        <location filename="../src/modules/partition/jobs/ChangeFilesystemLabelJob.cpp" line="83"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
         <translation>Installatieprogramma heeft gefaald om de partitietabel bij te werken op schijf &apos;%1&apos;.</translation>
     </message>
@@ -547,149 +567,149 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>ChoicePage</name>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="140"/>
         <source>After:</source>
         <translation>Na:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1033"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1053"/>
         <source>%1 will be shrunk to %2MiB and a new %3MiB partition will be created for %4.</source>
         <translation>%1 zal worden ingekrompen tot %2MiB en een nieuwe %3MiB partitie zal worden gecreëerd for %4.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1390"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1427"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1449"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1474"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1337"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1374"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1396"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1421"/>
         <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
         <translation>&lt;strong&gt;Wis schijf&lt;/strong&gt;&lt;br/&gt;Dit zal alle data &lt;font color=&quot;red&quot;&gt;verwijderen&lt;/font&gt; welke momenteel aanwezig is op het geselecteerde opslag apparaat.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1394"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1423"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1445"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1470"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1341"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1370"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1392"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1417"/>
         <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a partition to make room for %1.</source>
         <translation>&lt;strong&gt;Installeer naast&lt;/strong&gt;&lt;br/&gt;Het installatie programma zal een partitie inkrimpen om ruimte te maken voor %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1398"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1432"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1453"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1478"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1345"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1379"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1400"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1425"/>
         <source>&lt;strong&gt;Replace a partition&lt;/strong&gt;&lt;br/&gt;Replaces a partition with %1.</source>
         <translation>&lt;strong&gt;Vervang een partitie&lt;/strong&gt;&lt;br/&gt;Vervangt een partitie met %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1091"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1693"/>
         <source>Boot loader location:</source>
         <translation>Bootloader locatie:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="137"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="138"/>
         <source>Select storage de&amp;vice:</source>
         <translation>Kies een opslag de&amp;vice:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="138"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1014"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1062"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1159"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1028"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1082"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1135"/>
         <source>Current:</source>
         <translation>Huidig:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="879"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="893"/>
         <source>Reuse %1 as home partition for %2.</source>
         <translation>Hergebruik %1 als home partitie voor %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1015"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1029"/>
         <source>&lt;strong&gt;Select a partition to shrink, then drag the bottom bar to resize&lt;/strong&gt;</source>
         <translation>&lt;strong&gt;Selecteer een partitie om in te krimpen, dan sleep de onderste balk om de grootte aan te passen&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1150"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1126"/>
         <source>&lt;strong&gt;Select a partition to install on&lt;/strong&gt;</source>
         <translation>&lt;strong&gt;Selecteer een partitie om op te installeren&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1209"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1187"/>
         <source>An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
         <translation>Een EFI systeem partitiie kan nergens gevonden worden op dit systeem.  Ga AUB terug en gebruik de handmatige schijfindeling om %1 op te zetten.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1217"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1195"/>
         <source>The EFI system partition at %1 will be used for starting %2.</source>
         <translation>De EFI systeem partitie op %1 zal gebruikt worden om %2 op te starten.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1225"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1203"/>
         <source>EFI system partition:</source>
         <translation>EFI systeempartitie:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1385"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1332"/>
         <source>This storage device does not seem to have an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Dit opslagapparaat heeft ogenschijnlijk geen besturingssysteem beschikbaar. Wat wil je doen?&lt;br/&gt;Je zult in staat zijn om te beoordelen en je keuzes te bevestigen voordat een wijziging wordt aangebracht aan het opslagapparaat.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1417"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1364"/>
         <source>This storage device has %1 on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Dit opslagapparaat heeft %1 geinstalleerd. Wat wil je doen?&lt;br/&gt;Je zult in staat zijn om te beoordelen en je keuzes te bevestigen voordat een wijziging wordt aangebracht aan het opslagapparaat.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1440"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1387"/>
         <source>This storage device already has an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Dit opslagapparaat heeft een besturingssysteem geinstalleerd. Wat wil je doen?&lt;br/&gt;Je zult in staat zijn om te beoordelen en je keuzes te bevestigen voordat een wijziging wordt aangebracht aan het opslagapparaat.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1465"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1412"/>
         <source>This storage device has multiple operating systems on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Dit opslagapparaat heeft meerdere besturingssystemen geinstalleerd. Wat wil je doen?&lt;br/&gt;Je zult in staat zijn om te beoordelen en je keuzes te bevestigen voordat een wijziging wordt aangebracht aan het opslagapparaat.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1537"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1484"/>
         <source>This storage device already has an operating system on it, but the partition table &lt;strong&gt;%1&lt;/strong&gt; is different from the needed &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;</source>
         <translation>Dit opslagapparaat heeft al een besturingssysteem, maar de partitietabel &lt;strong&gt;%1&lt;/strong&gt; is anders dan de benodigde &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1560"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1507"/>
         <source>This storage device has one of its partitions &lt;strong&gt;mounted&lt;/strong&gt;.</source>
         <translation>Dit opslagapparaat heeft een van zijn partities &lt;strong&gt;mounted&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1565"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1512"/>
         <source>This storage device is a part of an &lt;strong&gt;inactive RAID&lt;/strong&gt; device.</source>
         <translation>Dit opslagapparaat maakt deel uit van een &lt;strong&gt;inactief RAID&lt;/strong&gt; apparaat.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1692"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1631"/>
         <source>No Swap</source>
         <translation>Geen Swap</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1701"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1640"/>
         <source>Reuse Swap</source>
         <translation>Swap Hergebruiken</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1704"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1643"/>
         <source>Swap (no Hibernate)</source>
         <translation>Swap (geen Hibernate)</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1707"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1646"/>
         <source>Swap (with Hibernate)</source>
         <translation>Swap (met Hibernate)</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1710"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1649"/>
         <source>Swap to file</source>
         <translation>Swap to file</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1723"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1662"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.&lt;br/&gt;Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;,&lt;br/&gt;either use an existing without formatting or create one.</source>
         <translation>&lt;strong&gt;Handmatige partitionering&lt;/strong&gt;&lt;br/&gt;Je kunt partities zelf creeren of aanpassen.&lt;br/&gt;Het hebben van een GPT partitietabel en &lt;strong&gt;fat32 512Mb /boot partitie is een must voor UEFI installaties&lt;/strong&gt;,&lt;br/&gt;ofwel gebruik maken van een bestaande, zonder formatteren of creeer.</translation>
     </message>
@@ -697,6 +717,115 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <location filename="../src/modules/partition/gui/ChoicePage.ui" line="18"/>
         <source>Form</source>
         <translation>From</translation>
+    </message>
+</context>
+<context>
+    <name>ChoicePageQml</name>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="149"/>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="183"/>
+        <source>No swap</source>
+        <translation>Geen Swap</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="155"/>
+        <source>Reuse swap</source>
+        <translation>Swap Hergebruiken</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="161"/>
+        <source>Swap (no Hibernate)</source>
+        <translation>Swap (geen Hibernate)</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="167"/>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="186"/>
+        <source>Swap (with Hibernate)</source>
+        <translation>Swap (met Hibernate)</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="173"/>
+        <source>Swap to file</source>
+        <translation>Swap to file</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="534"/>
+        <source>An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
+        <translation>Een EFI systeem partitiie kan nergens gevonden worden op dit systeem.  Ga AUB terug en gebruik de handmatige schijfindeling om %1 op te zetten.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="542"/>
+        <source>The EFI system partition at %1 will be used for starting %2.</source>
+        <translation>De EFI systeem partitie op %1 zal gebruikt worden om %2 op te starten.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="550"/>
+        <source>EFI system partition:</source>
+        <translation>EFI systeempartitie:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="681"/>
+        <source>This storage device does not seem to have an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
+        <translation>Dit opslagapparaat heeft ogenschijnlijk geen besturingssysteem beschikbaar. Wat wil je doen?&lt;br/&gt;Je zult in staat zijn om te beoordelen en je keuzes te bevestigen voordat een wijziging wordt aangebracht aan het opslagapparaat.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="686"/>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="720"/>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="744"/>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="771"/>
+        <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
+        <translation>&lt;strong&gt;Wis schijf&lt;/strong&gt;&lt;br/&gt;Dit zal alle data &lt;font color=&quot;red&quot;&gt;verwijderen&lt;/font&gt; welke momenteel aanwezig is op het geselecteerde opslag apparaat.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="690"/>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="716"/>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="740"/>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="767"/>
+        <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a partition to make room for %1.</source>
+        <translation>&lt;strong&gt;Installeer naast&lt;/strong&gt;&lt;br/&gt;Het installatie programma zal een partitie inkrimpen om ruimte te maken voor %1.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="694"/>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="725"/>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="748"/>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="775"/>
+        <source>&lt;strong&gt;Replace a partition&lt;/strong&gt;&lt;br/&gt;Replaces a partition with %1.</source>
+        <translation>&lt;strong&gt;Vervang een partitie&lt;/strong&gt;&lt;br/&gt;Vervangt een partitie met %1.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="710"/>
+        <source>This storage device has %1 on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
+        <translation>Dit opslagapparaat heeft %1 geinstalleerd. Wat wil je doen?&lt;br/&gt;Je zult in staat zijn om te beoordelen en je keuzes te bevestigen voordat een wijziging wordt aangebracht aan het opslagapparaat.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="735"/>
+        <source>This storage device already has an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
+        <translation>Dit opslagapparaat heeft een besturingssysteem geinstalleerd. Wat wil je doen?&lt;br/&gt;Je zult in staat zijn om te beoordelen en je keuzes te bevestigen voordat een wijziging wordt aangebracht aan het opslagapparaat.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="762"/>
+        <source>This storage device has multiple operating systems on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
+        <translation>Dit opslagapparaat heeft meerdere besturingssystemen geinstalleerd. Wat wil je doen?&lt;br/&gt;Je zult in staat zijn om te beoordelen en je keuzes te bevestigen voordat een wijziging wordt aangebracht aan het opslagapparaat.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="836"/>
+        <source>This storage device already has an operating system on it, but the partition table &lt;strong&gt;%1&lt;/strong&gt; is different from the needed &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;</source>
+        <translation>Dit opslagapparaat heeft al een besturingssysteem, maar de partitietabel &lt;strong&gt;%1&lt;/strong&gt; is anders dan de benodigde &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="857"/>
+        <source>This storage device has one of its partitions &lt;strong&gt;mounted&lt;/strong&gt;.</source>
+        <translation>Dit opslagapparaat heeft een van zijn partities &lt;strong&gt;mounted&lt;/strong&gt;.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="862"/>
+        <source>This storage device is a part of an &lt;strong&gt;inactive RAID&lt;/strong&gt; device.</source>
+        <translation>Dit opslagapparaat maakt deel uit van een &lt;strong&gt;inactief RAID&lt;/strong&gt; apparaat.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="872"/>
+        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.</source>
+        <translation>&lt;strong&gt;Handmatige schijfindeling&lt;/strong&gt;&lt;br/&gt;Zelf partities maken of aanpassen, of meerdere partities voor %1 kiezen.</translation>
     </message>
 </context>
 <context>
@@ -763,91 +892,85 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>CommandList</name>
     <message>
-        <location filename="../src/libcalamares/utils/CommandList.cpp" line="142"/>
-        <location filename="../src/libcalamares/utils/CommandList.cpp" line="155"/>
+        <location filename="../src/libcalamares/utils/CommandList.cpp" line="165"/>
         <source>Could not run command.</source>
         <translation>Kan de opdracht niet uitvoeren.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CommandList.cpp" line="143"/>
-        <source>The command runs in the host environment and needs to know the root path, but no rootMountPoint is defined.</source>
-        <translation>De opdracht wordt uitgevoerd in de hostomgeving en moet het hoofdpad kennen, maar er is geen rootMountPoint gedefinieerd.</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamares/utils/CommandList.cpp" line="156"/>
-        <source>The command needs to know the user&apos;s name, but no username is defined.</source>
-        <translation>De opdracht moet de naam van de gebruiker kennen, maar er is geen gebruikersnaam gedefinieerd.</translation>
+        <location filename="../src/libcalamares/utils/CommandList.cpp" line="166"/>
+        <source>The commands use variables that are not defined. Missing variables are: %1.</source>
+        <translation>De opdrachten gebruiken variabelen die niet zijn gedefinieerd. Ontbrekende variabelen zijn: %1.</translation>
     </message>
 </context>
 <context>
     <name>Config</name>
     <message>
-        <location filename="../src/modules/keyboard/Config.cpp" line="354"/>
+        <location filename="../src/modules/keyboard/Config.cpp" line="360"/>
         <source>Set keyboard model to %1.&lt;br/&gt;</source>
         <translation>Stel toetsenbordmodel in op %1.&lt;br/&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboard/Config.cpp" line="361"/>
+        <location filename="../src/modules/keyboard/Config.cpp" line="367"/>
         <source>Set keyboard layout to %1/%2.</source>
         <translation>Stel toetsenbordindeling in op %1/%2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/Config.cpp" line="353"/>
+        <location filename="../src/modules/locale/Config.cpp" line="359"/>
         <source>Set timezone to %1/%2.</source>
         <translation>Instellen tijdzone naar %1/%2</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/Config.cpp" line="391"/>
+        <location filename="../src/modules/locale/Config.cpp" line="397"/>
         <source>The system language will be set to %1.</source>
         <translation>De systeemtaal wordt ingesteld op %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/Config.cpp" line="398"/>
+        <location filename="../src/modules/locale/Config.cpp" line="404"/>
         <source>The numbers and dates locale will be set to %1.</source>
         <translation>De landinstellingen voor cijfers en datums worden ingesteld op %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/Config.cpp" line="55"/>
-        <source>This computer does not satisfy the minimum requirements for setting up %1.&lt;br/&gt;Setup cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
-        <translation>Deze computer voldoet niet aan de minimale installatievereisten voor %1.&lt;br/&gt;Installatie kan niet doorgaan. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</translation>
+        <location filename="../src/modules/welcome/Config.cpp" line="56"/>
+        <source>This computer does not satisfy the minimum requirements for setting up %1.&lt;br/&gt;Setup cannot continue.</source>
+        <translation>Deze computer voldoet niet aan de minimale vereisten voor het installeren van %1.&lt;br/&gt;De installatie kan niet worden voortgezet.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="59"/>
-        <source>This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;Installation cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
-        <translation>Deze computer voldoet niet aan de minimale installatievereisten voor %1.&lt;br/&gt;Installatie kan niet doorgaan. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</translation>
+        <source>This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;Installation cannot continue.</source>
+        <translation>Deze computer voldoet niet aan de minimale vereisten voor het installeren van % 1. De installatie kan niet worden voortgezet.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/Config.cpp" line="66"/>
+        <location filename="../src/modules/welcome/Config.cpp" line="65"/>
         <source>This computer does not satisfy some of the recommended requirements for setting up %1.&lt;br/&gt;Setup can continue, but some features might be disabled.</source>
         <translation>Deze computer voldoet niet aan een aantal van de aanbevolen vereisten voor installatie op %1.&lt;br/&gt;De installatie kan doorgaan, maar sommige functies zijn mogelijk uitgeschakeld.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/Config.cpp" line="70"/>
+        <location filename="../src/modules/welcome/Config.cpp" line="69"/>
         <source>This computer does not satisfy some of the recommended requirements for installing %1.&lt;br/&gt;Installation can continue, but some features might be disabled.</source>
         <translation>Deze computer voldoet niet aan een aantal van de aanbevolen vereisten voor installatie op %1.&lt;br/&gt;De installatie kan doorgaan, maar sommige functies zijn mogelijk uitgeschakeld.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/Config.cpp" line="80"/>
+        <location filename="../src/modules/welcome/Config.cpp" line="79"/>
         <source>This program will ask you some questions and set up %2 on your computer.</source>
         <translation>Dit programma zal je wat vragen stellen en %2 instellen op je computer.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/Config.cpp" line="250"/>
+        <location filename="../src/modules/welcome/Config.cpp" line="266"/>
         <source>&lt;h1&gt;Welcome to the Calamares setup program for %1&lt;/h1&gt;</source>
         <translation>&lt;h1&gt;Welkom bij het Calamares-installatieprogramma voor %1.&lt;/h1&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/Config.cpp" line="251"/>
+        <location filename="../src/modules/welcome/Config.cpp" line="267"/>
         <source>&lt;h1&gt;Welcome to %1 setup&lt;/h1&gt;</source>
         <translation>&lt;h1&gt;Welkom bij %1 setup.&lt;/h1&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/Config.cpp" line="255"/>
+        <location filename="../src/modules/welcome/Config.cpp" line="271"/>
         <source>&lt;h1&gt;Welcome to the Calamares installer for %1&lt;/h1&gt;</source>
         <translation>&lt;h1&gt;Welkom bij het Calamares-installatieprogramma voor %1.&lt;/h1&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/Config.cpp" line="256"/>
+        <location filename="../src/modules/welcome/Config.cpp" line="272"/>
         <source>&lt;h1&gt;Welcome to the %1 installer&lt;/h1&gt;</source>
         <translation>&lt;h1&gt;Welkom bij het %1 installatieprogramma&lt;/h1&gt;</translation>
     </message>
@@ -867,52 +990,52 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Dit is een overzicht van wat er zal gebeuren als je eenmaal de installatie procedure start.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="221"/>
+        <location filename="../src/modules/users/Config.cpp" line="236"/>
         <source>Your username is too long.</source>
         <translation>Je gebruikersnaam is the lang.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="227"/>
+        <location filename="../src/modules/users/Config.cpp" line="252"/>
         <source>&apos;%1&apos; is not allowed as username.</source>
         <translation>&apos;%1&apos; is niet toegestaan als gebruikersnaam.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="234"/>
+        <location filename="../src/modules/users/Config.cpp" line="242"/>
         <source>Your username must start with a lowercase letter or underscore.</source>
         <translation>Uw gebruikersnaam moet beginnen met een kleine letter of een onderstrepingsteken.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="238"/>
+        <location filename="../src/modules/users/Config.cpp" line="246"/>
         <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
         <translation>Alleen kleine letters, cijfers, onderstrepingstekens en koppeltekens zijn toegestaan.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="288"/>
+        <location filename="../src/modules/users/Config.cpp" line="301"/>
         <source>Your hostname is too short.</source>
         <translation>De hostname is te kort.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="292"/>
+        <location filename="../src/modules/users/Config.cpp" line="305"/>
         <source>Your hostname is too long.</source>
         <translation>Je hostname is te lang.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="298"/>
+        <location filename="../src/modules/users/Config.cpp" line="311"/>
         <source>&apos;%1&apos; is not allowed as hostname.</source>
         <translation>&apos;%1&apos; is niet toegestaan als hostname.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="304"/>
+        <location filename="../src/modules/users/Config.cpp" line="316"/>
         <source>Only letters, numbers, underscore and hyphen are allowed.</source>
         <translation>Alleen letters, cijfers, onderstrepingstekens en koppeltekens zijn toegestaan.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="573"/>
+        <location filename="../src/modules/users/Config.cpp" line="585"/>
         <source>Your passwords do not match!</source>
         <translation>De wachtwoorden komen niet overeen!</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="587"/>
+        <location filename="../src/modules/users/Config.cpp" line="599"/>
         <source>OK!</source>
         <translation>OK!</translation>
     </message>
@@ -1073,43 +1196,43 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>CreatePartitionJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="187"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="183"/>
         <source>Create new %1MiB partition on %3 (%2) with entries %4.</source>
         <translation>Creëer nieuwe %1MiB partitie op %3 (%2) met bestandssysteem %4.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="195"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="191"/>
         <source>Create new %1MiB partition on %3 (%2).</source>
         <translation>Maak een nieuwe %1MiB partitie op %3 (%2).</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="202"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="198"/>
         <source>Create new %2MiB partition on %4 (%3) with file system %1.</source>
         <translation>Creëer nieuwe %2MiB partitie op %4 (%3) met bestandssysteem %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="219"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="215"/>
         <source>Create new &lt;strong&gt;%1MiB&lt;/strong&gt; partition on &lt;strong&gt;%3&lt;/strong&gt; (%2) with entries &lt;em&gt;%4&lt;/em&gt;.</source>
         <translation>Creëer nieuw &lt;strong&gt;%1MiB&lt;/strong&gt; partitie op &lt;strong&gt;%3&lt;/strong&gt; (%2) met bestandssysteem &lt;em&gt;%4&lt;/em&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="228"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="224"/>
         <source>Create new &lt;strong&gt;%1MiB&lt;/strong&gt; partition on &lt;strong&gt;%3&lt;/strong&gt; (%2).</source>
         <translation>Creëer​ nieuw &lt;strong&gt;%1MiB&lt;/strong&gt; partitie op &lt;strong&gt;%3&lt;/strong&gt; (%2).</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="235"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="231"/>
         <source>Create new &lt;strong&gt;%2MiB&lt;/strong&gt; partition on &lt;strong&gt;%4&lt;/strong&gt; (%3) with file system &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>Creëer nieuwe &lt;strong&gt;%2MiB&lt;/strong&gt; partitie op &lt;strong&gt;%4&lt;/strong&gt; (%3) met bestandssysteem&lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="260"/>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="263"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="256"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="259"/>
         <source>Creating new %1 partition on %2.</source>
         <translation>Aanmaken van een nieuwe %1 partitie op %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="280"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="276"/>
         <source>The installer failed to create partition on disk &apos;%1&apos;.</source>
         <translation>Het installatieprogramma kon geen partitie aanmaken op schijf &apos;%1&apos;.</translation>
     </message>
@@ -1275,12 +1398,12 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>DeviceInfoWidget</name>
     <message>
-        <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="151"/>
+        <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="149"/>
         <source>The type of &lt;strong&gt;partition table&lt;/strong&gt; on the selected storage device.&lt;br&gt;&lt;br&gt;The only way to change the partition table type is to erase and recreate the partition table from scratch, which destroys all data on the storage device.&lt;br&gt;This installer will keep the current partition table unless you explicitly choose otherwise.&lt;br&gt;If unsure, on modern systems GPT is preferred.</source>
         <translation>Het type &lt;strong&gt;partitietabel&lt;/strong&gt; momenteel aanwezig op het geselecteerde opslagapparaat.&lt;br&gt;&lt;br&gt;De enige manier om het type partitietabel te veranderen is om te wissen en opnieuw de partitietabel van de grond af in te stellen, welke alle gegevens op het opslagapparaat vernietigt.&lt;br&gt;Dit installeer programma zal de huidige partitietabel behouden, tenzij je expliciet anders kiest&lt;br&gt;In geval van twijfel, op moderne systemen heeft GPT de voorkeur.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="143"/>
+        <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="141"/>
         <source>This device has a &lt;strong&gt;%1&lt;/strong&gt; partition table.</source>
         <translation>Dit opslag apparaat heeft een &lt;strong&gt;%1&lt;/strong&gt; partitie tabel.</translation>
     </message>
@@ -1290,7 +1413,7 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Dit is een &lt;strong&gt;loop&lt;/strong&gt; opslag apparaat.&lt;br&gt;&lt;br&gt;Dit is niet een echte partitie tabel, het is een pseudo-apparaat dat een bestand toegankelijk maakt als een blok apparaat. Dit soort setup bevat meestal slechts een enkel bestandssysteem.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="108"/>
+        <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="106"/>
         <source>This installer &lt;strong&gt;cannot detect a partition table&lt;/strong&gt; on the selected storage device.&lt;br&gt;&lt;br&gt;The device either has no partition table, or the partition table is corrupted or of an unknown type.&lt;br&gt;This installer can create a new partition table for you, either automatically, or through the manual partitioning page.</source>
         <translation>Het installeer programma &lt;strong&gt;kan geen partition tabel vinden&lt;/strong&gt; op het geselecteerde opslag apparaat.&lt;br&gt;&lt;br&gt;Het apparaat heeft ofwel geen partitietabel, de partitietabel is beschadigd of is van een onbekend type.&lt;br&gt;This installer can create a new partition table for you, either automatically, or through the manual partitioning page.</translation>
     </message>
@@ -1382,6 +1505,16 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <source>FS Label:</source>
         <translation>FS Label:</translation>
     </message>
+    <message>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.cpp" line="259"/>
+        <source>Passphrase for existing partition</source>
+        <translation>Wachtwoordzin voor bestaande partitie</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.cpp" line="260"/>
+        <source>Partition %1 could not be decrypted with the given passphrase.&lt;br/&gt;&lt;br/&gt;Edit the partition again and give the correct passphrase or delete and create a new encrypted partition.</source>
+        <translation>Partitie %1 kon niet worden gedecodeerd met de opgegeven wachtwoordzin.&lt;br/&gt;&lt;br/&gt;Bewerk de partitie opnieuw en geef de juiste wachtwoordzin op of verwijder en maak een nieuwe versleutelde partitie.</translation>
+    </message>
 </context>
 <context>
     <name>EncryptWidget</name>
@@ -1411,8 +1544,8 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Bevestig wachtwoordzin</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EncryptWidget.cpp" line="134"/>
-        <location filename="../src/modules/partition/gui/EncryptWidget.cpp" line="144"/>
+        <location filename="../src/modules/partition/gui/EncryptWidget.cpp" line="156"/>
+        <location filename="../src/modules/partition/gui/EncryptWidget.cpp" line="166"/>
         <source>Please enter the same passphrase in both boxes.</source>
         <translation>Gaarne hetzelfde wachtwoord in beide vakken invullen.</translation>
     </message>
@@ -1433,57 +1566,57 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>FillGlobalStorageJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="172"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="170"/>
         <source>Set partition information</source>
         <translation>Instellen partitie-informatie</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="201"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="199"/>
         <source>Install %1 on &lt;strong&gt;new&lt;/strong&gt; %2 system partition with features &lt;em&gt;%3&lt;/em&gt;</source>
         <translation>Installeer %1 op &lt;strong&gt;nieuw&lt;/strong&gt; %2 systeem partitie met kenmerken &lt;em&gt;%3&lt;/em&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="209"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="207"/>
         <source>Install %1 on &lt;strong&gt;new&lt;/strong&gt; %2 system partition.</source>
         <translation>Installeer %1 op &lt;strong&gt;nieuw&lt;/strong&gt; %2 systeem partitie.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="218"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="216"/>
         <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt; and features &lt;em&gt;%3&lt;/em&gt;.</source>
         <translation>Set up &lt;strong&gt;nieuwe&lt;/strong&gt; %2 partitie met aankoppelingspunt &lt;strong&gt;%1&lt;/strong&gt; en kenmerken &lt;em&gt;%3&lt;/em&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="226"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="224"/>
         <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt;%3.</source>
         <translation>Set up &lt;strong&gt;nieuwe&lt;/strong&gt; %2 partitie met aanknopingspunt &lt;strong&gt;%1&lt;/strong&gt; %3.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="240"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="238"/>
         <source>Install %2 on %3 system partition &lt;strong&gt;%1&lt;/strong&gt; with features &lt;em&gt;%4&lt;/em&gt;.</source>
         <translation>Installeer %2 on %3 systeem partitie &lt;strong&gt;%1&lt;/strong&gt; met kenmerken &lt;em&gt;%4&lt;/em&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="259"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="257"/>
         <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt; and features &lt;em&gt;%4&lt;/em&gt;.</source>
         <translation>Set up %3 partitie &lt;strong&gt;%1&lt;/strong&gt; met aankoppelingspunt &lt;strong&gt;%2&lt;/strong&gt; en kenmereken &lt;em&gt;%4&lt;/em&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="268"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="266"/>
         <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt;%4.</source>
         <translation>Set up %3 partitie &lt;strong&gt;%1&lt;/strong&gt; met aanknopingspunt &lt;strong&gt;%2&lt;/strong&gt; %4.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="249"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="247"/>
         <source>Install %2 on %3 system partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>Installeer %2 op %3 systeem partitie &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="283"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="281"/>
         <source>Install boot loader on &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>Installeer de boot loader op &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="292"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="290"/>
         <source>Setting up mount points.</source>
         <translation>Opzetten van mount points.</translation>
     </message>
@@ -1501,32 +1634,32 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>&amp;Nu herstarten</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedPage.cpp" line="72"/>
+        <location filename="../src/modules/finished/FinishedPage.cpp" line="75"/>
         <source>&lt;h1&gt;All done.&lt;/h1&gt;&lt;br/&gt;%1 has been set up on your computer.&lt;br/&gt;You may now start using your new system.</source>
         <translation>&lt;h1&gt;Helemaal klaar.&lt;/h1&gt;&lt;br/&gt;%1 is ingesteld op uw computer.&lt;br/&gt;Je kunt nu beginnen met het gebruik van je nieuwe systeem.</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedPage.cpp" line="76"/>
+        <location filename="../src/modules/finished/FinishedPage.cpp" line="79"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;When this box is checked, your system will restart immediately when you click on &lt;span style=&quot;font-style:italic;&quot;&gt;Done&lt;/span&gt; or close the setup program.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wanneer dit selectievakje is ingeschakeld, wordt uw systeem onmiddellijk opnieuw gestart wanneer u op &lt;span style=&quot;font-style:italic;&quot;&gt;Klaar&lt;/span&gt; klikt of het installatieprogramma sluit.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedPage.cpp" line="84"/>
+        <location filename="../src/modules/finished/FinishedPage.cpp" line="87"/>
         <source>&lt;h1&gt;All done.&lt;/h1&gt;&lt;br/&gt;%1 has been installed on your computer.&lt;br/&gt;You may now restart into your new system, or continue using the %2 Live environment.</source>
         <translation>&lt;h1&gt;Alles gereed.&lt;/h1&gt;&lt;br/&gt;%1 is geinstalleerd op je computer.&lt;br/&gt;Je kunt nu opnieuw opstarten in uw nieuwe systeem, of de %2 Live environment blijven gebruiken.</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedPage.cpp" line="89"/>
+        <location filename="../src/modules/finished/FinishedPage.cpp" line="92"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;When this box is checked, your system will restart immediately when you click on &lt;span style=&quot;font-style:italic;&quot;&gt;Done&lt;/span&gt; or close the installer.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wanneer dit selectievakje is ingeschakeld, wordt je systeem onmiddellijk opnieuw gestart wanneer je op &lt;span style=&quot;font-style:italic;&quot;&gt;Klaar&lt;/span&gt; klikt of het installatieprogramma sluit&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedPage.cpp" line="102"/>
+        <location filename="../src/modules/finished/FinishedPage.cpp" line="105"/>
         <source>&lt;h1&gt;Setup Failed&lt;/h1&gt;&lt;br/&gt;%1 has not been set up on your computer.&lt;br/&gt;The error message was: %2.</source>
         <translation>&lt;h1&gt;Installatie mislukt&lt;/h1&gt;&lt;br/&gt;%1 is niet ingesteld op je computer.&lt;br/&gt;Het foutbericht was: %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedPage.cpp" line="110"/>
+        <location filename="../src/modules/finished/FinishedPage.cpp" line="113"/>
         <source>&lt;h1&gt;Installation Failed&lt;/h1&gt;&lt;br/&gt;%1 has not been installed on your computer.&lt;br/&gt;The error message was: %2.</source>
         <translation>&lt;h1&gt;Installatie Mislukt&lt;/h1&gt;&lt;br/&gt;%1 is niet op uw computer geïnstalleerd.&lt;br/&gt;De fout melding was: %2.</translation>
     </message>
@@ -1560,12 +1693,18 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Formatteer &lt;strong&gt;%3MiB&lt;/strong&gt; partitie &lt;strong&gt;%1&lt;/strong&gt; met bestandssysteem &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="61"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="63"/>
+        <source>%1 (%2)</source>
+        <comment>partition label %1 (device path %2)</comment>
+        <translation>%1 (%2)</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="65"/>
         <source>Formatting partition %1 with file system %2.</source>
         <translation>Formatteren van partitie %1 met file systeem %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="73"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="76"/>
         <source>The installer failed to format partition %1 on disk &apos;%2&apos;.</source>
         <translation>Installatieprogramma heeft gefaald om partitie %1 te formateren op schijf %2.</translation>
     </message>
@@ -1573,74 +1712,130 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>GeneralRequirements</name>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="155"/>
-        <source>has at least %1 GiB available drive space</source>
-        <translation>over ten minste %1 GiB vrije schijfruimte beschikt</translation>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="159"/>
+        <source>Please ensure the system has at least %1 GiB available drive space.</source>
+        <translation>Zorg ervoor dat het systeem over ten minste %1 GiB vrije schijfruimte beschikt</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="157"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="161"/>
+        <source>Available drive space is all of the hard disks and SSDs connected to the system.</source>
+        <translation>Beschikbare schijfruimte is alle harde schijven en SSD&apos;s die op het systeem zijn aangesloten.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="164"/>
         <source>There is not enough drive space. At least %1 GiB is required.</source>
         <translation>Het systeem heeft niet genoeg werkgeheugen. Ten minste %1 GiB vereist.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="166"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="172"/>
         <source>has at least %1 GiB working memory</source>
         <translation>over ten minste 1% GiB werkgeheugen beschikt</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="168"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="174"/>
         <source>The system does not have enough working memory. At least %1 GiB is required.</source>
         <translation>Het systeem heeft niet genoeg werkgeheugen. Ten minste %1 GiB vereist.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="177"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="183"/>
         <source>is plugged in to a power source</source>
         <translation>is aangesloten op een stroombron</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="178"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="184"/>
         <source>The system is not plugged in to a power source.</source>
         <translation>Dit systeem is niet aangesloten op een stroombron.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="185"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="191"/>
         <source>is connected to the Internet</source>
         <translation>is verbonden met het Internet</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="186"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="192"/>
         <source>The system is not connected to the Internet.</source>
         <translation>Dit systeem is niet verbonden met het internet.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="193"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="199"/>
         <source>is running the installer as an administrator (root)</source>
         <translation>voert het installatieprogramma uit als systeembeheerder (root)</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="196"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="203"/>
         <source>The setup program is not running with administrator rights.</source>
         <translation>Het installeer programma is niet actief met beheerdersrechten.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="197"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="204"/>
         <source>The installer is not running with administrator rights.</source>
         <translation>Het installeer programma is niet actief met beheerdersrechten.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="205"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="212"/>
         <source>has a screen large enough to show the whole installer</source>
         <translation>heeft een scherm dat groot genoeg is om het hele installatieprogramma te tonen</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="208"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="216"/>
         <source>The screen is too small to display the setup program.</source>
         <translation>Het scherm is te klein om het installatieprogramma weer te geven.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="209"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="217"/>
         <source>The screen is too small to display the installer.</source>
         <translation>Het scherm is te klein om het installatieprogramma weer te geven.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="226"/>
+        <source>is always false</source>
+        <translation>is altijd onwaar</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="227"/>
+        <source>The computer says no.</source>
+        <translation>De computer zegt nee.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="235"/>
+        <source>is always false (slowly)</source>
+        <translation>is altijd onwaar (langzaam)</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="236"/>
+        <source>The computer says no (slowly).</source>
+        <translation>De computer zegt nee (langzaam).</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="243"/>
+        <source>is always true</source>
+        <translation>is altijd waar</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="244"/>
+        <source>The computer says yes.</source>
+        <translation>De computer zegt ja.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="252"/>
+        <source>is always true (slowly)</source>
+        <translation>is altijd waar (langzaam)</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="253"/>
+        <source>The computer says yes (slowly).</source>
+        <translation>De computer zegt ja (langzaam).</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="261"/>
+        <source>is checked three times.</source>
+        <translation>is drie keer gecontroleerd.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="264"/>
+        <source>The snark has not been checked three times.</source>
+        <comment>The (some mythological beast) has not been checked three times.</comment>
+        <translation>De snark is niet drie keer gecontroleerd.</translation>
     </message>
 </context>
 <context>
@@ -1752,32 +1947,32 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>&lt;h1&gt;Licentieovereenkomst&lt;/h1&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.cpp" line="135"/>
+        <location filename="../src/modules/license/LicensePage.cpp" line="143"/>
         <source>I accept the terms and conditions above.</source>
         <translation>Ik accepteer de algemene voorwaarden hierboven.</translation>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.cpp" line="137"/>
+        <location filename="../src/modules/license/LicensePage.cpp" line="145"/>
         <source>Please review the End User License Agreements (EULAs).</source>
         <translation>Gaarne de End User License Agreements (EULAs) doorlezen.</translation>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.cpp" line="142"/>
+        <location filename="../src/modules/license/LicensePage.cpp" line="150"/>
         <source>This setup procedure will install proprietary software that is subject to licensing terms.</source>
         <translation>Deze opstelling procedure zal proprietary software installeren dat onderworpen is aan licentievoorwaarden.</translation>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.cpp" line="145"/>
+        <location filename="../src/modules/license/LicensePage.cpp" line="153"/>
         <source>If you do not agree with the terms, the setup procedure cannot continue.</source>
         <translation>Als u niet akkoord gaat met de voorwaarden, kan de installatieprocedure niet doorgaan.</translation>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.cpp" line="150"/>
-        <source>In case non-free was selected, this installer will install proprietary packages &lt;br/&gt;that have additional End User License Agreements (EULAs) attached to them.</source>
-        <translation>In het geval dat non-free was selecteerd, zal dit installeerprogramma proprietary pakketten installeren &lt;br/&gt;die extra End User License Agreements (EULAs) bevatten.</translation>
+        <location filename="../src/modules/license/LicensePage.cpp" line="158"/>
+        <source>This setup procedure can install proprietary software that is subject to licensing terms in order to provide additional features and enhance the user experience.</source>
+        <translation>Deze installatieprocedure kan propriëtaire software installeren die onderhevig is aan licentievoorwaarden om extra functies te bieden en de gebruikerservaring te verbeteren.</translation>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.cpp" line="153"/>
+        <location filename="../src/modules/license/LicensePage.cpp" line="163"/>
         <source>If you do not agree with the terms, proprietary software will not be installed, and open source alternatives will be used instead.</source>
         <translation>Als u niet akkoord gaat met de voorwaarden, zal proprietary software niet geïnstalleerd worden, en open source alternatieven zullen in plaats daarvan worden gebruikt.</translation>
     </message>
@@ -1888,7 +2083,7 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>LocaleViewStep</name>
     <message>
-        <location filename="../src/modules/locale/LocaleViewStep.cpp" line="76"/>
+        <location filename="../src/modules/locale/LocaleViewStep.cpp" line="75"/>
         <source>Location</source>
         <translation>Plaats</translation>
     </message>
@@ -1896,35 +2091,35 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>LuksBootKeyFileJob</name>
     <message>
-        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="32"/>
+        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="33"/>
         <source>Configuring LUKS key file.</source>
         <translation>Configureer LUKS key bestand.</translation>
     </message>
     <message>
-        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="188"/>
-        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="196"/>
+        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="235"/>
+        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="243"/>
         <source>No partitions are defined.</source>
         <translation>Er zijn geen partities gedefinieerd.</translation>
     </message>
     <message>
-        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="231"/>
-        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="238"/>
-        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="246"/>
+        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="279"/>
+        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="286"/>
+        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="300"/>
         <source>Encrypted rootfs setup error</source>
         <translation>Gecodeerde rootfs setup-fout</translation>
     </message>
     <message>
-        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="232"/>
+        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="280"/>
         <source>Root partition %1 is LUKS but no passphrase has been set.</source>
         <translation>Rootpartitie %1 is LUKS maar er is geen wachtwoordzin ingesteld.</translation>
     </message>
     <message>
-        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="239"/>
+        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="287"/>
         <source>Could not create LUKS key file for root partition %1.</source>
         <translation>Kan LUKS-sleutelbestand voor rootpartitie %1 niet maken.</translation>
     </message>
     <message>
-        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="247"/>
+        <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="301"/>
         <source>Could not configure LUKS key file on partition %1.</source>
         <translation>Kon LUKS-sleutelbestand niet configureren op partitie %1.</translation>
     </message>
@@ -2012,24 +2207,24 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Selecteer je voorkeur voor Regio, of gebruik de standaardinstellingen.</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="98"/>
-        <location filename="../src/modules/localeq/Offline.qml" line="173"/>
-        <location filename="../src/modules/localeq/Offline.qml" line="217"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="99"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="175"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="219"/>
         <source>Timezone: %1</source>
         <translation>Tijdzone: %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="115"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="116"/>
         <source>Select your preferred Zone within your Region.</source>
         <translation>Selecteer uw Voorkeurszone binnen uw Regio.</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="186"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="188"/>
         <source>Zones</source>
         <translation>Zones</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="233"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="235"/>
         <source>You can fine-tune Language and Locale settings below.</source>
         <translation>Je kunt de instellingen voor taal en landinstelling hieronder verfijnen.</translation>
     </message>
@@ -2055,24 +2250,24 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Selecteer je voorkeur voor regio, of gebruik het standaardmodel gebaseerd op je huidige locatie.</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="111"/>
-        <location filename="../src/modules/localeq/Offline3.qml" line="188"/>
-        <location filename="../src/modules/localeq/Offline3.qml" line="234"/>
+        <location filename="../src/modules/localeq/Offline3.qml" line="112"/>
+        <location filename="../src/modules/localeq/Offline3.qml" line="190"/>
+        <location filename="../src/modules/localeq/Offline3.qml" line="236"/>
         <source>Timezone: %1</source>
         <translation>Tijdzone: %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="128"/>
+        <location filename="../src/modules/localeq/Offline3.qml" line="129"/>
         <source>Select your preferred Zone within your Region.</source>
         <translation>Selecteer uw Voorkeurszone binnen uw Regio.</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="202"/>
+        <location filename="../src/modules/localeq/Offline3.qml" line="204"/>
         <source>Zones</source>
         <translation>Zones</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="250"/>
+        <location filename="../src/modules/localeq/Offline3.qml" line="252"/>
         <source>You can fine-tune Language and Locale settings below.</source>
         <translation>Je kunt de instellingen voor taal en landinstelling hieronder verfijnen.</translation>
     </message>
@@ -2333,7 +2528,7 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Onbekende fout</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/Config.cpp" line="818"/>
+        <location filename="../src/modules/users/Config.cpp" line="830"/>
         <source>Password is empty</source>
         <translation>Wachtwoord is leeg</translation>
     </message>
@@ -2649,17 +2844,17 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>&amp;Verwijderen</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="228"/>
+        <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="224"/>
         <source>Are you sure you want to create a new partition table on %1?</source>
         <translation>Weet u zeker dat u een nieuwe partitie tabel wilt aanleggen op %1?</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="263"/>
+        <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="259"/>
         <source>Can not create new partition</source>
         <translation>Kan geen nieuwe partitie maken</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="264"/>
+        <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="260"/>
         <source>The partition table on %1 already has %2 primary partitions, and no more can be added. Please remove one primary partition and add an extended partition, instead.</source>
         <translation>De partitietabel op %1 heeft al %2 primaire partities en er kan niet meer aan worden toegevoegd. Verwijder in plaats daarvan een primaire partitie en voeg een uitgebreide partitie toe.</translation>
     </message>
@@ -2667,7 +2862,7 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>PartitionQmlViewStep</name>
     <message>
-        <location filename="../src/modules/partitionq/PartitionQmlViewStep.cpp" line="117"/>
+        <location filename="../src/modules/partitionq/PartitionQmlViewStep.cpp" line="39"/>
         <source>Partition</source>
         <translation>Partitie</translation>
     </message>
@@ -2710,72 +2905,72 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Naderhand:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="529"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="524"/>
         <source>No EFI system partition configured</source>
         <translation>Geen EFI systeem partitie geconfigureerd</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="533"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="528"/>
         <source>EFI system partition configured incorrectly</source>
         <translation>EFI systeem partitie incorrect geconfigureerd</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="538"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="533"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;To configure an EFI system partition, go back and select or create a suitable filesystem.</source>
         <translation>An EFI system partitie is noodzakelijk om  %1 te starten.&lt;br/&gt;&lt;br/&gt;Om een EFI-systeempartitie te configureren, ga terug en selecteer of creëer een geschikt bestandssysteem.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="549"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="544"/>
         <source>The filesystem must be mounted on &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>Het bestandsysteem moet gemount zijn op &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="555"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="550"/>
         <source>The filesystem must have type FAT32.</source>
         <translation>Het bestandssysteem moet van het type FAT32 zijn.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="563"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="558"/>
         <source>The filesystem must be at least %1 MiB in size.</source>
         <translation>Het bestandssysteem moet tenminste %1 MiB in grootte zijn.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="569"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="564"/>
         <source>The filesystem must have flag &lt;strong&gt;%1&lt;/strong&gt; set.</source>
         <translation>Het bestandssysteem moet flag &lt;strong&gt;%1&lt;/strong&gt; zetten.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="575"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="570"/>
         <source>You can continue without setting up an EFI system partition but your system may fail to start.</source>
         <translation>Je kunt doorgaan zonder een EFI-systeempartitie in te stellen, maar je systeem start mogelijk niet op.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="593"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="588"/>
         <source>Option to use GPT on BIOS</source>
         <translation>Optie om GPT op BIOS te gebruiken</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="719"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="714"/>
         <source>There are no partitions to install on.</source>
         <translation>Er zijn geen partities om op te installeren.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="626"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="621"/>
         <source>Boot partition not encrypted</source>
         <translation>Boot partitie niet versleuteld</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="594"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="589"/>
         <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, (if not done so already) go back and set the partition table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;%2&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
         <translation>Een GPT partitietabel is de beste optie voor alle systemen. Dit installatieprogramma ondersteunt een dergelijke setup voor BIOS-systemen ook.&lt;br/&gt;&lt;br/&gt;Om een GPT partitietabel op BIOS te configureren, (als dat nog niet gedaan is) ga terug en zet de partitietabel naar GPT, vervolgens creëer een 8 MB niet-geformatteerde partitie met de &lt;strong&gt;%2&lt;/strong&gt; vlag ingeschakeld.&lt;br/&gt;&lt;br/&gt;Een niet-geformatteerde 8 MB partitie is nodig om %1 te starten op een BIOS-systeem met GPT.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="627"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="622"/>
         <source>A separate boot partition was set up together with an encrypted root partition, but the boot partition is not encrypted.&lt;br/&gt;&lt;br/&gt;There are security concerns with this kind of setup, because important system files are kept on an unencrypted partition.&lt;br/&gt;You may continue if you wish, but filesystem unlocking will happen later during system startup.&lt;br/&gt;To encrypt the boot partition, go back and recreate it, selecting &lt;strong&gt;Encrypt&lt;/strong&gt; in the partition creation window.</source>
         <translation>Een aparte boot partitie is opgezet samen met een versleutelde root-partitie, maar de boot partitie is niet versleuteld.&lt;br/&gt;&lt;br/&gt;Er is bezorgheid over de beveiliging in dit soort setup, omdat belangrijke systeembestanden op een niet-versleutelde partitie worden gehouden.&lt;br/&gt;Je kunt doorgaan als je wilt, maar filesystem unlocken zal later gebeuren tijdens het opstarten.&lt;br/&gt;Om de boot partitie te versleutelen, ga terug en maak het opnieuw op, selecteer &lt;strong&gt;Versleutelen&lt;/strong&gt; in het venster partitie creatie.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="718"/>
+        <location filename="../src/modules/partition/PartitionViewStep.cpp" line="713"/>
         <source>has at least one disk device available.</source>
         <translation>heeft ten minste één schijfapparaat beschikbaar.</translation>
     </message>
@@ -2906,7 +3101,7 @@ Output:
         <translation>(geen aankoppelpunt)</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/locale/Translation.cpp" line="74"/>
+        <location filename="../src/libcalamares/locale/Translation.cpp" line="145"/>
         <source>%1 (%2)</source>
         <translation>%1 (%2)</translation>
     </message>
@@ -3135,16 +3330,11 @@ Output:
     </message>
 </context>
 <context>
-    <name>ResultsListDialog</name>
+    <name>ResultsListWidget</name>
     <message>
-        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="137"/>
-        <source>For best results, please ensure that this computer:</source>
-        <translation>Voor het beste resultaat, zorgt u er a.u.b. voor dat deze computer:</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="138"/>
-        <source>System requirements</source>
-        <translation>Systeemvereisten</translation>
+        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="47"/>
+        <source>Checking requirements again in a few seconds ...</source>
+        <translation>De vereisten worden in een paar seconden opnieuw gecontroleerd ...</translation>
     </message>
 </context>
 <context>
@@ -3607,77 +3797,57 @@ Output:
         <translation>Selecteer applicatie en systeemtaal</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="187"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="140"/>
         <source>Open donations website</source>
         <translation>Open donatiesite</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="227"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="143"/>
         <source>&amp;Donate</source>
         <translation>&amp;Donatie</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="237"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="153"/>
         <source>Open help and support website</source>
         <translation>Open hulp en ondersteuning website</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="297"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="166"/>
+        <source>Open issues and bug-tracking website</source>
+        <translation>Openstaande problemen en bug-tracking website.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="179"/>
+        <source>Open release notes website</source>
+        <translation>Website met release-opmerkingen openen</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="182"/>
         <source>&amp;Release notes</source>
         <translation>&amp;Release notes</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="287"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="169"/>
         <source>&amp;Known issues</source>
         <translation>&amp;Bekende problemen</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="240"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="156"/>
         <source>&amp;Support</source>
         <translation>&amp;Support</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="177"/>
-        <source>&amp;About</source>
-        <translation>&amp;Informatie</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="223"/>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;</source>
-        <translation>&lt;h1&gt;Welkom bij het %1 installeer programma.&lt;/h1&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="222"/>
-        <source>&lt;h1&gt;Welcome to the Calamares installer for %1.&lt;/h1&gt;</source>
-        <translation>&lt;h1&gt;Welcom bij de Calamares installatieprogramma voor %1.&lt;/h1&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="216"/>
-        <source>&lt;h1&gt;Welcome to the Calamares setup program for %1.&lt;/h1&gt;</source>
-        <translation>&lt;h1&gt;Welcom bij de Calamares installatieprogramma voor %1.&lt;/h1&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="217"/>
-        <source>&lt;h1&gt;Welcome to %1 setup.&lt;/h1&gt;</source>
-        <translation>&lt;h1&gt;Welkom bij het %1 installeer programma.&lt;/h1&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="235"/>
+        <location filename="../src/calamares/DebugWindow.cpp" line="238"/>
         <source>About %1 setup</source>
         <translation>Informatie %1 installeer programma</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="235"/>
+        <location filename="../src/calamares/DebugWindow.cpp" line="239"/>
         <source>About %1 installer</source>
         <translation>Informatie %1 installeer programma</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="238"/>
-        <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017-2020 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Thanks to &lt;a href=&quot;https://calamares.io/team/&quot;&gt;the Calamares team&lt;/a&gt; and the &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017-2019 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Met dank aan het &lt;a href=&quot;https://calamares.io/team/&quot;&gt;Calamares team&lt;/a&gt; en het &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS vertalers team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; is gesponsord door &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="228"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="212"/>
         <source>%1 support</source>
         <translation>%1 support</translation>
     </message>
@@ -3745,6 +3915,12 @@ Output:
 <context>
     <name>about</name>
     <message>
+        <location filename="../src/branding/kaos_branding/about.qml" line="23"/>
+        <source>About Calamares</source>
+        <translation>Over Calamares</translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/about.qml" line="48"/>
         <location filename="../src/modules/welcomeq/about.qml" line="47"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;
                         &lt;strong&gt;%2&lt;br/&gt;
@@ -3772,6 +3948,11 @@ Output:
                         Liberating Software.</translation>
     </message>
     <message>
+        <location filename="../src/branding/kaos_branding/about.qml" line="95"/>
+        <source>Close</source>
+        <translation>Afsluiten</translation>
+    </message>
+    <message>
         <location filename="../src/modules/welcomeq/about.qml" line="96"/>
         <source>Back</source>
         <translation>Terug</translation>
@@ -3780,10 +3961,25 @@ Output:
 <context>
     <name>calamares-sidebar</name>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="89"/>
-        <location filename="../src/calamares/calamares-sidebar.qml" line="79"/>
+        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="94"/>
         <source>Show debug information</source>
         <translation>Debug informatie tonen</translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="118"/>
+        <location filename="../src/calamares/calamares-sidebar.qml" line="89"/>
+        <source>About</source>
+        <translation>Informatie</translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="122"/>
+        <source>Show information about Calamares</source>
+        <translation>Information over Calamares tonen</translation>
+    </message>
+    <message>
+        <location filename="../src/calamares/calamares-sidebar.qml" line="115"/>
+        <source>Debug</source>
+        <translation>Fouten opsporen</translation>
     </message>
 </context>
 <context>
@@ -3900,17 +4096,17 @@ Output:
         <translation>Toetsenbord Model:</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="254"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="256"/>
         <source>Layouts</source>
         <translation>Indelingen</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="263"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="265"/>
         <source>Type here to test your keyboard</source>
         <translation>Typ hier om uw toetsenbord te testen</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="179"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="180"/>
         <source>Variants</source>
         <translation>Varianten</translation>
     </message>
@@ -3978,33 +4174,33 @@ Output:
         <translation>Toetsenbord Model:</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="244"/>
-        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="476"/>
+        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="245"/>
+        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="479"/>
         <source>Layouts</source>
         <translation>Indelingen</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="358"/>
+        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="360"/>
         <source>Models</source>
         <translation>Models</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="365"/>
+        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="367"/>
         <source>Variants</source>
         <translation>Varianten</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="381"/>
+        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="383"/>
         <source>Keyboard Variant</source>
         <translation>Toetsenbord Variant</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="398"/>
+        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="400"/>
         <source>Variant keyboard model or use the default one based on the detected hardware.</source>
         <translation>Variant toetsenbordmodel of gebruik de standaard op basis van de gedetecteerde hardware</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="486"/>
+        <location filename="../src/modules/keyboardq/keyboardq_w.qml" line="489"/>
         <source>Test your keyboard</source>
         <translation>Test je toetsenbord</translation>
     </message>
@@ -4051,6 +4247,21 @@ Output:
         <location filename="../src/modules/localeq/localeq2.qml" line="55"/>
         <source>Zone: </source>
         <translation>Zone:</translation>
+    </message>
+</context>
+<context>
+    <name>manual</name>
+    <message>
+        <location filename="../src/modules/partitionq/manual.qml" line="44"/>
+        <source>&lt;h1&gt;Manual Partitioning Options&lt;/h1&gt;&lt;br/&gt;
+                        Placeholder</source>
+        <translation>&lt;h1&gt;Handmatige Partitionering Opties&lt;/h1&gt;&lt;br/&gt;
+                        Tijdelijke Aanduiding</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/manual.qml" line="80"/>
+        <source>Back</source>
+        <translation>Terug</translation>
     </message>
 </context>
 <context>
@@ -4125,44 +4336,49 @@ Output:
 <context>
     <name>partitionq</name>
     <message>
-        <location filename="../src/modules/partitionq/partitionq.qml" line="43"/>
-        <source>&lt;h3&gt;Full disk encryption&lt;/h3&gt;</source>
-        <translation>&lt;h3&gt;Volledige schijfversleuteling&lt;/h3&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partitionq/partitionq.qml" line="50"/>
-        <source>Password</source>
-        <translation>Wachtwoord</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partitionq/partitionq.qml" line="66"/>
-        <source>Password (repeat)</source>
-        <translation>Wachtwoord (herhalen)</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partitionq/partitionq.qml" line="92"/>
-        <source>Continue</source>
-        <translation>Doorgaan</translation>
-    </message>
-    <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="95"/>
         <source/>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partitionq/partitionq.qml" line="99"/>
-        <source>Passwords do not match</source>
-        <translation>Wachtwoorden komen niet overeen</translation>
+        <location filename="../src/modules/partitionq/partitionq.qml" line="54"/>
+        <source>EFI</source>
+        <translation>EFI</translation>
     </message>
     <message>
-        <location filename="../src/modules/partitionq/partitionq.qml" line="101"/>
-        <source>Password too short</source>
-        <translation>Wachtwoord is te kort</translation>
+        <location filename="../src/modules/partitionq/partitionq.qml" line="85"/>
+        <source>Select storage device</source>
+        <translation>Kies een opslag device</translation>
     </message>
     <message>
-        <location filename="../src/modules/partitionq/partitionq.qml" line="103"/>
-        <source>Please wait...</source>
-        <translation>Gaarne even wachten...</translation>
+        <location filename="../src/modules/partitionq/partitionq.qml" line="135"/>
+        <source>GPT</source>
+        <translation>GPT</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/partitionq.qml" line="444"/>
+        <source>Passphrase</source>
+        <translation>Wachtwoordzin</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/partitionq.qml" line="452"/>
+        <source>Confirm Passphrase</source>
+        <translation>Bevestig Wachtwoordzin</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/partitionq.qml" line="465"/>
+        <source>Bootloader options:</source>
+        <translation>Opstartlader opties:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/partitionq.qml" line="490"/>
+        <source>Current</source>
+        <translation>Huidig</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partitionq/partitionq.qml" line="547"/>
+        <source>After</source>
+        <translation>Na</translation>
     </message>
 </context>
 <context>
@@ -4324,102 +4540,102 @@ Output:
         <translation>Indien meer dan één persoon deze computer gebruikt, kunt u meerdere accounts na de installatie instellen.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="152"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="154"/>
         <source>What is the name of this computer?</source>
         <translation>Wat is de naam van deze computer?</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="158"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="160"/>
         <source>Computer Name</source>
         <translation>Computer Naam</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="185"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="187"/>
         <source>This name will be used if you make the computer visible to others on a network.</source>
         <translation>Deze naam zal worden gebruikt als u de computer zichtbaar maakt voor anderen op een netwerk.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="214"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="218"/>
         <source>Choose a password to keep your account safe.</source>
         <translation>Kies een wachtwoord om uw account veilig te houden.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="224"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="228"/>
         <source>Password</source>
         <translation>Wachtwoord</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="241"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="245"/>
         <source>Repeat Password</source>
         <translation>Herhaal Wachtwoord</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="268"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="272"/>
         <source>Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.</source>
         <translation>Voer hetzelfde wachtwoord twee keer in, zodat het gecontroleerd kan worden op typefouten. Een goed wachtwoord bevat een combinatie van letters, cijfers en leestekens, is ten minste acht tekens lang en moet regelmatig worden gewijzigd.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="414"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="418"/>
         <source>Validate passwords quality</source>
         <translation>Valideer de kwaliteit van wachtwoorden</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="424"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="428"/>
         <source>When this box is checked, password-strength checking is done and you will not be able to use a weak password.</source>
         <translation>Wanneer dit vakje is aangevinkt, wordt de wachtwoordsterkte gecontroleerd en kunt u geen zwak wachtwoord gebruiken.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="406"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="410"/>
         <source>Log in automatically without asking for the password</source>
         <translation>Automatisch aanmelden zonder te vragen om het wachtwoord.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="135"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="136"/>
         <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
         <translation>Alleen kleine letters, cijfers, onderstrepingstekens en koppeltekens zijn toegestaan.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="143"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="145"/>
         <source>root is not allowed as username.</source>
         <translation>root is niet toegestaan als gebruikersnaam.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="197"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="200"/>
         <source>Only letters, numbers, underscore and hyphen are allowed, minimal of two characters.</source>
         <translation>Alleen letters, cijfers, onderstrepingstekens en koppeltekens zijn toegestaan, minimaal twee tekens.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="205"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="209"/>
         <source>localhost is not allowed as hostname.</source>
         <translation>localhost is niet toegestaan als hostname.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="300"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="304"/>
         <source>Reuse user password as root password</source>
         <translation>Hergebruik het gebruikerswachtwoord als root-wachtwoord</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="308"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="312"/>
         <source>Use the same password for the administrator account.</source>
         <translation>Gebruik hetzelfde wachtwoord voor het administrator account.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="321"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="325"/>
         <source>Choose a root password to keep your account safe.</source>
         <translation>Kies een root wachtwoord om uw account veilig te houden.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="331"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="335"/>
         <source>Root Password</source>
         <translation>Root Wachtwoord</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="349"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="353"/>
         <source>Repeat Root Password</source>
         <translation>Herhaal Root Wachtwoord</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/usersq.qml" line="376"/>
+        <location filename="../src/modules/usersq/usersq.qml" line="380"/>
         <source>Enter the same password twice, so that it can be checked for typing errors.</source>
         <translation>Voer hetzelfde wachtwoord twee keer in, zodat het gecontroleerd kan worden op typefouten.</translation>
     </message>
@@ -4608,11 +4824,6 @@ Output:
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
         <translation>&lt;h3&gt;Welkom bij het %1 &lt;quote&gt;%2&lt;/quote&gt; installeerprogramma&lt;/h3&gt;
             &lt;p&gt;Dit programma zal u enkele vragen stellen en %1 op uw computer installeren.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="66"/>
-        <source>About</source>
-        <translation>Informatie</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="79"/>
