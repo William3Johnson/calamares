@@ -1,8 +1,8 @@
 [main]
 host = https://www.transifex.com
 
-[kaos.calamares-kaos_branding_ents]
+[o:kaos:p:kaos:r:calamares-kaos_branding_ents]
 file_filter = lang/calamares-kaos_branding_<lang>.ts
 source_file = lang/calamares-kaos_branding_en.ts
 source_lang = en
-type = QT
+type        = QT
