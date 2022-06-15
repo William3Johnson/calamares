@@ -7,8 +7,8 @@
  *   Calamares is Free Software: see the License-Identifier above.
  *
  */
-//import io.calamares.core 1.0
-//import io.calamares.ui 1.0
+import io.calamares.core 1.0
+import io.calamares.ui 1.0
 
 import QtQuick 2.10
 import QtQuick.Controls 2.10
@@ -33,7 +33,7 @@ Page
             padding: 20
             // In QML, QString::arg() only takes one argument
             text: qsTr("<h3>Welcome to the %1 <quote>%2</quote> installer</h3>
-            <p>This program will ask you some questions and set up %1 on your computer.</p>")//.arg(Branding.string(Branding.ProductName)).arg(Branding.string(Branding.Version))
+            <p>This program will ask you some questions and set up %1 on your computer.</p>").arg(Branding.string(Branding.ProductName)).arg(Branding.string(Branding.Version))
         }
         Image {
             id: welcomeImage
@@ -41,15 +41,14 @@ Page
             // imagePath() returns a full pathname, so make it refer to the filesystem
             // .. otherwise the path is interpreted relative to the "call site", which
             // .. might be the QRC file.
-            //source: "file:/" + Branding.imagePath(Branding.ProductWelcome)
-            source: "img/languages.png"
+            source: "file:/" + Branding.imagePath(Branding.ProductWelcome)
             sourceSize.width: width
             sourceSize.height: height
             fillMode: Image.PreserveAspectFit
         }
 
-        Requirements2 {
-            visible: true //!config.requirementsModel.satisfiedRequirements
+        Requirements {
+            visible: !config.requirementsModel.satisfiedRequirements
         }
 
         RowLayout {

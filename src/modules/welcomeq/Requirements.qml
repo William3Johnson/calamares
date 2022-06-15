@@ -20,13 +20,12 @@ Rectangle {
     focus: true
     Kirigami.Theme.backgroundColor: Kirigami.Theme.backgroundColor
     anchors.fill: parent
-    anchors.topMargin: 50
+    anchors.topMargin: 60
 
     TextArea {
         id: required
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
-        anchors.topMargin: 10
         horizontalAlignment: TextEdit.AlignHCenter
         width: parent.width
         font.pointSize: 11
