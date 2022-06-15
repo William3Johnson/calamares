@@ -61,6 +61,7 @@ if ( KPMcore_FOUND AND Qt5DBus_FOUND AND KF5CoreAddons_FOUND AND KF5Config_FOUND
         SOURCES
             PartitionQmlViewStep.cpp
             ChoicePageQml.cpp
+            FlatPartitionModel.cpp
             ${_partition}/Config.cpp
             ${_partition}/core/PartUtils.cpp
             ${_partition}/core/DeviceModel.cpp
