@@ -4,18 +4,18 @@
     <message>
         <location filename="../src/libcalamares/CalamaresAbout.cpp" line="17"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt; for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt; pour %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/CalamaresAbout.cpp" line="20"/>
         <source>Thanks to &lt;a href=&quot;https://calamares.io/team/&quot;&gt;the Calamares team&lt;/a&gt; and the &lt;a href=&quot;https://www.transifex.com/calamares/calamares/&quot;&gt;Calamares translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>Merci à &lt;a href=&quot;https://calamares.io/team/&quot;&gt;l’équipe Calamares&lt;/a&gt; et à &lt;a href=&quot;https://www.transifex.com/calamares/calamares/&quot;&gt;l’équipe de traduction deCalamares&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Le développement de &lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; est sponsorisé par &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/CalamaresAbout.cpp" line="38"/>
         <source>Copyright %1-%2 %3 &amp;lt;%4&amp;gt;&lt;br/&gt;</source>
         <extracomment>Copyright year-year Name &lt;email-address&gt;</extracomment>
-        <translation type="unfinished"/>
+        <translation>Copyright %1-%2 %3 &amp;lt;%4&amp;gt;&lt;br/&gt;</translation>
     </message>
 </context>
 <context>
@@ -303,7 +303,7 @@
     <message>
         <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="94"/>
         <source>Requirements checking for module &apos;%1&apos; is complete.</source>
-        <translation type="unfinished"/>
+        <translation>La vérification de la configuration requise pour le module « %1 » est complète.</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="118"/>
@@ -724,48 +724,48 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="149"/>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="183"/>
         <source>No swap</source>
-        <translation type="unfinished"/>
+        <translation>Pas de swap</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="155"/>
         <source>Reuse swap</source>
-        <translation type="unfinished"/>
+        <translation>Réutiliser la Swap</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="161"/>
         <source>Swap (no Hibernate)</source>
-        <translation type="unfinished"/>
+        <translation>Swap (pas d’hibernation)</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="167"/>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="186"/>
         <source>Swap (with Hibernate)</source>
-        <translation type="unfinished"/>
+        <translation>Swap (avec hibernation)</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="173"/>
         <source>Swap to file</source>
-        <translation type="unfinished"/>
+        <translation>Swap dans un fichier</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="534"/>
         <source>An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
-        <translation type="unfinished"/>
+        <translation>Aucune partition système EFI n’a pu être trouvée sur ce système. Veuillez recommencer et utiliser le partitionnement manuel pour configurer %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="542"/>
         <source>The EFI system partition at %1 will be used for starting %2.</source>
-        <translation type="unfinished"/>
+        <translation>La partition système EFI %1 sera utilisée pour démarrer %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="550"/>
         <source>EFI system partition:</source>
-        <translation type="unfinished"/>
+        <translation>Partition système EFI :</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="681"/>
         <source>This storage device does not seem to have an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Ce périphérique de stockage ne semble pas avoir de système d’exploitation. Que voulez-vous faire ?&lt;br/&gt;Vous pourrez vérifier et confirmer vos choix avant que les changements soient appliqués sur ce périphérique.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="686"/>
@@ -773,7 +773,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="744"/>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="771"/>
         <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Effacer le disque&lt;/strong&gt;&lt;br/&gt;Cela va&lt;font color=&quot;red&quot;&gt;supprimer&lt;/font&gt; toutes les données présentes dans le périphérique de stockage.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="690"/>
@@ -781,7 +781,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="740"/>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="767"/>
         <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a partition to make room for %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Installer à côté&lt;/strong&gt;&lt;br/&gt;L’installateur va rétrécir le volume pour faire de la place pour %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="694"/>
@@ -789,42 +789,42 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="748"/>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="775"/>
         <source>&lt;strong&gt;Replace a partition&lt;/strong&gt;&lt;br/&gt;Replaces a partition with %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Remplacer une partition&lt;/strong&gt;&lt;br/&gt; Remplace une partition avec %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="710"/>
         <source>This storage device has %1 on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Ce périphérique de stockage contient %1. Que voulez-vous faire ?&lt;br/&gt;Vous pourrez vérifier et confirmer vos choix avant que les changements soient appliqués sur ce périphérique.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="735"/>
         <source>This storage device already has an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Ce périphérique de stockage contient un système d’exploitation. Que voulez-vous faire ?&lt;br/&gt;Vous pourrez vérifier et confirmer vos choix avant que les changements soient appliqués sur ce périphérique.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="762"/>
         <source>This storage device has multiple operating systems on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Ce périphérique de stockage a plusieurs systèmes d’exploitation. Que voulez-vous faire ?&lt;br/&gt;Vous pourrez vérifier et confirmer vos choix avant que les changements soient appliqués sur ce périphérique.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="836"/>
         <source>This storage device already has an operating system on it, but the partition table &lt;strong&gt;%1&lt;/strong&gt; is different from the needed &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Le périphérique de stockage possède déjà un système d’exploitation mais la table de partitions &lt;strong&gt;%1&lt;/strong&gt; est différente du format nécessaire &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="857"/>
         <source>This storage device has one of its partitions &lt;strong&gt;mounted&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Une des partitions de ce périphérique de stockage est &lt;strong&gt;montée&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="862"/>
         <source>This storage device is a part of an &lt;strong&gt;inactive RAID&lt;/strong&gt; device.</source>
-        <translation type="unfinished"/>
+        <translation>Ce périphérique de stockage fait partie d’un périphérique &lt;strong&gt;RAID inactif&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="872"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Partitionnement manuel&lt;/strong&gt;&lt;br/&gt;Vous pouvez créer ou redimensionner vous-même les partitions, ou bien choisir plusieurs partitions pour %1.</translation>
     </message>
 </context>
 <context>
@@ -898,7 +898,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/libcalamares/utils/CommandList.cpp" line="166"/>
         <source>The commands use variables that are not defined. Missing variables are: %1.</source>
-        <translation type="unfinished"/>
+        <translation>Les commandes utilisent des variables non définies. Variables manquantes : %1.</translation>
     </message>
 </context>
 <context>
@@ -931,12 +931,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="56"/>
         <source>This computer does not satisfy the minimum requirements for setting up %1.&lt;br/&gt;Setup cannot continue.</source>
-        <translation type="unfinished"/>
+        <translation>Cet ordinateur ne satisfait pas les conditions requises pour installer %1. L’installation ne peut pas continuer.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="59"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;Installation cannot continue.</source>
-        <translation type="unfinished"/>
+        <translation>Cet ordinateur ne satisfait pas les conditions requises pour installer %1.&lt;br/&gt; L’installation ne peut pas continuer.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="65"/>
@@ -1507,12 +1507,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.cpp" line="259"/>
         <source>Passphrase for existing partition</source>
-        <translation type="unfinished"/>
+        <translation>Phrase de passe de la partition existante</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.cpp" line="260"/>
         <source>Partition %1 could not be decrypted with the given passphrase.&lt;br/&gt;&lt;br/&gt;Edit the partition again and give the correct passphrase or delete and create a new encrypted partition.</source>
-        <translation type="unfinished"/>
+        <translation>La partition %1 ne peut pas être déchiffrée avec la phrase de passe saisie.&lt;br/&gt;&lt;br/&gt;Veuillez de nouveau modifier la partition et fournir la bonne phrase de passe ou bien supprimez et créez une nouvelle partition chiffrée.</translation>
     </message>
 </context>
 <context>
@@ -1695,7 +1695,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="63"/>
         <source>%1 (%2)</source>
         <comment>partition label %1 (device path %2)</comment>
-        <translation type="unfinished"/>
+        <translation>%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="65"/>
@@ -1713,12 +1713,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="159"/>
         <source>Please ensure the system has at least %1 GiB available drive space.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez vous assurer que le système possède au moins %1 Gio d’espace disque disponible.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="161"/>
         <source>Available drive space is all of the hard disks and SSDs connected to the system.</source>
-        <translation type="unfinished"/>
+        <translation>L’espace disque disponible correspond à celui de tous les disques durs et SSDs connectés au système.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="164"/>
@@ -1788,53 +1788,53 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="226"/>
         <source>is always false</source>
-        <translation type="unfinished"/>
+        <translation>est toujours faux</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="227"/>
         <source>The computer says no.</source>
-        <translation type="unfinished"/>
+        <translation>L’ordinateur dit non.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="235"/>
         <source>is always false (slowly)</source>
-        <translation type="unfinished"/>
+        <translation>est toujours faux (lentement)</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="236"/>
         <source>The computer says no (slowly).</source>
-        <translation type="unfinished"/>
+        <translation>L’ordinateur dit non (lentement).</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="243"/>
         <source>is always true</source>
-        <translation type="unfinished"/>
+        <translation>est toujours vrai</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="244"/>
         <source>The computer says yes.</source>
-        <translation type="unfinished"/>
+        <translation>L’ordinateur dit oui.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="252"/>
         <source>is always true (slowly)</source>
-        <translation type="unfinished"/>
+        <translation>est toujours vrai (lentement)</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="253"/>
         <source>The computer says yes (slowly).</source>
-        <translation type="unfinished"/>
+        <translation>L’ordinateur dit oui (lentement).</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="261"/>
         <source>is checked three times.</source>
-        <translation type="unfinished"/>
+        <translation>est vérifié trois fois.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="264"/>
         <source>The snark has not been checked three times.</source>
         <comment>The (some mythological beast) has not been checked three times.</comment>
-        <translation type="unfinished"/>
+        <translation>The snark has not been checked three times.</translation>
     </message>
 </context>
 <context>
@@ -1968,7 +1968,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="158"/>
         <source>This setup procedure can install proprietary software that is subject to licensing terms in order to provide additional features and enhance the user experience.</source>
-        <translation type="unfinished"/>
+        <translation>Cette procédure d’installation permet d’installer un logiciel propriétaire soumis à des termes de licence afin de fournir des fonctionnalités supplémentaires et améliorer l’expérience utilisateur.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="163"/>
@@ -3331,7 +3331,7 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="47"/>
         <source>Checking requirements again in a few seconds ...</source>
-        <translation type="unfinished"/>
+        <translation>Revérification de la configuration requise dans quelques secondes…</translation>
     </message>
 </context>
 <context>
@@ -3811,12 +3811,12 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="166"/>
         <source>Open issues and bug-tracking website</source>
-        <translation type="unfinished"/>
+        <translation>Ouvrir le site Web de suivi des problèmes et des bogues</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="179"/>
         <source>Open release notes website</source>
-        <translation type="unfinished"/>
+        <translation>Ouvrir le site web des notes de version</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="182"/>
@@ -3914,7 +3914,7 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/branding/kaos_branding/about.qml" line="23"/>
         <source>About Calamares</source>
-        <translation type="unfinished"/>
+        <translation>À propos de Calamares</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/about.qml" line="48"/>
@@ -3946,7 +3946,7 @@ Liberating Software.</translation>
     <message>
         <location filename="../src/branding/kaos_branding/about.qml" line="95"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>Fermer</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/about.qml" line="96"/>
@@ -3965,17 +3965,17 @@ Liberating Software.</translation>
         <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="118"/>
         <location filename="../src/calamares/calamares-sidebar.qml" line="89"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>À propos</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="122"/>
         <source>Show information about Calamares</source>
-        <translation type="unfinished"/>
+        <translation>Afficher des détails à propos de Calamares</translation>
     </message>
     <message>
         <location filename="../src/calamares/calamares-sidebar.qml" line="115"/>
         <source>Debug</source>
-        <translation type="unfinished"/>
+        <translation>Débug</translation>
     </message>
 </context>
 <context>
@@ -4251,12 +4251,13 @@ Les paramètres régionaux du système affectent le format des dates et des nomb
         <location filename="../src/modules/partitionq/manual.qml" line="44"/>
         <source>&lt;h1&gt;Manual Partitioning Options&lt;/h1&gt;&lt;br/&gt;
                         Placeholder</source>
-        <translation type="unfinished"/>
+        <translation>Espace réservé des&lt;br/&gt;
+&lt;h1&gt;options de partitionnement manuel&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/manual.qml" line="80"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Retour</translation>
     </message>
 </context>
 <context>
@@ -4339,42 +4340,42 @@ Veuillez consuter les contrats de licence utilisateur finaux.&lt;/p&gt;</transla
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="54"/>
         <source>EFI</source>
-        <translation type="unfinished"/>
+        <translation>EFI</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="85"/>
         <source>Select storage device</source>
-        <translation type="unfinished"/>
+        <translation>Sélectionner le périphérique de stockage</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="135"/>
         <source>GPT</source>
-        <translation type="unfinished"/>
+        <translation>GPT</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="444"/>
         <source>Passphrase</source>
-        <translation type="unfinished"/>
+        <translation>Phrase de passe</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="452"/>
         <source>Confirm Passphrase</source>
-        <translation type="unfinished"/>
+        <translation>Confirmer la phrase de passe</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="465"/>
         <source>Bootloader options:</source>
-        <translation type="unfinished"/>
+        <translation>Paramètres du chargeur de démarrage :</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="490"/>
         <source>Current</source>
-        <translation type="unfinished"/>
+        <translation>Actuel</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="547"/>
         <source>After</source>
-        <translation type="unfinished"/>
+        <translation>Après</translation>
     </message>
 </context>
 <context>

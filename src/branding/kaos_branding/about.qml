@@ -23,7 +23,7 @@ ApplicationWindow {
     title: qsTr("About Calamares")
 
     property var appName: "Calamares"
-    property var appVersion: "3.3"
+    property var appVersion: "3.3 RC"
 
     Rectangle {
         id: textArea

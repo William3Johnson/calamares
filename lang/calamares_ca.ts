@@ -4,18 +4,18 @@
     <message>
         <location filename="../src/libcalamares/CalamaresAbout.cpp" line="17"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt; for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt; per a %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/CalamaresAbout.cpp" line="20"/>
         <source>Thanks to &lt;a href=&quot;https://calamares.io/team/&quot;&gt;the Calamares team&lt;/a&gt; and the &lt;a href=&quot;https://www.transifex.com/calamares/calamares/&quot;&gt;Calamares translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>Gràcies a &lt;a href=&quot;https://calamares.io/team/&quot;&gt;l&apos;equip del Calamares&lt;/a&gt; i a &lt;a href=&quot;https://www.transifex.com/calamares/calamares/&quot;&gt;l&apos;equip de traductors del Calamares&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt; El desenvolupament del Calamares&lt;a href=&quot;https://calamares.io/&quot;&gt; està patrocinat per &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/CalamaresAbout.cpp" line="38"/>
         <source>Copyright %1-%2 %3 &amp;lt;%4&amp;gt;&lt;br/&gt;</source>
         <extracomment>Copyright year-year Name &lt;email-address&gt;</extracomment>
-        <translation type="unfinished"/>
+        <translation>Drets d&apos;autor: %1-%2 %3 &amp;lt;%4&amp;gt;&lt;br/&gt;</translation>
     </message>
 </context>
 <context>
@@ -303,7 +303,7 @@
     <message>
         <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="94"/>
         <source>Requirements checking for module &apos;%1&apos; is complete.</source>
-        <translation type="unfinished"/>
+        <translation>S&apos;ha completat la comprovació dels requeriments per al mòdul %1.</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/libcalamares/modulesystem/RequirementsChecker.cpp" line="118"/>
@@ -725,48 +725,48 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="149"/>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="183"/>
         <source>No swap</source>
-        <translation type="unfinished"/>
+        <translation>Sense intercani</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="155"/>
         <source>Reuse swap</source>
-        <translation type="unfinished"/>
+        <translation>Reutilitza l&apos;intercanvi</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="161"/>
         <source>Swap (no Hibernate)</source>
-        <translation type="unfinished"/>
+        <translation>Intercanvi (sense hibernació)</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="167"/>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="186"/>
         <source>Swap (with Hibernate)</source>
-        <translation type="unfinished"/>
+        <translation>Intercanvi (amb hibernació)</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="173"/>
         <source>Swap to file</source>
-        <translation type="unfinished"/>
+        <translation>Intercanvi en fitxer</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="534"/>
         <source>An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
-        <translation type="unfinished"/>
+        <translation>No es pot trobar cap partició EFI enlloc del sistema. Si us plau, torneu enrere i useu les particions manuals per configurar %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="542"/>
         <source>The EFI system partition at %1 will be used for starting %2.</source>
-        <translation type="unfinished"/>
+        <translation>La partició EFI del sistema a %1 s&apos;usarà per iniciar %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="550"/>
         <source>EFI system partition:</source>
-        <translation type="unfinished"/>
+        <translation>Partició EFI del sistema:</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="681"/>
         <source>This storage device does not seem to have an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Aquest dispositiu d&apos;emmagatzematge no sembla que tingui cap sistema operatiu. Què voleu fer?&lt;br/&gt;Podreu revisar i confirmar la tria abans que es faci cap canvi al dispositiu. </translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="686"/>
@@ -774,7 +774,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="744"/>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="771"/>
         <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Esborra el disc&lt;/strong&gt;&lt;br/&gt;Això &lt;font color=&quot;red&quot;&gt;eliminarà&lt;/font&gt; totes les dades que hi hagi al dispositiu d&apos;emmagatzematge seleccionat.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="690"/>
@@ -782,7 +782,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="740"/>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="767"/>
         <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a partition to make room for %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Instal·la al costat&lt;/strong&gt;&lt;br/&gt;L&apos;instal·lador reduirà una partició per fer espai per a %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="694"/>
@@ -790,42 +790,42 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="748"/>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="775"/>
         <source>&lt;strong&gt;Replace a partition&lt;/strong&gt;&lt;br/&gt;Replaces a partition with %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Reemplaça una partició&lt;/strong&gt;&lt;br/&gt;Reemplaça una partició per %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="710"/>
         <source>This storage device has %1 on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>En aquest dispositiu d&apos;emmagatzematge hi ha un %1. Què voleu fer?&lt;br/&gt;Podreu revisar i confirmar la tria abans que es faci cap canvi al dispositiu. </translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="735"/>
         <source>This storage device already has an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Aquest dispositiu d&apos;emmagatzematge ja té un sistema operatiu. Què voleu fer?&lt;br/&gt;Podreu revisar i confirmar la tria abans que es faci cap canvi al dispositiu. </translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="762"/>
         <source>This storage device has multiple operating systems on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Aquest dispositiu d&apos;emmagatzematge ja té múltiples sistemes operatius. Què voleu fer?&lt;br/&gt;Podreu revisar i confirmar la tria abans que es faci cap canvi al dispositiu. </translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="836"/>
         <source>This storage device already has an operating system on it, but the partition table &lt;strong&gt;%1&lt;/strong&gt; is different from the needed &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Aquest dispositiu d&apos;emmagatzematge ja té un sistema operatiu, però la taula de particions &lt;strong&gt;%1&lt;/strong&gt; és diferent de la necessària: &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="857"/>
         <source>This storage device has one of its partitions &lt;strong&gt;mounted&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Aquest dispositiu d&apos;emmagatzematge té una de les particions &lt;strong&gt;muntada&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="862"/>
         <source>This storage device is a part of an &lt;strong&gt;inactive RAID&lt;/strong&gt; device.</source>
-        <translation type="unfinished"/>
+        <translation>Aquest dispositiu d&apos;emmagatzematge forma part d&apos;un dispositiu &lt;strong&gt;RAID inactiu&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/ChoicePageQml.cpp" line="872"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Particions manuals&lt;/strong&gt; &lt;br/&gt;Podeu crear o canviar la mida de les particions vosaltres mateixos.</translation>
     </message>
 </context>
 <context>
@@ -899,7 +899,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/libcalamares/utils/CommandList.cpp" line="166"/>
         <source>The commands use variables that are not defined. Missing variables are: %1.</source>
-        <translation type="unfinished"/>
+        <translation>Les ordres usen variables que no estan definides. Les variables que falten són aquestes: %1.</translation>
     </message>
 </context>
 <context>
@@ -932,12 +932,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="56"/>
         <source>This computer does not satisfy the minimum requirements for setting up %1.&lt;br/&gt;Setup cannot continue.</source>
-        <translation type="unfinished"/>
+        <translation>Aquest ordinador no satisfà els requisits mínims per configurar-hi el %1. &lt;br/&gt;La configuració no pot continuar.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="59"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;Installation cannot continue.</source>
-        <translation type="unfinished"/>
+        <translation>Aquest ordinador no compleix els requisits mínims per instal·lar-hi %1. &lt;br/&gt;La instal·lació no pot continuar.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/Config.cpp" line="65"/>
@@ -1508,12 +1508,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.cpp" line="259"/>
         <source>Passphrase for existing partition</source>
-        <translation type="unfinished"/>
+        <translation>Contrasenya per a la partició existent</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.cpp" line="260"/>
         <source>Partition %1 could not be decrypted with the given passphrase.&lt;br/&gt;&lt;br/&gt;Edit the partition again and give the correct passphrase or delete and create a new encrypted partition.</source>
-        <translation type="unfinished"/>
+        <translation>La partició %1 no s&apos;ha pogut desencriptar amb la contrasenya proporcionada. &lt;br/&gt;&lt;br/&gt; Torneu a editar la partició i proporcioneu la contrasenya correcta o suprimiu-la i creeu una partició encriptada nova.</translation>
     </message>
 </context>
 <context>
@@ -1696,7 +1696,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="63"/>
         <source>%1 (%2)</source>
         <comment>partition label %1 (device path %2)</comment>
-        <translation type="unfinished"/>
+        <translation>%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="65"/>
@@ -1714,12 +1714,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="159"/>
         <source>Please ensure the system has at least %1 GiB available drive space.</source>
-        <translation type="unfinished"/>
+        <translation>Assegureu-vos que el sistema tingui com a mínim %1 GiB d&apos;espai disponible.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="161"/>
         <source>Available drive space is all of the hard disks and SSDs connected to the system.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;espai disponible a la unitat és de tots els discs durs i SSD connectats al sistema.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="164"/>
@@ -1789,53 +1789,53 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="226"/>
         <source>is always false</source>
-        <translation type="unfinished"/>
+        <translation>sempre és fals</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="227"/>
         <source>The computer says no.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;ordinador diu que no.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="235"/>
         <source>is always false (slowly)</source>
-        <translation type="unfinished"/>
+        <translation>sempre és fals (a poc a poc)</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="236"/>
         <source>The computer says no (slowly).</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;ordinador diu que no (a poc a poc).</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="243"/>
         <source>is always true</source>
-        <translation type="unfinished"/>
+        <translation>sempre és cert</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="244"/>
         <source>The computer says yes.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;ordinador diu que sí.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="252"/>
         <source>is always true (slowly)</source>
-        <translation type="unfinished"/>
+        <translation>sempre és cert (a poc a poc)</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="253"/>
         <source>The computer says yes (slowly).</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;ordinador diu que sí (a poc a poc).</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="261"/>
         <source>is checked three times.</source>
-        <translation type="unfinished"/>
+        <translation>es comprova tres cops.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="264"/>
         <source>The snark has not been checked three times.</source>
         <comment>The (some mythological beast) has not been checked three times.</comment>
-        <translation type="unfinished"/>
+        <translation>L&apos;snark no s&apos;ha comprovat tres vegades.</translation>
     </message>
 </context>
 <context>
@@ -1969,7 +1969,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="158"/>
         <source>This setup procedure can install proprietary software that is subject to licensing terms in order to provide additional features and enhance the user experience.</source>
-        <translation type="unfinished"/>
+        <translation>Aquest procediment de configuració pot instal·lar programari de propietat subjecte als termes de llicència per tal de proporcionar funcions addicionals i millorar l&apos;experiència de l&apos;usuari.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="163"/>
@@ -3336,7 +3336,7 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="47"/>
         <source>Checking requirements again in a few seconds ...</source>
-        <translation type="unfinished"/>
+        <translation>Es tornen a comprovar els requisits d&apos;aquí a uns segons...</translation>
     </message>
 </context>
 <context>
@@ -3816,12 +3816,12 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="166"/>
         <source>Open issues and bug-tracking website</source>
-        <translation type="unfinished"/>
+        <translation>Problemes oberts i lloc web de seguiment d&apos;errors</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="179"/>
         <source>Open release notes website</source>
-        <translation type="unfinished"/>
+        <translation>Obre el lloc web de les notes de la versió</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="182"/>
@@ -3919,7 +3919,7 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/branding/kaos_branding/about.qml" line="23"/>
         <source>About Calamares</source>
-        <translation type="unfinished"/>
+        <translation>Quant al Calamares</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/about.qml" line="48"/>
@@ -3952,7 +3952,7 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/branding/kaos_branding/about.qml" line="95"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>Tanca</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/about.qml" line="96"/>
@@ -3971,17 +3971,17 @@ La instal·lació no pot continuar.&lt;/p&gt;</translation>
         <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="118"/>
         <location filename="../src/calamares/calamares-sidebar.qml" line="89"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Quant a</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="122"/>
         <source>Show information about Calamares</source>
-        <translation type="unfinished"/>
+        <translation>Mostra informació quant al Calamares</translation>
     </message>
     <message>
         <location filename="../src/calamares/calamares-sidebar.qml" line="115"/>
         <source>Debug</source>
-        <translation type="unfinished"/>
+        <translation>Depuració</translation>
     </message>
 </context>
 <context>
@@ -4257,12 +4257,13 @@ La configuració local del sistema afecta el format de números i dates. La conf
         <location filename="../src/modules/partitionq/manual.qml" line="44"/>
         <source>&lt;h1&gt;Manual Partitioning Options&lt;/h1&gt;&lt;br/&gt;
                         Placeholder</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Opcions de les particions manuals&lt;/h1&gt;&lt;br/&gt;
+                      Marcador de posició</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/manual.qml" line="80"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Enrere</translation>
     </message>
 </context>
 <context>
@@ -4344,42 +4345,42 @@ Consulteu els Acords de llicència d’usuari final (EULAs).&lt;/p&gt;</translat
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="54"/>
         <source>EFI</source>
-        <translation type="unfinished"/>
+        <translation>EFI</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="85"/>
         <source>Select storage device</source>
-        <translation type="unfinished"/>
+        <translation>Trieu un dispositiu d&apos;emmagatzematge</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="135"/>
         <source>GPT</source>
-        <translation type="unfinished"/>
+        <translation>GPT</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="444"/>
         <source>Passphrase</source>
-        <translation type="unfinished"/>
+        <translation>Contrasenya</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="452"/>
         <source>Confirm Passphrase</source>
-        <translation type="unfinished"/>
+        <translation>Confirmeu la contrasenya.</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="465"/>
         <source>Bootloader options:</source>
-        <translation type="unfinished"/>
+        <translation>Opcions del carregador d&apos;arrencada</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="490"/>
         <source>Current</source>
-        <translation type="unfinished"/>
+        <translation>Ara</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="547"/>
         <source>After</source>
-        <translation type="unfinished"/>
+        <translation>Després</translation>
     </message>
 </context>
 <context>
