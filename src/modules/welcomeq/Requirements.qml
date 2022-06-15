@@ -20,7 +20,7 @@ Rectangle {
     focus: true
     Kirigami.Theme.backgroundColor: Kirigami.Theme.backgroundColor
     anchors.fill: parent
-    anchors.topMargin: 70
+    anchors.topMargin: 50
 
     TextArea {
         id: required
@@ -28,7 +28,7 @@ Rectangle {
         anchors.top: parent.top
         anchors.topMargin: 10
         horizontalAlignment: TextEdit.AlignHCenter
-        width: 640
+        width: parent.width
         font.pointSize: 11
         textFormat: Text.RichText
         antialiasing: true
@@ -44,8 +44,8 @@ Rectangle {
     }
 
     Rectangle {
-        width: 640
-        height: 400
+        width: parent.width * 0.8
+        height: parent.height * 0.6
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: required.bottom
         anchors.topMargin: 5
@@ -54,8 +54,8 @@ Rectangle {
             id: requirementsDelegate
 
             Item {
-                width: 640
-                height: 35
+                width: parent.width
+                implicitHeight: message.implicitHeight + 30
                 visible: true
 
                 Column {
@@ -63,7 +63,7 @@ Rectangle {
 
                     Rectangle {
                         implicitWidth: 640
-                        implicitHeight: 35
+                        implicitHeight: message.implicitHeight + 30
                         // Colors and images based on the two satisfied-bools:
                         // - if satisfied, then green / ok
                         // - otherwise if mandatory, then red / stop
@@ -92,12 +92,16 @@ Rectangle {
             id: requirementsList
             anchors.fill: parent
             spacing: 5
+            clip: true
             // This uses the filtered model, so that only unsatisfied
             // requirements are ever shown. You could use *requirementsModel*
             // to get all of them.
             //model: config.unsatisfiedRequirements
             model: config.requirementsModel
             delegate: requirementsDelegate
+            ScrollBar.vertical: ScrollBar {
+                active: true
+            }
         }
     }
 }
