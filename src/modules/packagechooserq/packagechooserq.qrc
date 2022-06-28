@@ -4,6 +4,7 @@
         <file>UEFI.qml</file>
         <file>Nvidia.qml</file>
         <file>packagechooserq.qml</file>
+        <file>packagechooserq@audio.qml</file>
         <file>packagechooserq@bootchoice.qml</file>
         <file>packagechooserq@licenseq.qml</file>
         <file>images/grub.png</file>
@@ -11,6 +12,8 @@
         <file>images/no_grub.png</file>
         <file>images/no-selection.png</file>
         <file>images/plasma.png</file>
+        <file>images/pipewire.png</file>
+        <file>images/pulseaudio.png</file>
         <file>images/refind.png</file>
         <file>images/systemd_boot.png</file>
     </qresource>
