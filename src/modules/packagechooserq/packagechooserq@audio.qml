@@ -7,16 +7,16 @@
  *
  */
 
-//import io.calamares.core 1.0
-//import io.calamares.ui 1.0
+import io.calamares.core 1.0
+import io.calamares.ui 1.0
 
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.3
 
 Item {
-    width: 800 // parent.width
-    height: 500 //parent.height
+    width: parent.width
+    height: parent.height
 
     Rectangle {
         anchors.fill: parent
@@ -178,7 +178,7 @@ Item {
 
             Rectangle {
                 width: 700
-                height: 25
+                height: 50
                 color: "#f2f2f2"
                 border.width: 0
                 Text {
