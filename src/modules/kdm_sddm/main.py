@@ -4,7 +4,7 @@
 #
 #   Copyright 2014, Philip Müller <philm@manjaro.org>
 #   Copyright 2014, Teo Mrnjavac <teo@kde.org>
-#   Copyright 2014-2021, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2022, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -29,8 +29,8 @@ import subprocess
 DesktopEnvironment = collections.namedtuple('DesktopEnvironment', ['executable', 'desktop_file'])
 
 desktop_environments = [
-    DesktopEnvironment('/usr/bin/startplasma-x11', 'plasma'), # KDE Plasma 5
-    #DesktopEnvironment('/usr/bin/startkde', 'kde-plasma'), # KDE Plasma 4
+    DesktopEnvironment('/usr/bin/startplasma-x11', 'plasma'), # Plasma 5 with X
+    DesktopEnvironment('/usr/bin/startkde-wayland', 'plasmawayland'), # Plasma 5 with Wayland
 ]
 
 def find_desktop_environment(root_mount_point):
