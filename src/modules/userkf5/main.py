@@ -81,6 +81,24 @@ def run():
     libcalamares.utils.target_env_call(
         ['chown', '-R', '%s:users' % user, "/home/%s" % user])
 
+    # Packagechooser@audio outcome set to Pipewire or Pulseaudio
+    audio = libcalamares.globalstorage.value("packagechooser_audio")
+    if audio == 'pipewire':
+        print('Pipewire selected')
+        libcalamares.utils.target_env_call(['systemctl', '--global',
+                                            'enable','pipewire.socket'])
+        libcalamares.utils.target_env_call(['systemctl', '--global',
+                                            'enable','pipewire.service'])
+        libcalamares.utils.target_env_call(['systemctl', '--global',
+                                            'enable','pipewire-pulse.socket'])
+        libcalamares.utils.target_env_call(['systemctl', '--global',
+                                            'enable','pipewire-pulse.service'])
+        libcalamares.utils.target_env_call(['systemctl', '--global',
+                                            'enable','wireplumber'])
+
+    if audio == 'pulseaudio':
+        print('Pulseaudio selected')
+
     # switch to wayland session if plasmawayland found in Live mode
     if 'plasmawayland' in open('/etc/sddm.conf').read():
         print('Wayland session')
