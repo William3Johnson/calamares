@@ -204,11 +204,14 @@ LocaleConfiguration::fromLanguageAndLocation( const QString& languageLocale,
         }
     }
     else
+    for ( const QString& line : availableLocales )
     {
-        if ( availableLocales.contains( lang ) )
+        if ( line.startsWith( combined ) )
         {
             cDebug() << Logger::SubEntry << "Exact formats match for language tag" << lang;
-            lc_formats = lang;
+            lang = line;
+            lc_formats = line;
+            break;
         }
         else if ( availableLocales.contains( combinedLanguageAndCountry ) )
         {

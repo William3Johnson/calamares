@@ -315,7 +315,8 @@ Config::automaticLocaleConfiguration() const
     }
 
     auto* gs = Calamares::JobQueue::instance()->globalStorage();
-    QString lang = CalamaresUtils::Locale::readGS( *gs, QStringLiteral( "LANG" ) );
+    QString lang = QLocale().name(); //CalamaresUtils::Locale::readGS( *gs, QStringLiteral( "LANG" ) );
+    cDebug() << "Got localeq language" << lang;
     if ( lang.isEmpty() )
     {
         lang = QLocale().name();
