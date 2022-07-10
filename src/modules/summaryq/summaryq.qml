@@ -70,19 +70,21 @@ Kirigami.ScrollablePage {
                                 Layout.preferredWidth: height
                                 Layout.alignment: Qt.AlignTop
                                 fillMode: Image.PreserveAspectFit
-                                source: summary.count === 6 ?
+                                source: summary.count === 7 ?
                                     ( index === 0 ? "img/license.svg"
                                     : ( index === 1 ? "img/lokalize.svg"
                                     : ( index === 2 ? "img/keyboard.svg"
                                     : ( index === 3 ? "qrc:/data/images/partition-manual.svg"
-                                    : ( index === 4 ? "qrc:/data/images/partition-partition.svg"
-                                    : ( index === 5 ? "img/bootloader.svg"
+                                    : ( index === 4 ? "img/audio.svg"
+                                    : ( index === 5 ? "qrc:/data/images/partition-partition.svg"
+                                    : ( index === 6 ? "img/bootloader.svg"
                                     : "qrc:/data/images/partition-partition.svg" ) ) ) ) ) )
                                     : ( index === 0 ? "img/lokalize.svg"
                                     : ( index === 1 ? "img/keyboard.svg"
                                     : ( index === 2 ? "qrc:/data/images/partition-manual.svg"
-                                    : ( index === 3 ? "qrc:/data/images/partition-partition.svg"
-                                    : ( index === 4 ? "img/bootloader.svg"
+                                    : ( index === 3 ? "img/audio.svg"
+                                    : ( index === 4 ? "qrc:/data/images/partition-partition.svg"
+                                    : ( index === 5 ? "img/bootloader.svg"
                                     : "qrc:/data/images/partition-partition.svg" ) ) ) ) )
                             }
                             ColumnLayout {
