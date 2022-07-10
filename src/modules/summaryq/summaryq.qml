@@ -78,14 +78,14 @@ Kirigami.ScrollablePage {
                                     : ( index === 4 ? "img/audio.svg"
                                     : ( index === 5 ? "qrc:/data/images/partition-partition.svg"
                                     : ( index === 6 ? "img/bootloader.svg"
-                                    : "qrc:/data/images/partition-partition.svg" ) ) ) ) ) )
+                                    : "qrc:/data/images/partition-partition.svg" ) ) ) ) ) ) )
                                     : ( index === 0 ? "img/lokalize.svg"
                                     : ( index === 1 ? "img/keyboard.svg"
                                     : ( index === 2 ? "qrc:/data/images/partition-manual.svg"
                                     : ( index === 3 ? "img/audio.svg"
                                     : ( index === 4 ? "qrc:/data/images/partition-partition.svg"
                                     : ( index === 5 ? "img/bootloader.svg"
-                                    : "qrc:/data/images/partition-partition.svg" ) ) ) ) )
+                                    : "qrc:/data/images/partition-partition.svg" ) ) ) ) ) )
                             }
                             ColumnLayout {
 
