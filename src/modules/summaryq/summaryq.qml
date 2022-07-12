@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <https://calamares.io> ===
  *
- *   SPDX-FileCopyrightText: 2021 Anke Boersma <demm@kaosx.us>
+ *   SPDX-FileCopyrightText: 2021 - 2022 Anke Boersma <demm@kaosx.us>
  *   SPDX-License-Identifier: GPL-3.0-or-later
  *
  *   Calamares is Free Software: see the License-Identifier above.
@@ -18,8 +18,8 @@ import QtGraphicalEffects 1.0
 import QtQuick.Window 2.3
 
 Kirigami.ScrollablePage {
-    width: 860 //parent.width //860
-    height: 640 //parent.height //640
+    width: 860 //parent.width
+    height: 640 //parent.height
 
     Kirigami.Theme.backgroundColor: "#EFF0F1"
     Kirigami.Theme.textColor: "#1F1F1F"

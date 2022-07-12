@@ -86,13 +86,9 @@ def run():
     if audio == 'pipewire':
         print('Pipewire selected')
         libcalamares.utils.target_env_call(['systemctl', '--global',
-                                            'enable','pipewire.socket'])
+                                            'enable','pipewire'])
         libcalamares.utils.target_env_call(['systemctl', '--global',
-                                            'enable','pipewire.service'])
-        libcalamares.utils.target_env_call(['systemctl', '--global',
-                                            'enable','pipewire-pulse.socket'])
-        libcalamares.utils.target_env_call(['systemctl', '--global',
-                                            'enable','pipewire-pulse.service'])
+                                            'enable','pipewire-pulse'])
         libcalamares.utils.target_env_call(['systemctl', '--global',
                                             'enable','wireplumber'])
 
