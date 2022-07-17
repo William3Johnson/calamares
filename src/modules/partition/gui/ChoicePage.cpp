@@ -474,10 +474,10 @@ ChoicePage::onActionChanged()
         {
             m_encryptWidget->hide();
         }
-        else
-        {
-            m_encryptWidget->show();
-        }
+        //else
+        //{
+        //    m_encryptWidget->show();
+        //}
     }
     updateNextEnabled();
 }
