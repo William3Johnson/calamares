@@ -13,7 +13,7 @@
 if(NOT KPMcore_searched_for AND NOT TARGET calapmcore)
     set(KPMcore_searched_for TRUE)
 
-    find_package(KPMcore 20.04.0)
+    find_package(KPMcore 22.04.3)
     set_package_properties(
         KPMcore
         PROPERTIES
