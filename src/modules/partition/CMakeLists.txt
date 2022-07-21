@@ -49,7 +49,9 @@ find_package(KF5Config CONFIG)
 find_package(KF5I18n CONFIG)
 find_package(KF5WidgetsAddons CONFIG)
 
-if(KPMcore_FOUND)
+if(KPMcore_FOUND AND Qt5DBus_FOUND AND KF5CoreAddons_FOUND AND KF5Config_FOUND)
+    list(APPEND _partition_defs ${KPMcore_API_DEFINITIONS})
+    include_directories(${KPMCORE_INCLUDE_DIR})
     include_directories(${PROJECT_BINARY_DIR}/src/libcalamaresui)
 
     add_subdirectory(tests)
@@ -116,7 +118,7 @@ if(KPMcore_FOUND)
             gui/ReplaceWidget.ui
             gui/VolumeGroupBaseDialog.ui
         LINK_PRIVATE_LIBRARIES
-            calamares::kpmcore
+            kpmcore
             KF5::CoreAddons
         COMPILE_DEFINITIONS ${_partition_defs}
         SHARED_LIB

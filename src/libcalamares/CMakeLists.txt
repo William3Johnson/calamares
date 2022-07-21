@@ -130,6 +130,13 @@ endif()
 include(KPMcoreHelper)
 
 if(KPMcore_FOUND)
+    find_package(Qt5 REQUIRED DBus) # Needed for KPMCore
+    find_package(KF5 REQUIRED I18n WidgetsAddons) # Needed for KPMCore
+
+    foreach(d ${KPMcore_API_DEFINITIONS})
+        add_definitions(-D${d})
+    endforeach()
+    include_directories(${KPMCORE_INCLUDE_DIR})
     target_sources(
         calamares
         PRIVATE
@@ -138,9 +145,8 @@ if(KPMcore_FOUND)
             partition/PartitionIterator.cpp
             partition/PartitionQuery.cpp
     )
+    target_link_libraries(calamares PRIVATE kpmcore)
 endif()
-# Always, since this also handles the no-KPMcore case
-target_link_libraries(calamares PRIVATE calamares::kpmcore)
 
 ### LIBRARY
 #
@@ -254,8 +260,8 @@ calamares_add_test(libcalamaresnetworktest SOURCES network/Tests.cpp)
 calamares_add_test(libcalamarespackagestest SOURCES packages/Tests.cpp)
 
 if(KPMcore_FOUND)
-    calamares_add_test(libcalamarespartitiontest SOURCES partition/Global.cpp partition/Tests.cpp LIBRARIES calamares::kpmcore)
-    calamares_add_test(libcalamarespartitionkpmtest SOURCES partition/KPMTests.cpp LIBRARIES calamares::kpmcore)
+    calamares_add_test(libcalamarespartitiontest SOURCES partition/Global.cpp partition/Tests.cpp LIBRARIES kpmcore)
+    calamares_add_test(libcalamarespartitionkpmtest SOURCES partition/KPMTests.cpp LIBRARIES kpmcore)
 endif()
 
 calamares_add_test(libcalamaresutilstest SOURCES utils/Tests.cpp utils/Runner.cpp)
