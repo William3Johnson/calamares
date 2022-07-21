@@ -10,10 +10,10 @@
 # If KPMcore is not found, still create calamares::kpmcore interface
 # library, which will add definition WITHOUT_KPMcore.
 #
-if(NOT KPMcore_searched_for AND NOT TARGET calapmcore)
+if(NOT KPMcore_searched_for)
     set(KPMcore_searched_for TRUE)
 
-    find_package(KPMcore 22.04.3)
+    find_package(KPMcore 20.04.0)
     set_package_properties(
         KPMcore
         PROPERTIES
