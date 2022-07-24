@@ -2,6 +2,7 @@
  *
  *   SPDX-FileCopyrightText: 2014 Teo Mrnjavac <teo@kde.org>
  *   SPDX-FileCopyrightText: 2017-2020 Adriaan de Groot <groot@kde.org>
+ *   SPDX-FileCopyrightText: 2022 Anke Boersma <demm@kaosx.us>
  *   SPDX-License-Identifier: GPL-3.0-or-later
  *
  *   Calamares is Free Software: see the License-Identifier above.
@@ -107,6 +108,8 @@ handle_args( CalamaresApplication& a )
 int
 main( int argc, char* argv[] )
 {
+    qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
+
     CalamaresApplication a( argc, argv );
 
     KAboutData aboutData( "calamares",

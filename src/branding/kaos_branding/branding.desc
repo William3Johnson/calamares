@@ -48,7 +48,7 @@ windowExpanding:    normal
 # This setting is ignored if "fullscreen" is selected for
 # *windowExpanding*, above. If not set, use constants defined
 # in CalamaresUtilsGui, 800x520.
-windowSize: 850px,630px
+windowSize: 960px,630px
 
 # Placement of Calamares window. Either "center" or "free".
 # Whether "center" actually works does depend on the window
@@ -87,7 +87,7 @@ sidebar: qml
 # In addition, you **may** specify a side, separated by a comma,
 # from the kind. The same sides are valid as for *sidebar*,
 # except the default is *bottom*.
-navigation: qml
+navigation: qml,right
 
 
 ### STRINGS, IMAGES AND COLORS

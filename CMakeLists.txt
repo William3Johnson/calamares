@@ -80,6 +80,7 @@ option(WITH_QML "Enable QML UI options." ON)
 option(BUILD_SCHEMA_TESTING "Enable schema-validation-tests" ON)
 # Options for the calamares executable
 option(BUILD_KF5Crash "Enable crash reporting with KCrash." ON)
+option(WITH_QT_VIRTUAL_KEYBOARD "Enable using a virtualkeyboard." OFF)
 
 # Possible debugging flags are:
 #  - DEBUG_TIMEZONES draws latitude and longitude lines on the timezone
@@ -286,6 +287,9 @@ add_compile_definitions(QT_DISABLE_DEPRECATED_BEFORE=0x050f00)
 find_package(Qt5 ${QT_VERSION} CONFIG REQUIRED Concurrent Core Gui LinguistTools Network Svg Widgets)
 if(WITH_QML)
     find_package(Qt5 ${QT_VERSION} CONFIG REQUIRED Quick QuickWidgets)
+endif()
+if(WITH_QT_VIRTUAL_KEYBOARD)
+    find_package(Qt5 ${QT_VERSION} CONFIG REQUIRED VirtualKeyboard)
 endif()
 # Optional Qt parts
 find_package(Qt5DBus CONFIG)
@@ -535,6 +539,7 @@ add_feature_info(Qml ${WITH_QML} "QML UI support")
 add_feature_info(Config ${INSTALL_CONFIG} "Install Calamares configuration")
 add_feature_info(Polkit ${INSTALL_POLKIT} "Install Polkit files")
 add_feature_info(KCrash ${BUILD_KF5Crash} "Crash dumps via KCrash")
+add_feature_info(VirtualKeyboard ${WITH_QT_VIRTUAL_KEYBOARD} "Enable qtvirtualkeyboard QT_IM_MODULE")
 
 ### CMake infrastructure installation
 #

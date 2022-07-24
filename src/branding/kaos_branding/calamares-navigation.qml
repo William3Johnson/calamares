@@ -19,30 +19,44 @@ import QtQuick.Layouts 1.3
 Rectangle {
     id: navigationBar;
     color: Branding.styleString( Branding.SidebarBackground );
-    height: 48;
+    height: parent.height;
+    width: 48;
 
-    RowLayout {
+    ColumnLayout {
         id: buttonBar
         anchors.fill: parent;
+        spacing: 2
 
-        Item
+        /*Item
         {
-            Layout.fillWidth: true;
-        }
+            Layout.fillHeight: true;
+        }*/
 
-        Button
+        RoundButton
         {
-            text: ViewManager.backLabel;
-            icon.name: ViewManager.backIcon;
+            //text: ViewManager.backLabel;
+            icon.name: "pan-up-symbolic" //ViewManager.backIcon;
+            anchors.horizontalCenter : parent.horizontalCenter;
+
+            ToolTip.visible: hovered
+            ToolTip.timeout: 5000
+            ToolTip.delay: 1000
+            ToolTip.text: "Back";
 
             enabled: ViewManager.backEnabled;
             visible: ViewManager.backAndNextVisible;
             onClicked: { ViewManager.back(); }
         }
-        Button
+        RoundButton
         {
-            text: ViewManager.nextLabel;
-            icon.name: ViewManager.nextIcon;
+            //text: ViewManager.nextLabel;
+            icon.name: "pan-down-symbolic" // ViewManager.nextIcon;
+            anchors.horizontalCenter : parent.horizontalCenter;
+
+            ToolTip.visible: hovered
+            ToolTip.timeout: 5000
+            ToolTip.delay: 1000
+            ToolTip.text: "Next";
 
             enabled: ViewManager.nextEnabled;
             visible: ViewManager.backAndNextVisible;
@@ -50,13 +64,14 @@ Rectangle {
             // This margin goes in the "next" button, because the "quit"
             // button can vanish and we want to keep the margin to
             // the next-thing-in-the-navigation-panel around.
-            Layout.rightMargin: 3 * buttonBar.spacing;
+            Layout.bottomMargin: 3 * buttonBar.spacing;
         }
-        Button
+        RoundButton
         {
-            Layout.rightMargin: 2 * buttonBar.spacing
-            text: ViewManager.quitLabel;
-            icon.name: ViewManager.quitIcon;
+            Layout.bottomMargin: 2 * buttonBar.spacing
+            //text: ViewManager.quitLabel;
+            icon.name: "dialog-cancel" // ViewManager.quitIcon;
+            anchors.horizontalCenter : parent.horizontalCenter
 
             ToolTip.visible: hovered
             ToolTip.timeout: 5000

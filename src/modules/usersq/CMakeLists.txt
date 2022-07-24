@@ -8,6 +8,10 @@ if(NOT WITH_QML)
     return()
 endif()
 
+if(WITH_QT_VIRTUAL_KEYBOARD)
+    find_package(Qt5 ${QT_VERSION} CONFIG REQUIRED VirtualKeyboard)
+endif()
+
 find_package(Qt5 ${QT_VERSION} CONFIG REQUIRED Core DBus Network)
 find_package(Crypt REQUIRED)
 

@@ -1,5 +1,8 @@
 <RCC>
     <qresource>
+        <file>content/TextArea.qml</file>
+        <file>content/TextField.qml</file>
+        <file>UserInput.qml</file>
         <file>usersq.qml</file>
     </qresource>
 </RCC>
