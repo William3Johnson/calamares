@@ -36,6 +36,11 @@ Kirigami.ScrollablePage {
 
     width: parent.width
     height: parent.height
+    id:scrollView
+
+    function scrollToY(y) {
+        scrollView.flickable.contentY = y;
+    }
 
     header: Kirigami.Heading {
         Layout.fillWidth: true
@@ -64,7 +69,6 @@ Kirigami.ScrollablePage {
                 width: parent.width
                 enterKeyAction: EnterKeyAction.Next
                 onAccepted: _userLoginField.focus = true
-                Component.onCompleted: forceActiveFocus()
                 enabled: config.isEditable("fullName")
                 placeholderText: qsTr("Your Full Name")
                 text: config.fullName
@@ -230,6 +234,7 @@ Kirigami.ScrollablePage {
                 TextField {
                     id: _passwordField
                     enterKeyAction: EnterKeyAction.Next
+                    onFocusChanged: if(focus) { scrollView.scrollToY(y); }
                     onAccepted: _verificationPasswordField.focus = true
                     width: parent.width / 2 - 10
                     placeholderText: qsTr("Password")
@@ -341,6 +346,7 @@ Kirigami.ScrollablePage {
                 TextField {
                     id: _rootPasswordField
                     enterKeyAction: EnterKeyAction.Next
+                    onFocusChanged: if(focus) { scrollView.scrollToY(y); }
                     onAccepted: _verificationRootPasswordField.focus = true
                     width: parent.width / 2 -10
                     placeholderText: qsTr("Root Password")
