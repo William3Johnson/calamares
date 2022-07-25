@@ -257,7 +257,8 @@ Kirigami.ScrollablePage {
                 TextField {
                     id: _passwordField
                     enterKeyAction: EnterKeyAction.Next
-                    onFocusChanged: if(focus) { scroll.scrollToY(scroll.flickable.contentY + 100); }
+                    onFocusChanged: !inputPanel.active ? console.log("no input") :
+                        focus ? ( scroll.scrollToY(scroll.flickable.contentY + 100) ) : console.log("not focus!")
                     onAccepted: _verificationPasswordField.focus = true
                     width: parent.width / 2 - 10
                     placeholderText: qsTr("Password")
@@ -369,7 +370,8 @@ Kirigami.ScrollablePage {
                 TextField {
                     id: _rootPasswordField
                     enterKeyAction: EnterKeyAction.Next
-                    onFocusChanged: if(focus) { scroll.scrollToY(scroll.flickable.contentY + 100); }
+                    onFocusChanged: !inputPanel.active ? console.log("no input") :
+                        focus ? ( scroll.scrollToY(scroll.flickable.contentY + 100) ) : console.log("not focus!")
                     onAccepted: _verificationRootPasswordField.focus = true
                     width: parent.width / 2 -10
                     placeholderText: qsTr("Root Password")
