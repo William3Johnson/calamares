@@ -8,7 +8,6 @@ import QtQuick.VirtualKeyboard 2.3
 Controls.TextField {
     id: control
 
-    property var fieldFocus: _userNameField.forceActiveFocus()
     property int enterKeyAction: EnterKeyAction.None
     readonly property bool enterKeyEnabled: enterKeyAction === EnterKeyAction.None || acceptableInput || inputMethodComposing
 

@@ -36,10 +36,15 @@ Kirigami.ScrollablePage {
 
     width: parent.width
     height: parent.height
-    id:scrollView
+    id:scroll
 
     function scrollToY(y) {
-        scrollView.flickable.contentY = y;
+        scrollAnimation.to = y
+        scrollAnimation.start()
+    }
+    NumberAnimation on flickable.contentY {
+        id: scrollAnimation
+        duration: 250
     }
 
     header: Kirigami.Heading {
@@ -50,6 +55,24 @@ Kirigami.ScrollablePage {
         font.weight: Font.Medium
         font.pointSize: 12
         text: qsTr("Pick your user name and credentials to login and perform admin tasks")
+    }
+
+    Button {
+        id: virtualKeyboardButton
+        anchors.top: parent.top
+        anchors.right: parent.right
+        anchors.margins: 10
+        icon.width: 32
+        icon.height: 32
+        ToolTip.delay: 500
+        ToolTip.timeout: 5000
+        ToolTip.visible: hovered
+        ToolTip.text: qsTr("Virtual Keyboard")
+        icon.name: inputPanel.active ? "input-keyboard-virtual-on" : "input-keyboard-virtual-off"
+        onClicked: {
+            inputPanel.active = !inputPanel.active
+            _userNameField.focus = true
+        }
     }
 
     ColumnLayout {
@@ -234,7 +257,7 @@ Kirigami.ScrollablePage {
                 TextField {
                     id: _passwordField
                     enterKeyAction: EnterKeyAction.Next
-                    onFocusChanged: if(focus) { scrollView.scrollToY(y); }
+                    onFocusChanged: if(focus) { scroll.scrollToY(scroll.flickable.contentY + 100); }
                     onAccepted: _verificationPasswordField.focus = true
                     width: parent.width / 2 - 10
                     placeholderText: qsTr("Password")
@@ -346,7 +369,7 @@ Kirigami.ScrollablePage {
                 TextField {
                     id: _rootPasswordField
                     enterKeyAction: EnterKeyAction.Next
-                    onFocusChanged: if(focus) { scrollView.scrollToY(y); }
+                    onFocusChanged: if(focus) { scroll.scrollToY(scroll.flickable.contentY + 100); }
                     onAccepted: _verificationRootPasswordField.focus = true
                     width: parent.width / 2 -10
                     placeholderText: qsTr("Root Password")

@@ -37,26 +37,6 @@ Item {
             anchors.bottom: parent.bottom
         }
 
-        /*  Container area for the virtualKeyboard button.  */
-        Item {
-            z: 99
-            anchors { left: parent.left; top: parent.top; right: parent.right; bottom: inputPanel.top; }
-            Button {
-                id: virtualKeyboardButton
-                anchors.top: parent.top
-                anchors.right: parent.right
-                anchors.margins: 10
-                icon.width: 32
-                icon.height: 32
-                ToolTip.delay: 500
-                ToolTip.timeout: 5000
-                ToolTip.visible: hovered
-                ToolTip.text: qsTr("Virtual keyboard")
-                icon.name: inputPanel.active ? "input-keyboard-virtual-on" : "input-keyboard-virtual-off"
-                onClicked: inputPanel.active = !inputPanel.active
-            }
-        }
-
         /*  Keyboard input panel.
 
             The keyboard is anchored to the bottom of the application.
