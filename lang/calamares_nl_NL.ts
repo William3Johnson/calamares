@@ -324,32 +324,32 @@
 <context>
     <name>Calamares::ViewManager</name>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="404"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="397"/>
         <source>&amp;Back</source>
         <translation>&amp;Terug</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="399"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="392"/>
         <source>&amp;Next</source>
         <translation>&amp;Volgende</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="429"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="422"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Annuleren</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="388"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="381"/>
         <source>Cancel setup without changing the system.</source>
         <translation>Annuleer de installatie zonder het systeem te wijzigen.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="389"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="382"/>
         <source>Cancel installation without changing the system.</source>
         <translation>De installatie annuleren zonder het systeem te wijzigen.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="167"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="160"/>
         <source>Setup Failed</source>
         <translation>Setup mislukt</translation>
     </message>
@@ -377,69 +377,69 @@ Link gekopieerd naar klembord</translation>
         <translation>De upload is mislukt. Er is geen web-paste gedaan.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="196"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="189"/>
         <source>Calamares Initialization Failed</source>
         <translation>Calamares initialisatie Mislukt</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="197"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="190"/>
         <source>%1 can not be installed. Calamares was unable to load all of the configured modules. This is a problem with the way Calamares is being used by the distribution.</source>
         <translation>%1 kan niet worden geïnstalleerd. Calamares kon niet alle geconfigureerde modules laden. Dit is een probleem met de manier waarop Calamares door de distributie wordt gebruikt.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="203"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="196"/>
         <source>&lt;br/&gt;The following modules could not be loaded:</source>
         <translation>De volgende modules kunnen niet worden geladen:</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="317"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="310"/>
         <source>Continue with installation?</source>
         <translation>Doorgaan met de installatie?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="319"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="312"/>
         <source>The %1 setup program is about to make changes to your disk in order to set up %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
         <translation>Het %1 installatieprogramma staat op het punt om je schijf te wijzigen om %2 in te kunnen stellen.&lt;br/&gt;&lt;strong&gt;Je kunt deze wijzigingen niet ongedaan maken.&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="325"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="318"/>
         <source>&amp;Set up now</source>
         <translation>&amp;Nu instellen</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="383"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="376"/>
         <source>&amp;Set up</source>
         <translation>&amp;Instellen</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="383"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="376"/>
         <source>&amp;Install</source>
         <translation>&amp;Installeer</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="385"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="378"/>
         <source>Setup is complete. Close the setup program.</source>
         <translation>De installatie is voltooid. Sluit het installatieprogramma.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="502"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="495"/>
         <source>Cancel setup?</source>
         <translation>Installatie annuleren?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="502"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="495"/>
         <source>Cancel installation?</source>
         <translation>Installatie annuleren?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="503"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="496"/>
         <source>Do you really want to cancel the current setup process?
 The setup program will quit and all changes will be lost.</source>
         <translation>Wil je echt het huidige instellingsproces annuleren?
 Het installatieprogramma wordt afgesloten en alle wijzigingen gaan verloren.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="505"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="498"/>
         <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
         <translation>Wil je echt de huidige installatie proces annuleren?
@@ -461,62 +461,42 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>&amp;Afsluiten</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="96"/>
-        <source>About</source>
-        <translation>Informatie</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="97"/>
-        <source>Show information about Calamares</source>
-        <translation>Information over Calamares tonen</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="98"/>
-        <source>Debug</source>
-        <translation>Fouten opsporen</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="99"/>
-        <source>Show debug information</source>
-        <translation>Debug informatie tonen</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="317"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="310"/>
         <source>Continue with setup?</source>
         <translation>Doorgaan met setup?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="322"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="315"/>
         <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
         <translation>Het %1 installeer programma zal nu wijzigingen in je schijf maken om %2 te installeren.&lt;br/&gt;&lt;strong&gt;Je zult niet in staat zijn om deze veranderingen ongedaan te maken. .&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="325"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="318"/>
         <source>&amp;Install now</source>
         <translation>&amp;Nu installeren</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="333"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="326"/>
         <source>Go &amp;back</source>
         <translation>Ga &amp;terug</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="410"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="403"/>
         <source>&amp;Done</source>
         <translation>&amp;Klaar</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="386"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="379"/>
         <source>The installation is complete. Close the installer.</source>
         <translation>De installatie is voltooid. Sluit het installatieprogramma.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="170"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="163"/>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="167"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="160"/>
         <source>Installation Failed</source>
         <translation>Installatie Mislukt</translation>
     </message>
@@ -4119,22 +4099,26 @@ Output:
     <name>calamares-sidebar</name>
     <message>
         <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="94"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="165"/>
         <source>Show debug information</source>
         <translation>Debug informatie tonen</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="118"/>
         <location filename="../src/calamares/calamares-sidebar.qml" line="89"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="148"/>
         <source>About</source>
         <translation>Informatie</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="122"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="149"/>
         <source>Show information about Calamares</source>
         <translation>Information over Calamares tonen</translation>
     </message>
     <message>
         <location filename="../src/calamares/calamares-sidebar.qml" line="115"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="163"/>
         <source>Debug</source>
         <translation>Fouten opsporen</translation>
     </message>
