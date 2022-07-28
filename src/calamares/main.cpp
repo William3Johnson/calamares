@@ -108,6 +108,7 @@ handle_args( CalamaresApplication& a )
 int
 main( int argc, char* argv[] )
 {
+    QApplication::setAttribute(Qt::AA_EnableHighDpiScaling)
     qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
 
     CalamaresApplication a( argc, argv );

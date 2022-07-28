@@ -258,7 +258,7 @@ Kirigami.ScrollablePage {
                     id: _passwordField
                     enterKeyAction: EnterKeyAction.Next
                     onFocusChanged: if(focus && inputPanel.active) {
-                        scroll.scrollToY(scroll.flickable.contentY + 100);
+                        scroll.scrollToY(scroll.flickable.contentY + 150);
                     }
                     onAccepted: _verificationPasswordField.focus = true
                     width: parent.width / 2 - 10
@@ -372,7 +372,7 @@ Kirigami.ScrollablePage {
                     id: _rootPasswordField
                     enterKeyAction: EnterKeyAction.Next
                     onFocusChanged: if(focus && inputPanel.active) {
-                        scroll.scrollToY(scroll.flickable.contentY + 100);
+                        scroll.scrollToY(scroll.flickable.contentY + 150);
                     }
                     onAccepted: _verificationRootPasswordField.focus = true
                     width: parent.width / 2 -10

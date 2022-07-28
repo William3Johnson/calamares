@@ -91,6 +91,13 @@ ViewManager::ViewManager( QObject* parent )
     tr( "&No" );
     tr( "&Close" );
 #endif
+
+#ifdef CALAMARES_RETRANSLATE_FOR
+    tr( "About" );
+    tr( "Show information about Calamares" );
+    tr( "Debug" );
+    tr( "Show debug information" );
+#endif
 }
 
 
