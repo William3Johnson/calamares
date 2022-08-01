@@ -54,7 +54,7 @@ Item {
 
             states: State {
                 name: "visible"
-                when: inputPanel.active
+                when: inputPanel.active && Qt.application.state === Qt.ApplicationActive
                 PropertyChanges {
                     target: inputPanel
                     y: inputPanel.yPositionWhenHidden - inputPanel.height
