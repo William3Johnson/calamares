@@ -23,6 +23,9 @@ Item {
     //height: 600
     width: parent.width
     height: parent.height
+    id: root
+
+    property bool activatedInCalamares: false
 
     Item {
         id: appContainer
@@ -54,7 +57,7 @@ Item {
 
             states: State {
                 name: "visible"
-                when: inputPanel.active && Qt.application.state === Qt.ApplicationActive
+                when: inputPanel.active && root.activatedInCalamares
                 PropertyChanges {
                     target: inputPanel
                     y: inputPanel.yPositionWhenHidden - inputPanel.height
