@@ -21,25 +21,17 @@ import QtQuick.Controls 2.15
 Rectangle {
     id: sideBar;
     color: Branding.styleString( Branding.SidebarBackground );
-    anchors.fill: parent;
+    height: 48;
 
     //Needs to come from /calamares/src/calamares/CalamaresWindow.cpp ?
     //property var debugModel: true
 
-    ColumnLayout {
+    RowLayout {
         anchors.fill: parent;
-        spacing: 0;
+        spacing: 2;
 
-        Image {
-            Layout.topMargin: 12;
-            Layout.bottomMargin: 12;
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
-            id: logo;
-            width: 80;
-            height: width;  // square
-            source: "file:/" + Branding.imagePath(Branding.ProductLogo);
-            sourceSize.width: width;
-            sourceSize.height: height;
+        Item {
+            Layout.fillHeight: true;
         }
 
         Repeater {
@@ -51,14 +43,22 @@ Rectangle {
                 radius: 0;
                 color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground );
 
-                Image {
-                    source: "angle.svg"
-                    id: image
-                    anchors.verticalCenter: parent.verticalCenter;
-                    x: parent.x + 5;
-                    fillMode: Image.PreserveAspectFit
-                    height: 22
-                    visible: index == ViewManager.currentStepIndex ? true : false
+                Rectangle {
+                    height: 2
+                    width: 800
+                    border.color: Branding.styleString(ViewManager.currentStepIndex === index ? Branding.SidebarTextCurrent : (ViewManager.currentStepIndex >= index ? Branding.SidebarTextCurrent : Branding.SidebarBackgroundCurrent))
+                    border.width: 3
+
+                    Image {
+                        source: "pan-down-symbolic.svg"
+                        id: image
+                        anchors.verticalCenter: parent.verticalCenter;
+                        anchors.verticalCenterOffset : 3
+                        x: parent.x + 35;
+                        fillMode: Image.PreserveAspectFit
+                        height: 32
+                        visible: index == ViewManager.currentStepIndex ? true : false
+                    }
                 }
 
                 Text {
@@ -67,69 +67,7 @@ Rectangle {
                     x: parent.x + 12;
                     color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarTextCurrent : Branding.SidebarText );
                     text: display;
-                    font.pointSize : 14
-                }
-            }
-        }
-
-        Item {
-            Layout.fillHeight: true;
-        }
-
-        Rectangle {
-            id: debugArea
-            Layout.fillWidth: true;
-            height: 35
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
-            color: Branding.styleString( mouseAreaDebug.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
-            visible: debug.enabled
-
-            MouseArea {
-                id: mouseAreaDebug
-                anchors.fill: parent;
-                cursorShape: Qt.PointingHandCursor
-                hoverEnabled: true
-                Text {
-                    anchors.centerIn: parent
-                    text: qsTr("Show debug information")
-                    color: Branding.styleString( mouseAreaDebug.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarBackground );
-                    font.pointSize : 9
-                }
-
-                onClicked: debug.toggle()
-            }
-        }
-
-        Rectangle {
-            id: aboutArea
-            Layout.fillWidth: true;
-            height: 35
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
-            color: Branding.styleString( mouseAreaAbout.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
-            visible: true
-
-            MouseArea {
-                id: mouseAreaAbout
-                anchors.fill: parent;
-                cursorShape: Qt.PointingHandCursor
-                hoverEnabled: true
-                Text {
-                    anchors.centerIn: parent
-                    text: qsTr("About")
-                    ToolTip {
-                        visible: mouseAreaAbout.containsMouse
-                        delay: 1000
-                        text: qsTr("Show information about Calamares")
-                    }
-                    color: Branding.styleString( mouseAreaAbout.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarText );
-                    font.pointSize : 9
-                }
-
-                property variant window;
-                onClicked: {
-                    var component = Qt.createComponent("about.qml");
-                    window = component.createObject();
-                    window.show();
+                    font.pointSize : index == ViewManager.currentStepIndex ? 10 : 9
                 }
             }
         }

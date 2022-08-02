@@ -15,9 +15,6 @@ import QtQuick.Controls 2.15
 import QtQuick.Window 2.14
 import QtQuick.Layouts 1.3
 
-import QtQuick.VirtualKeyboard 2.4
-import QtQuick.VirtualKeyboard.Settings 2.4
-
 import org.kde.kirigami 2.7 as Kirigami
 import "data"
 
@@ -285,7 +282,7 @@ Item {
         Keyboard {
             id: keyboard
             width: parent.width
-            height: parent.height / 3
+            height: parent.height / 2.9
             anchors.bottom: parent.bottom
             source: langXml.includes(keyIndex) ? (keyIndex + ".xml") :
                 afganiXml.includes(keyIndex) ? "afgani.xml" :
@@ -309,11 +306,5 @@ Item {
             target: textInput
             onEnterClicked: console.log("Enter!")
         }
-        /*InputPanel {
-            id: keyboard
-            width: parent.width
-            //height: parent.height / 3
-            anchors.bottom: parent.bottom
-        }*/
     }
 }

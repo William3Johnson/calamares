@@ -1,7 +1,7 @@
 /* Sample of QML navigation.
 
    SPDX-FileCopyrightText: 2020 Adriaan de Groot <groot@kde.org>
-   SPDX-FileCopyrightText: 2021 Anke Boersma <demm@kaosx.us>
+   SPDX-FileCopyrightText: 2021 - 2022 Anke Boersma <demm@kaosx.us>
    SPDX-License-Identifier: GPL-3.0-or-later
 
 
@@ -20,22 +20,30 @@ Rectangle {
     id: navigationBar;
     color: Branding.styleString( Branding.SidebarBackground );
     height: parent.height;
-    width: 48;
+    width:80;
 
     ColumnLayout {
         id: buttonBar
         anchors.fill: parent;
         spacing: 2
 
-        /*Item
-        {
-            Layout.fillHeight: true;
-        }*/
+        Image {
+            Layout.topMargin: 1;
+            Layout.bottomMargin: 0;
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
+            id: logo;
+            width: 70;
+            height: width;  // square
+            source: "file:/" + Branding.imagePath(Branding.ProductLogo);
+            sourceSize.width: width;
+            sourceSize.height: height;
+        }
 
         RoundButton
         {
+            Layout.topMargin: 45 * buttonBar.spacing;
             //text: ViewManager.backLabel;
-            icon.name: "pan-up-symbolic" //ViewManager.backIcon;
+            icon.name: "pan-start-symbolic" //ViewManager.backIcon;
             anchors.horizontalCenter : parent.horizontalCenter;
 
             ToolTip.visible: hovered
@@ -50,7 +58,7 @@ Rectangle {
         RoundButton
         {
             //text: ViewManager.nextLabel;
-            icon.name: "pan-down-symbolic" // ViewManager.nextIcon;
+            icon.name: "pan-end-symbolic" // ViewManager.nextIcon;
             anchors.horizontalCenter : parent.horizontalCenter;
 
             ToolTip.visible: hovered
@@ -60,15 +68,16 @@ Rectangle {
 
             enabled: ViewManager.nextEnabled;
             visible: ViewManager.backAndNextVisible;
+            highlighted: true
             onClicked: { ViewManager.next(); }
             // This margin goes in the "next" button, because the "quit"
             // button can vanish and we want to keep the margin to
             // the next-thing-in-the-navigation-panel around.
-            Layout.bottomMargin: 3 * buttonBar.spacing;
+            Layout.topMargin: 40 * buttonBar.spacing;
         }
         RoundButton
         {
-            Layout.bottomMargin: 2 * buttonBar.spacing
+            Layout.topMargin: 40 * buttonBar.spacing
             //text: ViewManager.quitLabel;
             icon.name: "dialog-cancel" // ViewManager.quitIcon;
             anchors.horizontalCenter : parent.horizontalCenter
@@ -94,6 +103,67 @@ Rectangle {
             enabled: ViewManager.quitEnabled;
             visible: ViewManager.quitVisible && ( ViewManager.currentStepIndex < ViewManager.rowCount()-1);
             onClicked: { ViewManager.quit(); }
+        }
+        Item
+        {
+            Layout.fillHeight: true;
+        }
+        Rectangle {
+            id: debugArea
+            Layout.fillWidth: true;
+            height: 35
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
+            color: Branding.styleString( mouseAreaDebug.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
+            visible: debug.enabled
+
+            MouseArea {
+                id: mouseAreaDebug
+                anchors.fill: parent;
+                cursorShape: Qt.PointingHandCursor
+                hoverEnabled: true
+                Text {
+                    anchors.centerIn: parent
+                    text: qsTr("Debug")
+                    color: Branding.styleString( mouseAreaDebug.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarBackground );
+                    font.pointSize : 8
+                }
+
+                onClicked: debug.toggle()
+            }
+        }
+
+        Rectangle {
+            id: aboutArea
+            Layout.fillWidth: true;
+            height: 35
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
+            color: Branding.styleString( mouseAreaAbout.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
+            visible: true
+
+            MouseArea {
+                id: mouseAreaAbout
+                anchors.fill: parent;
+                cursorShape: Qt.PointingHandCursor
+                hoverEnabled: true
+                Text {
+                    anchors.centerIn: parent
+                    text: qsTr("About")
+                    ToolTip {
+                        visible: mouseAreaAbout.containsMouse
+                        delay: 1000
+                        text: qsTr("Info about Calamares")
+                    }
+                    color: Branding.styleString( mouseAreaAbout.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarBackgroundCurrent );
+                    font.pointSize : 8
+                }
+
+                property variant window;
+                onClicked: {
+                    var component = Qt.createComponent("about.qml");
+                    window = component.createObject();
+                    window.show();
+                }
+            }
         }
     }
 }
