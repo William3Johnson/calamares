@@ -9,7 +9,7 @@
    <feBlend inkscape:collect="always" id="feBlend7556" in2="BackgroundImage" mode="darken"/>
   </filter>
  </defs>
- <g inkscape:groupmode="layer" id="layer12" inkscape:label="actions" transform="translate(-485.0002,-129.00001)">
-  <path inkscape:connector-curvature="0" d="m 498.0002,135 -5,5 -5,-5 z" id="path6424" sodipodi:nodetypes="cccc" fill="#3498DB"/>
+ <g inkscape:groupmode="layer" id="layer12" inkscape:label="actions" transform="translate(-465.0002,-129.00001)">
+  <path inkscape:connector-curvature="0" d="m 478.0002,139 -5,-5 -5,5 z" id="path6418" sodipodi:nodetypes="cccc" fill="#3498DB"/>
  </g>
 </svg>

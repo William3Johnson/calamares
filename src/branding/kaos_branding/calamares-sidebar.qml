@@ -39,27 +39,10 @@ Rectangle {
             Rectangle {
                 Layout.leftMargin: 0;
                 Layout.fillWidth: true;
-                height: 35;
+                anchors.top: parent.top;
+                height: 42;
                 radius: 0;
                 color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground );
-
-                Rectangle {
-                    height: 2
-                    width: 800
-                    border.color: Branding.styleString(ViewManager.currentStepIndex === index ? Branding.SidebarTextCurrent : (ViewManager.currentStepIndex >= index ? Branding.SidebarTextCurrent : Branding.SidebarBackgroundCurrent))
-                    border.width: 3
-
-                    Image {
-                        source: "pan-down-symbolic.svg"
-                        id: image
-                        anchors.verticalCenter: parent.verticalCenter;
-                        anchors.verticalCenterOffset : 3
-                        x: parent.x + 35;
-                        fillMode: Image.PreserveAspectFit
-                        height: 32
-                        visible: index == ViewManager.currentStepIndex ? true : false
-                    }
-                }
 
                 Text {
                     anchors.verticalCenter: parent.verticalCenter;
@@ -68,6 +51,25 @@ Rectangle {
                     color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarTextCurrent : Branding.SidebarText );
                     text: display;
                     font.pointSize : index == ViewManager.currentStepIndex ? 10 : 9
+                }
+
+                Rectangle {
+                    height: 2
+                    width: 800
+                    anchors.bottom: parent.bottom;
+                    border.color: Branding.styleString(ViewManager.currentStepIndex === index ? Branding.SidebarTextCurrent : (ViewManager.currentStepIndex >= index ? Branding.SidebarTextCurrent : Branding.SidebarBackgroundCurrent))
+                    border.width: 3
+
+                    Image {
+                        source: "pan-up-symbolic.svg"
+                        id: image
+                        anchors.verticalCenter: parent.verticalCenter;
+                        anchors.verticalCenterOffset : -3
+                        x: parent.x + 35;
+                        fillMode: Image.PreserveAspectFit
+                        height: 32
+                        visible: index == ViewManager.currentStepIndex ? true : false
+                    }
                 }
             }
         }
