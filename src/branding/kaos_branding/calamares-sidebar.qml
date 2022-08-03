@@ -39,7 +39,7 @@ Rectangle {
             Rectangle {
                 Layout.leftMargin: 0;
                 Layout.fillWidth: true;
-                anchors.top: parent.top;
+                Layout.alignment: Qt.AlignTop;
                 height: 42;
                 radius: 0;
                 color: Branding.styleString( index == ViewManager.currentStepIndex ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground );

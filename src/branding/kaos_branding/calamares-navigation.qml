@@ -44,7 +44,7 @@ Rectangle {
             Layout.topMargin: 45 * buttonBar.spacing;
             //text: ViewManager.backLabel;
             icon.name: "pan-start-symbolic" //ViewManager.backIcon;
-            anchors.horizontalCenter : parent.horizontalCenter;
+            Layout.alignment: Qt.AlignCenter;
 
             ToolTip.visible: hovered
             ToolTip.timeout: 5000
@@ -59,7 +59,7 @@ Rectangle {
         {
             //text: ViewManager.nextLabel;
             icon.name: "pan-end-symbolic" // ViewManager.nextIcon;
-            anchors.horizontalCenter : parent.horizontalCenter;
+            Layout.alignment: Qt.AlignCenter;
 
             ToolTip.visible: hovered
             ToolTip.timeout: 5000
@@ -80,7 +80,7 @@ Rectangle {
             Layout.topMargin: 40 * buttonBar.spacing
             //text: ViewManager.quitLabel;
             icon.name: "dialog-cancel" // ViewManager.quitIcon;
-            anchors.horizontalCenter : parent.horizontalCenter
+            Layout.alignment: Qt.AlignCenter;
 
             ToolTip.visible: hovered
             ToolTip.timeout: 5000
