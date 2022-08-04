@@ -22,6 +22,7 @@ Rectangle {
     id: sideBar;
     color: Branding.styleString( Branding.SidebarBackground );
     height: 48;
+    width: parent.width
 
     //Needs to come from /calamares/src/calamares/CalamaresWindow.cpp ?
     //property var debugModel: true

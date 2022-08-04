@@ -20,74 +20,97 @@ Rectangle {
     id: navigationBar;
     color: Branding.styleString( Branding.SidebarBackground );
     height: parent.height;
-    width:80;
+    width:64;
 
     ColumnLayout {
         id: buttonBar
         anchors.fill: parent;
-        spacing: 2
+        spacing: 1
 
         Image {
             Layout.topMargin: 1;
-            Layout.bottomMargin: 0;
+            Layout.bottomMargin:parent.height / 7;
             Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
             id: logo;
-            width: 70;
+            width: 62;
             height: width;  // square
             source: "file:/" + Branding.imagePath(Branding.ProductLogo);
             sourceSize.width: width;
             sourceSize.height: height;
         }
 
-        RoundButton
-        {
-            Layout.topMargin: 45 * buttonBar.spacing;
-            //text: ViewManager.backLabel;
-            icon.name: "pan-start-symbolic" //ViewManager.backIcon;
-            Layout.alignment: Qt.AlignCenter;
-
-            ToolTip.visible: hovered
-            ToolTip.timeout: 5000
-            ToolTip.delay: 1000
-            ToolTip.text: "Back";
-
+        Rectangle {
+            id: backArea
+            Layout.fillWidth: true;
+            Layout.preferredHeight: parent.height / 7;
+            color: mouseBack.containsMouse ? "#e6e9ea" : "#d9dcde";
             enabled: ViewManager.backEnabled;
             visible: ViewManager.backAndNextVisible;
-            onClicked: { ViewManager.back(); }
+
+            MouseArea {
+                id: mouseBack
+                anchors.fill: parent;
+                cursorShape: Qt.PointingHandCursor
+                hoverEnabled: true
+
+                Text {
+                    anchors.centerIn: parent
+                    text: qsTr("Back")
+                    color: Branding.styleString( !backArea.enabled ? Branding.SidebarBackground : (mouseBack.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarText ));
+                    font.pointSize : 8
+                }
+                Image {
+                    source: "pan-start-symbolic.svg"
+                    anchors.centerIn: parent
+                    anchors.verticalCenterOffset : 18
+                    fillMode: Image.PreserveAspectFit
+                    height: 32
+                    opacity: backArea.enabled ? 1 : 0.2
+                }
+
+                onClicked: { ViewManager.back(); }
+            }
         }
-        RoundButton
-        {
-            //text: ViewManager.nextLabel;
-            icon.name: "pan-end-symbolic" // ViewManager.nextIcon;
-            Layout.alignment: Qt.AlignCenter;
 
-            ToolTip.visible: hovered
-            ToolTip.timeout: 5000
-            ToolTip.delay: 1000
-            ToolTip.text: "Next";
-
+        Rectangle {
+            id: nextArea
+            Layout.preferredHeight: parent.height / 7;
+            Layout.fillWidth: true
+            color: mouseNext.containsMouse ? "#f4f5f6" : "#e6e9ea";
             enabled: ViewManager.nextEnabled;
             visible: ViewManager.backAndNextVisible;
-            highlighted: true
-            onClicked: { ViewManager.next(); }
-            // This margin goes in the "next" button, because the "quit"
-            // button can vanish and we want to keep the margin to
-            // the next-thing-in-the-navigation-panel around.
-            Layout.topMargin: 40 * buttonBar.spacing;
+
+            MouseArea {
+                id: mouseNext
+                anchors.fill: parent;
+                cursorShape: Qt.PointingHandCursor
+                hoverEnabled: true
+                Text {
+                    anchors.centerIn: parent
+                    text: qsTr("Next")
+                    color: Branding.styleString( !nextArea.enabled ? Branding.SidebarBackground : (mouseNext.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarText ));
+                    font.pointSize : 8
+                }
+                Image {
+                    source: "pan-end-symbolic.svg"
+                    anchors.centerIn: parent
+                    anchors.verticalCenterOffset : 18
+                    fillMode: Image.PreserveAspectFit
+                    height: 32
+                    opacity: nextArea.enabled ? 1 : 0.2
+                }
+
+                onClicked: { ViewManager.next(); }
+            }
         }
-        RoundButton
-        {
-            Layout.topMargin: 40 * buttonBar.spacing
-            //text: ViewManager.quitLabel;
-            icon.name: "dialog-cancel" // ViewManager.quitIcon;
-            Layout.alignment: Qt.AlignCenter;
 
-            ToolTip.visible: hovered
-            ToolTip.timeout: 5000
-            ToolTip.delay: 1000
-            ToolTip.text: ViewManager.quitTooltip;
+        Rectangle {
+            id: cancelArea
+            height: parent.height / 7;
+            Layout.fillWidth: true
+            color: mouseCancel.containsMouse ? "#e6e9ea" : "#d9dcde";
 
-            /*
+             /*
              * The ViewManager has settings -- user-controlled via the
              * branding component, and party based on program state --
              * whether the quit button should be enabled and visible.
@@ -100,14 +123,46 @@ Rectangle {
              *
              * visible: ViewManager.quitVisible && ( ViewManager.currentStepIndex < ViewManager.rowCount()-1);
              */
-            enabled: ViewManager.quitEnabled;
+
+             enabled: ViewManager.quitEnabled;
             visible: ViewManager.quitVisible && ( ViewManager.currentStepIndex < ViewManager.rowCount()-1);
-            onClicked: { ViewManager.quit(); }
+
+            ToolTip {
+                width: 59
+                visible: mouseCancel.containsMouse
+                timeout: 5000
+                delay: 1000
+                text: ViewManager.quitTooltip;
+            }
+
+            MouseArea {
+                id: mouseCancel
+                anchors.fill: parent;
+                cursorShape: Qt.PointingHandCursor
+                hoverEnabled: true
+                Text {
+                    anchors.centerIn: parent
+                    text: qsTr("Cancel")
+                    color: Branding.styleString( !cancelArea.enabled ? Branding.SidebarBackground : (mouseCancel.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarText ));
+                    font.pointSize : 8
+                }
+                Image {
+                    source: "draw-rectangle.svg"
+                    anchors.centerIn: parent
+                    anchors.verticalCenterOffset : 18
+                    fillMode: Image.PreserveAspectFit
+                    height: 9
+                    opacity: cancelArea.enabled ? 1 : 0.2
+                }
+
+                onClicked: { ViewManager.quit(); }
+            }
         }
-        Item
-        {
+
+        Item {
             Layout.fillHeight: true;
         }
+
         Rectangle {
             id: debugArea
             Layout.fillWidth: true;
