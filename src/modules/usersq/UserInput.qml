@@ -68,9 +68,9 @@ Kirigami.ScrollablePage {
         ToolTip.timeout: 5000
         ToolTip.visible: hovered
         ToolTip.text: qsTr("Virtual Keyboard")
-        icon.name: inputPanel.active ? "input-keyboard-virtual-on" : "input-keyboard-virtual-off"
+        icon.name: keyboardButtonClicked ? "input-keyboard-virtual-on" : "input-keyboard-virtual-off"
         onClicked: {
-            inputPanel.active = !inputPanel.active
+            keyboardButtonClicked = !keyboardButtonClicked
             _userNameField.focus = true
         }
     }

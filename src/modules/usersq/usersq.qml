@@ -23,7 +23,7 @@ Item {
     //height: 600
     width: parent.width
     height: parent.height
-    id: root
+    property bool keyboardButtonClicked: false
 
     Item {
         id: appContainer
@@ -50,12 +50,12 @@ Item {
             width: parent.width
 
             property real yPositionWhenHidden: parent.height
-            //property bool activated: false
+            property bool activated: false
             active: false //activated && Qt.inputMethod.visible
 
             states: State {
                 name: "visible"
-                when: inputPanel.active
+                when: keyboardButtonClicked
                 PropertyChanges {
                     target: inputPanel
                     y: inputPanel.yPositionWhenHidden - inputPanel.height
