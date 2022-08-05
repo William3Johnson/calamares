@@ -60,7 +60,7 @@ Rectangle {
                         delay: 1000
                         text: qsTr("Info about Calamares")
                     }
-                    color: Branding.styleString( mouseAreaAbout.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarBackgroundCurrent );
+                    color: Branding.styleString( mouseAreaAbout.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarText );
                     font.pointSize : 8
                 }
 
