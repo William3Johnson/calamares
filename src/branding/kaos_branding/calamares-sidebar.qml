@@ -29,7 +29,7 @@ Rectangle {
 
     RowLayout {
         anchors.fill: parent;
-        spacing: 2;
+        spacing: 0;
 
         Item {
             Layout.fillHeight: true;

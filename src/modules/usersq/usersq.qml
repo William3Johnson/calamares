@@ -25,8 +25,6 @@ Item {
     height: parent.height
     id: root
 
-    property bool activatedInCalamares: false
-
     Item {
         id: appContainer
         width: parent.width
@@ -52,12 +50,12 @@ Item {
             width: parent.width
 
             property real yPositionWhenHidden: parent.height
-            property bool activated: false
-            active: activated && Qt.inputMethod.visible
+            //property bool activated: false
+            active: false //activated && Qt.inputMethod.visible
 
             states: State {
                 name: "visible"
-                when: inputPanel.active && root.activatedInCalamares
+                when: inputPanel.active
                 PropertyChanges {
                     target: inputPanel
                     y: inputPanel.yPositionWhenHidden - inputPanel.height

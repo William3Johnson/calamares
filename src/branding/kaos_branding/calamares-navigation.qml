@@ -29,7 +29,6 @@ Rectangle {
 
         Image {
             Layout.topMargin: 1;
-            Layout.bottomMargin:parent.height / 7;
             Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
             id: logo;
             width: 62;
@@ -37,6 +36,69 @@ Rectangle {
             source: "file:/" + Branding.imagePath(Branding.ProductLogo);
             sourceSize.width: width;
             sourceSize.height: height;
+        }
+
+        Rectangle {
+            id: aboutArea
+            Layout.fillWidth: true;
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
+            Layout.topMargin: 40
+            height: 35
+            color: Branding.styleString( mouseAreaAbout.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
+            visible: true
+
+            MouseArea {
+                id: mouseAreaAbout
+                anchors.fill: parent;
+                cursorShape: Qt.PointingHandCursor
+                hoverEnabled: true
+                Text {
+                    anchors.centerIn: parent
+                    text: qsTr("About")
+                    ToolTip {
+                        visible: mouseAreaAbout.containsMouse
+                        delay: 1000
+                        text: qsTr("Info about Calamares")
+                    }
+                    color: Branding.styleString( mouseAreaAbout.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarBackgroundCurrent );
+                    font.pointSize : 8
+                }
+
+                property variant window;
+                onClicked: {
+                    var component = Qt.createComponent("about.qml");
+                    window = component.createObject();
+                    window.show();
+                }
+            }
+        }
+
+        Rectangle {
+            id: debugArea
+            Layout.fillWidth: true;
+            height: 35
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
+            color: Branding.styleString( mouseAreaDebug.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
+            visible: debug.enabled
+
+            MouseArea {
+                id: mouseAreaDebug
+                anchors.fill: parent;
+                cursorShape: Qt.PointingHandCursor
+                hoverEnabled: true
+                Text {
+                    anchors.centerIn: parent
+                    text: qsTr("Debug")
+                    color: Branding.styleString( mouseAreaDebug.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarBackground );
+                    font.pointSize : 8
+                }
+
+                onClicked: debug.toggle()
+            }
+        }
+
+        Item {
+            Layout.fillHeight: true;
         }
 
         Rectangle {
@@ -107,7 +169,8 @@ Rectangle {
         Rectangle {
             id: cancelArea
             height: parent.height / 7;
-            Layout.fillWidth: true
+            Layout.fillWidth: true;
+            Layout.bottomMargin: 48;
             color: mouseCancel.containsMouse ? "#e6e9ea" : "#d9dcde";
 
              /*
@@ -124,7 +187,7 @@ Rectangle {
              * visible: ViewManager.quitVisible && ( ViewManager.currentStepIndex < ViewManager.rowCount()-1);
              */
 
-             enabled: ViewManager.quitEnabled;
+            enabled: ViewManager.quitEnabled;
             visible: ViewManager.quitVisible && ( ViewManager.currentStepIndex < ViewManager.rowCount()-1);
 
             ToolTip {
@@ -156,68 +219,6 @@ Rectangle {
                 }
 
                 onClicked: { ViewManager.quit(); }
-            }
-        }
-
-        Item {
-            Layout.fillHeight: true;
-        }
-
-        Rectangle {
-            id: debugArea
-            Layout.fillWidth: true;
-            height: 35
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
-            color: Branding.styleString( mouseAreaDebug.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
-            visible: debug.enabled
-
-            MouseArea {
-                id: mouseAreaDebug
-                anchors.fill: parent;
-                cursorShape: Qt.PointingHandCursor
-                hoverEnabled: true
-                Text {
-                    anchors.centerIn: parent
-                    text: qsTr("Debug")
-                    color: Branding.styleString( mouseAreaDebug.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarBackground );
-                    font.pointSize : 8
-                }
-
-                onClicked: debug.toggle()
-            }
-        }
-
-        Rectangle {
-            id: aboutArea
-            Layout.fillWidth: true;
-            height: 35
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
-            color: Branding.styleString( mouseAreaAbout.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
-            visible: true
-
-            MouseArea {
-                id: mouseAreaAbout
-                anchors.fill: parent;
-                cursorShape: Qt.PointingHandCursor
-                hoverEnabled: true
-                Text {
-                    anchors.centerIn: parent
-                    text: qsTr("About")
-                    ToolTip {
-                        visible: mouseAreaAbout.containsMouse
-                        delay: 1000
-                        text: qsTr("Info about Calamares")
-                    }
-                    color: Branding.styleString( mouseAreaAbout.containsMouse ? Branding.SidebarTextCurrent : Branding.SidebarBackgroundCurrent );
-                    font.pointSize : 8
-                }
-
-                property variant window;
-                onClicked: {
-                    var component = Qt.createComponent("about.qml");
-                    window = component.createObject();
-                    window.show();
-                }
             }
         }
     }
