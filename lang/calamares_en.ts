@@ -4107,22 +4107,52 @@ Output:
     </message>
 </context>
 <context>
+    <name>calamares-navigation</name>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="57"/>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="61"/>
+        <source>Info about Calamares</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="91"/>
+        <source>Debug</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="120"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="152"/>
+        <source>Next</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="208"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>calamares-sidebar</name>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="94"/>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="165"/>
         <source>Show debug information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="118"/>
         <location filename="../src/calamares/calamares-sidebar.qml" line="89"/>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="148"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="122"/>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="149"/>
         <source>Show information about Calamares</source>
         <translation type="unfinished"></translation>
@@ -4231,27 +4261,27 @@ Output:
 <context>
     <name>keyboardq</name>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="63"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
         <source>To activate keyboard preview, select a layout.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="89"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="86"/>
         <source>Keyboard Model:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="259"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="256"/>
         <source>Layouts</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="268"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="265"/>
         <source>Type here to test your keyboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="183"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="180"/>
         <source>Variants</source>
         <translation type="unfinished"></translation>
     </message>

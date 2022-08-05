@@ -324,32 +324,32 @@
 <context>
     <name>Calamares::ViewManager</name>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="404"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="397"/>
         <source>&amp;Back</source>
         <translation>&amp;Précédent</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="399"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="392"/>
         <source>&amp;Next</source>
         <translation>&amp;Suivant</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="429"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="422"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Annuler</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="388"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="381"/>
         <source>Cancel setup without changing the system.</source>
         <translation>Annuler la configuration sans changer le système.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="389"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="382"/>
         <source>Cancel installation without changing the system.</source>
         <translation>Annuler l’installation sans changer le système.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="167"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="160"/>
         <source>Setup Failed</source>
         <translation>L’installation a échoué</translation>
     </message>
@@ -377,68 +377,68 @@ Lien copié dans le presse-papier</translation>
         <translation>Le téléversement n’a pas réussi. Aucune copie web n’a été effectuée.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="196"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="189"/>
         <source>Calamares Initialization Failed</source>
         <translation>L’initialisation de Calamares a échoué</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="197"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="190"/>
         <source>%1 can not be installed. Calamares was unable to load all of the configured modules. This is a problem with the way Calamares is being used by the distribution.</source>
         <translation>%1 ne peut être installé. Calamares n’a pu charger tous les modules configurés. Ceci est un problème lié à la façon dont la distribution utilise Calamares.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="203"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="196"/>
         <source>&lt;br/&gt;The following modules could not be loaded:</source>
         <translation>&lt;br/&gt;Les modules suivants ne peuvent être chargés :</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="317"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="310"/>
         <source>Continue with installation?</source>
         <translation>Poursuivre l’installation ?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="319"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="312"/>
         <source>The %1 setup program is about to make changes to your disk in order to set up %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
         <translation>L’installateur %1 s’apprête à effectuer des changements sur votre disque pour installer %2.&lt;br/&gt;&lt;strong&gt;Vous ne pourrez pas annuler ces changements.&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="325"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="318"/>
         <source>&amp;Set up now</source>
         <translation>&amp;Commencer l’installation maintenant</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="383"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="376"/>
         <source>&amp;Set up</source>
         <translation>&amp;Installation</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="383"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="376"/>
         <source>&amp;Install</source>
         <translation>&amp;Installer</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="385"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="378"/>
         <source>Setup is complete. Close the setup program.</source>
         <translation>L’installation est terminée. Fermer le programme d’installation.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="502"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="495"/>
         <source>Cancel setup?</source>
         <translation>Annuler l’installation ?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="502"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="495"/>
         <source>Cancel installation?</source>
         <translation>Annuler l&apos;installation ?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="503"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="496"/>
         <source>Do you really want to cancel the current setup process?
 The setup program will quit and all changes will be lost.</source>
         <translation>Voulez-vous vraiment annuler le processus d’installation en cours ? Le programme d’installation sera fermé et tous vos changements seront perdus.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="505"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="498"/>
         <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
         <translation>Voulez-vous réellement annuler l&apos;installation en cours ?
@@ -460,62 +460,42 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
         <translation>&amp;Fermer</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="96"/>
-        <source>About</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="97"/>
-        <source>Show information about Calamares</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="98"/>
-        <source>Debug</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="99"/>
-        <source>Show debug information</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="317"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="310"/>
         <source>Continue with setup?</source>
         <translation>Continuer avec cette configuration ?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="322"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="315"/>
         <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
         <translation>L’installateur %1 s’apprête à effectuer des changement sur votre disque pour installer %2.&lt;br/&gt;&lt;strong&gt;Vous ne pourrez pas annuler ces changements.&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="325"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="318"/>
         <source>&amp;Install now</source>
         <translation>&amp;Installer maintenant</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="333"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="326"/>
         <source>Go &amp;back</source>
         <translation>&amp;Revenir en arrière</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="410"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="403"/>
         <source>&amp;Done</source>
         <translation>&amp;Terminé</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="386"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="379"/>
         <source>The installation is complete. Close the installer.</source>
         <translation>L’installation est complète. Vous pouvez fermer l’installateur.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="170"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="163"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="167"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="160"/>
         <source>Installation Failed</source>
         <translation>Installation échouée</translation>
     </message>
@@ -3282,7 +3262,8 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
         <location filename="../src/modules/welcomeq/Requirements2.qml" line="60"/>
         <source>&lt;p&gt;This computer does not satisfy some of the recommended requirements for setting up KaOS.&lt;br/&gt;
         Setup can continue, but some features might be disabled.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;p&gt;Cet ordinateur ne satisfait pas les conditions requises pour installer KaOS.&lt;br/&gt;
+L’installation peut continuer, mais certaines fonctionnalités peuvent être désactivées.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -3707,137 +3688,137 @@ L&apos;installation ne peut pas continuer.&lt;/p&gt;</translation>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="57"/>
         <source>Pick your user name and credentials to login and perform admin tasks</source>
-        <translation type="unfinished"/>
+        <translation>Choisissez votre nom d’utilisateur et vos informations d’identification pour vous connecter et effectuer des tâches d’administrateur</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="70"/>
         <source>Virtual Keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Clavier virtuel</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="87"/>
         <source>What is your name?</source>
-        <translation type="unfinished"/>
+        <translation>Quel est votre nom ?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="96"/>
         <source>Your Full Name</source>
-        <translation type="unfinished"/>
+        <translation>Votre nom complet</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="113"/>
         <source>What name do you want to use to log in?</source>
-        <translation type="unfinished"/>
+        <translation>Quel nom souhaitez-vous utiliser pour la connexion ?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="122"/>
         <source>Login Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom de connexion</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="153"/>
         <source>If more than one person will use this computer, you can create multiple accounts after installation.</source>
-        <translation type="unfinished"/>
+        <translation>Si plusieurs personnes utilisent cet ordinateur, vous pourrez créer plusieurs comptes après l&apos;installation.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="166"/>
         <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Seuls les lettres minuscules, les nombres, les tirets-bas et les traits d’union sont autorisés.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="175"/>
         <source>root is not allowed as username.</source>
-        <translation type="unfinished"/>
+        <translation>root n’est pas un nom d’utilisateur autorisé.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="184"/>
         <source>What is the name of this computer?</source>
-        <translation type="unfinished"/>
+        <translation>Quel est le nom de votre ordinateur ?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="192"/>
         <source>Computer Name</source>
-        <translation type="unfinished"/>
+        <translation>Nom de l’ordinateur</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="219"/>
         <source>This name will be used if you make the computer visible to others on a network.</source>
-        <translation type="unfinished"/>
+        <translation>Ce nom sera utilisé pour rendre l&apos;ordinateur visible des autres sur le réseau.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="232"/>
         <source>Only letters, numbers, underscore and hyphen are allowed, minimal of two characters.</source>
-        <translation type="unfinished"/>
+        <translation>Seuls les lettres, les chiffres, les tirets-bas sont autorisés, avec au minimum 2 caractères.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="241"/>
         <source>localhost is not allowed as hostname.</source>
-        <translation type="unfinished"/>
+        <translation>localhost n’est pas un nom d’hôte autorisé.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="250"/>
         <source>Choose a password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez saisir le mot de passe pour sécuriser votre compte.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="265"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>Mot de passe</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="284"/>
         <source>Repeat Password</source>
-        <translation type="unfinished"/>
+        <translation>Répéter le mot de passe</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="311"/>
         <source>Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez entrer le même mot de passe deux fois afin de vérifier qu’il n&apos;y ait pas d&apos;erreur de frappe. Un bon mot de passe doit contenir un mélange de lettres, de nombres et de caractères de ponctuation, contenir au moins huit caractères et être changé à des intervalles réguliers.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="343"/>
         <source>Reuse user password as root password</source>
-        <translation type="unfinished"/>
+        <translation>Utiliser le mot de passe de l’utilisateur pour le compte root</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="351"/>
         <source>Use the same password for the administrator account.</source>
-        <translation type="unfinished"/>
+        <translation>Choisir le même mot de passe pour le compte administrateur.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="364"/>
         <source>Choose a root password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez saisir le mot de passe pour sécuriser votre compte</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="379"/>
         <source>Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Mot de passe root</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="397"/>
         <source>Repeat Root Password</source>
-        <translation type="unfinished"/>
+        <translation>Répéter le mot de passe root</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="424"/>
         <source>Enter the same password twice, so that it can be checked for typing errors.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez entrer le même mot de passe deux fois, afin de vérifier qu&apos;ils n&apos;y ait pas d&apos;erreur de frappe.</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="454"/>
         <source>Log in automatically without asking for the password</source>
-        <translation type="unfinished"/>
+        <translation>Se connecter automatiquement sans demander de mot de passe</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="462"/>
         <source>Validate passwords quality</source>
-        <translation type="unfinished"/>
+        <translation>Valider la qualité du mot de passe</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="472"/>
         <source>When this box is checked, password-strength checking is done and you will not be able to use a weak password.</source>
-        <translation type="unfinished"/>
+        <translation>Lorsque cette case est cochée, la vérification de la force du mot de passe est effectuée et vous ne pourrez pas utiliser un mot de passe faible.</translation>
     </message>
 </context>
 <context>
@@ -4112,25 +4093,59 @@ Liberating Software.</translation>
     </message>
 </context>
 <context>
+    <name>calamares-navigation</name>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="57"/>
+        <source>About</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="61"/>
+        <source>Info about Calamares</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="91"/>
+        <source>Debug</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="120"/>
+        <source>Back</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="152"/>
+        <source>Next</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="208"/>
+        <source>Cancel</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>calamares-sidebar</name>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="94"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="165"/>
         <source>Show debug information</source>
         <translation>Afficher les informations de débogage</translation>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="118"/>
         <location filename="../src/calamares/calamares-sidebar.qml" line="89"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="148"/>
         <source>About</source>
         <translation>À propos</translation>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="122"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="149"/>
         <source>Show information about Calamares</source>
         <translation>Afficher des détails à propos de Calamares</translation>
     </message>
     <message>
         <location filename="../src/calamares/calamares-sidebar.qml" line="115"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="163"/>
         <source>Debug</source>
         <translation>Débug</translation>
     </message>
@@ -4239,27 +4254,27 @@ Les paramètres régionaux du système affectent le format des dates et des nomb
 <context>
     <name>keyboardq</name>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="63"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
         <source>To activate keyboard preview, select a layout.</source>
         <translation>Pour activer l’aperçu du clavier, sélectionnez le modèle.</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="89"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="86"/>
         <source>Keyboard Model:</source>
         <translation>Modèle de clavier :</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="259"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="256"/>
         <source>Layouts</source>
         <translation>Agencements</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="268"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="265"/>
         <source>Type here to test your keyboard</source>
         <translation>Veuillez saisir ici pour tester votre clavier</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="183"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="180"/>
         <source>Variants</source>
         <translation>Variantes</translation>
     </message>
@@ -4388,28 +4403,38 @@ Option par défaut.</translation>
                                     - Be a low-latency audio server with features like PulseAudio and/or JACK&lt;br/&gt;
                                     - A video capture server that can manage hardware video capture devices.&lt;br/&gt;
                                     - A central hub where video can be made available for other applications.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Pipewire&lt;/b&gt; est un framework multimédia construit de zéro qui a pour objectif de fournir :&lt;br/&gt;
+                                    - Un traitement basés sur des graphes et un support des boucles de rétroactions et des mises à jour de graphe atomiques,&lt;br/&gt;
+                                    - Une négociation et une attribution de tampons flexibles et extensibles des formats média.&lt;br/&gt;
+                                    - Un support des graphes de traitements hors processus avec un dépassement réduit,&lt;br/&gt;
+                                    - Des plugins compatibles avec le temps réel,&lt;br/&gt;
+                                    - Une très faible latence de traitement audio/vidéo.&lt;br/&gt;&lt;br/&gt;
+                                Le framework est utilisé pour concevoir un démon modulaire qui peut être configuré pour :&lt;br/&gt;
+                                    - Être un serveur audio à faible latence avec des fonctionnalité PulseAudio et/ou JACK,&lt;br/&gt;
+                                    - Un serveur de capture vidéo pouvant gérer des périphériques de captures vidéo,&lt;br/&gt;
+                                    - Un hub central pour mettre à disposition une vidéo pour d’autres applications.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq@audio.qml" line="67"/>
         <source>Pipewire</source>
-        <translation type="unfinished"/>
+        <translation>Pipewire</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq@audio.qml" line="120"/>
         <source>&lt;b&gt;PulseAudio&lt;/b&gt; is a sound server, originally created to overcome the limitations of the Enlightened Sound Daemon (EsounD).&lt;br/&gt;
                     It performs advanced operations on sound data as it passes between your application and hardware. Things like transferring audio to a different machine, changing the sample format or channel count, or mixing several sounds into one input/output, are easily achieved using PulseAudio.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;PulseAudio&lt;/b&gt; est un serveur de son créé à l’origine pour surmonter les limites de Enlightened Sound Daemon (EsounD)&lt;br/&gt;
+                    Il effectue des opérations avancées lors du transfert des signaux sonores entre l’application et le matériel. Pulseaudio peut facilement réaliser des opérations comme le transfert audio vers une autre machine, la modification du format d’échantillon du du nombre de canaux ou le mélange de plusieurs sons en une seule entrée/sortie.</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq@audio.qml" line="134"/>
         <source>Pulseaudio</source>
-        <translation type="unfinished"/>
+        <translation>Pulseaudio</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq@audio.qml" line="187"/>
         <source>Please select an audio option for your install, or leave the default &lt;strong&gt;Pipewire&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez sélectionner une option de sons pour votre installation ou laissez l’option par défaut &lt;strong&gt;Pipewire&lt;/strong&gt;.</translation>
     </message>
 </context>
 <context>
