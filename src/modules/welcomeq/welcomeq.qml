@@ -1,7 +1,7 @@
 /* === This file is part of Calamares - <https://calamares.io> ===
  *
  *   SPDX-FileCopyrightText: 2020 Adriaan de Groot <groot@kde.org>
- *   SPDX-FileCopyrightText: 2020 Anke Boersma <demm@kaosx.us>
+ *   SPDX-FileCopyrightText: 2020 - 2022 Anke Boersma <demm@kaosx.us>
  *   SPDX-License-Identifier: GPL-3.0-or-later
  *
  *   Calamares is Free Software: see the License-Identifier above.
@@ -13,15 +13,16 @@ import io.calamares.ui 1.0
 import QtQuick 2.10
 import QtQuick.Controls 2.10
 import QtQuick.Layouts 1.3
-import org.kde.kirigami 2.7 as Kirigami
 import QtGraphicalEffects 1.0
 import QtQuick.Window 2.3
 
 Page
 {
     id: welcome
+    width: parent.width
+    height: parent.height
 
-    header: Item {
+    Item {
         width: parent.width
         height: parent.height
 
@@ -51,122 +52,195 @@ Page
             visible: !config.requirementsModel.satisfiedRequirements
         }
 
-        RowLayout {
-            id: buttonBar
-            width: parent.width / 1.5
-            height: 64
+        Drawer {
+            id: drawer
+            width: 0.33 * welcome.width
+            height: welcome.height
+            edge: Qt.RightEdge
 
-            anchors.bottom: parent.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
+            ScrollView {
+                id: scroll1
+                anchors.fill: parent
+                contentHeight: 800
+                ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
 
-            spacing: Kirigami.Units.largeSpacing* 2
+                ListView {
+                    id: list1
+                    focus: true
+                    clip: true
+                    width: parent.width
 
-            /*Button {
-                Layout.fillWidth: true
-                text: qsTr("About")
-                icon.name: "dialog-information"
-                Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
-                Kirigami.Theme.textColor: Kirigami.Theme.textColor
+                    model: config.languagesModel
+                    currentIndex: config.localeIndex
+                    delegate: ItemDelegate {
 
-                visible: true
-                onClicked: {
-                    onClicked: load.source = "about.qml"
+                        property variant myData: model
+                        hoverEnabled: true
+                        width: parent.width
+                        implicitHeight: 24
+                        highlighted: ListView.isCurrentItem
+                        Label {
+                            Layout.fillHeight: true
+                            Layout.fillWidth: true
+                            horizontalAlignment: Text.AlignHCenter
+                            width: parent.width
+                            height: 24
+                            color: highlighted ? "#eff0f1" : "#1F1F1F"
+                            text: model.label //+ "-" + model.englishLabel
+                            background: Rectangle {
+
+                                color: highlighted || hovered ? "#3498DB" : "#ffffff"
+                                opacity: highlighted || hovered ? 0.5 : 0.9
+                            }
+
+                            MouseArea {
+                                hoverEnabled: true
+                                anchors.fill: parent
+                                cursorShape: Qt.PointingHandCursor
+                                onClicked: {
+                                    list1.currentIndex = index
+                                    drawer.close()
+                                }
+                            }
+                        }
+                    }
+                    onCurrentIndexChanged: config.localeIndex = currentIndex
                 }
-            }*/
-
-            Button {
-                Layout.fillWidth: true
-                text: qsTr("Support")
-                icon.name: "system-help"
-                Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
-                Kirigami.Theme.textColor: Kirigami.Theme.textColor
-
-                visible: config.supportUrl !== ""
-                onClicked: Qt.openUrlExternally(config.supportUrl)
-            }
-
-            Button {
-                Layout.fillWidth: true
-                text: qsTr("Known issues")
-                icon.name: "tools-report-bug"
-                Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
-                Kirigami.Theme.textColor: Kirigami.Theme.textColor
-
-                visible: config.knownIssuesUrl !== ""
-                onClicked: Qt.openUrlExternally(config.knownIssuesUrl)
-            }
-
-            Button {
-                Layout.fillWidth: true
-                text: qsTr("Release notes")
-                icon.name: "folder-text"
-                Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
-                Kirigami.Theme.textColor: Kirigami.Theme.textColor
-
-                visible: config.releaseNotesUrl !== ""
-                //onClicked: load.source = "release_notes.qml"
-                onClicked: load.source = "file:/usr/share/calamares/release_notes_welcomeq.qml"
-            }
-
-            Button {
-                Layout.fillWidth: true
-                text: qsTr("Donate")
-                icon.name: "taxes-finances"
-                Kirigami.Theme.backgroundColor: Qt.rgba(Kirigami.Theme.backgroundColor.r, Kirigami.Theme.backgroundColor.g, Kirigami.Theme.backgroundColor.b, 0.4)
-                Kirigami.Theme.textColor: Kirigami.Theme.textColor
-
-                visible: config.donateUrl !== ""
-                onClicked: Qt.openUrlExternally(config.donateUrl)
             }
         }
 
-        RowLayout {
-            id: languageBar
-            width: parent.width /1.2
-            height: 48
-
+        Rectangle {
+            id: languageBox
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: parent.height /7
             anchors.horizontalCenter: parent.horizontalCenter
-            spacing: Kirigami.Units.largeSpacing* 4
+            anchors.bottomMargin: parent.height / 12
+            width: parent.width / 2
+            height: 36
+            color: "#f5f5f5"
 
-            Rectangle {
-                width: parent.width
-                Layout.fillWidth: true
-                focus: true
+            Text {
+                id: languageText
+                anchors.horizontalCenter: parent.horizontalCenter
+                horizontalAlignment: Text.AlignHCenter
+                anchors.centerIn: parent
+                leftPadding: 5
+                text: qsTr("Current Language: <b>"+ list1.currentItem.myData.label + "</b>")
+            }
+            Image {
+                source: "img/locale.svg"
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.right: languageText.left
+                fillMode: Image.PreserveAspectFit
+                height: 32
+            }
+        }
 
-                Loader {
-                    id: imLoader
+        Rectangle {
+            id: languageBar
+            anchors.top: languageBox.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            //anchors.bottomMargin: parent.height / 30
+            width: parent.width / 5
+            height: 36
+            color: mouseBar.containsMouse ? "#eff0f1" : "#e6e9ea";
 
-                    Component {
-                        id: icon
-                        Kirigami.Icon {
-                            source: config.languageIcon
-                            height: 48
-                            width: 48
-                        }
-                    }
+            MouseArea {
+                id: mouseBar
+                anchors.fill: parent;
+                cursorShape: Qt.PointingHandCursor
+                hoverEnabled: true
 
-                    Component {
-                        id: image
-                        Image {
-                            height: 48
-                            fillMode: Image.PreserveAspectFit
-                            source: "img/language-icon-48px.png"
-                        }
-                    }
-
-                    sourceComponent: (config.languageIcon != "")  ? icon : image
+                Text {
+                    anchors.centerIn: parent
+                    text: qsTr("Select Language")
+                    font.pointSize : 10
+                }
+                Image {
+                    source: "pan-end-symbolic.svg"
+                    anchors.centerIn: parent
+                    anchors.horizontalCenterOffset : parent.width / 2.5
+                    fillMode: Image.PreserveAspectFit
+                    height: 22
                 }
 
-                ComboBox {
-                    id: languages
-                    anchors.left: imLoader.right
-                    width: languageBar.width /1.1
-                    textRole: "label"
-                    currentIndex: config.localeIndex
-                    model: config.languagesModel
-                    onCurrentIndexChanged: config.localeIndex = currentIndex
+                onClicked: {
+                    drawer.open()
+                }
+            }
+        }
+
+        ColumnLayout {
+            id: buttonBar
+            anchors.left: parent.left;
+            anchors.verticalCenter: parent.verticalCenter
+            width: 48
+            height: 300
+            spacing: 1
+
+            Rectangle {
+                Layout.fillWidth: true;
+                Layout.preferredHeight: parent.height / 3;
+                color: mouseOne.containsMouse ? "#e6e9ea" : "#d9dcde";
+                visible: config.knownIssueUrl !== ""
+
+                MouseArea {
+                    id: mouseOne
+                    anchors.fill: parent;
+                    cursorShape: Qt.PointingHandCursor
+                    hoverEnabled: true
+
+                    Text {
+                        anchors.centerIn: parent
+                        text: qsTr("Known Issues")
+                        font.pointSize : 8
+                        rotation : 270
+                    }
+
+                    onClicked: Qt.openUrlExternally(config.knownIssuesUrl)
+                }
+            }
+
+            Rectangle {
+                Layout.preferredHeight: parent.height / 3;
+                Layout.fillWidth: true
+                color: mouseTwo.containsMouse ? "#f4f5f6" : "#e6e9ea";
+                visible: config.ReleaseNotesUrl !== ""
+
+                MouseArea {
+                    id: mouseTwo
+                    anchors.fill: parent;
+                    cursorShape: Qt.PointingHandCursor
+                    hoverEnabled: true
+                    Text {
+                        anchors.centerIn: parent
+                        text: qsTr("Release Notes")
+                        font.pointSize : 8
+                        rotation : 270
+                    }
+
+                    onClicked: load.source = "file:/usr/share/calamares/release_notes_welcomeq.qml"
+                }
+            }
+
+            Rectangle {
+                height: parent.height / 3;
+                Layout.fillWidth: true;
+                color: mouseThree.containsMouse ? "#e6e9ea" : "#d9dcde";
+                visible: config.donateUrl !== ""
+
+                MouseArea {
+                    id: mouseThree
+                    anchors.fill: parent;
+                    cursorShape: Qt.PointingHandCursor
+                    hoverEnabled: true
+                    Text {
+                        anchors.centerIn: parent
+                        text: qsTr("Donate")
+                        font.pointSize : 8
+                        rotation : 270
+                    }
+
+                    onClicked: Qt.openUrlExternally(config.donateUrl)
                 }
             }
         }
