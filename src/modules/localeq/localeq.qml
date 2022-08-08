@@ -77,7 +77,7 @@ Page {
             columnSpacing: Kirigami.Units.largeSpacing
 
             Kirigami.Icon {
-                source: "qrc:img/locale.svg"
+                source: "qrc:/img/locale.svg"
                 Layout.fillHeight: true
                 Layout.maximumHeight: Kirigami.Units.iconSizes.large
                 Layout.preferredWidth: height
@@ -108,7 +108,7 @@ Page {
             columnSpacing: Kirigami.Units.largeSpacing
 
             Kirigami.Icon {
-                source: "qrc:img/locale.svg"
+                source: "qrc:/img/locale.svg"
                 Layout.fillHeight: true
                 Layout.maximumHeight: Kirigami.Units.iconSizes.large
                 Layout.preferredWidth: height

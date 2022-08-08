@@ -179,7 +179,7 @@ Page
 
             Rectangle {
                 Layout.fillWidth: true;
-                Layout.preferredHeight: parent.height / 3;
+                Layout.preferredHeight: parent.height / 2.4;
                 color: mouseOne.containsMouse ? "#e6e9ea" : "#d9dcde";
                 visible: config.knownIssueUrl !== ""
 
@@ -201,7 +201,7 @@ Page
             }
 
             Rectangle {
-                Layout.preferredHeight: parent.height / 3;
+                Layout.preferredHeight: parent.height / 2.8;
                 Layout.fillWidth: true
                 color: mouseTwo.containsMouse ? "#f4f5f6" : "#e6e9ea";
                 visible: config.ReleaseNotesUrl !== ""
@@ -223,7 +223,7 @@ Page
             }
 
             Rectangle {
-                height: parent.height / 3;
+                height: parent.height / 3.5;
                 Layout.fillWidth: true;
                 color: mouseThree.containsMouse ? "#e6e9ea" : "#d9dcde";
                 visible: config.donateUrl !== ""
