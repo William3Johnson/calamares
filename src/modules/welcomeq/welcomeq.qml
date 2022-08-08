@@ -156,7 +156,7 @@ Page
                     font.pointSize : 10
                 }
                 Image {
-                    source: "pan-end-symbolic.svg"
+                    source: "img/pan-end-symbolic.svg"
                     anchors.centerIn: parent
                     anchors.horizontalCenterOffset : parent.width / 2.5
                     fillMode: Image.PreserveAspectFit

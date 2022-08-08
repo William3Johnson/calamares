@@ -4027,32 +4027,32 @@ La configuració pot continuar, però algunes característiques podrien estar in
     <message>
         <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="57"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Quant a</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="61"/>
         <source>Info about Calamares</source>
-        <translation type="unfinished"/>
+        <translation>Informació quant al Calamares</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="91"/>
         <source>Debug</source>
-        <translation type="unfinished"/>
+        <translation>Depuració</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="120"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Enrere</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="152"/>
         <source>Next</source>
-        <translation type="unfinished"/>
+        <translation>Següent</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="208"/>
         <source>Cancel</source>
-        <translation type="unfinished"/>
+        <translation>Cancel·la</translation>
     </message>
 </context>
 <context>
@@ -4177,13 +4177,15 @@ La configuració pot continuar, però algunes característiques podrien estar in
         <location filename="../src/modules/localeq/localeq.qml" line="164"/>
         <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
                         The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Llengües&lt;/h3&gt; &lt;/br&gt;
+                    La configuració de la llengua del sistema afecta la llengua i el conjunt de caràcters per a alguns elements d&apos;interfície d&apos;usuari de línia d&apos;ordres. La configuració actual és &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/localeq.qml" line="235"/>
         <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
                             The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Configuració local&lt;/h3&gt; &lt;/br&gt;
+La configuració local del sistema afecta el format de números i dates. La configuració actual és &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
 </context>
 <context>
@@ -4474,17 +4476,17 @@ Consulteu els Acords de llicència d’usuari final (EULAs).&lt;/p&gt;</translat
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
         <source>Select Language</source>
-        <translation type="unfinished"/>
+        <translation>Seleccioneu una llengua</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="194"/>
         <source>Known Issues</source>
-        <translation type="unfinished"/>
+        <translation>Problemes coneguts</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="216"/>
         <source>Release Notes</source>
-        <translation type="unfinished"/>
+        <translation>Notes de la versió</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="238"/>

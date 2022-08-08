@@ -4171,13 +4171,15 @@ Vous pouvez maintenant redémarrer votre système.</translation>
         <location filename="../src/modules/localeq/localeq.qml" line="164"/>
         <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
                         The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Langues&lt;/h3&gt; &lt;/br&gt;
+Les paramètres régionaux du système affectent la langue et le jeu de caractères de certains éléments de l’interface utilisateur de ligne de commande. La configuration actuelle est &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/localeq.qml" line="235"/>
         <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
                             The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h3&gt;Paramètres régionaux&lt;/h3&gt; &lt;/br&gt;
+Les paramètres régionaux du système affectent le format des dates et des nombres. La configuration actuelle est &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
 </context>
 <context>
@@ -4469,17 +4471,17 @@ Veuillez consuter les contrats de licence utilisateur finaux.&lt;/p&gt;</transla
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
         <source>Select Language</source>
-        <translation type="unfinished"/>
+        <translation>Sélectionner la langue</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="194"/>
         <source>Known Issues</source>
-        <translation type="unfinished"/>
+        <translation>Problèmes connus</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="216"/>
         <source>Release Notes</source>
-        <translation type="unfinished"/>
+        <translation>Notes de versions</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="238"/>
