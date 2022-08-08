@@ -2230,62 +2230,6 @@ The installer will quit and all changes will be lost.</source>
     </message>
 </context>
 <context>
-    <name>Offline2</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline2.qml" line="54"/>
-        <source>Timezone: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline2.qml" line="69"/>
-        <source>Select a timezone. You can fine-tune Language and Locale settings below.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Offline3</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="51"/>
-        <source>Select your preferred Region, or use the default one based on your current location.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="112"/>
-        <location filename="../src/modules/localeq/Offline3.qml" line="190"/>
-        <location filename="../src/modules/localeq/Offline3.qml" line="236"/>
-        <source>Timezone: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="129"/>
-        <source>Select your preferred Zone within your Region.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="204"/>
-        <source>Zones</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="252"/>
-        <source>You can fine-tune Language and Locale settings below.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Offline_orig</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline_orig.qml" line="64"/>
-        <source>Timezone: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline_orig.qml" line="81"/>
-        <source>To be able to select a timezone, make sure you are connected to the internet. Restart the installer after connecting. You can fine-tune Language and Locale settings below.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>PWQ</name>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="51"/>
@@ -3283,24 +3227,6 @@ Output:
     </message>
 </context>
 <context>
-    <name>Requirements2</name>
-    <message>
-        <location filename="../src/modules/welcomeq/Requirements2.qml" line="60"/>
-        <source>&lt;p&gt;This computer does not satisfy some of the recommended requirements for setting up KaOS.&lt;br/&gt;
-        Setup can continue, but some features might be disabled.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Requirements_orig</name>
-    <message>
-        <location filename="../src/modules/welcomeq/Requirements_orig.qml" line="48"/>
-        <source>&lt;p&gt;This computer does not satisfy the minimum requirements for setting up %1.&lt;/p&gt;
-        &lt;p&gt;Setup cannot continue.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>ResizePartitionJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="41"/>
@@ -4219,46 +4145,6 @@ Output:
     </message>
 </context>
 <context>
-    <name>i18n</name>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="50"/>
-        <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="123"/>
-        <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="189"/>
-        <source>Back</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>i18nw</name>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="50"/>
-        <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="124"/>
-        <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="192"/>
-        <source>Back</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>keyboardq</name>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
@@ -4287,46 +4173,23 @@ Output:
     </message>
 </context>
 <context>
-    <name>layout</name>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="32"/>
-        <source>Region: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="43"/>
-        <source>Adjust Language</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="53"/>
-        <source>Zone: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="63"/>
-        <source>Adjust Locale</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>localeq</name>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="110"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="98"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="128"/>
         <source>Change</source>
         <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>localeq2</name>
     <message>
-        <location filename="../src/modules/localeq/localeq2.qml" line="40"/>
-        <source>Region: </source>
+        <location filename="../src/modules/localeq/localeq.qml" line="164"/>
+        <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
+                        The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq2.qml" line="55"/>
-        <source>Zone: </source>
+        <location filename="../src/modules/localeq/localeq.qml" line="235"/>
+        <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
+                            The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4571,59 +4434,30 @@ Output:
     </message>
 </context>
 <context>
-    <name>test</name>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="26"/>
-        <source>&lt;h3&gt;Welcome to the KaOS &lt;quote&gt;2020.06&lt;/quote&gt; installer&lt;/h3&gt;
-            &lt;p&gt;This program will ask you some questions and set up KaOS on your computer.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="71"/>
-        <source>About</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="84"/>
-        <source>Known issues</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="95"/>
-        <source>Release notes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="106"/>
-        <source>Donate</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>welcomeq</name>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="35"/>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="36"/>
         <source>&lt;h3&gt;Welcome to the %1 &lt;quote&gt;%2&lt;/quote&gt; installer&lt;/h3&gt;
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="79"/>
-        <source>Support</source>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
+        <source>Select Language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="90"/>
-        <source>Known issues</source>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="194"/>
+        <source>Known Issues</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="101"/>
-        <source>Release notes</source>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="216"/>
+        <source>Release Notes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="113"/>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="238"/>
         <source>Donate</source>
         <translation type="unfinished"></translation>
     </message>

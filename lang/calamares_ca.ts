@@ -2230,62 +2230,6 @@ per moure&apos;l i useu els botons + / - per ampliar-lo o reduir-lo, o feu-ho am
     </message>
 </context>
 <context>
-    <name>Offline2</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline2.qml" line="54"/>
-        <source>Timezone: %1</source>
-        <translation>Zona horària: %1</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline2.qml" line="69"/>
-        <source>Select a timezone. You can fine-tune Language and Locale settings below.</source>
-        <translation>Seleccioneu una zona horària. Podeu acabar d&apos;ajustar els paràmetres locals i de llengua a continuació.</translation>
-    </message>
-</context>
-<context>
-    <name>Offline3</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="51"/>
-        <source>Select your preferred Region, or use the default one based on your current location.</source>
-        <translation>Trieu la regió preferida o useu-ne la predeterminada basada en la ubicació actual.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="112"/>
-        <location filename="../src/modules/localeq/Offline3.qml" line="190"/>
-        <location filename="../src/modules/localeq/Offline3.qml" line="236"/>
-        <source>Timezone: %1</source>
-        <translation>Zona horària: %1</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="129"/>
-        <source>Select your preferred Zone within your Region.</source>
-        <translation>Trieu la zona preferida dins la regió.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="204"/>
-        <source>Zones</source>
-        <translation>Zones</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="252"/>
-        <source>You can fine-tune Language and Locale settings below.</source>
-        <translation>Podeu acabar d&apos;ajustar els paràmetres locals i de llengua a continuació.</translation>
-    </message>
-</context>
-<context>
-    <name>Offline_orig</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline_orig.qml" line="64"/>
-        <source>Timezone: %1</source>
-        <translation>Zona horària: %1</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline_orig.qml" line="81"/>
-        <source>To be able to select a timezone, make sure you are connected to the internet. Restart the installer after connecting. You can fine-tune Language and Locale settings below.</source>
-        <translation>Per poder seleccionar una zona horària, assegureu-vos que teniu connexió a Internet. Reinicieu l&apos;instal·lador després de connectar-vos. A continuació podeu precisar la llengua i la configuració local.</translation>
-    </message>
-</context>
-<context>
     <name>PWQ</name>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="51"/>
@@ -3262,26 +3206,6 @@ La configuració pot continuar, però algunes característiques podrien estar in
     </message>
 </context>
 <context>
-    <name>Requirements2</name>
-    <message>
-        <location filename="../src/modules/welcomeq/Requirements2.qml" line="60"/>
-        <source>&lt;p&gt;This computer does not satisfy some of the recommended requirements for setting up KaOS.&lt;br/&gt;
-        Setup can continue, but some features might be disabled.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Aquest ordinador no compleix alguns dels requisits recomanats per configurar-hi el KaOS.&lt;br/&gt;
-La configuració pot continuar, però algunes característiques podrien estar inhabilitades.&lt;/p&gt;</translation>
-    </message>
-</context>
-<context>
-    <name>Requirements_orig</name>
-    <message>
-        <location filename="../src/modules/welcomeq/Requirements_orig.qml" line="48"/>
-        <source>&lt;p&gt;This computer does not satisfy the minimum requirements for setting up %1.&lt;/p&gt;
-        &lt;p&gt;Setup cannot continue.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Aquest ordinador no satisfà els requisits mínims per configurar-hi el %1.&lt;/p&gt;
- &lt;p&gt;La configuració no pot continuar.&lt;/p&gt;</translation>
-    </message>
-</context>
-<context>
     <name>ResizePartitionJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="41"/>
@@ -4099,22 +4023,52 @@ La configuració pot continuar, però algunes característiques podrien estar in
     </message>
 </context>
 <context>
+    <name>calamares-navigation</name>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="57"/>
+        <source>About</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="61"/>
+        <source>Info about Calamares</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="91"/>
+        <source>Debug</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="120"/>
+        <source>Back</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="152"/>
+        <source>Next</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="208"/>
+        <source>Cancel</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>calamares-sidebar</name>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="94"/>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="165"/>
         <source>Show debug information</source>
         <translation>Mostra la informació de depuració</translation>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="118"/>
         <location filename="../src/calamares/calamares-sidebar.qml" line="89"/>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="148"/>
         <source>About</source>
         <translation>Quant a</translation>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="122"/>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="149"/>
         <source>Show information about Calamares</source>
         <translation>Mostra informació quant al Calamares</translation>
@@ -4184,119 +4138,52 @@ La configuració pot continuar, però algunes característiques podrien estar in
     </message>
 </context>
 <context>
-    <name>i18n</name>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="50"/>
-        <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h1&gt;Llengües&lt;/h1&gt; &lt;/br&gt;
-                    La configuració de la llengua del sistema afecta la llengua i el conjunt de caràcters per a alguns elements d&apos;interfície d&apos;usuari de línia d&apos;ordres. La configuració actual és &lt;strong&gt;%1&lt;/strong&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="123"/>
-        <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h1&gt;Configuració local&lt;/h1&gt; &lt;/br&gt;
-La configuració local del sistema afecta el format de números i dates. La configuració actual és &lt;strong&gt;%1&lt;/strong&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="189"/>
-        <source>Back</source>
-        <translation>Enrere</translation>
-    </message>
-</context>
-<context>
-    <name>i18nw</name>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="50"/>
-        <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h1&gt;Llengües&lt;/h1&gt; &lt;/br&gt;
-                    La configuració de la llengua del sistema afecta la llengua i el conjunt de caràcters per a alguns elements d&apos;interfície d&apos;usuari de línia d&apos;ordres. La configuració actual és &lt;strong&gt;%1&lt;/strong&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="124"/>
-        <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h1&gt;Configuració local&lt;/h1&gt; &lt;/br&gt;
-La configuració local del sistema afecta el format de números i dates. La configuració actual és &lt;strong&gt;%1&lt;/strong&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="192"/>
-        <source>Back</source>
-        <translation>Enrere</translation>
-    </message>
-</context>
-<context>
     <name>keyboardq</name>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="63"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
         <source>To activate keyboard preview, select a layout.</source>
         <translation>Per activar la previsualització del teclat, seleccioneu una disposició.</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="89"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="86"/>
         <source>Keyboard Model:</source>
         <translation>Model del teclat:</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="259"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="256"/>
         <source>Layouts</source>
         <translation>Disposions</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="268"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="265"/>
         <source>Type here to test your keyboard</source>
         <translation>Escriviu aquí per provar el teclat.</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="183"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="180"/>
         <source>Variants</source>
         <translation>Variants</translation>
     </message>
 </context>
 <context>
-    <name>layout</name>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="32"/>
-        <source>Region: </source>
-        <translation>Regió:</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="43"/>
-        <source>Adjust Language</source>
-        <translation>Ajusteu la llengua</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="53"/>
-        <source>Zone: </source>
-        <translation>Zona: </translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="63"/>
-        <source>Adjust Locale</source>
-        <translation>Ajusteu la configuració local</translation>
-    </message>
-</context>
-<context>
     <name>localeq</name>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="110"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="98"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="128"/>
         <source>Change</source>
         <translation>Canvia</translation>
     </message>
-</context>
-<context>
-    <name>localeq2</name>
     <message>
-        <location filename="../src/modules/localeq/localeq2.qml" line="40"/>
-        <source>Region: </source>
-        <translation>Regió: </translation>
+        <location filename="../src/modules/localeq/localeq.qml" line="164"/>
+        <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
+                        The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq2.qml" line="55"/>
-        <source>Zone: </source>
-        <translation>Zona: </translation>
+        <location filename="../src/modules/localeq/localeq.qml" line="235"/>
+        <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
+                            The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -4576,61 +4463,31 @@ Consulteu els Acords de llicència d’usuari final (EULAs).&lt;/p&gt;</translat
     </message>
 </context>
 <context>
-    <name>test</name>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="26"/>
-        <source>&lt;h3&gt;Welcome to the KaOS &lt;quote&gt;2020.06&lt;/quote&gt; installer&lt;/h3&gt;
-            &lt;p&gt;This program will ask you some questions and set up KaOS on your computer.&lt;/p&gt;</source>
-        <translation>&lt;h3&gt;Benvingut/da a l&apos;instal·lador &lt;quote&gt;2020.06&lt;/quote&gt; per al KaOS&lt;/h3&gt;
-            &lt;p&gt;Aquest programa us farà algunes preguntes i configurarà el KaOS a l&apos;ordinador.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="71"/>
-        <source>About</source>
-        <translation>Quant a</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="84"/>
-        <source>Known issues</source>
-        <translation>Problemes coneguts</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="95"/>
-        <source>Release notes</source>
-        <translation>Notes de la versió</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="106"/>
-        <source>Donate</source>
-        <translation>Feu una donació</translation>
-    </message>
-</context>
-<context>
     <name>welcomeq</name>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="35"/>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="36"/>
         <source>&lt;h3&gt;Welcome to the %1 &lt;quote&gt;%2&lt;/quote&gt; installer&lt;/h3&gt;
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
         <translation>&lt;h3&gt;Benvingut/da a l&apos;instal·lador &lt;quote&gt;%2&lt;/quote&gt; per a %1 &lt;/h3&gt;
             &lt;p&gt;Aquest programa us farà algunes preguntes i configurarà %1 a l&apos;ordinador.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="79"/>
-        <source>Support</source>
-        <translation>Suport</translation>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
+        <source>Select Language</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="90"/>
-        <source>Known issues</source>
-        <translation>Problemes coneguts</translation>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="194"/>
+        <source>Known Issues</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="101"/>
-        <source>Release notes</source>
-        <translation>Notes de la versió</translation>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="216"/>
+        <source>Release Notes</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="113"/>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="238"/>
         <source>Donate</source>
         <translation>Feu una donació</translation>
     </message>

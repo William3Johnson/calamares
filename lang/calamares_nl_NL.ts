@@ -2230,62 +2230,6 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     </message>
 </context>
 <context>
-    <name>Offline2</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline2.qml" line="54"/>
-        <source>Timezone: %1</source>
-        <translation>Tijdzone: %1</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline2.qml" line="69"/>
-        <source>Select a timezone. You can fine-tune Language and Locale settings below.</source>
-        <translation>Selecteer een tijdzone. Je kunt de instellingen voor taal en landinstelling hieronder verfijnen.</translation>
-    </message>
-</context>
-<context>
-    <name>Offline3</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="51"/>
-        <source>Select your preferred Region, or use the default one based on your current location.</source>
-        <translation>Selecteer je voorkeur voor regio, of gebruik het standaardmodel gebaseerd op je huidige locatie.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="112"/>
-        <location filename="../src/modules/localeq/Offline3.qml" line="190"/>
-        <location filename="../src/modules/localeq/Offline3.qml" line="236"/>
-        <source>Timezone: %1</source>
-        <translation>Tijdzone: %1</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="129"/>
-        <source>Select your preferred Zone within your Region.</source>
-        <translation>Selecteer uw Voorkeurszone binnen uw Regio.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="204"/>
-        <source>Zones</source>
-        <translation>Zones</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="252"/>
-        <source>You can fine-tune Language and Locale settings below.</source>
-        <translation>Je kunt de instellingen voor taal en landinstelling hieronder verfijnen.</translation>
-    </message>
-</context>
-<context>
-    <name>Offline_orig</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline_orig.qml" line="64"/>
-        <source>Timezone: %1</source>
-        <translation>Tijdzone: %1</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline_orig.qml" line="81"/>
-        <source>To be able to select a timezone, make sure you are connected to the internet. Restart the installer after connecting. You can fine-tune Language and Locale settings below.</source>
-        <translation>Zorg ervoor dat u verbonden bent met internet om een tijdzone te kunnen selecteren. Start het installatieprogramma opnieuw nadat u verbinding heeft gemaakt. U kunt de taal- en landinstellingen hieronder verfijnen.</translation>
-    </message>
-</context>
-<context>
     <name>PWQ</name>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="51"/>
@@ -3260,25 +3204,6 @@ Output:
     </message>
 </context>
 <context>
-    <name>Requirements2</name>
-    <message>
-        <location filename="../src/modules/welcomeq/Requirements2.qml" line="60"/>
-        <source>&lt;p&gt;This computer does not satisfy some of the recommended requirements for setting up KaOS.&lt;br/&gt;
-        Setup can continue, but some features might be disabled.&lt;/p&gt;</source>
-        <translation>Deze computer voldoet niet aan alle aanbevolen vereisten voor het installeren van %1.&lt;br/&gt;De installatie kan doorgaan, maar sommige functies kunnen worden uitgeschakeld.</translation>
-    </message>
-</context>
-<context>
-    <name>Requirements_orig</name>
-    <message>
-        <location filename="../src/modules/welcomeq/Requirements_orig.qml" line="48"/>
-        <source>&lt;p&gt;This computer does not satisfy the minimum requirements for setting up %1.&lt;/p&gt;
-        &lt;p&gt;Setup cannot continue.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Deze computer voldoet niet aan de minimale vereisten voor het installeren van %1.&lt;/p&gt;
-        &lt;p&gt;De installatie kan niet worden voortgezet.&lt;/p&gt;</translation>
-    </message>
-</context>
-<context>
     <name>ResizePartitionJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="41"/>
@@ -4211,50 +4136,6 @@ Output:
     </message>
 </context>
 <context>
-    <name>i18n</name>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="50"/>
-        <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h1&gt;Talen&lt;/h1&gt; &lt;/br&gt;
-                    De instelling systeem locale heeft invloed op de taal en tekenset voor sommige command line interface-elementen. De huidige instelling is &lt;strong&gt;%1&lt;/strong&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="123"/>
-        <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h1&gt;Landinstellingen&lt;/h1&gt; &lt;/br&gt;
-                    De landinstelling van het systeem is van invloed op de notatie van cijfers en datums. De huidige instelling is&lt;strong&gt;%1&lt;/strong&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="189"/>
-        <source>Back</source>
-        <translation>Terug</translation>
-    </message>
-</context>
-<context>
-    <name>i18nw</name>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="50"/>
-        <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h1&gt;Talen&lt;/h1&gt; &lt;/br&gt;
-                    De instelling systeem locale heeft invloed op de taal en tekenset voor sommige command line interface-elementen. De huidige instelling is &lt;strong&gt;%1&lt;/strong&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="124"/>
-        <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h1&gt;Landinstellingen&lt;/h1&gt; &lt;/br&gt;
-                    De landinstelling van het systeem is van invloed op de notatie van cijfers en datums. De huidige instelling is&lt;strong&gt;%1&lt;/strong&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="192"/>
-        <source>Back</source>
-        <translation>Terug</translation>
-    </message>
-</context>
-<context>
     <name>keyboardq</name>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
@@ -4283,47 +4164,26 @@ Output:
     </message>
 </context>
 <context>
-    <name>layout</name>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="32"/>
-        <source>Region: </source>
-        <translation>Regio:</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="43"/>
-        <source>Adjust Language</source>
-        <translation>Taal Aanpassen</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="53"/>
-        <source>Zone: </source>
-        <translation>Zone:</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="63"/>
-        <source>Adjust Locale</source>
-        <translation>Landinstelling Aanpassen</translation>
-    </message>
-</context>
-<context>
     <name>localeq</name>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="110"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="98"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="128"/>
         <source>Change</source>
         <translation>Wijzig</translation>
     </message>
-</context>
-<context>
-    <name>localeq2</name>
     <message>
-        <location filename="../src/modules/localeq/localeq2.qml" line="40"/>
-        <source>Region: </source>
-        <translation>Regio:</translation>
+        <location filename="../src/modules/localeq/localeq.qml" line="164"/>
+        <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
+                        The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation>&lt;h3&gt;Talen&lt;/h3&gt; &lt;/br&gt;
+                        T De instelling systeem locale heeft invloed op de taal en tekenset voor sommige command line interface-elementen. De huidige instelling is &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq2.qml" line="55"/>
-        <source>Zone: </source>
-        <translation>Zone:</translation>
+        <location filename="../src/modules/localeq/localeq.qml" line="235"/>
+        <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
+                            The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation>&lt;h3&gt;Landinstellingen&lt;/h3&gt; &lt;/br&gt;
+                             De landinstelling van het systeem is van invloed op de notatie van cijfers en datums. De huidige instelling is&lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
 </context>
 <context>
@@ -4603,61 +4463,31 @@ Output:
     </message>
 </context>
 <context>
-    <name>test</name>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="26"/>
-        <source>&lt;h3&gt;Welcome to the KaOS &lt;quote&gt;2020.06&lt;/quote&gt; installer&lt;/h3&gt;
-            &lt;p&gt;This program will ask you some questions and set up KaOS on your computer.&lt;/p&gt;</source>
-        <translation>&lt;h3&gt;Welkom bij het %1 &lt;quote&gt;%2&lt;/quote&gt; installeerprogramma&lt;/h3&gt;
-            &lt;p&gt;Dit programma zal u enkele vragen stellen en %1 op uw computer installeren.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="71"/>
-        <source>About</source>
-        <translation>Informatie</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="84"/>
-        <source>Known issues</source>
-        <translation>Bekende problemen</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="95"/>
-        <source>Release notes</source>
-        <translation>Release notes</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="106"/>
-        <source>Donate</source>
-        <translation>Doneer</translation>
-    </message>
-</context>
-<context>
     <name>welcomeq</name>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="35"/>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="36"/>
         <source>&lt;h3&gt;Welcome to the %1 &lt;quote&gt;%2&lt;/quote&gt; installer&lt;/h3&gt;
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
         <translation>&lt;h3&gt;Welkom bij het %1 &lt;quote&gt;%2&lt;/quote&gt; installeerprogramma&lt;/h3&gt;
             &lt;p&gt;Dit programma zal u enkele vragen stellen en %1 op uw computer installeren.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="79"/>
-        <source>Support</source>
-        <translation>Support</translation>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
+        <source>Select Language</source>
+        <translation>Selecteer Taal</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="90"/>
-        <source>Known issues</source>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="194"/>
+        <source>Known Issues</source>
         <translation>Bekende problemen</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="101"/>
-        <source>Release notes</source>
-        <translation>Release notes</translation>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="216"/>
+        <source>Release Notes</source>
+        <translation>Release Notes</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="113"/>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="238"/>
         <source>Donate</source>
         <translation>Doneer</translation>
     </message>

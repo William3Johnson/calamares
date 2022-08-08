@@ -324,32 +324,32 @@
 <context>
     <name>Calamares::ViewManager</name>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="404"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="397"/>
         <source>&amp;Back</source>
         <translation>&amp;Indietro</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="399"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="392"/>
         <source>&amp;Next</source>
         <translation>&amp;Avanti</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="429"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="422"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Annulla</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="388"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="381"/>
         <source>Cancel setup without changing the system.</source>
         <translation>Elimina il setup senza modificare il sistema.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="389"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="382"/>
         <source>Cancel installation without changing the system.</source>
         <translation>Cancella l&apos;installazione senza modificare il sistema.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="167"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="160"/>
         <source>Setup Failed</source>
         <translation>Setup fallito.</translation>
     </message>
@@ -377,69 +377,69 @@ Link copiato negli appunti</translation>
         <translation>L&apos;upload è fallito. Nessun  web-paste è stato eseguito.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="196"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="189"/>
         <source>Calamares Initialization Failed</source>
         <translation>Inizializzazione di Calamares Fallita</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="197"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="190"/>
         <source>%1 can not be installed. Calamares was unable to load all of the configured modules. This is a problem with the way Calamares is being used by the distribution.</source>
         <translation>%1 non può essere installato. Calamares non è stato in grado di caricare tutti i moduli configurati. Questo problema dipende dal modo in cui Calamares è usato dalla distribuzione.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="203"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="196"/>
         <source>&lt;br/&gt;The following modules could not be loaded:</source>
         <translation>&lt;br/&gt;I moduli seguenti non possono essere caricati:</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="317"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="310"/>
         <source>Continue with installation?</source>
         <translation>Continuare con l&apos;installazione?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="319"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="312"/>
         <source>The %1 setup program is about to make changes to your disk in order to set up %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
         <translation>Il programma di setup %1 sta per modificare il disco per impostare %2.&lt;br/&gt;&lt;strong&gt;Questi cambiamenti sono irreversibili.&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="325"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="318"/>
         <source>&amp;Set up now</source>
         <translation>&amp;Configura ora</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="383"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="376"/>
         <source>&amp;Set up</source>
         <translation>&amp;Configura</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="383"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="376"/>
         <source>&amp;Install</source>
         <translation>&amp;Installa</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="385"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="378"/>
         <source>Setup is complete. Close the setup program.</source>
         <translation>La configurazione è completa. Chiudi il programma di setup.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="502"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="495"/>
         <source>Cancel setup?</source>
         <translation>Annullare la configurazione?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="502"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="495"/>
         <source>Cancel installation?</source>
         <translation>Annullare l&apos;installazione?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="503"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="496"/>
         <source>Do you really want to cancel the current setup process?
 The setup program will quit and all changes will be lost.</source>
         <translation>Vuoi davvero annullare il processo di configurazione in corso?
 Il programma di configurazione verrà chiuso e tutte le modifiche andranno perse.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="505"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="498"/>
         <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
         <translation>Vuoi davvero annullare il processo di installazione in corso?
@@ -461,62 +461,42 @@ Il programma di installazione verrà chiuso e tutte le modifiche andranno perse.
         <translation>&amp;Chiudi</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="96"/>
-        <source>About</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="97"/>
-        <source>Show information about Calamares</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="98"/>
-        <source>Debug</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="99"/>
-        <source>Show debug information</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="317"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="310"/>
         <source>Continue with setup?</source>
         <translation>Continuare con l&apos;installazione?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="322"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="315"/>
         <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
         <translation>L&apos;installer %1 sta per effettuare delle modifiche al disco per installare %2.&lt;br/&gt;&lt;strong&gt;Questo processo è irreversibile.&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="325"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="318"/>
         <source>&amp;Install now</source>
         <translation>&amp;Installa ora</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="333"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="326"/>
         <source>Go &amp;back</source>
         <translation>Torna &amp;indietro</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="410"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="403"/>
         <source>&amp;Done</source>
         <translation>%Finito</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="386"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="379"/>
         <source>The installation is complete. Close the installer.</source>
         <translation>L&apos;installazione è completata. Chiudi il programma di installazione.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="170"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="163"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="167"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="160"/>
         <source>Installation Failed</source>
         <translation>Installazione non riuscita</translation>
     </message>
@@ -2250,62 +2230,6 @@ il mouse e usando i pulsanti +/- per modificare lo zoom o usa lo scrolling del m
     </message>
 </context>
 <context>
-    <name>Offline2</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline2.qml" line="54"/>
-        <source>Timezone: %1</source>
-        <translation>Fuso orario: %1</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline2.qml" line="69"/>
-        <source>Select a timezone. You can fine-tune Language and Locale settings below.</source>
-        <translation>Seleziona un fuso orario. Puoi aggiustare le impostazioni di lingua e localizzazione qui sotto.</translation>
-    </message>
-</context>
-<context>
-    <name>Offline3</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="51"/>
-        <source>Select your preferred Region, or use the default one based on your current location.</source>
-        <translation>Seleziona le tua regione preferita, o usa quella di default basata sulla tua posizione corrente.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="112"/>
-        <location filename="../src/modules/localeq/Offline3.qml" line="190"/>
-        <location filename="../src/modules/localeq/Offline3.qml" line="236"/>
-        <source>Timezone: %1</source>
-        <translation>Fuso orario: %1</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="129"/>
-        <source>Select your preferred Zone within your Region.</source>
-        <translation>Seleziona la tua zona preferita nella tua regione.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="204"/>
-        <source>Zones</source>
-        <translation>Zone</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="252"/>
-        <source>You can fine-tune Language and Locale settings below.</source>
-        <translation>Puoi aggiustare le impostazioni della lingua e della localizzazione qui sotto,</translation>
-    </message>
-</context>
-<context>
-    <name>Offline_orig</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline_orig.qml" line="64"/>
-        <source>Timezone: %1</source>
-        <translation>Fuso orario: %1</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline_orig.qml" line="81"/>
-        <source>To be able to select a timezone, make sure you are connected to the internet. Restart the installer after connecting. You can fine-tune Language and Locale settings below.</source>
-        <translation>Per poter selezionare un fuso orario, assicurati di essere collegato ad internet. Riavvia l&apos;installer dopo esserti connesso. Piuoi aggiustare le impostazioni di lingua e localizzazione qui sotto,</translation>
-    </message>
-</context>
-<context>
     <name>PWQ</name>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="51"/>
@@ -3278,24 +3202,6 @@ Output:
     </message>
 </context>
 <context>
-    <name>Requirements2</name>
-    <message>
-        <location filename="../src/modules/welcomeq/Requirements2.qml" line="60"/>
-        <source>&lt;p&gt;This computer does not satisfy some of the recommended requirements for setting up KaOS.&lt;br/&gt;
-        Setup can continue, but some features might be disabled.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
-<context>
-    <name>Requirements_orig</name>
-    <message>
-        <location filename="../src/modules/welcomeq/Requirements_orig.qml" line="48"/>
-        <source>&lt;p&gt;This computer does not satisfy the minimum requirements for setting up %1.&lt;/p&gt;
-        &lt;p&gt;Setup cannot continue.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
-<context>
     <name>ResizePartitionJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="41"/>
@@ -4102,25 +4008,59 @@ Output:
     </message>
 </context>
 <context>
-    <name>calamares-sidebar</name>
+    <name>calamares-navigation</name>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="94"/>
-        <source>Show debug information</source>
-        <translation>Mostra informazioni di debug</translation>
-    </message>
-    <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="118"/>
-        <location filename="../src/calamares/calamares-sidebar.qml" line="89"/>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="57"/>
         <source>About</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="122"/>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="61"/>
+        <source>Info about Calamares</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="91"/>
+        <source>Debug</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="120"/>
+        <source>Back</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="152"/>
+        <source>Next</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="208"/>
+        <source>Cancel</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>calamares-sidebar</name>
+    <message>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="165"/>
+        <source>Show debug information</source>
+        <translation>Mostra informazioni di debug</translation>
+    </message>
+    <message>
+        <location filename="../src/calamares/calamares-sidebar.qml" line="89"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="148"/>
+        <source>About</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="149"/>
         <source>Show information about Calamares</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/calamares/calamares-sidebar.qml" line="115"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="163"/>
         <source>Debug</source>
         <translation type="unfinished"/>
     </message>
@@ -4181,115 +4121,52 @@ Output:
     </message>
 </context>
 <context>
-    <name>i18n</name>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="50"/>
-        <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="123"/>
-        <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="189"/>
-        <source>Back</source>
-        <translation>Indietro</translation>
-    </message>
-</context>
-<context>
-    <name>i18nw</name>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="50"/>
-        <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="124"/>
-        <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="192"/>
-        <source>Back</source>
-        <translation>Indietro</translation>
-    </message>
-</context>
-<context>
     <name>keyboardq</name>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="63"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
         <source>To activate keyboard preview, select a layout.</source>
         <translation>Per attivare l&apos;anteprima della tastiera, selezionare un layout.</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="89"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="86"/>
         <source>Keyboard Model:</source>
         <translation>Modello della tastiera:</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="259"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="256"/>
         <source>Layouts</source>
         <translation>Modelli</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="268"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="265"/>
         <source>Type here to test your keyboard</source>
         <translation>Digita qui per provare la tastiera</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="183"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="180"/>
         <source>Variants</source>
         <translation>Varianti</translation>
     </message>
 </context>
 <context>
-    <name>layout</name>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="32"/>
-        <source>Region: </source>
-        <translation>Regione:</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="43"/>
-        <source>Adjust Language</source>
-        <translation>Ridefinisci Lingua</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="53"/>
-        <source>Zone: </source>
-        <translation>Zona:</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="63"/>
-        <source>Adjust Locale</source>
-        <translation>Ridefinisci Locale</translation>
-    </message>
-</context>
-<context>
     <name>localeq</name>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="110"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="98"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="128"/>
         <source>Change</source>
         <translation>Modifica</translation>
     </message>
-</context>
-<context>
-    <name>localeq2</name>
     <message>
-        <location filename="../src/modules/localeq/localeq2.qml" line="40"/>
-        <source>Region: </source>
-        <translation>Regione:</translation>
+        <location filename="../src/modules/localeq/localeq.qml" line="164"/>
+        <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
+                        The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq2.qml" line="55"/>
-        <source>Zone: </source>
-        <translation>Zona:</translation>
+        <location filename="../src/modules/localeq/localeq.qml" line="235"/>
+        <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
+                            The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -4535,59 +4412,30 @@ Output:
     </message>
 </context>
 <context>
-    <name>test</name>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="26"/>
-        <source>&lt;h3&gt;Welcome to the KaOS &lt;quote&gt;2020.06&lt;/quote&gt; installer&lt;/h3&gt;
-            &lt;p&gt;This program will ask you some questions and set up KaOS on your computer.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="71"/>
-        <source>About</source>
-        <translation>Dettagli su</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="84"/>
-        <source>Known issues</source>
-        <translation>Problemi noti</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="95"/>
-        <source>Release notes</source>
-        <translation>Note di rilascio</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="106"/>
-        <source>Donate</source>
-        <translation>Donate</translation>
-    </message>
-</context>
-<context>
     <name>welcomeq</name>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="35"/>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="36"/>
         <source>&lt;h3&gt;Welcome to the %1 &lt;quote&gt;%2&lt;/quote&gt; installer&lt;/h3&gt;
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="79"/>
-        <source>Support</source>
-        <translation>Supporto</translation>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
+        <source>Select Language</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="90"/>
-        <source>Known issues</source>
-        <translation>Problemi noti</translation>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="194"/>
+        <source>Known Issues</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="101"/>
-        <source>Release notes</source>
-        <translation>Note di rilascio</translation>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="216"/>
+        <source>Release Notes</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="113"/>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="238"/>
         <source>Donate</source>
         <translation>Donate</translation>
     </message>

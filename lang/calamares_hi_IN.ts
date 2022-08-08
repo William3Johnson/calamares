@@ -324,32 +324,32 @@
 <context>
     <name>Calamares::ViewManager</name>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="404"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="397"/>
         <source>&amp;Back</source>
         <translation>वापस (&amp;B)</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="399"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="392"/>
         <source>&amp;Next</source>
         <translation>आगे (&amp;N)</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="429"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="422"/>
         <source>&amp;Cancel</source>
         <translation>रद्द करें (&amp;C)</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="388"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="381"/>
         <source>Cancel setup without changing the system.</source>
         <translation>सिस्टम में बदलाव किये बिना सेटअप रद्द करें।</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="389"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="382"/>
         <source>Cancel installation without changing the system.</source>
         <translation>सिस्टम में बदलाव किये बिना इंस्टॉल रद्द करें।</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="167"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="160"/>
         <source>Setup Failed</source>
         <translation>सेटअप विफल रहा</translation>
     </message>
@@ -377,69 +377,69 @@ Link copied to clipboard</source>
         <translation>अपलोड विफल रहा। इंटरनेट पर पेस्ट नहीं हो सका।</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="196"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="189"/>
         <source>Calamares Initialization Failed</source>
         <translation>Calamares का आरंभीकरण विफल रहा</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="197"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="190"/>
         <source>%1 can not be installed. Calamares was unable to load all of the configured modules. This is a problem with the way Calamares is being used by the distribution.</source>
         <translation>%1 इंस्टॉल नहीं किया जा सका। Calamares सभी विन्यस्त मॉड्यूल लोड करने में विफल रहा। यह आपके लिनक्स वितरण द्वारा Calamares के उपयोग से संबंधित एक समस्या है।</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="203"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="196"/>
         <source>&lt;br/&gt;The following modules could not be loaded:</source>
         <translation>&lt;br/&gt;निम्नलिखित मॉड्यूल लोड नहीं हो सकें :</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="317"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="310"/>
         <source>Continue with installation?</source>
         <translation>इंस्टॉल प्रक्रिया जारी रखें?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="319"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="312"/>
         <source>The %1 setup program is about to make changes to your disk in order to set up %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
         <translation>%2 सेटअप करने हेतु %1 सेटअप प्रोग्राम आपकी डिस्क में बदलाव करने वाला है।&lt;br/&gt;&lt;strong&gt;आप इन बदलावों को पूर्ववत नहीं कर पाएंगे।&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="325"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="318"/>
         <source>&amp;Set up now</source>
         <translation>अभी सेटअप करें (&amp;S)</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="383"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="376"/>
         <source>&amp;Set up</source>
         <translation>सेटअप करें (&amp;S)</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="383"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="376"/>
         <source>&amp;Install</source>
         <translation>इंस्टॉल करें (&amp;I)</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="385"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="378"/>
         <source>Setup is complete. Close the setup program.</source>
         <translation>सेटअप पूर्ण हुआ। सेटअप प्रोग्राम बंद कर दें।</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="502"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="495"/>
         <source>Cancel setup?</source>
         <translation>सेटअप रद्द करें?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="502"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="495"/>
         <source>Cancel installation?</source>
         <translation>इंस्टॉल रद्द करें?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="503"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="496"/>
         <source>Do you really want to cancel the current setup process?
 The setup program will quit and all changes will be lost.</source>
         <translation>क्या आप वाकई वर्तमान सेटअप प्रक्रिया रद्द करना चाहते हैं?
 सेटअप प्रोग्राम बंद हो जाएगा व सभी बदलाव नष्ट।</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="505"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="498"/>
         <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
         <translation>क्या आप वाकई वर्तमान इंस्टॉल प्रक्रिया रद्द करना चाहते हैं?
@@ -461,62 +461,42 @@ The installer will quit and all changes will be lost.</source>
         <translation>बंद करें (&amp;C)</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="96"/>
-        <source>About</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="97"/>
-        <source>Show information about Calamares</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="98"/>
-        <source>Debug</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="99"/>
-        <source>Show debug information</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="317"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="310"/>
         <source>Continue with setup?</source>
         <translation>सेटअप करना जारी रखें?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="322"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="315"/>
         <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
         <translation>%2 इंस्टॉल करने के लिए %1 इंस्टॉलर आपकी डिस्क में बदलाव करने वाला है।&lt;br/&gt;&lt;strong&gt;आप इन बदलावों को पूर्ववत नहीं कर पाएंगे।&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="325"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="318"/>
         <source>&amp;Install now</source>
         <translation>अभी इंस्टॉल करें (&amp;I)</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="333"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="326"/>
         <source>Go &amp;back</source>
         <translation>वापस जाएँ (&amp;b)</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="410"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="403"/>
         <source>&amp;Done</source>
         <translation>हो गया (&amp;D)</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="386"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="379"/>
         <source>The installation is complete. Close the installer.</source>
         <translation>इंस्टॉल पूर्ण हुआ।अब इंस्टॉलर को बंद करें।</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="170"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="163"/>
         <source>Error</source>
         <translation>त्रुटि</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="167"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="160"/>
         <source>Installation Failed</source>
         <translation>इंस्टॉल विफल रहा।</translation>
     </message>
@@ -2250,62 +2230,6 @@ The installer will quit and all changes will be lost.</source>
     </message>
 </context>
 <context>
-    <name>Offline2</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline2.qml" line="54"/>
-        <source>Timezone: %1</source>
-        <translation>समयक्षेत्र : %1</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline2.qml" line="69"/>
-        <source>Select a timezone. You can fine-tune Language and Locale settings below.</source>
-        <translation>समयक्षेत्र चुनें। भाषा व स्थानिकी हेतु निम्नलिखित सेटिंग्स उपयोग करें।</translation>
-    </message>
-</context>
-<context>
-    <name>Offline3</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="51"/>
-        <source>Select your preferred Region, or use the default one based on your current location.</source>
-        <translation>इच्छित क्षेत्र चुनें या फिर वर्तमान स्थान अनुरूप डिफ़ॉल्ट क्षेत्र उपयोग करें।</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="112"/>
-        <location filename="../src/modules/localeq/Offline3.qml" line="190"/>
-        <location filename="../src/modules/localeq/Offline3.qml" line="236"/>
-        <source>Timezone: %1</source>
-        <translation>समयक्षेत्र : %1</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="129"/>
-        <source>Select your preferred Zone within your Region.</source>
-        <translation>इच्छित क्षेत्र में भूभाग चुनें।</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="204"/>
-        <source>Zones</source>
-        <translation>भूभाग</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline3.qml" line="252"/>
-        <source>You can fine-tune Language and Locale settings below.</source>
-        <translation>भाषा व स्थानिकी हेतु निम्नलिखित सेटिंग्स उपयोग करें।</translation>
-    </message>
-</context>
-<context>
-    <name>Offline_orig</name>
-    <message>
-        <location filename="../src/modules/localeq/Offline_orig.qml" line="64"/>
-        <source>Timezone: %1</source>
-        <translation>समयक्षेत्र : %1</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/Offline_orig.qml" line="81"/>
-        <source>To be able to select a timezone, make sure you are connected to the internet. Restart the installer after connecting. You can fine-tune Language and Locale settings below.</source>
-        <translation>समयक्षेत्र चयन करने हेतु सुनिश्चित करें कि आप इंटरनेट से कनेक्ट हैं। कनेक्ट होने के बाद इंस्टॉलर को पुनः आरंभ करें। फिर आप नीचे दी गयी भाषा व स्थानिकी सेटिंग्स कर सकते हैं।</translation>
-    </message>
-</context>
-<context>
     <name>PWQ</name>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="51"/>
@@ -3282,25 +3206,6 @@ Output:
     </message>
 </context>
 <context>
-    <name>Requirements2</name>
-    <message>
-        <location filename="../src/modules/welcomeq/Requirements2.qml" line="60"/>
-        <source>&lt;p&gt;This computer does not satisfy some of the recommended requirements for setting up KaOS.&lt;br/&gt;
-        Setup can continue, but some features might be disabled.&lt;/p&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-</context>
-<context>
-    <name>Requirements_orig</name>
-    <message>
-        <location filename="../src/modules/welcomeq/Requirements_orig.qml" line="48"/>
-        <source>&lt;p&gt;This computer does not satisfy the minimum requirements for setting up %1.&lt;/p&gt;
-        &lt;p&gt;Setup cannot continue.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;यह कंप्यूटर %1 इंस्टॉल करने की न्यूनतम आवश्यकताओं को पूरा नहीं करता।&lt;br/&gt;
-        इंस्टॉल जारी नहीं रखा जा सकता।&lt;/p&gt;</translation>
-    </message>
-</context>
-<context>
     <name>ResizePartitionJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="41"/>
@@ -4118,25 +4023,59 @@ Output:
     </message>
 </context>
 <context>
+    <name>calamares-navigation</name>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="57"/>
+        <source>About</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="61"/>
+        <source>Info about Calamares</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="91"/>
+        <source>Debug</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="120"/>
+        <source>Back</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="152"/>
+        <source>Next</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="208"/>
+        <source>Cancel</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>calamares-sidebar</name>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="94"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="165"/>
         <source>Show debug information</source>
         <translation>डीबग संबंधी जानकारी दिखाएँ</translation>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="118"/>
         <location filename="../src/calamares/calamares-sidebar.qml" line="89"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="148"/>
         <source>About</source>
         <translation>बारे में</translation>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-sidebar.qml" line="122"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="149"/>
         <source>Show information about Calamares</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/calamares/calamares-sidebar.qml" line="115"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="163"/>
         <source>Debug</source>
         <translation type="unfinished"/>
     </message>
@@ -4199,119 +4138,52 @@ Output:
     </message>
 </context>
 <context>
-    <name>i18n</name>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="50"/>
-        <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h1&gt;भाषाएँ&lt;/h1&gt;&lt;/br&gt;
-                 सिस्टम स्थानिकी सेटिंग कमांड लाइन के कुछ उपयोक्ता अंतरफलक तत्वों की भाषा व अक्षर सेट पर असर डालती है।&lt;br/&gt;मौजूदा सेटिंग &lt;strong&gt;%1&lt;/strong&gt;है।</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="123"/>
-        <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h1&gt;स्थानिकी&lt;/h1&gt; &lt;/br&gt;
-                    सिस्टम स्थानिकी सेटिंग संख्या व दिनांक के प्रारूप को प्रभावित करती है। वर्तमान सेटिंग &lt;strong&gt;%1&lt;/strong&gt; है।</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18n.qml" line="189"/>
-        <source>Back</source>
-        <translation>वापस</translation>
-    </message>
-</context>
-<context>
-    <name>i18nw</name>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="50"/>
-        <source>&lt;h1&gt;Languages&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h1&gt;भाषाएँ&lt;/h1&gt;&lt;/br&gt;
-                 सिस्टम स्थानिकी सेटिंग कमांड लाइन के कुछ उपयोक्ता अंतरफलक तत्वों की भाषा व अक्षर सेट पर असर डालती है।&lt;br/&gt;मौजूदा सेटिंग &lt;strong&gt;%1&lt;/strong&gt;है।</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="124"/>
-        <source>&lt;h1&gt;Locales&lt;/h1&gt; &lt;/br&gt;
-                    The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h1&gt;स्थानिकी&lt;/h1&gt; &lt;/br&gt;
-                    सिस्टम स्थानिकी सेटिंग संख्या व दिनांक के प्रारूप को प्रभावित करती है। वर्तमान सेटिंग &lt;strong&gt;%1&lt;/strong&gt; है।</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/i18nw.qml" line="192"/>
-        <source>Back</source>
-        <translation>वापस</translation>
-    </message>
-</context>
-<context>
     <name>keyboardq</name>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="63"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
         <source>To activate keyboard preview, select a layout.</source>
         <translation>कुंजीपटल पूर्वावलोकन सक्रिय करने हेतु इच्छित अभिन्यास चुनें।</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="89"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="86"/>
         <source>Keyboard Model:</source>
         <translation>कुंजीपटल मॉडल :</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="259"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="256"/>
         <source>Layouts</source>
         <translation>अभिन्यास</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="268"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="265"/>
         <source>Type here to test your keyboard</source>
         <translation>अपना कुंजीपटल जाँचने के लिए यहाँ टाइप करें</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="183"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="180"/>
         <source>Variants</source>
         <translation>भिन्न रूप</translation>
     </message>
 </context>
 <context>
-    <name>layout</name>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="32"/>
-        <source>Region: </source>
-        <translation>क्षेत्र :</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="43"/>
-        <source>Adjust Language</source>
-        <translation>भाषा सेट करें</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="53"/>
-        <source>Zone: </source>
-        <translation>भूभाग :</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/localeq/layout.qml" line="63"/>
-        <source>Adjust Locale</source>
-        <translation>स्थानिकी सेट करें</translation>
-    </message>
-</context>
-<context>
     <name>localeq</name>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="110"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="98"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="128"/>
         <source>Change</source>
         <translation>बदलें</translation>
     </message>
-</context>
-<context>
-    <name>localeq2</name>
     <message>
-        <location filename="../src/modules/localeq/localeq2.qml" line="40"/>
-        <source>Region: </source>
-        <translation>क्षेत्र :</translation>
+        <location filename="../src/modules/localeq/localeq.qml" line="164"/>
+        <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
+                        The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq2.qml" line="55"/>
-        <source>Zone: </source>
-        <translation>भूभाग :</translation>
+        <location filename="../src/modules/localeq/localeq.qml" line="235"/>
+        <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
+                            The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -4580,61 +4452,31 @@ Output:
     </message>
 </context>
 <context>
-    <name>test</name>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="26"/>
-        <source>&lt;h3&gt;Welcome to the KaOS &lt;quote&gt;2020.06&lt;/quote&gt; installer&lt;/h3&gt;
-            &lt;p&gt;This program will ask you some questions and set up KaOS on your computer.&lt;/p&gt;</source>
-        <translation>&lt;h3&gt;कैओस &lt;quote&gt;2020.06&lt;/quote&gt; इंस्टॉलर में आपका स्वागत है&lt;/h3&gt;
-            &lt;p&gt;यह प्रोग्राम प्रश्नावली के माध्यम से आपके कंप्यूटर पर कैओस सेट करेगा।&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="71"/>
-        <source>About</source>
-        <translation>बारे में</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="84"/>
-        <source>Known issues</source>
-        <translation>ज्ञात समस्याएँ</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="95"/>
-        <source>Release notes</source>
-        <translation>प्रकाशन नोट्स</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/test.qml" line="106"/>
-        <source>Donate</source>
-        <translation>दान करें</translation>
-    </message>
-</context>
-<context>
     <name>welcomeq</name>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="35"/>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="36"/>
         <source>&lt;h3&gt;Welcome to the %1 &lt;quote&gt;%2&lt;/quote&gt; installer&lt;/h3&gt;
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
         <translation>&lt;h3&gt;%1 &lt;quote&gt;%2&lt;/quote&gt;इंस्टॉलर में आपका स्वागत है&lt;/h3&gt;
             &lt;p&gt;यह प्रोग्राम प्रश्नावली के माध्यम से आपके कंप्यूटर पर %1 को सेट करेगा।&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="79"/>
-        <source>Support</source>
-        <translation>सहायता</translation>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
+        <source>Select Language</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="90"/>
-        <source>Known issues</source>
-        <translation>ज्ञात समस्याएँ</translation>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="194"/>
+        <source>Known Issues</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="101"/>
-        <source>Release notes</source>
-        <translation>रिलीज़ नोट्स</translation>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="216"/>
+        <source>Release Notes</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="113"/>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="238"/>
         <source>Donate</source>
         <translation>दान करें</translation>
     </message>
