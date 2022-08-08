@@ -71,6 +71,7 @@ Page {
         anchors.bottom: parent.bottom
         anchors.bottomMargin : 20
         width: parent.width
+        spacing: 50
 
         GridLayout {
             rowSpacing: Kirigami.Units.largeSpacing
