@@ -54,7 +54,7 @@ Page
 
         Drawer {
             id: drawer
-            width: 0.33 * welcome.width
+            width: 0.4 * welcome.width
             height: welcome.height
             edge: Qt.RightEdge
 
