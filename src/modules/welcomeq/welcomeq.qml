@@ -86,7 +86,7 @@ Page
                             width: parent.width
                             height: 24
                             color: highlighted ? "#eff0f1" : "#1F1F1F"
-                            text: model.label //+ "-" + model.englishLabel
+                            text: model.label + ' - <font size="-1" color="#808080">' + model.englishLabel + '</font>'
                             background: Rectangle {
 
                                 color: highlighted || hovered ? "#3498DB" : "#ffffff"
@@ -116,7 +116,7 @@ Page
             anchors.bottomMargin: parent.height / 12
             width: parent.width / 2
             height: 36
-            color: "#f5f5f5"
+            color: "transparent"
 
             Text {
                 id: languageText
