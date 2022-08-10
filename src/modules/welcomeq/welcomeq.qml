@@ -124,7 +124,7 @@ Page
                 horizontalAlignment: Text.AlignHCenter
                 anchors.centerIn: parent
                 leftPadding: 5
-                text: qsTr("Current Language: <b>"+ list1.currentItem.currentLanguage.label + "</b>")
+                text: qsTr("Current Language: ") + "<b>" + list1.currentItem.currentLanguage.label + "</b>"
             }
             Image {
                 source: "img/locale.svg"

@@ -4166,20 +4166,20 @@ Output:
 <context>
     <name>localeq</name>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="98"/>
-        <location filename="../src/modules/localeq/localeq.qml" line="128"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="99"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="129"/>
         <source>Change</source>
         <translation>Wijzig</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="164"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="165"/>
         <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
                         The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>&lt;h3&gt;Talen&lt;/h3&gt; &lt;/br&gt;
                         T De instelling systeem locale heeft invloed op de taal en tekenset voor sommige command line interface-elementen. De huidige instelling is &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="235"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="236"/>
         <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
                             The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>&lt;h3&gt;Landinstellingen&lt;/h3&gt; &lt;/br&gt;
@@ -4470,6 +4470,11 @@ Output:
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
         <translation>&lt;h3&gt;Welkom bij het %1 &lt;quote&gt;%2&lt;/quote&gt; installeerprogramma&lt;/h3&gt;
             &lt;p&gt;Dit programma zal u enkele vragen stellen en %1 op uw computer installeren.&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="127"/>
+        <source>Current Language: </source>
+        <translation>Huidige Taal: </translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
