@@ -74,7 +74,7 @@ Page
                     currentIndex: config.localeIndex
                     delegate: ItemDelegate {
 
-                        property variant myData: model
+                        property variant currentLanguage: model
                         hoverEnabled: true
                         width: parent.width
                         implicitHeight: 24
@@ -124,7 +124,7 @@ Page
                 horizontalAlignment: Text.AlignHCenter
                 anchors.centerIn: parent
                 leftPadding: 5
-                text: qsTr("Current Language: <b>"+ list1.currentItem.myData.label + "</b>")
+                text: qsTr("Current Language: <b>"+ list1.currentItem.currentLanguage.label + "</b>")
             }
             Image {
                 source: "img/locale.svg"
