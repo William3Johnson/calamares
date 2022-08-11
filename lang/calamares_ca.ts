@@ -4476,7 +4476,7 @@ Consulteu els Acords de llicència d’usuari final (EULAs).&lt;/p&gt;</translat
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="127"/>
         <source>Current Language: </source>
-        <translation>Llengua actual:</translation>
+        <translation>Llengua actual: </translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>

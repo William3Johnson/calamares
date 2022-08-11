@@ -4471,7 +4471,7 @@ Veuillez consuter les contrats de licence utilisateur finaux.&lt;/p&gt;</transla
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="127"/>
         <source>Current Language: </source>
-        <translation>Langue actuelle :</translation>
+        <translation>Langue actuelle : </translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
