@@ -4168,20 +4168,20 @@ La configuració pot continuar, però algunes característiques podrien estar in
 <context>
     <name>localeq</name>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="98"/>
-        <location filename="../src/modules/localeq/localeq.qml" line="128"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="99"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="129"/>
         <source>Change</source>
         <translation>Canvia</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="164"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="165"/>
         <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
                         The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>&lt;h3&gt;Llengües&lt;/h3&gt; &lt;/br&gt;
                     La configuració de la llengua del sistema afecta la llengua i el conjunt de caràcters per a alguns elements d&apos;interfície d&apos;usuari de línia d&apos;ordres. La configuració actual és &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="235"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="236"/>
         <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
                             The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>&lt;h3&gt;Configuració local&lt;/h3&gt; &lt;/br&gt;
@@ -4472,6 +4472,11 @@ Consulteu els Acords de llicència d’usuari final (EULAs).&lt;/p&gt;</translat
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
         <translation>&lt;h3&gt;Benvingut/da a l&apos;instal·lador &lt;quote&gt;%2&lt;/quote&gt; per a %1 &lt;/h3&gt;
             &lt;p&gt;Aquest programa us farà algunes preguntes i configurarà %1 a l&apos;ordinador.&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="127"/>
+        <source>Current Language: </source>
+        <translation>Llengua actual:</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>

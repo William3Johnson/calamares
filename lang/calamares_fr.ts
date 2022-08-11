@@ -4162,20 +4162,20 @@ Vous pouvez maintenant redémarrer votre système.</translation>
 <context>
     <name>localeq</name>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="98"/>
-        <location filename="../src/modules/localeq/localeq.qml" line="128"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="99"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="129"/>
         <source>Change</source>
         <translation>Modifier</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="164"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="165"/>
         <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
                         The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>&lt;h3&gt;Langues&lt;/h3&gt; &lt;/br&gt;
 Les paramètres régionaux du système affectent la langue et le jeu de caractères de certains éléments de l’interface utilisateur de ligne de commande. La configuration actuelle est &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="235"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="236"/>
         <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
                             The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>&lt;h3&gt;Paramètres régionaux&lt;/h3&gt; &lt;/br&gt;
@@ -4467,6 +4467,11 @@ Veuillez consuter les contrats de licence utilisateur finaux.&lt;/p&gt;</transla
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
         <translation>&lt;h3&gt;Bienvenue sur le programme d’installation &lt;quote&gt;%2&lt;/quote&gt;&lt;/h3&gt;
 &lt;p&gt;Ce programme va vous poser quelques questions et configurer %1 sur votre ordinateur.&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="127"/>
+        <source>Current Language: </source>
+        <translation>Langue actuelle :</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
