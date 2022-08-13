@@ -3622,27 +3622,27 @@ Output:
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="70"/>
         <source>Virtual Keyboard</source>
-        <translation type="unfinished"/>
+        <translation>वर्चुअल कुंजीपटल</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="87"/>
         <source>What is your name?</source>
-        <translation type="unfinished"/>
+        <translation>आपका नाम क्या है?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="96"/>
         <source>Your Full Name</source>
-        <translation type="unfinished"/>
+        <translation>आपका पूर्ण नाम</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="113"/>
         <source>What name do you want to use to log in?</source>
-        <translation type="unfinished"/>
+        <translation>आप लॉगिन हेतु कौन सा नाम उपयोग करना चाहते हैं?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="122"/>
         <source>Login Name</source>
-        <translation type="unfinished"/>
+        <translation>लॉगिन नाम</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="153"/>
@@ -3657,17 +3657,17 @@ Output:
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="175"/>
         <source>root is not allowed as username.</source>
-        <translation type="unfinished"/>
+        <translation>उपयोक्ता नाम हेतु root स्वीकार्य नहीं है।</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="184"/>
         <source>What is the name of this computer?</source>
-        <translation type="unfinished"/>
+        <translation>इस कंप्यूटर का क्या नाम है?</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="192"/>
         <source>Computer Name</source>
-        <translation type="unfinished"/>
+        <translation>कंप्यूटर का नाम</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="219"/>
@@ -3692,12 +3692,12 @@ Output:
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="265"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>कूटशब्द</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="284"/>
         <source>Repeat Password</source>
-        <translation type="unfinished"/>
+        <translation>कूटशब्द पुनः</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="311"/>
@@ -3722,12 +3722,12 @@ Output:
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="379"/>
         <source>Root Password</source>
-        <translation type="unfinished"/>
+        <translation>रूट कूटशब्द</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="397"/>
         <source>Repeat Root Password</source>
-        <translation type="unfinished"/>
+        <translation>रूट कूटशब्द पुनः</translation>
     </message>
     <message>
         <location filename="../src/modules/usersq/UserInput.qml" line="424"/>
@@ -3981,7 +3981,7 @@ Output:
     <message>
         <location filename="../src/branding/kaos_branding/about.qml" line="23"/>
         <source>About Calamares</source>
-        <translation type="unfinished"/>
+        <translation>Calamares के बारे में</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/about.qml" line="48"/>
@@ -4027,7 +4027,7 @@ Output:
     <message>
         <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="57"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>बारे में</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="61"/>
@@ -4140,47 +4140,47 @@ Output:
 <context>
     <name>keyboardq</name>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="61"/>
         <source>To activate keyboard preview, select a layout.</source>
         <translation>कुंजीपटल पूर्वावलोकन सक्रिय करने हेतु इच्छित अभिन्यास चुनें।</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="86"/>
-        <source>Keyboard Model:</source>
-        <translation>कुंजीपटल मॉडल :</translation>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="144"/>
+        <source>&lt;b&gt;Keyboard Model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="256"/>
-        <source>Layouts</source>
-        <translation>अभिन्यास</translation>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="185"/>
+        <source>Layout</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="265"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="258"/>
+        <source>Variant</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="311"/>
         <source>Type here to test your keyboard</source>
         <translation>अपना कुंजीपटल जाँचने के लिए यहाँ टाइप करें</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="180"/>
-        <source>Variants</source>
-        <translation>भिन्न रूप</translation>
     </message>
 </context>
 <context>
     <name>localeq</name>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="98"/>
-        <location filename="../src/modules/localeq/localeq.qml" line="128"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="99"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="129"/>
         <source>Change</source>
         <translation>बदलें</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="164"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="165"/>
         <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
                         The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="235"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="236"/>
         <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
                             The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation type="unfinished"/>
@@ -4459,6 +4459,11 @@ Output:
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
         <translation>&lt;h3&gt;%1 &lt;quote&gt;%2&lt;/quote&gt;इंस्टॉलर में आपका स्वागत है&lt;/h3&gt;
             &lt;p&gt;यह प्रोग्राम प्रश्नावली के माध्यम से आपके कंप्यूटर पर %1 को सेट करेगा।&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="127"/>
+        <source>Current Language:&amp;nbsp;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>

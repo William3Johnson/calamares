@@ -182,7 +182,7 @@ Item {
                     z: 2
                     color:backgroundColor
                     Text {
-                        text: "Layout"
+                        text: qsTr("Layout")
                         anchors.centerIn: parent
                         color: textColor
                         font.bold: true
@@ -255,7 +255,7 @@ Item {
                     z: 2
                     color:backgroundColor
                     Text {
-                        text: "Variant"
+                        text: qsTr("Variant")
                         anchors.centerIn: parent
                         color: textColor
                         font.bold: true

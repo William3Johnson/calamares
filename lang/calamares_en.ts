@@ -4147,28 +4147,28 @@ Output:
 <context>
     <name>keyboardq</name>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="61"/>
         <source>To activate keyboard preview, select a layout.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="86"/>
-        <source>Keyboard Model:</source>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="144"/>
+        <source>&lt;b&gt;Keyboard Model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="256"/>
-        <source>Layouts</source>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="185"/>
+        <source>Layout</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="265"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="258"/>
+        <source>Variant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="311"/>
         <source>Type here to test your keyboard</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="180"/>
-        <source>Variants</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4443,7 +4443,7 @@ Output:
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="127"/>
-        <source>Current Language: </source>
+        <source>Current Language:&amp;nbsp;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

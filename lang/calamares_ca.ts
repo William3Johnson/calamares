@@ -4140,29 +4140,29 @@ La configuració pot continuar, però algunes característiques podrien estar in
 <context>
     <name>keyboardq</name>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="61"/>
         <source>To activate keyboard preview, select a layout.</source>
         <translation>Per activar la previsualització del teclat, seleccioneu una disposició.</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="86"/>
-        <source>Keyboard Model:</source>
-        <translation>Model del teclat:</translation>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="144"/>
+        <source>&lt;b&gt;Keyboard Model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="256"/>
-        <source>Layouts</source>
-        <translation>Disposions</translation>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="185"/>
+        <source>Layout</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="265"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="258"/>
+        <source>Variant</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="311"/>
         <source>Type here to test your keyboard</source>
         <translation>Escriviu aquí per provar el teclat.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="180"/>
-        <source>Variants</source>
-        <translation>Variants</translation>
     </message>
 </context>
 <context>
@@ -4475,8 +4475,8 @@ Consulteu els Acords de llicència d’usuari final (EULAs).&lt;/p&gt;</translat
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="127"/>
-        <source>Current Language: </source>
-        <translation>Llengua actual: </translation>
+        <source>Current Language:&amp;nbsp;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>

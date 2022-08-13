@@ -4128,47 +4128,47 @@ Output:
 <context>
     <name>keyboardq</name>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="61"/>
         <source>To activate keyboard preview, select a layout.</source>
         <translation>Vælg et layout for at aktivere tastaturvisning.</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="86"/>
-        <source>Keyboard Model:</source>
-        <translation>Tastaturmodel:</translation>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="144"/>
+        <source>&lt;b&gt;Keyboard Model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="256"/>
-        <source>Layouts</source>
-        <translation>Layouts</translation>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="185"/>
+        <source>Layout</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="265"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="258"/>
+        <source>Variant</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="311"/>
         <source>Type here to test your keyboard</source>
         <translation>Skriv her for at teste dit tastatur</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="180"/>
-        <source>Variants</source>
-        <translation>Varianter</translation>
     </message>
 </context>
 <context>
     <name>localeq</name>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="98"/>
-        <location filename="../src/modules/localeq/localeq.qml" line="128"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="99"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="129"/>
         <source>Change</source>
         <translation>Skift</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="164"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="165"/>
         <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
                         The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="235"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="236"/>
         <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
                             The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation type="unfinished"/>
@@ -4447,6 +4447,11 @@ Output:
             &lt;p&gt;This program will ask you some questions and set up %1 on your computer.&lt;/p&gt;</source>
         <translation>&lt;h3&gt;Velkommen til  %1 &lt;quote&gt;%2&lt;/quote&gt; installationsprogrammet&lt;/h3&gt;
             &lt;p&gt;Dette program stiller dig nogle spørgsmål og konfigurerer %1 på din computer.&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="127"/>
+        <source>Current Language:&amp;nbsp;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>

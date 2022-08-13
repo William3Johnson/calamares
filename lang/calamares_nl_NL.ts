@@ -4138,29 +4138,29 @@ Output:
 <context>
     <name>keyboardq</name>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="60"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="61"/>
         <source>To activate keyboard preview, select a layout.</source>
         <translation>Selecteer een lay-out om toetsenbordvoorbeeld te activeren.</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="86"/>
-        <source>Keyboard Model:</source>
-        <translation>Toetsenbord Model:</translation>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="144"/>
+        <source>&lt;b&gt;Keyboard Model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Toetsenbord Model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="256"/>
-        <source>Layouts</source>
-        <translation>Indelingen</translation>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="185"/>
+        <source>Layout</source>
+        <translation>Indeling</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="265"/>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="258"/>
+        <source>Variant</source>
+        <translation>Variant</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/keyboardq/keyboardq.qml" line="311"/>
         <source>Type here to test your keyboard</source>
         <translation>Typ hier om uw toetsenbord te testen</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/keyboardq/keyboardq.qml" line="180"/>
-        <source>Variants</source>
-        <translation>Varianten</translation>
     </message>
 </context>
 <context>
@@ -4473,8 +4473,8 @@ Output:
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="127"/>
-        <source>Current Language: </source>
-        <translation>Huidige Taal: </translation>
+        <source>Current Language:&amp;nbsp;</source>
+        <translation>Huidige Taal:&amp;nbsp;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
