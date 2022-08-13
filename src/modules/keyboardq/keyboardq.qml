@@ -334,7 +334,7 @@ Item {
                 afganiXml.includes(keyIndex) ? "afgani.xml" :
                 scanXml.includes(keyIndex) ? "scan.xml" :
                 genericXml.includes(keyIndex) ? "generic.xml" :
-                genericQzXml.includes(keyIndex) ? "genericQz.xml" :
+                genericQzXml.includes(keyIndex) ? "generic_qz.xml" :
                 arXml.includes(keyIndex) ? "ar.xml" :
                 deXml.includes(keyIndex) ? "de.xml" :
                 enXml.includes(keyIndex) ? "en.xml" :
