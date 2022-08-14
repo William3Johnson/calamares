@@ -4141,17 +4141,17 @@ Vous pouvez maintenant redémarrer votre système.</translation>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="144"/>
         <source>&lt;b&gt;Keyboard Model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Modèle de clavier :&amp;nbsp;&amp;nbsp;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="185"/>
         <source>Layout</source>
-        <translation type="unfinished"/>
+        <translation>Agencement</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="258"/>
         <source>Variant</source>
-        <translation type="unfinished"/>
+        <translation>Variante</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="311"/>
@@ -4471,7 +4471,7 @@ Veuillez consuter les contrats de licence utilisateur finaux.&lt;/p&gt;</transla
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="127"/>
         <source>Current Language:&amp;nbsp;</source>
-        <translation type="unfinished"/>
+        <translation>Langue actuelle :&amp;nbsp;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
