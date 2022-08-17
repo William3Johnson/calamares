@@ -4147,17 +4147,17 @@ La configuració pot continuar, però algunes característiques podrien estar in
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="144"/>
         <source>&lt;b&gt;Keyboard Model:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Model de teclat:&amp;nbsp;&amp;nbsp;&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="185"/>
         <source>Layout</source>
-        <translation type="unfinished"/>
+        <translation>Disposició</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="258"/>
         <source>Variant</source>
-        <translation type="unfinished"/>
+        <translation>Variant</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="311"/>
@@ -4476,7 +4476,7 @@ Consulteu els Acords de llicència d’usuari final (EULAs).&lt;/p&gt;</translat
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="127"/>
         <source>Current Language:&amp;nbsp;</source>
-        <translation type="unfinished"/>
+        <translation>Llengua actual:&amp;nbsp;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
