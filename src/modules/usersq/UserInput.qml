@@ -38,9 +38,45 @@ Item {
     width: parent.width
     height: parent.height
 
+    Label {
+        id: header
+        z: 999
+        width: parent.width
+        height: 80
+        horizontalAlignment: Qt.AlignHCenter
+        color: headerTextColor
+        background: Rectangle {
+            color: Kirigami.Theme.backgroundColor
+        }
+        font.weight: Font.Medium
+        font.pointSize: 12
+        text: qsTr("Pick your user name and credentials to login and perform admin tasks")
+    }
+
+    QQC2.Button {
+        id: virtualKeyboardButton
+        z: 999
+        anchors.top: parent.top
+        anchors.right: parent.right
+        anchors.margins: 10
+        icon.width: 32
+        icon.height: 32
+        ToolTip.delay: 500
+        ToolTip.timeout: 5000
+        ToolTip.visible: hovered
+        ToolTip.text: qsTr("Virtual Keyboard")
+        icon.name: inputPanel.active ? "input-keyboard-virtual-on" : "input-keyboard-virtual-off"
+        onClicked: {
+            inputPanel.active = !inputPanel.active
+            _userNameField.focus = true
+        }
+    }
+
     Flickable {
         id: scroll
-        anchors.fill: parent
+        width: parent.width
+        height: parent.height
+        topMargin: 90
         contentHeight: 800
 
         ScrollBar.vertical: ScrollBar {
@@ -58,39 +94,9 @@ Item {
             duration: 350
         }
 
-        Label {
-            id: header
-            width: parent.width
-            height: 80
-            horizontalAlignment: Qt.AlignHCenter
-            color: headerTextColor
-            font.weight: Font.Medium
-            font.pointSize: 12
-            text: qsTr("Pick your user name and credentials to login and perform admin tasks")
-        }
-
-        QQC2.Button {
-            id: virtualKeyboardButton
-            anchors.top: parent.top
-            anchors.right: parent.right
-            anchors.margins: 10
-            icon.width: 32
-            icon.height: 32
-            ToolTip.delay: 500
-            ToolTip.timeout: 5000
-            ToolTip.visible: hovered
-            ToolTip.text: qsTr("Virtual Keyboard")
-            icon.name: inputPanel.active ? "input-keyboard-virtual-on" : "input-keyboard-virtual-off"
-            onClicked: {
-                inputPanel.active = !inputPanel.active
-                _userNameField.focus = true
-            }
-        }
-
         ColumnLayout {
             id: _formLayout
             width: parent.width / 1.1
-            anchors.top: header.bottom
             spacing: Kirigami.Units.smallSpacing
             anchors.horizontalCenter: parent.horizontalCenter
 
