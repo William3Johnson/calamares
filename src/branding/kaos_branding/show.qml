@@ -1,175 +1,137 @@
-/* === This file is part of Calamares - <https://github.com/calamares> ===
+/* === This file is part of Calamares - <https://calamares.io> ===
  *
- *   Copyright 2015, Teo Mrnjavac <teo@kde.org>
- *   Copyright 2015-2018, Anke Boersma <demm@kaosx.us>
+ *   SPDX-FileCopyrightText: 2015 - 2022 Anke Boersma <demm@kaosx.us>
+ *   SPDX-FileCopyrightText: 2015, Teo Mrnjavac <teo@kde.org>
+ *   SPDX-FileCopyrightText: 2022 Artyom Grinyov (LordTermor)
+ *   SPDX-License-Identifier: GPL-3.0-or-later
  *
- *   Calamares is free software: you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation, either version 3 of the License, or
- *   (at your option) any later version.
+ *   Calamares is Free Software: see the License-Identifier above.
  *
- *   Calamares is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import QtQuick 2.0;
-import calamares.slideshow 1.0;
+import QtQuick 2.15;
+//import calamares.slideshow 1.0;
 
-Presentation
-{
-    id: presentation
+Item {
+    id: root
+
+    function onActivate(){
+        console.log("Slideshow) activated");
+        timer.restart();
+        slider.reset();
+        img.reset();
+    }
+
+    function onLeave(){
+        console.log("Slideshow) deactivated");
+    }
+
+    width: 940
+    height: 600
 
     Timer {
-        interval: 5000
-        running: false
+        id: timer
+        interval: 10000
+        running: true
         repeat: true
-        onTriggered: presentation.goToNextSlide()
+        onTriggered: slider.currentSlideIndex++,img.currentSlideIndex++
     }
 
-    Slide {
+    MouseArea {
         anchors.fill: parent
+        onClicked: {
+            timer.restart();
+            slider.currentSlideIndex++;
+            img.currentSlideIndex++;
+        }
+    }
 
+    Item {
+        anchors.fill: parent
         Image {
             id: background
-            source: "1.svg"
-            anchors.fill: parent
-
-            Text {
-                anchors.centerIn: parent
-                anchors.verticalCenterOffset: 0
-                anchors.horizontalCenterOffset: -125
-                font.pixelSize: parent.width *.015
-                color: 'white'
-                text: qsTr("Here the actual install of KaOS will start.<br/>"+
-                    "Use the left <b>mouse button</b> to go to the next slide, right for previous.<br/>"+
-                    "After creating your chosen disk setup in the first 10 % <br/>"+
-                    "the full copying of the ISO will take the longest of this install phase <br/>"+
-                    "and will run until approximately 30%.<br/>")
-                wrapMode: Text.WordWrap
-                width: 500
-                horizontalAlignment: Text.AlignLeft
+            anchors {
+                fill: parent
+                margins: -10
+                bottomMargin: 0
             }
+
+            source: "background.jpg"
+            sourceSize.width: width
+            sourceSize.height: height
         }
+
     }
 
-    Slide {
-        anchors.fill: parent
+    Slider {
+        id: slider
+        height: 50
 
-        Image {
-            id: background1
-            source: "2.svg"
-            anchors.fill: parent
-
-            Text {
-                anchors.centerIn: parent
-                anchors.verticalCenterOffset: 0
-                anchors.horizontalCenterOffset: 250
-                font.pixelSize: parent.width *.015
-                color: 'white'
-                text: qsTr("After the ISO is copied some 25 post-install modules will run.<br/>"+
-                    "This includes setting user specific options, <br/>"+
-                    "removing Live Session only packages<br/>"+
-                    "and adjusting hardware setup.<br/>")
-                wrapMode: Text.WordWrap
-                width: 450
-                horizontalAlignment: Text.AlignLeft
+        slides: [
+            Dia {
+                title: qsTr("installation")
+                body: qsTr("After creating your chosen disk setup in the first 10 % the full copying of the ISO will take the longest of this install phase and will run until approximately 45%.")
+            },
+            Dia {
+                title: qsTr("modules")
+                body: qsTr("Once the ISO is copied some 25 post-install modules will run. This includes setting user specific options, removing Live Session only packages and adjusting hardware setup.")
+            },
+            Dia {
+                title: qsTr("office suites")
+                body: qsTr("The default Office Suite is LibreOffice.")
+                footer: qsTr("Calligra is available in the repositories")
+            },
+            Dia {
+                title: qsTr("Package Management")
+                body: qsTr("For package management Octopi is the GUI application.")
+                footer: qsTr("Pacman is the cli application.")
+            },
+            Dia {
+                title: qsTr("internet")
+                body: qsTr("Qt/KDE specific internet applications include the Falkon web-browser, KDE Connect for device Synchronization, Kaidan for chat  and NeoChat, the Matrix client.")
+            },
+            Dia {
+                title: qsTr("enjoy")
+                body: qsTr("May using KaOS be a pleasant experience for you.")
+                footer: qsTr("Don't hesitate to give your opinion about KaOS in the Forum")
             }
+
+        ]
+        anchors {
+            centerIn: parent
+            horizontalCenterOffset: 50
+            verticalCenterOffset: 10
         }
     }
+    Slider {
+        id: img
+        height: 50
 
-    Slide {
-        anchors.fill: parent
-
-        Image {
-            id: background2
-            source: "3.svg"
-            anchors.fill: parent
-
-            Text {
-                anchors.centerIn: parent
-                anchors.verticalCenterOffset: 0
-                anchors.horizontalCenterOffset: -100
-                font.pixelSize: parent.width *.015
-                color: 'white'
-                text: qsTr("The default Office Suite is LibreOffice.<br/>"+
-                    "Calligra is available in the repositories. <br/>")
-                wrapMode: Text.WordWrap
-                width: 450
-                horizontalAlignment: Text.AlignLeft
+        slides: [
+            Dia {
+                image: "harddisk"
+            },
+            Dia {
+                image: "motherboard"
+            },
+            Dia {
+                image: "libreoffice"
+            },
+            Dia {
+                image: "konqi-system"
+            },
+            Dia {
+                image: "internet"
+            },
+            Dia {
+                image: "konqi"
             }
-        }
-    }
-
-    Slide {
-        anchors.fill: parent
-
-        Image {
-            id: background3
-            source: "4.svg"
-            anchors.fill: parent
-
-            Text {
-                anchors.centerIn: parent
-                anchors.verticalCenterOffset: 0
-                anchors.horizontalCenterOffset: 250
-                font.pixelSize: parent.width *.015
-                color: 'white'
-                text: qsTr("Qt/KDE specific internet applications include the <br/>"+
-                    "Falkon web-browser and kde-telepathy for <br/>"+
-                    "chat and Instant Messaging. <br/>")
-                wrapMode: Text.WordWrap
-                width: 450
-                horizontalAlignment: Text.AlignLeft
-            }
-        }
-    }
-
-    Slide {
-        anchors.fill: parent
-
-        Image {
-            id: background4
-            source: "5.svg"
-            anchors.fill: parent
-
-            Text {
-                anchors.centerIn: parent
-                anchors.verticalCenterOffset: 0
-                anchors.horizontalCenterOffset: -200
-                font.pixelSize: parent.width *.015
-                color: 'white'
-                text: qsTr("For package management Octopi is the GUI application.<br/>")
-                wrapMode: Text.WordWrap
-                width: 450
-                horizontalAlignment: Text.Center
-            }
-        }
-    }
-
-    Slide {
-        anchors.fill: parent
-
-        Image {
-            id: background5
-            source: "6.svg"
-            anchors.fill: parent
-
-            Text {
-                anchors.centerIn: parent
-                anchors.verticalCenterOffset: 0
-                anchors.horizontalCenterOffset: 250
-                font.pixelSize: parent.width *.015
-                color: 'white'
-                text: qsTr("May using KaOS be a pleasant experience for you.")
-                wrapMode: Text.WordWrap
-                width: 450
-                horizontalAlignment: Text.Center
-            }
+        ]
+        anchors {
+            centerIn: parent
+            horizontalCenterOffset: -400
+            verticalCenterOffset: -100
         }
     }
 }
+
