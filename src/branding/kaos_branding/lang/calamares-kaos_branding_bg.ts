@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ro_RO">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="bg">
 <context>
     <name>show</name>
     <message>
@@ -69,7 +69,7 @@
     <message>
         <location filename="../show.qml" line="95"/>
         <source>May using KaOS be a pleasant experience for you.</source>
-        <translation>Fie ca spiritul KaOS-ului să vă aducă o experiență plăcută în utilizare.</translation>
+        <translation>Нека използването на KaOS да бъде приятно преживяване за вас.</translation>
     </message>
     <message>
         <location filename="../show.qml" line="96"/>
