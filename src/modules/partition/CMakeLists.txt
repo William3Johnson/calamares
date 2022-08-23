@@ -18,27 +18,27 @@
 # modules since the partitions on disk won't match GS, but it can be
 # useful for debugging simulated installations that don't need to
 # mount the target filesystems.
-option( DEBUG_PARTITION_UNSAFE "Allow unsafe partitioning choices." OFF )
-option( DEBUG_PARTITION_BAIL_OUT "Unsafe partitioning will error out on exec." ON )
-option( DEBUG_PARTITION_SKIP "Don't actually do any partitioning." OFF)
+option(DEBUG_PARTITION_UNSAFE "Allow unsafe partitioning choices." OFF)
+option(DEBUG_PARTITION_BAIL_OUT "Unsafe partitioning will error out on exec." ON)
+option(DEBUG_PARTITION_SKIP "Don't actually do any partitioning." OFF)
 
 # This is very chatty, useful mostly if you don't know what KPMCore offers.
 option(DEBUG_FILESYSTEMS "Log all available Filesystems from KPMCore." OFF)
 
 include_directories(${CMAKE_SOURCE_DIR}) # For 3rdparty
 
-set( _partition_defs )
-if( DEBUG_PARTITION_UNSAFE )
-    if( DEBUG_PARTITION_BAIL_OUT )
-        list( APPEND _partition_defs DEBUG_PARTITION_BAIL_OUT )
+set(_partition_defs)
+if(DEBUG_PARTITION_UNSAFE)
+    if(DEBUG_PARTITION_BAIL_OUT)
+        list(APPEND _partition_defs DEBUG_PARTITION_BAIL_OUT)
     endif()
     list(APPEND _partition_defs DEBUG_PARTITION_UNSAFE)
 endif()
 if(DEBUG_FILESYSTEMS)
     list(APPEND _partition_defs DEBUG_FILESYSTEMS)
 endif()
-if( DEBUG_PARTITION_SKIP )
-    list( APPEND _partition_defs DEBUG_PARTITION_SKIP )
+if(DEBUG_PARTITION_SKIP)
+    list(APPEND _partition_defs DEBUG_PARTITION_SKIP)
 endif()
 
 find_package(ECM ${ECM_VERSION} REQUIRED NO_MODULE)
@@ -49,9 +49,7 @@ find_package(KF5Config CONFIG)
 find_package(KF5I18n CONFIG)
 find_package(KF5WidgetsAddons CONFIG)
 
-if(KPMcore_FOUND AND Qt5DBus_FOUND AND KF5CoreAddons_FOUND AND KF5Config_FOUND)
-    list(APPEND _partition_defs ${KPMcore_API_DEFINITIONS})
-    include_directories(${KPMCORE_INCLUDE_DIR})
+if(KPMcore_FOUND)
     include_directories(${PROJECT_BINARY_DIR}/src/libcalamaresui)
 
     add_subdirectory(tests)
@@ -118,7 +116,7 @@ if(KPMcore_FOUND AND Qt5DBus_FOUND AND KF5CoreAddons_FOUND AND KF5Config_FOUND)
             gui/ReplaceWidget.ui
             gui/VolumeGroupBaseDialog.ui
         LINK_PRIVATE_LIBRARIES
-            kpmcore
+            calamares::kpmcore
             KF5::CoreAddons
         COMPILE_DEFINITIONS ${_partition_defs}
         SHARED_LIB

@@ -1063,8 +1063,7 @@ ChoicePage::updateActionChoicePreview( InstallChoice choice )
     case InstallChoice::Erase:
     case InstallChoice::Replace:
     {
-        m_encryptWidget->setVisible( m_enableEncryptionWidget && m_eraseFsTypesChoiceComboBox->currentText() != "zfs"
-                                     && choice == InstallChoice::Erase );
+        m_encryptWidget->setVisible( shouldShowEncryptWidget( choice ) );
         m_previewBeforeLabel->setText( tr( "Current:" ) );
         m_afterPartitionBarsView = new PartitionBarsView( m_previewAfterFrame );
         m_afterPartitionBarsView->setNestedPartitionsMode( mode );
@@ -1649,7 +1648,7 @@ ChoicePage::updateChoiceButtonsTr()
                         "You can create or resize partitions yourself.<br/>"
                         "Having a GPT partition table and <strong>fat32 512Mb /boot partition "
                         "is a must for UEFI installs</strong>,<br/>"
-                        "either use an existing without formatting or create one." ) );
+                        "either use an existing without formatting or create one."  ) );
     }
 }
 
@@ -1733,4 +1732,12 @@ ChoicePage::createBootloaderPanel()
     mainLayout->addStretch();
 
     return panelWidget;
+}
+
+bool ChoicePage::shouldShowEncryptWidget( Config::InstallChoice choice ) const
+{
+    // If there are any choices for FS, check it's not ZFS because that doesn't
+    // support the kind of encryption we enable here.
+    const bool suitableFS = m_eraseFsTypesChoiceComboBox ? m_eraseFsTypesChoiceComboBox->currentText() != "zfs" : true;
+    return (choice == InstallChoice::Erase) && m_enableEncryptionWidget && suitableFS;
 }

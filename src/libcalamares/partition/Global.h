@@ -10,7 +10,7 @@
 
 /*
  * This is the API for manipulating Global Storage keys related to
- * filesystems and partitions.
+ * filesystems and partitions. This does **not** depend on KPMcore.
  */
 
 #ifndef PARTITION_GLOBAL_H
@@ -18,12 +18,6 @@
 
 #include "DllMacro.h"
 #include "JobQueue.h"
-
-#ifdef WITH_KPMCORE4API
-#include "FileSystem.h"
-
-#include <kpmcore/fs/filesystem.h>
-#endif
 
 namespace CalamaresUtils
 {
@@ -78,29 +72,6 @@ isFilesystemUsedGS( const QString& filesystemType )
     return isFilesystemUsedGS( Calamares::JobQueue::instanceGlobalStorage(), filesystemType );
 }
 
-#ifdef WITH_KPMCORE4API
-/** @brief Mark a particular filesystem type as used (or not)
- *
- * See useFilesystemGS(const QString&, bool); this method uses the filesystem type
- * enumeration to pick the name.
- */
-inline void
-useFilesystemGS( FileSystem::Type filesystem, bool used )
-{
-    useFilesystemGS( untranslatedFS( filesystem ), used );
-}
-
-/* @brief Reads from global storage whether the typesystem type is used
- *
- * See isFilesystemUsedGS(const QString&).
- */
-inline bool
-isFilesystemUsedGS( FileSystem::Type filesystem )
-{
-    return isFilesystemUsedGS( untranslatedFS( filesystem ) );
-}
-
-#endif
 }  // namespace Partition
 }  // namespace CalamaresUtils
 
