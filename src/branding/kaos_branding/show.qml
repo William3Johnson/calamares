@@ -109,19 +109,19 @@ Item {
 
         slides: [
             Dia {
-                image: "harddisk"
+                image: "konqi-base"
             },
             Dia {
-                image: "motherboard"
+                image: "konqi_hardware"
             },
             Dia {
-                image: "libreoffice"
+                image: "konqi-business"
             },
             Dia {
                 image: "konqi-system"
             },
             Dia {
-                image: "internet"
+                image: "konqi-internet"
             },
             Dia {
                 image: "konqi"

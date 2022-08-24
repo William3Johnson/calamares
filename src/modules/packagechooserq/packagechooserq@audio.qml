@@ -33,13 +33,13 @@ Item {
 
             Rectangle {
                 //id: rectangle
-                width: 700
+                width: 800
                 height: 260
                 color: "#ffffff"
                 radius: 10
                 border.width: 0
                 Text {
-                    width: 550
+                    width: 600
                     height: 250
                     anchors.centerIn: parent
                     text: qsTr("<b>Pipewire</b> is a multimedia framework designed from scratch that aims to provide:<br/>
@@ -60,7 +60,7 @@ Item {
 
                 Switch {
                     id: element2
-                    x: 500
+                    x: 600
                     y: 230
                     width: 187
                     height: 14
@@ -102,19 +102,19 @@ Item {
                     id: image2
                     x: 8
                     y: 25
-                    height: 100
+                    height: 150
                     fillMode: Image.PreserveAspectFit
                     source: "images/pipewire.png"
                 }
             }
 
             Rectangle {
-                width: 700
+                width: 800
                 height: 180
                 radius: 10
                 border.width: 0
                 Text {
-                    width: 500
+                    width: 600
                     height: 160
                     anchors.centerIn: parent
                     text: qsTr("<b>PulseAudio</b> is a sound server, originally created to overcome the limitations of the Enlightened Sound Daemon (EsounD).<br/>
@@ -127,7 +127,7 @@ Item {
 
                 Switch {
                     id: element1
-                    x: 500
+                    x: 600
                     y: 150
                     width: 187
                     height: 14
@@ -167,9 +167,9 @@ Item {
 
                 Image {
                     id: image
-                    x: 8
+                    x: 20
                     y: 25
-                    height: 100
+                    height: 130
                     fillMode: Image.PreserveAspectFit
                     source: "images/pulseaudio.png"
                 }
