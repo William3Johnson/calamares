@@ -1,6 +1,9 @@
 <RCC>
     <qresource>
         <file>content/TextField.qml</file>
+        <file>content/users.svg</file>
+        <file>content/users_g.svg</file>
+        <file>content/users_r.svg</file>
         <file>UserInput.qml</file>
         <file>usersq.qml</file>
     </qresource>
