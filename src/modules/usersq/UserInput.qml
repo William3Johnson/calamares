@@ -127,11 +127,6 @@ Item {
                         placeholderText: qsTr("Your Full Name")
                         text: config.fullName
                         onTextChanged: config.setFullName(text)
-
-                        /*palette.base: _userNameField.text.length
-                            ? positiveFieldColor : unfilledFieldColor
-                        palette.highlight : _userNameField.text.length
-                            ? positiveFieldOutlineColor : unfilledFieldOutlineColor*/
                     }
                 }
             }
@@ -296,7 +291,9 @@ Item {
             Kirigami.InlineMessage {
                 id: hostMessage
                 Layout.fillWidth: true
+                implicitHeight: 28
                 showCloseButton: true
+                icon.source: "tools-report-bug"
                 visible: false
                 type: Kirigami.MessageType.Error
                 text: qsTr("Only letters, numbers, underscore and hyphen are allowed, minimal of two characters.")
@@ -305,7 +302,9 @@ Item {
             Kirigami.InlineMessage {
                 id: forbiddenHost
                 Layout.fillWidth: true
+                implicitHeight: 28
                 showCloseButton: true
+                icon.source: "tools-report-bug"
                 visible: false
                 type: Kirigami.MessageType.Error
                 text: qsTr("localhost is not allowed as hostname.")
