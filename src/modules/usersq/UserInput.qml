@@ -42,7 +42,7 @@ Item {
         id: header
         z: 999
         width: parent.width
-        height: 80
+        height: 60
         horizontalAlignment: Qt.AlignHCenter
         color: headerTextColor
         background: Rectangle {
@@ -76,7 +76,7 @@ Item {
         id: scroll
         width: parent.width
         height: parent.height
-        topMargin: 90
+        topMargin: 80
         contentHeight: 800
 
         ScrollBar.vertical: ScrollBar {
@@ -96,7 +96,7 @@ Item {
 
         ColumnLayout {
             id: _formLayout
-            width: parent.width / 1.1
+            width: parent.width / 1.2
             spacing: Kirigami.Units.smallSpacing
             anchors.horizontalCenter: parent.horizontalCenter
 
@@ -108,20 +108,31 @@ Item {
                     text: qsTr("What is your name?")
                 }
 
-                TextField {
-                    id: _userNameField
+                RowLayout {
                     width: parent.width
-                    enterKeyAction: EnterKeyAction.Next
-                    onAccepted: _userLoginField.focus = true
-                    enabled: config.isEditable("fullName")
-                    placeholderText: qsTr("Your Full Name")
-                    text: config.fullName
-                    onTextChanged: config.setFullName(text)
+                    spacing: 10
 
-                    palette.base: _userNameField.text.length
-                        ? positiveFieldColor : unfilledFieldColor
-                    palette.highlight : _userNameField.text.length
-                        ? positiveFieldOutlineColor : unfilledFieldOutlineColor
+                    Image {
+                        source: _userNameField.text.length ? "content/users_g.svg" : "content/users.svg"
+                        fillMode: Image.PreserveAspectFit
+                        sourceSize.height: 28
+                    }
+
+                    TextField {
+                        id: _userNameField
+                        Layout.fillWidth: true
+                        enterKeyAction: EnterKeyAction.Next
+                        onAccepted: _userLoginField.focus = true
+                        enabled: config.isEditable("fullName")
+                        placeholderText: qsTr("Your Full Name")
+                        text: config.fullName
+                        onTextChanged: config.setFullName(text)
+
+                        /*palette.base: _userNameField.text.length
+                            ? positiveFieldColor : unfilledFieldColor
+                        palette.highlight : _userNameField.text.length
+                            ? positiveFieldOutlineColor : unfilledFieldOutlineColor*/
+                    }
                 }
             }
 
@@ -134,39 +145,56 @@ Item {
                     text: qsTr("What name do you want to use to log in?")
                 }
 
-                TextField {
-                    id: _userLoginField
-                    enterKeyAction: EnterKeyAction.Next
-                    onAccepted: _hostName.focus = true
+                RowLayout {
                     width: parent.width
-                    enabled: config.isEditable("loginName")
-                    placeholderText: qsTr("Login Name")
-                    text: config.loginName
-                    inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhPreferLowercase
-                    validator: RegularExpressionValidator { regularExpression: /[a-z_][a-z0-9_-]*[$]?$/ }
+                    spacing: 10
 
-                    //onTextChanged: config.setLoginName(text)
-                    onTextChanged: acceptableInput
-                        ? ( _userLoginField.text === "root"
-                        ? forbiddenMessage.visible=true
-                        : ( config.setLoginName(text),
-                        userMessage.visible = false,forbiddenMessage.visible=false ) )
-                        : ( userMessage.visible = true,console.log("Invalid") )
+                    Image {
+                        source: _userLoginField.text.length
+                            ? ( _userLoginField.acceptableInput
+                            ? ( _userLoginField.text === "root"
+                            ? "content/users_r.svg"
+                            : "content/users_g.svg" )
+                            : "content/users_r.svg" )
+                            : "content/users.svg"
+                        fillMode: Image.PreserveAspectFit
+                        sourceSize.height: 28
+                    }
 
-                    palette.base: _userLoginField.text.length
-                        ? ( acceptableInput
-                        ? ( _userLoginField.text === "root"
-                        ? negativeFieldColor
-                        : positiveFieldColor )
-                        : negativeFieldColor )
-                        : unfilledFieldColor
-                    palette.highlight : _userLoginField.text.length
-                        ? ( acceptableInput
-                        ? ( _userLoginField.text === "root"
-                        ? negativeFieldOutlineColor
-                        : positiveFieldOutlineColor )
-                        : negativeFieldOutlineColor )
-                        : unfilledFieldOutlineColor
+                    TextField {
+                        id: _userLoginField
+                        enterKeyAction: EnterKeyAction.Next
+                        onAccepted: _hostName.focus = true
+                        Layout.fillWidth: true
+                        enabled: config.isEditable("loginName")
+                        placeholderText: qsTr("Login Name")
+                        text: config.loginName
+                        inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhPreferLowercase
+                        validator: RegularExpressionValidator { regularExpression: /[a-z_][a-z0-9_-]*[$]?$/ }
+
+                        //onTextChanged: config.setLoginName(text)
+                        onTextChanged: acceptableInput
+                            ? ( _userLoginField.text === "root"
+                            ? forbiddenMessage.visible=true
+                            : ( config.setLoginName(text),
+                            userMessage.visible = false,forbiddenMessage.visible=false ) )
+                            : ( userMessage.visible = true,console.log("Invalid") )
+
+                        /*palette.base: _userLoginField.text.length
+                            ? ( acceptableInput
+                            ? ( _userLoginField.text === "root"
+                            ? negativeFieldColor
+                            : positiveFieldColor )
+                            : negativeFieldColor )
+                            : unfilledFieldColor
+                        palette.highlight : _userLoginField.text.length
+                            ? ( acceptableInput
+                            ? ( _userLoginField.text === "root"
+                            ? negativeFieldOutlineColor
+                            : positiveFieldOutlineColor )
+                            : negativeFieldOutlineColor )
+                            : unfilledFieldOutlineColor*/
+                    }
                 }
 
                 Label {
@@ -181,7 +209,9 @@ Item {
             Kirigami.InlineMessage {
                 id: userMessage
                 Layout.fillWidth: true
+                implicitHeight: 28
                 showCloseButton: true
+                icon.source: "tools-report-bug"
                 visible: false
                 type: Kirigami.MessageType.Error
                 text: qsTr("Only lowercase letters, numbers, underscore and hyphen are allowed.")
@@ -190,7 +220,9 @@ Item {
             Kirigami.InlineMessage {
                 id: forbiddenMessage
                 Layout.fillWidth: true
+                implicitHeight: 28
                 showCloseButton: true
+                icon.source: "tools-report-bug"
                 visible: false
                 type: Kirigami.MessageType.Error
                 text: qsTr("root is not allowed as username.")
@@ -205,34 +237,51 @@ Item {
                     text: qsTr("What is the name of this computer?")
                 }
 
-                TextField {
-                    id: _hostName
-                    enterKeyAction: EnterKeyAction.Next
-                    onAccepted: _passwordField.focus = true
+                RowLayout {
                     width: parent.width
-                    placeholderText: qsTr("Computer Name")
-                    text: config.hostname
-                    validator: RegularExpressionValidator { regularExpression: /[a-zA-Z0-9][-a-zA-Z0-9_]+/ }
+                    spacing: 10
 
-                    onTextChanged: acceptableInput
-                        ? ( _hostName.text === "localhost"
-                        ? forbiddenHost.visible=true
-                        : ( config.setHostName(text),
-                        hostMessage.visible = false,forbiddenHost.visible = false ) )
-                        : hostMessage.visible = true
+                    Image {
+                        source: _hostName.text.length
+                            ? ( _hostName.acceptableInput
+                            ? ( _hostName.text === "localhost"
+                            ? "content/users_r.svg"
+                            : "content/users_g.svg" )
+                            : "content/users_r.svg" )
+                            : "content/users.svg"
+                        fillMode: Image.PreserveAspectFit
+                        sourceSize.height: 28
+                    }
 
-                    palette.base: _hostName.text.length
-                        ? ( acceptableInput
-                        ? ( _hostName.text === "localhost"
-                        ? negativeFieldColor : positiveFieldColor )
-                        : negativeFieldColor)
-                        : unfilledFieldColor
-                    palette.highlight : _hostName.text.length
-                        ? ( acceptableInput
-                        ? ( _hostName.text === "localhost"
-                        ? negativeFieldOutlineColor : positiveFieldOutlineColor )
-                        : negativeFieldOutlineColor)
-                        : unfilledFieldOutlineColor
+                    TextField {
+                        id: _hostName
+                        enterKeyAction: EnterKeyAction.Next
+                        onAccepted: _passwordField.focus = true
+                        Layout.fillWidth: true
+                        placeholderText: qsTr("Computer Name")
+                        text: config.hostname
+                        validator: RegularExpressionValidator { regularExpression: /[a-zA-Z0-9][-a-zA-Z0-9_]+/ }
+
+                        onTextChanged: acceptableInput
+                            ? ( _hostName.text === "localhost"
+                            ? forbiddenHost.visible=true
+                            : ( config.setHostName(text),
+                            hostMessage.visible = false,forbiddenHost.visible = false ) )
+                            : hostMessage.visible = true
+
+                        /*palette.base: _hostName.text.length
+                            ? ( acceptableInput
+                            ? ( _hostName.text === "localhost"
+                            ? negativeFieldColor : positiveFieldColor )
+                            : negativeFieldColor)
+                            : unfilledFieldColor
+                        palette.highlight : _hostName.text.length
+                            ? ( acceptableInput
+                            ? ( _hostName.text === "localhost"
+                            ? negativeFieldOutlineColor : positiveFieldOutlineColor )
+                            : negativeFieldOutlineColor)
+                            : unfilledFieldOutlineColor*/
+                    }
                 }
 
                 Label {
@@ -271,9 +320,21 @@ Item {
                     text: qsTr("Choose a password to keep your account safe.")
                 }
 
-                Row {
+                RowLayout {
                     width: parent.width
-                    spacing: 20
+                    spacing: 10
+
+                    Image {
+                        source: _verificationPasswordField.text.length
+                            ? ( _verificationPasswordField.acceptableInput
+                            ? ( _verificationPasswordField.text === "localhost"
+                            ? "content/users_r.svg"
+                            : "content/users_g.svg" )
+                            : "content/users_r.svg" )
+                            : "content/users.svg"
+                        fillMode: Image.PreserveAspectFit
+                        sourceSize.height: 28
+                    }
 
                     TextField {
                         id: _passwordField
@@ -282,7 +343,7 @@ Item {
                             scroll.scrollToY(scroll.contentY + 150);
                         }
                         onAccepted: _verificationPasswordField.focus = true
-                        width: parent.width / 2 - 10
+                        Layout.fillWidth: true
                         placeholderText: qsTr("Password")
                         text: config.userPassword
                         onTextChanged: config.setUserPassword(text)
@@ -301,7 +362,7 @@ Item {
                         id: _verificationPasswordField
                         enterKeyAction: EnterKeyAction.Next
                         onAccepted: _rootPasswordField.focus = true
-                        width: parent.width / 2 - 10
+                        Layout.fillWidth: true
                         placeholderText: qsTr("Repeat Password")
                         text: config.userPasswordSecondary
 
@@ -312,14 +373,14 @@ Item {
                             : ( passMessage.visible = true,
                             validityMessage.visible = false )
 
-                        palette.base: _verificationPasswordField.text.length
+                        /*palette.base: _verificationPasswordField.text.length
                             ? ( _passwordField.text === _verificationPasswordField.text
                             ? positiveFieldColor : negativeFieldColor )
                             : unfilledFieldColor
                         palette.highlight : _verificationPasswordField.text.length
                             ? ( _passwordField.text === _verificationPasswordField.text
                             ? positiveFieldOutlineColor : negativeFieldOutlineColor )
-                            : unfilledFieldOutlineColor
+                            : unfilledFieldOutlineColor*/
 
                         echoMode: TextInput.Password
                         passwordMaskDelay: 300
@@ -340,7 +401,9 @@ Item {
             Kirigami.InlineMessage {
                 id: passMessage
                 Layout.fillWidth: true
+                implicitHeight: 28
                 showCloseButton: true
+                icon.source: "tools-report-bug"
                 visible: false
                 type: Kirigami.MessageType.Error
                 text: config.userPasswordMessage
@@ -349,7 +412,12 @@ Item {
             Kirigami.InlineMessage {
                 id: validityMessage
                 Layout.fillWidth: true
+                implicitHeight: 28
                 showCloseButton: true
+                icon.source: config.userPasswordValidity
+                    ? ( config.requireStrongPasswords
+                    ? "tools-report-bug" : "dialog-warning" )
+                    : "dialog-ok"
                 visible: false
                 type:  config.userPasswordValidity
                     ? ( config.requireStrongPasswords
@@ -385,9 +453,19 @@ Item {
                     text: qsTr("Choose a root password to keep your account safe.")
                 }
 
-                Row {
+                RowLayout {
                     width: parent.width
-                    spacing: 20
+                    spacing: 10
+
+                    Image {
+                        source: _verificationRootPasswordField.text.length
+                            ? ( _rootPasswordField.text === _verificationRootPasswordField.text
+                            ? "content/users_g.svg"
+                            : "content/users_r.svg" )
+                            : "content/users.svg"
+                        fillMode: Image.PreserveAspectFit
+                        sourceSize.height: 28
+                    }
 
                     TextField {
                         id: _rootPasswordField
@@ -396,7 +474,7 @@ Item {
                             scroll.scrollToY(scroll.contentY + 150);
                         }
                         onAccepted: _verificationRootPasswordField.focus = true
-                        width: parent.width / 2 -10
+                        Layout.fillWidth: true
                         placeholderText: qsTr("Root Password")
                         text: config.rootPassword
 
@@ -414,7 +492,7 @@ Item {
 
                     TextField {
                         id: _verificationRootPasswordField
-                        width: parent.width / 2 -10
+                        Layout.fillWidth: true
                         placeholderText: qsTr("Repeat Root Password")
                         text: config.rootPasswordSecondary
 
@@ -424,14 +502,14 @@ Item {
                             rootPassMessage.visible = false,rootValidityMessage.visible = true )
                             : ( rootPassMessage.visible = true,rootValidityMessage.visible = false )
 
-                        palette.base: _verificationRootPasswordField.text.length
+                        /*palette.base: _verificationRootPasswordField.text.length
                             ? ( _rootPasswordField.text === _verificationRootPasswordField.text
                             ? positiveFieldColor : negativeFieldColor)
                             : unfilledFieldColor
                         palette.highlight : _verificationRootPasswordField.text.length
                             ? ( _rootPasswordField.text === _verificationRootPasswordField.text
                             ? positiveFieldOutlineColor : negativeFieldOutlineColor)
-                            : unfilledFieldOutlineColor
+                            : unfilledFieldOutlineColor*/
 
                         echoMode: TextInput.Password
                         passwordMaskDelay: 300
@@ -452,7 +530,9 @@ Item {
             Kirigami.InlineMessage {
                 id: rootPassMessage
                 Layout.fillWidth: true
+                implicitHeight: 28
                 showCloseButton: true
+                icon.source: "tools-report-bug"
                 visible: false
                 type: Kirigami.MessageType.Error
                 text: config.rootPasswordMessage
@@ -461,7 +541,12 @@ Item {
             Kirigami.InlineMessage {
                 id: rootValidityMessage
                 Layout.fillWidth: true
+                implicitHeight: 28
                 showCloseButton: true
+                icon.source: config.rootPasswordValidity
+                    ? ( config.requireStrongPasswords
+                    ? "tools-report-bug" : "dialog-warning" )
+                    : "dialog-ok"
                 visible: false
                 type:  config.rootPasswordValidity
                     ? ( config.requireStrongPasswords
