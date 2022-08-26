@@ -263,19 +263,6 @@ Item {
                             : ( config.setHostName(text),
                             hostMessage.visible = false,forbiddenHost.visible = false ) )
                             : hostMessage.visible = true
-
-                        /*palette.base: _hostName.text.length
-                            ? ( acceptableInput
-                            ? ( _hostName.text === "localhost"
-                            ? negativeFieldColor : positiveFieldColor )
-                            : negativeFieldColor)
-                            : unfilledFieldColor
-                        palette.highlight : _hostName.text.length
-                            ? ( acceptableInput
-                            ? ( _hostName.text === "localhost"
-                            ? negativeFieldOutlineColor : positiveFieldOutlineColor )
-                            : negativeFieldOutlineColor)
-                            : unfilledFieldOutlineColor*/
                     }
                 }
 
@@ -325,11 +312,8 @@ Item {
 
                     Image {
                         source: _verificationPasswordField.text.length
-                            ? ( _verificationPasswordField.acceptableInput
-                            ? ( _verificationPasswordField.text === "localhost"
-                            ? "content/users_r.svg"
-                            : "content/users_g.svg" )
-                            : "content/users_r.svg" )
+                            ? ( _passwordField.text === _verificationPasswordField.text
+                            ? "content/users_g.svg" : "content/users_r.svg" )
                             : "content/users.svg"
                         fillMode: Image.PreserveAspectFit
                         sourceSize.height: 28
