@@ -38,7 +38,7 @@ Rectangle {
             sourceSize.height: height;
         }
 
-        Rectangle {
+        /*Rectangle {
             id: aboutArea
             Layout.fillWidth: true;
             Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
@@ -71,13 +71,14 @@ Rectangle {
                     window.show();
                 }
             }
-        }
+        }*/
 
         Rectangle {
             id: debugArea
             Layout.fillWidth: true;
             height: 35
             Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
+            Layout.topMargin: 40
             color: Branding.styleString( mouseAreaDebug.containsMouse ? Branding.SidebarBackgroundCurrent : Branding.SidebarBackground);
             visible: debug.enabled
 

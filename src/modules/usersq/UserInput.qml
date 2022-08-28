@@ -174,21 +174,6 @@ Item {
                             : ( config.setLoginName(text),
                             userMessage.visible = false,forbiddenMessage.visible=false ) )
                             : ( userMessage.visible = true,console.log("Invalid") )
-
-                        /*palette.base: _userLoginField.text.length
-                            ? ( acceptableInput
-                            ? ( _userLoginField.text === "root"
-                            ? negativeFieldColor
-                            : positiveFieldColor )
-                            : negativeFieldColor )
-                            : unfilledFieldColor
-                        palette.highlight : _userLoginField.text.length
-                            ? ( acceptableInput
-                            ? ( _userLoginField.text === "root"
-                            ? negativeFieldOutlineColor
-                            : positiveFieldOutlineColor )
-                            : negativeFieldOutlineColor )
-                            : unfilledFieldOutlineColor*/
                     }
                 }
 
@@ -331,11 +316,6 @@ Item {
                         text: config.userPassword
                         onTextChanged: config.setUserPassword(text)
 
-                        palette.base: _passwordField.text.length
-                            ? positiveFieldColor : unfilledFieldColor
-                        palette.highlight : _passwordField.text.length
-                            ? positiveFieldOutlineColor : unfilledFieldOutlineColor
-
                         echoMode: TextInput.Password
                         passwordMaskDelay: 300
                         inputMethodHints: Qt.ImhNoAutoUppercase
@@ -355,15 +335,6 @@ Item {
                             validityMessage.visible = true )
                             : ( passMessage.visible = true,
                             validityMessage.visible = false )
-
-                        /*palette.base: _verificationPasswordField.text.length
-                            ? ( _passwordField.text === _verificationPasswordField.text
-                            ? positiveFieldColor : negativeFieldColor )
-                            : unfilledFieldColor
-                        palette.highlight : _verificationPasswordField.text.length
-                            ? ( _passwordField.text === _verificationPasswordField.text
-                            ? positiveFieldOutlineColor : negativeFieldOutlineColor )
-                            : unfilledFieldOutlineColor*/
 
                         echoMode: TextInput.Password
                         passwordMaskDelay: 300
@@ -463,11 +434,6 @@ Item {
 
                         onTextChanged: config.setRootPassword(text)
 
-                        palette.base: _rootPasswordField.text.length
-                            ? positiveFieldColor : unfilledFieldColor
-                        palette.highlight : _rootPasswordField.text.length
-                            ? positiveFieldOutlineColor : unfilledFieldOutlineColor
-
                         echoMode: TextInput.Password
                         passwordMaskDelay: 300
                         inputMethodHints: Qt.ImhNoAutoUppercase
@@ -484,15 +450,6 @@ Item {
                             ? ( config.setRootPasswordSecondary(text),
                             rootPassMessage.visible = false,rootValidityMessage.visible = true )
                             : ( rootPassMessage.visible = true,rootValidityMessage.visible = false )
-
-                        /*palette.base: _verificationRootPasswordField.text.length
-                            ? ( _rootPasswordField.text === _verificationRootPasswordField.text
-                            ? positiveFieldColor : negativeFieldColor)
-                            : unfilledFieldColor
-                        palette.highlight : _verificationRootPasswordField.text.length
-                            ? ( _rootPasswordField.text === _verificationRootPasswordField.text
-                            ? positiveFieldOutlineColor : negativeFieldOutlineColor)
-                            : unfilledFieldOutlineColor*/
 
                         echoMode: TextInput.Password
                         passwordMaskDelay: 300

@@ -218,7 +218,9 @@ Page
                         rotation : 270
                     }
 
-                    onClicked: load.source = "file:/usr/share/calamares/release_notes_welcomeq.qml"
+                    onClicked: {
+                        notesDrawer.open()
+                    }
                 }
             }
 
@@ -245,9 +247,69 @@ Page
             }
         }
 
-        Loader {
-            id:load
-            anchors.fill: parent
+        ColumnLayout {
+            id: about
+            anchors.right: parent.right;
+            anchors.verticalCenter: parent.verticalCenter
+            width: 48
+            height: 100
+            spacing: 1
+
+            Rectangle {
+                Layout.fillWidth: true;
+                Layout.preferredHeight: parent.height;
+                color: mouseAbout.containsMouse ? "#e6e9ea" : "#d9dcde";
+                //enabled: true
+                visible: true
+
+                MouseArea {
+                    id: mouseAbout
+                    anchors.fill: parent;
+                    cursorShape: Qt.PointingHandCursor
+                    hoverEnabled: true
+
+                    Text {
+                        anchors.centerIn: parent
+                        text: qsTr("About")
+                        font.pointSize : 8
+                        rotation : 90
+                    }
+
+                    onClicked: aboutDrawer.open()
+                }
+            }
+        }
+
+        Drawer {
+            id: aboutDrawer
+            width: 0.4 * welcome.width
+            height: welcome.height
+            edge: Qt.LeftEdge
+
+            About {
+                anchors.fill: parent
+            }
+        }
+        Drawer {
+            id: notesDrawer
+            width: 0.85 * welcome.width
+            height: welcome.height
+            edge: Qt.RightEdge
+
+            ScrollView {
+                id: notes
+                anchors.fill: parent
+                contentHeight: 4200
+                ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
+
+                Loader {
+                    //id: image
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: parent.width
+                    //height: parent.height / 1.28
+                    source: "file:/usr/share/calamares/release_notes_welcomeq.qml"
+                }
+            }
         }
     }
 }
