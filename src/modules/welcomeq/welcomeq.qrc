@@ -6,5 +6,6 @@
   <file alias="Requirements.qml">Requirements.qml</file>
   <file>img/pan-end-symbolic.svg</file>
   <file>img/locale.svg</file>
+  <file>img/squid.png</file>
 </qresource>
 </RCC>

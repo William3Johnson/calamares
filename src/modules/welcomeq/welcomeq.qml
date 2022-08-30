@@ -174,7 +174,7 @@ Page
             anchors.left: parent.left;
             anchors.verticalCenter: parent.verticalCenter
             width: 48
-            height: 300
+            height: 400
             spacing: 1
 
             Rectangle {
