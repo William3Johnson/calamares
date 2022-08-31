@@ -4,6 +4,7 @@
   <file alias="About.qml">About.qml</file>
   <file alias="Recommended.qml">Recommended.qml</file>
   <file alias="Requirements.qml">Requirements.qml</file>
+  <file>img/about.svg</file>
   <file>img/pan-end-symbolic.svg</file>
   <file>img/locale.svg</file>
   <file>img/squid.png</file>

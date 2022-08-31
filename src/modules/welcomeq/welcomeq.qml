@@ -173,7 +173,7 @@ Page
             id: buttonBar
             anchors.left: parent.left;
             anchors.verticalCenter: parent.verticalCenter
-            width: 48
+            width: 32
             height: 400
             spacing: 1
 
@@ -247,18 +247,18 @@ Page
             }
         }
 
-        ColumnLayout {
+        RowLayout {
             id: about
-            anchors.right: parent.right;
-            anchors.verticalCenter: parent.verticalCenter
-            width: 48
-            height: 100
+            anchors.left: parent.left;
+            anchors.bottom: parent.bottom
+            width: 32
+            height: 32
             spacing: 1
 
             Rectangle {
-                Layout.fillWidth: true;
-                Layout.preferredHeight: parent.height;
-                color: mouseAbout.containsMouse ? "#e6e9ea" : "#d9dcde";
+                Layout.fillHeight: true;
+                Layout.preferredWidth: parent.width;
+                color: mouseAbout.containsMouse ? "#e6e9ea" : "transparent";
                 //enabled: true
                 visible: true
 
@@ -268,11 +268,11 @@ Page
                     cursorShape: Qt.PointingHandCursor
                     hoverEnabled: true
 
-                    Text {
+                    Image {
+                        source: "img/about.svg"
                         anchors.centerIn: parent
-                        text: qsTr("About")
-                        font.pointSize : 8
-                        rotation : 90
+                        fillMode: Image.PreserveAspectFit
+                        height: 28
                     }
 
                     onClicked: aboutDrawer.open()
@@ -284,7 +284,7 @@ Page
             id: aboutDrawer
             width: 0.4 * welcome.width
             height: welcome.height
-            edge: Qt.LeftEdge
+            edge: Qt.RightEdge
 
             About {
                 anchors.fill: parent
