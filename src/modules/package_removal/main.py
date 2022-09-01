@@ -170,7 +170,7 @@ def run():
                 'epson-inkjet-printer-escpr',
                 'pyqt5-python3',
                 'kpat',
-                'kde-telepathy',
+                'neochat',
                 'libreoffice']
         for pkg in pkgs:
             try:

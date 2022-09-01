@@ -7,6 +7,7 @@
 #   SPDX-FileCopyrightText: 2014 Teo Mrnjavac <teo@kde.org>
 #   SPDX-FileCopyrightText: 2017 Alf Gaida <agaid@siduction.org>
 #   SPDX-FileCopyrightText: 2019 Adriaan de Groot <groot@kde.org>
+#   SPDX-FileCopyrightText: 2022 Anke Boersma <demm@kaosx.us>
 #   SPDX-License-Identifier: GPL-3.0-or-later
 #
 #   Calamares is Free Software: see the License-Identifier above.
@@ -33,7 +34,10 @@ def run_dracut():
 
     :return:
     """
-    return check_target_env_call(['dracut', '-f', '--hostonly', '--no-hostonly-cmdline', '/boot/initramfs-linux.img', '--no-early-microcode', '--zstd'])
+    return check_target_env_call(['dracut', '-f',
+                                  '--hostonly', '--no-hostonly-cmdline',
+                                  '/boot/initramfs-linux.img',
+                                  '--no-early-microcode', '--zstd'])
 
 
 def run():
