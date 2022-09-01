@@ -13,7 +13,7 @@
 #
 
 import libcalamares
-from libcalamares.utils import target_env_call
+from libcalamares.utils import check_target_env_call
 
 
 import gettext
@@ -33,7 +33,7 @@ def run_dracut():
 
     :return:
     """
-    return target_env_call(['dracut', '-f', '--no-hostonly-cmdline', '"/boot/initramfs-linux.img"', '--kver', '5.18.17-1'])
+    return check_target_env_call(['dracut', '-f', '--hostonly', '--no-hostonly-cmdline', '/boot/initramfs-linux.img', '--no-early-microcode', '--zstd'])
 
 
 def run():

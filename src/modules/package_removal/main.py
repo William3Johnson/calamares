@@ -69,7 +69,7 @@ def run():
     if fw_type == 'bios':
         print('Removing EFI packages')
         libcalamares.utils.target_env_call(
-            ['pacman', '-Rns', '--noconfirm', 'efibootmgr'])
+            ['pacman', '-Rns', '--noconfirm', 'efibootmgr', 'refind-efi'])
 
     # Remove VirtualBox Guest packages
     if os.path.exists("{!s}/usr/bin/VBoxClient" .format(install_path)):
