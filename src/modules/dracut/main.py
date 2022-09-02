@@ -39,8 +39,8 @@ def run_dracut():
     if kernelName != 0:
         return check_target_env_call(['dracut', '-f',
                                       '--hostonly', '--no-hostonly-cmdline',
-                                      {}, '--no-early-microcode',
-                                      '--zstd'].format(kernelName))
+                                      '{}'.format(kernelName),
+                                      '--no-early-microcode', '--zstd'])
     else:
         return check_target_env_call(['dracut', '-f'])
 
