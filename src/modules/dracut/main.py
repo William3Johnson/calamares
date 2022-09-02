@@ -36,7 +36,7 @@ def run_dracut():
     """
     kernelName = libcalamares.job.configuration['kernelName']
 
-    if kernelname != 0:
+    if kernelName != 0:
         return check_target_env_call(['dracut', '-f',
                                       '--hostonly', '--no-hostonly-cmdline',
                                       {}, '--no-early-microcode',
