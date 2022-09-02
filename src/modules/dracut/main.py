@@ -34,10 +34,15 @@ def run_dracut():
 
     :return:
     """
-    return check_target_env_call(['dracut', '-f',
-                                  '--hostonly', '--no-hostonly-cmdline',
-                                  '/boot/initramfs-linux.img',
-                                  '--no-early-microcode', '--zstd'])
+    kernelName = libcalamares.job.configuration['kernelName']
+
+    if kernelname != 0:
+        return check_target_env_call(['dracut', '-f',
+                                      '--hostonly', '--no-hostonly-cmdline',
+                                      {}, '--no-early-microcode',
+                                      '--zstd'].format(kernelName))
+    else:
+        return check_target_env_call(['dracut', '-f'])
 
 
 def run():
@@ -50,5 +55,5 @@ def run():
     return_code = run_dracut()
 
     if return_code != 0:
-        return ( _("Failed to run dracut on the target"),
-                 _("The exit code was {}").format(return_code) )
+        return (_("Failed to run dracut on the target"),
+                _("The exit code was {}").format(return_code))
