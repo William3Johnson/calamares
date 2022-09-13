@@ -249,8 +249,8 @@ Page
 
         RowLayout {
             id: about
-            anchors.left: parent.left;
-            anchors.bottom: parent.bottom
+            anchors.right: parent.right;
+            anchors.top: parent.top
             width: 32
             height: 32
             spacing: 1
@@ -284,7 +284,7 @@ Page
             id: aboutDrawer
             width: 0.4 * welcome.width
             height: welcome.height
-            edge: Qt.RightEdge
+            edge: Qt.LeftEdge
 
             About {
                 anchors.fill: parent
