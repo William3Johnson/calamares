@@ -160,7 +160,7 @@ set( _tx_ok sv )
 # See DEPENDENCIES section below.
 set(QT_VERSION 5.15.0)
 set(YAMLCPP_VERSION 0.5.1)
-set(ECM_VERSION 5.18)
+set(ECM_VERSION 5.58)
 set(PYTHONLIBS_VERSION 3.6)
 set(BOOSTPYTHON_VERSION 1.72.0)
 
@@ -329,7 +329,7 @@ if(ECM_FOUND)
     include(KDEInstallDirs)
 endif()
 
-find_package(KF5 QUIET COMPONENTS CoreAddons Crash)
+find_package(KF5 ${ECM_VERSION} QUIET COMPONENTS CoreAddons Crash)
 set_package_properties(
     KF5::CoreAddons
     PROPERTIES

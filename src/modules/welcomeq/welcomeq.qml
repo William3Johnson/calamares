@@ -251,7 +251,7 @@ Page
             id: about
             anchors.right: parent.right;
             anchors.top: parent.top
-            width: 32
+            width: 48
             height: 32
             spacing: 1
 
