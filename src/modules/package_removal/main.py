@@ -87,6 +87,15 @@ def run():
             libcalamares.utils.target_env_call(
                 ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils'])
 
+    # Remove ZFS packages
+    zfs_pool_list = libcalamares.globalstorage.value("zfsPoolInfo")
+    if not zfs_pool_list:
+        print('ZFS not in use')
+        libcalamares.utils.target_env_call(
+                ['pacman', '-Rns', '--noconfirm', 'zfs-kmod'])
+    else:
+        print(zfs_pool_list)
+
     # Remove KDE l10n
     this_locale = libcalamares.globalstorage.value("localeConf")["LANG"][:2]
     # this_locale = 'us'
