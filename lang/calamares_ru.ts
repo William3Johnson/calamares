@@ -205,7 +205,7 @@
     <message>
         <location filename="../src/libcalamares/JobExample.cpp" line="29"/>
         <source>Job failed (%1)</source>
-        <translation type="unfinished"/>
+        <translation>Сбой задания (%1)</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/JobExample.cpp" line="30"/>
@@ -226,7 +226,7 @@
     <message>
         <location filename="../src/libcalamares/JobExample.cpp" line="17"/>
         <source>Example job (%1)</source>
-        <translation type="unfinished"/>
+        <translation>Пример задания (%1)</translation>
     </message>
 </context>
 <context>
@@ -4072,12 +4072,12 @@ Output:
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="67"/>
         <source>Close Installer</source>
-        <translation type="unfinished"/>
+        <translation>Закрыть установщик</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="74"/>
         <source>Restart System</source>
-        <translation type="unfinished"/>
+        <translation>Перезапустить систему</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq.qml" line="95"/>
@@ -4091,7 +4091,7 @@ Output:
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="36"/>
         <source>Installation Completed</source>
-        <translation type="unfinished"/>
+        <translation>Установка завершена</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="43"/>
@@ -4102,12 +4102,12 @@ Output:
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="65"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>Закрыть</translation>
     </message>
     <message>
         <location filename="../src/modules/finishedq/finishedq@mobile.qml" line="71"/>
         <source>Restart</source>
-        <translation type="unfinished"/>
+        <translation>Перезапустить</translation>
     </message>
 </context>
 <context>
@@ -4115,7 +4115,7 @@ Output:
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="61"/>
         <source>To activate keyboard preview, select a layout.</source>
-        <translation type="unfinished"/>
+        <translation>Чтобы активировать предпросмотр клавиатуры, выберите раскладку.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="144"/>
@@ -4125,7 +4125,7 @@ Output:
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="185"/>
         <source>Layout</source>
-        <translation type="unfinished"/>
+        <translation>Раскладка</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="258"/>
@@ -4135,7 +4135,7 @@ Output:
     <message>
         <location filename="../src/modules/keyboardq/keyboardq.qml" line="311"/>
         <source>Type here to test your keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Печатайте тут для проверки клавиатуры</translation>
     </message>
 </context>
 <context>
@@ -4144,7 +4144,7 @@ Output:
         <location filename="../src/modules/localeq/localeq.qml" line="99"/>
         <location filename="../src/modules/localeq/localeq.qml" line="129"/>
         <source>Change</source>
-        <translation type="unfinished"/>
+        <translation>Изменить</translation>
     </message>
     <message>
         <location filename="../src/modules/localeq/localeq.qml" line="165"/>
@@ -4170,7 +4170,7 @@ Output:
     <message>
         <location filename="../src/modules/partitionq/manual.qml" line="80"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Назад</translation>
     </message>
 </context>
 <context>
@@ -4193,7 +4193,7 @@ Output:
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="59"/>
         <source>LibreOffice</source>
-        <translation type="unfinished"/>
+        <translation>LibreOffice</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="112"/>
@@ -4203,7 +4203,7 @@ Output:
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="125"/>
         <source>No Office Suite</source>
-        <translation type="unfinished"/>
+        <translation>Без офисного пакета</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq.qml" line="180"/>
@@ -4240,7 +4240,7 @@ Output:
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq@audio.qml" line="67"/>
         <source>Pipewire</source>
-        <translation type="unfinished"/>
+        <translation>Pipewire</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq@audio.qml" line="120"/>
@@ -4251,7 +4251,7 @@ Output:
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq@audio.qml" line="134"/>
         <source>Pulseaudio</source>
-        <translation type="unfinished"/>
+        <translation>Pulseaudio</translation>
     </message>
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq@audio.qml" line="187"/>
@@ -4272,7 +4272,7 @@ Output:
     <message>
         <location filename="../src/modules/packagechooserq/packagechooserq@licenseq.qml" line="61"/>
         <source>I accept the terms and conditions above</source>
-        <translation type="unfinished"/>
+        <translation>Я принимаю условия и положения, описанные выше</translation>
     </message>
 </context>
 <context>
@@ -4285,17 +4285,17 @@ Output:
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="54"/>
         <source>EFI</source>
-        <translation type="unfinished"/>
+        <translation>EFI</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="85"/>
         <source>Select storage device</source>
-        <translation type="unfinished"/>
+        <translation>Выберите устройство хранения</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="135"/>
         <source>GPT</source>
-        <translation type="unfinished"/>
+        <translation>GPT</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="444"/>
@@ -4310,7 +4310,7 @@ Output:
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="465"/>
         <source>Bootloader options:</source>
-        <translation type="unfinished"/>
+        <translation>Параметры загрузчика:</translation>
     </message>
     <message>
         <location filename="../src/modules/partitionq/partitionq.qml" line="490"/>
@@ -4353,7 +4353,7 @@ Output:
     <message>
         <location filename="../src/modules/welcomeq/release_notes.qml" line="76"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Назад</translation>
     </message>
 </context>
 <context>
@@ -4377,7 +4377,7 @@ Output:
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="122"/>
         <source>Qt/KDE specific internet applications include the &lt;br/&gt;Falkon web-browser and kde-telepathy for &lt;br/&gt;chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Специальные интернет-приложения Qt/KDE &lt;br/&gt;включают в себя веб-браузер Falkon и kde-telepathy для &lt;br/&gt;чата и мгновенного обмена сообщениями. &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="146"/>
@@ -4411,22 +4411,22 @@ Output:
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="127"/>
         <source>Current Language:&amp;nbsp;</source>
-        <translation type="unfinished"/>
+        <translation>Текущий язык:&amp;nbsp;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="155"/>
         <source>Select Language</source>
-        <translation type="unfinished"/>
+        <translation>Выберите язык</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="194"/>
         <source>Known Issues</source>
-        <translation type="unfinished"/>
+        <translation>Известные проблемы</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="216"/>
         <source>Release Notes</source>
-        <translation type="unfinished"/>
+        <translation>Примечания к выпуску</translation>
     </message>
     <message>
         <location filename="../src/modules/welcomeq/welcomeq.qml" line="238"/>

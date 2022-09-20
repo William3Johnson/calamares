@@ -4,67 +4,67 @@
     <message>
         <location filename="../show.qml" line="72"/>
         <source>installation</source>
-        <translation type="unfinished"/>
+        <translation>установка</translation>
     </message>
     <message>
         <location filename="../show.qml" line="73"/>
         <source>After creating your chosen disk setup in the first 10 % the full copying of the ISO will take the longest of this install phase and will run until approximately 45%.</source>
-        <translation type="unfinished"/>
+        <translation>После создания выбранной вами настройки диска на первых 10 %, производится полное копирование ISO, занимающее больше всего времени на этом этапе установки и будет выполняться примерно до 45 %.</translation>
     </message>
     <message>
         <location filename="../show.qml" line="76"/>
         <source>modules</source>
-        <translation type="unfinished"/>
+        <translation>модули</translation>
     </message>
     <message>
         <location filename="../show.qml" line="77"/>
         <source>Once the ISO is copied some 25 post-install modules will run. This includes setting user specific options, removing Live Session only packages and adjusting hardware setup.</source>
-        <translation type="unfinished"/>
+        <translation>После копирования ISO будут запущены около 25 постустановочных модулей. Этап включает в себя настройку параметров пользователя, удаление пакетов Live-сеанса и настройку оборудования.</translation>
     </message>
     <message>
         <location filename="../show.qml" line="80"/>
         <source>office suites</source>
-        <translation type="unfinished"/>
+        <translation>офисные пакеты</translation>
     </message>
     <message>
         <location filename="../show.qml" line="81"/>
         <source>The default Office Suite is LibreOffice.</source>
-        <translation type="unfinished"/>
+        <translation>Офисный пакет по умолчанию — LibreOffice.</translation>
     </message>
     <message>
         <location filename="../show.qml" line="82"/>
         <source>Calligra is available in the repositories</source>
-        <translation type="unfinished"/>
+        <translation>Пакет Calligra доступен в репозиториях</translation>
     </message>
     <message>
         <location filename="../show.qml" line="85"/>
         <source>Package Management</source>
-        <translation type="unfinished"/>
+        <translation>Управление пакетами</translation>
     </message>
     <message>
         <location filename="../show.qml" line="86"/>
         <source>For package management Octopi is the GUI application.</source>
-        <translation type="unfinished"/>
+        <translation>Для управления пакетами используется Octopi, приложение с графическим интерфейсом.</translation>
     </message>
     <message>
         <location filename="../show.qml" line="87"/>
         <source>Pacman is the cli application.</source>
-        <translation type="unfinished"/>
+        <translation>Pacman — это CLI-приложение.</translation>
     </message>
     <message>
         <location filename="../show.qml" line="90"/>
         <source>internet</source>
-        <translation type="unfinished"/>
+        <translation>интернет</translation>
     </message>
     <message>
         <location filename="../show.qml" line="91"/>
         <source>Qt/KDE specific internet applications include the Falkon web-browser, KDE Connect for device Synchronization, Kaidan for chat  and NeoChat, the Matrix client.</source>
-        <translation type="unfinished"/>
+        <translation>Специальные интернет-приложения Qt/KDE включают в себя веб-браузер Falkon, KDE Connect для синхронизации устройств, Kaidan для чата и NeoChat, клиент Matrix.</translation>
     </message>
     <message>
         <location filename="../show.qml" line="94"/>
         <source>enjoy</source>
-        <translation type="unfinished"/>
+        <translation>наслаждайтесь</translation>
     </message>
     <message>
         <location filename="../show.qml" line="95"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../show.qml" line="96"/>
         <source>Don&apos;t hesitate to give your opinion about KaOS in the Forum</source>
-        <translation type="unfinished"/>
+        <translation>Не стесняйтесь высказывать свое мнение о KaOS на форуме</translation>
     </message>
 </context>
 </TS>

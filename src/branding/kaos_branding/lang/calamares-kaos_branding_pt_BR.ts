@@ -4,27 +4,27 @@
     <message>
         <location filename="../show.qml" line="72"/>
         <source>installation</source>
-        <translation type="unfinished"/>
+        <translation>instalação </translation>
     </message>
     <message>
         <location filename="../show.qml" line="73"/>
         <source>After creating your chosen disk setup in the first 10 % the full copying of the ISO will take the longest of this install phase and will run until approximately 45%.</source>
-        <translation type="unfinished"/>
+        <translation>Após criar a sua configuração de disco escolhida, os primeiros 10% será a cópia completa da ISO, essa vai ser a parte mais demorada da instalação e vai continuar até aproximadamente 45%.</translation>
     </message>
     <message>
         <location filename="../show.qml" line="76"/>
         <source>modules</source>
-        <translation type="unfinished"/>
+        <translation>módulos </translation>
     </message>
     <message>
         <location filename="../show.qml" line="77"/>
         <source>Once the ISO is copied some 25 post-install modules will run. This includes setting user specific options, removing Live Session only packages and adjusting hardware setup.</source>
-        <translation type="unfinished"/>
+        <translation>Após a cópia da ISO serão executados 25 módulos pós-instalação. Isso inclue opções especificas de configuração de usuário, remoção dos pacotes apenas da Sessão Live e ajustes de configurações de hardware.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../show.qml" line="80"/>
         <source>office suites</source>
-        <translation type="unfinished"/>
+        <translation>pacote de escritório </translation>
     </message>
     <message>
         <location filename="../show.qml" line="81"/>
@@ -39,7 +39,7 @@
     <message>
         <location filename="../show.qml" line="85"/>
         <source>Package Management</source>
-        <translation type="unfinished"/>
+        <translation>Gerenciamento de pacotes </translation>
     </message>
     <message>
         <location filename="../show.qml" line="86"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../show.qml" line="96"/>
         <source>Don&apos;t hesitate to give your opinion about KaOS in the Forum</source>
-        <translation type="unfinished"/>
+        <translation>Não hesite em compartilhar sua opinião sobre o KaOS em nosso forum</translation>
     </message>
 </context>
 </TS>
