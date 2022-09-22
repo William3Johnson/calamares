@@ -39,6 +39,39 @@ def get_uuid():
             return partition["uuid"]
     return ""
 
+def get_zfs_root():
+    """
+    Looks in global storage to find the zfs root
+
+    :return: A string containing the path to the zfs root or None if it is not found
+    """
+
+    zfs = libcalamares.globalstorage.value("zfsDatasets")
+
+    if not zfs:
+        libcalamares.utils.warning("Failed to locate zfs dataset list")
+        return None
+
+    # Find the root dataset
+    for dataset in zfs:
+        try:
+            if dataset["mountpoint"] == "/":
+                return dataset["zpool"] + "/" + dataset["dsName"]
+        except KeyError:
+            # This should be impossible
+            libcalamares.utils.warning("Internal error handling zfs dataset")
+            raise
+
+    return None
+
+def is_zfs_root(partition):
+    """ Returns True if the partition object refers to a zfs root filesystem
+
+    :param partition: A partition map from global storage
+    :return: True if zfs and root, False otherwise
+    """
+    return partition["mountPoint"] == "/" and partition["fs"] == "zfs"
+
 
 def create_conf(uuid, conf_path):
     distribution = libcalamares.job.configuration["distribution"]
@@ -71,6 +104,16 @@ def create_conf(uuid, conf_path):
         # about the root subvolume.
         if partition["mountPoint"] == "/" and partition["fs"] == "btrfs":
             btrfs_params = "rootflags=subvol=@"
+
+        # zfs needs to be told the location of the root dataset
+        if is_zfs_root(partition):
+            zfs_root_path = get_zfs_root()
+            if zfs_root_path is not None:
+                kernel_params.append("zfs=" + zfs_root_path)
+            else:
+                # Something is really broken if we get to this point
+                libcalamares.utils.warning("Internal error handling zfs dataset")
+                raise Exception("Internal zfs data missing, please contact your distribution")
 
     if cryptdevice_params:
         kernel_params.extend(cryptdevice_params)
@@ -121,6 +164,21 @@ def create_fallback(uuid, fallback_path):
                                                     partition["luksMapperName"]),
                 "root=/dev/mapper/{!s}".format(partition["luksMapperName"])
             ]
+
+        # systemd-boot with a BTRFS root filesystem needs to be told
+        # about the root subvolume.
+        if partition["mountPoint"] == "/" and partition["fs"] == "btrfs":
+            btrfs_params = "rootflags=subvol=@"
+
+        # zfs needs to be told the location of the root dataset
+        if is_zfs_root(partition):
+            zfs_root_path = get_zfs_root()
+            if zfs_root_path is not None:
+                kernel_params.append("zfs=" + zfs_root_path)
+            else:
+                # Something is really broken if we get to this point
+                libcalamares.utils.warning("Internal error handling zfs dataset")
+                raise Exception("Internal zfs data missing, please contact your distribution")
 
     if cryptdevice_params:
         kernel_params.extend(cryptdevice_params)
