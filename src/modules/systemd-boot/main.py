@@ -109,7 +109,7 @@ def create_conf(uuid, conf_path):
         if is_zfs_root(partition):
             zfs_root_path = get_zfs_root()
             if zfs_root_path is not None:
-                kernel_params.append("zfs=" + zfs_root_path)
+                kernel_params.append("root=ZFS=" + zfs_root_path)
             else:
                 # Something is really broken if we get to this point
                 libcalamares.utils.warning("Internal error handling zfs dataset")
@@ -174,7 +174,7 @@ def create_fallback(uuid, fallback_path):
         if is_zfs_root(partition):
             zfs_root_path = get_zfs_root()
             if zfs_root_path is not None:
-                kernel_params.append("zfs=" + zfs_root_path)
+                kernel_params.append("root=ZFS=" + zfs_root_path)
             else:
                 # Something is really broken if we get to this point
                 libcalamares.utils.warning("Internal error handling zfs dataset")
