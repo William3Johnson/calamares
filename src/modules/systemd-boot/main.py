@@ -157,6 +157,7 @@ def create_fallback(uuid, fallback_path):
     kernel_params = ["quiet systemd.show_status=0"]
     swap = ""
     cryptdevice_params = []
+    zfs_params = ""
 
     for partition in partitions:
         if partition["fs"] == "linuxswap":
@@ -178,7 +179,7 @@ def create_fallback(uuid, fallback_path):
         if is_zfs_root(partition):
             zfs_root_path = get_zfs_root()
             if zfs_root_path is not None:
-                kernel_params.append("root=ZFS=" + zfs_root_path)
+                zfs_params = ("root=ZFS=" + zfs_root_path)
             else:
                 # Something is really broken if we get to this point
                 libcalamares.utils.warning("Internal error handling zfs dataset")
@@ -187,7 +188,10 @@ def create_fallback(uuid, fallback_path):
     if cryptdevice_params:
         kernel_params.extend(cryptdevice_params)
     else:
-        kernel_params.append("root=UUID={!s}".format(uuid))
+        if zfs_params:
+            kernel_params.append(zfs_params)
+        else:
+            kernel_params.append("root=UUID={!s}".format(uuid))
 
     if swap:
         kernel_params.append("resume=UUID={!s}".format(swap))
