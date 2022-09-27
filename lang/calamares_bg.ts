@@ -1,5 +1,24 @@
 <?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="bg">
 <context>
+    <name>About</name>
+    <message>
+        <location filename="../src/modules/welcomeq/About.qml" line="30"/>
+        <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;
+            &lt;strong&gt;%2&lt;br/&gt;
+            for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;
+            Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
+            Copyright 2017-2022 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
+            Thanks to &lt;a href='https://calamares.io/team/'&gt;the Calamares team&lt;/a&gt;
+            and the &lt;a href='https://www.transifex.com/kaos/kaos/'&gt;KaOS
+            translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;
+            &lt;a href='https://calamares.io/'&gt;Calamares&lt;/a&gt;
+            development is sponsored by &lt;br/&gt;
+            &lt;a href='http://www.blue-systems.com/'&gt;Blue Systems&lt;/a&gt; -
+            Liberating Software.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>AboutData</name>
     <message>
         <location filename="../src/libcalamares/CalamaresAbout.cpp" line="17"/>
@@ -577,31 +596,31 @@ The installer will quit and all changes will be lost.</source>
         <translation>%1 ще бъде намален до %2MiB и ще бъде създаден нов %3MiB дял за %4.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1323"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1360"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1382"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1407"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1322"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1359"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1381"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1406"/>
         <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
         <translation>&lt;strong&gt;Изтриване на диска&lt;/strong&gt;&lt;br/&gt;Това ще &lt;font color=&quot;red&quot;&gt;изтрие&lt;/font&gt; всички данни върху устройството за съхранение.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1327"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1356"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1378"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1403"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1326"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1355"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1377"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1402"/>
         <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a partition to make room for %1.</source>
         <translation>&lt;strong&gt;Инсталирайте покрай&lt;/strong&gt;&lt;br/&gt;Инсталатора ще раздроби дяла за да направи място за %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1331"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1365"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1386"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1411"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1330"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1364"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1385"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1410"/>
         <source>&lt;strong&gt;Replace a partition&lt;/strong&gt;&lt;br/&gt;Replaces a partition with %1.</source>
         <translation>&lt;strong&gt;Замени дял&lt;/strong&gt;&lt;br/&gt;Заменя този дял с %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1679"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1678"/>
         <source>Boot loader location:</source>
         <translation>Локация на програмата за начално зареждане:</translation>
     </message>
@@ -613,8 +632,8 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1016"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1068"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1121"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1067"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1120"/>
         <source>Current:</source>
         <translation>Текущо:</translation>
     </message>
@@ -629,87 +648,87 @@ The installer will quit and all changes will be lost.</source>
         <translation>&lt;strong&gt;Изберете дял за смаляване, после влачете долната лента за преоразмеряване&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1112"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1111"/>
         <source>&lt;strong&gt;Select a partition to install on&lt;/strong&gt;</source>
         <translation>&lt;strong&gt;Изберете дял за инсталацията&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1173"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1172"/>
         <source>An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
         <translation>EFI системен дял не е намерен. Моля, опитайте пак като използвате ръчно поделяне за %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1181"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1180"/>
         <source>The EFI system partition at %1 will be used for starting %2.</source>
         <translation>EFI системен дял в %1 ще бъде използван за стартиране на %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1189"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1188"/>
         <source>EFI system partition:</source>
         <translation>EFI системен дял:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1318"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1317"/>
         <source>This storage device does not seem to have an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Това устройство за съхранение няма инсталирана операционна система. Какво ще правите?&lt;br/&gt;Ще може да прегледате и потвърдите избора си, преди да се направят промени по устройството за съхранение.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1350"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1349"/>
         <source>This storage device has %1 on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Това устройство за съхранение има инсталиран %1. Какво ще правите?&lt;br/&gt;Ще може да прегледате и потвърдите избора си, преди да се направят промени по устройството за съхранение.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1373"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1372"/>
         <source>This storage device already has an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Това устройство за съхранение има инсталирана операционна система. Какво ще правите?&lt;br/&gt;Ще може да прегледате и потвърдите избора си, преди да се направят промени по устройството за съхранение.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1398"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1397"/>
         <source>This storage device has multiple operating systems on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Това устройство за съхранение има инсталирани операционни системи. Какво ще правите?&lt;br/&gt;Ще може да прегледате и потвърдите избора си, преди да се направят промени по устройството за съхранение.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1470"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1469"/>
         <source>This storage device already has an operating system on it, but the partition table &lt;strong&gt;%1&lt;/strong&gt; is different from the needed &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;</source>
         <translation>Това устройство за съхранение вече има операционна система върху него, но таблицатас дялове &lt;strong&gt;%1 &lt;/strong&gt; е различна от необходимата &lt;strong&gt;%2 &lt;/strong&gt;.&lt;br/&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1493"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1492"/>
         <source>This storage device has one of its partitions &lt;strong&gt;mounted&lt;/strong&gt;.</source>
         <translation>Това устройство за съхранение има &lt;strong&gt; монтиран &lt;/strong&gt; дял.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1498"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1497"/>
         <source>This storage device is a part of an &lt;strong&gt;inactive RAID&lt;/strong&gt; device.</source>
         <translation>Това устройство за съхранение е част от &lt;strong&gt; неактивно RAID &lt;/strong&gt; устройство.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1617"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1616"/>
         <source>No Swap</source>
         <translation>Без swap</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1626"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1625"/>
         <source>Reuse Swap</source>
         <translation>Повторно използване на swap</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1629"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1628"/>
         <source>Swap (no Hibernate)</source>
         <translation>Swap (без Хибернация)</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1632"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1631"/>
         <source>Swap (with Hibernate)</source>
         <translation>Swap (с Хибернация)</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1635"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1634"/>
         <source>Swap to file</source>
         <translation>Swap във файл</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1648"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1647"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.&lt;br/&gt;Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;,&lt;br/&gt;either use an existing without formatting or create one.</source>
         <translation>&lt;strong&gt;Ръчно разделяне&lt;/strong&gt;&lt;br/&gt; Можете да създадете или преоразмерявате дяловесамостоятелно. &lt;br/&gt; Наличието на таблица за дяла на GPT и &lt;strong&gt; fat32 512mb /bootдял е задължителен за UEFI инсталации &lt;/strong&gt;,&lt;br/&gt;използвайте такъв съществуващдял без форматиране или създайте нов.</translation>
     </message>
@@ -915,17 +934,17 @@ The installer will quit and all changes will be lost.</source>
         <translation>Задаване на подредбата на клавиатурата на %1/%2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/Config.cpp" line="374"/>
+        <location filename="../src/modules/locale/Config.cpp" line="373"/>
         <source>Set timezone to %1/%2.</source>
         <translation>Задаване на часовата зона на %1/%2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/Config.cpp" line="412"/>
+        <location filename="../src/modules/locale/Config.cpp" line="411"/>
         <source>The system language will be set to %1.</source>
         <translation>Системният език ще бъде %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/Config.cpp" line="419"/>
+        <location filename="../src/modules/locale/Config.cpp" line="418"/>
         <source>The numbers and dates locale will be set to %1.</source>
         <translation>Форматът на цифрите и датата ще бъде %1.</translation>
     </message>
@@ -1441,6 +1460,24 @@ The installer will quit and all changes will be lost.</source>
         <source>%1 - (%2)</source>
         <extracomment>device[name] - (device-node[name])</extracomment>
         <translation>%1 - (%2)</translation>
+    </message>
+</context>
+<context>
+    <name>DracutLuksCfgJob</name>
+    <message>
+        <location filename="../src/modules/dracutlukscfg/DracutLuksCfgJob.cpp" line="117"/>
+        <source>Write LUKS configuration for Dracut to %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/dracutlukscfg/DracutLuksCfgJob.cpp" line="121"/>
+        <source>Skip writing LUKS configuration for Dracut: &quot;/&quot; partition is not encrypted</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/dracutlukscfg/DracutLuksCfgJob.cpp" line="138"/>
+        <source>Failed to open %1</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -2202,29 +2239,29 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>Offline</name>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="41"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="47"/>
         <source>Select your preferred Region, or use the default settings.</source>
         <translation>Изберете предпочитания от вас регион или използвайте настройките по подразбиране.</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="99"/>
-        <location filename="../src/modules/localeq/Offline.qml" line="175"/>
-        <location filename="../src/modules/localeq/Offline.qml" line="219"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="103"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="180"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="224"/>
         <source>Timezone: %1</source>
         <translation>Часова зона: %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="116"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="120"/>
         <source>Select your preferred Zone within your Region.</source>
         <translation>Изберете предпочитаната от вас зона във вашия регион.</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="188"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="193"/>
         <source>Zones</source>
         <translation>Зони</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="235"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="240"/>
         <source>You can fine-tune Language and Locale settings below.</source>
         <translation>Можете да прецизирате настройките за езика и регионалните формати по-долу.</translation>
     </message>
@@ -3615,137 +3652,137 @@ Output:
 <context>
     <name>UserInput</name>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="57"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="53"/>
         <source>Pick your user name and credentials to login and perform admin tasks</source>
         <translation>Изберете потребителското си име и идентификационни данни, за да влезете  системата и изпълнявайте администраторски задачи</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="70"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="67"/>
         <source>Virtual Keyboard</source>
         <translation>Виртуална клавиатура</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="87"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="108"/>
         <source>What is your name?</source>
         <translation>Какво е вашето име?</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="96"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="127"/>
         <source>Your Full Name</source>
         <translation>Вашето пълно име</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="113"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="140"/>
         <source>What name do you want to use to log in?</source>
         <translation>Какво име искате да използвате за влизане?</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="122"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="165"/>
         <source>Login Name</source>
         <translation>Име за вход</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="153"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="182"/>
         <source>If more than one person will use this computer, you can create multiple accounts after installation.</source>
         <translation>Ако повече от един човек ще използва този компютър, можете да създадете множествоакаунти след инсталирането.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="166"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="197"/>
         <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
         <translation>Разрешени са само малки букви, цифри, долна черта и тире.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="175"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="208"/>
         <source>root is not allowed as username.</source>
         <translation>root не е разрешен като потребителско име.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="184"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="217"/>
         <source>What is the name of this computer?</source>
         <translation>Какво е името на този компютър?</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="192"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="241"/>
         <source>Computer Name</source>
         <translation>Име на компютърa</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="219"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="256"/>
         <source>This name will be used if you make the computer visible to others on a network.</source>
         <translation>Това име ще бъде използвано, ако направите компютъра видим за другите в мрежата.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="232"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="271"/>
         <source>Only letters, numbers, underscore and hyphen are allowed, minimal of two characters.</source>
         <translation>Само букви, цифри, долна черта и тире са разрешени, минимуми от двазнака.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="241"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="282"/>
         <source>localhost is not allowed as hostname.</source>
         <translation>localhost не е разрешен като име на хост.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="250"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="291"/>
         <source>Choose a password to keep your account safe.</source>
         <translation>Изберете парола за да държите вашият акаунт в безопасност.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="265"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="315"/>
         <source>Password</source>
         <translation>Парола</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="284"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="329"/>
         <source>Repeat Password</source>
         <translation>Повтаряне на паролата</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="311"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="347"/>
         <source>Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.</source>
         <translation>Въведете една и съща парола два пъти, така че да може да бъде проверена за грешки във въвеждането.Добрата парола съдържа комбинация от букви, цифри и пунктуации. Трябва да е дълга поне осем знака и трябва да се променя периодично.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="343"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="386"/>
         <source>Reuse user password as root password</source>
         <translation>Използване на потребителската парола и за парола на root</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="351"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="394"/>
         <source>Use the same password for the administrator account.</source>
         <translation>Използвайте същата парола за администраторския акаунт.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="364"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="407"/>
         <source>Choose a root password to keep your account safe.</source>
         <translation>Изберете парола за root, за да запазите акаунта си сигурен.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="379"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="432"/>
         <source>Root Password</source>
         <translation>Парола за root</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="397"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="445"/>
         <source>Repeat Root Password</source>
         <translation>Повторете паролата за root</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="424"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="463"/>
         <source>Enter the same password twice, so that it can be checked for typing errors.</source>
         <translation>Въведете една и съща парола два пъти, така че да може да бъде проверена за грешки във въвеждането.</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="454"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="500"/>
         <source>Log in automatically without asking for the password</source>
         <translation>Автоматично влизане без изискване за парола</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="462"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="508"/>
         <source>Validate passwords quality</source>
         <translation>Проверка на качеството на паролите</translation>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="472"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="518"/>
         <source>When this box is checked, password-strength checking is done and you will not be able to use a weak password.</source>
         <translation>Когато това поле е маркирано, се извършва проверка на силата на паролата и няма да можете да използвате слаба парола.</translation>
     </message>
@@ -3977,80 +4014,24 @@ Output:
     </message>
 </context>
 <context>
-    <name>about</name>
-    <message>
-        <location filename="../src/branding/kaos_branding/about.qml" line="23"/>
-        <source>About Calamares</source>
-        <translation>Относно Calamares</translation>
-    </message>
-    <message>
-        <location filename="../src/branding/kaos_branding/about.qml" line="48"/>
-        <location filename="../src/modules/welcomeq/about.qml" line="47"/>
-        <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;
-                        &lt;strong&gt;%2&lt;br/&gt;
-                        for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;
-                        Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
-                        Copyright 2017-2022 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
-                        Thanks to &lt;a href='https://calamares.io/team/'&gt;the Calamares team&lt;/a&gt;
-                        and the &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS
-                        translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;
-                        &lt;a href='https://calamares.io/'&gt;Calamares&lt;/a&gt;
-                        development is sponsored by &lt;br/&gt;
-                        &lt;a href='http://www.blue-systems.com/'&gt;Blue Systems&lt;/a&gt; -
-                        Liberating Software.</source>
-        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;
-                        &lt;strong&gt;%2&lt;br/&gt;
-                        за %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;
-                        Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
-                        Copyright 2017-2022 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
-                        Благодарности на  &lt;a href=&apos;https://calamares.io/team/&apos;&gt;екипа на Calamares &lt;/a&gt;
-                        и  на&lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS
-                        преводачите&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;
-                        Разработката на &lt;a href=&apos;https://calamares.io/&apos;&gt;Calamares&lt;/a&gt;
-                        е спонсорирана от&lt;br/&gt;
-                        &lt;a href=&apos;http://www.blue-systems.com/&apos;&gt;Blue Systems&lt;/a&gt; -
-                        Liberating Software.</translation>
-    </message>
-    <message>
-        <location filename="../src/branding/kaos_branding/about.qml" line="95"/>
-        <source>Close</source>
-        <translation>Изключване</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/about.qml" line="96"/>
-        <source>Back</source>
-        <translation>Обратна страна</translation>
-    </message>
-</context>
-<context>
     <name>calamares-navigation</name>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="57"/>
-        <source>About</source>
-        <translation>Относно</translation>
-    </message>
-    <message>
-        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="61"/>
-        <source>Info about Calamares</source>
-        <translation>Информация за Calamares</translation>
-    </message>
-    <message>
-        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="91"/>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="92"/>
         <source>Debug</source>
         <translation>Отстраняване на грешки</translation>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="120"/>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="121"/>
         <source>Back</source>
         <translation>Обратна страна</translation>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="152"/>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="153"/>
         <source>Next</source>
         <translation>Следваща</translation>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="208"/>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="209"/>
         <source>Cancel</source>
         <translation>Прекъсване</translation>
     </message>
@@ -4168,24 +4149,22 @@ Output:
 <context>
     <name>localeq</name>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="99"/>
-        <location filename="../src/modules/localeq/localeq.qml" line="129"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="105"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="135"/>
         <source>Change</source>
         <translation>Промяна</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="165"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="171"/>
         <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
-                        The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h3&gt; Езици &lt;/h3&gt;&lt;/br&gt;
-                        Настройката на локала на системата засяга езика инабора от символи за някои елементи на потребителския интерфейс на командния ред. Текущатанастройка е &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+                            The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="236"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="242"/>
         <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
-                            The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>&lt;h3&gt;Локали &lt;/h3&gt; &lt;/br&gt; 
-Настройката на локала на системата засяга формата на числата и датите. Текущата настройка е &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+                                The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -4424,34 +4403,79 @@ Output:
 <context>
     <name>show</name>
     <message>
-        <location filename="../src/branding/kaos_branding/show.qml" line="48"/>
-        <source>Here the actual install of KaOS will start.&lt;br/&gt;Use the left &lt;b&gt;mouse button&lt;/b&gt; to go to the next slide, right for previous.&lt;br/&gt;After creating your chosen disk setup in the first 10 % &lt;br/&gt;the full copying of the ISO will take the longest of this install phase &lt;br/&gt;and will run until approximately 30%.&lt;br/&gt;</source>
-        <translation>Сега започва същинското инсталиране на KaOS.&lt;br/&gt;Използвайте левия &lt;b&gt; бутонна мишката, &lt;/b&gt;за  да преминете към следващия слайд и десния бутон за предишния. &lt;br/&gt; В първите 10 % се създава диска според избраните ви настройки,  след което &lt;br/&gt; се извършва пълното копиране на ISO-то.  Това ще отнеме най -дълго от времето в тази фаза на инсталиране &lt;br/&gt; и ще продължи приблизително до 30%. &lt;br/&gt;</translation>
+        <location filename="../src/branding/kaos_branding/show.qml" line="72"/>
+        <source>installation</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/show.qml" line="74"/>
-        <source>After the ISO is copied some 25 post-install modules will run.&lt;br/&gt;This includes setting user specific options, &lt;br/&gt;removing Live Session only packages&lt;br/&gt;and adjusting hardware setup.&lt;br/&gt;</source>
-        <translation>След като се копира ISO-то, ще се стартират около 25 постинсталационни  модула.&lt;br/&gt;Това включва задаване на специфични за потребителя опции, &lt;br/&gt;премахване на пакети на Live  сесията &lt;br/&gt; и настройка на хардуера.&lt;br/&gt;</translation>
+        <location filename="../src/branding/kaos_branding/show.qml" line="73"/>
+        <source>After creating your chosen disk setup in the first 10 % the full copying of the ISO will take the longest of this install phase and will run until approximately 45%.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/show.qml" line="99"/>
-        <source>The default Office Suite is LibreOffice.&lt;br/&gt;Calligra is available in the repositories. &lt;br/&gt;</source>
-        <translation>Стандартният офис пакет е LibreOffice.&lt;br/&gt;Calligra е налична в хранилищата. &lt;br/&gt;</translation>
+        <location filename="../src/branding/kaos_branding/show.qml" line="76"/>
+        <source>modules</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/show.qml" line="122"/>
-        <source>Qt/KDE specific internet applications include the &lt;br/&gt;Falkon web-browser and kde-telepathy for &lt;br/&gt;chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation>Специфични за Qt/KDE приложения за интернет включват &lt;br/&gt; уеб браузъра Falkonи kde-telepathy за &lt;br/&gt;чатене и  незабавни съобщения. &lt;br/&gt;</translation>
+        <location filename="../src/branding/kaos_branding/show.qml" line="77"/>
+        <source>Once the ISO is copied some 25 post-install modules will run. This includes setting user specific options, removing Live Session only packages and adjusting hardware setup.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/show.qml" line="146"/>
-        <source>For package management Octopi is the GUI application.&lt;br/&gt;</source>
-        <translation>За управление на пакети Octopi е приложението с графичен потребителски интерфейс.&lt;br/&gt;</translation>
+        <location filename="../src/branding/kaos_branding/show.qml" line="80"/>
+        <source>office suites</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/show.qml" line="168"/>
+        <location filename="../src/branding/kaos_branding/show.qml" line="81"/>
+        <source>The default Office Suite is LibreOffice.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="82"/>
+        <source>Calligra is available in the repositories</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="85"/>
+        <source>Package Management</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="86"/>
+        <source>For package management Octopi is the GUI application.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="87"/>
+        <source>Pacman is the cli application.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="90"/>
+        <source>internet</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="91"/>
+        <source>Qt/KDE specific internet applications include the Falkon web-browser, KDE Connect for device Synchronization, Kaidan for chat  and NeoChat, the Matrix client.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="94"/>
+        <source>enjoy</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="95"/>
         <source>May using KaOS be a pleasant experience for you.</source>
         <translation>Нека използването на KaOS да бъде приятно преживяване за вас.</translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="96"/>
+        <source>Don&apos;t hesitate to give your opinion about KaOS in the Forum</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/branding/default/show.qml" line="55"/>
@@ -4494,7 +4518,7 @@ Output:
         <translation>Бележки по изданието</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="238"/>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="240"/>
         <source>Donate</source>
         <translation>Дарение</translation>
     </message>

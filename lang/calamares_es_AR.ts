@@ -1,5 +1,24 @@
 <?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="es_AR">
 <context>
+    <name>About</name>
+    <message>
+        <location filename="../src/modules/welcomeq/About.qml" line="30"/>
+        <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;
+            &lt;strong&gt;%2&lt;br/&gt;
+            for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;
+            Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
+            Copyright 2017-2022 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
+            Thanks to &lt;a href='https://calamares.io/team/'&gt;the Calamares team&lt;/a&gt;
+            and the &lt;a href='https://www.transifex.com/kaos/kaos/'&gt;KaOS
+            translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;
+            &lt;a href='https://calamares.io/'&gt;Calamares&lt;/a&gt;
+            development is sponsored by &lt;br/&gt;
+            &lt;a href='http://www.blue-systems.com/'&gt;Blue Systems&lt;/a&gt; -
+            Liberating Software.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>AboutData</name>
     <message>
         <location filename="../src/libcalamares/CalamaresAbout.cpp" line="17"/>
@@ -577,31 +596,31 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <translation>%1 se reducirá a %2MiB y se creará una nueva partición de %3Mib para %4.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1323"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1360"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1382"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1407"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1322"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1359"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1381"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1406"/>
         <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
         <translation>&lt;strong&gt;Borrar disco&lt;/strong&gt;&lt;br/&gt;Esto &lt;font color=&quot;red&quot;&gt;borrará&lt;/font&gt; todos los datos que se encuentren en el medio de almacenamiento seleccionado.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1327"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1356"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1378"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1403"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1326"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1355"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1377"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1402"/>
         <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a partition to make room for %1.</source>
         <translation>&lt;strong&gt;Instalar junto a otro SO&lt;/strong&gt;&lt;br/&gt;El instalador reducirá la partición para hacer lugar para %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1331"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1365"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1386"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1411"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1330"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1364"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1385"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1410"/>
         <source>&lt;strong&gt;Replace a partition&lt;/strong&gt;&lt;br/&gt;Replaces a partition with %1.</source>
         <translation>&lt;strong&gt;Reemplazar una partición&lt;/strong&gt;&lt;br/&gt;Reemplaza una partición con %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1679"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1678"/>
         <source>Boot loader location:</source>
         <translation>Ubicación del cargador de arranque:</translation>
     </message>
@@ -613,8 +632,8 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1016"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1068"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1121"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1067"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1120"/>
         <source>Current:</source>
         <translation>Actual:</translation>
     </message>
@@ -629,87 +648,87 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <translation>&lt;strong&gt;Seleccione una partición para reducir, luego arrastre la barra de abajo para redimensionar&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1112"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1111"/>
         <source>&lt;strong&gt;Select a partition to install on&lt;/strong&gt;</source>
         <translation>&lt;strong&gt;Seleccione la partición donde instalar&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1173"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1172"/>
         <source>An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
         <translation>No se puede encontrar una partición sistema EFI en este sistema. Por favor vuelva atrás y use el particionado manual para  configurar %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1181"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1180"/>
         <source>The EFI system partition at %1 will be used for starting %2.</source>
         <translation>Se usará la partición sistema EFI en %1 para iniciar %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1189"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1188"/>
         <source>EFI system partition:</source>
         <translation>Partición sistema EFI:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1318"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1317"/>
         <source>This storage device does not seem to have an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Este medio de almacenamiento parece no tener un sistema operativo instalado. ¿Qué desearía hacer?&lt;br/&gt;Tendrá la posibilidad de revisar y confirmar sus elecciones antes de que cualquier cambio se realice en el medio de almacenamiento.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1350"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1349"/>
         <source>This storage device has %1 on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Este medio de almacenamiento tiene %1 instalado.¿Qué le gustaría hacer?&lt;br/&gt;Tendrá la posibilidad de revisar y confirmar sus elecciones antes de que cualquier cambio se realice en el medio de almacenamiento.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1373"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1372"/>
         <source>This storage device already has an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Este medio de almacenamiento ya tiene un sistema operativo instalado.¿Qué desearía hacer?&lt;br/&gt;Tendrá la posibilidad de revisar y confirmar sus elecciones antes de que cualquier cambio se realice en el medio de almacenamiento.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1398"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1397"/>
         <source>This storage device has multiple operating systems on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Este medio de almacenamiento tiene varios sistemas operativos instalados.¿Qué desearía hacer?&lt;br/&gt;Tendrá la posibilidad de revisar y confirmar sus elecciones antes de que cualquier cambio se realice en el medio de almacenamiento.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1470"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1469"/>
         <source>This storage device already has an operating system on it, but the partition table &lt;strong&gt;%1&lt;/strong&gt; is different from the needed &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;</source>
         <translation>Este dispositivo de almacenamiento ya tiene un sistema operativo, pero la tabla de particiones&lt;strong&gt;%1&lt;/strong&gt; es diferente de la que se necesita: &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1493"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1492"/>
         <source>This storage device has one of its partitions &lt;strong&gt;mounted&lt;/strong&gt;.</source>
         <translation>Este dispositivo de almacenamiento tiene una de sus particiones &lt;strong&gt;montado&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1498"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1497"/>
         <source>This storage device is a part of an &lt;strong&gt;inactive RAID&lt;/strong&gt; device.</source>
         <translation>Este dispositivo de almacenamiento es parte de un dispositivo &lt;strong&gt;RAID inactivo&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1617"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1616"/>
         <source>No Swap</source>
         <translation>Sin Swap</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1626"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1625"/>
         <source>Reuse Swap</source>
         <translation>Reutilizar Swap</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1629"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1628"/>
         <source>Swap (no Hibernate)</source>
         <translation>Swap (sin Hibernación)</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1632"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1631"/>
         <source>Swap (with Hibernate)</source>
         <translation>Swap ( con Hibernación)</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1635"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1634"/>
         <source>Swap to file</source>
         <translation>Swap a archivo</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1648"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1647"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.&lt;br/&gt;Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;,&lt;br/&gt;either use an existing without formatting or create one.</source>
         <translation type="unfinished"/>
     </message>
@@ -915,17 +934,17 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <translation>Configurar distribución de teclado como %1/%2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/Config.cpp" line="374"/>
+        <location filename="../src/modules/locale/Config.cpp" line="373"/>
         <source>Set timezone to %1/%2.</source>
         <translation>Configurar zona horaria %1/%2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/Config.cpp" line="412"/>
+        <location filename="../src/modules/locale/Config.cpp" line="411"/>
         <source>The system language will be set to %1.</source>
         <translation>El idioma del sistema se configuró como %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/Config.cpp" line="419"/>
+        <location filename="../src/modules/locale/Config.cpp" line="418"/>
         <source>The numbers and dates locale will be set to %1.</source>
         <translation>La localización de números y fechas se configurará como %1.</translation>
     </message>
@@ -1441,6 +1460,24 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <source>%1 - (%2)</source>
         <extracomment>device[name] - (device-node[name])</extracomment>
         <translation>%1 - (%2)</translation>
+    </message>
+</context>
+<context>
+    <name>DracutLuksCfgJob</name>
+    <message>
+        <location filename="../src/modules/dracutlukscfg/DracutLuksCfgJob.cpp" line="117"/>
+        <source>Write LUKS configuration for Dracut to %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/dracutlukscfg/DracutLuksCfgJob.cpp" line="121"/>
+        <source>Skip writing LUKS configuration for Dracut: &quot;/&quot; partition is not encrypted</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/dracutlukscfg/DracutLuksCfgJob.cpp" line="138"/>
+        <source>Failed to open %1</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -2202,29 +2239,29 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
 <context>
     <name>Offline</name>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="41"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="47"/>
         <source>Select your preferred Region, or use the default settings.</source>
         <translation>Seleccione su región preferida, o use la configuración predeterminada.</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="99"/>
-        <location filename="../src/modules/localeq/Offline.qml" line="175"/>
-        <location filename="../src/modules/localeq/Offline.qml" line="219"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="103"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="180"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="224"/>
         <source>Timezone: %1</source>
         <translation>Zona horaria: %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="116"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="120"/>
         <source>Select your preferred Zone within your Region.</source>
         <translation>Seleccione su Zona preferida dentro de su Región.</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="188"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="193"/>
         <source>Zones</source>
         <translation>Zonas</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/Offline.qml" line="235"/>
+        <location filename="../src/modules/localeq/Offline.qml" line="240"/>
         <source>You can fine-tune Language and Locale settings below.</source>
         <translation>Puede ajustar la configuración de idioma y configuración regional a continuación.</translation>
     </message>
@@ -3615,137 +3652,137 @@ Salida:
 <context>
     <name>UserInput</name>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="57"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="53"/>
         <source>Pick your user name and credentials to login and perform admin tasks</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="70"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="67"/>
         <source>Virtual Keyboard</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="87"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="108"/>
         <source>What is your name?</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="96"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="127"/>
         <source>Your Full Name</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="113"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="140"/>
         <source>What name do you want to use to log in?</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="122"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="165"/>
         <source>Login Name</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="153"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="182"/>
         <source>If more than one person will use this computer, you can create multiple accounts after installation.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="166"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="197"/>
         <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="175"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="208"/>
         <source>root is not allowed as username.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="184"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="217"/>
         <source>What is the name of this computer?</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="192"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="241"/>
         <source>Computer Name</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="219"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="256"/>
         <source>This name will be used if you make the computer visible to others on a network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="232"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="271"/>
         <source>Only letters, numbers, underscore and hyphen are allowed, minimal of two characters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="241"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="282"/>
         <source>localhost is not allowed as hostname.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="250"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="291"/>
         <source>Choose a password to keep your account safe.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="265"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="315"/>
         <source>Password</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="284"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="329"/>
         <source>Repeat Password</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="311"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="347"/>
         <source>Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="343"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="386"/>
         <source>Reuse user password as root password</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="351"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="394"/>
         <source>Use the same password for the administrator account.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="364"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="407"/>
         <source>Choose a root password to keep your account safe.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="379"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="432"/>
         <source>Root Password</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="397"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="445"/>
         <source>Repeat Root Password</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="424"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="463"/>
         <source>Enter the same password twice, so that it can be checked for typing errors.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="454"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="500"/>
         <source>Log in automatically without asking for the password</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="462"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="508"/>
         <source>Validate passwords quality</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/usersq/UserInput.qml" line="472"/>
+        <location filename="../src/modules/usersq/UserInput.qml" line="518"/>
         <source>When this box is checked, password-strength checking is done and you will not be able to use a weak password.</source>
         <translation type="unfinished"/>
     </message>
@@ -3977,69 +4014,24 @@ Salida:
     </message>
 </context>
 <context>
-    <name>about</name>
-    <message>
-        <location filename="../src/branding/kaos_branding/about.qml" line="23"/>
-        <source>About Calamares</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/branding/kaos_branding/about.qml" line="48"/>
-        <location filename="../src/modules/welcomeq/about.qml" line="47"/>
-        <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;
-                        &lt;strong&gt;%2&lt;br/&gt;
-                        for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;
-                        Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;
-                        Copyright 2017-2022 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;
-                        Thanks to &lt;a href='https://calamares.io/team/'&gt;the Calamares team&lt;/a&gt;
-                        and the &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS
-                        translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;
-                        &lt;a href='https://calamares.io/'&gt;Calamares&lt;/a&gt;
-                        development is sponsored by &lt;br/&gt;
-                        &lt;a href='http://www.blue-systems.com/'&gt;Blue Systems&lt;/a&gt; -
-                        Liberating Software.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/branding/kaos_branding/about.qml" line="95"/>
-        <source>Close</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/welcomeq/about.qml" line="96"/>
-        <source>Back</source>
-        <translation>Atrás</translation>
-    </message>
-</context>
-<context>
     <name>calamares-navigation</name>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="57"/>
-        <source>About</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="61"/>
-        <source>Info about Calamares</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="91"/>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="92"/>
         <source>Debug</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="120"/>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="121"/>
         <source>Back</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="152"/>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="153"/>
         <source>Next</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="208"/>
+        <location filename="../src/branding/kaos_branding/calamares-navigation.qml" line="209"/>
         <source>Cancel</source>
         <translation type="unfinished"/>
     </message>
@@ -4156,21 +4148,21 @@ Ahora puede reiniciar en su nuevo sistema, o continuar usando el modo live.</tra
 <context>
     <name>localeq</name>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="99"/>
-        <location filename="../src/modules/localeq/localeq.qml" line="129"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="105"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="135"/>
         <source>Change</source>
         <translation>Cambiar</translation>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="165"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="171"/>
         <source>&lt;h3&gt;Languages&lt;/h3&gt; &lt;/br&gt;
-                        The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+                            The system locale setting affects the language and character set for some command line user interface elements. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/localeq/localeq.qml" line="236"/>
+        <location filename="../src/modules/localeq/localeq.qml" line="242"/>
         <source>&lt;h3&gt;Locales&lt;/h3&gt; &lt;/br&gt;
-                            The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+                                The system locale setting affects the numbers and dates format. The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -4396,34 +4388,79 @@ Opción predeterminada.</translation>
 <context>
     <name>show</name>
     <message>
-        <location filename="../src/branding/kaos_branding/show.qml" line="48"/>
-        <source>Here the actual install of KaOS will start.&lt;br/&gt;Use the left &lt;b&gt;mouse button&lt;/b&gt; to go to the next slide, right for previous.&lt;br/&gt;After creating your chosen disk setup in the first 10 % &lt;br/&gt;the full copying of the ISO will take the longest of this install phase &lt;br/&gt;and will run until approximately 30%.&lt;br/&gt;</source>
-        <translation>Aquí comienza la instalación de KaOS actual.&lt;br/&gt;Use &lt;b&gt;el botón izquierdo del mouse&lt;/b&gt; para ir a la siguiente diapositiva, el derecho para la anterior.&lt;br/&gt;Luego de crearse la configuración de disco elegida durante el 10 % inicial,  &lt;br/&gt;la copia completa de la ISO será lo más largo de esta fase de la &lt;br/&gt;y se hará hasta aproximadamente el 30 %.&lt;br/&gt;</translation>
+        <location filename="../src/branding/kaos_branding/show.qml" line="72"/>
+        <source>installation</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/show.qml" line="74"/>
-        <source>After the ISO is copied some 25 post-install modules will run.&lt;br/&gt;This includes setting user specific options, &lt;br/&gt;removing Live Session only packages&lt;br/&gt;and adjusting hardware setup.&lt;br/&gt;</source>
-        <translation>Luego de copiarse la ISO se ejecutarán unos 25 módulos de post-instalacion.&lt;br/&gt;Esto incluye la configuración de las opciones específicas de usuario.&lt;br/&gt;removiendo sólo los paquetes de la Sesión Live&lt;br/&gt;y ajustando la configuración del hardware.&lt;br/&gt;</translation>
+        <location filename="../src/branding/kaos_branding/show.qml" line="73"/>
+        <source>After creating your chosen disk setup in the first 10 % the full copying of the ISO will take the longest of this install phase and will run until approximately 45%.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/show.qml" line="99"/>
-        <source>The default Office Suite is LibreOffice.&lt;br/&gt;Calligra is available in the repositories. &lt;br/&gt;</source>
-        <translation>La Suite de Oficina por defecto es Libre Office.&lt;br/&gt;Calligra está disponible en los repositorios.&lt;br/&gt;</translation>
+        <location filename="../src/branding/kaos_branding/show.qml" line="76"/>
+        <source>modules</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/show.qml" line="122"/>
-        <source>Qt/KDE specific internet applications include the &lt;br/&gt;Falkon web-browser and kde-telepathy for &lt;br/&gt;chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation>Las aplicaciones Qt/KDE específicas de internet incluyen al &lt;br/&gt;navegador web Falkon y a kde-telepathy para &lt;br/&gt;chat y Mensajería Instantánea.&lt;br/&gt;</translation>
+        <location filename="../src/branding/kaos_branding/show.qml" line="77"/>
+        <source>Once the ISO is copied some 25 post-install modules will run. This includes setting user specific options, removing Live Session only packages and adjusting hardware setup.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/show.qml" line="146"/>
-        <source>For package management Octopi is the GUI application.&lt;br/&gt;</source>
-        <translation>Para la gestión de paquetes Octopi es la aplicación GUI.&lt;br/&gt;</translation>
+        <location filename="../src/branding/kaos_branding/show.qml" line="80"/>
+        <source>office suites</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/branding/kaos_branding/show.qml" line="168"/>
+        <location filename="../src/branding/kaos_branding/show.qml" line="81"/>
+        <source>The default Office Suite is LibreOffice.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="82"/>
+        <source>Calligra is available in the repositories</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="85"/>
+        <source>Package Management</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="86"/>
+        <source>For package management Octopi is the GUI application.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="87"/>
+        <source>Pacman is the cli application.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="90"/>
+        <source>internet</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="91"/>
+        <source>Qt/KDE specific internet applications include the Falkon web-browser, KDE Connect for device Synchronization, Kaidan for chat  and NeoChat, the Matrix client.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="94"/>
+        <source>enjoy</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="95"/>
         <source>May using KaOS be a pleasant experience for you.</source>
         <translation>Que el uso de KaOS sea una experiencia placentera para Ud.</translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="96"/>
+        <source>Don&apos;t hesitate to give your opinion about KaOS in the Forum</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/branding/default/show.qml" line="55"/>
@@ -4466,7 +4503,7 @@ Opción predeterminada.</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcomeq/welcomeq.qml" line="238"/>
+        <location filename="../src/modules/welcomeq/welcomeq.qml" line="240"/>
         <source>Donate</source>
         <translation>Donaciones</translation>
     </message>
